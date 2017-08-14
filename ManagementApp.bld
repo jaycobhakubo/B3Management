@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='7' encrypted='1'>
+	<steps type='0'>
+		<step action='Delete Folder'>
+			<Path>%BUILD_PATH%\B3\Management\Latest</Path>
+			<Recurse type='11'>-1</Recurse>
+			<name>Delete Latest Folder</name>
+		</step>
+		<step action='Copy Files'>
+			<Converted type='11'>-1</Converted>
+			<Delay>15</Delay>
+			<DestDir>%BUILD_PATH%\B3\Management\Latest</DestDir>
+			<Ext>*.msi</Ext>
+			<Incremental type='11'>0</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Retries>10</Retries>
+			<SourceDir>%SRC_ROOT%\Dev\B3\ManagementAPP\B3 Report Application\B3Management\Release</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<name>Copy Files To Latest</name>
+		</step></steps>
+</project>
