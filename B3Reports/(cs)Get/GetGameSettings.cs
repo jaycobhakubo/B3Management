@@ -38,7 +38,7 @@ namespace GameTech.B3Reports
                     {
                         MinNumberOfPlayers = reader.GetInt32(0);
                         CountDownTimer = reader.GetInt32(1);
-                        ConsolationPrize = (Int32)reader.GetInt32(2);
+                        ConsolationPrize = (Int32)reader.GetInt64(2);
                         GameRecalPasswords = reader.GetString(3);
                         WaitCountDownForOtherPLayers = reader.GetInt32(4);
                     }

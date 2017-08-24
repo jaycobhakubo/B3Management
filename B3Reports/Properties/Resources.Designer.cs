@@ -859,8 +859,8 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Instance=true; Integrated Security=True;
-        ///server=(local); .
+        ///   Looks up a localized string similar to Persist Security Info=False;Integrated Security=SSPI;  
+        ///    database=B3;server=(local).
         /// </summary>
         internal static string SQLConnection {
             get {
