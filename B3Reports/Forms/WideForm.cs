@@ -42,7 +42,8 @@ namespace GameTech.B3Reports.Forms
             if (settings != null)
             {               
                 var conn = settings["B3Reports.Properties.Settings.B3ConnectionString"];
-       
+                //var conn = settings["B3Reports.Properties.Resources.SQLConnection"];
+                int i = 0;
             }
 
             btnDaily.Visible = false;  
@@ -308,6 +309,7 @@ namespace GameTech.B3Reports.Forms
                     SessID = int.Parse(m_sessionComboBox.SelectedItem.ToString());   
                     rptDataSource.Name = "dsTrans";
                     rptDataSource.Value = this.rptDetailTransBindingSource;
+                    detailTrans.EnforceConstraints = false;
                     rptDetailTransTableAdapter.Fill(this.detailTrans.rptDetailTrans, dtStart.Value, SessID);
                     ReportParameter P1 = new ReportParameter("StartDate", StartDate);
                     ReportParameter P2 = new ReportParameter("EndDate", m_sessionComboBox.SelectedItem.ToString());  
@@ -371,7 +373,7 @@ namespace GameTech.B3Reports.Forms
                         {
                             SqlCommand sqlcom = new SqlCommand("usp_server_rptBallCall", con);
                             sqlcom.Parameters.AddWithValue("@session", SessID);
-                            sqlcom.Parameters.AddWithValue("@DateParameter", start_date);
+                        //    sqlcom.Parameters.AddWithValue("@DateParameter", start_date);
                             sqlcom.CommandType = CommandType.StoredProcedure;
                             sqlcom.CommandTimeout = 0;
                             SqlDataAdapter da = new SqlDataAdapter();
@@ -380,7 +382,7 @@ namespace GameTech.B3Reports.Forms
                             B3ClassIIBallCall crysRpt = new B3ClassIIBallCall();
                             crysRpt.SetDataSource(ds);
                             crysRpt.SetParameterValue("@session", SessID);
-                            crysRpt.SetParameterValue("@DateParameter", start_date);
+                           // crysRpt.SetParameterValue("@DateParameter", start_date);
                             PassThroughConnection(crysRpt);
                             crystalReportViewer1.ReportSource = crysRpt;
                             crystalReportViewer1.Refresh();

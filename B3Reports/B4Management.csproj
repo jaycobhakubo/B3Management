@@ -258,6 +258,10 @@
       <DependentUpon>BallCallSet.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data\DetailTrans.cs">
+      <DependentUpon>DetailTrans.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data\Payouts.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
