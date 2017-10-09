@@ -159,14 +159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="B3Management.exe" size="6222848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="B3Management.exe" size="6223360">
       <assemblyIdentity name="B3Management" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>AwPfsXvZ2pQOXp9ZF7MwJckrlHQ=</dsig:DigestValue>
+        <dsig:DigestValue>k9CYGV32eX4DJZDvGSjUjclSSOs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -191,13 +191,13 @@
       <dsig:DigestValue>IbboctaM6AtxLGaZv2HGoVHvi5Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="B3Management.exe.config" size="1683">
+  <file name="B3Management.exe.config" size="1707">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DsfxVSVVQvMQwRO5C+ufGZE78SA=</dsig:DigestValue>
+      <dsig:DigestValue>ivSvYM/b8YFD/vXbF6NhshA9s2s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\AccountsReport_Strip.png" size="150631">
