@@ -29,5 +29,3 @@ D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\ob
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\Debug\B3Management.application
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\Debug\B3Management.exe
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\Debug\B3Management.pdb
-D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\bin\Debug\B3Management.pdb
-D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\Debug\B4Management.csprojResolveAssemblyReference.cache

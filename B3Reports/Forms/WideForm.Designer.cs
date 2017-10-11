@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WideForm));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.spRptBallCallSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ballCallSet = new GameTech.B3Reports.Data.BallCallSet();
             this.rptDetailTransBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -656,9 +656,9 @@
             // rptViewer
             // 
             resources.ApplyResources(this.rptViewer, "rptViewer");
-            reportDataSource2.Name = "BallCallSet";
-            reportDataSource2.Value = this.spRptBallCallSetBindingSource;
-            this.rptViewer.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "BallCallSet";
+            reportDataSource1.Value = this.spRptBallCallSetBindingSource;
+            this.rptViewer.LocalReport.DataSources.Add(reportDataSource1);
             this.rptViewer.LocalReport.ReportEmbeddedResource = "GameTech.B3Reports.Reports.BallCallSet.rdlc";
             this.rptViewer.Name = "rptViewer";
             this.rptViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
