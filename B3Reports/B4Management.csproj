@@ -214,6 +214,15 @@
       <DependentUpon>BallCallClass2.xsd</DependentUpon>
     </Compile>
     <Content Include="SQL\Programmability\ND\Programmability.sql" />
+    <Content Include="SQL\Programmability\Security_new.sql" />
+    <Content Include="SQL\Programmability\usp_player_crazybout_SetBonusResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_crazybout_SetGameResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_jailbreak_SetBonusResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_jailbreak_SetGameResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_mayamoney_SetGameResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_timebomb_SetGameResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_wildball_SetBonusResult.sql" />
+    <Content Include="SQL\Programmability\usp_player_wildball_SetGameResult.sql" />
     <None Include="Resources\audit_log_report.png" />
     <None Include="Resources\user_access_report.png" />
     <None Include="Resources\BalCallReport.png" />
@@ -892,6 +901,9 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REF\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
