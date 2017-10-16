@@ -7,14 +7,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="B3Management.exe.manifest" size="25313">
+    <dependentAssembly dependencyType="install" codebase="B3Management.exe.manifest" size="18192">
       <assemblyIdentity name="B3Management.exe" version="1.0.1.97" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KcpCiSdE0joJ5MibtGWMSqhgbtw=</dsig:DigestValue>
+        <dsig:DigestValue>Qi0IglPprh33PjT7nc55pkkNM9o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
