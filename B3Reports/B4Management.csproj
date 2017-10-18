@@ -522,7 +522,6 @@
       <DependentUpon>WinnerCardsReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ScriptFromEDGE\SecurityHelper.cs" />
     <Compile Include="Settings.cs" />
     <None Include="Data\AuditLog.xsc">
       <DependentUpon>AuditLog.xsd</DependentUpon>
@@ -875,9 +874,7 @@
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="REF\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

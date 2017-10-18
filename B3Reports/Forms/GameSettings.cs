@@ -42,7 +42,7 @@ namespace GameTech.B3Reports.Forms
             
             if (numMinimumPlayer.Value == GetGameSettings.MinNumberOfPlayers)
             {
-                numMinimumPlayer.Value = 2;
+                numMinimumPlayer.Value = 1;
                 numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
             }
             else

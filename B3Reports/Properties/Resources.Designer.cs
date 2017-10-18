@@ -859,7 +859,7 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data Source=10.10.10.1;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=&quot;B3 beats the hell out of GRS!&quot;.
+        ///   Looks up a localized string similar to Data Source=10.0.11.41; Initial Catalog=B3;Persist Security Info=True;User ID=sqluser;Password=&quot;gly*cine83&quot;.
         /// </summary>
         internal static string SQLConnection {
             get {
