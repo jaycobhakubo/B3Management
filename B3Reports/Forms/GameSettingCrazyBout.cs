@@ -337,42 +337,10 @@ namespace GameTech.B3Reports.Forms
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Hide card serial number", x.HideCardSerialNum.ToString(), UIValue);
                 x.HideCardSerialNum = (chkbxHideCardSerialNumber.Checked == true) ? "T" : "F";
-
-            }
-    
+            } 
+   
             SetGameSettingsCrazyBout set = new SetGameSettingsCrazyBout();
-
             return true;
-
-            //REFERENCE ON GAME SETTINGS
-            //Logged the changes
-            //if (GetGameSettings.MinNumberOfPlayers != (int)numMinimumPlayer.Value)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum Number of Players", GetGameSettings.MinNumberOfPlayers.ToString(), numMinimumPlayer.Value.ToString());
-            //}
-            //if (GetGameSettings.ConsolationPrize != x)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum Consolation Prize", GetGameSettings.ConsolationPrize.ToString(), x.ToString());
-            //}
-            //if (GetGameSettings.CountDownTimer != (int)numCountdownTimer.Value)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Countdown Timer", GetGameSettings.CountDownTimer.ToString(), numCountdownTimer.Value.ToString());
-            //}
-            //if (GetGameSettings.GameRecalPasswords != txtbxGameRecallPassword.Text.ToString())
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Game Recall Paswword", GetGameSettings.GameRecalPasswords.ToString(), txtbxGameRecallPassword.Text);
-            //}
-            //if (GetGameSettings.WaitCountDownForOtherPLayers != (int)numWaitCountdownTimerOP.Value)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum number of Players Wait Time", GetGameSettings.WaitCountDownForOtherPLayers.ToString(), numWaitCountdownTimerOP.Value.ToString());
-            //}
-
-            //GetGameSettings.MinNumberOfPlayers = (int)numMinimumPlayer.Value;
-            //GetGameSettings.ConsolationPrize = x;
-            //GetGameSettings.CountDownTimer = (int)numCountdownTimer.Value;
-            //GetGameSettings.GameRecalPasswords = txtbxGameRecallPassword.Text.ToString();
-            //GetGameSettings.WaitCountDownForOtherPLayers = (int)numWaitCountdownTimerOP.Value;
-            //SetGameSettings set = new SetGameSettings();
         }
 
         private void numMaxCards_Leave(object sender, EventArgs e)

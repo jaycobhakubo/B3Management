@@ -24,6 +24,9 @@ namespace GameTech.B3Reports
         public static int CountDownTimer = 10; //In Sec
         public static string GameRecalPasswords = "";
         public static int WaitCountDownForOtherPLayers = 11;
+        private int m_GameThreads;
+
+        public int GameThreads { get { return m_GameThreads; } }
 
         public GetGameSettings()
         {
@@ -41,6 +44,7 @@ namespace GameTech.B3Reports
                         ConsolationPrize = (int)reader.GetInt64(2);
                         GameRecalPasswords = reader.GetString(3);
                         WaitCountDownForOtherPLayers = reader.GetInt32(4);
+                        m_GameThreads = reader.GetInt32(5);
                     }
                 }
 

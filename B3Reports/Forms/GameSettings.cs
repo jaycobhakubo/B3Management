@@ -50,6 +50,7 @@ namespace GameTech.B3Reports.Forms
                 numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
             }
             numericTextBoxWDecimal1.Text = ConvertIntToMoneyFormat.convertToDecimal(GetGameSettings.ConsolationPrize);
+           
             if (numCountdownTimer.Value == GetGameSettings.CountDownTimer)
             {
                 numCountdownTimer.Value = 0;
@@ -60,6 +61,7 @@ namespace GameTech.B3Reports.Forms
                 numCountdownTimer.Value = Convert.ToInt32(GetGameSettings.CountDownTimer);
             }
             txtbxGameRecallPassword.Text = GetGameSettings.GameRecalPasswords;
+           
             if (numWaitCountdownTimerOP.Value == GetGameSettings.WaitCountDownForOtherPLayers)
             {
                 numWaitCountdownTimerOP.Value = 0;
@@ -68,6 +70,16 @@ namespace GameTech.B3Reports.Forms
             else
             {
                 numWaitCountdownTimerOP.Value = Convert.ToInt32(GetGameSettings.WaitCountDownForOtherPLayers);
+            }
+
+            if (numericUpDownGameThreads.Value == ggs.GameThreads)
+            {
+                numericUpDownGameThreads.Value = 5;
+                numericUpDownGameThreads.Value = Convert.ToInt32(ggs.GameThreads);
+            }
+            else
+            {
+                numericUpDownGameThreads.Value = Convert.ToInt32(ggs.GameThreads);
             }      
             return true;
         }
@@ -217,5 +229,47 @@ namespace GameTech.B3Reports.Forms
 
             }
         }
+
+        private void numMinimumPlayer_ValueChanged(object sender, EventArgs e)
+        {
+            if (numMinimumPlayer.Value == 1)
+            {
+                if (lblCountdownTimer.Visible == true)
+                {
+                    lblCountdownTimer.Visible = false;
+                    numCountdownTimer.Visible = false;
+                    lblCountdownTimerSec.Visible = false;
+
+                    numWaitCountdownTimerOP.Visible = false;
+                    lblMinimumNumOfPlayersSec.Visible = false;
+                    lblMinNumPlayersTime.Visible = false;
+
+                    lblExtraBonus.Visible = false;
+                    lblExtraBonusDollarSign.Visible = false;
+                    numericTextBoxWDecimal1.Visible = false;
+
+                }
+            }
+            else
+            {
+                if (lblCountdownTimer.Visible == false)
+                {
+                    lblCountdownTimer.Visible = true;
+                    numCountdownTimer.Visible = true;
+                    lblCountdownTimerSec.Visible = true;
+
+                    numWaitCountdownTimerOP.Visible = true;
+                    lblMinimumNumOfPlayersSec.Visible = true;
+                    lblMinNumPlayersTime.Visible = true;
+
+                    lblExtraBonus.Visible = true;
+                    lblExtraBonusDollarSign.Visible = true;
+                    numericTextBoxWDecimal1.Visible = true;
+
+                }
+            }
+        }
+
+       
     }
 }

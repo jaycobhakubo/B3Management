@@ -29,7 +29,7 @@ namespace GameTech.B3Reports
             SqlConnection sc = GetSQLConnection.get();
             try
             {
-                //The SP will be deleted.  Do not use this SP. -> knc
+                //The SP will be deleted.  Do not use this SP. 
                 sc.Open();
                 using (SqlCommand cmd = new SqlCommand(@"exec usp_management_SystemSettings_GetNDSettings", sc))
                 {

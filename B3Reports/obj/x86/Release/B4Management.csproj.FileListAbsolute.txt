@@ -3,7 +3,6 @@ D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\bi
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\bin\x86\Release\B3Management.application
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\bin\x86\Release\B3Management.exe
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\bin\x86\Release\B3Management.pdb
-D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\x86\Release\B4Management.csprojResolveAssemblyReference.cache
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\x86\Release\GameTech.B3Reports.Forms.ClientAccessControl.resources
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\x86\Release\GameTech.B3Reports.Forms.DisputeResolution.resources
 D:\fortunet\gti-gametech\Dev\B3\ManagementAPP\B3 Report Application\B3Reports\obj\x86\Release\GameTech.B3Reports.Forms.GameSettingCrazyBout.resources

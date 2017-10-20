@@ -166,7 +166,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wpBpoaC381TQRLoJn20+V0JwjDI=</dsig:DigestValue>
+        <dsig:DigestValue>zDfVfdMJyVVRlDIEXL0XkRwoSeU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -191,13 +191,13 @@
       <dsig:DigestValue>IbboctaM6AtxLGaZv2HGoVHvi5Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="B3Management.exe.config" size="1683">
+  <file name="B3Management.exe.config" size="1707">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DsfxVSVVQvMQwRO5C+ufGZE78SA=</dsig:DigestValue>
+      <dsig:DigestValue>ivSvYM/b8YFD/vXbF6NhshA9s2s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\AccountsReport_Strip.png" size="150631">
@@ -324,168 +324,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>tDuhOM7bvrgvkoJUbI44pCMbcvY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Jobs_SQLAgent\B3_DailyBackUp.sql" size="7300">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>s6+1XW8v4eEEcwsp/+Cj+OauDa0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Jobs_SQLAgent\B3_SailesDBLog.sql" size="5521">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NCg8zrkU5BYetsgxL323+RvUeIQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Other\f_hextostr.sql" size="1102">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qBPDf2SY1610JgfTB+2Tkcy7hHg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Security_new.sql" size="8413">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Dh071t4qNhtBZ1Hk10ZI9T/NaZM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_ActivityLog.sql" size="1082">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>0q9EPWKZlzDx5SfCEGQ0idJyTHA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_AuditLog.sql" size="863">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>PJUJH13GWi16YK7cMDSZgqfaSds=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_BallCallLogPerSession.sql" size="3376">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>WZSLSJmcTk0vzCt6iuYG2+UWp8k=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_DeviceTransactions.sql" size="819">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>v1+SeJensbomSY7aObwXOFGDuPs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_PasswordStaff.sql" size="1135">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>6r22H03MWeDRIqMC4C2FhSBIPr8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_SecuritySettings.sql" size="1046">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Sma7JWVMSR5DiZ3sKwcTVpV8xLg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Table\B3_VersionInfo.sql" size="1808">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>lPfjkMRg8dOjTUCJipMwZWtc0is=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\TEST\usp_sales_b3_ChangePassword.sql" size="5990">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>PfvXqqUoOlahLw7TPLfYO7TWsrk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\TEST\usp_sales_b3_Login_EX.sql" size="6297">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>BAQKGmaEFTFJBAsKJv3aNt3dPf8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Trigger\Load_B3BallCallPerSession_Table.sql" size="1639">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>e3Eiqpw0a94/8zGvB7fCx9TCuFU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Trigger\Load_B3DeviceTransaction.sql" size="1747">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>q8RM2pYz2xYon2GlRXCa3U64XdA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\Trigger\TrgLogonB3SalesLog.sql" size="5271">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>n5ZZrWuTzO5CqRBq3H7v/DEHbbo=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\B4\UpdateSchema.sql" size="9236">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Q9k2tve8GqzwOn/UM7KwylrKDgk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="SQL\Programmability\ND\Programmability.sql" size="299248">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>G0cDIbuihx+orgyjg/LejB+1fKQ=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
