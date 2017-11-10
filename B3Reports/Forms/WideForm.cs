@@ -262,7 +262,7 @@ namespace GameTech.B3Reports.Forms
             pnlCrystalViewer.Visible = false;
         }
 
-        void ViewReport()//knc
+        void ViewReport()
         {
             m_errorProvider.SetError(m_sessionComboBox, string.Empty);
 
