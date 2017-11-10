@@ -1,4 +1,0 @@
-﻿9/4/2014
-Form need tobe in automatic resize mode much better and fixed size.
-How to maximize this application to fit into the right display?
-
