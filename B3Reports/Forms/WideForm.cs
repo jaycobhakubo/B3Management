@@ -617,10 +617,14 @@ namespace GameTech.B3Reports.Forms
             TableLogOnInfos crTableLoginInfos = new TableLogOnInfos();
             Tables crTables;
 
-            crConnectionInfo.ServerName = Properties.Resources.ServerIp.ToString();
-            crConnectionInfo.DatabaseName = Properties.Resources.Database.ToString();
-            crConnectionInfo.UserID = Properties.Resources.ReportUser.ToString();
-            crConnectionInfo.Password = Properties.Resources.Password.ToString();
+            //Get the server name
+            GameTech.B3Reports._cs_Get.GetSystemInfo ServerName = new _cs_Get.GetSystemInfo();
+            string tempServerName = ServerName.ServerName;
+
+            crConnectionInfo.ServerName = tempServerName;//Servername always changes.
+            crConnectionInfo.DatabaseName = "B3";//Fixed on all B3 system
+            crConnectionInfo.UserID = "sqluser";//Fixed on all B3 system
+            crConnectionInfo.Password = "gly*cine83";//We should hash this.
 
             crTables = x.Database.Tables;
 
