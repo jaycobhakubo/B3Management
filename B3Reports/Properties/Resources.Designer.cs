@@ -371,6 +371,15 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to B3.
+        /// </summary>
+        internal static string Database {
+            get {
+                return ResourceManager.GetString("Database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap delete {
@@ -701,6 +710,15 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to gly*cine83.
+        /// </summary>
+        internal static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap payout_report {
@@ -737,6 +755,15 @@ namespace GameTech.B3Reports.Properties {
             get {
                 object obj = ResourceManager.GetObject("Reports_Background1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sqluser.
+        /// </summary>
+        internal static string ReportUser {
+            get {
+                return ResourceManager.GetString("ReportUser", resourceCulture);
             }
         }
         
@@ -815,6 +842,24 @@ namespace GameTech.B3Reports.Properties {
             get {
                 object obj = ResourceManager.GetObject("SavePressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10.0.11.41.
+        /// </summary>
+        internal static string ServerIp {
+            get {
+                return ResourceManager.GetString("ServerIp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is there a way to get the server name.
+        /// </summary>
+        internal static string ServerName {
+            get {
+                return ResourceManager.GetString("ServerName", resourceCulture);
             }
         }
         

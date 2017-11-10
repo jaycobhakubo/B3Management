@@ -159,14 +159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="B3Management.exe" size="6224384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="B3Management.exe" size="6245888">
       <assemblyIdentity name="B3Management" version="1.1.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6PBpWPVBADNsa6xrGTBeQiwA5Fk=</dsig:DigestValue>
+        <dsig:DigestValue>b9Qx9A0aRRgF1ow3DLNY6L4zgHw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

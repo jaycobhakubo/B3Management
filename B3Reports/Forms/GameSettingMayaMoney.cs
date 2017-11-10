@@ -72,9 +72,9 @@ namespace GameTech.B3Reports.Forms
             { chkbxDenom25.Checked = false; }
 
             if (GetGameSettingsMayaMoney.denom_50 == "T")
-            { chkbxDenom1d.Checked = true; }
+            { chkbxDenom50.Checked = true; }
             else
-            { chkbxDenom1d.Checked = false; }
+            { chkbxDenom50.Checked = false; }
 
             if (GetGameSettingsMayaMoney.denom_100 == "T")
             { chkbxDenom1d.Checked = true; }

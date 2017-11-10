@@ -262,7 +262,7 @@ namespace GameTech.B3Reports.Forms
             pnlCrystalViewer.Visible = false;
         }
 
-        void ViewReport()
+        void ViewReport()//knc
         {
             m_errorProvider.SetError(m_sessionComboBox, string.Empty);
 
@@ -617,10 +617,10 @@ namespace GameTech.B3Reports.Forms
             TableLogOnInfos crTableLoginInfos = new TableLogOnInfos();
             Tables crTables;
 
-            crConnectionInfo.ServerName = "B3-Server";
-            crConnectionInfo.DatabaseName = "B3";
-            crConnectionInfo.UserID = "sa";
-            crConnectionInfo.Password = "B3 beats the hell out of GRS!";
+            crConnectionInfo.ServerName = Properties.Resources.ServerIp.ToString();
+            crConnectionInfo.DatabaseName = Properties.Resources.Database.ToString();
+            crConnectionInfo.UserID = Properties.Resources.ReportUser.ToString();
+            crConnectionInfo.Password = Properties.Resources.Password.ToString();
 
             crTables = x.Database.Tables;
 

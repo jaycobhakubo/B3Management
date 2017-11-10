@@ -191,10 +191,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="%28cs%29Get\GetGameSettingsWildBall.cs" />
     <Compile Include="%28cs%29Get\GetNDSettings.cs" />
     <Compile Include="%28cs%29Get\GetSQLConnection.cs" />
     <Compile Include="%28cs%29Get\GetSystemConfig.cs" />
     <Compile Include="%28cs%29Get\OtherSQLgetCmd.cs" />
+    <Compile Include="%28cs%29Other\GameSettings.cs" />
+    <Compile Include="%28cs%29Set\SetGameSettingsWildBall.cs" />
     <Compile Include="%28cs%29Set\SetNDSettings.cs" />
     <Compile Include="%28cs%29Set\SetSystemConfig.cs" />
     <Compile Include="CustomControls\NumericTextBoxWDecimal.cs">
@@ -274,6 +277,12 @@
     </Compile>
     <Compile Include="Forms\ClientAccessControl.Designer.cs">
       <DependentUpon>ClientAccessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameSettingWildBallForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\GameSettingWildBallForm.Designer.cs">
+      <DependentUpon>GameSettingWildBallForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DisputeResolution.cs">
       <SubType>Form</SubType>
@@ -597,6 +606,9 @@
     <Compile Include="%28cs%29Other\WriteLog.cs" />
     <EmbeddedResource Include="Forms\ClientAccessControl.resx">
       <DependentUpon>ClientAccessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameSettingWildBallForm.resx">
+      <DependentUpon>GameSettingWildBallForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DisputeResolution.resx">
       <DependentUpon>DisputeResolution.cs</DependentUpon>

@@ -52,6 +52,11 @@ namespace GameTech.B3Reports.Forms
             else
             { chkbxHideCardSerialNumber.Checked = false; }
 
+            if (GetGameSettingJailbreak.singleofferbonus == "T")
+            { chkbxSingleOfferBonus.Checked = true; }
+            else
+            { chkbxSingleOfferBonus.Checked = false; }
+
             if (GetGameSettingJailbreak.denom_1 == "T")
             { chkbxDenom1.Checked = true; }
             else
@@ -73,9 +78,9 @@ namespace GameTech.B3Reports.Forms
             { chkbxDenom25.Checked = false; }
 
             if (GetGameSettingJailbreak.denom_50 == "T")
-            { chkbxDenom1d.Checked = true; }
+            { chkbxDenom50.Checked = true; }
             else
-            { chkbxDenom1d.Checked = false; }
+            { chkbxDenom50.Checked = false; }
 
             if (GetGameSettingJailbreak.denom_100 == "T")
             { chkbxDenom1d.Checked = true; }
@@ -263,6 +268,12 @@ namespace GameTech.B3Reports.Forms
 
             }
 
+            UIValue = (chkbxSingleOfferBonus.Checked == true) ? "T" : "F";
+            if (x.SingleOfferBonus != UIValue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Single offer bonus", x.HideCardSerialNum.ToString(), UIValue);
+                x.SingleOfferBonus = (chkbxSingleOfferBonus.Checked == true) ? "T" : "F";
+            }
             //x.MaxCards = (int)numMaxCards.Value;
             //x.MaxBetLevel = (int)numMaxBetLevel.Value;
             //x.MaxPatterns = (int)numMaxPattern.Value;

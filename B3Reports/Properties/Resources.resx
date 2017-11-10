@@ -440,4 +440,19 @@
   <data name="SQLConnectionSampleNetwork" xml:space="preserve">
     <value>Data Source=10.10.0.1;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password="B3 beats the hell out of GRS!"</value>
   </data>
+  <data name="Database" xml:space="preserve">
+    <value>B3</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>gly*cine83</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>sqluser</value>
+  </data>
+  <data name="ServerIp" xml:space="preserve">
+    <value>10.0.11.41</value>
+  </data>
+  <data name="ServerName" xml:space="preserve">
+    <value>Is there a way to get the server name</value>
+  </data>
 </root>

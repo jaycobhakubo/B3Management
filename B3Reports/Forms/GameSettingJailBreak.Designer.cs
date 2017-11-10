@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkbxSingleOfferBonus = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chkbxDenom5d = new System.Windows.Forms.CheckBox();
             this.chkbxDenom1 = new System.Windows.Forms.CheckBox();
@@ -68,6 +69,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkbxSingleOfferBonus);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.numCallSpeed);
             this.groupBox1.Controls.Add(this.numMaxCallsBonus);
@@ -93,6 +95,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jailbreak Game Settings";
+            // 
+            // chkbxSingleOfferBonus
+            // 
+            this.chkbxSingleOfferBonus.AutoSize = true;
+            this.chkbxSingleOfferBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbxSingleOfferBonus.Location = new System.Drawing.Point(496, 129);
+            this.chkbxSingleOfferBonus.Name = "chkbxSingleOfferBonus";
+            this.chkbxSingleOfferBonus.Size = new System.Drawing.Size(159, 26);
+            this.chkbxSingleOfferBonus.TabIndex = 40;
+            this.chkbxSingleOfferBonus.Text = "Single Offer Bonus";
+            this.chkbxSingleOfferBonus.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -403,7 +416,7 @@
             // chkbxHideCardSerialNumber
             // 
             this.chkbxHideCardSerialNumber.AutoSize = true;
-            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(496, 129);
+            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(496, 169);
             this.chkbxHideCardSerialNumber.Name = "chkbxHideCardSerialNumber";
             this.chkbxHideCardSerialNumber.Size = new System.Drawing.Size(205, 26);
             this.chkbxHideCardSerialNumber.TabIndex = 59;
@@ -532,5 +545,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkbxSingleOfferBonus;
     }
 }

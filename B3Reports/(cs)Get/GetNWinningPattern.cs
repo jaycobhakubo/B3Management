@@ -135,7 +135,10 @@ namespace GameTech.B3Reports
                         Pattern_Num_10 = reader.GetInt32(2);
                         Pattern_Num_11 = reader.GetInt32(1);
                         Pattern_Num_12 = reader.GetInt32(0);
-                        Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                        if (GetGameSettings.MinNumberOfPlayers > 1)
+                        {
+                            Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                        }
                     }
                 }
             }

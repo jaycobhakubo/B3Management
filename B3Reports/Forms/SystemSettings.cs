@@ -31,8 +31,7 @@ namespace GameTech.B3Reports.Forms
         bool IsClientAccessControl = false;
         bool IsNDSettings = false;
         bool IsUserAccessControl = false;
-        bool m_isNDSettings = false;
-        
+        private bool m_isWildBallGameSettings;
 
         #endregion
 
@@ -91,6 +90,10 @@ namespace GameTech.B3Reports.Forms
             {
                 gameSettingMayaMoney1.LoadSettings();
             }
+            else if (m_isWildBallGameSettings)
+            {
+                gameSettingWildBall1.LoadSettings();
+            }
             else if (IsClientAccessControl == true)
             {
                 clientAccessControl1.LoadSettings();
@@ -114,6 +117,7 @@ namespace GameTech.B3Reports.Forms
             IsMayaMoneyGameSettings = false;
             IsPlayerSettings = false;
             IsNDSettings = false;
+            m_isWildBallGameSettings = false;
         }
 
         private void CreateNodes()
@@ -160,6 +164,10 @@ namespace GameTech.B3Reports.Forms
 
             nodeChild = nodeParent.Nodes.Add("Maya Money Settings");
             nodeChild.Tag = gameSettingMayaMoney1;
+
+            nodeChild = nodeParent.Nodes.Add("Wild Ball Settings");
+            nodeChild.Tag = gameSettingWildBall1;
+
             treeView1.Nodes.Add(nodeParent);
 
             //Hide it for now
@@ -365,10 +373,23 @@ namespace GameTech.B3Reports.Forms
                     pnlWarning.Visible = true;
                 }
             }
-            else if (x == 6)//SecuritySettings
+            else if (x == 6)//client access
             {
 
                 IsClientAccessControl = true;
+                if (pnlWarning.Visible != false)
+                {
+                    pnlWarning.Visible = false;
+                }
+
+                if (imgBtnRefreshSystemSettings.Visible != true)
+                {
+                    imgBtnRefreshSystemSettings.Visible = true;
+                }
+            }
+            else if (x == 7) //player settings
+            {
+                IsPlayerSettings = true;
                 if (pnlWarning.Visible != false)
                 {
                     pnlWarning.Visible = false;
@@ -387,6 +408,16 @@ namespace GameTech.B3Reports.Forms
                     pnlWarning.Visible = false;
                 }
             }
+            else if (x == 9)
+            {
+                m_isWildBallGameSettings = true; 
+
+                if (pnlWarning.Visible)
+                {
+                    pnlWarning.Visible = false;
+                }
+            }
+
 
             /* This code was used to force the first child node to be selected
              * when a parent node was clicked 
@@ -506,6 +537,17 @@ namespace GameTech.B3Reports.Forms
                     this.Enabled = false;
                     Cursor.Current = Cursors.WaitCursor;
                     result = gameSettingMayaMoney1.SaveSettings();
+                    RestartAndroidService();
+                }
+            }
+            else if (m_isWildBallGameSettings)
+            {
+                ConfirmResult = (MessageBoxConfirmation() == "Yes");
+                if (ConfirmResult == true)
+                {
+                    this.Enabled = false;
+                    Cursor.Current = Cursors.WaitCursor;
+                    result = gameSettingWildBall1.SaveSettings();
                     RestartAndroidService();
                 }
             }

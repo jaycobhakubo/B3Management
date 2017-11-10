@@ -33,6 +33,7 @@ namespace GameTech.B3Reports
         public static string denom_200 = "T";
         public static string denom_500 = "T";
         public static string hidecardserialnum = "T";
+        public static string singleofferbonus = "T";
 
         public int MaxCards
         {
@@ -143,6 +144,12 @@ namespace GameTech.B3Reports
             set { hidecardserialnum = value; }
         }
 
+        public string SingleOfferBonus
+        {
+            get { return singleofferbonus; }
+            set { singleofferbonus = value; }
+        }
+
         public GetGameSettingJailbreak()
         {
             SqlConnection sc = GetSQLConnection.get();
@@ -171,7 +178,8 @@ namespace GameTech.B3Reports
                               denom_100 = reader.GetString(14);
                               denom_200 = reader.GetString(15);
                               denom_500 = reader.GetString(16);
-                              hidecardserialnum = reader.GetString(17);                          
+                              hidecardserialnum = reader.GetString(17);
+                              singleofferbonus = reader.GetString(18);
                     }
                 }
 

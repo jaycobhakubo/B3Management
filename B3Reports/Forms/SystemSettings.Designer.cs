@@ -33,12 +33,13 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.gameSettingWildBall1 = new GameTech.B3Reports.Forms.GameSettingWildBallForm();
+            this.picBxSaved = new System.Windows.Forms.PictureBox();
             this.securitySettings1 = new GameTech.B3Reports.Forms.SecuritySettings();
             this.gameSettings1 = new GameTech.B3Reports.Forms.GameSettings();
             this.ndSettings1 = new GameTech.B3Reports.Forms.NDSettings();
             this.gameSettingMayaMoney1 = new GameTech.B3Reports.Forms.GameSettingMayaMoney();
             this.clientAccessControl1 = new GameTech.B3Reports.Forms.ClientAccessControl();
-            this.picBxSaved = new System.Windows.Forms.PictureBox();
             this.playerSettings1 = new GameTech.B3Reports.Forms.PlayerSettings();
             this.gameSettingJailBreak1 = new GameTech.B3Reports.Forms.GameSettingJailBreak();
             this.gameSettingCrazyBout1 = new GameTech.B3Reports.Forms.GameSettingCrazyBout();
@@ -100,12 +101,13 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.picBxSaved);
+            this.splitContainer2.Panel1.Controls.Add(this.gameSettingWildBall1);
             this.splitContainer2.Panel1.Controls.Add(this.securitySettings1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettings1);
             this.splitContainer2.Panel1.Controls.Add(this.ndSettings1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingMayaMoney1);
             this.splitContainer2.Panel1.Controls.Add(this.clientAccessControl1);
-            this.splitContainer2.Panel1.Controls.Add(this.picBxSaved);
             this.splitContainer2.Panel1.Controls.Add(this.playerSettings1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingJailBreak1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingCrazyBout1);
@@ -117,6 +119,18 @@
             this.splitContainer2.Panel2.Controls.Add(this.imgBtnReturn);
             this.splitContainer2.Panel2.Controls.Add(this.imgBtnResetSystemSettings);
             this.splitContainer2.Panel2.Controls.Add(this.imgBtnSaveSystemSettings);
+            // 
+            // gameSettingWildBall1
+            // 
+            resources.ApplyResources(this.gameSettingWildBall1, "gameSettingWildBall1");
+            this.gameSettingWildBall1.Name = "gameSettingWildBall1";
+            this.gameSettingWildBall1.Tag = "9";
+            // 
+            // picBxSaved
+            // 
+            resources.ApplyResources(this.picBxSaved, "picBxSaved");
+            this.picBxSaved.Name = "picBxSaved";
+            this.picBxSaved.TabStop = false;
             // 
             // securitySettings1
             // 
@@ -137,6 +151,7 @@
             // 
             resources.ApplyResources(this.ndSettings1, "ndSettings1");
             this.ndSettings1.Name = "ndSettings1";
+            this.ndSettings1.PlayerPinLength = 0;
             this.ndSettings1.Tag = "8";
             this.ndSettings1.Enter += new System.EventHandler(this.gameSettings1_Enter);
             // 
@@ -154,17 +169,11 @@
             this.clientAccessControl1.Tag = "6";
             this.clientAccessControl1.Enter += new System.EventHandler(this.gameSettings1_Enter);
             // 
-            // picBxSaved
-            // 
-            resources.ApplyResources(this.picBxSaved, "picBxSaved");
-            this.picBxSaved.Name = "picBxSaved";
-            this.picBxSaved.TabStop = false;
-            // 
             // playerSettings1
             // 
             resources.ApplyResources(this.playerSettings1, "playerSettings1");
             this.playerSettings1.Name = "playerSettings1";
-            this.playerSettings1.Tag = "6";
+            this.playerSettings1.Tag = "7";
             this.playerSettings1.Enter += new System.EventHandler(this.gameSettings1_Enter);
             // 
             // gameSettingJailBreak1
@@ -303,5 +312,6 @@
         private ClientAccessControl clientAccessControl1;
         private ImageButton imgBtnRefreshSystemSettings;
         private NDSettings ndSettings1;
+        private GameSettingWildBallForm gameSettingWildBall1;
     }
 }

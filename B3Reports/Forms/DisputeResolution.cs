@@ -966,7 +966,7 @@ namespace GameTech.B3Reports.Forms
             GetBallCall y = new GetBallCall(PlayTime, GetInfo.B4Games.ToString(), AccountNumber, GetInfo.BallCount , GetInfo.GameNumber);
             BallCall = GetBallCall.BallCall;
             BallCall = BallCall.Remove(BallCall.Length - 1);
-            richTextBox1.Text = BallCall;
+            richTextBox1.Text = BallCall.Replace(",", ", ");
 
             int countBall = BallCall.Split(',').Length - 1;//If BallCall is more than 30
 
@@ -985,6 +985,11 @@ namespace GameTech.B3Reports.Forms
             int FMayaMoney = 0;
             foreach (PatternPayTable ppt in listPatternTable)
             {
+                if (GetGameSettings.MinNumberOfPlayers <= 1 &&
+                    ppt.PatterName == "Coverall")
+                {
+                    continue;
+                }
                 ListViewItem lvi = new ListViewItem(ppt.PatterName);
                 lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * GetInfo.BetLevel));//ppt.Pay.ToString());
                 string NH = (ppt.NH == 0) ? string.Empty : (ppt.NH).ToString();
@@ -1252,9 +1257,7 @@ namespace GameTech.B3Reports.Forms
                 BallCall = GetBallCall.BonusBallCall;
                 BallCall = BallCall.Remove(BallCall.Length - 1);
                 richTextBox1.Clear();
-                richTextBox1.Text = BallCall;
-
-
+                richTextBox1.Text = BallCall.Replace(",", ", ");
 
                 //PatternPayTable 
                 GetNWinningPattern.GetNBonusWinningPattern(AccountNumber, PlayTime, GetInfo.B4Games);
@@ -1314,7 +1317,7 @@ namespace GameTech.B3Reports.Forms
                 GetBallCall y = new GetBallCall(PlayTime, GetInfo.B4Games.ToString(), AccountNumber, GetInfo.BallCount, GetInfo.GameNumber);
                 BallCall = GetBallCall.BallCall;
                 BallCall = BallCall.Remove(BallCall.Length - 1);
-                richTextBox1.Text = BallCall;
+                richTextBox1.Text = BallCall.Replace(",", ", ");
 
 
                 GetNWinningPattern gnwn = new GetNWinningPattern(AccountNumber, PlayTime, GetInfo.B4Games);
@@ -1330,6 +1333,11 @@ namespace GameTech.B3Reports.Forms
 
                 foreach (PatternPayTable ppt in listPatternTable)
                 {
+                    if (GetGameSettings.MinNumberOfPlayers <= 1 &&
+                        ppt.PatterName == "Coverall")
+                    {
+                        continue;
+                    }
                     ListViewItem lvi = new ListViewItem(ppt.PatterName);
                     lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * GetInfo.BetLevel));
                     string NH = (ppt.NH == 0) ? string.Empty : ppt.NH.ToString();

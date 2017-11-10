@@ -39,7 +39,8 @@ namespace GameTech.B3Reports
                                                         ,@spdenom_100 
                                                         ,@spdenom_200 
                                                         ,@spdenom_500 
-                                                        ,@sphidecardserialnum "
+                                                        ,@sphidecardserialnum
+                                                        ,@spsingleoffer_bonus  "
                                                         , sc))
                 {
 
@@ -61,6 +62,7 @@ namespace GameTech.B3Reports
                     cmd.Parameters.AddWithValue("spdenom_200", GetGameSettingJailbreak.denom_200);
                     cmd.Parameters.AddWithValue("spdenom_500", GetGameSettingJailbreak.denom_500);
                     cmd.Parameters.AddWithValue("sphidecardserialnum", GetGameSettingJailbreak.hidecardserialnum);
+                    cmd.Parameters.AddWithValue("spsingleoffer_bonus", GetGameSettingJailbreak.singleofferbonus);
                     cmd.ExecuteNonQuery();
                     //cmd.ExecuteNonQuery(); //or you could try this if did not work                 
                 }
