@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WideForm));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.spRptBallCallSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ballCallSet = new GameTech.B3Reports.Data.BallCallSet();
             this.rptDetailTransBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -145,6 +145,7 @@
             // 
             // ballCallSet
             // 
+            this.ballCallSet.DataSetName = "BallCallSet";
             this.ballCallSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rptDetailTransBindingSource
@@ -154,6 +155,7 @@
             // 
             // detailTrans
             // 
+            this.detailTrans.DataSetName = "DetailTrans";
             this.detailTrans.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rptCardImagesBindingSource
@@ -163,6 +165,7 @@
             // 
             // cards
             // 
+            this.cards.DataSetName = "Cards";
             this.cards.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnCommand
@@ -653,9 +656,9 @@
             // rptViewer
             // 
             resources.ApplyResources(this.rptViewer, "rptViewer");
-            reportDataSource2.Name = "BallCallSet";
-            reportDataSource2.Value = this.spRptBallCallSetBindingSource;
-            this.rptViewer.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "BallCallSet";
+            reportDataSource1.Value = this.spRptBallCallSetBindingSource;
+            this.rptViewer.LocalReport.DataSources.Add(reportDataSource1);
             this.rptViewer.LocalReport.ReportEmbeddedResource = "GameTech.B3Reports.Reports.BallCallSet.rdlc";
             this.rptViewer.Name = "rptViewer";
             this.rptViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
@@ -691,6 +694,7 @@
             // 
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             // 
@@ -701,6 +705,7 @@
             // 
             // auditLog
             // 
+            this.auditLog.DataSetName = "AuditLog";
             this.auditLog.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // spRptAuditLogTableAdapter
@@ -709,6 +714,7 @@
             // 
             // ballCallClass2
             // 
+            this.ballCallClass2.DataSetName = "BallCallClass2";
             this.ballCallClass2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // BallCallClass2BindingSource
@@ -727,6 +733,7 @@
             // 
             // payouts
             // 
+            this.payouts.DataSetName = "Payouts";
             this.payouts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // spRptPayoutsTableAdapter
@@ -740,6 +747,7 @@
             // 
             // userAccess
             // 
+            this.userAccess.DataSetName = "UserAccess";
             this.userAccess.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // spRptUserAccessTableAdapter
