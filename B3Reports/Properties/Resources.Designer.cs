@@ -859,30 +859,11 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data Source=10.0.11.41; Initial Catalog=B3;Persist Security Info=True;User ID=sqluser;Password=&quot;gly*cine83&quot;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string SQLConnection {
             get {
                 return ResourceManager.GetString("SQLConnection", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Persist Security Info=False;Integrated Security=SSPI;  
-        ///    database=B3;server=(local).
-        /// </summary>
-        internal static string SQLConnectionSamplelocal {
-            get {
-                return ResourceManager.GetString("SQLConnectionSamplelocal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Data Source=10.10.0.1;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=&quot;B3 beats the hell out of GRS!&quot;.
-        /// </summary>
-        internal static string SQLConnectionSampleNetwork {
-            get {
-                return ResourceManager.GetString("SQLConnectionSampleNetwork", resourceCulture);
             }
         }
         
