@@ -178,11 +178,11 @@ namespace GameTech.B3Reports.Forms
             nodeParent = new TreeNode("Security Settings", 0, 1);
             nodeParent.Tag = securitySettings1;
             treeView1.Nodes.Add(nodeParent);
-  
         }
 
         private string MessageBoxConfirmation()//to restart android service
         {
+            return "Yes";
             DialogResult dialogResult = MessageBox.Show("Are you sure you want to restart the android service?", "Restart android service", MessageBoxButtons.YesNo);
             string result = dialogResult.ToString();
             return result;
@@ -190,106 +190,107 @@ namespace GameTech.B3Reports.Forms
 
         private void RestartAndroidService()
         {
+            //we do not want to restart the android service
+
             //MessageBox.Show(Environment.MachineName);
 
-            if (Environment.MachineName.ToString() != "B3-SERVER")// || Environment.MachineName != "B3-Server")
-            {
-                // Environment.
-                //MessageBox.Show(Environment.MachineName + " is not equal to B3-SERVER");
-                try
-                {
-                    string serviceName = "Android Service";
-                    ConnectionOptions connectoptions = new ConnectionOptions();
-                    connectoptions.Username = @"B3-Server\Administrator";
-                    connectoptions.Password = "Gu@rdi@n";
-                    string Server = "B3-Server";
-                    ManagementScope scope = new ManagementScope(@"\\" + /*ipAddress*/ Server + @"\root\cimv2");
-                    scope.Options = connectoptions;
-                    SelectQuery query = new SelectQuery("select * from Win32_Service where name = '" + serviceName + "'");
+            //if (Environment.MachineName.ToString() != "B3-SERVER")// || Environment.MachineName != "B3-Server")
+            //{
+            //    // Environment.
+            //    //MessageBox.Show(Environment.MachineName + " is not equal to B3-SERVER");
+            //    try
+            //    {
+            //        string serviceName = "Android Service";
+            //        ConnectionOptions connectoptions = new ConnectionOptions();
+            //        connectoptions.Username = @"B3-Server\Administrator";
+            //        connectoptions.Password = "Gu@rdi@n";
+            //        string Server = "B3-Server";
+            //        ManagementScope scope = new ManagementScope(@"\\" + /*ipAddress*/ Server + @"\root\cimv2");
+            //        scope.Options = connectoptions;
+            //        SelectQuery query = new SelectQuery("select * from Win32_Service where name = '" + serviceName + "'");
 
-                    using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query))
-                    {
-                        ManagementObjectCollection collection = searcher.Get();
-                        foreach (ManagementObject service in collection)
-                        {
-                            //stopped the service if its running
-                            if (service["Started"].Equals(true))
-                            {
-                                service.InvokeMethod("StopService", null);
-                                //wait till the service is fully stopped
-                                ManagementObject service2 = service;
-                                while (Convert.ToString(service2["State"]).ToLower() == "running")
-                                {
-                                    collection = searcher.Get();
-                                    foreach (ManagementObject service3 in collection)
-                                    {
-                                        service2 = service3;
-                                    }
-                                }
-                            }
-                            //run always
-                            service.InvokeMethod("StartService", null);
-                        }
-                    }
-                }
+            //        using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query))
+            //        {
+            //            ManagementObjectCollection collection = searcher.Get();
+            //            foreach (ManagementObject service in collection)
+            //            {
+            //                //stopped the service if its running
+            //                if (service["Started"].Equals(true))
+            //                {
+            //                    service.InvokeMethod("StopService", null);
+            //                    //wait till the service is fully stopped
+            //                    ManagementObject service2 = service;
+            //                    while (Convert.ToString(service2["State"]).ToLower() == "running")
+            //                    {
+            //                        collection = searcher.Get();
+            //                        foreach (ManagementObject service3 in collection)
+            //                        {
+            //                            service2 = service3;
+            //                        }
+            //                    }
+            //                }
+            //                //run always
+            //                service.InvokeMethod("StartService", null);
+            //            }
+            //        }
+            //    }
 
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            else
-            {
-                //MessageBox.Show("I am local");
-                try
-                {
-                    RestartServiceOnLocal();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //    }
+            //}
+            //else
+            //{
+            //    //MessageBox.Show("I am local");
+            //    try
+            //    {
+            //        RestartServiceOnLocal();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show(ex.Message);
+            //    }
 
-            }
-
+            //}
         }
 
-        private void RestartServiceOnLocal()
-        {
+        //private void RestartServiceOnLocal()
+        //{
+        //    return;
+
+        //    ServiceController[] scServices;
+        //    scServices = ServiceController.GetServices();
+        //    foreach (ServiceController scTempt in scServices)
+        //    {
+        //        if (scTempt.ServiceName == "Android Service")
+        //        {
+        //            ServiceController sc = new ServiceController("Android Service", Environment.MachineName.ToString());
+
+        //            if (sc.Status == ServiceControllerStatus.Running)
+        //            {
+        //                //MessageBox.Show("I will stop the Android service now");
+        //                sc.Stop();
+        //                while (sc.Status != ServiceControllerStatus.Stopped)
+        //                {
+        //                    System.Threading.Thread.Sleep(1000);
+        //                    sc.Refresh();
+        //                }
+        //            }
 
 
-            ServiceController[] scServices;
-            scServices = ServiceController.GetServices();
-            foreach (ServiceController scTempt in scServices)
-            {
-                if (scTempt.ServiceName == "Android Service")
-                {
-                    ServiceController sc = new ServiceController("Android Service", Environment.MachineName.ToString());
+        //            // MessageBox.Show("I will start the Android service now");
+        //            sc.Start();
+        //            while (sc.Status != ServiceControllerStatus.Running)
+        //            {
 
-                    if (sc.Status == ServiceControllerStatus.Running)
-                    {
-                        //MessageBox.Show("I will stop the Android service now");
-                        sc.Stop();
-                        while (sc.Status != ServiceControllerStatus.Stopped)
-                        {
-                            System.Threading.Thread.Sleep(1000);
-                            sc.Refresh();
-                        }
-                    }
+        //                System.Threading.Thread.Sleep(1000);
+        //                sc.Refresh();
 
-
-                    // MessageBox.Show("I will start the Android service now");
-                    sc.Start();
-                    while (sc.Status != ServiceControllerStatus.Running)
-                    {
-
-                        System.Threading.Thread.Sleep(1000);
-                        sc.Refresh();
-
-                    }
-                }
-            }
-        }
+        //            }
+        //        }
+        //    }
+        //}
 
 
         #endregion
@@ -410,14 +411,13 @@ namespace GameTech.B3Reports.Forms
             }
             else if (x == 9)
             {
-                m_isWildBallGameSettings = true; 
+                m_isWildBallGameSettings = true;
 
-                if (pnlWarning.Visible)
+                if (!pnlWarning.Visible)
                 {
-                    pnlWarning.Visible = false;
+                    pnlWarning.Visible = true;
                 }
             }
-
 
             /* This code was used to force the first child node to be selected
              * when a parent node was clicked 
@@ -712,5 +712,6 @@ namespace GameTech.B3Reports.Forms
         }
 
         #endregion
+
     }
 }

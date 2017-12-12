@@ -14,6 +14,7 @@ using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.ReportSource;
 using CrystalDecisions.Shared;
 using GameTech.B3Reports.Reports;
+using GameTech.B3Reports._cs_Other;
 
 namespace GameTech.B3Reports.Forms
 {
@@ -38,13 +39,14 @@ namespace GameTech.B3Reports.Forms
             InitializeComponent();
             AdjustWindowSize.adjust(this);
           
-            var settings = ConfigurationManager.ConnectionStrings;
-            if (settings != null)
-            {               
-                var conn = settings["B3Reports.Properties.Settings.B3ConnectionString"];
-                //var conn = settings["B3Reports.Properties.Resources.SQLConnection"];
-                int i = 0;
-            }
+            rptCardImagesTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            rptDetailTransTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            spRptAuditLogTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            spRptBallCallSetTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            spRptPayoutsTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            usp_server_rptBallCallTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+            spRptUserAccessTableAdapter.Connection.ConnectionString = B3DatabaseConnection.GetConnectionString;
+
 
             btnDaily.Visible = false;  
             btnDrawer.Visible = false;
@@ -617,14 +619,10 @@ namespace GameTech.B3Reports.Forms
             TableLogOnInfos crTableLoginInfos = new TableLogOnInfos();
             Tables crTables;
 
-            //Get the server name
-            GameTech.B3Reports._cs_Get.GetSystemInfo ServerName = new _cs_Get.GetSystemInfo();
-            string tempServerName = ServerName.ServerName;
-
-            crConnectionInfo.ServerName = tempServerName;//Servername always changes.
-            crConnectionInfo.DatabaseName = "B3";//Fixed on all B3 system
-            crConnectionInfo.UserID = "sqluser";//Fixed on all B3 system
-            crConnectionInfo.Password = "gly*cine83";//We should hash this.
+            crConnectionInfo.ServerName = B3DatabaseConnection.GetServerNameFromRegistry();
+            crConnectionInfo.DatabaseName = B3DatabaseConnection.GetDatabaseNameFromRegistry();
+            crConnectionInfo.UserID = B3DatabaseConnection.GetDatabaseUserFromRegistry();
+            crConnectionInfo.Password = B3DatabaseConnection.GetDatabasePasswordRegistry();
 
             crTables = x.Database.Tables;
 

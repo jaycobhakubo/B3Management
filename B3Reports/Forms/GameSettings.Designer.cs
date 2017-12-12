@@ -40,13 +40,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblCountdownTimerSec = new System.Windows.Forms.Label();
             this.lblExtraBonusDollarSign = new System.Windows.Forms.Label();
-            this.numericTextBoxWDecimal1 = new GameTech.B3Reports.CustomControls.NumericTextBoxWDecimal();
             this.numCountdownTimer = new System.Windows.Forms.NumericUpDown();
             this.lblCountdownTimer = new System.Windows.Forms.Label();
             this.lblExtraBonus = new System.Windows.Forms.Label();
             this.numMinimumPlayer = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.numericTextBoxWDecimal1 = new GameTech.B3Reports.CustomControls.NumericTextBoxWDecimal();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGameThreads)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWaitCountdownTimerOP)).BeginInit();
@@ -85,7 +85,7 @@
             // numericUpDownGameThreads
             // 
             this.numericUpDownGameThreads.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numericUpDownGameThreads.Location = new System.Drawing.Point(504, 144);
+            this.numericUpDownGameThreads.Location = new System.Drawing.Point(504, 142);
             this.numericUpDownGameThreads.Maximum = new decimal(new int[] {
             16,
             0,
@@ -130,7 +130,7 @@
             // 
             // txtbxGameRecallPassword
             // 
-            this.txtbxGameRecallPassword.Location = new System.Drawing.Point(504, 96);
+            this.txtbxGameRecallPassword.Location = new System.Drawing.Point(504, 94);
             this.txtbxGameRecallPassword.MaxLength = 15;
             this.txtbxGameRecallPassword.Name = "txtbxGameRecallPassword";
             this.txtbxGameRecallPassword.Size = new System.Drawing.Size(120, 26);
@@ -141,8 +141,8 @@
             // lblMinimumNumOfPlayersSec
             // 
             this.lblMinimumNumOfPlayersSec.AutoSize = true;
-            this.lblMinimumNumOfPlayersSec.BackColor = System.Drawing.Color.White;
-            this.lblMinimumNumOfPlayersSec.Location = new System.Drawing.Point(624, 241);
+            this.lblMinimumNumOfPlayersSec.BackColor = System.Drawing.Color.Transparent;
+            this.lblMinimumNumOfPlayersSec.Location = new System.Drawing.Point(624, 240);
             this.lblMinimumNumOfPlayersSec.Name = "lblMinimumNumOfPlayersSec";
             this.lblMinimumNumOfPlayersSec.Size = new System.Drawing.Size(33, 22);
             this.lblMinimumNumOfPlayersSec.TabIndex = 37;
@@ -151,7 +151,7 @@
             // numWaitCountdownTimerOP
             // 
             this.numWaitCountdownTimerOP.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numWaitCountdownTimerOP.Location = new System.Drawing.Point(504, 240);
+            this.numWaitCountdownTimerOP.Location = new System.Drawing.Point(504, 238);
             this.numWaitCountdownTimerOP.Name = "numWaitCountdownTimerOP";
             this.numWaitCountdownTimerOP.Size = new System.Drawing.Size(120, 26);
             this.numWaitCountdownTimerOP.TabIndex = 36;
@@ -187,8 +187,8 @@
             // lblCountdownTimerSec
             // 
             this.lblCountdownTimerSec.AutoSize = true;
-            this.lblCountdownTimerSec.BackColor = System.Drawing.Color.White;
-            this.lblCountdownTimerSec.Location = new System.Drawing.Point(624, 194);
+            this.lblCountdownTimerSec.BackColor = System.Drawing.Color.Transparent;
+            this.lblCountdownTimerSec.Location = new System.Drawing.Point(624, 192);
             this.lblCountdownTimerSec.Name = "lblCountdownTimerSec";
             this.lblCountdownTimerSec.Size = new System.Drawing.Size(33, 22);
             this.lblCountdownTimerSec.TabIndex = 33;
@@ -196,31 +196,17 @@
             // 
             // lblExtraBonusDollarSign
             // 
-            this.lblExtraBonusDollarSign.BackColor = System.Drawing.SystemColors.Control;
-            this.lblExtraBonusDollarSign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblExtraBonusDollarSign.Location = new System.Drawing.Point(504, 288);
+            this.lblExtraBonusDollarSign.BackColor = System.Drawing.Color.Transparent;
+            this.lblExtraBonusDollarSign.Location = new System.Drawing.Point(479, 286);
             this.lblExtraBonusDollarSign.Name = "lblExtraBonusDollarSign";
             this.lblExtraBonusDollarSign.Size = new System.Drawing.Size(20, 26);
             this.lblExtraBonusDollarSign.TabIndex = 32;
             this.lblExtraBonusDollarSign.Text = "$";
             // 
-            // numericTextBoxWDecimal1
-            // 
-            this.numericTextBoxWDecimal1.AllowSpace = false;
-            this.numericTextBoxWDecimal1.BackColor = System.Drawing.SystemColors.Window;
-            this.numericTextBoxWDecimal1.Location = new System.Drawing.Point(528, 288);
-            this.numericTextBoxWDecimal1.MaxLength = 7;
-            this.numericTextBoxWDecimal1.Name = "numericTextBoxWDecimal1";
-            this.numericTextBoxWDecimal1.ReadOnly = true;
-            this.numericTextBoxWDecimal1.Size = new System.Drawing.Size(96, 26);
-            this.numericTextBoxWDecimal1.TabIndex = 31;
-            this.numericTextBoxWDecimal1.Click += new System.EventHandler(this.numMinimumPlayer_Click);
-            this.numericTextBoxWDecimal1.Validating += new System.ComponentModel.CancelEventHandler(this.numericTextBoxWDecimal1_Validating);
-            // 
             // numCountdownTimer
             // 
             this.numCountdownTimer.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numCountdownTimer.Location = new System.Drawing.Point(504, 192);
+            this.numCountdownTimer.Location = new System.Drawing.Point(504, 190);
             this.numCountdownTimer.Name = "numCountdownTimer";
             this.numCountdownTimer.Size = new System.Drawing.Size(120, 26);
             this.numCountdownTimer.TabIndex = 30;
@@ -256,7 +242,7 @@
             // numMinimumPlayer
             // 
             this.numMinimumPlayer.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMinimumPlayer.Location = new System.Drawing.Point(504, 48);
+            this.numMinimumPlayer.Location = new System.Drawing.Point(504, 46);
             this.numMinimumPlayer.Maximum = new decimal(new int[] {
             255,
             0,
@@ -293,6 +279,19 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // numericTextBoxWDecimal1
+            // 
+            this.numericTextBoxWDecimal1.AllowSpace = false;
+            this.numericTextBoxWDecimal1.BackColor = System.Drawing.SystemColors.Window;
+            this.numericTextBoxWDecimal1.Location = new System.Drawing.Point(504, 286);
+            this.numericTextBoxWDecimal1.MaxLength = 7;
+            this.numericTextBoxWDecimal1.Name = "numericTextBoxWDecimal1";
+            this.numericTextBoxWDecimal1.ReadOnly = true;
+            this.numericTextBoxWDecimal1.Size = new System.Drawing.Size(120, 26);
+            this.numericTextBoxWDecimal1.TabIndex = 31;
+            this.numericTextBoxWDecimal1.Click += new System.EventHandler(this.numMinimumPlayer_Click);
+            this.numericTextBoxWDecimal1.Validating += new System.ComponentModel.CancelEventHandler(this.numericTextBoxWDecimal1_Validating);
             // 
             // GameSettings
             // 

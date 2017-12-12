@@ -175,7 +175,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkUsePasswordComplexity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 306</value>
+    <value>72, 306</value>
   </data>
   <data name="chkUsePasswordComplexity.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 26</value>
@@ -242,7 +242,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numMinWaitTimeBeforeLogout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 248</value>
+    <value>528, 254</value>
   </data>
   <data name="numMinWaitTimeBeforeLogout.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -299,7 +299,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numPinExpireDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 200</value>
+    <value>528, 206</value>
   </data>
   <data name="numPinExpireDays.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -356,7 +356,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numPasswordLockOutAttempts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 152</value>
+    <value>528, 158</value>
   </data>
   <data name="numPasswordLockOutAttempts.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -413,7 +413,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numPreviousPasswordReuse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 104</value>
+    <value>528, 110</value>
   </data>
   <data name="numPreviousPasswordReuse.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -470,7 +470,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numMinimumPasswordLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 56</value>
+    <value>528, 62</value>
   </data>
   <data name="numMinimumPasswordLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>

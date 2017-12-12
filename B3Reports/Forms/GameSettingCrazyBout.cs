@@ -435,5 +435,20 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
+        private void chkbxAutoCall_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkbxAutoPlay_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkbxSingleOfferBonus_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Timers;
+using GameTech.B3Reports._cs_Other;
 
 namespace GameTech.B3Reports.Forms
 {
@@ -22,25 +23,25 @@ namespace GameTech.B3Reports.Forms
 
         #region MEMBER
 
-        bool IsUserName = false;
-        bool IsPassword = false;
-        bool IsEnCurPassword = false;
-        bool IsEnNewPassword = false;
-        bool IsConfirmNewPassword = false;
-        bool IsUserAlreadyExists = false;
-        bool IsUserExists = false;
-        bool IspasswordExpired;
-        int NlogInTry = 0;
-        int UserLoginID = 0;
-        string EnNewPasswor = "";
-        string EntCurPassword = "";
-        string userName = "";
-        string passWord = "";
-        string ConfirmNewPassword = "";       
-//        SqlConnection sc = new SqlConnection(Properties.Settings.Default.B3ConnectionString);
-        SqlConnection sc = new SqlConnection(Properties.Resources.SQLConnection);
+        private bool IsUserName = false;
+        private bool IsPassword = false;
+        private bool IsEnCurPassword = false;
+        private bool IsEnNewPassword = false;
+        private bool IsConfirmNewPassword = false;
+        private bool IsUserAlreadyExists = false;
+        private bool IsUserExists = false;
+        private bool IspasswordExpired;
+        private int NlogInTry = 0;
+        private int UserLoginID = 0;
+        private string EnNewPasswor = "";
+        private string EntCurPassword = "";
+        private string userName = "";
+        private string passWord = "";
+        private string ConfirmNewPassword = "";
+        private SqlConnection sc;
 
         #endregion
+
         #region CONSTRUCTOR
 
         public LoginFullWin()
@@ -50,6 +51,7 @@ namespace GameTech.B3Reports.Forms
         }
 
         #endregion
+
         #region METHODS
 
 
@@ -96,7 +98,7 @@ namespace GameTech.B3Reports.Forms
                                                     where UserName = @UserName  and EnableUser = 'T'", sc))
                 {
                     cmd.Parameters.AddWithValue("UserName", userName);
-                    isUserActive = (int)cmd.ExecuteScalar() > 0;//changing the variable to IsUserActive
+                    isUserActive = (int) cmd.ExecuteScalar() > 0; //changing the variable to IsUserActive
                 }
             }
             catch (Exception ex)
@@ -148,7 +150,7 @@ namespace GameTech.B3Reports.Forms
                                                     where UserName = @UserName  and Locked = 'T'", sc))
                 {
                     cmd.Parameters.AddWithValue("UserName", userName);
-                    IsUserlocked = (int)cmd.ExecuteScalar() > 0;
+                    IsUserlocked = (int) cmd.ExecuteScalar() > 0;
                 }
             }
             catch (Exception ex)
@@ -166,18 +168,19 @@ namespace GameTech.B3Reports.Forms
         {
             sc.Open();
             bool IsPasswordCorrect = false;
-            if (IsUserAlreadyExists == true)//This will always be false
+            if (IsUserAlreadyExists == true) //This will always be false
             {
                 string userName = txtUsername.Text;
                 string passWord_ = txtPassword.Text;
                 using (SqlCommand cmd = new SqlCommand(@"select count(*) 
                     from dbo.B3_Login 
                     where UserName = @UserName and 
-                    [UserPassword] COLLATE SQL_Latin1_General_CP1_CS_AS = @UserPassword", sc))//Password is case sensitive
+                    [UserPassword] COLLATE SQL_Latin1_General_CP1_CS_AS = @UserPassword", sc))
+                    //Password is case sensitive
                 {
                     cmd.Parameters.AddWithValue("UserName", userName);
                     cmd.Parameters.AddWithValue("UserPassword", passWord_);
-                    IsPasswordCorrect = (int)cmd.ExecuteScalar() == 1;
+                    IsPasswordCorrect = (int) cmd.ExecuteScalar() == 1;
                 }
 
             }
@@ -264,7 +267,8 @@ namespace GameTech.B3Reports.Forms
             {
                 if (txtBxVerifyNewPassword.Text.Count() > 0)
                 {
-                    txtBxVerifyNewPassword.Text = txtBxVerifyNewPassword.Text.Remove(txtBxVerifyNewPassword.Text.Length - 1);
+                    txtBxVerifyNewPassword.Text =
+                        txtBxVerifyNewPassword.Text.Remove(txtBxVerifyNewPassword.Text.Length - 1);
                 }
             }
 
@@ -289,23 +293,40 @@ namespace GameTech.B3Reports.Forms
 
         private void ClearErrorProvider()
         {
-            if (errorProvider1.GetError(txtUsername) != string.Empty) { errorProvider1.SetError(txtUsername, string.Empty); }
-            if (errorProvider1.GetError(txtPassword) != string.Empty) { errorProvider1.SetError(txtPassword, string.Empty); }
-            if (errorProvider1.GetError(txtBxEntCurrPassword) != string.Empty) { errorProvider1.SetError(txtBxEntCurrPassword, string.Empty); }
-            if (errorProvider1.GetError(txtBxEnterNewPassword) != string.Empty) { errorProvider1.SetError(txtBxEnterNewPassword, string.Empty); }
-            if (errorProvider1.GetError(txtBxVerifyNewPassword) != string.Empty) { errorProvider1.SetError(txtBxVerifyNewPassword, string.Empty); }
+            if (errorProvider1.GetError(txtUsername) != string.Empty)
+            {
+                errorProvider1.SetError(txtUsername, string.Empty);
+            }
+            if (errorProvider1.GetError(txtPassword) != string.Empty)
+            {
+                errorProvider1.SetError(txtPassword, string.Empty);
+            }
+            if (errorProvider1.GetError(txtBxEntCurrPassword) != string.Empty)
+            {
+                errorProvider1.SetError(txtBxEntCurrPassword, string.Empty);
+            }
+            if (errorProvider1.GetError(txtBxEnterNewPassword) != string.Empty)
+            {
+                errorProvider1.SetError(txtBxEnterNewPassword, string.Empty);
+            }
+            if (errorProvider1.GetError(txtBxVerifyNewPassword) != string.Empty)
+            {
+                errorProvider1.SetError(txtBxVerifyNewPassword, string.Empty);
+            }
         }
 
-        private void UnlockedUser()//Unlock for now if the application is close
+        private void UnlockedUser() //Unlock for now if the application is close
         {
             try
             {
                 sc.Open();
-                SqlCommand cmd = new SqlCommand(@"update [dbo].[B3_Login]                                                                               
+                SqlCommand cmd =
+                    new SqlCommand(@"update [dbo].[B3_Login]                                                                               
                                                  set Locked = 'F'
                                                  where LoginID = " + CurrentLoginID.LoginID, sc);
                 cmd.ExecuteNonQuery();
-                WriteLog.WriteLog_("", userName, "Unlocked due to number of attempt login will now be unlock", GetCurrentMacID.MacAddress, "");
+                WriteLog.WriteLog_("", userName, "Unlocked due to number of attempt login will now be unlock",
+                    GetCurrentMacID.MacAddress, "");
             }
             catch (Exception ex)
             {
@@ -320,30 +341,28 @@ namespace GameTech.B3Reports.Forms
 
         private void btnMouseDown(object sender, MouseEventArgs e)
         {
-            Button btn = (Button)sender;
+            Button btn = (Button) sender;
             if (Convert.ToInt32(btn.Tag) == 1)
             {
                 btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.LoginPressed;
             }
-            else
-                if (Convert.ToInt32(btn.Tag) == 2)
-                {
-                    btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.ExitPressed;
-                }
+            else if (Convert.ToInt32(btn.Tag) == 2)
+            {
+                btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.ExitPressed;
+            }
         }
 
         private void btnMouseUp(object sender, MouseEventArgs e)
         {
-            Button btn = (Button)sender;
+            Button btn = (Button) sender;
             if (Convert.ToInt32(btn.Tag) == 1)
             {
                 btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.Login;
             }
-            else
-                if (Convert.ToInt32(btn.Tag) == 2)
-                {
-                    btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.exit2;
-                }
+            else if (Convert.ToInt32(btn.Tag) == 2)
+            {
+                btn.BackgroundImage = GameTech.B3Reports.Properties.Resources.exit2;
+            }
         }
 
         private void ClearErrorProviderInChangePasswords()
@@ -392,47 +411,23 @@ namespace GameTech.B3Reports.Forms
             txtUsername.Select();
         }
 
-        private bool IsB3ServerCurrentlyRunning()
-        {
-//            using (SqlConnection scon = new SqlConnection(Properties.Settings.Default.B3ConnectionString))
-            using (SqlConnection scon = new SqlConnection(Properties.Resources.SQLConnection))
-            {
-
-                bool IsB3ServerRunning = false;
-
-                try
-                {
-                    scon.Open();
-                    IsB3ServerRunning = true;
-                }
-                catch
-                {
-                    IsB3ServerRunning = false;
-
-                }
-                finally
-                {
-                    scon.Close();
-                }
-                return IsB3ServerRunning;
-            }
-        }
-
         #endregion
-        #region EVENTS
 
+        #region EVENTS
 
         private void LoginFullWin_Load(object sender, EventArgs e)
         {
+            var databaseConnection = new DatabaseConnectionForm(true);
 
-            //Screen size
-            bool IsB3ServerRunning = IsB3ServerCurrentlyRunning();
-            if (IsB3ServerRunning == false)
+            var results = databaseConnection.ShowDialog();
+
+            if (results == DialogResult.Cancel)
             {
-                MessageBox.Show("Unable to connect to connect to database.");
                 Application.Exit();
                 return;
             }
+
+            sc = new SqlConnection(B3DatabaseConnection.GetConnectionString);
 
             txtUsername.Select();
 
@@ -467,13 +462,14 @@ namespace GameTech.B3Reports.Forms
           
             CurrentUserLogged CurrentUserLogged = new CurrentUserLogged(txtUsername.Text);
 
-            bool IsB3ServerRunning = false;  //Check B3Server status if running then true else false
-            IsB3ServerRunning = IsB3ServerCurrentlyRunning(); 
-
-            if (IsB3ServerRunning == false)
+            var databaseConnection = new DatabaseConnectionForm(false);
+            if (!databaseConnection.IsValidDatabaseConnection())
             {
-                MessageBox.Show("Unable to connect to B3-srever.");
-                return;
+                var results = databaseConnection.ShowDialog();
+                if (results == DialogResult.Cancel)
+                {
+                    return;
+                }
             }
 
             //Validate username and password

@@ -29,7 +29,6 @@ namespace GameTech.B3Reports
                 x.WindowState = FormWindowState.Maximized;
                 x.ControlBox = false;
                 x.FormBorderStyle = FormBorderStyle.None;
-
                 x.Text = string.Empty;
             }
         }

@@ -99,7 +99,7 @@
             // numCallSpeed
             // 
             this.numCallSpeed.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numCallSpeed.Location = new System.Drawing.Point(274, 289);
+            this.numCallSpeed.Location = new System.Drawing.Point(274, 295);
             this.numCallSpeed.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -112,7 +112,7 @@
             0});
             this.numCallSpeed.Name = "numCallSpeed";
             this.numCallSpeed.Size = new System.Drawing.Size(120, 26);
-            this.numCallSpeed.TabIndex = 83;
+            this.numCallSpeed.TabIndex = 13;
             this.numCallSpeed.Tag = "7";
             this.numCallSpeed.Value = new decimal(new int[] {
             500,
@@ -123,7 +123,7 @@
             // numMaxCallsBonus
             // 
             this.numMaxCallsBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCallsBonus.Location = new System.Drawing.Point(274, 249);
+            this.numMaxCallsBonus.Location = new System.Drawing.Point(274, 255);
             this.numMaxCallsBonus.Maximum = new decimal(new int[] {
             30,
             0,
@@ -136,7 +136,7 @@
             0});
             this.numMaxCallsBonus.Name = "numMaxCallsBonus";
             this.numMaxCallsBonus.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCallsBonus.TabIndex = 82;
+            this.numMaxCallsBonus.TabIndex = 11;
             this.numMaxCallsBonus.Tag = "6";
             this.numMaxCallsBonus.Value = new decimal(new int[] {
             30,
@@ -147,7 +147,7 @@
             // numMaxPatternBonus
             // 
             this.numMaxPatternBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxPatternBonus.Location = new System.Drawing.Point(274, 209);
+            this.numMaxPatternBonus.Location = new System.Drawing.Point(274, 215);
             this.numMaxPatternBonus.Maximum = new decimal(new int[] {
             12,
             0,
@@ -160,7 +160,7 @@
             0});
             this.numMaxPatternBonus.Name = "numMaxPatternBonus";
             this.numMaxPatternBonus.Size = new System.Drawing.Size(120, 26);
-            this.numMaxPatternBonus.TabIndex = 81;
+            this.numMaxPatternBonus.TabIndex = 9;
             this.numMaxPatternBonus.Tag = "5";
             this.numMaxPatternBonus.Value = new decimal(new int[] {
             12,
@@ -175,7 +175,7 @@
             this.label10.Location = new System.Drawing.Point(58, 257);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(124, 22);
-            this.label10.TabIndex = 80;
+            this.label10.TabIndex = 10;
             this.label10.Text = "Max  Calls Bonus";
             // 
             // label6
@@ -185,7 +185,7 @@
             this.label6.Location = new System.Drawing.Point(58, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 22);
-            this.label6.TabIndex = 79;
+            this.label6.TabIndex = 12;
             this.label6.Text = "Call Speed";
             // 
             // label5
@@ -195,17 +195,17 @@
             this.label5.Location = new System.Drawing.Point(58, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 22);
-            this.label5.TabIndex = 78;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Max  Pattern Bonus";
             // 
             // chkbxSingleOfferBonus
             // 
             this.chkbxSingleOfferBonus.AutoSize = true;
             this.chkbxSingleOfferBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbxSingleOfferBonus.Location = new System.Drawing.Point(496, 129);
+            this.chkbxSingleOfferBonus.Location = new System.Drawing.Point(496, 135);
             this.chkbxSingleOfferBonus.Name = "chkbxSingleOfferBonus";
             this.chkbxSingleOfferBonus.Size = new System.Drawing.Size(159, 26);
-            this.chkbxSingleOfferBonus.TabIndex = 77;
+            this.chkbxSingleOfferBonus.TabIndex = 16;
             this.chkbxSingleOfferBonus.Text = "Single Offer Bonus";
             this.chkbxSingleOfferBonus.UseVisualStyleBackColor = true;
             // 
@@ -234,7 +234,7 @@
             this.chkbxDenom5d.Location = new System.Drawing.Point(48, 312);
             this.chkbxDenom5d.Name = "chkbxDenom5d";
             this.chkbxDenom5d.Size = new System.Drawing.Size(88, 26);
-            this.chkbxDenom5d.TabIndex = 49;
+            this.chkbxDenom5d.TabIndex = 7;
             this.chkbxDenom5d.Text = "5 dollars";
             this.chkbxDenom5d.UseVisualStyleBackColor = true;
             // 
@@ -244,7 +244,7 @@
             this.chkbxDenom1.Location = new System.Drawing.Point(48, 32);
             this.chkbxDenom1.Name = "chkbxDenom1";
             this.chkbxDenom1.Size = new System.Drawing.Size(73, 26);
-            this.chkbxDenom1.TabIndex = 48;
+            this.chkbxDenom1.TabIndex = 0;
             this.chkbxDenom1.Tag = "5";
             this.chkbxDenom1.Text = "1 cent";
             this.chkbxDenom1.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             this.chkbxDenom5.Location = new System.Drawing.Point(48, 72);
             this.chkbxDenom5.Name = "chkbxDenom5";
             this.chkbxDenom5.Size = new System.Drawing.Size(79, 26);
-            this.chkbxDenom5.TabIndex = 47;
+            this.chkbxDenom5.TabIndex = 1;
             this.chkbxDenom5.Text = "5 cents";
             this.chkbxDenom5.UseVisualStyleBackColor = true;
             // 
@@ -269,7 +269,7 @@
             this.chkbxDenom10.Location = new System.Drawing.Point(48, 112);
             this.chkbxDenom10.Name = "chkbxDenom10";
             this.chkbxDenom10.Size = new System.Drawing.Size(87, 26);
-            this.chkbxDenom10.TabIndex = 46;
+            this.chkbxDenom10.TabIndex = 2;
             this.chkbxDenom10.Text = "10 cents";
             this.chkbxDenom10.UseVisualStyleBackColor = true;
             // 
@@ -281,7 +281,7 @@
             this.chkbxDenom2d.Location = new System.Drawing.Point(48, 272);
             this.chkbxDenom2d.Name = "chkbxDenom2d";
             this.chkbxDenom2d.Size = new System.Drawing.Size(88, 26);
-            this.chkbxDenom2d.TabIndex = 45;
+            this.chkbxDenom2d.TabIndex = 6;
             this.chkbxDenom2d.Text = "2 dollars";
             this.chkbxDenom2d.UseVisualStyleBackColor = true;
             // 
@@ -293,7 +293,7 @@
             this.chkbxDenom50.Location = new System.Drawing.Point(48, 192);
             this.chkbxDenom50.Name = "chkbxDenom50";
             this.chkbxDenom50.Size = new System.Drawing.Size(87, 26);
-            this.chkbxDenom50.TabIndex = 44;
+            this.chkbxDenom50.TabIndex = 4;
             this.chkbxDenom50.Text = "50 cents";
             this.chkbxDenom50.UseVisualStyleBackColor = true;
             // 
@@ -305,7 +305,7 @@
             this.chkbxDenom1d.Location = new System.Drawing.Point(48, 232);
             this.chkbxDenom1d.Name = "chkbxDenom1d";
             this.chkbxDenom1d.Size = new System.Drawing.Size(82, 26);
-            this.chkbxDenom1d.TabIndex = 43;
+            this.chkbxDenom1d.TabIndex = 5;
             this.chkbxDenom1d.Text = "1 dollar";
             this.chkbxDenom1d.UseVisualStyleBackColor = true;
             // 
@@ -317,14 +317,14 @@
             this.chkbxDenom25.Location = new System.Drawing.Point(48, 152);
             this.chkbxDenom25.Name = "chkbxDenom25";
             this.chkbxDenom25.Size = new System.Drawing.Size(87, 26);
-            this.chkbxDenom25.TabIndex = 42;
+            this.chkbxDenom25.TabIndex = 3;
             this.chkbxDenom25.Text = "25 cents";
             this.chkbxDenom25.UseVisualStyleBackColor = true;
             // 
             // numMaxCalls
             // 
             this.numMaxCalls.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCalls.Location = new System.Drawing.Point(274, 169);
+            this.numMaxCalls.Location = new System.Drawing.Point(274, 175);
             this.numMaxCalls.Maximum = new decimal(new int[] {
             24,
             0,
@@ -337,7 +337,7 @@
             0});
             this.numMaxCalls.Name = "numMaxCalls";
             this.numMaxCalls.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCalls.TabIndex = 66;
+            this.numMaxCalls.TabIndex = 7;
             this.numMaxCalls.Tag = "4";
             this.numMaxCalls.Value = new decimal(new int[] {
             24,
@@ -348,7 +348,7 @@
             // numMaxPattern
             // 
             this.numMaxPattern.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxPattern.Location = new System.Drawing.Point(274, 129);
+            this.numMaxPattern.Location = new System.Drawing.Point(274, 135);
             this.numMaxPattern.Maximum = new decimal(new int[] {
             12,
             0,
@@ -361,7 +361,7 @@
             0});
             this.numMaxPattern.Name = "numMaxPattern";
             this.numMaxPattern.Size = new System.Drawing.Size(120, 26);
-            this.numMaxPattern.TabIndex = 65;
+            this.numMaxPattern.TabIndex = 5;
             this.numMaxPattern.Tag = "3";
             this.numMaxPattern.Value = new decimal(new int[] {
             12,
@@ -372,7 +372,7 @@
             // numMaxBetLevel
             // 
             this.numMaxBetLevel.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxBetLevel.Location = new System.Drawing.Point(274, 89);
+            this.numMaxBetLevel.Location = new System.Drawing.Point(274, 95);
             this.numMaxBetLevel.Maximum = new decimal(new int[] {
             255,
             0,
@@ -385,7 +385,7 @@
             0});
             this.numMaxBetLevel.Name = "numMaxBetLevel";
             this.numMaxBetLevel.Size = new System.Drawing.Size(120, 26);
-            this.numMaxBetLevel.TabIndex = 64;
+            this.numMaxBetLevel.TabIndex = 3;
             this.numMaxBetLevel.Tag = "2";
             this.numMaxBetLevel.Value = new decimal(new int[] {
             1,
@@ -396,7 +396,7 @@
             // numMaxCards
             // 
             this.numMaxCards.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCards.Location = new System.Drawing.Point(274, 49);
+            this.numMaxCards.Location = new System.Drawing.Point(274, 55);
             this.numMaxCards.Maximum = new decimal(new int[] {
             6,
             0,
@@ -409,7 +409,7 @@
             0});
             this.numMaxCards.Name = "numMaxCards";
             this.numMaxCards.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCards.TabIndex = 63;
+            this.numMaxCards.TabIndex = 1;
             this.numMaxCards.Tag = "1";
             this.numMaxCards.Value = new decimal(new int[] {
             6,
@@ -420,30 +420,30 @@
             // chkbxAutoCall
             // 
             this.chkbxAutoCall.AutoSize = true;
-            this.chkbxAutoCall.Location = new System.Drawing.Point(496, 49);
+            this.chkbxAutoCall.Location = new System.Drawing.Point(496, 55);
             this.chkbxAutoCall.Name = "chkbxAutoCall";
             this.chkbxAutoCall.Size = new System.Drawing.Size(92, 26);
-            this.chkbxAutoCall.TabIndex = 62;
+            this.chkbxAutoCall.TabIndex = 14;
             this.chkbxAutoCall.Text = "Auto Call";
             this.chkbxAutoCall.UseVisualStyleBackColor = true;
             // 
             // chkbxAutoPlay
             // 
             this.chkbxAutoPlay.AutoSize = true;
-            this.chkbxAutoPlay.Location = new System.Drawing.Point(496, 89);
+            this.chkbxAutoPlay.Location = new System.Drawing.Point(496, 95);
             this.chkbxAutoPlay.Name = "chkbxAutoPlay";
             this.chkbxAutoPlay.Size = new System.Drawing.Size(95, 26);
-            this.chkbxAutoPlay.TabIndex = 61;
+            this.chkbxAutoPlay.TabIndex = 15;
             this.chkbxAutoPlay.Text = "Auto Play";
             this.chkbxAutoPlay.UseVisualStyleBackColor = true;
             // 
             // chkbxHideCardSerialNumber
             // 
             this.chkbxHideCardSerialNumber.AutoSize = true;
-            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(496, 169);
+            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(496, 175);
             this.chkbxHideCardSerialNumber.Name = "chkbxHideCardSerialNumber";
             this.chkbxHideCardSerialNumber.Size = new System.Drawing.Size(205, 26);
-            this.chkbxHideCardSerialNumber.TabIndex = 59;
+            this.chkbxHideCardSerialNumber.TabIndex = 17;
             this.chkbxHideCardSerialNumber.Text = "Hide Card Serial Number";
             this.chkbxHideCardSerialNumber.UseVisualStyleBackColor = true;
             // 
@@ -454,7 +454,7 @@
             this.label4.Location = new System.Drawing.Point(58, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 22);
-            this.label4.TabIndex = 54;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Max  Calls";
             // 
             // label3
@@ -464,7 +464,7 @@
             this.label3.Location = new System.Drawing.Point(58, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 22);
-            this.label3.TabIndex = 53;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Max  Patterns";
             // 
             // label1
@@ -474,7 +474,7 @@
             this.label1.Location = new System.Drawing.Point(58, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 22);
-            this.label1.TabIndex = 52;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Max Bet Level";
             // 
             // label2
@@ -484,7 +484,7 @@
             this.label2.Location = new System.Drawing.Point(58, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 22);
-            this.label2.TabIndex = 51;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Max  Cards";
             // 
             // GameSettingWildBallForm

@@ -131,7 +131,7 @@ namespace GameTech.B3Reports.Forms
             label18.Text = string.Empty;
 
 
-            if (cmbxGameName.SelectedIndex != -1 && cmbxGameName.SelectedItem.ToString() != "ALL")
+            if (cmbxGameName.SelectedIndex != -1 && cmbxGameName.SelectedItem.ToString() != "All")
             {
                 chkbxGameNumber.Enabled = true;
             }
@@ -311,7 +311,7 @@ namespace GameTech.B3Reports.Forms
         private void cmbxGameName_SelectedIndexChanged(object sender, EventArgs e)
         {
             ClearErrorProvider();
-            if (cmbxGameName.SelectedIndex != -1 && cmbxGameName.SelectedItem.ToString() != "ALL")
+            if (cmbxGameName.SelectedIndex != -1 && cmbxGameName.SelectedItem.ToString() != "All")
             {
                 cmbxGameNumberStart.Items.Clear();
                 GameNumEnd = 0;
@@ -357,13 +357,13 @@ namespace GameTech.B3Reports.Forms
                     cmbxGameNumberStart.SelectedIndex = 0;
                 }
             }
-            else if (cmbxGameName.SelectedItem.ToString() == "ALL")
+            else if (cmbxGameName.SelectedItem.ToString() == "All")
             {
                 chkbxGameNumber.Checked = false;
                 chkbxCardNumber.Checked = false;
                 chkbxGameNumber.Enabled = false;
                 chkbxCardNumber.Enabled = false;
-                SelectedB4Game = "ALL";
+                SelectedB4Game = "All";
             }
             else if (cmbxGameName.SelectedIndex == -1)
             {
@@ -676,7 +676,7 @@ namespace GameTech.B3Reports.Forms
             if (txtbxAccountNumber.Text != string.Empty && cmbxGameName.Items.Count != 0)
             {
                 ShowCardPanel();
-                if (SelectedB4Game == "ALL" || cmbxGameName.Items.Count == 1)
+                if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
                 {
                     GetInfoALL();
                 }
@@ -816,7 +816,7 @@ namespace GameTech.B3Reports.Forms
 
                 Status = 2;
 
-            if (SelectedB4Game == "ALL" || cmbxGameName.Items.Count == 1)
+            if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
             {
                 GetInfoALL();
             }
@@ -1083,7 +1083,6 @@ namespace GameTech.B3Reports.Forms
                     {
                         lblSerialN6.Text = TempCardNumber.ToString();
                     }
-                    TempCardNumber = TempCardNumber + 1;
 
                 }//if its false let us hide the bingo cards
                 else
@@ -1115,7 +1114,8 @@ namespace GameTech.B3Reports.Forms
                         lblSerialN6.Text = string.Empty;
                     }             
                 }
-                //TempCardNumber = TempCardNumber + 1;
+
+                TempCardNumber ++;
                 CountUpToSix = CountUpToSix + 1;
             }
 

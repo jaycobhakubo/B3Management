@@ -197,6 +197,7 @@
     <Compile Include="%28cs%29Get\GetSystemConfig.cs" />
     <Compile Include="%28cs%29Get\GetSystemInfo.cs" />
     <Compile Include="%28cs%29Get\OtherSQLgetCmd.cs" />
+    <Compile Include="%28cs%29Other\B3DatabaseConnection.cs" />
     <Compile Include="%28cs%29Other\GameSettings.cs" />
     <Compile Include="%28cs%29Set\SetGameSettingsWildBall.cs" />
     <Compile Include="%28cs%29Set\SetNDSettings.cs" />
@@ -278,6 +279,12 @@
     </Compile>
     <Compile Include="Forms\ClientAccessControl.Designer.cs">
       <DependentUpon>ClientAccessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DatabaseConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DatabaseConnectionForm.Designer.cs">
+      <DependentUpon>DatabaseConnectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GameSettingWildBallForm.cs">
       <SubType>UserControl</SubType>
@@ -607,6 +614,9 @@
     <Compile Include="%28cs%29Other\WriteLog.cs" />
     <EmbeddedResource Include="Forms\ClientAccessControl.resx">
       <DependentUpon>ClientAccessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DatabaseConnectionForm.resx">
+      <DependentUpon>DatabaseConnectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GameSettingWildBallForm.resx">
       <DependentUpon>GameSettingWildBallForm.cs</DependentUpon>
