@@ -154,7 +154,7 @@ declare @MinPlayer int
 
 --Is either B3 class II or Class III
 --if (select COUNT(*) from @GameBallData) != 0 --Class II
-if (@MinPlayer > 1)
+if (@MinPlayer > 1or (select COUNT(*) from @GameBallData) > 0 )
 begin   insert into @GameBallData2
 		(
 				ServerGameNumber 
