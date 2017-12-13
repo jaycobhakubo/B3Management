@@ -14,10 +14,6 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
-
-
-
 CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 (
 @PatterName varchar(100),
@@ -46,12 +42,9 @@ declare @TempWinningCardNumber int
 declare @C_Card nvarchar(100)
 declare @TempCardNumber varchar(10)
 declare @result2 int
-
 --For Mayamoney Bonus round
 declare @PreviousCardWinner int
 declare @CountPreviousCardWinner int set @CountPreviousCardWinner = 0
-
-
 
 if (@PatterName is null or @PatterName = 'NULL')
 begin
@@ -61,9 +54,10 @@ end
 set  @WinningCardNumber3 = '';
 set @Exists = 1
 set @WinningNumber = ''
---set @RangeWinCardNumber = (select dbo.B3_fnGetWinningCardNumber2 (@SessionNumber, @GameID, @BallCallType))
+
 exec dbo.usp_management_GetWinningCardNumber2 @SessionNumber, @GameID, @BallCallType, @RangeWinCardNumber output	
-set @BallCall = (select dbo.B3fn_server_BallCallwGameID(@SessionNumber, @GameID, @BallCallType, @GameName))
+exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @BallCall output
+
 set @BallCall = ','+ @BallCall+',0,' set @BallCall = REPLACE(@BallCall,' ','')
 set @C_Card = @RangeWinCardNumber set @C_Card = REPLACE(@C_Card,' ','')+',' 
 set @result2 = (select CHARINDEX(',',@C_Card))
@@ -103,8 +97,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 
 									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
-									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output	
-									--set @Exists = (select dbo.b3_fnCheckCardIfWin4(@TempN, @BallCall, @m_CardN))						
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output													
 									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
 									set @result = (select CHARINDEX('|',@tempValue))
 
@@ -115,7 +108,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -157,8 +150,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								while (@result != 0 and @Exists =1)
 								begin
 								    set @TempN = SUBSTRING(@tempValue, 0, @result) 	
-									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
-									--set @Exists = (select dbo.b3_fnCheckCardIfWin4(@TempN, @BallCall, @m_CardN))	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output															
 									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
 									set @result = (select CHARINDEX('|',@tempValue))
 								end
@@ -166,7 +158,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -175,6 +167,92 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							end 
 							close Pattern_Cursor
 							deallocate Pattern_Cursor	
+						end
+
+						else if (@PatterName = 'Up and Down')
+						begin
+				
+							delete from @Pattern
+							insert into @Pattern  values ('3|7|11|17|23|' )
+							insert into @Pattern  values ('3|9|15|19|23|' )
+							
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+						
+							else if (@PatterName = 'Crazy V')
+						begin
+				
+							delete from @Pattern
+							insert into @Pattern  values ('1|7|13|17|21|')
+							insert into @Pattern  values ('1|5|7|9|13|')
+							insert into @Pattern  values ('5|9|13|19|25|' )
+							insert into @Pattern  values ('13|17|19|21|25|' )
+							
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
 						end
 
 						else if (@PatterName = 'Crazy Stamp' Or @PatterName = 'Cellblock 4')
@@ -208,7 +286,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -256,7 +334,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -301,7 +379,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -347,7 +425,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -393,7 +471,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -439,7 +517,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -488,7 +566,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -535,7 +613,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -581,7 +659,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -627,7 +705,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -676,7 +754,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -762,7 +840,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -811,7 +889,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -858,7 +936,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -906,7 +984,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -953,7 +1031,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1003,7 +1081,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1052,7 +1130,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1095,7 +1173,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1144,7 +1222,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1187,7 +1265,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1228,7 +1306,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1271,7 +1349,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1313,7 +1391,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1354,7 +1432,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1396,7 +1474,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1438,7 +1516,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1478,7 +1556,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1517,7 +1595,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1555,7 +1633,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1674,7 +1752,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1721,7 +1799,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1769,7 +1847,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -1811,7 +1889,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1850,7 +1928,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1889,7 +1967,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1928,7 +2006,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								if (@Exists = 1)--WINNER
 								begin
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end		
 								
 								set @Exists = 1
@@ -1971,7 +2049,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -2020,7 +2098,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -2066,7 +2144,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -2113,7 +2191,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 								begin
 									 --select cast(@m_CardN as varchar(10))
 									set @WinnerCount = @WinnerCount + 1
-									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', '
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
 								end
 		
 								set @Exists = 1
@@ -2296,19 +2374,6 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		--select  @WinningCardNumber3
 
 end					
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 GO
 
