@@ -340,7 +340,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginFullWin_FormClosing);
-            this.Load += new System.EventHandler(this.LoginFullWin_Load);
             this.LocationChanged += new System.EventHandler(this.LoginFullWin_LocationChanged);
             this.VisibleChanged += new System.EventHandler(this.LoginFullWin_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

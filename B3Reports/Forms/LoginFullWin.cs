@@ -416,8 +416,8 @@ namespace GameTech.B3Reports.Forms
 
         #region EVENTS
 
-        private void LoginFullWin_Load(object sender, EventArgs e)
-        {
+        //private void LoginFullWin_Load(object sender, EventArgs e)
+        //{
             //var databaseConnection = new DatabaseConnectionForm(true);
 
             //var results = databaseConnection.ShowDialog();
@@ -450,7 +450,7 @@ namespace GameTech.B3Reports.Forms
 
             //label2.Text = "Version 4.2.0     09/15/2015     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
             //label3.Text = "\u00a9" + " Copyright 2015 Fortunet, Inc. All Rights Reserved";
-        }
+        //}
 
         private void InitSqlConnection()
         {
