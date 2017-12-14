@@ -15,7 +15,6 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-
 CREATE proc [dbo].[spRptPayouts2]
 (
 --declare
@@ -2514,16 +2513,14 @@ Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, Credit
 Order By ServerGameNum
 end
 
-declare @ServerGamenum int, @PayoutType int, @Pattername varchar(50), @SessionNumber int, @GameName varchar(50)
-
-
+declare @ServerGamenum int, @RegGameNumber int, @PayoutType int, @Pattername varchar(50), @SessionNumber int, @GameName varchar(50)
 
 declare GetWinningCardNumber_Cursor cursor
 for 
 select 
 		SessNum,
-		--GameNum	,
 		ServerGameNum ,
+		GameNum	,
 		--GameDate ,
 		GameName ,
 		case when PayoutType = 'Regular' then 0 else 1 end,
@@ -2539,16 +2536,13 @@ select
 		open GetWinningCardNumber_Cursor
 
 		FETCH NEXT FROM GetWinningCardNumber_Cursor 
-		INTO  @SessionNumber, @ServerGamenum, @GameName,  @PayoutType,  @Pattername
-
+		INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername
 		
 		while @@fetch_status = 0
 		begin
-
-		--select @SessionNumber, @ServerGamenum, @PayoutType,  @Pattername
-
-			declare @WinningCardNumber varchar(100)
-			exec usp_management_rptGetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @GameName , @WinningCardNumber OUTPUT
+		
+	    declare @WinningCardNumber varchar(100)
+		exec usp_management_rptGetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName , @WinningCardNumber OUTPUT
 	 
 
 				if (@Pattername is null )
@@ -2570,7 +2564,7 @@ select
 			end
 
 					FETCH NEXT FROM GetWinningCardNumber_Cursor 
-		INTO  @SessionNumber, @ServerGamenum, @GameName,  @PayoutType,  @Pattername
+	INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername
 		end
 
 close GetWinningCardNumber_Cursor
@@ -2592,19 +2586,6 @@ select
 		PatternName ,
 		WinningCardNumber
 		from @Result2 order by GameDate asc
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 GO
 
