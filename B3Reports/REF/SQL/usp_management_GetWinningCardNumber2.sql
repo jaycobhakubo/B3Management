@@ -17,6 +17,8 @@ GO
 
 
 
+
+
 CREATE  proc [dbo].[usp_management_GetWinningCardNumber2]
 (
 --declare 
@@ -39,10 +41,10 @@ CREATE  proc [dbo].[usp_management_GetWinningCardNumber2]
 as
 begin
 
-if exists (select 1 from Server_GameJournal where ServerGameNumber = @GameNumber )
-BEGIN 
-set @GameNumber = (select GameNumber from Server_GameJournal where ServerGameNumber = @GameNumber)
-END
+--if exists (select 1 from Server_GameJournal where ServerGameNumber = @GameNumber )
+--BEGIN 
+--set @GameNumber = (select GameNumber from Server_GameJournal where ServerGameNumber = @GameNumber)
+--END
 
 declare @ListOfGameName Table (GameName varchar(50))
 declare @NCardbet int
@@ -227,6 +229,8 @@ END
 return 				
 end
 		
+
+
 
 GO
 

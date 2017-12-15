@@ -15,6 +15,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
+
 CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 (
 @PatterName varchar(100),
@@ -59,7 +61,7 @@ set @Exists = 1
 set @WinningNumber = ''
 
 exec dbo.usp_management_GetWinningCardNumber2 @SessionNumber, @RegGameID, @BallCallType, @RangeWinCardNumber output	
-exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @BallCall output
+exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @IsServerGame,@BallCall output
 
 set @BallCall = ','+ @BallCall+',0,' set @BallCall = REPLACE(@BallCall,' ','')
 set @C_Card = @RangeWinCardNumber set @C_Card = REPLACE(@C_Card,' ','')+',' 
@@ -2417,6 +2419,8 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		--NOTE: Number of winners is reported in payout(sp).
 		return 
 end					
+
+
 
 
 

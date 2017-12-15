@@ -1,8 +1,8 @@
 ﻿USE [B3]
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[B3fn_server_BallCallwGameID]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
-DROP FUNCTION [dbo].[B3fn_server_BallCallwGameID]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_Report_BallCallwGameID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_management_Report_BallCallwGameID]
 GO
 
 USE [B3]
@@ -15,12 +15,15 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE  function [dbo].[B3fn_server_BallCallwGameID]
-    (@session int,
+CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
+    (
+    @session int,
     @GameID int,
 	@BallCallType int,
-	@GameName2 varchar(50)) --0  = regular; 1 = bonus
-returns  nvarchar(max)
+	@GameName2 varchar(50), --0  = regular; 1 = bonus
+	@IsServerGame bit,
+	@returns  nvarchar(max) output
+	)
 as
 begin
 	declare @GameBallData2 table
@@ -53,24 +56,28 @@ begin
         , @bonusBallCount int
         
     -- Gather all of the base game data
-    insert into @GameBallData
-        (ServerGameNumber
-        , DTSTamp
-        , GameTypeId
-        , GameTableName
-        , GameName
-        , GameBallCount)
-    select distinct
-        sg.ServerGame
-        , sg.DTStamp
-        , sgj.GameTypeId
-        , sgt.TableName
-        , sgt.DisplayName
-        , case when ConsolationBallIndex is null then 24 else (ConsolationBallIndex - 1) end -- Index is 1 based
-        from Server_Game sg
-            join Server_GameJournal sgj on sg.ServerGame = sgj.ServerGameNumber
-            join Server_GameTypes sgt on sgj.GameTypeId = sgt.GameTypeId
-        where SessionNumber = @session
+    if (@IsServerGame = 1)
+    BEGIN
+		insert into @GameBallData
+			(ServerGameNumber
+			, DTSTamp
+			, GameTypeId
+			, GameTableName
+			, GameName
+			, GameBallCount)
+		select distinct
+			sg.ServerGame
+			, sg.DTStamp
+			, sgj.GameTypeId
+			, sgt.TableName
+			, sgt.DisplayName
+			, case when ConsolationBallIndex is null then 24 else (ConsolationBallIndex - 1) end -- Index is 1 based
+			from Server_Game sg
+				join Server_GameJournal sgj on sg.ServerGame = sgj.ServerGameNumber
+				join Server_GameTypes sgt on sgj.GameTypeId = sgt.GameTypeId
+			where SessionNumber = @session
+			  and sgt.DisplayName = @GameName2
+      END
 
     -- Gather all of the bonus game data to determine if a bonus game was played and
     --  how many balls were called 
@@ -154,7 +161,7 @@ declare @MinPlayer int
 
 --Is either B3 class II or Class III
 --if (select COUNT(*) from @GameBallData) != 0 --Class II
-if (@MinPlayer > 1or (select COUNT(*) from @GameBallData) > 0 )
+if (@MinPlayer > 1 or (select COUNT(*) from @GameBallData) > 0 )
 begin   insert into @GameBallData2
 		(
 				ServerGameNumber 
@@ -215,16 +222,10 @@ end
 
 declare @result nvarchar(max) 
 set @result = (select case when @BallCallType = 0 or GameName = 'Maya Money' then GameBalls else BonusBalls end as BallCall from @GameBallData2)
+set @returns = @result
 
-return @result
+return 
 end
-
-
-
-
-
-
-
 
 
 GO
