@@ -15,7 +15,6 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-
 CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 (
 @PatterName varchar(100),
@@ -24,6 +23,7 @@ CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 @GameID int,
 @RegGameID int,
 @GameName varchar(50),
+@IsServerGame bit,
 @WinningCardNumber3 varchar(500) OUTPUT
 )
 as
@@ -2417,6 +2417,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		--NOTE: Number of winners is reported in payout(sp).
 		return 
 end					
+
 
 
 GO
