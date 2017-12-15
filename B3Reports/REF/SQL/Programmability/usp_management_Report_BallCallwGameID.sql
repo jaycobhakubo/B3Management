@@ -14,7 +14,6 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
 CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
     (
     @session int,
@@ -226,7 +225,6 @@ set @returns = @result
 
 return 
 end
-
 
 GO
 

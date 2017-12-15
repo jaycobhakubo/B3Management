@@ -16,6 +16,7 @@ GO
 
 
 
+
 CREATE proc [dbo].[spRptPayouts2]
 (
 --declare
@@ -2416,7 +2417,8 @@ declare @Result2 table
 		NumberWinners int,
 		WinAmount money,
 		PatternName varchar(32),
-		WinningCardNumber nvarchar(4000)
+		WinningCardNumber nvarchar(4000),
+		IsServerGame bit
 )
 
 
@@ -2437,7 +2439,8 @@ SessNum ,
 		BetLevel ,
 		NumberWinners ,
 		WinAmount ,
-		PatternName 
+		PatternName ,
+		IsServerGame
 )
 Select 
 		SessNum ,
@@ -2463,7 +2466,8 @@ Select
 		BetLevel ,
 		NumberWinners ,
 		WinAmount, 
-		PatternName 
+		PatternName ,
+		case  when ServerGameNum is null  then 0 else 1 end
 					--(select dbo.B3_fnGetWinningCardNumber(PatternName, SessNum, 1, GameNum ))  as WinningCardNumber  
 From @Results
 Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName --, GameWinAmt, BonusWinAmt, TotalPaidAmt
@@ -2486,7 +2490,8 @@ insert into @Result2
 		BetLevel ,
 		NumberWinners ,
 		WinAmount ,
-		PatternName 
+		PatternName,
+		IsServerGame  
 )
 Select 
 		SessNum ,
@@ -2507,23 +2512,22 @@ Select
 		BetLevel ,
 		NumberWinners ,
 		WinAmount, 
-		PatternName
+		PatternName, 
+		case  when ServerGameNum is null  then 0 else 1 end
 		--(select dbo.B3_fnGetWinningCardNumber(PatternName, SessNum, 1, GameNum ))  as WinningCardNumber
 From @Results 
 Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName --, GameWinAmt, BonusWinAmt, TotalPaidAmt
 Order By ServerGameNum
 end
 
-declare @ServerGamenum int, @PayoutType int, @Pattername varchar(50), @SessionNumber int, @GameName varchar(50)
-
-
+declare @ServerGamenum int, @RegGameNumber int, @PayoutType int, @Pattername varchar(50), @SessionNumber int, @GameName varchar(50), @IsServerGame bit
 
 declare GetWinningCardNumber_Cursor cursor
 for 
 select 
 		SessNum,
-		--GameNum	,
 		ServerGameNum ,
+		GameNum	,
 		--GameDate ,
 		GameName ,
 		case when PayoutType = 'Regular' then 0 else 1 end,
@@ -2533,22 +2537,20 @@ select
 		--BetLevel ,
 		--NumberWinners ,
 		--WinAmount ,
-		PatternName 
+		PatternName,
+		IsServerGame 
 		from @Result2 
 
 		open GetWinningCardNumber_Cursor
 
 		FETCH NEXT FROM GetWinningCardNumber_Cursor 
-		INTO  @SessionNumber, @ServerGamenum, @GameName,  @PayoutType,  @Pattername
-
+				INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
 		
 		while @@fetch_status = 0
 		begin
-
-		--select @SessionNumber, @ServerGamenum, @PayoutType,  @Pattername
-
-			declare @WinningCardNumber varchar(100)
-			exec usp_management_rptGetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @GameName , @WinningCardNumber OUTPUT
+		
+	    declare @WinningCardNumber varchar(100)
+		exec usp_management_rptGetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @WinningCardNumber OUTPUT
 	 
 
 				if (@Pattername is null )
@@ -2570,7 +2572,7 @@ select
 			end
 
 					FETCH NEXT FROM GetWinningCardNumber_Cursor 
-		INTO  @SessionNumber, @ServerGamenum, @GameName,  @PayoutType,  @Pattername
+			INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
 		end
 
 close GetWinningCardNumber_Cursor
@@ -2592,17 +2594,6 @@ select
 		PatternName ,
 		WinningCardNumber
 		from @Result2 order by GameDate asc
-
-
-
-
-
-
-
-
-
-
-
 
 
 
