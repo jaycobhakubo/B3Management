@@ -17,6 +17,7 @@ GO
 
 
 
+
 CREATE proc [dbo].[spRptPayouts2]
 (
 --declare
@@ -2594,6 +2595,7 @@ select
 		PatternName ,
 		WinningCardNumber
 		from @Result2 order by GameDate asc
+
 
 
 

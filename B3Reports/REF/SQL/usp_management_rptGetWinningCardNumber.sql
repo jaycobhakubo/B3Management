@@ -401,7 +401,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 				
 							delete from @Pattern
 
-							insert into @Pattern  values ('7|9|13|17|19' )
+							insert into @Pattern  values ('7|9|13|17|19|' )
 
 							declare Pattern_Cursor cursor
 							for 
@@ -539,9 +539,9 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 				
 							delete from @Pattern
 
-							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23' )
-							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24' )
-							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25' )
+							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23|' )
+							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24|' )
+							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25|' )
 
 
 							declare Pattern_Cursor cursor
@@ -2303,7 +2303,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							insert into @Pattern  values ('1|5|21|25|' )
 
 							--Small X
-							insert into @Pattern  values ('7|9|13|17|19' )
+							insert into @Pattern  values ('7|9|13|17|19|' )
 
 							--Flower
 							insert into @Pattern  values ('8|12|13|14|18|' )
@@ -2312,9 +2312,9 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							insert into @Pattern  values ('3|11|13|15|23|' )
 
 							--Payramid
-							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23' )
-							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24' )
-							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25' )
+							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23|' )
+							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24|' )
+							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25|' )
 
 							--Steps
 							insert into @Pattern  values ('1|2|7|8|13|14|19|20|25|' )
