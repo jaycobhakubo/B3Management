@@ -19,6 +19,7 @@ GO
 
 
 
+
 CREATE  proc [dbo].[usp_management_GetWinningCardNumber2]
 (
 --declare 
@@ -160,7 +161,11 @@ BEGIN--1
 		set @ParmDefinition = N'@FirstCardNumberOUT varchar(10) OUTPUT'
 		
 		EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @FirstCardNumberOUT = @FirstCardNumber OUTPUT
-					
+			if (@GameName2 = 'dbo.WildFire_GameJournal game')
+			BEGIN
+				fetch next from Game_cursor into @GameName2
+			     continue
+			END		
 		if (@GameName2 != 'dbo.TimeBomb_GameJournal game')
 		BEGIN
 			if (@GameName2 != 'dbo.WildBall_GameJournal game')
@@ -229,6 +234,7 @@ END
 return 				
 end
 		
+
 
 
 

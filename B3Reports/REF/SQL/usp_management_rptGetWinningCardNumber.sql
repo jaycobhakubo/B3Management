@@ -16,9 +16,27 @@ GO
 
 
 
+--USE [B3]
+--GO
+
+--IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_rptGetWinningCardNumber]') AND type in (N'P', N'PC'))
+--DROP PROCEDURE [dbo].[usp_management_rptGetWinningCardNumber]
+--GO
+
+--USE [B3]
+--GO
+
+--SET ANSI_NULLS ON
+--GO
+
+--SET QUOTED_IDENTIFIER ON
+--GO
+
+
 
 CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 (
+--declare
 @PatterName varchar(100),
 @SessionNumber int, 
 @BallCallType int, --0 regular; 1 = bonus
@@ -27,6 +45,16 @@ CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
 @GameName varchar(50),
 @IsServerGame bit,
 @WinningCardNumber3 varchar(500) OUTPUT
+
+--Small X	1025	0	106	106	Maya Money	0
+--set @PatterName = 'Small X'
+--set @SessionNumber = 1025
+--set @BallCallType = 0
+--set @GameID = 106
+--set @RegGameID = 106
+--set @GameName = 'Maya Money'
+--set @IsServerGame = 0
+
 )
 as
 begin
@@ -60,6 +88,7 @@ set  @WinningCardNumber3 = '';
 set @Exists = 1
 set @WinningNumber = ''
 
+
 exec dbo.usp_management_GetWinningCardNumber2 @SessionNumber, @RegGameID, @BallCallType, @RangeWinCardNumber output	
 exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @IsServerGame,@BallCall output
 
@@ -69,6 +98,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 
 		while (@result2 != 0 and len(@C_Card) > 1)
 		begin	
+	
 					 set @TempCardNumber = SUBSTRING(@C_Card, 0, @result2) 
 					 set @m_CardN = cast(@TempCardNumber as int)
 					 
@@ -215,7 +245,45 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							close Pattern_Cursor
 							deallocate Pattern_Cursor
 						end
-						
+							else if (@PatterName = 'Spark')
+						begin
+				
+							delete from @Pattern
+							insert into @Pattern  values ('13|')
+							
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end						
 							else if (@PatterName = 'Crazy V')
 						begin
 				
@@ -304,12 +372,13 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 						end
 							else if (@PatterName = 'Any Six Pack')
 						begin
-				
+		
 							delete from @Pattern
 
 							--insert into @Pattern  values ('3|7|8|13|' )
 							--insert into @Pattern  values ('8|12|13|18|' )
 							--insert into @Pattern  values ('13|17|18|23|' )
+
 
 
 							declare Pattern_Cursor cursor
@@ -408,7 +477,6 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							select /*@tempValue =8*/ Design from @Pattern
 							open Pattern_Cursor
 							fetch next from Pattern_Cursor into @tempValue
-
 							while @@FETCH_STATUS = 0
 							begin
 
@@ -444,7 +512,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 						end
 							else if (@PatterName = 'Flower')
 						begin
-				
+			
 							delete from @Pattern
 
 							insert into @Pattern  values ('8|12|13|14|18|' )
@@ -539,9 +607,9 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 				
 							delete from @Pattern
 
-							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23|' )
-							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24|' )
-							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25|' )
+							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23' )
+							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24' )
+							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25' )
 
 
 							declare Pattern_Cursor cursor
@@ -1653,8 +1721,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 						begin
 				
 							delete from @Pattern
-							
-			
+						
 							set @dub1 = 1 set @dub2 = 2 set @dub3 = 3 set @dub4 = 6 set @dub5 = 7 set @dub6 = 8 
 							
 		
@@ -1705,7 +1772,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 													+cast(@dub5 + @count  as varchar(10))+'|'
 													+cast(@dub6 + @count  as varchar(10))+'|'
 
-								select @TempPattern
+								--select @TempPattern
 								insert into @Pattern  values(@TempPattern)
 							set @count2 = 5
 								while (@count2 != 15)
@@ -1718,7 +1785,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 													+cast(@dub6 + @count2 + @count as varchar(10))+'|'
 
 												
-												select @TempPattern
+												--select @TempPattern
 													insert into @Pattern  values(@TempPattern)
 													set @count2 = @count2 + 5
 								end
@@ -2312,9 +2379,9 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							insert into @Pattern  values ('3|11|13|15|23|' )
 
 							--Payramid
-							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23|' )
-							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24|' )
-							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25|' )
+							insert into @Pattern  values ('3|7|8|11|12|13|17|18|23' )
+							insert into @Pattern  values ('4|8|9|12|13|14|18|19|24' )
+							insert into @Pattern  values ('5|9|10|13|14|15|19|20|25' )
 
 							--Steps
 							insert into @Pattern  values ('1|2|7|8|13|14|19|20|25|' )
@@ -2418,7 +2485,11 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		end
 		--NOTE: Number of winners is reported in payout(sp).
 		return 
+		--select @WinningCardNumber3
 end					
+
+
+
 
 
 
