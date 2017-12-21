@@ -1,8 +1,8 @@
 ﻿USE [B3]
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_rptGetWinningCardNumber]') AND type in (N'P', N'PC'))
-DROP PROCEDURE [dbo].[usp_management_rptGetWinningCardNumber]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_Report_GetWinningCardNumber]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_management_Report_GetWinningCardNumber]
 GO
 
 USE [B3]
@@ -14,25 +14,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
---USE [B3]
---GO
-
---IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_rptGetWinningCardNumber]') AND type in (N'P', N'PC'))
---DROP PROCEDURE [dbo].[usp_management_rptGetWinningCardNumber]
---GO
-
---USE [B3]
---GO
-
---SET ANSI_NULLS ON
---GO
-
---SET QUOTED_IDENTIFIER ON
---GO
-
-
-
-CREATE proc [dbo].[usp_management_rptGetWinningCardNumber]
+CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 (
 
 @PatterName varchar(100),
