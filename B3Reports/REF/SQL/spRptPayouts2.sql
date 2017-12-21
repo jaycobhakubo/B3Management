@@ -2551,7 +2551,7 @@ select
 		begin
 		
 	    declare @WinningCardNumber varchar(100)
-		exec usp_management_rptGetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @WinningCardNumber OUTPUT
+		exec usp_management_Report_GetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @WinningCardNumber OUTPUT
 	 
 
 				if (@Pattername is null )
