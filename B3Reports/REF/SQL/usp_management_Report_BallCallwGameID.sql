@@ -15,6 +15,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
 CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
     (
     @session int,
@@ -27,24 +28,22 @@ CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
 	)
 AS BEGIN
 --===========TEST================
---1032	390	0	Wild Ball	0	41
+--1034	529	1	Wild Ball	1	41
 --declare 
---  @session int,
---  @GameID int,
+--	@session int,
+--	@GameID int,
 --	@BallCallType int,
 --	@GameName2 varchar(50), --0  = regular; 1 = bonus
 --	@IsServerGame bit,
 --	@GameTypeId int,
 --	@returns  nvarchar(max) --output
---	--1032	374	1	Wild Ball	0
-	
 
---	set @session = 1032
---	set @GameID = 390
---	set @BallCallType = 0
+--	set @session = 1034
+--	set @GameID = 529
+--	set @BallCallType = 1
 --	set @GameName2 = 'Wild Ball'
---	set @IsServerGame = 0
---		set @GameTypeId = 41
+--	set @IsServerGame = 1
+--	set @GameTypeId = 41
 --		BEGIN
 --===============================
 
@@ -116,8 +115,6 @@ AS BEGIN
     where sessnum = @session and gametypeid = 36 and bonuscardsn_1 != 0 and bonusofferaccepted != 0
     group by s.ServerGameNumber, cb.bonusCallCount, s.GameTypeId
     
-
-
     -- Find all of the Jail Break bonus games
     insert into @BonusGames
     select s.ServerGameNumber, s.GameTypeId, jb.bonuscallcount
@@ -126,7 +123,14 @@ AS BEGIN
     where sessnum = @session and gametypeid = 37 and jb.bonuscardsn_1 != 0 and jb.bonusofferaccepted != 0
     group by s.ServerGameNumber, jb.bonuscallcount, s.GameTypeId
     
-    
+ -- Find all of the Jail Break bonus games
+    insert into @BonusGames
+    select s.ServerGameNumber, s.GameTypeId, jb.bonuscallcount
+        from WildBall_GameJournal jb
+            join Server_GameJournal s on jb.gameNum = s.GameNumber
+    where sessnum = @session and gametypeid = 41 and jb.bonuscardsn_1 != 0 and jb.bonusofferaccepted != 0
+    group by s.ServerGameNumber, jb.bonuscallcount, s.GameTypeId
+       
     -- update the bonus ball count in the results table
     update @GameBallData
     set BonusBallCount = bg.BallCount
@@ -183,10 +187,11 @@ AS BEGIN
 declare @MinPlayer int 
  select  @MinPlayer  = MinPlayer  from Server_GameSettings
 
---Is either B3 class II or Class III
---if (select COUNT(*) from @GameBallData) != 0 --Class II
+
 if (@MinPlayer > 1 or (select COUNT(*) from @GameBallData) > 0 )
-begin   insert into @GameBallData2
+begin   
+
+insert into @GameBallData2
 		(
 				ServerGameNumber 
 				, DTStamp 
@@ -212,6 +217,7 @@ begin   insert into @GameBallData2
     from @GameBallData
     where ServerGameNumber = @GameID  and GameName = @GameName2
 	order by ServerGameNumber   
+	
 end
 
 else --Class III
@@ -244,7 +250,6 @@ begin
 end  
 
 
-
 declare @result nvarchar(max) 
 set @result = (select case when @BallCallType = 0 or GameName = 'Maya Money' then GameBalls else BonusBalls end as BallCall from @GameBallData2)
 set @returns = @result
@@ -252,13 +257,14 @@ set @returns = @result
 IF (@GameTypeId = 41 AND @BallCallType = 1)
 BEGIN
 	DECLARE @BonusBallCallWildBall  varchar(200)
-	exec usp_management_Report_GetBonusBallCallWildBall  @GameID, @BonusBallCallWildBall OUTPUT
+	exec usp_management_Report_GetBonusBallCallWildBall  @GameID,@IsServerGame, @BonusBallCallWildBall OUTPUT
 	set @returns = @returns +', '+@BonusBallCallWildBall
 END
 
 --select @returns
 return 
 end
+
 
 
 GO
