@@ -20,18 +20,21 @@ GO
 
 
 
+
 CREATE  proc [dbo].[usp_management_GetWinningCardNumber2]
 (
+
 --declare 
 @SessionNumber int, 
 @GameNumber int, 
 @PayoutType int,
+@GameTypeId int,
 @WinningCard nvarchar(500) OUTPUT
 --TEST
---set @SessionNumber = 1052
---set @GameNumber = 293
---set @PayoutType = 0
---returns nvarchar(500)
+--set @SessionNumber = 1028
+--set @GameNumber = 103
+--set @PayoutType = 1
+--set @GameTypeId = 41
 )
 --==============
 -- Author:			Fortunet
@@ -47,13 +50,14 @@ begin
 --set @GameNumber = (select GameNumber from Server_GameJournal where ServerGameNumber = @GameNumber)
 --END
 
-declare @ListOfGameName Table (GameName varchar(50))
+declare @ListOfGameName Table (GameName varchar(50),  GameTypeId int)
 declare @NCardbet int
 declare @sqlCommand nvarchar(max)
 declare @ParmDefinition nvarchar(500);
 declare @Counter int set @Counter = 0
 declare @FirstCardNumber varchar(10) 
 declare @GameName2 varchar(100)
+declare @GameTypeId2 int
 declare @CardNumber varchar(10) set @CardNumber = ''
 declare @ListOfCardNumber varchar(200) set @ListOfCardNumber = ''
 declare @ListOfCardNumber2 varchar(200) set @ListOfCardNumber2 = ''
@@ -65,13 +69,13 @@ declare @ListOfCardNumber2 varchar(200) set @ListOfCardNumber2 = ''
 --declare @Card5 bit
 --declare @Card6 bit
 
-insert into @ListOfGameName (GameName) values ('dbo.CrazyBout_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.MayaMoney_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.JailBreak_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.Spirit76_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.TimeBomb_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.WildFire_GameJournal game')
-insert into @ListOfGameName (GameName) values ('dbo.WildBall_GameJournal game')
+insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.CrazyBout_GameJournal game',36)
+insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.MayaMoney_GameJournal game',38)
+insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.JailBreak_GameJournal game',37)
+--insert into @ListOfGameName (GameName) values ('dbo.Spirit76_GameJournal game')
+--insert into @ListOfGameName (GameName) values ('dbo.TimeBomb_GameJournal game')
+--insert into @ListOfGameName (GameName) values ('dbo.WildFire_GameJournal game')
+insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.WildBall_GameJournal game',41)
 
 	
 --select GameName 
@@ -81,10 +85,10 @@ declare @counttest int
 set @counttest = 0
 			
 declare  Game_cursor cursor for 
-select GameName 
-from @ListOfGameName 
+select GameName , GameTypeId
+from @ListOfGameName where GameTypeId = @GameTypeId
 open Game_cursor
-fetch next from Game_cursor into @GameName2
+fetch next from Game_cursor into @GameName2, @GameTypeId2
 
 while @@FETCH_STATUS = 0
 BEGIN--1
@@ -159,15 +163,18 @@ BEGIN--1
 	    set @sqlCommand = 'select @FirstCardNumberOUT = cardsn_1  from ' +  @GameName2 + ' where game.sessnum = ' + cast(@SessionNumber as varchar(10))
 		+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
 		set @ParmDefinition = N'@FirstCardNumberOUT varchar(10) OUTPUT'
-		
+
 		EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @FirstCardNumberOUT = @FirstCardNumber OUTPUT
+		
 			if (@GameName2 = 'dbo.WildFire_GameJournal game')
 			BEGIN
 				fetch next from Game_cursor into @GameName2
 			     continue
-			END		
+			END
+					
 		if (@GameName2 != 'dbo.TimeBomb_GameJournal game')
 		BEGIN
+			
 			if (@GameName2 != 'dbo.WildBall_GameJournal game')
 			BEGIN
 				 set @sqlCommand = 'select @NCardbetOUT =
@@ -176,11 +183,13 @@ BEGIN--1
 					(case when bonuscardsn_3 != 0 then 1 else 0 END) 
 					  from ' +  @GameName2 + ' where game.sessnum = ' + cast(@SessionNumber as varchar(10))
 				+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
-				set @ParmDefinition = N'@NCardbetOUT varchar(10) OUTPUT'					
+					select @sqlCommand	
+				set @ParmDefinition = N'@NCardbetOUT varchar(10) OUTPUT'			
 				EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @NCardbetOUT = @NCardbet OUTPUT		
 			END
 	        else
 	        BEGIN
+	        
               set @sqlCommand = 'select @NCardbetOUT =
 					(case when bonuscardsn_1 != 0 then 1 else 0 END )+
 					(case when bonuscardsn_2 != 0 then 1 else 0 END) +
@@ -188,11 +197,12 @@ BEGIN--1
 					(case when bonuscardsn_3 != 0 then 1 else 0 END) 
 					  from ' +  @GameName2 + ' where game.sessnum = ' + cast(@SessionNumber as varchar(10))
 				+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
-				set @ParmDefinition = N'@NCardbetOUT varchar(10) OUTPUT'				
+				set @ParmDefinition = N'@NCardbetOUT varchar(10) OUTPUT'	
+					
 				EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @NCardbetOUT = @NCardbet OUTPUT
 	        END--(@GameName2 != 'dbo.WildBall_GameJournal game')
 	    END--(@GameName2 != 'dbo.TimeBomb_GameJournal game')	         
-        
+
 	    while (@Counter != @NCardbet)		   
 		BEGIN
 
@@ -215,7 +225,7 @@ BEGIN--1
 		if (len(@ListOfCardNumber) != 0)break	      
 	END   --(@PayoutType = 0 or @GameName2 = 'dbo.MayaMoney_GameJournal game' )  	  
 	      	
-	fetch next from Game_cursor into @GameName2
+	fetch next from Game_cursor into @GameName2, @GameTypeId2
 END-- end while(1)
 
 
@@ -234,6 +244,7 @@ END
 return 				
 end
 		
+
 
 
 

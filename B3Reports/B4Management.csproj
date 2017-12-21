@@ -248,6 +248,110 @@
     <None Include="Resources\strips\JackpotReport_Normal1.png" />
     <None Include="Resources\strips\account history report down.png" />
     <None Include="Resources\strips\account history report.png" />
+    <Content Include="REF\B3 Only\B3\Data Inserts\Add EDGE modulefeatures.sql" />
+    <Content Include="REF\B3 Only\B3\Data Inserts\Add EDGEB3Setting.sql" />
+    <Content Include="REF\B3 Only\B3\Data Inserts\Set Auto Session End to Default OFF.sql" />
+    <Content Include="REF\B3 Only\B3\Data Inserts\Update_B3SystemConfig_Version.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\b3.dbo.rptSessionTrans.StoredProcedure.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertCrazyBoutMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertJailBreakMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertMayaMoneyMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertSpirit76MathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertTimeBombMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertUkickEmMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertWildBallMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\Math Pay Table\InsertWildFireMathPayTableSP.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_player_b3_GetClientName.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_sales_b3_CreateCreditAcct.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_sales_b3_RedeemTicket.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_sales_b3_SetBalls.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_sales_b3_UnlockAccount.sql" />
+    <Content Include="REF\B3 Only\B3\Programmability\usp_sales_b3_VoidSessionTickets.sql" />
+    <Content Include="REF\B3 Only\B3\Schema\Alter_B3_Operator_Description_Set_Len_to_40.sql" />
+    <Content Include="REF\B3 Only\B3\Schema\Alter_Column_UserName.sql" />
+    <Content Include="REF\B3 Only\B3\Security\Security.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3fn_server_BallCallwGameID.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3_fnGetBallCallB3.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3_fnGetBallCallB3_2.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3_fnGetJackpotWinningCardNumber.sql" />
+    <Content Include="REF\B3 Only\Programmability\b3_fnGetStaffIDBallCallChange.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3_fnGetWinningCardNumber.sql" />
+    <Content Include="REF\B3 Only\Programmability\B3_fnGetWinningCardNumber2.sql" />
+    <Content Include="REF\B3 Only\Programmability\Load_B3BallCallPerSession_Table %28DELETE Trigger%29.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRptBallCallSet.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRptPageFooter.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRptPayouts.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRptPayouts2.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_CrazyBingoCardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_CrazyBingo_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_JailBreak_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_MayaMoney_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_Spirit76_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_TimeBomb_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_UKickEm_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_WildBall_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\spRpt_B3_SessionReport_WildFire_CardSales.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_BallCallwGameID.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_GetWinningCardNumber2.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_Report_GetAccountNumber.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptAccountHistory.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptCheckCardIfWin3.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptGetJackpotSummary.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptGetListOfEnableGames.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptGetSessionsSummary.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_management_rptGetWinningCardNumber.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_b3_CreateCreditAcct.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_b3_EndSession.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_b3_GetSessionsSummary_Day.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_B3_Set_B3BallCallPerSession.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_b3_Set_B3_Log_StaffForBallCallChange.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_sales_b3_StartSession.sql" />
+    <Content Include="REF\B3 Only\Programmability\usp_server_rptBallCall.sql" />
+    <Content Include="REF\B3 Only\Schema\B3_BallCallLogPerSession.sql" />
+    <Content Include="REF\B3 Only\Schema\B3_Log_StaffForBallCallChange.sql" />
+    <Content Include="REF\DevelopersNote.txt" />
+    <Content Include="REF\GetGameSettings.txt" />
+    <Content Include="REF\Issue\Jackpot Reports not working on mgmt\RunMe.sql" />
+    <Content Include="REF\SQLConnection.txt" />
+    <Content Include="REF\SQL\B3fn_server_BallCallwGameID.sql" />
+    <Content Include="REF\SQL\b3_fnCheckCardIfWin.sql" />
+    <Content Include="REF\SQL\B3_fnGetBallCallB3.sql" />
+    <Content Include="REF\SQL\B4\Jobs_SQLAgent\B3_DailyBackUp.sql" />
+    <Content Include="REF\SQL\B4\Jobs_SQLAgent\B3_SailesDBLog.sql" />
+    <Content Include="REF\SQL\B4\Other\f_hextostr.sql" />
+    <Content Include="REF\SQL\B4\Security_new.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_ActivityLog.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_AuditLog.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_BallCallLogPerSession.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_DeviceTransactions.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_PasswordStaff.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_SecuritySettings.sql" />
+    <Content Include="REF\SQL\B4\Table\B3_VersionInfo.sql" />
+    <Content Include="REF\SQL\B4\TEST\usp_sales_b3_ChangePassword.sql" />
+    <Content Include="REF\SQL\B4\TEST\usp_sales_b3_Login_EX.sql" />
+    <Content Include="REF\SQL\B4\Trigger\Load_B3BallCallPerSession_Table.sql" />
+    <Content Include="REF\SQL\B4\Trigger\Load_B3DeviceTransaction.sql" />
+    <Content Include="REF\SQL\B4\Trigger\TrgLogonB3SalesLog.sql" />
+    <Content Include="REF\SQL\B4\UpdateSchema.sql" />
+    <Content Include="REF\SQL\DROPdbo.sql" />
+    <Content Include="REF\SQL\Programmability\ND\Programmability.sql" />
+    <Content Include="REF\SQL\Programmability\Security_new.sql" />
+    <Content Include="REF\SQL\Programmability\usp_management_Report_BallCallwGameID.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_crazybout_SetBonusResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_crazybout_SetGameResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_jailbreak_SetBonusResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_jailbreak_SetGameResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_mayamoney_SetGameResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_timebomb_SetGameResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_wildball_SetBonusResult.sql" />
+    <Content Include="REF\SQL\Programmability\usp_player_wildball_SetGameResult.sql" />
+    <Content Include="REF\SQL\spRptPayouts2.sql" />
+    <Content Include="REF\SQL\usp_management_GetWinningCardNumber2.sql" />
+    <Content Include="REF\SQL\usp_management_Report_BallCallwGameID.sql" />
+    <Content Include="REF\SQL\usp_management_Report_GetBonusBallCallWildBall.sql" />
+    <Content Include="REF\SQL\usp_management_Report_GetWinningCardNumber.sql" />
+    <Content Include="REF\SQL\usp_management_rptGetWinningCardNumber.sql" />
     <Content Include="Resources\strips\session summary down.png" />
     <Content Include="Resources\strips\session summary down2.png" />
     <Content Include="Resources\strips\session summary.png" />
@@ -479,6 +583,8 @@
     <Compile Include="%28cs%29Other\WindowsDefaultLocation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REF\ScriptFromEDGE\SecurityHelper.cs" />
+    <Compile Include="REF\SecurityHelper.cs" />
     <Compile Include="Reports\AccountHistory.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -897,9 +1003,7 @@
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="REF\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
