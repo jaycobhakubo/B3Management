@@ -16,6 +16,7 @@ GO
 
 
 
+
 CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
     (
     @session int,
@@ -29,6 +30,7 @@ CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
 AS BEGIN
 --===========TEST================
 --1034	529	1	Wild Ball	1	41
+--1036	78	0	Time Bomb	0	42
 --declare 
 --	@session int,
 --	@GameID int,
@@ -38,12 +40,12 @@ AS BEGIN
 --	@GameTypeId int,
 --	@returns  nvarchar(max) --output
 
---	set @session = 1034
---	set @GameID = 529
---	set @BallCallType = 1
---	set @GameName2 = 'Wild Ball'
---	set @IsServerGame = 1
---	set @GameTypeId = 41
+--	set @session = 1036
+--	set @GameID = 78
+--	set @BallCallType = 0
+--	set @GameName2 = 'Time Bomb'
+--	set @IsServerGame = 0
+--	set @GameTypeId = 42
 --		BEGIN
 --===============================
 
@@ -169,7 +171,7 @@ AS BEGIN
                         + coalesce (', @bonusBalls_Out = (' + dbo.b3_fnGetBallColumnList (@bonusBallCount) + ')', '')
                         + ' from Server_Game where ServerGame = '
                         + cast (@gameNumber as nvarchar)
-                                    
+                               
         exec sp_executesql @sqlCommand, @parameters, @gameBalls_Out = @gameBalls output, @bonusBalls_Out = @bonusBalls output;
         
         -- Now that the ball list has been created update the result table
@@ -186,7 +188,6 @@ AS BEGIN
 
 declare @MinPlayer int 
  select  @MinPlayer  = MinPlayer  from Server_GameSettings
-
 
 if (@MinPlayer > 1 or (select COUNT(*) from @GameBallData) > 0 )
 begin   
@@ -222,6 +223,12 @@ end
 
 else --Class III
 begin
+
+if (@GameTypeId = 42)
+BEGIN
+	SET @GameName2 = 'TimeBomb'
+END
+
  insert into @GameBallData2
 		(
 				ServerGameNumber 
@@ -247,6 +254,7 @@ begin
 	left join  dbo.B3_Login staff on staff.LoginID = x.StaffID 
 	where ServerGameNumber = @GameID and GameName = @GameName2
 	 order by ServerGameNumber    
+	 
 end  
 
 
@@ -264,6 +272,7 @@ END
 --select @returns
 return 
 end
+
 
 
 
