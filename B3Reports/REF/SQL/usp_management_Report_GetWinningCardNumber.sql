@@ -14,6 +14,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+
 CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 (
 
@@ -27,7 +28,9 @@ CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 @GameTypeId int,
 @WinningCardNumber3 varchar(500) OUTPUT
 )
+AS BEGIN
 --==============TEST===========
+--Second Hand	1036	0	78	78	Time Bomb	0	42
 --declare
 --@PatterName varchar(100),
 --@SessionNumber int, 
@@ -39,23 +42,17 @@ CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 --@GameTypeId int,
 --@WinningCardNumber3 varchar(500) --OUTPUT
 
---Crazy Stamp	1032	0	361	361	Wild Ball	0	41
---Six Pack	1028	0	71	71	Wild Ball	0
---Small X	1025	0	106	106	Maya Money	0
---Spark	1028	1	103	103	Wild Ball	0
---Six Pack	1032	1	374	374	Wild Ball	0	41
-
---set @PatterName = 'Six Pack'
---set @SessionNumber = 1032
---set @BallCallType = 1
---set @GameID = 374
---set @RegGameID = 374
---set @GameName = 'Wild Ball'
+--set @PatterName = 'Second Hand'
+--set @SessionNumber = 1036
+--set @BallCallType = 0
+--set @GameID = 78
+--set @RegGameID = 78
+--set @GameName = 'Time Bomb'
 --set @IsServerGame = 0
---set @GameTypeId = 41
-
+--set @GameTypeId = 42
+--BEGIN
 --=============================
-AS BEGIN
+
 
 declare @RangeWinCardNumber varchar(500)
 declare @Pattern table (Design varchar(100))
@@ -85,7 +82,7 @@ end
 set  @WinningCardNumber3 = '';
 set @Exists = 1
 set @WinningNumber = ''
-exec dbo.usp_management_GetWinningCardNumber2 @SessionNumber, @RegGameID, @BallCallType, @GameTypeId, @RangeWinCardNumber output	
+exec usp_management_Report_GetWinningCardNumber2 @SessionNumber, @RegGameID, @BallCallType, @GameTypeId, @RangeWinCardNumber output	
 exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @IsServerGame, @GameTypeId, @BallCall output
 set @BallCall = ','+ @BallCall+',0,' set @BallCall = REPLACE(@BallCall,' ','')
 set @C_Card = @RangeWinCardNumber set @C_Card = REPLACE(@C_Card,' ','')+',' 
@@ -240,6 +237,209 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 							close Pattern_Cursor
 							deallocate Pattern_Cursor
 						end
+						else if (@PatterName = 'Second Hand')
+						begin
+							delete from @Pattern
+							insert into @Pattern  values ('3|8|12|13|' )
+							insert into @Pattern  values ('11|12|13|18|' )
+							insert into @Pattern  values ('13|14|18|23|' )
+							insert into @Pattern  values ('8|13|14|15|' )
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+						else if (@PatterName = 'Minute Hand')
+						begin
+							delete from @Pattern
+							insert into @Pattern  values ('5|10|11|12|13|14|15|' )
+							insert into @Pattern  values ('1|2|3|8|13|18|23|' )
+							insert into @Pattern  values ('11|12|13|14|15|16|21|' )
+							insert into @Pattern  values ('3|8|13|18|23|24|25|' )
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+							else if (@PatterName = 'Bomb')
+						begin
+							delete from @Pattern
+							insert into @Pattern  values ('6|8|12|13|18|' )
+							insert into @Pattern  values ('8|11|12|13|18|' )
+							insert into @Pattern  values ('8|12|13|16|18|' )				
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+							else if (@PatterName = 'Explosion')
+						begin
+							delete from @Pattern
+							insert into @Pattern  values ('1|3|7|9|11|13|15|17|19|23|25|')
+							insert into @Pattern  values ('3|5|7|9|11|13|15|17|19|21|23|')
+							insert into @Pattern  values ('1|3|5|7|8|9|13|17|18|19|21|23|25|')	
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+						else if (@PatterName = 'Fuse')
+						begin
+							delete from @Pattern
+							insert into @Pattern  values ('1|5|13|21|25|' )
+							insert into @Pattern  values ('7|9|13|17|19|' )
+
+							declare Pattern_Cursor cursor
+							for 
+							select /*@tempValue =8*/ Design from @Pattern
+							open Pattern_Cursor
+							fetch next from Pattern_Cursor into @tempValue
+
+							while @@FETCH_STATUS = 0
+							begin
+								set @result = (select CHARINDEX('|',@tempValue))
+
+								while (@result != 0 and @Exists =1)
+								begin
+									set @TempN = SUBSTRING(@tempValue, 0, @result) 	
+									exec dbo.usp_management_rptCheckCardIfWin3 @TempN, @BallCall,@m_CardN, @Exists output							
+									set @tempValue =  SUBSTRING(@tempValue, @result + 1, LEN(@tempValue)) 
+									set @result = (select CHARINDEX('|',@tempValue))
+								end
+
+								if (@Exists = 1)--WINNER
+								begin
+									 --select cast(@m_CardN as varchar(10))
+									set @WinnerCount = @WinnerCount + 1
+									set  @WinningCardNumber3 =  @WinningCardNumber3 + cast(@m_CardN as varchar(10)) + ', ' break
+								end
+		
+								set @Exists = 1
+								fetch next from Pattern_Cursor into @tempValue
+
+							end 
+
+							close Pattern_Cursor
+							deallocate Pattern_Cursor
+						end
+						
+						
 							else if (@PatterName = 'Spark')
 						begin
 				
@@ -2469,6 +2669,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		return 
 		--select @WinningCardNumber3
 end					
+
 
 GO
 

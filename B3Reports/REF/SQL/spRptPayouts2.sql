@@ -14,2365 +14,186 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
-
-
-
 CREATE proc [dbo].[spRptPayouts2]
 (
---declare
-@SessionNum int, 
-@DateRun datetime
 
---set @SessionNum = 1053
---set @DateRun = '1/1/2015 00:00:00'
-)
-as
-
-Declare @Results table
-(
-		SessNum int,
-		GameNum	int,
-		ServerGameNum int,
-		GameDate DateTime,
-		GameName varchar(32),
-		PayoutType varchar(32),
-		ClientName char(11),
-		CreditAcctNum int,
-		Denom money,
-		BetLevel int,
-		NumberWinners int,
-		WinAmount money,
-		PatternName varchar(32)
-)
-
----- Insert Crazy Bout Bingo Extra Bonus game winners -------------------------------
-
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-)
-
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Extra Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.Denom / 100.00),
-		cb.BetLevel,
-		1,
-		(cb.gamewinamt / 100.00),
-		'Coverall'
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.gamewinamt <> 0
-And cb.numofwins_patt_1 = 0
-And cb.numofwins_patt_2 = 0
-And cb.numofwins_patt_3 = 0
-And cb.numofwins_patt_4 = 0
-And cb.numofwins_patt_5 = 0
-And cb.numofwins_patt_6 = 0
-And cb.numofwins_patt_7 = 0
-And cb.numofwins_patt_8 = 0
-And cb.numofwins_patt_9 = 0
-And cb.numofwins_patt_10 = 0
-And cb.numofwins_patt_11 = 0
-And cb.numofwins_patt_12 = 0
-
------- Insert Crazy Bout Bingo Instant Winners --------------------------
-
------- Pattern 1
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_1,
-		((cb.winamt_patt_1 / cb.numofwins_patt_1) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 1)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_1 <> 0
-And cb.winamt_patt_1 <> 0
-
------- Pattern 2
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_2,
-		((cb.winamt_patt_2 / cb.numofwins_patt_2) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 2)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_2 <> 0
-And cb.winamt_patt_2 <> 0
-
------- Pattern 3
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_3,
-		((cb.winamt_patt_3 / cb.numofwins_patt_3) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 3)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_3 <> 0
-And cb.winamt_patt_3 <> 0
-
------- Pattern 4
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_4,
-		((cb.winamt_patt_4 / cb.numofwins_patt_4) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 4)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_4 <> 0
-And cb.winamt_patt_4 <> 0
-
------- Pattern 5
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_5,
-		((cb.winamt_patt_5 / cb.numofwins_patt_5) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 5)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_5 <> 0
-And cb.winamt_patt_5 <> 0
-
------- Pattern 6
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_6,
-		((cb.winamt_patt_6 / cb.numofwins_patt_6) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 6)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_6 <> 0
-And cb.winamt_patt_6 <> 0
-
------- Pattern 7
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_7,
-		((cb.winamt_patt_7 / cb.numofwins_patt_7) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 7)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_7 <> 0
-And cb.winamt_patt_7 <> 0
-
------- Pattern 8
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_8,
-		((cb.winamt_patt_8 / cb.numofwins_patt_8) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 8)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_8 <> 0
-And cb.winamt_patt_8 <> 0
-
------- Pattern 9
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_9,
-		((cb.winamt_patt_9 / cb.numofwins_patt_9) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 9)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_9 <> 0
-And cb.winamt_patt_9 <> 0
-
------- Pattern 10
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_10,
-		((cb.winamt_patt_10 / cb.numofwins_patt_10) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 10)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_10 <> 0
-And cb.winamt_patt_10 <> 0
-
------- Pattern 11
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_11,
-		((cb.winamt_patt_11 / cb.numofwins_patt_11) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 11)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_11 <> 0
-And cb.winamt_patt_11 <> 0
-
------- Pattern 12
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Regular',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_patt_12,
-		((cb.winamt_patt_12 / cb.numofwins_patt_12) / 100.0),
-		(Select patternname from CrazyBout_GamePatterns where patternid = 12)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_patt_12 <> 0
-And cb.winamt_patt_12 <> 0
-
-------------Insert Crazy Bout Bingo Bonus Round Winners -------------------------------------------------------------------
-
------- Bonus Pattern 1
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_1,
-		((cb.bonuswinamt_patt_1 / cb.numofwins_bonuspatt_1) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 1)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_1 <> 0
-And cb.bonuswinamt_patt_1 <> 0
-
------- Bonus Pattern 2
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_2,
-		((cb.bonuswinamt_patt_2 / cb.numofwins_bonuspatt_2) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 2)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_2 <> 0
-And cb.bonuswinamt_patt_2 <> 0
-
------- Bonus Pattern 3
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_3,
-		((cb.bonuswinamt_patt_3 / cb.numofwins_bonuspatt_3) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 3)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_3 <> 0
-And cb.bonuswinamt_patt_3 <> 0
-
------- Bonus Pattern 4
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_4,
-		((cb.bonuswinamt_patt_4 / cb.numofwins_bonuspatt_4) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 4)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_4 <> 0
-And cb.bonuswinamt_patt_4 <> 0
-
------- Bonus Pattern 5
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_5,
-		((cb.bonuswinamt_patt_5 / cb.numofwins_bonuspatt_5) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 5)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_5 <> 0
-And cb.bonuswinamt_patt_5 <> 0
-
------- Bonus Pattern 6
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_6,
-		((cb.bonuswinamt_patt_6 / cb.numofwins_bonuspatt_6) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 6)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_6 <> 0
-And cb.bonuswinamt_patt_6 <> 0
-
------- Bonus Pattern 7
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_7,
-		((cb.bonuswinamt_patt_7 / cb.numofwins_bonuspatt_7) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 7)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_7 <> 0
-And cb.bonuswinamt_patt_7 <> 0
-
------- Bonus Pattern 8
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_8,
-		((cb.bonuswinamt_patt_8 / cb.numofwins_bonuspatt_8) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 8)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_8 <> 0
-And cb.bonuswinamt_patt_8 <> 0
-
------- Bonus Pattern 9
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_9,
-		((cb.bonuswinamt_patt_9 / cb.numofwins_bonuspatt_9) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 9)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_9 <> 0
-And cb.bonuswinamt_patt_9 <> 0
-
------- Bonus Pattern 10
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_10,
-		((cb.bonuswinamt_patt_10 / cb.numofwins_bonuspatt_10) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 10)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_10 <> 0
-And cb.bonuswinamt_patt_10 <> 0
-
------- Bonus Pattern 11
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_11,
-		((cb.bonuswinamt_patt_11 / cb.numofwins_bonuspatt_11) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 11)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_11 <> 0
-And cb.bonuswinamt_patt_11 <> 0
-
------- Bonus Pattern 12
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	cb.sessnum,
-		cb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = 36 /* Crazy Bout Bingo */ ),
-		cb.recdatetime,
-		'Crazy Bout',
-		'Bonus',
-		cb.clientname,
-		cb.creditacctnum,
-		(cb.denom / 100.0),
-		cb.betlevel,
-		cb.numofwins_bonuspatt_12,
-		((cb.bonuswinamt_patt_12 / cb.numofwins_bonuspatt_12) / 100.0),
-		(Select patternname from CrazyBout_BonusPatterns where patternid = 12)
-From CrazyBout_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And cb.numofwins_bonuspatt_12 <> 0
-And cb.bonuswinamt_patt_12 <> 0
-
----- Insert Jailbreak Extra Bonus game winners -------------------------------
-
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-)
-
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Extra Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.Denom / 100.00),
-		jb.BetLevel,
-		1,
-		(jb.gamewinamt / 100.00),
-		'Coverall'
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.gamewinamt <> 0
-And jb.numofwins_patt_1 = 0
-And jb.numofwins_patt_2 = 0
-And jb.numofwins_patt_3 = 0
-And jb.numofwins_patt_4 = 0
-And jb.numofwins_patt_5 = 0
-And jb.numofwins_patt_6 = 0
-And jb.numofwins_patt_7 = 0
-And jb.numofwins_patt_8 = 0
-And jb.numofwins_patt_9 = 0
-And jb.numofwins_patt_10 = 0
-And jb.numofwins_patt_11 = 0
-And jb.numofwins_patt_12 = 0
-
------- Insert Jailbreak Instant Winners --------------------------
-
------- Pattern 1
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_1,
-		((jb.winamt_patt_1 / jb.numofwins_patt_1) / 100.0),
-		(Select patternname from JailBreak_GamePatterns where patternid = 1)
-From JailBreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_1 <> 0
-And jb.winamt_patt_1 <> 0
-
------- Pattern 2
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_2,
-		((jb.winamt_patt_2 / jb.numofwins_patt_2) / 100.0),
-		(Select patternname from JailBreak_GamePatterns where patternid = 2)
-From JailBreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_2 <> 0
-And jb.winamt_patt_2 <> 0
-
-
------- Pattern 3
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_3,
-		((jb.winamt_patt_3 / jb.numofwins_patt_3) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 3)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_3 <> 0
-And jb.winamt_patt_3 <> 0
-
-
------- Pattern 4
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_4,
-		((jb.winamt_patt_4 / jb.numofwins_patt_4) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 4)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_4 <> 0
-And jb.winamt_patt_4 <> 0
-
------- Pattern 5
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_5,
-		((jb.winamt_patt_5 / jb.numofwins_patt_5) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 5)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_5 <> 0
-And jb.winamt_patt_5 <> 0
-
------- Pattern 6
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_6,
-		((jb.winamt_patt_6 / jb.numofwins_patt_6) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 6)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_6 <> 0
-And jb.winamt_patt_6 <> 0
-
------- Pattern 7
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_7,
-		((jb.winamt_patt_7 / jb.numofwins_patt_7) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 7)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_7 <> 0
-And jb.winamt_patt_7 <> 0
-
------- Pattern 8
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_8,
-		((jb.winamt_patt_8 / jb.numofwins_patt_8) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 8)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_8 <> 0
-And jb.winamt_patt_8 <> 0
-
------- Pattern 9
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_9,
-		((jb.winamt_patt_9 / jb.numofwins_patt_9) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 9)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_9 <> 0
-And jb.winamt_patt_9 <> 0
-
------- Pattern 10
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_10,
-		((jb.winamt_patt_10 / jb.numofwins_patt_10) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 10)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_10 <> 0
-And jb.winamt_patt_10 <> 0
-
------- Pattern 11
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_11,
-		((jb.winamt_patt_11 / jb.numofwins_patt_11) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 11)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_11 <> 0
-And jb.winamt_patt_11 <> 0
-
------- Pattern 12
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Regular',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_patt_12,
-		((jb.winamt_patt_12 / jb.numofwins_patt_12) / 100.0),
-		(Select patternname from Jailbreak_GamePatterns where patternid = 12)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_patt_12 <> 0
-And jb.winamt_patt_12 <> 0
-
-
-------------Insert Jailbreak Bonus Round Winners -------------------------------------------------------------------
-
------- Bonus Pattern 1
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_1,
-		((jb.bonuswinamt_patt_1 / jb.numofwins_bonuspatt_1) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 1)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_1 <> 0
-And jb.bonuswinamt_patt_1 <> 0
-
------- Bonus Pattern 2
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_2,
-		((jb.bonuswinamt_patt_2 / jb.numofwins_bonuspatt_2) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 2)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_2 <> 0
-And jb.bonuswinamt_patt_2 <> 0
-
------- Bonus Pattern 3
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_3,
-		((jb.bonuswinamt_patt_3 / jb.numofwins_bonuspatt_3) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 3)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_3 <> 0
-And jb.bonuswinamt_patt_3 <> 0
-
------- Bonus Pattern 4
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_4,
-		((jb.bonuswinamt_patt_4 / jb.numofwins_bonuspatt_4) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 4)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_4 <> 0
-And jb.bonuswinamt_patt_4 <> 0
-
------- Bonus Pattern 5
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_5,
-		((jb.bonuswinamt_patt_5 / jb.numofwins_bonuspatt_5) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 5)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_5 <> 0
-And jb.bonuswinamt_patt_5 <> 0
-
------- Bonus Pattern 6
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_6,
-		((jb.bonuswinamt_patt_6 / jb.numofwins_bonuspatt_6) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 6)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_6 <> 0
-And jb.bonuswinamt_patt_6 <> 0
-
------- Bonus Pattern 7
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_7,
-		((jb.bonuswinamt_patt_7 / jb.numofwins_bonuspatt_7) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 7)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_7 <> 0
-And jb.bonuswinamt_patt_7 <> 0
-
------- Bonus Pattern 8
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_8,
-		((jb.bonuswinamt_patt_8 / jb.numofwins_bonuspatt_8) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 8)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_8 <> 0
-And jb.bonuswinamt_patt_8 <> 0
-
------- Bonus Pattern 9
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_9,
-		((jb.bonuswinamt_patt_9 / jb.numofwins_bonuspatt_9) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 9)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_9 <> 0
-And jb.bonuswinamt_patt_9 <> 0
-
------- Bonus Pattern 10
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_10,
-		((jb.bonuswinamt_patt_10 / jb.numofwins_bonuspatt_10) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 10)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_10 <> 0
-And jb.bonuswinamt_patt_10 <> 0
-
------- Bonus Pattern 11
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_11,
-		((jb.bonuswinamt_patt_11 / jb.numofwins_bonuspatt_11) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 11)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_11 <> 0
-And jb.bonuswinamt_patt_11 <> 0
-
------- Bonus Pattern 12
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	jb.sessnum,
-		jb.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = jb.gamenum and sgj.GameTypeID = 37 /* Jailbreak */ ),
-		jb.recdatetime,
-		'Jailbreak',
-		'Bonus',
-		jb.clientname,
-		jb.creditacctnum,
-		(jb.denom / 100.0),
-		jb.betlevel,
-		jb.numofwins_bonuspatt_12,
-		((jb.bonuswinamt_patt_12 / jb.numofwins_bonuspatt_12) / 100.0),
-		(Select patternname from Jailbreak_BonusPatterns where patternid = 12)
-From Jailbreak_GameJournal jb join B3_SessionsJournal sj on jb.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And jb.numofwins_bonuspatt_12 <> 0
-And jb.bonuswinamt_patt_12 <> 0
-
----- Insert MayaMoney Extra Bonus game winners -------------------------------
-
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-)
-
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Extra Bonus',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.Denom / 100.00),
-		mm.BetLevel,
-		1,
-		(mm.gamewinamt / 100.00),
-		'Coverall'
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.gamewinamt <> 0
-And mm.numofwins_patt_1 = 0
-And mm.numofwins_patt_2 = 0
-And mm.numofwins_patt_3 = 0
-And mm.numofwins_patt_4 = 0
-And mm.numofwins_patt_5 = 0
-And mm.numofwins_patt_6 = 0
-And mm.numofwins_patt_7 = 0
-And mm.numofwins_patt_8 = 0
-And mm.numofwins_patt_9 = 0
-And mm.numofwins_patt_10 = 0
-And mm.numofwins_patt_11 = 0
-And mm.numofwins_patt_12 = 0
-
------- Insert MayaMoney Instant Winners --------------------------
-
------- Pattern 1
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_1,
-		((mm.winamt_patt_1 / mm.numofwins_patt_1) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 1)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_1 <> 0
-And mm.winamt_patt_1 <> 0
-
------- Pattern 2
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_2,
-		((mm.winamt_patt_2 / mm.numofwins_patt_2) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 2)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_2 <> 0
-And mm.winamt_patt_2 <> 0
-
-
------- Pattern 3
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_3,
-		((mm.winamt_patt_3 / mm.numofwins_patt_3) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 3)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_3 <> 0
-And mm.winamt_patt_3 <> 0
-
-
------- Pattern 4
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_4,
-		((mm.winamt_patt_4 / mm.numofwins_patt_4) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 4)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_4 <> 0
-And mm.winamt_patt_4 <> 0
-
------- Pattern 5
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_5,
-		((mm.winamt_patt_5 / mm.numofwins_patt_5) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 5)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_5 <> 0
-And mm.winamt_patt_5 <> 0
-
------- Pattern 6
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_6,
-		((mm.winamt_patt_6 / mm.numofwins_patt_6) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 6)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_6 <> 0
-And mm.winamt_patt_6 <> 0
-
------- Pattern 7
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_7,
-		((mm.winamt_patt_7 / mm.numofwins_patt_7) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 7)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_7 <> 0
-And mm.winamt_patt_7 <> 0
-
------- Pattern 8
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_8,
-		((mm.winamt_patt_8 / mm.numofwins_patt_8) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 8)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_8 <> 0
-And mm.winamt_patt_8 <> 0
-
------- Pattern 9
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_9,
-		((mm.winamt_patt_9 / mm.numofwins_patt_9) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 9)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_9 <> 0
-And mm.winamt_patt_9 <> 0
-
------- Pattern 10
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_10,
-		((mm.winamt_patt_10 / mm.numofwins_patt_10) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 10)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_10 <> 0
-And mm.winamt_patt_10 <> 0
-
------- Pattern 11
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_11,
-		((mm.winamt_patt_11 / mm.numofwins_patt_11) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 11)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_11 <> 0
-And mm.winamt_patt_11 <> 0
-
------- Pattern 12
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
-		PayoutType,
-		ClientName,
-		CreditAcctNum,
-		Denom,
-		BetLevel,
-		NumberWinners,
-		WinAmount,
-		PatternName
-		
-)
-Select	mm.sessnum,
-		mm.gamenum,
-		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
-		mm.recdatetime,
-		'Maya Money',
-		'Regular',
-		mm.clientname,
-		mm.creditacctnum,
-		(mm.denom / 100.0),
-		mm.betlevel,
-		mm.numofwins_patt_12,
-		((mm.winamt_patt_12 / mm.numofwins_patt_12) / 100.0),
-		(Select patternname from MayaMoney_GamePatterns where patternid = 12)
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-Where sj.sessnum = @SessionNum
-And mm.numofwins_patt_12 <> 0
-And mm.winamt_patt_12 <> 0
-
----------- Insert MayaMoney Bonus Wins ------------------------------------
-Insert into @Results
-(
-		SessNum,
-		GameNum,
-		ServerGameNum,
-		GameDate,
-		GameName,
+	@SessionNum int, 
+	@DateRun datetime
+)
+AS BEGIN
+--==========TEST==============
+--Declare 
+--	@SessionNum int, 
+--	@DateRun datetime
+	
+--SET @SessionNum = 1036
+--SET @DateRun = '12/21/2017 00:00:00'
+--=============================
+
+
+IF OBJECT_ID('tempdb..#TempResults') IS not null drop table #TempResults
+CREATE TABLE #TempResults 
+(
+	SessNum int,
+	GameNum	int,
+	ServerGameNum int,
+	GameDate DateTime,
+	GameName varchar(32),
+	GameTypeId int,
+	PayoutType varchar(32),
+	ClientName char(11),
+	CreditAcctNum int,
+	Denom money,
+	BetLevel int,
+	NumberWinners int,
+	WinAmount money,
+	PatternName varchar(32)
+)
+
+DECLARE @sqlCommand nvarchar(max)
+DECLARE @ListOfAvailableGames TABLE
+(
+	GameTypeId INT,
+	GameNameAlias VARCHAR(50),
+	GameTableName varchar(50)
+)
+
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (42, 'Time Bomb', 'TimeBomb')
+
+
+DECLARE @GameTypeId INT
+DECLARE @GameNameAlias VARCHAR(50)
+DECLARE @GameTableName VARCHAR(50)
+
+DECLARE	GetResultCursor	CURSOR FOR
+SELECT	GameTypeId, GameNameAlias, GameTableName	FROM @ListOfAvailableGames 
+OPEN	GetResultCursor FETCH NEXT FROM GetResultCursor
+INTO	@GameTypeId, @GameNameAlias, @GameTableName
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+
+--=========================================
+-- INSTANT game BINGO EXTRA BONUS GAME WINNERS
+--=========================================
+    if (@GameTypeId != 42)--TIMEBOMB!
+    BEGIN
+		set @sqlCommand = 
+		'
+			insert into #TempResults (SessNum,GameNum,ServerGameNum,GameDate,GameName,GameTypeId,PayoutType,ClientName,CreditAcctNum,Denom,BetLevel,NumberWinners,WinAmount,PatternName)
+			Select cb.sessnum,cb.gamenum,(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = '+cast(@GameTypeId as varchar(10))+'),cb.recdatetime,'''+@GameNameAlias+''','+cast(@GameTypeId as varchar(10))+',''Extra Bonus'',cb.clientname,cb.creditacctnum,(cb.Denom / 100.00),cb.BetLevel,1,(cb.gamewinamt / 100.00),''Coverall''
+			From '+@GameTableName+'_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
+			Where sj.sessnum = '+CAST(@SessionNum as varchar(10))+'And cb.gamewinamt <> 0 And cb.numofwins_patt_1 = 0 And cb.numofwins_patt_2 = 0 And cb.numofwins_patt_3 = 0 And cb.numofwins_patt_4 = 0 And cb.numofwins_patt_5 = 0 And cb.numofwins_patt_6 = 0 And cb.numofwins_patt_7 = 0 And cb.numofwins_patt_8 = 0 And cb.numofwins_patt_9 = 0 And cb.numofwins_patt_10 = 0And cb.numofwins_patt_11 = 0 And cb.numofwins_patt_12 = 0
+		 '                 
+		exec (@sqlCommand)
+	END
+	ELSE
+	BEGIN
+
+		set @sqlCommand = 
+		'
+			insert into #TempResults (SessNum,GameNum,ServerGameNum,GameDate,GameName,GameTypeId,PayoutType,ClientName,CreditAcctNum,Denom,BetLevel,NumberWinners,WinAmount,PatternName)
+			Select cb.sessnum,cb.gamenum,(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = '+cast(@GameTypeId as varchar(10))+'),cb.recdatetime,'''+@GameNameAlias+''','+cast(@GameTypeId as varchar(10))+',''Extra Bonus'',cb.clientname,cb.creditacctnum,(cb.Denom / 100.00),cb.BetLevel,1,(cb.gamewinamt / 100.00),''Coverall''
+			From '+@GameTableName+'_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
+			Where sj.sessnum = '+CAST(@SessionNum as varchar(10))+'And cb.gamewinamt <> 0 And cb.numofwins_patt_1 = 0 And cb.numofwins_patt_2 = 0 And cb.numofwins_patt_3 = 0 And cb.numofwins_patt_4 = 0 And cb.numofwins_patt_5 = 0 And cb.numofwins_patt_6 = 0 
+		 '          
+		exec (@sqlCommand)
+	END
+
+--==================================
+--INSERT BINGO INSTANT WINNERS PATTERN 1 to 12
+--==================================
+
+	DECLARE @CountPatternId int set @CountPatternId = 1
+	WHILE (@CountPatternId != 13)
+	BEGIN
+	 set @sqlCommand = 
+		 '
+			insert into #TempResults 
+			(
+				SessNum,GameNum,ServerGameNum,GameDate,GameName,GameTypeId,PayoutType,ClientName,CreditAcctNum,
+				Denom,BetLevel,NumberWinners,WinAmount,PatternName
+			)
+				Select	cb.sessnum,
+				cb.gamenum,
+				(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID = '+cast(@GameTypeId as varchar(10))+'),
+				cb.recdatetime,
+				'''+@GameNameAlias+''',
+				'++cast(@GameTypeId as varchar(10))+',
+				''Regular'',
+				cb.clientname,
+				cb.creditacctnum,
+				(cb.denom / 100.0),
+				cb.betlevel,
+				cb.numofwins_patt_'+cast(@CountPatternId as varchar(10))+',
+				((cb.winamt_patt_'+cast(@CountPatternId as varchar(10))+' / cb.numofwins_patt_'+cast(@CountPatternId as varchar(10))+') / 100.0),
+				(Select patternname from '+@GameTableName+'_GamePatterns where patternid = '+cast(@CountPatternId as varchar(10))+')
+				From '+@GameTableName+'_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
+				Where sj.sessnum = '+CAST(@SessionNum as varchar(10))+'
+				And cb.numofwins_patt_'+cast(@CountPatternId as varchar(10))+' <> 0
+				And cb.winamt_patt_'+cast(@CountPatternId as varchar(10))+' <> 0
+
+		 '		 
+	
+		 IF (@CountPatternId = 7 AND @GameTypeId = 42)
+		 BEGIN
+		      Break
+		 END
+		 
+		 exec (@sqlCommand)
+		 set @CountPatternId += 1
+	END
+	
+----=====================================
+----INSERT GAME BINGO BONUS ROUND WINNERS 1 to 12
+----=====================================	
+	if (@GameTypeId != 38 AND @GameTypeId != 42)--TimeBomb No Bonus Round
+	--Maya Money Had a different way of getting the bonus round winners.
+	BEGIN
+		set @CountPatternId = 1
+		WHILE (@CountPatternId != 13)
+		BEGIN
+		set @sqlCommand = 
+		'
+			insert into #TempResults 
+			(
+				SessNum,GameNum,ServerGameNum,GameDate,GameName,GameTypeId,PayoutType,
+				ClientName,CreditAcctNum,Denom,BetLevel,NumberWinners,WinAmount,PatternName		
+			)
+			Select	cb.sessnum,
+			cb.gamenum,
+			(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = cb.gamenum and sgj.GameTypeID ='+cast(@GameTypeId as varchar(10))+'),
+			cb.recdatetime,
+			'''+@GameNameAlias+''',
+			'++cast(@GameTypeId as varchar(10))+',
+			''Bonus'',
+			cb.clientname,
+			cb.creditacctnum,
+			(cb.denom / 100.0),
+			cb.betlevel,
+			cb.numofwins_bonuspatt_'+cast(@CountPatternId as varchar(10))+',
+			((cb.bonuswinamt_patt_'+cast(@CountPatternId as varchar(10))+' / cb.numofwins_bonuspatt_'+cast(@CountPatternId as varchar(10))+') / 100.0),
+			(Select patternname from '+@GameTableName+'_BonusPatterns where patternid = '+cast(@CountPatternId as varchar(10))+')
+			From '+@GameTableName+'_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
+			Where sj.sessnum =  '+CAST(@SessionNum as varchar(10))+'
+			And cb.numofwins_bonuspatt_'+cast(@CountPatternId as varchar(10))+' <> 0
+			And cb.bonuswinamt_patt_'+cast(@CountPatternId as varchar(10))+' <> 0
+		 ' 
+		 select @sqlCommand
+		set @CountPatternId += 1                
+		exec (@sqlCommand)
+		END
+	END
+	else IF (@GameTypeId = 38)
+	BEGIN
+		Insert into #TempResults 
+		(
+		SessNum,
+		GameNum,
+		ServerGameNum,
+		GameDate,
+		GameName,
+		GameTypeId,
 		PayoutType,
 		ClientName,
 		CreditAcctNum,
@@ -2380,13 +201,14 @@ Insert into @Results
 		BetLevel,
 		NumberWinners,
 		WinAmount
-		
-)
-Select	mm.sessnum,
+
+		)
+		Select	mm.sessnum,
 		mm.gamenum,
 		(Select sgj.ServerGameNumber From Server_GameJournal sgj Where sgj.GameNumber = mm.gamenum and sgj.GameTypeID = 38 /* MayaMoney */ ),
 		mm.recdatetime,
 		'Maya Money',
+		38,
 		'Bonus',
 		mm.clientname,
 		mm.creditacctnum,
@@ -2394,22 +216,33 @@ Select	mm.sessnum,
 		mm.betlevel,
 		1,
 		(mm.gamewinamt - (winamt_patt_1 + winamt_patt_2 + winamt_patt_3 + winamt_patt_4 + winamt_patt_5 + winamt_patt_6 + winamt_patt_7 + winamt_patt_8 + winamt_patt_9 +
-                       winamt_patt_10 + winamt_patt_11 + winamt_patt_12)) / 100.0
-From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
-join MayaMoney_GamePayTable mmgp on mm.denom = mmgp.denom
-Where sj.sessnum = @SessionNum
-And ((gamewinamt <> winamt_patt_1 + winamt_patt_2 + winamt_patt_3 + winamt_patt_4 + winamt_patt_5 + winamt_patt_6 + winamt_patt_7 + winamt_patt_8 +
-                       winamt_patt_9 + winamt_patt_10 + winamt_patt_11 + winamt_patt_12) AND (winamt_patt_1 + winamt_patt_2 + winamt_patt_3 + winamt_patt_4 + winamt_patt_5 + winamt_patt_6 + winamt_patt_7 + winamt_patt_8 + winamt_patt_9 +
-                       winamt_patt_10 + winamt_patt_11 + winamt_patt_12 <> 0))
+			   winamt_patt_10 + winamt_patt_11 + winamt_patt_12)) / 100.0
+		From MayaMoney_GameJournal mm join B3_SessionsJournal sj on mm.sessnum = sj.sessnum
+		join MayaMoney_GamePayTable mmgp on mm.denom = mmgp.denom
+		Where sj.sessnum = @SessionNum
+		And ((gamewinamt <> winamt_patt_1 + winamt_patt_2 + winamt_patt_3 + winamt_patt_4 + winamt_patt_5 + winamt_patt_6 + winamt_patt_7 + winamt_patt_8 +
+	   winamt_patt_9 + winamt_patt_10 + winamt_patt_11 + winamt_patt_12) AND (winamt_patt_1 + winamt_patt_2 + winamt_patt_3 + winamt_patt_4 + winamt_patt_5 + winamt_patt_6 + winamt_patt_7 + winamt_patt_8 + winamt_patt_9 +
+	   winamt_patt_10 + winamt_patt_11 + winamt_patt_12 <> 0))
+	END
+	
 
+FETCH NEXT FROM GetResultCursor  INTO	@GameTypeId, @GameNameAlias, @GameTableName
+    
+END
+close GetResultCursor
+deallocate GetResultCursor
+
+--insert into @Results 
+--select  * from #TempResults 
 
 declare @Result2 table
 (
-	SessNum int,
+	    SessNum int,
 		GameNum	int,
 		ServerGameNum int,
 		GameDate DateTime,
 		GameName varchar(32),
+		GameTypeId int,
 		PayoutType varchar(32),
 		ClientName char(11),
 		CreditAcctNum varchar(100),
@@ -2433,6 +266,7 @@ SessNum ,
 		ServerGameNum ,
 		GameDate ,
 		GameName ,
+		GameTypeId,
 		PayoutType ,
 		ClientName ,
 		CreditAcctNum ,
@@ -2449,6 +283,7 @@ Select
 		ISNULL(ServerGameNum ,Gamenum) ServerGameNum,
 		GameDate ,
 		GameName ,
+		GameTypeId,
 		PayoutType ,
 		ClientName ,
 		case 
@@ -2470,8 +305,8 @@ Select
 		PatternName ,
 		case  when ServerGameNum is null  then 0 else 1 end
 					--(select dbo.B3_fnGetWinningCardNumber(PatternName, SessNum, 1, GameNum ))  as WinningCardNumber  
-From @Results
-Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName --, GameWinAmt, BonusWinAmt, TotalPaidAmt
+From #TempResults 
+Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName, GameTypeId --, GameWinAmt, BonusWinAmt, TotalPaidAmt
 Order By ServerGameNum
 end
 else
@@ -2484,6 +319,7 @@ insert into @Result2
 		ServerGameNum ,
 		GameDate ,
 		GameName ,
+		GameTypeId,
 		PayoutType ,
 		ClientName ,
 		CreditAcctNum ,
@@ -2500,6 +336,7 @@ Select
 		ISNULL(ServerGameNum ,Gamenum) ServerGameNum,
 		GameDate ,
 		GameName ,
+		GameTypeId,
 		PayoutType ,
 		ClientName ,
 		case 
@@ -2516,10 +353,14 @@ Select
 		PatternName, 
 		case  when ServerGameNum is null  then 0 else 1 end
 		--(select dbo.B3_fnGetWinningCardNumber(PatternName, SessNum, 1, GameNum ))  as WinningCardNumber
-From @Results 
-Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName --, GameWinAmt, BonusWinAmt, TotalPaidAmt
+From #TempResults 
+Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, CreditAcctNum, ClientName, Denom, BetLevel, WinAmount, NumberWinners, PatternName, GameTypeId --, GameWinAmt, BonusWinAmt, TotalPaidAmt
 Order By ServerGameNum
 end
+
+--select * from #TempResults
+
+IF OBJECT_ID('tempdb..#TempResults') IS not null drop table #TempResults
 
 declare @ServerGamenum int, @RegGameNumber int, @PayoutType int, @Pattername varchar(50), @SessionNumber int, @GameName varchar(50), @IsServerGame bit
 
@@ -2529,31 +370,23 @@ select
 		SessNum,
 		ServerGameNum ,
 		GameNum	,
-		--GameDate ,
 		GameName ,
 		case when PayoutType = 'Regular' then 0 else 1 end,
-		--ClientName ,
-		--CreditAcctNum ,
-		--Denom ,
-		--BetLevel ,
-		--NumberWinners ,
-		--WinAmount ,
 		PatternName,
 		IsServerGame 
 		from @Result2 
 
 		open GetWinningCardNumber_Cursor
-
 		FETCH NEXT FROM GetWinningCardNumber_Cursor 
-				INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
+	    INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
 		
 		while @@fetch_status = 0
 		begin
 		
 	    declare @WinningCardNumber varchar(100)
-		exec usp_management_Report_GetWinningCardNumber @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @WinningCardNumber OUTPUT
+	                                      --   select @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @GameTypeId
+		exec usp_management_Report_GetWinningCardNumber  @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @GameTypeId, @WinningCardNumber OUTPUT
 	 
-
 				if (@Pattername is null )
 				begin
 				
@@ -2579,6 +412,8 @@ select
 close GetWinningCardNumber_Cursor
 deallocate GetWinningCardNumber_Cursor
 
+
+
 select 
 		SessNum,
 		GameNum	,
@@ -2595,10 +430,7 @@ select
 		PatternName ,
 		WinningCardNumber
 		from @Result2 order by GameDate asc
-
-
-
-
+END
 GO
 
 

@@ -1,8 +1,8 @@
 ﻿USE [B3]
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_GetWinningCardNumber2]') AND type in (N'P', N'PC'))
-DROP PROCEDURE [dbo].[usp_management_GetWinningCardNumber2]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_management_Report_GetWinningCardNumber2]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_management_Report_GetWinningCardNumber2]
 GO
 
 USE [B3]
@@ -15,7 +15,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE  proc [dbo].[usp_management_GetWinningCardNumber2]
+CREATE  proc [dbo].[usp_management_Report_GetWinningCardNumber2]
 
 (
 @SessionNumber int, 
@@ -33,6 +33,7 @@ AS BEGIN
 ----==============
 --========TEST=================
 --1036	78	0	42
+
 --declare
 --@SessionNumber int, 
 --@GameNumber int, 
@@ -137,13 +138,13 @@ BEGIN--1
         WHILE (@Counter != @NCardbet)   
 		BEGIN--3b
 			set @sqlCommand = 'select @cardOUT = cardsn_' + CAST(@Counter + 1 as varchar(10)) + ' from ' +  @GameName2 + ' where game.sessnum = ' + cast(@SessionNumber as varchar(10))+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
-			--select @sqlCommand
+		
 			set @ParmDefinition = N'@cardOUT varchar(10) OUTPUT'					
 			EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @cardOUT = @CardNumber OUTPUT
-			--select @CardNumber
+
 			set @ListOfCardNumber = @ListOfCardNumber + @CardNumber + ', '	
 			set @Counter = @Counter + 1	
-			--select @Counter, @ListOfCardNumber
+
 		END
 		
 		set @ListOfCardNumber =  SUBSTRING(@ListOfCardNumber, 0, len(@ListOfCardNumber))		
@@ -204,15 +205,12 @@ BEGIN--1
 			+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
 			set @ParmDefinition = N'@cardOUT varchar(10) OUTPUT'
 					
-			--select * from dbo.CrazyBout_GameJournal
-			--select @sqlCommand
-			--select  bonuscardsn_1 from dbo.CrazyBout_GameJournal game where game.sessnum = 1053 and game.gamenum = 142
 					
 			EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @cardOUT = @CardNumber OUTPUT
 		
 			set @ListOfCardNumber = @ListOfCardNumber + @CardNumber + ', '	
 			set @Counter = @Counter + 1	
-			--select @Counter
+
 		END--(@Counter != @NCardbet)	
 		
 		set @ListOfCardNumber =  SUBSTRING(@ListOfCardNumber, 0, len(@ListOfCardNumber))				
