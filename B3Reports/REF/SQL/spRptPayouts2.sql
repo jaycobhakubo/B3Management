@@ -22,7 +22,7 @@ CREATE proc [dbo].[spRptPayouts2]
 	@DateRun datetime
 )
 AS BEGIN
---==========TEST==============
+----==========TEST==============
 --Declare 
 --	@SessionNum int, 
 --	@DateRun datetime
@@ -363,7 +363,7 @@ Group By SessNum, GameNum, ServerGameNum, GameDate, GameName, PayoutType, Credit
 Order By ServerGameNum
 end
 
---select * from #TempResults
+
 
 IF OBJECT_ID('tempdb..#TempResults') IS not null drop table #TempResults
 
@@ -379,11 +379,12 @@ select
 		case when PayoutType = 'Regular' then 0 else 1 end,
 		PatternName,
 		IsServerGame 
+		,GameTypeId
 		from @Result2 
 
 		open GetWinningCardNumber_Cursor
 		FETCH NEXT FROM GetWinningCardNumber_Cursor 
-	    INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
+	    INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame, @GameTypeId
 		
 		while @@fetch_status = 0
 		begin
@@ -411,7 +412,7 @@ select
 			end
 
 					FETCH NEXT FROM GetWinningCardNumber_Cursor 
-			INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame
+			INTO  @SessionNumber, @ServerGamenum, @RegGameNumber, @GameName,  @PayoutType,  @Pattername, @IsServerGame,  @GameTypeId
 		end
 
 close GetWinningCardNumber_Cursor
@@ -440,3 +441,4 @@ END
 GO
 
 
+ 
