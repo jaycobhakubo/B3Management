@@ -14,27 +14,6 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
---USE [B3]
---GO
-
---IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[B3_fnGetBallCallB3]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
---DROP FUNCTION [dbo].[B3_fnGetBallCallB3]
---GO
-
---USE [B3]
---GO
-
---SET ANSI_NULLS ON
---GO
-
---SET QUOTED_IDENTIFIER ON
---GO
-
-
-
-
-
-
 
 CREATE function [dbo].[B3_fnGetBallCallB3]
 (
@@ -564,15 +543,6 @@ begin
  
 					end
 					
-
-
-
-
-
-
-
-
-
 GO
 
 
