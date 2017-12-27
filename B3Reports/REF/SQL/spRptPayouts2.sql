@@ -14,6 +14,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+
 CREATE proc [dbo].[spRptPayouts2]
 (
 
@@ -26,8 +27,9 @@ AS BEGIN
 --	@SessionNum int, 
 --	@DateRun datetime
 	
---SET @SessionNum = 1036
---SET @DateRun = '12/21/2017 00:00:00'
+--SET @SessionNum = 1010
+--SET @DateRun = '12/27/2017 00:00:00'
+--BEGIN
 --=============================
 
 
@@ -58,8 +60,11 @@ DECLARE @ListOfAvailableGames TABLE
 	GameTableName varchar(50)
 )
 
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (36, 'Crazy Bout', 'CrazyBout')
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (37, 'Jailbreak', 'JailBreak')
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (38, 'Maya Money', 'MayaMoney')
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (41, 'Wild Ball', 'WildBall')
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (42, 'Time Bomb', 'TimeBomb')
-
 
 DECLARE @GameTypeId INT
 DECLARE @GameNameAlias VARCHAR(50)
@@ -85,7 +90,7 @@ BEGIN
 			From '+@GameTableName+'_GameJournal cb join B3_SessionsJournal sj on cb.sessnum = sj.sessnum
 			Where sj.sessnum = '+CAST(@SessionNum as varchar(10))+'And cb.gamewinamt <> 0 And cb.numofwins_patt_1 = 0 And cb.numofwins_patt_2 = 0 And cb.numofwins_patt_3 = 0 And cb.numofwins_patt_4 = 0 And cb.numofwins_patt_5 = 0 And cb.numofwins_patt_6 = 0 And cb.numofwins_patt_7 = 0 And cb.numofwins_patt_8 = 0 And cb.numofwins_patt_9 = 0 And cb.numofwins_patt_10 = 0And cb.numofwins_patt_11 = 0 And cb.numofwins_patt_12 = 0
 		 '                 
-		exec (@sqlCommand)
+		exec (@sqlCommand) 
 	END
 	ELSE
 	BEGIN
@@ -179,7 +184,7 @@ BEGIN
 			And cb.numofwins_bonuspatt_'+cast(@CountPatternId as varchar(10))+' <> 0
 			And cb.bonuswinamt_patt_'+cast(@CountPatternId as varchar(10))+' <> 0
 		 ' 
-		 select @sqlCommand
+		 --select @sqlCommand
 		set @CountPatternId += 1                
 		exec (@sqlCommand)
 		END
@@ -431,6 +436,7 @@ select
 		WinningCardNumber
 		from @Result2 order by GameDate asc
 END
+
 GO
 
 

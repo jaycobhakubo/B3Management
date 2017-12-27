@@ -26,9 +26,28 @@ CREATE proc [dbo].[usp_management_rptAccountHistory]
     @SessionID_ int,
     @AccountNumber int
 )
-as
+AS
+--==========TEST==============
+--declare 
+--    @P_Date_ datetime,
+--    @SessionID_ int,
+--    @AccountNumber int
+
+--set @P_Date_ = '12/26/2017 00:00:00'
+--set @SessionID_ = 1009
+--set @AccountNumber = 65340777
+
+--============================
+
     DECLARE @doubleAccounting int; SET @doubleAccounting = 0;
     DECLARE @NDMode int; SET @NDMode = 0;
+    DECLARE @IsServerGame bit 
+    
+SELECT @IsServerGame =
+ Case when MinPlayer > 1 then  1
+ else 0 end 
+ from Server_GameSettings 
+
 
     -- Check to see if the system is using double accounting where
     --  all wins go into a separate account
@@ -269,6 +288,10 @@ as
             WinBalance int, -- For dual Accounting
             CreditBalance int
         )
+        
+
+
+
 
         INSERT @Result
         SELECT 
@@ -281,12 +304,14 @@ as
             a.creditamt,
             a.betamt,
             a.denom,
+   
             CASE WHEN a.betplaced_card_1 = 'T' THEN 1 ELSE 0 END + 
             CASE WHEN a.betplaced_card_2 = 'T' THEN 1 ELSE 0 END + 
             CASE WHEN a.betplaced_card_3 = 'T' THEN 1 ELSE 0 END +
             CASE WHEN a.betplaced_card_4 = 'T' THEN 1 ELSE 0 END +
             CASE WHEN a.betplaced_card_5 = 'T' THEN 1 ELSE 0 END +
             CASE WHEN a.betplaced_card_6 = 'T' THEN 1 ELSE 0 END AS [NumberOfCardsWagered],
+           -- CASE WHEN 
             CASE (CASE WHEN a.betplaced_card_1 = 'T' THEN 1 ELSE 0 END + 
                   CASE WHEN a.betplaced_card_2 = 'T' THEN 1 ELSE 0 END + 
                   CASE WHEN a.betplaced_card_3 = 'T' THEN 1 ELSE 0 END +
@@ -304,6 +329,11 @@ as
             a.creditamt
         FROM dbo.MayaMoney_GameJournal a 
         WHERE a.creditacctnum = @AccountNumber
+
+
+--declare @MinPlayer int 
+--select  @MinPlayer  = MinPlayer  from Server_GameSettings
+
 
         INSERT @Result
         SELECT 
@@ -340,8 +370,13 @@ as
         FROM dbo.JailBreak_GameJournal a 
         WHERE a.creditacctnum = @AccountNumber
 
+
+     --   select * from Server_GameJournal where GameNumber = 
+     
+    
+
         INSERT @Result
-        SELECT 
+       SELECT 
             a.recdatetime, 
             NULL,
             'Game' ,
@@ -357,23 +392,57 @@ as
             CASE WHEN a.betplaced_card_4 = 'T' THEN 1 ELSE 0 END +
             CASE WHEN a.betplaced_card_5 = 'T' THEN 1 ELSE 0 END +
             CASE WHEN a.betplaced_card_6 = 'T' THEN 1 ELSE 0 END AS [NumberOfCardsWagered],
-            CASE (CASE WHEN a.betplaced_card_1 = 'T' THEN 1 ELSE 0 END + 
-                  CASE WHEN a.betplaced_card_2 = 'T' THEN 1 ELSE 0 END + 
-                  CASE WHEN a.betplaced_card_3 = 'T' THEN 1 ELSE 0 END +
-                  CASE WHEN a.betplaced_card_4 = 'T' THEN 1 ELSE 0 END +
-                  CASE WHEN a.betplaced_card_5 = 'T' THEN 1 ELSE 0 END +
-                  CASE WHEN a.betplaced_card_6 = 'T' THEN 1 ELSE 0 END) 
-            WHEN 1 THEN CAST(a.cardsn_1 AS varchar(10)) 
-            WHEN 2 THEN CAST(a.cardsn_1 AS varchar(10)) +' to '+ CAST(a.cardsn_2 AS varchar(10))
-            WHEN 3 THEN CAST(a.cardsn_1 AS varchar(10)) +' to '+ CAST(a.cardsn_3 AS varchar(10))
-            WHEN 4 THEN CAST(a.cardsn_1 AS varchar(10)) +' to '+ CAST(a.cardsn_4 AS varchar(10))
-            WHEN 5 THEN CAST(a.cardsn_1 AS varchar(10)) +' to '+ CAST(a.cardsn_5 AS varchar(10))
-            WHEN 6 THEN CAST(a.cardsn_1 AS varchar(10)) +' to '+ CAST(a.cardsn_6 AS varchar(10)) END AS [SerialNumberPlayed],
+       case when @IsServerGame = 0 then
+(
+  CASE (CASE WHEN betplaced_card_1 = 'T' THEN 1 ELSE 0 END + 
+                  CASE WHEN betplaced_card_2 = 'T' THEN 1 ELSE 0 END + 
+                  CASE WHEN betplaced_card_3 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_4 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_5 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_6 = 'T' THEN 1 ELSE 0 END) 
+            WHEN 1 THEN CAST(cardsn_1 AS varchar(10))         
+            WHEN 6 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ CAST(cardsn_6 AS varchar(10)) 
+           ELSE substring( 
+                  (case when betplaced_card_1 = 'T' then cast(cardsn_1 as varchar(10)) + ',' else '' END ) +
+				(case when betplaced_card_2 = 'T' then ' '+ cast(cardsn_2 as varchar(10))+ ',' else '' END )  +
+				  (case when betplaced_card_3 = 'T' then ' '+cast(cardsn_3 as varchar(10))+ ',' else '' END ) +
+				   (case when betplaced_card_4 = 'T' then ' '+cast(cardsn_4 as varchar(10))+ ',' else '' END)  +
+				   (case when betplaced_card_5 = 'T' then ' '+cast(cardsn_5 as varchar(10))+ ',' else '' END )  +
+					(case when betplaced_card_6 = 'T' then ' '+cast(cardsn_6 as varchar(10))+ ',' else '' END ),  
+					0, 
+					LEN((case when betplaced_card_1 = 'T' then cast(cardsn_1 as varchar(10)) + ',' else '' END ) +
+				(case when betplaced_card_2 = 'T' then ' '+ cast(cardsn_2 as varchar(10))+ ',' else '' END )  +
+				  (case when betplaced_card_3 = 'T' then ' '+cast(cardsn_3 as varchar(10))+ ',' else '' END ) +
+				   (case when betplaced_card_4 = 'T' then ' '+cast(cardsn_4 as varchar(10))+ ',' else '' END)  +
+				   (case when betplaced_card_5 = 'T' then ' '+cast(cardsn_5 as varchar(10))+ ',' else '' END )  +
+					(case when betplaced_card_6 = 'T' then ' '+cast(cardsn_6 as varchar(10))+ ',' else '' END )))
+            END             
+)
+            ELSE
+            (
+         CASE (CASE WHEN betplaced_card_1 = 'T' THEN 1 ELSE 0 END + 
+                  CASE WHEN betplaced_card_2 = 'T' THEN 1 ELSE 0 END + 
+                  CASE WHEN betplaced_card_3 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_4 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_5 = 'T' THEN 1 ELSE 0 END +
+                  CASE WHEN betplaced_card_6 = 'T' THEN 1 ELSE 0 END) 
+            WHEN 1 THEN CAST(cardsn_1 AS varchar(10)) 
+            WHEN 2 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ cast(cardsn_2 AS varchar(10))
+            WHEN 3 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ cast(cardsn_3 AS varchar(10))
+            WHEN 4 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ cast(cardsn_4 AS varchar(10))
+            WHEN 5 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ cast(cardsn_5 AS varchar(10))
+            WHEN 6 THEN CAST(cardsn_1 AS varchar(10)) +' to '+ cast(cardsn_6 AS varchar(10)) END
+            )
+             END AS [SerialNumberPlayed],
             a.totalpaidamt,
             0.00 as WinBalance,
             a.creditamt
         FROM dbo.CrazyBout_GameJournal a 
         WHERE a.creditacctnum = @AccountNumber
+     
+
+
+
 
         INSERT @Result
         SELECT 
@@ -410,6 +479,8 @@ as
         FROM dbo.WildBall_GameJournal a 
         WHERE a.creditacctnum = @AccountNumber
 
+
+
         DECLARE @Result2 TABLE
         (
             DateTimeTransaction datetime,
@@ -444,6 +515,8 @@ as
             (select SUM(b.Win) from @Result b where b.DateTimeTransaction <= a.DateTimeTransaction),
             CreditBalance
         FROM @Result a 
+ 
+
  
         DELETE FROM @Result
  
