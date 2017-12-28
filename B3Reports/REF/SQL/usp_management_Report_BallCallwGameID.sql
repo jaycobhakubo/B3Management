@@ -17,6 +17,7 @@ GO
 
 
 
+
 CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
     (
     @session int,
@@ -29,8 +30,7 @@ CREATE  procedure [dbo].[usp_management_Report_BallCallwGameID]
 	)
 AS BEGIN
 --===========TEST================
---1034	529	1	Wild Ball	1	41
---1036	78	0	Time Bomb	0	42
+--1021	18	0	Spirit of 76	0	39
 --declare 
 --	@session int,
 --	@GameID int,
@@ -40,12 +40,12 @@ AS BEGIN
 --	@GameTypeId int,
 --	@returns  nvarchar(max) --output
 
---	set @session = 1036
---	set @GameID = 78
+--	set @session = 1021
+--	set @GameID = 18
 --	set @BallCallType = 0
---	set @GameName2 = 'Time Bomb'
+--	set @GameName2 = 'Spirit of 76'
 --	set @IsServerGame = 0
---	set @GameTypeId = 42
+--	set @GameTypeId = 39
 --		BEGIN
 --===============================
 
@@ -125,12 +125,20 @@ AS BEGIN
     where sessnum = @session and gametypeid = 37 and jb.bonuscardsn_1 != 0 and jb.bonusofferaccepted != 0
     group by s.ServerGameNumber, jb.bonuscallcount, s.GameTypeId
     
- -- Find all of the Jail Break bonus games
+ -- Find all of the WildBall bonus games
     insert into @BonusGames
     select s.ServerGameNumber, s.GameTypeId, jb.bonuscallcount
         from WildBall_GameJournal jb
             join Server_GameJournal s on jb.gameNum = s.GameNumber
     where sessnum = @session and gametypeid = 41 and jb.bonuscardsn_1 != 0 and jb.bonusofferaccepted != 0
+    group by s.ServerGameNumber, jb.bonuscallcount, s.GameTypeId
+    
+     -- Find all of the Spirit of 76 bonus games
+    insert into @BonusGames
+    select s.ServerGameNumber, s.GameTypeId, jb.bonuscallcount
+        from dbo.Spirit76_GameJournal jb
+            join Server_GameJournal s on jb.gameNum = s.GameNumber
+    where sessnum = @session and gametypeid = 39 and jb.bonuscardsn_1 != 0 and jb.bonusofferaccepted != 0
     group by s.ServerGameNumber, jb.bonuscallcount, s.GameTypeId
        
     -- update the bonus ball count in the results table
@@ -171,7 +179,7 @@ AS BEGIN
                         + coalesce (', @bonusBalls_Out = (' + dbo.b3_fnGetBallColumnList (@bonusBallCount) + ')', '')
                         + ' from Server_Game where ServerGame = '
                         + cast (@gameNumber as nvarchar)
-                               
+                             
         exec sp_executesql @sqlCommand, @parameters, @gameBalls_Out = @gameBalls output, @bonusBalls_Out = @bonusBalls output;
         
         -- Now that the ball list has been created update the result table
@@ -189,9 +197,9 @@ AS BEGIN
 declare @MinPlayer int 
  select  @MinPlayer  = MinPlayer  from Server_GameSettings
 
+--select @MinPlayer, COUNT(*) from @GameBallData
 if (@MinPlayer > 1 or (select COUNT(*) from @GameBallData) > 0 )
 begin   
-
 insert into @GameBallData2
 		(
 				ServerGameNumber 
@@ -228,6 +236,15 @@ if (@GameTypeId = 42)
 BEGIN
 	SET @GameName2 = 'TimeBomb'
 END
+else
+IF (@GameTypeId = 39)
+BEGIN
+	SET @GameName2 = 'Spirit76'
+END
+
+
+
+
 
  insert into @GameBallData2
 		(
@@ -272,6 +289,7 @@ END
 --select @returns
 return 
 end
+
 
 
 

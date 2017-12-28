@@ -15,6 +15,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
+
 CREATE proc [dbo].[spRptPayouts2]
 (
 
@@ -27,8 +29,8 @@ AS BEGIN
 --	@SessionNum int, 
 --	@DateRun datetime
 	
---SET @SessionNum = 1010
---SET @DateRun = '12/27/2017 00:00:00'
+--SET @SessionNum = 1021
+--SET @DateRun = '12/28/2017 00:00:00'
 --BEGIN
 --=============================
 
@@ -65,6 +67,9 @@ INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VAL
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (38, 'Maya Money', 'MayaMoney')
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (41, 'Wild Ball', 'WildBall')
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (42, 'Time Bomb', 'TimeBomb')
+INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (39, 'Spirit of 76', 'Spirit76')
+
+
 
 DECLARE @GameTypeId INT
 DECLARE @GameNameAlias VARCHAR(50)
@@ -390,7 +395,7 @@ select
 		begin
 		
 	    declare @WinningCardNumber varchar(100)
-	                                      --   select @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @GameTypeId
+	                                         --select @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @GameTypeId
 		exec usp_management_Report_GetWinningCardNumber  @Pattername,  @SessionNumber, @PayoutType, @ServerGamenum, @RegGameNumber, @GameName,  @IsServerGame, @GameTypeId, @WinningCardNumber OUTPUT
 	 
 				if (@Pattername is null )
@@ -438,7 +443,8 @@ select
 		from @Result2 order by GameDate asc
 END
 
+
+
 GO
 
 
- 

@@ -15,6 +15,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
 CREATE  proc [dbo].[usp_management_Report_GetWinningCardNumber2]
 
 (
@@ -32,18 +33,18 @@ AS BEGIN
 
 ----==============
 --========TEST=================
---1036	78	0	42
-
+--1021	18	0	39
 --declare
 --@SessionNumber int, 
 --@GameNumber int, 
 --@PayoutType int,
 --@GameTypeId int,
 --@WinningCard nvarchar(500)
---set @SessionNumber = 1036
---set @GameNumber = 78
+
+--set @SessionNumber = 1021
+--set @GameNumber = 18
 --set @PayoutType = 0
---set @GameTypeId = 42
+--set @GameTypeId = 39
 --BEGIN
 --===============================
 
@@ -65,6 +66,7 @@ insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.MayaMoney_GameJo
 insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.JailBreak_GameJournal game',37)
 insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.WildBall_GameJournal game',41)
 insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.TimeBomb_GameJournal game',42)
+insert into @ListOfGameName (GameName, GameTypeId) values ('dbo.Spirit76_GameJournal game',39)
 set @counttest = 0
 			
 declare  Game_cursor cursor for 
@@ -132,7 +134,7 @@ BEGIN--1
 				select @ListOfCardNumber2	= SUBSTRING(@ListOfCardNumber2, 0, len(@ListOfCardNumber2))			
         END
         
-             
+          
         SET @Counter = 0
 	     
         WHILE (@Counter != @NCardbet)   
@@ -178,7 +180,6 @@ BEGIN--1
 					(case when bonuscardsn_3 != 0 then 1 else 0 END) 
 					  from ' +  @GameName2 + ' where game.sessnum = ' + cast(@SessionNumber as varchar(10))
 				+ ' and game.gamenum = ' + cast (@GameNumber as varchar(10)) 
-					select @sqlCommand	
 				set @ParmDefinition = N'@NCardbetOUT varchar(10) OUTPUT'			
 				EXECUTE sp_executesql @sqlCommand, @ParmDefinition, @NCardbetOUT = @NCardbet OUTPUT		
 			END
@@ -236,6 +237,7 @@ END
 return 				
 end
 		
+
 
 
 

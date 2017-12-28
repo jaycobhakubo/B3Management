@@ -15,6 +15,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
 CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 (
 
@@ -30,7 +31,7 @@ CREATE proc [dbo].[usp_management_Report_GetWinningCardNumber]
 )
 AS BEGIN
 --==============TEST===========
---Second Hand	1036	0	78	78	Time Bomb	0	42
+--Crazy Stamp	1021	0	18	18	Spirit of 76	0	39
 --declare
 --@PatterName varchar(100),
 --@SessionNumber int, 
@@ -42,18 +43,16 @@ AS BEGIN
 --@GameTypeId int,
 --@WinningCardNumber3 varchar(500) --OUTPUT
 
---set @PatterName = 'Second Hand'
---set @SessionNumber = 1036
+--set @PatterName = 'Crazy Stamp'
+--set @SessionNumber = 1021
 --set @BallCallType = 0
---set @GameID = 78
---set @RegGameID = 78
---set @GameName = 'Time Bomb'
+--set @GameID = 18
+--set @RegGameID = 18
+--set @GameName = 'Spirit of 76'
 --set @IsServerGame = 0
---set @GameTypeId = 42
+--set @GameTypeId = 39
 --BEGIN
 --=============================
-
-
 declare @RangeWinCardNumber varchar(500)
 declare @Pattern table (Design varchar(100))
 declare @WinningNumber varchar(50) set @WinningNumber = ''
@@ -82,8 +81,13 @@ end
 set  @WinningCardNumber3 = '';
 set @Exists = 1
 set @WinningNumber = ''
+
 exec usp_management_Report_GetWinningCardNumber2 @SessionNumber, @RegGameID, @BallCallType, @GameTypeId, @RangeWinCardNumber output	
+--select @RangeWinCardNumber
+--select @SessionNumber, @GameID, @BallCallType, @GameName, @IsServerGame, @GameTypeId
 exec dbo.usp_management_Report_BallCallwGameID @SessionNumber, @GameID, @BallCallType, @GameName, @IsServerGame, @GameTypeId, @BallCall output
+--select @BallCall
+
 set @BallCall = ','+ @BallCall+',0,' set @BallCall = REPLACE(@BallCall,' ','')
 set @C_Card = @RangeWinCardNumber set @C_Card = REPLACE(@C_Card,' ','')+',' 
 set @result2 = (select CHARINDEX(',',@C_Card))
@@ -2669,6 +2673,7 @@ set @result2 = (select CHARINDEX(',',@C_Card))
 		return 
 		--select @WinningCardNumber3
 end					
+
 
 
 GO
