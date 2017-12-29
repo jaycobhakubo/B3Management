@@ -98,11 +98,15 @@ namespace GameTech.B3Reports
 
         public GetNWinningPattern(int AccountNumber, DateTime? recdatetime, string gameName)
         {
+          
             SqlConnection sc = GetSQLConnection.get();
-            try
+            if (gameName != "TimeBomb")
             {
-                sc.Open();
-                using (SqlCommand cmd = new SqlCommand(@"select 
+                try
+                {
+                    sc.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(@"select 
                                                         numofwins_patt_1
                                                         ,numofwins_patt_2 
                                                         ,numofwins_patt_3 
@@ -116,40 +120,86 @@ namespace GameTech.B3Reports
                                                         ,numofwins_patt_11 
                                                         ,numofwins_patt_12 
                                                         from dbo." + gameName + @"_GameJournal where creditacctnum = @creditacctnum and recdatetime = @recdatetime", sc))
-                {
-                    cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
-                    cmd.Parameters.AddWithValue("recdatetime", recdatetime);
-
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    while (reader.Read())
                     {
-                        Pattern_Num_1 = reader.GetInt32(11);
-                        Pattern_Num_2 = reader.GetInt32(10);
-                        Pattern_Num_3 = reader.GetInt32(9);
-                        Pattern_Num_4 = reader.GetInt32(8);
-                        Pattern_Num_5 = reader.GetInt32(7);
-                        Pattern_Num_6 = reader.GetInt32(6);
-                        Pattern_Num_7 = reader.GetInt32(5);
-                        Pattern_Num_8 = reader.GetInt32(4);
-                        Pattern_Num_9 = reader.GetInt32(3);
-                        Pattern_Num_10 = reader.GetInt32(2);
-                        Pattern_Num_11 = reader.GetInt32(1);
-                        Pattern_Num_12 = reader.GetInt32(0);
-                        if (GetGameSettings.MinNumberOfPlayers > 1)
+                        cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
+                        cmd.Parameters.AddWithValue("recdatetime", recdatetime);
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
                         {
-                            Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                            Pattern_Num_1 = reader.GetInt32(11);
+                            Pattern_Num_2 = reader.GetInt32(10);
+                            Pattern_Num_3 = reader.GetInt32(9);
+                            Pattern_Num_4 = reader.GetInt32(8);
+                            Pattern_Num_5 = reader.GetInt32(7);
+                            Pattern_Num_6 = reader.GetInt32(6);
+                            Pattern_Num_7 = reader.GetInt32(5);
+                            Pattern_Num_8 = reader.GetInt32(4);
+                            Pattern_Num_9 = reader.GetInt32(3);
+                            Pattern_Num_10 = reader.GetInt32(2);
+                            Pattern_Num_11 = reader.GetInt32(1);
+                            Pattern_Num_12 = reader.GetInt32(0);
+                            if (GetGameSettings.MinNumberOfPlayers > 1)
+                            {
+                                Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                            }
                         }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sc.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    sc.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(@"select 
+                                                        numofwins_patt_1
+                                                        ,numofwins_patt_2 
+                                                        ,numofwins_patt_3 
+                                                        ,numofwins_patt_4 
+                                                        ,numofwins_patt_5 
+                                                        ,numofwins_patt_6 
+                                                        from dbo." + gameName + @"_GameJournal where creditacctnum = @creditacctnum and recdatetime = @recdatetime", sc))
+                    {
+                        cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
+                        cmd.Parameters.AddWithValue("recdatetime", recdatetime);
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+
+                            Pattern_Num_7 = reader.GetInt32(5);
+                            Pattern_Num_8 = reader.GetInt32(4);
+                            Pattern_Num_9 = reader.GetInt32(3);
+                            Pattern_Num_10 = reader.GetInt32(2);
+                            Pattern_Num_11 = reader.GetInt32(1);
+                            Pattern_Num_12 = reader.GetInt32(0);
+                            if (GetGameSettings.MinNumberOfPlayers > 1)
+                            {
+                                Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sc.Close();
+                }
             }
-            finally
-            {
-                sc.Close();
-            }
+        
         }
     }
 }

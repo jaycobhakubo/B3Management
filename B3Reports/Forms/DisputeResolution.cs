@@ -235,24 +235,34 @@ namespace GameTech.B3Reports.Forms
                     SelectedB4Game = "CrazyBout";
                 }
                 else
-                    if (cmbxGameName.SelectedItem.ToString() == "Jailbreak")
+                if (cmbxGameName.SelectedItem.ToString() == "Jailbreak")
+                {
+                    SelectedB4Game = "JailBreak";
+                }
+                else
+                if (cmbxGameName.SelectedItem.ToString() == "Maya Money")
+                {
+                    SelectedB4Game = "MayaMoney";
+                }
+                else
+                if (cmbxGameName.SelectedItem.ToString() == "Wild Ball")
+                {
+                    SelectedB4Game = "WildBall";
+                }
+                else
+                if (cmbxGameName.SelectedItem.ToString() == "Spirit 76")
+                {
+                    SelectedB4Game = "Spirit76";
+                }
+                else
+                    if (cmbxGameName.SelectedItem.ToString() == "Time Bomb")
                     {
-                        SelectedB4Game = "JailBreak";
+                        SelectedB4Game = "TimeBomb";
                     }
-                    else
-                        if (cmbxGameName.SelectedItem.ToString() == "Maya Money")
-                        {
-                            SelectedB4Game = "MayaMoney";
-                        }
-                        else
-                            if (cmbxGameName.SelectedItem.ToString() == "Wild Ball")
-                            {
-                                SelectedB4Game = "WildBall";
-                            }
-                            else
-                            {
-                                SelectedB4Game = cmbxGameName.SelectedItem.ToString();
-                            }
+                else
+                {
+                    SelectedB4Game = cmbxGameName.SelectedItem.ToString();
+                }
 
                 chkbxGameNumber.Enabled = true;
 
@@ -468,12 +478,14 @@ namespace GameTech.B3Reports.Forms
             if (txtbxAccountNumber.Text != string.Empty && cmbxGameName.Items.Count != 0)
             {
                 ShowCardPanel();
-                if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
-                {
+                //if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
+                //{
                     GetInfoALL();
-                }
-                else
-                { GetInfoALL(); }
+                //}
+                //else
+                //{ 
+                //    GetInfoALL(); 
+                //}
                 DisableControlsInPanel2();
                 EnableControlInPanel1();
                 TurnOnNotInPlayImages();
@@ -495,25 +507,25 @@ namespace GameTech.B3Reports.Forms
 
             Status = 2;
 
-            if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
-            {
+            //if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
+            //{
                 GetInfoALL();
-            }
-            else
-            {
-                GetInfoALL();
-            }
+            //}
+            //else
+            //{
+            //    GetInfoALL();
+            //}
         }
 
         private void imgbtnNext_Click(object sender, EventArgs e)
         {
             Status = 1;
-            if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
-            {
+            //if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
+            //{
                 GetInfoALL();
-            }
-            else
-            { GetInfoALL(); }
+            //}
+            //else
+            //{ GetInfoALL(); }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -699,7 +711,8 @@ namespace GameTech.B3Reports.Forms
                                     reader.GetString(0) == "JailBreak" ||
                                     reader.GetString(0) == "WildBall" ||
                                     reader.GetString(0) == "Spirit76" ||
-                                    reader.GetString(0) == "MayaMoney")
+                                    reader.GetString(0) == "MayaMoney"||
+                                     reader.GetString(0) == "TimeBomb")
 
                                     if (reader.GetString(0) == "CrazyBout")
                                     {
@@ -716,6 +729,14 @@ namespace GameTech.B3Reports.Forms
                                     else if (reader.GetString(0) == "WildBall")
                                     {
                                         GameName = "Wild Ball";
+                                    }
+                                    else if (reader.GetString(0) == "Spirit76")
+                                    {
+                                        GameName = "Spirit 76";
+                                    }
+                                    else if (reader.GetString(0) == "TimeBomb")
+                                    {
+                                        GameName = "Time Bomb";
                                     }
                                     else
                                     {
@@ -1742,35 +1763,37 @@ namespace GameTech.B3Reports.Forms
             int TempCardNumber = GetInfo.FirstCardNumber;
             ClearAllTextInCardNumber();
             // clearCardSN();
-
-            int countActiveCard = 0;
-            while (CountUpToSix != (6 + 1))
+             bool IsCardActive = false;
+             int countActiveCard = 0;
+            if (SelectedB4Game != "TimeBomb")
             {
-                //Lets see if the first card number is enabled.
-
-                bool IsCardActive = false;
-                sc.Open();
-                try
+                 countActiveCard = 0;
+                while (CountUpToSix != (6 + 1))
                 {
-                    using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + GetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
+                    //Lets see if the first card number is enabled.
+
+                    IsCardActive = false;
+                    sc.Open();
+                    try
                     {
-                        cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
-                        cmd.Parameters.AddWithValue("gamenum", GetInfo.GameNumber);
-                        if (Convert.ToString(cmd.ExecuteScalar()) == "T")
+                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + GetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
                         {
-                            IsCardActive = true;
-                        }
-                        else
-                        {
-                            IsCardActive = false;
+                            cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
+                            cmd.Parameters.AddWithValue("gamenum", GetInfo.GameNumber);
+                            if (Convert.ToString(cmd.ExecuteScalar()) == "T")
+                            {
+                                IsCardActive = true;
+                            }
+                            else
+                            {
+                                IsCardActive = false;
+                            }
                         }
                     }
-                }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
-                finally { sc.Close(); }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
+                    finally { sc.Close(); }
 
-
-                if (IsCardActive == true)
+                       if (IsCardActive == true)
                 {
                     countActiveCard = countActiveCard + 1;
 
@@ -1835,7 +1858,110 @@ namespace GameTech.B3Reports.Forms
 
                 TempCardNumber++;
                 CountUpToSix = CountUpToSix + 1;
+            
+                }
             }
+            else
+            {
+
+                CountUpToSix = 1; //TimeBomb
+                while (CountUpToSix != (4 + 1))
+                {
+                    //Lets see if the first card number is enabled.
+
+                    IsCardActive = false;
+                    sc.Open();
+                    try
+                    {
+                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + GetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
+                        {
+                            cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
+                            cmd.Parameters.AddWithValue("gamenum", GetInfo.GameNumber);
+                            if (Convert.ToString(cmd.ExecuteScalar()) == "T")
+                            {
+                                IsCardActive = true;
+                            }
+                            else
+                            {
+                                IsCardActive = false;
+                            }
+                        }
+                    }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
+                    finally { sc.Close(); }
+
+
+
+                    if (IsCardActive == true)
+                    {
+                        countActiveCard = countActiveCard + 1;
+
+                        GetCardNumber gcn = new GetCardNumber(TempCardNumber);
+                        LoadCard(CountUpToSix);
+
+                        if (CountUpToSix == 1)
+                        {
+                            lblSerialN1.Text = TempCardNumber.ToString();
+                        }
+                        else if (CountUpToSix == 2)
+                        {
+                            lblSerialN2.Text = TempCardNumber.ToString();
+                        }
+                        else if (CountUpToSix == 3)
+                        {
+                            lblSerialN3.Text = TempCardNumber.ToString();
+                        }
+                        else if (CountUpToSix == 4)
+                        {
+                            lblSerialN4.Text = TempCardNumber.ToString();
+                        }
+                        //else if (CountUpToSix == 5)
+                        //{
+                        //    lblSerialN5.Text = TempCardNumber.ToString();
+                        //}
+                        //else if (CountUpToSix == 6)
+                        //{
+                        //    lblSerialN6.Text = TempCardNumber.ToString();
+                        //}
+
+                    }//if its false let us hide the bingo cards
+                    else
+                    {
+                        HideCardsIfNotEnable(CountUpToSix);
+
+                        if (CountUpToSix == 1)
+                        {
+                            lblSerialN1.Text = string.Empty;
+                        }
+                        else if (CountUpToSix == 2)
+                        {
+                            lblSerialN2.Text = string.Empty;
+                        }
+                        else if (CountUpToSix == 3)
+                        {
+                            lblSerialN3.Text = string.Empty;
+                        }
+                        else if (CountUpToSix == 4)
+                        {
+                            lblSerialN4.Text = string.Empty;
+                        }
+                        //else if (CountUpToSix == 5)
+                        //{
+                        //    lblSerialN5.Text = string.Empty;
+                        //}
+                        //else if (CountUpToSix == 6)
+                        //{
+                        //    lblSerialN6.Text = string.Empty;
+                        //}
+                    }
+
+                    TempCardNumber++;
+                    CountUpToSix = CountUpToSix + 1;
+                    }
+           }
+
+
+             
 
             //Bonus Pattern Trigger on JailBreak 
             if (SelectedB4Game == "JailBreak")
