@@ -4456,7 +4456,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(310, 93);
             this.richTextBox1.TabIndex = 100;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = global::GameTech.B3Reports.Properties.Resources.SQLConnection;
             // 
             // label8
             // 
