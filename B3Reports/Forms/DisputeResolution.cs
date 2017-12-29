@@ -711,7 +711,7 @@ namespace GameTech.B3Reports.Forms
                                     reader.GetString(0) == "JailBreak" ||
                                     reader.GetString(0) == "WildBall" ||
                                     reader.GetString(0) == "Spirit76" ||
-                                    reader.GetString(0) == "MayaMoney"||
+                                    reader.GetString(0) == "MayaMoney" ||
                                      reader.GetString(0) == "TimeBomb")
 
                                     if (reader.GetString(0) == "CrazyBout")
@@ -742,7 +742,11 @@ namespace GameTech.B3Reports.Forms
                                     {
                                         GameName = reader.GetString(0);
                                     }
-                                cmbxGameName.Items.Add(GameName);
+
+                                if (GameName != "Time Bomb")//Do not addtime bomb untill its functional properly
+                                {
+                                    cmbxGameName.Items.Add(GameName);
+                                }
                             }
                         }
                     }

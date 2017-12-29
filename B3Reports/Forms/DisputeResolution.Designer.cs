@@ -57,181 +57,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
             this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblSerialN1 = new System.Windows.Forms.Label();
-            this.lblSerialN5 = new System.Windows.Forms.Label();
-            this.lblSerialN6 = new System.Windows.Forms.Label();
-            this.lblSerialN3 = new System.Windows.Forms.Label();
-            this.lblSerialN2 = new System.Windows.Forms.Label();
-            this.lblSerialN4 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.lbl6BingoCard5 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard10 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard15 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard20 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard25 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard4 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard9 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard14 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard19 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard24 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard3 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard8 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard13 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard18 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard23 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard6 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard11 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard16 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard21 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard2 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard7 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard12 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard17 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard22 = new System.Windows.Forms.Label();
-            this.lbl6BingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lbl5BingoCard5 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard10 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard15 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard20 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard25 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard4 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard9 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard14 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard19 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard24 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard3 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard8 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard13 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard18 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard23 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard6 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard11 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard16 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard21 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard2 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard7 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard12 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard17 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard22 = new System.Windows.Forms.Label();
-            this.lbl5BingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.lbl4BingoCard5 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard10 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard15 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard20 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard25 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard4 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard9 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard14 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard19 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard24 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard3 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard8 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard13 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard18 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard23 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard6 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard11 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard16 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard21 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard2 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard7 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard12 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard17 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard22 = new System.Windows.Forms.Label();
-            this.lbl4BingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lbl3BingoCard5 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard10 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard15 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard20 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard25 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard4 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard9 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard14 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard19 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard24 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard3 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard8 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard13 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard18 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard23 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard6 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard11 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard16 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard21 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard2 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard7 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard12 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard17 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard22 = new System.Windows.Forms.Label();
-            this.lbl3BingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lbl2BingoCard5 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard10 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard15 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard20 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard25 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard4 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard9 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard14 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard19 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard24 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard3 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard8 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard13 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard18 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard23 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard6 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard11 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard16 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard21 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard2 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard7 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard12 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard17 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard22 = new System.Windows.Forms.Label();
-            this.lbl2BingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblBingoCard5 = new System.Windows.Forms.Label();
-            this.lblBingoCard10 = new System.Windows.Forms.Label();
-            this.lblBingoCard15 = new System.Windows.Forms.Label();
-            this.lblBingoCard20 = new System.Windows.Forms.Label();
-            this.lblBingoCard25 = new System.Windows.Forms.Label();
-            this.lblBingoCard4 = new System.Windows.Forms.Label();
-            this.lblBingoCard9 = new System.Windows.Forms.Label();
-            this.lblBingoCard14 = new System.Windows.Forms.Label();
-            this.lblBingoCard19 = new System.Windows.Forms.Label();
-            this.lblBingoCard24 = new System.Windows.Forms.Label();
-            this.lblBingoCard3 = new System.Windows.Forms.Label();
-            this.lblBingoCard8 = new System.Windows.Forms.Label();
-            this.lblBingoCard13 = new System.Windows.Forms.Label();
-            this.lblBingoCard18 = new System.Windows.Forms.Label();
-            this.lblBingoCard23 = new System.Windows.Forms.Label();
-            this.lblBingoCard6 = new System.Windows.Forms.Label();
-            this.lblBingoCard11 = new System.Windows.Forms.Label();
-            this.lblBingoCard16 = new System.Windows.Forms.Label();
-            this.lblBingoCard21 = new System.Windows.Forms.Label();
-            this.lblBingoCard2 = new System.Windows.Forms.Label();
-            this.lblBingoCard7 = new System.Windows.Forms.Label();
-            this.lblBingoCard12 = new System.Windows.Forms.Label();
-            this.lblBingoCard17 = new System.Windows.Forms.Label();
-            this.lblBingoCard22 = new System.Windows.Forms.Label();
-            this.lblBingoCard1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblBonusSerial4 = new System.Windows.Forms.Label();
             this.lblBonusSerial3 = new System.Windows.Forms.Label();
@@ -373,31 +198,187 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBingoCard1 = new System.Windows.Forms.Label();
+            this.lblBingoCard22 = new System.Windows.Forms.Label();
+            this.lblBingoCard17 = new System.Windows.Forms.Label();
+            this.lblBingoCard12 = new System.Windows.Forms.Label();
+            this.lblBingoCard7 = new System.Windows.Forms.Label();
+            this.lblBingoCard2 = new System.Windows.Forms.Label();
+            this.lblBingoCard21 = new System.Windows.Forms.Label();
+            this.lblBingoCard16 = new System.Windows.Forms.Label();
+            this.lblBingoCard11 = new System.Windows.Forms.Label();
+            this.lblBingoCard6 = new System.Windows.Forms.Label();
+            this.lblBingoCard23 = new System.Windows.Forms.Label();
+            this.lblBingoCard18 = new System.Windows.Forms.Label();
+            this.lblBingoCard13 = new System.Windows.Forms.Label();
+            this.lblBingoCard8 = new System.Windows.Forms.Label();
+            this.lblBingoCard3 = new System.Windows.Forms.Label();
+            this.lblBingoCard24 = new System.Windows.Forms.Label();
+            this.lblBingoCard19 = new System.Windows.Forms.Label();
+            this.lblBingoCard14 = new System.Windows.Forms.Label();
+            this.lblBingoCard9 = new System.Windows.Forms.Label();
+            this.lblBingoCard4 = new System.Windows.Forms.Label();
+            this.lblBingoCard25 = new System.Windows.Forms.Label();
+            this.lblBingoCard20 = new System.Windows.Forms.Label();
+            this.lblBingoCard15 = new System.Windows.Forms.Label();
+            this.lblBingoCard10 = new System.Windows.Forms.Label();
+            this.lblBingoCard5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.lbl2BingoCard1 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard22 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard17 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard12 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard7 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard2 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard21 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard16 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard11 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard6 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard23 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard18 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard13 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard8 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard3 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard24 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard19 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard14 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard9 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard4 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard25 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard20 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard15 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard10 = new System.Windows.Forms.Label();
+            this.lbl2BingoCard5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbl3BingoCard1 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard22 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard17 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard12 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard7 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard2 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard21 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard16 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard11 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard6 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard23 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard18 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard13 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard8 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard3 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard24 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard19 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard14 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard9 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard4 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard25 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard20 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard15 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard10 = new System.Windows.Forms.Label();
+            this.lbl3BingoCard5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbl4BingoCard1 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard22 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard17 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard12 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard7 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard2 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard21 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard16 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard11 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard6 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard23 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard18 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard13 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard8 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard3 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard24 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard19 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard14 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard9 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard4 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard25 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard20 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard15 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard10 = new System.Windows.Forms.Label();
+            this.lbl4BingoCard5 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lbl5BingoCard1 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard22 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard17 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard12 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard7 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard2 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard21 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard16 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard11 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard6 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard23 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard18 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard13 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard8 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard3 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard24 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard19 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard14 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard9 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard4 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard25 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard20 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard15 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard10 = new System.Windows.Forms.Label();
+            this.lbl5BingoCard5 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lbl6BingoCard1 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard22 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard17 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard12 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard7 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard2 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard21 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard16 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard11 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard6 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard23 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard18 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard13 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard8 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard3 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard24 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard19 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard14 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard9 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard4 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard25 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard20 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard15 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard10 = new System.Windows.Forms.Label();
+            this.lbl6BingoCard5 = new System.Windows.Forms.Label();
+            this.lblSerialN4 = new System.Windows.Forms.Label();
+            this.lblSerialN2 = new System.Windows.Forms.Label();
+            this.lblSerialN3 = new System.Windows.Forms.Label();
+            this.lblSerialN6 = new System.Windows.Forms.Label();
+            this.lblSerialN5 = new System.Windows.Forms.Label();
+            this.lblSerialN1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -411,6 +392,25 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -737,2062 +737,6 @@
             this.imgbtnBack.Text = "Back";
             this.imgbtnBack.UseVisualStyleBackColor = false;
             this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.lblSerialN1);
-            this.panel4.Controls.Add(this.lblSerialN5);
-            this.panel4.Controls.Add(this.lblSerialN6);
-            this.panel4.Controls.Add(this.lblSerialN3);
-            this.panel4.Controls.Add(this.lblSerialN2);
-            this.panel4.Controls.Add(this.lblSerialN4);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.pictureBox12);
-            this.panel4.Controls.Add(this.pictureBox11);
-            this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Controls.Add(this.pictureBox13);
-            this.panel4.Controls.Add(this.pictureBox14);
-            this.panel4.Controls.Add(this.pictureBox15);
-            this.panel4.Location = new System.Drawing.Point(2, 1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(672, 501);
-            this.panel4.TabIndex = 1;
-            // 
-            // lblSerialN1
-            // 
-            this.lblSerialN1.AutoSize = true;
-            this.lblSerialN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN1.Location = new System.Drawing.Point(31, 234);
-            this.lblSerialN1.Name = "lblSerialN1";
-            this.lblSerialN1.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN1.TabIndex = 42;
-            this.lblSerialN1.Tag = "1";
-            // 
-            // lblSerialN5
-            // 
-            this.lblSerialN5.AutoSize = true;
-            this.lblSerialN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN5.Location = new System.Drawing.Point(249, 467);
-            this.lblSerialN5.Name = "lblSerialN5";
-            this.lblSerialN5.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN5.TabIndex = 41;
-            this.lblSerialN5.Tag = "5";
-            // 
-            // lblSerialN6
-            // 
-            this.lblSerialN6.AutoSize = true;
-            this.lblSerialN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN6.Location = new System.Drawing.Point(462, 467);
-            this.lblSerialN6.Name = "lblSerialN6";
-            this.lblSerialN6.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN6.TabIndex = 40;
-            this.lblSerialN6.Tag = "6";
-            // 
-            // lblSerialN3
-            // 
-            this.lblSerialN3.AutoSize = true;
-            this.lblSerialN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN3.Location = new System.Drawing.Point(461, 233);
-            this.lblSerialN3.Name = "lblSerialN3";
-            this.lblSerialN3.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN3.TabIndex = 39;
-            this.lblSerialN3.Tag = "3";
-            // 
-            // lblSerialN2
-            // 
-            this.lblSerialN2.AutoSize = true;
-            this.lblSerialN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN2.Location = new System.Drawing.Point(246, 233);
-            this.lblSerialN2.Name = "lblSerialN2";
-            this.lblSerialN2.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN2.TabIndex = 38;
-            this.lblSerialN2.Tag = "2";
-            // 
-            // lblSerialN4
-            // 
-            this.lblSerialN4.AutoSize = true;
-            this.lblSerialN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerialN4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSerialN4.Location = new System.Drawing.Point(31, 467);
-            this.lblSerialN4.Name = "lblSerialN4";
-            this.lblSerialN4.Size = new System.Drawing.Size(0, 16);
-            this.lblSerialN4.TabIndex = 29;
-            this.lblSerialN4.Tag = "4";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.lbl6BingoCard5);
-            this.panel10.Controls.Add(this.lbl6BingoCard10);
-            this.panel10.Controls.Add(this.lbl6BingoCard15);
-            this.panel10.Controls.Add(this.lbl6BingoCard20);
-            this.panel10.Controls.Add(this.lbl6BingoCard25);
-            this.panel10.Controls.Add(this.lbl6BingoCard4);
-            this.panel10.Controls.Add(this.lbl6BingoCard9);
-            this.panel10.Controls.Add(this.lbl6BingoCard14);
-            this.panel10.Controls.Add(this.lbl6BingoCard19);
-            this.panel10.Controls.Add(this.lbl6BingoCard24);
-            this.panel10.Controls.Add(this.lbl6BingoCard3);
-            this.panel10.Controls.Add(this.lbl6BingoCard8);
-            this.panel10.Controls.Add(this.lbl6BingoCard13);
-            this.panel10.Controls.Add(this.lbl6BingoCard18);
-            this.panel10.Controls.Add(this.lbl6BingoCard23);
-            this.panel10.Controls.Add(this.lbl6BingoCard6);
-            this.panel10.Controls.Add(this.lbl6BingoCard11);
-            this.panel10.Controls.Add(this.lbl6BingoCard16);
-            this.panel10.Controls.Add(this.lbl6BingoCard21);
-            this.panel10.Controls.Add(this.lbl6BingoCard2);
-            this.panel10.Controls.Add(this.lbl6BingoCard7);
-            this.panel10.Controls.Add(this.lbl6BingoCard12);
-            this.panel10.Controls.Add(this.lbl6BingoCard17);
-            this.panel10.Controls.Add(this.lbl6BingoCard22);
-            this.panel10.Controls.Add(this.lbl6BingoCard1);
-            this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Location = new System.Drawing.Point(455, 249);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(192, 220);
-            this.panel10.TabIndex = 29;
-            this.panel10.Visible = false;
-            // 
-            // lbl6BingoCard5
-            // 
-            this.lbl6BingoCard5.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lbl6BingoCard5.Name = "lbl6BingoCard5";
-            this.lbl6BingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard5.TabIndex = 28;
-            this.lbl6BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard10
-            // 
-            this.lbl6BingoCard10.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lbl6BingoCard10.Name = "lbl6BingoCard10";
-            this.lbl6BingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard10.TabIndex = 27;
-            this.lbl6BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard15
-            // 
-            this.lbl6BingoCard15.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lbl6BingoCard15.Name = "lbl6BingoCard15";
-            this.lbl6BingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard15.TabIndex = 26;
-            this.lbl6BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard20
-            // 
-            this.lbl6BingoCard20.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lbl6BingoCard20.Name = "lbl6BingoCard20";
-            this.lbl6BingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard20.TabIndex = 25;
-            this.lbl6BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard25
-            // 
-            this.lbl6BingoCard25.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lbl6BingoCard25.Name = "lbl6BingoCard25";
-            this.lbl6BingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard25.TabIndex = 24;
-            this.lbl6BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard4
-            // 
-            this.lbl6BingoCard4.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lbl6BingoCard4.Name = "lbl6BingoCard4";
-            this.lbl6BingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard4.TabIndex = 23;
-            this.lbl6BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard9
-            // 
-            this.lbl6BingoCard9.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lbl6BingoCard9.Name = "lbl6BingoCard9";
-            this.lbl6BingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard9.TabIndex = 22;
-            this.lbl6BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard14
-            // 
-            this.lbl6BingoCard14.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lbl6BingoCard14.Name = "lbl6BingoCard14";
-            this.lbl6BingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard14.TabIndex = 21;
-            this.lbl6BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard19
-            // 
-            this.lbl6BingoCard19.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lbl6BingoCard19.Name = "lbl6BingoCard19";
-            this.lbl6BingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard19.TabIndex = 20;
-            this.lbl6BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard24
-            // 
-            this.lbl6BingoCard24.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lbl6BingoCard24.Name = "lbl6BingoCard24";
-            this.lbl6BingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard24.TabIndex = 19;
-            this.lbl6BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard3
-            // 
-            this.lbl6BingoCard3.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lbl6BingoCard3.Name = "lbl6BingoCard3";
-            this.lbl6BingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard3.TabIndex = 18;
-            this.lbl6BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard8
-            // 
-            this.lbl6BingoCard8.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lbl6BingoCard8.Name = "lbl6BingoCard8";
-            this.lbl6BingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard8.TabIndex = 17;
-            this.lbl6BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard13
-            // 
-            this.lbl6BingoCard13.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lbl6BingoCard13.Name = "lbl6BingoCard13";
-            this.lbl6BingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard13.TabIndex = 16;
-            this.lbl6BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard18
-            // 
-            this.lbl6BingoCard18.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lbl6BingoCard18.Name = "lbl6BingoCard18";
-            this.lbl6BingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard18.TabIndex = 15;
-            this.lbl6BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard23
-            // 
-            this.lbl6BingoCard23.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lbl6BingoCard23.Name = "lbl6BingoCard23";
-            this.lbl6BingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard23.TabIndex = 14;
-            this.lbl6BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard6
-            // 
-            this.lbl6BingoCard6.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lbl6BingoCard6.Name = "lbl6BingoCard6";
-            this.lbl6BingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard6.TabIndex = 13;
-            this.lbl6BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard11
-            // 
-            this.lbl6BingoCard11.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lbl6BingoCard11.Name = "lbl6BingoCard11";
-            this.lbl6BingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard11.TabIndex = 12;
-            this.lbl6BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard16
-            // 
-            this.lbl6BingoCard16.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lbl6BingoCard16.Name = "lbl6BingoCard16";
-            this.lbl6BingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard16.TabIndex = 11;
-            this.lbl6BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard21
-            // 
-            this.lbl6BingoCard21.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lbl6BingoCard21.Name = "lbl6BingoCard21";
-            this.lbl6BingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard21.TabIndex = 10;
-            this.lbl6BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard2
-            // 
-            this.lbl6BingoCard2.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lbl6BingoCard2.Name = "lbl6BingoCard2";
-            this.lbl6BingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard2.TabIndex = 9;
-            this.lbl6BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard7
-            // 
-            this.lbl6BingoCard7.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lbl6BingoCard7.Name = "lbl6BingoCard7";
-            this.lbl6BingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard7.TabIndex = 8;
-            this.lbl6BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard12
-            // 
-            this.lbl6BingoCard12.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lbl6BingoCard12.Name = "lbl6BingoCard12";
-            this.lbl6BingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard12.TabIndex = 7;
-            this.lbl6BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard17
-            // 
-            this.lbl6BingoCard17.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lbl6BingoCard17.Name = "lbl6BingoCard17";
-            this.lbl6BingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard17.TabIndex = 6;
-            this.lbl6BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard22
-            // 
-            this.lbl6BingoCard22.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lbl6BingoCard22.Name = "lbl6BingoCard22";
-            this.lbl6BingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard22.TabIndex = 5;
-            this.lbl6BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl6BingoCard1
-            // 
-            this.lbl6BingoCard1.BackColor = System.Drawing.Color.White;
-            this.lbl6BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6BingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lbl6BingoCard1.Name = "lbl6BingoCard1";
-            this.lbl6BingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lbl6BingoCard1.TabIndex = 4;
-            this.lbl6BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl6BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.lbl5BingoCard5);
-            this.panel9.Controls.Add(this.lbl5BingoCard10);
-            this.panel9.Controls.Add(this.lbl5BingoCard15);
-            this.panel9.Controls.Add(this.lbl5BingoCard20);
-            this.panel9.Controls.Add(this.lbl5BingoCard25);
-            this.panel9.Controls.Add(this.lbl5BingoCard4);
-            this.panel9.Controls.Add(this.lbl5BingoCard9);
-            this.panel9.Controls.Add(this.lbl5BingoCard14);
-            this.panel9.Controls.Add(this.lbl5BingoCard19);
-            this.panel9.Controls.Add(this.lbl5BingoCard24);
-            this.panel9.Controls.Add(this.lbl5BingoCard3);
-            this.panel9.Controls.Add(this.lbl5BingoCard8);
-            this.panel9.Controls.Add(this.lbl5BingoCard13);
-            this.panel9.Controls.Add(this.lbl5BingoCard18);
-            this.panel9.Controls.Add(this.lbl5BingoCard23);
-            this.panel9.Controls.Add(this.lbl5BingoCard6);
-            this.panel9.Controls.Add(this.lbl5BingoCard11);
-            this.panel9.Controls.Add(this.lbl5BingoCard16);
-            this.panel9.Controls.Add(this.lbl5BingoCard21);
-            this.panel9.Controls.Add(this.lbl5BingoCard2);
-            this.panel9.Controls.Add(this.lbl5BingoCard7);
-            this.panel9.Controls.Add(this.lbl5BingoCard12);
-            this.panel9.Controls.Add(this.lbl5BingoCard17);
-            this.panel9.Controls.Add(this.lbl5BingoCard22);
-            this.panel9.Controls.Add(this.lbl5BingoCard1);
-            this.panel9.Controls.Add(this.pictureBox4);
-            this.panel9.Location = new System.Drawing.Point(241, 249);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(192, 220);
-            this.panel9.TabIndex = 13;
-            this.panel9.Visible = false;
-            // 
-            // lbl5BingoCard5
-            // 
-            this.lbl5BingoCard5.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lbl5BingoCard5.Name = "lbl5BingoCard5";
-            this.lbl5BingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard5.TabIndex = 28;
-            this.lbl5BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard10
-            // 
-            this.lbl5BingoCard10.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lbl5BingoCard10.Name = "lbl5BingoCard10";
-            this.lbl5BingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard10.TabIndex = 27;
-            this.lbl5BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard15
-            // 
-            this.lbl5BingoCard15.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lbl5BingoCard15.Name = "lbl5BingoCard15";
-            this.lbl5BingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard15.TabIndex = 26;
-            this.lbl5BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard20
-            // 
-            this.lbl5BingoCard20.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lbl5BingoCard20.Name = "lbl5BingoCard20";
-            this.lbl5BingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard20.TabIndex = 25;
-            this.lbl5BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard25
-            // 
-            this.lbl5BingoCard25.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lbl5BingoCard25.Name = "lbl5BingoCard25";
-            this.lbl5BingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard25.TabIndex = 24;
-            this.lbl5BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard4
-            // 
-            this.lbl5BingoCard4.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lbl5BingoCard4.Name = "lbl5BingoCard4";
-            this.lbl5BingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard4.TabIndex = 23;
-            this.lbl5BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard9
-            // 
-            this.lbl5BingoCard9.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lbl5BingoCard9.Name = "lbl5BingoCard9";
-            this.lbl5BingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard9.TabIndex = 22;
-            this.lbl5BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard14
-            // 
-            this.lbl5BingoCard14.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lbl5BingoCard14.Name = "lbl5BingoCard14";
-            this.lbl5BingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard14.TabIndex = 21;
-            this.lbl5BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard19
-            // 
-            this.lbl5BingoCard19.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lbl5BingoCard19.Name = "lbl5BingoCard19";
-            this.lbl5BingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard19.TabIndex = 20;
-            this.lbl5BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard24
-            // 
-            this.lbl5BingoCard24.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lbl5BingoCard24.Name = "lbl5BingoCard24";
-            this.lbl5BingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard24.TabIndex = 19;
-            this.lbl5BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard3
-            // 
-            this.lbl5BingoCard3.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lbl5BingoCard3.Name = "lbl5BingoCard3";
-            this.lbl5BingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard3.TabIndex = 18;
-            this.lbl5BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard8
-            // 
-            this.lbl5BingoCard8.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lbl5BingoCard8.Name = "lbl5BingoCard8";
-            this.lbl5BingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard8.TabIndex = 17;
-            this.lbl5BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard13
-            // 
-            this.lbl5BingoCard13.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lbl5BingoCard13.Name = "lbl5BingoCard13";
-            this.lbl5BingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard13.TabIndex = 16;
-            this.lbl5BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl5BingoCard18
-            // 
-            this.lbl5BingoCard18.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lbl5BingoCard18.Name = "lbl5BingoCard18";
-            this.lbl5BingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard18.TabIndex = 15;
-            this.lbl5BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard23
-            // 
-            this.lbl5BingoCard23.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lbl5BingoCard23.Name = "lbl5BingoCard23";
-            this.lbl5BingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard23.TabIndex = 14;
-            this.lbl5BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard6
-            // 
-            this.lbl5BingoCard6.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lbl5BingoCard6.Name = "lbl5BingoCard6";
-            this.lbl5BingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard6.TabIndex = 13;
-            this.lbl5BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard11
-            // 
-            this.lbl5BingoCard11.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lbl5BingoCard11.Name = "lbl5BingoCard11";
-            this.lbl5BingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard11.TabIndex = 12;
-            this.lbl5BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard16
-            // 
-            this.lbl5BingoCard16.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lbl5BingoCard16.Name = "lbl5BingoCard16";
-            this.lbl5BingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard16.TabIndex = 11;
-            this.lbl5BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard21
-            // 
-            this.lbl5BingoCard21.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lbl5BingoCard21.Name = "lbl5BingoCard21";
-            this.lbl5BingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard21.TabIndex = 10;
-            this.lbl5BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard2
-            // 
-            this.lbl5BingoCard2.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lbl5BingoCard2.Name = "lbl5BingoCard2";
-            this.lbl5BingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard2.TabIndex = 9;
-            this.lbl5BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard7
-            // 
-            this.lbl5BingoCard7.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lbl5BingoCard7.Name = "lbl5BingoCard7";
-            this.lbl5BingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard7.TabIndex = 8;
-            this.lbl5BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard12
-            // 
-            this.lbl5BingoCard12.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lbl5BingoCard12.Name = "lbl5BingoCard12";
-            this.lbl5BingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard12.TabIndex = 7;
-            this.lbl5BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard17
-            // 
-            this.lbl5BingoCard17.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lbl5BingoCard17.Name = "lbl5BingoCard17";
-            this.lbl5BingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard17.TabIndex = 6;
-            this.lbl5BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard22
-            // 
-            this.lbl5BingoCard22.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lbl5BingoCard22.Name = "lbl5BingoCard22";
-            this.lbl5BingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard22.TabIndex = 5;
-            this.lbl5BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl5BingoCard1
-            // 
-            this.lbl5BingoCard1.BackColor = System.Drawing.Color.White;
-            this.lbl5BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5BingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lbl5BingoCard1.Name = "lbl5BingoCard1";
-            this.lbl5BingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lbl5BingoCard1.TabIndex = 4;
-            this.lbl5BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl5BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.lbl4BingoCard5);
-            this.panel8.Controls.Add(this.lbl4BingoCard10);
-            this.panel8.Controls.Add(this.lbl4BingoCard15);
-            this.panel8.Controls.Add(this.lbl4BingoCard20);
-            this.panel8.Controls.Add(this.lbl4BingoCard25);
-            this.panel8.Controls.Add(this.lbl4BingoCard4);
-            this.panel8.Controls.Add(this.lbl4BingoCard9);
-            this.panel8.Controls.Add(this.lbl4BingoCard14);
-            this.panel8.Controls.Add(this.lbl4BingoCard19);
-            this.panel8.Controls.Add(this.lbl4BingoCard24);
-            this.panel8.Controls.Add(this.lbl4BingoCard3);
-            this.panel8.Controls.Add(this.lbl4BingoCard8);
-            this.panel8.Controls.Add(this.lbl4BingoCard13);
-            this.panel8.Controls.Add(this.lbl4BingoCard18);
-            this.panel8.Controls.Add(this.lbl4BingoCard23);
-            this.panel8.Controls.Add(this.lbl4BingoCard6);
-            this.panel8.Controls.Add(this.lbl4BingoCard11);
-            this.panel8.Controls.Add(this.lbl4BingoCard16);
-            this.panel8.Controls.Add(this.lbl4BingoCard21);
-            this.panel8.Controls.Add(this.lbl4BingoCard2);
-            this.panel8.Controls.Add(this.lbl4BingoCard7);
-            this.panel8.Controls.Add(this.lbl4BingoCard12);
-            this.panel8.Controls.Add(this.lbl4BingoCard17);
-            this.panel8.Controls.Add(this.lbl4BingoCard22);
-            this.panel8.Controls.Add(this.lbl4BingoCard1);
-            this.panel8.Controls.Add(this.pictureBox3);
-            this.panel8.Location = new System.Drawing.Point(24, 249);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(192, 220);
-            this.panel8.TabIndex = 12;
-            this.panel8.Visible = false;
-            // 
-            // lbl4BingoCard5
-            // 
-            this.lbl4BingoCard5.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lbl4BingoCard5.Name = "lbl4BingoCard5";
-            this.lbl4BingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard5.TabIndex = 28;
-            this.lbl4BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard10
-            // 
-            this.lbl4BingoCard10.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lbl4BingoCard10.Name = "lbl4BingoCard10";
-            this.lbl4BingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard10.TabIndex = 27;
-            this.lbl4BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard15
-            // 
-            this.lbl4BingoCard15.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lbl4BingoCard15.Name = "lbl4BingoCard15";
-            this.lbl4BingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard15.TabIndex = 26;
-            this.lbl4BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard20
-            // 
-            this.lbl4BingoCard20.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lbl4BingoCard20.Name = "lbl4BingoCard20";
-            this.lbl4BingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard20.TabIndex = 25;
-            this.lbl4BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard25
-            // 
-            this.lbl4BingoCard25.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lbl4BingoCard25.Name = "lbl4BingoCard25";
-            this.lbl4BingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard25.TabIndex = 24;
-            this.lbl4BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard4
-            // 
-            this.lbl4BingoCard4.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lbl4BingoCard4.Name = "lbl4BingoCard4";
-            this.lbl4BingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard4.TabIndex = 23;
-            this.lbl4BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard9
-            // 
-            this.lbl4BingoCard9.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lbl4BingoCard9.Name = "lbl4BingoCard9";
-            this.lbl4BingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard9.TabIndex = 22;
-            this.lbl4BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard14
-            // 
-            this.lbl4BingoCard14.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lbl4BingoCard14.Name = "lbl4BingoCard14";
-            this.lbl4BingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard14.TabIndex = 21;
-            this.lbl4BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard19
-            // 
-            this.lbl4BingoCard19.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lbl4BingoCard19.Name = "lbl4BingoCard19";
-            this.lbl4BingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard19.TabIndex = 20;
-            this.lbl4BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard24
-            // 
-            this.lbl4BingoCard24.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lbl4BingoCard24.Name = "lbl4BingoCard24";
-            this.lbl4BingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard24.TabIndex = 19;
-            this.lbl4BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard3
-            // 
-            this.lbl4BingoCard3.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lbl4BingoCard3.Name = "lbl4BingoCard3";
-            this.lbl4BingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard3.TabIndex = 18;
-            this.lbl4BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard8
-            // 
-            this.lbl4BingoCard8.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lbl4BingoCard8.Name = "lbl4BingoCard8";
-            this.lbl4BingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard8.TabIndex = 17;
-            this.lbl4BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard13
-            // 
-            this.lbl4BingoCard13.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lbl4BingoCard13.Name = "lbl4BingoCard13";
-            this.lbl4BingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard13.TabIndex = 16;
-            this.lbl4BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl4BingoCard18
-            // 
-            this.lbl4BingoCard18.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lbl4BingoCard18.Name = "lbl4BingoCard18";
-            this.lbl4BingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard18.TabIndex = 15;
-            this.lbl4BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard23
-            // 
-            this.lbl4BingoCard23.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lbl4BingoCard23.Name = "lbl4BingoCard23";
-            this.lbl4BingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard23.TabIndex = 14;
-            this.lbl4BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard6
-            // 
-            this.lbl4BingoCard6.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lbl4BingoCard6.Name = "lbl4BingoCard6";
-            this.lbl4BingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard6.TabIndex = 13;
-            this.lbl4BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard11
-            // 
-            this.lbl4BingoCard11.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lbl4BingoCard11.Name = "lbl4BingoCard11";
-            this.lbl4BingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard11.TabIndex = 12;
-            this.lbl4BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard16
-            // 
-            this.lbl4BingoCard16.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lbl4BingoCard16.Name = "lbl4BingoCard16";
-            this.lbl4BingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard16.TabIndex = 11;
-            this.lbl4BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard21
-            // 
-            this.lbl4BingoCard21.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lbl4BingoCard21.Name = "lbl4BingoCard21";
-            this.lbl4BingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard21.TabIndex = 10;
-            this.lbl4BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard2
-            // 
-            this.lbl4BingoCard2.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lbl4BingoCard2.Name = "lbl4BingoCard2";
-            this.lbl4BingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard2.TabIndex = 9;
-            this.lbl4BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard7
-            // 
-            this.lbl4BingoCard7.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lbl4BingoCard7.Name = "lbl4BingoCard7";
-            this.lbl4BingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard7.TabIndex = 8;
-            this.lbl4BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard12
-            // 
-            this.lbl4BingoCard12.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lbl4BingoCard12.Name = "lbl4BingoCard12";
-            this.lbl4BingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard12.TabIndex = 7;
-            this.lbl4BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard17
-            // 
-            this.lbl4BingoCard17.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lbl4BingoCard17.Name = "lbl4BingoCard17";
-            this.lbl4BingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard17.TabIndex = 6;
-            this.lbl4BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard22
-            // 
-            this.lbl4BingoCard22.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lbl4BingoCard22.Name = "lbl4BingoCard22";
-            this.lbl4BingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard22.TabIndex = 5;
-            this.lbl4BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl4BingoCard1
-            // 
-            this.lbl4BingoCard1.BackColor = System.Drawing.Color.White;
-            this.lbl4BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4BingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lbl4BingoCard1.Name = "lbl4BingoCard1";
-            this.lbl4BingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lbl4BingoCard1.TabIndex = 4;
-            this.lbl4BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl4BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.lbl3BingoCard5);
-            this.panel7.Controls.Add(this.lbl3BingoCard10);
-            this.panel7.Controls.Add(this.lbl3BingoCard15);
-            this.panel7.Controls.Add(this.lbl3BingoCard20);
-            this.panel7.Controls.Add(this.lbl3BingoCard25);
-            this.panel7.Controls.Add(this.lbl3BingoCard4);
-            this.panel7.Controls.Add(this.lbl3BingoCard9);
-            this.panel7.Controls.Add(this.lbl3BingoCard14);
-            this.panel7.Controls.Add(this.lbl3BingoCard19);
-            this.panel7.Controls.Add(this.lbl3BingoCard24);
-            this.panel7.Controls.Add(this.lbl3BingoCard3);
-            this.panel7.Controls.Add(this.lbl3BingoCard8);
-            this.panel7.Controls.Add(this.lbl3BingoCard13);
-            this.panel7.Controls.Add(this.lbl3BingoCard18);
-            this.panel7.Controls.Add(this.lbl3BingoCard23);
-            this.panel7.Controls.Add(this.lbl3BingoCard6);
-            this.panel7.Controls.Add(this.lbl3BingoCard11);
-            this.panel7.Controls.Add(this.lbl3BingoCard16);
-            this.panel7.Controls.Add(this.lbl3BingoCard21);
-            this.panel7.Controls.Add(this.lbl3BingoCard2);
-            this.panel7.Controls.Add(this.lbl3BingoCard7);
-            this.panel7.Controls.Add(this.lbl3BingoCard12);
-            this.panel7.Controls.Add(this.lbl3BingoCard17);
-            this.panel7.Controls.Add(this.lbl3BingoCard22);
-            this.panel7.Controls.Add(this.lbl3BingoCard1);
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Location = new System.Drawing.Point(455, 14);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(192, 216);
-            this.panel7.TabIndex = 11;
-            this.panel7.Visible = false;
-            // 
-            // lbl3BingoCard5
-            // 
-            this.lbl3BingoCard5.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lbl3BingoCard5.Name = "lbl3BingoCard5";
-            this.lbl3BingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard5.TabIndex = 28;
-            this.lbl3BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard10
-            // 
-            this.lbl3BingoCard10.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lbl3BingoCard10.Name = "lbl3BingoCard10";
-            this.lbl3BingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard10.TabIndex = 27;
-            this.lbl3BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard15
-            // 
-            this.lbl3BingoCard15.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lbl3BingoCard15.Name = "lbl3BingoCard15";
-            this.lbl3BingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard15.TabIndex = 26;
-            this.lbl3BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard20
-            // 
-            this.lbl3BingoCard20.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lbl3BingoCard20.Name = "lbl3BingoCard20";
-            this.lbl3BingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard20.TabIndex = 25;
-            this.lbl3BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard25
-            // 
-            this.lbl3BingoCard25.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lbl3BingoCard25.Name = "lbl3BingoCard25";
-            this.lbl3BingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard25.TabIndex = 24;
-            this.lbl3BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard4
-            // 
-            this.lbl3BingoCard4.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lbl3BingoCard4.Name = "lbl3BingoCard4";
-            this.lbl3BingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard4.TabIndex = 23;
-            this.lbl3BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard9
-            // 
-            this.lbl3BingoCard9.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lbl3BingoCard9.Name = "lbl3BingoCard9";
-            this.lbl3BingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard9.TabIndex = 22;
-            this.lbl3BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard14
-            // 
-            this.lbl3BingoCard14.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lbl3BingoCard14.Name = "lbl3BingoCard14";
-            this.lbl3BingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard14.TabIndex = 21;
-            this.lbl3BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard19
-            // 
-            this.lbl3BingoCard19.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lbl3BingoCard19.Name = "lbl3BingoCard19";
-            this.lbl3BingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard19.TabIndex = 20;
-            this.lbl3BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard24
-            // 
-            this.lbl3BingoCard24.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lbl3BingoCard24.Name = "lbl3BingoCard24";
-            this.lbl3BingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard24.TabIndex = 19;
-            this.lbl3BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard3
-            // 
-            this.lbl3BingoCard3.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lbl3BingoCard3.Name = "lbl3BingoCard3";
-            this.lbl3BingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard3.TabIndex = 18;
-            this.lbl3BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard8
-            // 
-            this.lbl3BingoCard8.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lbl3BingoCard8.Name = "lbl3BingoCard8";
-            this.lbl3BingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard8.TabIndex = 17;
-            this.lbl3BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard13
-            // 
-            this.lbl3BingoCard13.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lbl3BingoCard13.Name = "lbl3BingoCard13";
-            this.lbl3BingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard13.TabIndex = 16;
-            this.lbl3BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl3BingoCard18
-            // 
-            this.lbl3BingoCard18.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lbl3BingoCard18.Name = "lbl3BingoCard18";
-            this.lbl3BingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard18.TabIndex = 15;
-            this.lbl3BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard23
-            // 
-            this.lbl3BingoCard23.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lbl3BingoCard23.Name = "lbl3BingoCard23";
-            this.lbl3BingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard23.TabIndex = 14;
-            this.lbl3BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard6
-            // 
-            this.lbl3BingoCard6.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lbl3BingoCard6.Name = "lbl3BingoCard6";
-            this.lbl3BingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard6.TabIndex = 13;
-            this.lbl3BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard11
-            // 
-            this.lbl3BingoCard11.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lbl3BingoCard11.Name = "lbl3BingoCard11";
-            this.lbl3BingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard11.TabIndex = 12;
-            this.lbl3BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard16
-            // 
-            this.lbl3BingoCard16.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lbl3BingoCard16.Name = "lbl3BingoCard16";
-            this.lbl3BingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard16.TabIndex = 11;
-            this.lbl3BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard21
-            // 
-            this.lbl3BingoCard21.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lbl3BingoCard21.Name = "lbl3BingoCard21";
-            this.lbl3BingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard21.TabIndex = 10;
-            this.lbl3BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard2
-            // 
-            this.lbl3BingoCard2.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lbl3BingoCard2.Name = "lbl3BingoCard2";
-            this.lbl3BingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard2.TabIndex = 9;
-            this.lbl3BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard7
-            // 
-            this.lbl3BingoCard7.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lbl3BingoCard7.Name = "lbl3BingoCard7";
-            this.lbl3BingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard7.TabIndex = 8;
-            this.lbl3BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard12
-            // 
-            this.lbl3BingoCard12.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lbl3BingoCard12.Name = "lbl3BingoCard12";
-            this.lbl3BingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard12.TabIndex = 7;
-            this.lbl3BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard17
-            // 
-            this.lbl3BingoCard17.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lbl3BingoCard17.Name = "lbl3BingoCard17";
-            this.lbl3BingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard17.TabIndex = 6;
-            this.lbl3BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard22
-            // 
-            this.lbl3BingoCard22.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lbl3BingoCard22.Name = "lbl3BingoCard22";
-            this.lbl3BingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard22.TabIndex = 5;
-            this.lbl3BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl3BingoCard1
-            // 
-            this.lbl3BingoCard1.BackColor = System.Drawing.Color.White;
-            this.lbl3BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3BingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lbl3BingoCard1.Name = "lbl3BingoCard1";
-            this.lbl3BingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lbl3BingoCard1.TabIndex = 4;
-            this.lbl3BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl3BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.lbl2BingoCard5);
-            this.panel6.Controls.Add(this.lbl2BingoCard10);
-            this.panel6.Controls.Add(this.lbl2BingoCard15);
-            this.panel6.Controls.Add(this.lbl2BingoCard20);
-            this.panel6.Controls.Add(this.lbl2BingoCard25);
-            this.panel6.Controls.Add(this.lbl2BingoCard4);
-            this.panel6.Controls.Add(this.lbl2BingoCard9);
-            this.panel6.Controls.Add(this.lbl2BingoCard14);
-            this.panel6.Controls.Add(this.lbl2BingoCard19);
-            this.panel6.Controls.Add(this.lbl2BingoCard24);
-            this.panel6.Controls.Add(this.lbl2BingoCard3);
-            this.panel6.Controls.Add(this.lbl2BingoCard8);
-            this.panel6.Controls.Add(this.lbl2BingoCard13);
-            this.panel6.Controls.Add(this.lbl2BingoCard18);
-            this.panel6.Controls.Add(this.lbl2BingoCard23);
-            this.panel6.Controls.Add(this.lbl2BingoCard6);
-            this.panel6.Controls.Add(this.lbl2BingoCard11);
-            this.panel6.Controls.Add(this.lbl2BingoCard16);
-            this.panel6.Controls.Add(this.lbl2BingoCard21);
-            this.panel6.Controls.Add(this.lbl2BingoCard2);
-            this.panel6.Controls.Add(this.lbl2BingoCard7);
-            this.panel6.Controls.Add(this.lbl2BingoCard12);
-            this.panel6.Controls.Add(this.lbl2BingoCard17);
-            this.panel6.Controls.Add(this.lbl2BingoCard22);
-            this.panel6.Controls.Add(this.lbl2BingoCard1);
-            this.panel6.Controls.Add(this.pictureBox10);
-            this.panel6.Location = new System.Drawing.Point(240, 14);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(192, 216);
-            this.panel6.TabIndex = 10;
-            this.panel6.Visible = false;
-            // 
-            // lbl2BingoCard5
-            // 
-            this.lbl2BingoCard5.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lbl2BingoCard5.Name = "lbl2BingoCard5";
-            this.lbl2BingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard5.TabIndex = 28;
-            this.lbl2BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard10
-            // 
-            this.lbl2BingoCard10.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lbl2BingoCard10.Name = "lbl2BingoCard10";
-            this.lbl2BingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard10.TabIndex = 27;
-            this.lbl2BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard15
-            // 
-            this.lbl2BingoCard15.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lbl2BingoCard15.Name = "lbl2BingoCard15";
-            this.lbl2BingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard15.TabIndex = 26;
-            this.lbl2BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard20
-            // 
-            this.lbl2BingoCard20.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lbl2BingoCard20.Name = "lbl2BingoCard20";
-            this.lbl2BingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard20.TabIndex = 25;
-            this.lbl2BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard25
-            // 
-            this.lbl2BingoCard25.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lbl2BingoCard25.Name = "lbl2BingoCard25";
-            this.lbl2BingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard25.TabIndex = 24;
-            this.lbl2BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard4
-            // 
-            this.lbl2BingoCard4.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lbl2BingoCard4.Name = "lbl2BingoCard4";
-            this.lbl2BingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard4.TabIndex = 23;
-            this.lbl2BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard9
-            // 
-            this.lbl2BingoCard9.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lbl2BingoCard9.Name = "lbl2BingoCard9";
-            this.lbl2BingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard9.TabIndex = 22;
-            this.lbl2BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard14
-            // 
-            this.lbl2BingoCard14.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lbl2BingoCard14.Name = "lbl2BingoCard14";
-            this.lbl2BingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard14.TabIndex = 21;
-            this.lbl2BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard19
-            // 
-            this.lbl2BingoCard19.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lbl2BingoCard19.Name = "lbl2BingoCard19";
-            this.lbl2BingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard19.TabIndex = 20;
-            this.lbl2BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard24
-            // 
-            this.lbl2BingoCard24.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lbl2BingoCard24.Name = "lbl2BingoCard24";
-            this.lbl2BingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard24.TabIndex = 19;
-            this.lbl2BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard3
-            // 
-            this.lbl2BingoCard3.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lbl2BingoCard3.Name = "lbl2BingoCard3";
-            this.lbl2BingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard3.TabIndex = 18;
-            this.lbl2BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard8
-            // 
-            this.lbl2BingoCard8.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lbl2BingoCard8.Name = "lbl2BingoCard8";
-            this.lbl2BingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard8.TabIndex = 17;
-            this.lbl2BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard13
-            // 
-            this.lbl2BingoCard13.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lbl2BingoCard13.Name = "lbl2BingoCard13";
-            this.lbl2BingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard13.TabIndex = 16;
-            this.lbl2BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl2BingoCard18
-            // 
-            this.lbl2BingoCard18.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lbl2BingoCard18.Name = "lbl2BingoCard18";
-            this.lbl2BingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard18.TabIndex = 15;
-            this.lbl2BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard23
-            // 
-            this.lbl2BingoCard23.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lbl2BingoCard23.Name = "lbl2BingoCard23";
-            this.lbl2BingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard23.TabIndex = 14;
-            this.lbl2BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard6
-            // 
-            this.lbl2BingoCard6.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lbl2BingoCard6.Name = "lbl2BingoCard6";
-            this.lbl2BingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard6.TabIndex = 13;
-            this.lbl2BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard11
-            // 
-            this.lbl2BingoCard11.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lbl2BingoCard11.Name = "lbl2BingoCard11";
-            this.lbl2BingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard11.TabIndex = 12;
-            this.lbl2BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard16
-            // 
-            this.lbl2BingoCard16.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lbl2BingoCard16.Name = "lbl2BingoCard16";
-            this.lbl2BingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard16.TabIndex = 11;
-            this.lbl2BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard21
-            // 
-            this.lbl2BingoCard21.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lbl2BingoCard21.Name = "lbl2BingoCard21";
-            this.lbl2BingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard21.TabIndex = 10;
-            this.lbl2BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard2
-            // 
-            this.lbl2BingoCard2.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lbl2BingoCard2.Name = "lbl2BingoCard2";
-            this.lbl2BingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard2.TabIndex = 9;
-            this.lbl2BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard7
-            // 
-            this.lbl2BingoCard7.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lbl2BingoCard7.Name = "lbl2BingoCard7";
-            this.lbl2BingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard7.TabIndex = 8;
-            this.lbl2BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard12
-            // 
-            this.lbl2BingoCard12.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lbl2BingoCard12.Name = "lbl2BingoCard12";
-            this.lbl2BingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard12.TabIndex = 7;
-            this.lbl2BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard17
-            // 
-            this.lbl2BingoCard17.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lbl2BingoCard17.Name = "lbl2BingoCard17";
-            this.lbl2BingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard17.TabIndex = 6;
-            this.lbl2BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard22
-            // 
-            this.lbl2BingoCard22.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lbl2BingoCard22.Name = "lbl2BingoCard22";
-            this.lbl2BingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard22.TabIndex = 5;
-            this.lbl2BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lbl2BingoCard1
-            // 
-            this.lbl2BingoCard1.BackColor = System.Drawing.Color.White;
-            this.lbl2BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2BingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lbl2BingoCard1.Name = "lbl2BingoCard1";
-            this.lbl2BingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lbl2BingoCard1.TabIndex = 4;
-            this.lbl2BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl2BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.lblBingoCard5);
-            this.panel5.Controls.Add(this.lblBingoCard10);
-            this.panel5.Controls.Add(this.lblBingoCard15);
-            this.panel5.Controls.Add(this.lblBingoCard20);
-            this.panel5.Controls.Add(this.lblBingoCard25);
-            this.panel5.Controls.Add(this.lblBingoCard4);
-            this.panel5.Controls.Add(this.lblBingoCard9);
-            this.panel5.Controls.Add(this.lblBingoCard14);
-            this.panel5.Controls.Add(this.lblBingoCard19);
-            this.panel5.Controls.Add(this.lblBingoCard24);
-            this.panel5.Controls.Add(this.lblBingoCard3);
-            this.panel5.Controls.Add(this.lblBingoCard8);
-            this.panel5.Controls.Add(this.lblBingoCard13);
-            this.panel5.Controls.Add(this.lblBingoCard18);
-            this.panel5.Controls.Add(this.lblBingoCard23);
-            this.panel5.Controls.Add(this.lblBingoCard6);
-            this.panel5.Controls.Add(this.lblBingoCard11);
-            this.panel5.Controls.Add(this.lblBingoCard16);
-            this.panel5.Controls.Add(this.lblBingoCard21);
-            this.panel5.Controls.Add(this.lblBingoCard2);
-            this.panel5.Controls.Add(this.lblBingoCard7);
-            this.panel5.Controls.Add(this.lblBingoCard12);
-            this.panel5.Controls.Add(this.lblBingoCard17);
-            this.panel5.Controls.Add(this.lblBingoCard22);
-            this.panel5.Controls.Add(this.lblBingoCard1);
-            this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Location = new System.Drawing.Point(24, 14);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(192, 216);
-            this.panel5.TabIndex = 9;
-            this.panel5.Visible = false;
-            // 
-            // lblBingoCard5
-            // 
-            this.lblBingoCard5.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard5.Location = new System.Drawing.Point(13, 176);
-            this.lblBingoCard5.Name = "lblBingoCard5";
-            this.lblBingoCard5.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard5.TabIndex = 28;
-            this.lblBingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard10
-            // 
-            this.lblBingoCard10.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard10.Location = new System.Drawing.Point(47, 176);
-            this.lblBingoCard10.Name = "lblBingoCard10";
-            this.lblBingoCard10.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard10.TabIndex = 27;
-            this.lblBingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard15
-            // 
-            this.lblBingoCard15.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard15.Location = new System.Drawing.Point(82, 176);
-            this.lblBingoCard15.Name = "lblBingoCard15";
-            this.lblBingoCard15.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard15.TabIndex = 26;
-            this.lblBingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard20
-            // 
-            this.lblBingoCard20.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard20.Location = new System.Drawing.Point(116, 176);
-            this.lblBingoCard20.Name = "lblBingoCard20";
-            this.lblBingoCard20.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard20.TabIndex = 25;
-            this.lblBingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard25
-            // 
-            this.lblBingoCard25.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard25.Location = new System.Drawing.Point(149, 176);
-            this.lblBingoCard25.Name = "lblBingoCard25";
-            this.lblBingoCard25.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard25.TabIndex = 24;
-            this.lblBingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard4
-            // 
-            this.lblBingoCard4.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard4.Location = new System.Drawing.Point(13, 142);
-            this.lblBingoCard4.Name = "lblBingoCard4";
-            this.lblBingoCard4.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard4.TabIndex = 23;
-            this.lblBingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard9
-            // 
-            this.lblBingoCard9.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard9.Location = new System.Drawing.Point(47, 142);
-            this.lblBingoCard9.Name = "lblBingoCard9";
-            this.lblBingoCard9.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard9.TabIndex = 22;
-            this.lblBingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard14
-            // 
-            this.lblBingoCard14.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard14.Location = new System.Drawing.Point(82, 142);
-            this.lblBingoCard14.Name = "lblBingoCard14";
-            this.lblBingoCard14.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard14.TabIndex = 21;
-            this.lblBingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard19
-            // 
-            this.lblBingoCard19.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard19.Location = new System.Drawing.Point(116, 142);
-            this.lblBingoCard19.Name = "lblBingoCard19";
-            this.lblBingoCard19.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard19.TabIndex = 20;
-            this.lblBingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard24
-            // 
-            this.lblBingoCard24.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard24.Location = new System.Drawing.Point(149, 142);
-            this.lblBingoCard24.Name = "lblBingoCard24";
-            this.lblBingoCard24.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard24.TabIndex = 19;
-            this.lblBingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard3
-            // 
-            this.lblBingoCard3.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard3.Location = new System.Drawing.Point(13, 108);
-            this.lblBingoCard3.Name = "lblBingoCard3";
-            this.lblBingoCard3.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard3.TabIndex = 18;
-            this.lblBingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard8
-            // 
-            this.lblBingoCard8.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard8.Location = new System.Drawing.Point(47, 108);
-            this.lblBingoCard8.Name = "lblBingoCard8";
-            this.lblBingoCard8.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard8.TabIndex = 17;
-            this.lblBingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard13
-            // 
-            this.lblBingoCard13.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard13.Location = new System.Drawing.Point(82, 108);
-            this.lblBingoCard13.Name = "lblBingoCard13";
-            this.lblBingoCard13.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard13.TabIndex = 16;
-            this.lblBingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblBingoCard18
-            // 
-            this.lblBingoCard18.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard18.Location = new System.Drawing.Point(116, 108);
-            this.lblBingoCard18.Name = "lblBingoCard18";
-            this.lblBingoCard18.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard18.TabIndex = 15;
-            this.lblBingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard23
-            // 
-            this.lblBingoCard23.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard23.Location = new System.Drawing.Point(149, 108);
-            this.lblBingoCard23.Name = "lblBingoCard23";
-            this.lblBingoCard23.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard23.TabIndex = 14;
-            this.lblBingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard6
-            // 
-            this.lblBingoCard6.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard6.Location = new System.Drawing.Point(47, 40);
-            this.lblBingoCard6.Name = "lblBingoCard6";
-            this.lblBingoCard6.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard6.TabIndex = 13;
-            this.lblBingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard11
-            // 
-            this.lblBingoCard11.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard11.Location = new System.Drawing.Point(82, 40);
-            this.lblBingoCard11.Name = "lblBingoCard11";
-            this.lblBingoCard11.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard11.TabIndex = 12;
-            this.lblBingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard16
-            // 
-            this.lblBingoCard16.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard16.Location = new System.Drawing.Point(116, 40);
-            this.lblBingoCard16.Name = "lblBingoCard16";
-            this.lblBingoCard16.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard16.TabIndex = 11;
-            this.lblBingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard21
-            // 
-            this.lblBingoCard21.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard21.Location = new System.Drawing.Point(149, 40);
-            this.lblBingoCard21.Name = "lblBingoCard21";
-            this.lblBingoCard21.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard21.TabIndex = 10;
-            this.lblBingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard2
-            // 
-            this.lblBingoCard2.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard2.Location = new System.Drawing.Point(13, 74);
-            this.lblBingoCard2.Name = "lblBingoCard2";
-            this.lblBingoCard2.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard2.TabIndex = 9;
-            this.lblBingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard7
-            // 
-            this.lblBingoCard7.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard7.Location = new System.Drawing.Point(47, 74);
-            this.lblBingoCard7.Name = "lblBingoCard7";
-            this.lblBingoCard7.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard7.TabIndex = 8;
-            this.lblBingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard12
-            // 
-            this.lblBingoCard12.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard12.Location = new System.Drawing.Point(82, 74);
-            this.lblBingoCard12.Name = "lblBingoCard12";
-            this.lblBingoCard12.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard12.TabIndex = 7;
-            this.lblBingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard17
-            // 
-            this.lblBingoCard17.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard17.Location = new System.Drawing.Point(116, 74);
-            this.lblBingoCard17.Name = "lblBingoCard17";
-            this.lblBingoCard17.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard17.TabIndex = 6;
-            this.lblBingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard22
-            // 
-            this.lblBingoCard22.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard22.Location = new System.Drawing.Point(149, 74);
-            this.lblBingoCard22.Name = "lblBingoCard22";
-            this.lblBingoCard22.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard22.TabIndex = 5;
-            this.lblBingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblBingoCard1
-            // 
-            this.lblBingoCard1.BackColor = System.Drawing.Color.White;
-            this.lblBingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBingoCard1.Location = new System.Drawing.Point(13, 40);
-            this.lblBingoCard1.Name = "lblBingoCard1";
-            this.lblBingoCard1.Size = new System.Drawing.Size(31, 29);
-            this.lblBingoCard1.TabIndex = 4;
-            this.lblBingoCard1.Tag = "1";
-            this.lblBingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblBingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox12.Location = new System.Drawing.Point(455, 14);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox12.TabIndex = 36;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Visible = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox11.Location = new System.Drawing.Point(240, 14);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox11.TabIndex = 35;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox6.Location = new System.Drawing.Point(24, 14);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox6.TabIndex = 34;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox13.Location = new System.Drawing.Point(24, 250);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox13.TabIndex = 33;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Visible = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox14.Location = new System.Drawing.Point(241, 248);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox14.TabIndex = 32;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Visible = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
-            this.pictureBox15.Location = new System.Drawing.Point(455, 248);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(192, 216);
-            this.pictureBox15.TabIndex = 31;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Visible = false;
             // 
             // panel3
             // 
@@ -4540,6 +2484,2062 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox15.Location = new System.Drawing.Point(455, 248);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox15.TabIndex = 31;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Visible = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox14.Location = new System.Drawing.Point(241, 248);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox14.TabIndex = 32;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Visible = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox13.Location = new System.Drawing.Point(24, 250);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox13.TabIndex = 33;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox6.Location = new System.Drawing.Point(24, 14);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox6.TabIndex = 34;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox11.Location = new System.Drawing.Point(240, 14);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox11.TabIndex = 35;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.NotInPlayCard;
+            this.pictureBox12.Location = new System.Drawing.Point(455, 14);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox12.TabIndex = 36;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lblBingoCard5);
+            this.panel5.Controls.Add(this.lblBingoCard10);
+            this.panel5.Controls.Add(this.lblBingoCard15);
+            this.panel5.Controls.Add(this.lblBingoCard20);
+            this.panel5.Controls.Add(this.lblBingoCard25);
+            this.panel5.Controls.Add(this.lblBingoCard4);
+            this.panel5.Controls.Add(this.lblBingoCard9);
+            this.panel5.Controls.Add(this.lblBingoCard14);
+            this.panel5.Controls.Add(this.lblBingoCard19);
+            this.panel5.Controls.Add(this.lblBingoCard24);
+            this.panel5.Controls.Add(this.lblBingoCard3);
+            this.panel5.Controls.Add(this.lblBingoCard8);
+            this.panel5.Controls.Add(this.lblBingoCard13);
+            this.panel5.Controls.Add(this.lblBingoCard18);
+            this.panel5.Controls.Add(this.lblBingoCard23);
+            this.panel5.Controls.Add(this.lblBingoCard6);
+            this.panel5.Controls.Add(this.lblBingoCard11);
+            this.panel5.Controls.Add(this.lblBingoCard16);
+            this.panel5.Controls.Add(this.lblBingoCard21);
+            this.panel5.Controls.Add(this.lblBingoCard2);
+            this.panel5.Controls.Add(this.lblBingoCard7);
+            this.panel5.Controls.Add(this.lblBingoCard12);
+            this.panel5.Controls.Add(this.lblBingoCard17);
+            this.panel5.Controls.Add(this.lblBingoCard22);
+            this.panel5.Controls.Add(this.lblBingoCard1);
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Location = new System.Drawing.Point(24, 14);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(192, 216);
+            this.panel5.TabIndex = 9;
+            this.panel5.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblBingoCard1
+            // 
+            this.lblBingoCard1.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lblBingoCard1.Name = "lblBingoCard1";
+            this.lblBingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard1.TabIndex = 4;
+            this.lblBingoCard1.Tag = "1";
+            this.lblBingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard22
+            // 
+            this.lblBingoCard22.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lblBingoCard22.Name = "lblBingoCard22";
+            this.lblBingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard22.TabIndex = 5;
+            this.lblBingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard17
+            // 
+            this.lblBingoCard17.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lblBingoCard17.Name = "lblBingoCard17";
+            this.lblBingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard17.TabIndex = 6;
+            this.lblBingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard12
+            // 
+            this.lblBingoCard12.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lblBingoCard12.Name = "lblBingoCard12";
+            this.lblBingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard12.TabIndex = 7;
+            this.lblBingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard7
+            // 
+            this.lblBingoCard7.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lblBingoCard7.Name = "lblBingoCard7";
+            this.lblBingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard7.TabIndex = 8;
+            this.lblBingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard2
+            // 
+            this.lblBingoCard2.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lblBingoCard2.Name = "lblBingoCard2";
+            this.lblBingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard2.TabIndex = 9;
+            this.lblBingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard21
+            // 
+            this.lblBingoCard21.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lblBingoCard21.Name = "lblBingoCard21";
+            this.lblBingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard21.TabIndex = 10;
+            this.lblBingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard16
+            // 
+            this.lblBingoCard16.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lblBingoCard16.Name = "lblBingoCard16";
+            this.lblBingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard16.TabIndex = 11;
+            this.lblBingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard11
+            // 
+            this.lblBingoCard11.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lblBingoCard11.Name = "lblBingoCard11";
+            this.lblBingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard11.TabIndex = 12;
+            this.lblBingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard6
+            // 
+            this.lblBingoCard6.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lblBingoCard6.Name = "lblBingoCard6";
+            this.lblBingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard6.TabIndex = 13;
+            this.lblBingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard23
+            // 
+            this.lblBingoCard23.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lblBingoCard23.Name = "lblBingoCard23";
+            this.lblBingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard23.TabIndex = 14;
+            this.lblBingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard18
+            // 
+            this.lblBingoCard18.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lblBingoCard18.Name = "lblBingoCard18";
+            this.lblBingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard18.TabIndex = 15;
+            this.lblBingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard13
+            // 
+            this.lblBingoCard13.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lblBingoCard13.Name = "lblBingoCard13";
+            this.lblBingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard13.TabIndex = 16;
+            this.lblBingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBingoCard8
+            // 
+            this.lblBingoCard8.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lblBingoCard8.Name = "lblBingoCard8";
+            this.lblBingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard8.TabIndex = 17;
+            this.lblBingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard3
+            // 
+            this.lblBingoCard3.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lblBingoCard3.Name = "lblBingoCard3";
+            this.lblBingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard3.TabIndex = 18;
+            this.lblBingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard24
+            // 
+            this.lblBingoCard24.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lblBingoCard24.Name = "lblBingoCard24";
+            this.lblBingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard24.TabIndex = 19;
+            this.lblBingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard19
+            // 
+            this.lblBingoCard19.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lblBingoCard19.Name = "lblBingoCard19";
+            this.lblBingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard19.TabIndex = 20;
+            this.lblBingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard14
+            // 
+            this.lblBingoCard14.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lblBingoCard14.Name = "lblBingoCard14";
+            this.lblBingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard14.TabIndex = 21;
+            this.lblBingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard9
+            // 
+            this.lblBingoCard9.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lblBingoCard9.Name = "lblBingoCard9";
+            this.lblBingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard9.TabIndex = 22;
+            this.lblBingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard4
+            // 
+            this.lblBingoCard4.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lblBingoCard4.Name = "lblBingoCard4";
+            this.lblBingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard4.TabIndex = 23;
+            this.lblBingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard25
+            // 
+            this.lblBingoCard25.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lblBingoCard25.Name = "lblBingoCard25";
+            this.lblBingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard25.TabIndex = 24;
+            this.lblBingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard20
+            // 
+            this.lblBingoCard20.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lblBingoCard20.Name = "lblBingoCard20";
+            this.lblBingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard20.TabIndex = 25;
+            this.lblBingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard15
+            // 
+            this.lblBingoCard15.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lblBingoCard15.Name = "lblBingoCard15";
+            this.lblBingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard15.TabIndex = 26;
+            this.lblBingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard10
+            // 
+            this.lblBingoCard10.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lblBingoCard10.Name = "lblBingoCard10";
+            this.lblBingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard10.TabIndex = 27;
+            this.lblBingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblBingoCard5
+            // 
+            this.lblBingoCard5.BackColor = System.Drawing.Color.White;
+            this.lblBingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lblBingoCard5.Name = "lblBingoCard5";
+            this.lblBingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lblBingoCard5.TabIndex = 28;
+            this.lblBingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.lbl2BingoCard5);
+            this.panel6.Controls.Add(this.lbl2BingoCard10);
+            this.panel6.Controls.Add(this.lbl2BingoCard15);
+            this.panel6.Controls.Add(this.lbl2BingoCard20);
+            this.panel6.Controls.Add(this.lbl2BingoCard25);
+            this.panel6.Controls.Add(this.lbl2BingoCard4);
+            this.panel6.Controls.Add(this.lbl2BingoCard9);
+            this.panel6.Controls.Add(this.lbl2BingoCard14);
+            this.panel6.Controls.Add(this.lbl2BingoCard19);
+            this.panel6.Controls.Add(this.lbl2BingoCard24);
+            this.panel6.Controls.Add(this.lbl2BingoCard3);
+            this.panel6.Controls.Add(this.lbl2BingoCard8);
+            this.panel6.Controls.Add(this.lbl2BingoCard13);
+            this.panel6.Controls.Add(this.lbl2BingoCard18);
+            this.panel6.Controls.Add(this.lbl2BingoCard23);
+            this.panel6.Controls.Add(this.lbl2BingoCard6);
+            this.panel6.Controls.Add(this.lbl2BingoCard11);
+            this.panel6.Controls.Add(this.lbl2BingoCard16);
+            this.panel6.Controls.Add(this.lbl2BingoCard21);
+            this.panel6.Controls.Add(this.lbl2BingoCard2);
+            this.panel6.Controls.Add(this.lbl2BingoCard7);
+            this.panel6.Controls.Add(this.lbl2BingoCard12);
+            this.panel6.Controls.Add(this.lbl2BingoCard17);
+            this.panel6.Controls.Add(this.lbl2BingoCard22);
+            this.panel6.Controls.Add(this.lbl2BingoCard1);
+            this.panel6.Controls.Add(this.pictureBox10);
+            this.panel6.Location = new System.Drawing.Point(240, 14);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(192, 216);
+            this.panel6.TabIndex = 10;
+            this.panel6.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
+            // lbl2BingoCard1
+            // 
+            this.lbl2BingoCard1.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lbl2BingoCard1.Name = "lbl2BingoCard1";
+            this.lbl2BingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard1.TabIndex = 4;
+            this.lbl2BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard22
+            // 
+            this.lbl2BingoCard22.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lbl2BingoCard22.Name = "lbl2BingoCard22";
+            this.lbl2BingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard22.TabIndex = 5;
+            this.lbl2BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard17
+            // 
+            this.lbl2BingoCard17.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lbl2BingoCard17.Name = "lbl2BingoCard17";
+            this.lbl2BingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard17.TabIndex = 6;
+            this.lbl2BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard12
+            // 
+            this.lbl2BingoCard12.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lbl2BingoCard12.Name = "lbl2BingoCard12";
+            this.lbl2BingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard12.TabIndex = 7;
+            this.lbl2BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard7
+            // 
+            this.lbl2BingoCard7.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lbl2BingoCard7.Name = "lbl2BingoCard7";
+            this.lbl2BingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard7.TabIndex = 8;
+            this.lbl2BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard2
+            // 
+            this.lbl2BingoCard2.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lbl2BingoCard2.Name = "lbl2BingoCard2";
+            this.lbl2BingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard2.TabIndex = 9;
+            this.lbl2BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard21
+            // 
+            this.lbl2BingoCard21.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lbl2BingoCard21.Name = "lbl2BingoCard21";
+            this.lbl2BingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard21.TabIndex = 10;
+            this.lbl2BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard16
+            // 
+            this.lbl2BingoCard16.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lbl2BingoCard16.Name = "lbl2BingoCard16";
+            this.lbl2BingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard16.TabIndex = 11;
+            this.lbl2BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard11
+            // 
+            this.lbl2BingoCard11.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lbl2BingoCard11.Name = "lbl2BingoCard11";
+            this.lbl2BingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard11.TabIndex = 12;
+            this.lbl2BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard6
+            // 
+            this.lbl2BingoCard6.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lbl2BingoCard6.Name = "lbl2BingoCard6";
+            this.lbl2BingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard6.TabIndex = 13;
+            this.lbl2BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard23
+            // 
+            this.lbl2BingoCard23.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lbl2BingoCard23.Name = "lbl2BingoCard23";
+            this.lbl2BingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard23.TabIndex = 14;
+            this.lbl2BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard18
+            // 
+            this.lbl2BingoCard18.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lbl2BingoCard18.Name = "lbl2BingoCard18";
+            this.lbl2BingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard18.TabIndex = 15;
+            this.lbl2BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard13
+            // 
+            this.lbl2BingoCard13.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lbl2BingoCard13.Name = "lbl2BingoCard13";
+            this.lbl2BingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard13.TabIndex = 16;
+            this.lbl2BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl2BingoCard8
+            // 
+            this.lbl2BingoCard8.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lbl2BingoCard8.Name = "lbl2BingoCard8";
+            this.lbl2BingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard8.TabIndex = 17;
+            this.lbl2BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard3
+            // 
+            this.lbl2BingoCard3.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lbl2BingoCard3.Name = "lbl2BingoCard3";
+            this.lbl2BingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard3.TabIndex = 18;
+            this.lbl2BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard24
+            // 
+            this.lbl2BingoCard24.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lbl2BingoCard24.Name = "lbl2BingoCard24";
+            this.lbl2BingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard24.TabIndex = 19;
+            this.lbl2BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard19
+            // 
+            this.lbl2BingoCard19.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lbl2BingoCard19.Name = "lbl2BingoCard19";
+            this.lbl2BingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard19.TabIndex = 20;
+            this.lbl2BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard14
+            // 
+            this.lbl2BingoCard14.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lbl2BingoCard14.Name = "lbl2BingoCard14";
+            this.lbl2BingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard14.TabIndex = 21;
+            this.lbl2BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard9
+            // 
+            this.lbl2BingoCard9.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lbl2BingoCard9.Name = "lbl2BingoCard9";
+            this.lbl2BingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard9.TabIndex = 22;
+            this.lbl2BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard4
+            // 
+            this.lbl2BingoCard4.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lbl2BingoCard4.Name = "lbl2BingoCard4";
+            this.lbl2BingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard4.TabIndex = 23;
+            this.lbl2BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard25
+            // 
+            this.lbl2BingoCard25.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lbl2BingoCard25.Name = "lbl2BingoCard25";
+            this.lbl2BingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard25.TabIndex = 24;
+            this.lbl2BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard20
+            // 
+            this.lbl2BingoCard20.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lbl2BingoCard20.Name = "lbl2BingoCard20";
+            this.lbl2BingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard20.TabIndex = 25;
+            this.lbl2BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard15
+            // 
+            this.lbl2BingoCard15.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lbl2BingoCard15.Name = "lbl2BingoCard15";
+            this.lbl2BingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard15.TabIndex = 26;
+            this.lbl2BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard10
+            // 
+            this.lbl2BingoCard10.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lbl2BingoCard10.Name = "lbl2BingoCard10";
+            this.lbl2BingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard10.TabIndex = 27;
+            this.lbl2BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl2BingoCard5
+            // 
+            this.lbl2BingoCard5.BackColor = System.Drawing.Color.White;
+            this.lbl2BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2BingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lbl2BingoCard5.Name = "lbl2BingoCard5";
+            this.lbl2BingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lbl2BingoCard5.TabIndex = 28;
+            this.lbl2BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.lbl3BingoCard5);
+            this.panel7.Controls.Add(this.lbl3BingoCard10);
+            this.panel7.Controls.Add(this.lbl3BingoCard15);
+            this.panel7.Controls.Add(this.lbl3BingoCard20);
+            this.panel7.Controls.Add(this.lbl3BingoCard25);
+            this.panel7.Controls.Add(this.lbl3BingoCard4);
+            this.panel7.Controls.Add(this.lbl3BingoCard9);
+            this.panel7.Controls.Add(this.lbl3BingoCard14);
+            this.panel7.Controls.Add(this.lbl3BingoCard19);
+            this.panel7.Controls.Add(this.lbl3BingoCard24);
+            this.panel7.Controls.Add(this.lbl3BingoCard3);
+            this.panel7.Controls.Add(this.lbl3BingoCard8);
+            this.panel7.Controls.Add(this.lbl3BingoCard13);
+            this.panel7.Controls.Add(this.lbl3BingoCard18);
+            this.panel7.Controls.Add(this.lbl3BingoCard23);
+            this.panel7.Controls.Add(this.lbl3BingoCard6);
+            this.panel7.Controls.Add(this.lbl3BingoCard11);
+            this.panel7.Controls.Add(this.lbl3BingoCard16);
+            this.panel7.Controls.Add(this.lbl3BingoCard21);
+            this.panel7.Controls.Add(this.lbl3BingoCard2);
+            this.panel7.Controls.Add(this.lbl3BingoCard7);
+            this.panel7.Controls.Add(this.lbl3BingoCard12);
+            this.panel7.Controls.Add(this.lbl3BingoCard17);
+            this.panel7.Controls.Add(this.lbl3BingoCard22);
+            this.panel7.Controls.Add(this.lbl3BingoCard1);
+            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Location = new System.Drawing.Point(455, 14);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(192, 216);
+            this.panel7.TabIndex = 11;
+            this.panel7.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lbl3BingoCard1
+            // 
+            this.lbl3BingoCard1.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lbl3BingoCard1.Name = "lbl3BingoCard1";
+            this.lbl3BingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard1.TabIndex = 4;
+            this.lbl3BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard22
+            // 
+            this.lbl3BingoCard22.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lbl3BingoCard22.Name = "lbl3BingoCard22";
+            this.lbl3BingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard22.TabIndex = 5;
+            this.lbl3BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard17
+            // 
+            this.lbl3BingoCard17.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lbl3BingoCard17.Name = "lbl3BingoCard17";
+            this.lbl3BingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard17.TabIndex = 6;
+            this.lbl3BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard12
+            // 
+            this.lbl3BingoCard12.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lbl3BingoCard12.Name = "lbl3BingoCard12";
+            this.lbl3BingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard12.TabIndex = 7;
+            this.lbl3BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard7
+            // 
+            this.lbl3BingoCard7.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lbl3BingoCard7.Name = "lbl3BingoCard7";
+            this.lbl3BingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard7.TabIndex = 8;
+            this.lbl3BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard2
+            // 
+            this.lbl3BingoCard2.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lbl3BingoCard2.Name = "lbl3BingoCard2";
+            this.lbl3BingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard2.TabIndex = 9;
+            this.lbl3BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard21
+            // 
+            this.lbl3BingoCard21.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lbl3BingoCard21.Name = "lbl3BingoCard21";
+            this.lbl3BingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard21.TabIndex = 10;
+            this.lbl3BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard16
+            // 
+            this.lbl3BingoCard16.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lbl3BingoCard16.Name = "lbl3BingoCard16";
+            this.lbl3BingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard16.TabIndex = 11;
+            this.lbl3BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard11
+            // 
+            this.lbl3BingoCard11.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lbl3BingoCard11.Name = "lbl3BingoCard11";
+            this.lbl3BingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard11.TabIndex = 12;
+            this.lbl3BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard6
+            // 
+            this.lbl3BingoCard6.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lbl3BingoCard6.Name = "lbl3BingoCard6";
+            this.lbl3BingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard6.TabIndex = 13;
+            this.lbl3BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard23
+            // 
+            this.lbl3BingoCard23.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lbl3BingoCard23.Name = "lbl3BingoCard23";
+            this.lbl3BingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard23.TabIndex = 14;
+            this.lbl3BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard18
+            // 
+            this.lbl3BingoCard18.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lbl3BingoCard18.Name = "lbl3BingoCard18";
+            this.lbl3BingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard18.TabIndex = 15;
+            this.lbl3BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard13
+            // 
+            this.lbl3BingoCard13.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lbl3BingoCard13.Name = "lbl3BingoCard13";
+            this.lbl3BingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard13.TabIndex = 16;
+            this.lbl3BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl3BingoCard8
+            // 
+            this.lbl3BingoCard8.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lbl3BingoCard8.Name = "lbl3BingoCard8";
+            this.lbl3BingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard8.TabIndex = 17;
+            this.lbl3BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard3
+            // 
+            this.lbl3BingoCard3.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lbl3BingoCard3.Name = "lbl3BingoCard3";
+            this.lbl3BingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard3.TabIndex = 18;
+            this.lbl3BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard24
+            // 
+            this.lbl3BingoCard24.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lbl3BingoCard24.Name = "lbl3BingoCard24";
+            this.lbl3BingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard24.TabIndex = 19;
+            this.lbl3BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard19
+            // 
+            this.lbl3BingoCard19.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lbl3BingoCard19.Name = "lbl3BingoCard19";
+            this.lbl3BingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard19.TabIndex = 20;
+            this.lbl3BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard14
+            // 
+            this.lbl3BingoCard14.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lbl3BingoCard14.Name = "lbl3BingoCard14";
+            this.lbl3BingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard14.TabIndex = 21;
+            this.lbl3BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard9
+            // 
+            this.lbl3BingoCard9.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lbl3BingoCard9.Name = "lbl3BingoCard9";
+            this.lbl3BingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard9.TabIndex = 22;
+            this.lbl3BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard4
+            // 
+            this.lbl3BingoCard4.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lbl3BingoCard4.Name = "lbl3BingoCard4";
+            this.lbl3BingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard4.TabIndex = 23;
+            this.lbl3BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard25
+            // 
+            this.lbl3BingoCard25.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lbl3BingoCard25.Name = "lbl3BingoCard25";
+            this.lbl3BingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard25.TabIndex = 24;
+            this.lbl3BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard20
+            // 
+            this.lbl3BingoCard20.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lbl3BingoCard20.Name = "lbl3BingoCard20";
+            this.lbl3BingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard20.TabIndex = 25;
+            this.lbl3BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard15
+            // 
+            this.lbl3BingoCard15.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lbl3BingoCard15.Name = "lbl3BingoCard15";
+            this.lbl3BingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard15.TabIndex = 26;
+            this.lbl3BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard10
+            // 
+            this.lbl3BingoCard10.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lbl3BingoCard10.Name = "lbl3BingoCard10";
+            this.lbl3BingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard10.TabIndex = 27;
+            this.lbl3BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl3BingoCard5
+            // 
+            this.lbl3BingoCard5.BackColor = System.Drawing.Color.White;
+            this.lbl3BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3BingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lbl3BingoCard5.Name = "lbl3BingoCard5";
+            this.lbl3BingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lbl3BingoCard5.TabIndex = 28;
+            this.lbl3BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.lbl4BingoCard5);
+            this.panel8.Controls.Add(this.lbl4BingoCard10);
+            this.panel8.Controls.Add(this.lbl4BingoCard15);
+            this.panel8.Controls.Add(this.lbl4BingoCard20);
+            this.panel8.Controls.Add(this.lbl4BingoCard25);
+            this.panel8.Controls.Add(this.lbl4BingoCard4);
+            this.panel8.Controls.Add(this.lbl4BingoCard9);
+            this.panel8.Controls.Add(this.lbl4BingoCard14);
+            this.panel8.Controls.Add(this.lbl4BingoCard19);
+            this.panel8.Controls.Add(this.lbl4BingoCard24);
+            this.panel8.Controls.Add(this.lbl4BingoCard3);
+            this.panel8.Controls.Add(this.lbl4BingoCard8);
+            this.panel8.Controls.Add(this.lbl4BingoCard13);
+            this.panel8.Controls.Add(this.lbl4BingoCard18);
+            this.panel8.Controls.Add(this.lbl4BingoCard23);
+            this.panel8.Controls.Add(this.lbl4BingoCard6);
+            this.panel8.Controls.Add(this.lbl4BingoCard11);
+            this.panel8.Controls.Add(this.lbl4BingoCard16);
+            this.panel8.Controls.Add(this.lbl4BingoCard21);
+            this.panel8.Controls.Add(this.lbl4BingoCard2);
+            this.panel8.Controls.Add(this.lbl4BingoCard7);
+            this.panel8.Controls.Add(this.lbl4BingoCard12);
+            this.panel8.Controls.Add(this.lbl4BingoCard17);
+            this.panel8.Controls.Add(this.lbl4BingoCard22);
+            this.panel8.Controls.Add(this.lbl4BingoCard1);
+            this.panel8.Controls.Add(this.pictureBox3);
+            this.panel8.Location = new System.Drawing.Point(24, 249);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(192, 220);
+            this.panel8.TabIndex = 12;
+            this.panel8.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lbl4BingoCard1
+            // 
+            this.lbl4BingoCard1.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lbl4BingoCard1.Name = "lbl4BingoCard1";
+            this.lbl4BingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard1.TabIndex = 4;
+            this.lbl4BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard22
+            // 
+            this.lbl4BingoCard22.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lbl4BingoCard22.Name = "lbl4BingoCard22";
+            this.lbl4BingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard22.TabIndex = 5;
+            this.lbl4BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard17
+            // 
+            this.lbl4BingoCard17.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lbl4BingoCard17.Name = "lbl4BingoCard17";
+            this.lbl4BingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard17.TabIndex = 6;
+            this.lbl4BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard12
+            // 
+            this.lbl4BingoCard12.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lbl4BingoCard12.Name = "lbl4BingoCard12";
+            this.lbl4BingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard12.TabIndex = 7;
+            this.lbl4BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard7
+            // 
+            this.lbl4BingoCard7.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lbl4BingoCard7.Name = "lbl4BingoCard7";
+            this.lbl4BingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard7.TabIndex = 8;
+            this.lbl4BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard2
+            // 
+            this.lbl4BingoCard2.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lbl4BingoCard2.Name = "lbl4BingoCard2";
+            this.lbl4BingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard2.TabIndex = 9;
+            this.lbl4BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard21
+            // 
+            this.lbl4BingoCard21.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lbl4BingoCard21.Name = "lbl4BingoCard21";
+            this.lbl4BingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard21.TabIndex = 10;
+            this.lbl4BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard16
+            // 
+            this.lbl4BingoCard16.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lbl4BingoCard16.Name = "lbl4BingoCard16";
+            this.lbl4BingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard16.TabIndex = 11;
+            this.lbl4BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard11
+            // 
+            this.lbl4BingoCard11.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lbl4BingoCard11.Name = "lbl4BingoCard11";
+            this.lbl4BingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard11.TabIndex = 12;
+            this.lbl4BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard6
+            // 
+            this.lbl4BingoCard6.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lbl4BingoCard6.Name = "lbl4BingoCard6";
+            this.lbl4BingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard6.TabIndex = 13;
+            this.lbl4BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard23
+            // 
+            this.lbl4BingoCard23.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lbl4BingoCard23.Name = "lbl4BingoCard23";
+            this.lbl4BingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard23.TabIndex = 14;
+            this.lbl4BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard18
+            // 
+            this.lbl4BingoCard18.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lbl4BingoCard18.Name = "lbl4BingoCard18";
+            this.lbl4BingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard18.TabIndex = 15;
+            this.lbl4BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard13
+            // 
+            this.lbl4BingoCard13.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lbl4BingoCard13.Name = "lbl4BingoCard13";
+            this.lbl4BingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard13.TabIndex = 16;
+            this.lbl4BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl4BingoCard8
+            // 
+            this.lbl4BingoCard8.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lbl4BingoCard8.Name = "lbl4BingoCard8";
+            this.lbl4BingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard8.TabIndex = 17;
+            this.lbl4BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard3
+            // 
+            this.lbl4BingoCard3.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lbl4BingoCard3.Name = "lbl4BingoCard3";
+            this.lbl4BingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard3.TabIndex = 18;
+            this.lbl4BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard24
+            // 
+            this.lbl4BingoCard24.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lbl4BingoCard24.Name = "lbl4BingoCard24";
+            this.lbl4BingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard24.TabIndex = 19;
+            this.lbl4BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard19
+            // 
+            this.lbl4BingoCard19.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lbl4BingoCard19.Name = "lbl4BingoCard19";
+            this.lbl4BingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard19.TabIndex = 20;
+            this.lbl4BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard14
+            // 
+            this.lbl4BingoCard14.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lbl4BingoCard14.Name = "lbl4BingoCard14";
+            this.lbl4BingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard14.TabIndex = 21;
+            this.lbl4BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard9
+            // 
+            this.lbl4BingoCard9.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lbl4BingoCard9.Name = "lbl4BingoCard9";
+            this.lbl4BingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard9.TabIndex = 22;
+            this.lbl4BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard4
+            // 
+            this.lbl4BingoCard4.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lbl4BingoCard4.Name = "lbl4BingoCard4";
+            this.lbl4BingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard4.TabIndex = 23;
+            this.lbl4BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard25
+            // 
+            this.lbl4BingoCard25.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lbl4BingoCard25.Name = "lbl4BingoCard25";
+            this.lbl4BingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard25.TabIndex = 24;
+            this.lbl4BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard20
+            // 
+            this.lbl4BingoCard20.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lbl4BingoCard20.Name = "lbl4BingoCard20";
+            this.lbl4BingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard20.TabIndex = 25;
+            this.lbl4BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard15
+            // 
+            this.lbl4BingoCard15.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lbl4BingoCard15.Name = "lbl4BingoCard15";
+            this.lbl4BingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard15.TabIndex = 26;
+            this.lbl4BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard10
+            // 
+            this.lbl4BingoCard10.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lbl4BingoCard10.Name = "lbl4BingoCard10";
+            this.lbl4BingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard10.TabIndex = 27;
+            this.lbl4BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl4BingoCard5
+            // 
+            this.lbl4BingoCard5.BackColor = System.Drawing.Color.White;
+            this.lbl4BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4BingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lbl4BingoCard5.Name = "lbl4BingoCard5";
+            this.lbl4BingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lbl4BingoCard5.TabIndex = 28;
+            this.lbl4BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.lbl5BingoCard5);
+            this.panel9.Controls.Add(this.lbl5BingoCard10);
+            this.panel9.Controls.Add(this.lbl5BingoCard15);
+            this.panel9.Controls.Add(this.lbl5BingoCard20);
+            this.panel9.Controls.Add(this.lbl5BingoCard25);
+            this.panel9.Controls.Add(this.lbl5BingoCard4);
+            this.panel9.Controls.Add(this.lbl5BingoCard9);
+            this.panel9.Controls.Add(this.lbl5BingoCard14);
+            this.panel9.Controls.Add(this.lbl5BingoCard19);
+            this.panel9.Controls.Add(this.lbl5BingoCard24);
+            this.panel9.Controls.Add(this.lbl5BingoCard3);
+            this.panel9.Controls.Add(this.lbl5BingoCard8);
+            this.panel9.Controls.Add(this.lbl5BingoCard13);
+            this.panel9.Controls.Add(this.lbl5BingoCard18);
+            this.panel9.Controls.Add(this.lbl5BingoCard23);
+            this.panel9.Controls.Add(this.lbl5BingoCard6);
+            this.panel9.Controls.Add(this.lbl5BingoCard11);
+            this.panel9.Controls.Add(this.lbl5BingoCard16);
+            this.panel9.Controls.Add(this.lbl5BingoCard21);
+            this.panel9.Controls.Add(this.lbl5BingoCard2);
+            this.panel9.Controls.Add(this.lbl5BingoCard7);
+            this.panel9.Controls.Add(this.lbl5BingoCard12);
+            this.panel9.Controls.Add(this.lbl5BingoCard17);
+            this.panel9.Controls.Add(this.lbl5BingoCard22);
+            this.panel9.Controls.Add(this.lbl5BingoCard1);
+            this.panel9.Controls.Add(this.pictureBox4);
+            this.panel9.Location = new System.Drawing.Point(241, 249);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(192, 220);
+            this.panel9.TabIndex = 13;
+            this.panel9.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // lbl5BingoCard1
+            // 
+            this.lbl5BingoCard1.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lbl5BingoCard1.Name = "lbl5BingoCard1";
+            this.lbl5BingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard1.TabIndex = 4;
+            this.lbl5BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard22
+            // 
+            this.lbl5BingoCard22.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lbl5BingoCard22.Name = "lbl5BingoCard22";
+            this.lbl5BingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard22.TabIndex = 5;
+            this.lbl5BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard17
+            // 
+            this.lbl5BingoCard17.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lbl5BingoCard17.Name = "lbl5BingoCard17";
+            this.lbl5BingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard17.TabIndex = 6;
+            this.lbl5BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard12
+            // 
+            this.lbl5BingoCard12.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lbl5BingoCard12.Name = "lbl5BingoCard12";
+            this.lbl5BingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard12.TabIndex = 7;
+            this.lbl5BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard7
+            // 
+            this.lbl5BingoCard7.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lbl5BingoCard7.Name = "lbl5BingoCard7";
+            this.lbl5BingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard7.TabIndex = 8;
+            this.lbl5BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard2
+            // 
+            this.lbl5BingoCard2.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lbl5BingoCard2.Name = "lbl5BingoCard2";
+            this.lbl5BingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard2.TabIndex = 9;
+            this.lbl5BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard21
+            // 
+            this.lbl5BingoCard21.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lbl5BingoCard21.Name = "lbl5BingoCard21";
+            this.lbl5BingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard21.TabIndex = 10;
+            this.lbl5BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard16
+            // 
+            this.lbl5BingoCard16.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lbl5BingoCard16.Name = "lbl5BingoCard16";
+            this.lbl5BingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard16.TabIndex = 11;
+            this.lbl5BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard11
+            // 
+            this.lbl5BingoCard11.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lbl5BingoCard11.Name = "lbl5BingoCard11";
+            this.lbl5BingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard11.TabIndex = 12;
+            this.lbl5BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard6
+            // 
+            this.lbl5BingoCard6.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lbl5BingoCard6.Name = "lbl5BingoCard6";
+            this.lbl5BingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard6.TabIndex = 13;
+            this.lbl5BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard23
+            // 
+            this.lbl5BingoCard23.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lbl5BingoCard23.Name = "lbl5BingoCard23";
+            this.lbl5BingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard23.TabIndex = 14;
+            this.lbl5BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard18
+            // 
+            this.lbl5BingoCard18.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lbl5BingoCard18.Name = "lbl5BingoCard18";
+            this.lbl5BingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard18.TabIndex = 15;
+            this.lbl5BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard13
+            // 
+            this.lbl5BingoCard13.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lbl5BingoCard13.Name = "lbl5BingoCard13";
+            this.lbl5BingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard13.TabIndex = 16;
+            this.lbl5BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl5BingoCard8
+            // 
+            this.lbl5BingoCard8.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lbl5BingoCard8.Name = "lbl5BingoCard8";
+            this.lbl5BingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard8.TabIndex = 17;
+            this.lbl5BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard3
+            // 
+            this.lbl5BingoCard3.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lbl5BingoCard3.Name = "lbl5BingoCard3";
+            this.lbl5BingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard3.TabIndex = 18;
+            this.lbl5BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard24
+            // 
+            this.lbl5BingoCard24.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lbl5BingoCard24.Name = "lbl5BingoCard24";
+            this.lbl5BingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard24.TabIndex = 19;
+            this.lbl5BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard19
+            // 
+            this.lbl5BingoCard19.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lbl5BingoCard19.Name = "lbl5BingoCard19";
+            this.lbl5BingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard19.TabIndex = 20;
+            this.lbl5BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard14
+            // 
+            this.lbl5BingoCard14.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lbl5BingoCard14.Name = "lbl5BingoCard14";
+            this.lbl5BingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard14.TabIndex = 21;
+            this.lbl5BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard9
+            // 
+            this.lbl5BingoCard9.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lbl5BingoCard9.Name = "lbl5BingoCard9";
+            this.lbl5BingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard9.TabIndex = 22;
+            this.lbl5BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard4
+            // 
+            this.lbl5BingoCard4.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lbl5BingoCard4.Name = "lbl5BingoCard4";
+            this.lbl5BingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard4.TabIndex = 23;
+            this.lbl5BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard25
+            // 
+            this.lbl5BingoCard25.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lbl5BingoCard25.Name = "lbl5BingoCard25";
+            this.lbl5BingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard25.TabIndex = 24;
+            this.lbl5BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard20
+            // 
+            this.lbl5BingoCard20.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lbl5BingoCard20.Name = "lbl5BingoCard20";
+            this.lbl5BingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard20.TabIndex = 25;
+            this.lbl5BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard15
+            // 
+            this.lbl5BingoCard15.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lbl5BingoCard15.Name = "lbl5BingoCard15";
+            this.lbl5BingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard15.TabIndex = 26;
+            this.lbl5BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard10
+            // 
+            this.lbl5BingoCard10.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lbl5BingoCard10.Name = "lbl5BingoCard10";
+            this.lbl5BingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard10.TabIndex = 27;
+            this.lbl5BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl5BingoCard5
+            // 
+            this.lbl5BingoCard5.BackColor = System.Drawing.Color.White;
+            this.lbl5BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5BingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lbl5BingoCard5.Name = "lbl5BingoCard5";
+            this.lbl5BingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lbl5BingoCard5.TabIndex = 28;
+            this.lbl5BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.lbl6BingoCard5);
+            this.panel10.Controls.Add(this.lbl6BingoCard10);
+            this.panel10.Controls.Add(this.lbl6BingoCard15);
+            this.panel10.Controls.Add(this.lbl6BingoCard20);
+            this.panel10.Controls.Add(this.lbl6BingoCard25);
+            this.panel10.Controls.Add(this.lbl6BingoCard4);
+            this.panel10.Controls.Add(this.lbl6BingoCard9);
+            this.panel10.Controls.Add(this.lbl6BingoCard14);
+            this.panel10.Controls.Add(this.lbl6BingoCard19);
+            this.panel10.Controls.Add(this.lbl6BingoCard24);
+            this.panel10.Controls.Add(this.lbl6BingoCard3);
+            this.panel10.Controls.Add(this.lbl6BingoCard8);
+            this.panel10.Controls.Add(this.lbl6BingoCard13);
+            this.panel10.Controls.Add(this.lbl6BingoCard18);
+            this.panel10.Controls.Add(this.lbl6BingoCard23);
+            this.panel10.Controls.Add(this.lbl6BingoCard6);
+            this.panel10.Controls.Add(this.lbl6BingoCard11);
+            this.panel10.Controls.Add(this.lbl6BingoCard16);
+            this.panel10.Controls.Add(this.lbl6BingoCard21);
+            this.panel10.Controls.Add(this.lbl6BingoCard2);
+            this.panel10.Controls.Add(this.lbl6BingoCard7);
+            this.panel10.Controls.Add(this.lbl6BingoCard12);
+            this.panel10.Controls.Add(this.lbl6BingoCard17);
+            this.panel10.Controls.Add(this.lbl6BingoCard22);
+            this.panel10.Controls.Add(this.lbl6BingoCard1);
+            this.panel10.Controls.Add(this.pictureBox5);
+            this.panel10.Location = new System.Drawing.Point(455, 249);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(192, 220);
+            this.panel10.TabIndex = 29;
+            this.panel10.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(192, 216);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // lbl6BingoCard1
+            // 
+            this.lbl6BingoCard1.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard1.Location = new System.Drawing.Point(13, 40);
+            this.lbl6BingoCard1.Name = "lbl6BingoCard1";
+            this.lbl6BingoCard1.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard1.TabIndex = 4;
+            this.lbl6BingoCard1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard22
+            // 
+            this.lbl6BingoCard22.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard22.Location = new System.Drawing.Point(149, 74);
+            this.lbl6BingoCard22.Name = "lbl6BingoCard22";
+            this.lbl6BingoCard22.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard22.TabIndex = 5;
+            this.lbl6BingoCard22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard17
+            // 
+            this.lbl6BingoCard17.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard17.Location = new System.Drawing.Point(116, 74);
+            this.lbl6BingoCard17.Name = "lbl6BingoCard17";
+            this.lbl6BingoCard17.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard17.TabIndex = 6;
+            this.lbl6BingoCard17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard12
+            // 
+            this.lbl6BingoCard12.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard12.Location = new System.Drawing.Point(82, 74);
+            this.lbl6BingoCard12.Name = "lbl6BingoCard12";
+            this.lbl6BingoCard12.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard12.TabIndex = 7;
+            this.lbl6BingoCard12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard7
+            // 
+            this.lbl6BingoCard7.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard7.Location = new System.Drawing.Point(47, 74);
+            this.lbl6BingoCard7.Name = "lbl6BingoCard7";
+            this.lbl6BingoCard7.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard7.TabIndex = 8;
+            this.lbl6BingoCard7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard2
+            // 
+            this.lbl6BingoCard2.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard2.Location = new System.Drawing.Point(13, 74);
+            this.lbl6BingoCard2.Name = "lbl6BingoCard2";
+            this.lbl6BingoCard2.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard2.TabIndex = 9;
+            this.lbl6BingoCard2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard21
+            // 
+            this.lbl6BingoCard21.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard21.Location = new System.Drawing.Point(149, 40);
+            this.lbl6BingoCard21.Name = "lbl6BingoCard21";
+            this.lbl6BingoCard21.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard21.TabIndex = 10;
+            this.lbl6BingoCard21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard16
+            // 
+            this.lbl6BingoCard16.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard16.Location = new System.Drawing.Point(116, 40);
+            this.lbl6BingoCard16.Name = "lbl6BingoCard16";
+            this.lbl6BingoCard16.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard16.TabIndex = 11;
+            this.lbl6BingoCard16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard11
+            // 
+            this.lbl6BingoCard11.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard11.Location = new System.Drawing.Point(82, 40);
+            this.lbl6BingoCard11.Name = "lbl6BingoCard11";
+            this.lbl6BingoCard11.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard11.TabIndex = 12;
+            this.lbl6BingoCard11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard6
+            // 
+            this.lbl6BingoCard6.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard6.Location = new System.Drawing.Point(47, 40);
+            this.lbl6BingoCard6.Name = "lbl6BingoCard6";
+            this.lbl6BingoCard6.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard6.TabIndex = 13;
+            this.lbl6BingoCard6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard23
+            // 
+            this.lbl6BingoCard23.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard23.Location = new System.Drawing.Point(149, 108);
+            this.lbl6BingoCard23.Name = "lbl6BingoCard23";
+            this.lbl6BingoCard23.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard23.TabIndex = 14;
+            this.lbl6BingoCard23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard18
+            // 
+            this.lbl6BingoCard18.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard18.Location = new System.Drawing.Point(116, 108);
+            this.lbl6BingoCard18.Name = "lbl6BingoCard18";
+            this.lbl6BingoCard18.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard18.TabIndex = 15;
+            this.lbl6BingoCard18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard13
+            // 
+            this.lbl6BingoCard13.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard13.Location = new System.Drawing.Point(82, 108);
+            this.lbl6BingoCard13.Name = "lbl6BingoCard13";
+            this.lbl6BingoCard13.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard13.TabIndex = 16;
+            this.lbl6BingoCard13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard8
+            // 
+            this.lbl6BingoCard8.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard8.Location = new System.Drawing.Point(47, 108);
+            this.lbl6BingoCard8.Name = "lbl6BingoCard8";
+            this.lbl6BingoCard8.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard8.TabIndex = 17;
+            this.lbl6BingoCard8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard3
+            // 
+            this.lbl6BingoCard3.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard3.Location = new System.Drawing.Point(13, 108);
+            this.lbl6BingoCard3.Name = "lbl6BingoCard3";
+            this.lbl6BingoCard3.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard3.TabIndex = 18;
+            this.lbl6BingoCard3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard24
+            // 
+            this.lbl6BingoCard24.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard24.Location = new System.Drawing.Point(149, 142);
+            this.lbl6BingoCard24.Name = "lbl6BingoCard24";
+            this.lbl6BingoCard24.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard24.TabIndex = 19;
+            this.lbl6BingoCard24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard19
+            // 
+            this.lbl6BingoCard19.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard19.Location = new System.Drawing.Point(116, 142);
+            this.lbl6BingoCard19.Name = "lbl6BingoCard19";
+            this.lbl6BingoCard19.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard19.TabIndex = 20;
+            this.lbl6BingoCard19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard14
+            // 
+            this.lbl6BingoCard14.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard14.Location = new System.Drawing.Point(82, 142);
+            this.lbl6BingoCard14.Name = "lbl6BingoCard14";
+            this.lbl6BingoCard14.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard14.TabIndex = 21;
+            this.lbl6BingoCard14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard9
+            // 
+            this.lbl6BingoCard9.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard9.Location = new System.Drawing.Point(47, 142);
+            this.lbl6BingoCard9.Name = "lbl6BingoCard9";
+            this.lbl6BingoCard9.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard9.TabIndex = 22;
+            this.lbl6BingoCard9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard4
+            // 
+            this.lbl6BingoCard4.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard4.Location = new System.Drawing.Point(13, 142);
+            this.lbl6BingoCard4.Name = "lbl6BingoCard4";
+            this.lbl6BingoCard4.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard4.TabIndex = 23;
+            this.lbl6BingoCard4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard25
+            // 
+            this.lbl6BingoCard25.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard25.Location = new System.Drawing.Point(149, 176);
+            this.lbl6BingoCard25.Name = "lbl6BingoCard25";
+            this.lbl6BingoCard25.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard25.TabIndex = 24;
+            this.lbl6BingoCard25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard20
+            // 
+            this.lbl6BingoCard20.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard20.Location = new System.Drawing.Point(116, 176);
+            this.lbl6BingoCard20.Name = "lbl6BingoCard20";
+            this.lbl6BingoCard20.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard20.TabIndex = 25;
+            this.lbl6BingoCard20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard15
+            // 
+            this.lbl6BingoCard15.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard15.Location = new System.Drawing.Point(82, 176);
+            this.lbl6BingoCard15.Name = "lbl6BingoCard15";
+            this.lbl6BingoCard15.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard15.TabIndex = 26;
+            this.lbl6BingoCard15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard10
+            // 
+            this.lbl6BingoCard10.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard10.Location = new System.Drawing.Point(47, 176);
+            this.lbl6BingoCard10.Name = "lbl6BingoCard10";
+            this.lbl6BingoCard10.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard10.TabIndex = 27;
+            this.lbl6BingoCard10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lbl6BingoCard5
+            // 
+            this.lbl6BingoCard5.BackColor = System.Drawing.Color.White;
+            this.lbl6BingoCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6BingoCard5.Location = new System.Drawing.Point(13, 176);
+            this.lbl6BingoCard5.Name = "lbl6BingoCard5";
+            this.lbl6BingoCard5.Size = new System.Drawing.Size(31, 29);
+            this.lbl6BingoCard5.TabIndex = 28;
+            this.lbl6BingoCard5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6BingoCard5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblSerialN4
+            // 
+            this.lblSerialN4.AutoSize = true;
+            this.lblSerialN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN4.Location = new System.Drawing.Point(31, 467);
+            this.lblSerialN4.Name = "lblSerialN4";
+            this.lblSerialN4.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN4.TabIndex = 29;
+            this.lblSerialN4.Tag = "4";
+            // 
+            // lblSerialN2
+            // 
+            this.lblSerialN2.AutoSize = true;
+            this.lblSerialN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN2.Location = new System.Drawing.Point(246, 233);
+            this.lblSerialN2.Name = "lblSerialN2";
+            this.lblSerialN2.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN2.TabIndex = 38;
+            this.lblSerialN2.Tag = "2";
+            // 
+            // lblSerialN3
+            // 
+            this.lblSerialN3.AutoSize = true;
+            this.lblSerialN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN3.Location = new System.Drawing.Point(461, 233);
+            this.lblSerialN3.Name = "lblSerialN3";
+            this.lblSerialN3.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN3.TabIndex = 39;
+            this.lblSerialN3.Tag = "3";
+            // 
+            // lblSerialN6
+            // 
+            this.lblSerialN6.AutoSize = true;
+            this.lblSerialN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN6.Location = new System.Drawing.Point(462, 467);
+            this.lblSerialN6.Name = "lblSerialN6";
+            this.lblSerialN6.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN6.TabIndex = 40;
+            this.lblSerialN6.Tag = "6";
+            // 
+            // lblSerialN5
+            // 
+            this.lblSerialN5.AutoSize = true;
+            this.lblSerialN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN5.Location = new System.Drawing.Point(249, 467);
+            this.lblSerialN5.Name = "lblSerialN5";
+            this.lblSerialN5.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN5.TabIndex = 41;
+            this.lblSerialN5.Tag = "5";
+            // 
+            // lblSerialN1
+            // 
+            this.lblSerialN1.AutoSize = true;
+            this.lblSerialN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerialN1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSerialN1.Location = new System.Drawing.Point(31, 234);
+            this.lblSerialN1.Name = "lblSerialN1";
+            this.lblSerialN1.Size = new System.Drawing.Size(0, 16);
+            this.lblSerialN1.TabIndex = 42;
+            this.lblSerialN1.Tag = "1";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.lblSerialN1);
+            this.panel4.Controls.Add(this.lblSerialN5);
+            this.panel4.Controls.Add(this.lblSerialN6);
+            this.panel4.Controls.Add(this.lblSerialN3);
+            this.panel4.Controls.Add(this.lblSerialN2);
+            this.panel4.Controls.Add(this.lblSerialN4);
+            this.panel4.Controls.Add(this.panel10);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.pictureBox12);
+            this.panel4.Controls.Add(this.pictureBox11);
+            this.panel4.Controls.Add(this.pictureBox6);
+            this.panel4.Controls.Add(this.pictureBox13);
+            this.panel4.Controls.Add(this.pictureBox14);
+            this.panel4.Controls.Add(this.pictureBox15);
+            this.panel4.Location = new System.Drawing.Point(2, 1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(672, 501);
+            this.panel4.TabIndex = 1;
+            // 
             // DisputeResolution
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4564,26 +4564,6 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -4601,6 +4581,26 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4611,7 +4611,6 @@
         private System.Windows.Forms.Panel panel1;
         private ImageButton imgbtnNext;
         private ImageButton imgbtnBack;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
@@ -4644,7 +4643,6 @@
         private System.Windows.Forms.CheckBox chkbxCardNumber;
         private System.Windows.Forms.CheckBox chkbxGameNumber;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label lblMessageLastGameReach;
@@ -4653,173 +4651,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblBingoCard1;
-        private System.Windows.Forms.Label lblBingoCard5;
-        private System.Windows.Forms.Label lblBingoCard10;
-        private System.Windows.Forms.Label lblBingoCard15;
-        private System.Windows.Forms.Label lblBingoCard20;
-        private System.Windows.Forms.Label lblBingoCard25;
-        private System.Windows.Forms.Label lblBingoCard4;
-        private System.Windows.Forms.Label lblBingoCard9;
-        private System.Windows.Forms.Label lblBingoCard14;
-        private System.Windows.Forms.Label lblBingoCard19;
-        private System.Windows.Forms.Label lblBingoCard24;
-        private System.Windows.Forms.Label lblBingoCard3;
-        private System.Windows.Forms.Label lblBingoCard8;
-        private System.Windows.Forms.Label lblBingoCard13;
-        private System.Windows.Forms.Label lblBingoCard18;
-        private System.Windows.Forms.Label lblBingoCard23;
-        private System.Windows.Forms.Label lblBingoCard6;
-        private System.Windows.Forms.Label lblBingoCard11;
-        private System.Windows.Forms.Label lblBingoCard16;
-        private System.Windows.Forms.Label lblBingoCard21;
-        private System.Windows.Forms.Label lblBingoCard2;
-        private System.Windows.Forms.Label lblBingoCard7;
-        private System.Windows.Forms.Label lblBingoCard12;
-        private System.Windows.Forms.Label lblBingoCard17;
-        private System.Windows.Forms.Label lblBingoCard22;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbl2BingoCard5;
-        private System.Windows.Forms.Label lbl2BingoCard10;
-        private System.Windows.Forms.Label lbl2BingoCard15;
-        private System.Windows.Forms.Label lbl2BingoCard20;
-        private System.Windows.Forms.Label lbl2BingoCard25;
-        private System.Windows.Forms.Label lbl2BingoCard4;
-        private System.Windows.Forms.Label lbl2BingoCard9;
-        private System.Windows.Forms.Label lbl2BingoCard14;
-        private System.Windows.Forms.Label lbl2BingoCard19;
-        private System.Windows.Forms.Label lbl2BingoCard24;
-        private System.Windows.Forms.Label lbl2BingoCard3;
-        private System.Windows.Forms.Label lbl2BingoCard8;
-        private System.Windows.Forms.Label lbl2BingoCard13;
-        private System.Windows.Forms.Label lbl2BingoCard18;
-        private System.Windows.Forms.Label lbl2BingoCard23;
-        private System.Windows.Forms.Label lbl2BingoCard6;
-        private System.Windows.Forms.Label lbl2BingoCard11;
-        private System.Windows.Forms.Label lbl2BingoCard16;
-        private System.Windows.Forms.Label lbl2BingoCard21;
-        private System.Windows.Forms.Label lbl2BingoCard2;
-        private System.Windows.Forms.Label lbl2BingoCard7;
-        private System.Windows.Forms.Label lbl2BingoCard12;
-        private System.Windows.Forms.Label lbl2BingoCard17;
-        private System.Windows.Forms.Label lbl2BingoCard22;
-        private System.Windows.Forms.Label lbl2BingoCard1;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lbl3BingoCard5;
-        private System.Windows.Forms.Label lbl3BingoCard10;
-        private System.Windows.Forms.Label lbl3BingoCard15;
-        private System.Windows.Forms.Label lbl3BingoCard20;
-        private System.Windows.Forms.Label lbl3BingoCard25;
-        private System.Windows.Forms.Label lbl3BingoCard4;
-        private System.Windows.Forms.Label lbl3BingoCard9;
-        private System.Windows.Forms.Label lbl3BingoCard14;
-        private System.Windows.Forms.Label lbl3BingoCard19;
-        private System.Windows.Forms.Label lbl3BingoCard24;
-        private System.Windows.Forms.Label lbl3BingoCard3;
-        private System.Windows.Forms.Label lbl3BingoCard8;
-        private System.Windows.Forms.Label lbl3BingoCard13;
-        private System.Windows.Forms.Label lbl3BingoCard18;
-        private System.Windows.Forms.Label lbl3BingoCard23;
-        private System.Windows.Forms.Label lbl3BingoCard6;
-        private System.Windows.Forms.Label lbl3BingoCard11;
-        private System.Windows.Forms.Label lbl3BingoCard16;
-        private System.Windows.Forms.Label lbl3BingoCard21;
-        private System.Windows.Forms.Label lbl3BingoCard2;
-        private System.Windows.Forms.Label lbl3BingoCard7;
-        private System.Windows.Forms.Label lbl3BingoCard12;
-        private System.Windows.Forms.Label lbl3BingoCard17;
-        private System.Windows.Forms.Label lbl3BingoCard22;
-        private System.Windows.Forms.Label lbl3BingoCard1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lbl4BingoCard5;
-        private System.Windows.Forms.Label lbl4BingoCard10;
-        private System.Windows.Forms.Label lbl4BingoCard15;
-        private System.Windows.Forms.Label lbl4BingoCard20;
-        private System.Windows.Forms.Label lbl4BingoCard25;
-        private System.Windows.Forms.Label lbl4BingoCard4;
-        private System.Windows.Forms.Label lbl4BingoCard9;
-        private System.Windows.Forms.Label lbl4BingoCard14;
-        private System.Windows.Forms.Label lbl4BingoCard19;
-        private System.Windows.Forms.Label lbl4BingoCard24;
-        private System.Windows.Forms.Label lbl4BingoCard3;
-        private System.Windows.Forms.Label lbl4BingoCard8;
-        private System.Windows.Forms.Label lbl4BingoCard13;
-        private System.Windows.Forms.Label lbl4BingoCard18;
-        private System.Windows.Forms.Label lbl4BingoCard23;
-        private System.Windows.Forms.Label lbl4BingoCard6;
-        private System.Windows.Forms.Label lbl4BingoCard11;
-        private System.Windows.Forms.Label lbl4BingoCard16;
-        private System.Windows.Forms.Label lbl4BingoCard21;
-        private System.Windows.Forms.Label lbl4BingoCard2;
-        private System.Windows.Forms.Label lbl4BingoCard7;
-        private System.Windows.Forms.Label lbl4BingoCard12;
-        private System.Windows.Forms.Label lbl4BingoCard17;
-        private System.Windows.Forms.Label lbl4BingoCard22;
-        private System.Windows.Forms.Label lbl4BingoCard1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label lbl6BingoCard5;
-        private System.Windows.Forms.Label lbl6BingoCard10;
-        private System.Windows.Forms.Label lbl6BingoCard15;
-        private System.Windows.Forms.Label lbl6BingoCard20;
-        private System.Windows.Forms.Label lbl6BingoCard25;
-        private System.Windows.Forms.Label lbl6BingoCard4;
-        private System.Windows.Forms.Label lbl6BingoCard9;
-        private System.Windows.Forms.Label lbl6BingoCard14;
-        private System.Windows.Forms.Label lbl6BingoCard19;
-        private System.Windows.Forms.Label lbl6BingoCard24;
-        private System.Windows.Forms.Label lbl6BingoCard3;
-        private System.Windows.Forms.Label lbl6BingoCard8;
-        private System.Windows.Forms.Label lbl6BingoCard13;
-        private System.Windows.Forms.Label lbl6BingoCard18;
-        private System.Windows.Forms.Label lbl6BingoCard23;
-        private System.Windows.Forms.Label lbl6BingoCard6;
-        private System.Windows.Forms.Label lbl6BingoCard11;
-        private System.Windows.Forms.Label lbl6BingoCard16;
-        private System.Windows.Forms.Label lbl6BingoCard21;
-        private System.Windows.Forms.Label lbl6BingoCard2;
-        private System.Windows.Forms.Label lbl6BingoCard7;
-        private System.Windows.Forms.Label lbl6BingoCard12;
-        private System.Windows.Forms.Label lbl6BingoCard17;
-        private System.Windows.Forms.Label lbl6BingoCard22;
-        private System.Windows.Forms.Label lbl6BingoCard1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lbl5BingoCard5;
-        private System.Windows.Forms.Label lbl5BingoCard10;
-        private System.Windows.Forms.Label lbl5BingoCard15;
-        private System.Windows.Forms.Label lbl5BingoCard20;
-        private System.Windows.Forms.Label lbl5BingoCard25;
-        private System.Windows.Forms.Label lbl5BingoCard4;
-        private System.Windows.Forms.Label lbl5BingoCard9;
-        private System.Windows.Forms.Label lbl5BingoCard14;
-        private System.Windows.Forms.Label lbl5BingoCard19;
-        private System.Windows.Forms.Label lbl5BingoCard24;
-        private System.Windows.Forms.Label lbl5BingoCard3;
-        private System.Windows.Forms.Label lbl5BingoCard8;
-        private System.Windows.Forms.Label lbl5BingoCard13;
-        private System.Windows.Forms.Label lbl5BingoCard18;
-        private System.Windows.Forms.Label lbl5BingoCard23;
-        private System.Windows.Forms.Label lbl5BingoCard6;
-        private System.Windows.Forms.Label lbl5BingoCard11;
-        private System.Windows.Forms.Label lbl5BingoCard16;
-        private System.Windows.Forms.Label lbl5BingoCard21;
-        private System.Windows.Forms.Label lbl5BingoCard2;
-        private System.Windows.Forms.Label lbl5BingoCard7;
-        private System.Windows.Forms.Label lbl5BingoCard12;
-        private System.Windows.Forms.Label lbl5BingoCard17;
-        private System.Windows.Forms.Label lbl5BingoCard22;
-        private System.Windows.Forms.Label lbl5BingoCard1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label lbl9BingoCard5;
         private System.Windows.Forms.Label lbl9BingoCard10;
@@ -4931,12 +4762,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblTotalWin;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lblSerialN1;
-        private System.Windows.Forms.Label lblSerialN5;
-        private System.Windows.Forms.Label lblSerialN6;
-        private System.Windows.Forms.Label lblSerialN3;
-        private System.Windows.Forms.Label lblSerialN2;
-        private System.Windows.Forms.Label lblSerialN4;
         private System.Windows.Forms.Label lblBonusSerial4;
         private System.Windows.Forms.Label lblBonusSerial3;
         private System.Windows.Forms.Label lblBonusSerial2;
@@ -4950,5 +4775,180 @@
         private System.Windows.Forms.Label lblBetDenom;
         private System.Windows.Forms.Label lblB4Games;
         private System.Windows.Forms.Label lblTotalWin2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblSerialN1;
+        private System.Windows.Forms.Label lblSerialN5;
+        private System.Windows.Forms.Label lblSerialN6;
+        private System.Windows.Forms.Label lblSerialN3;
+        private System.Windows.Forms.Label lblSerialN2;
+        private System.Windows.Forms.Label lblSerialN4;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label lbl6BingoCard5;
+        private System.Windows.Forms.Label lbl6BingoCard10;
+        private System.Windows.Forms.Label lbl6BingoCard15;
+        private System.Windows.Forms.Label lbl6BingoCard20;
+        private System.Windows.Forms.Label lbl6BingoCard25;
+        private System.Windows.Forms.Label lbl6BingoCard4;
+        private System.Windows.Forms.Label lbl6BingoCard9;
+        private System.Windows.Forms.Label lbl6BingoCard14;
+        private System.Windows.Forms.Label lbl6BingoCard19;
+        private System.Windows.Forms.Label lbl6BingoCard24;
+        private System.Windows.Forms.Label lbl6BingoCard3;
+        private System.Windows.Forms.Label lbl6BingoCard8;
+        private System.Windows.Forms.Label lbl6BingoCard13;
+        private System.Windows.Forms.Label lbl6BingoCard18;
+        private System.Windows.Forms.Label lbl6BingoCard23;
+        private System.Windows.Forms.Label lbl6BingoCard6;
+        private System.Windows.Forms.Label lbl6BingoCard11;
+        private System.Windows.Forms.Label lbl6BingoCard16;
+        private System.Windows.Forms.Label lbl6BingoCard21;
+        private System.Windows.Forms.Label lbl6BingoCard2;
+        private System.Windows.Forms.Label lbl6BingoCard7;
+        private System.Windows.Forms.Label lbl6BingoCard12;
+        private System.Windows.Forms.Label lbl6BingoCard17;
+        private System.Windows.Forms.Label lbl6BingoCard22;
+        private System.Windows.Forms.Label lbl6BingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label lbl5BingoCard5;
+        private System.Windows.Forms.Label lbl5BingoCard10;
+        private System.Windows.Forms.Label lbl5BingoCard15;
+        private System.Windows.Forms.Label lbl5BingoCard20;
+        private System.Windows.Forms.Label lbl5BingoCard25;
+        private System.Windows.Forms.Label lbl5BingoCard4;
+        private System.Windows.Forms.Label lbl5BingoCard9;
+        private System.Windows.Forms.Label lbl5BingoCard14;
+        private System.Windows.Forms.Label lbl5BingoCard19;
+        private System.Windows.Forms.Label lbl5BingoCard24;
+        private System.Windows.Forms.Label lbl5BingoCard3;
+        private System.Windows.Forms.Label lbl5BingoCard8;
+        private System.Windows.Forms.Label lbl5BingoCard13;
+        private System.Windows.Forms.Label lbl5BingoCard18;
+        private System.Windows.Forms.Label lbl5BingoCard23;
+        private System.Windows.Forms.Label lbl5BingoCard6;
+        private System.Windows.Forms.Label lbl5BingoCard11;
+        private System.Windows.Forms.Label lbl5BingoCard16;
+        private System.Windows.Forms.Label lbl5BingoCard21;
+        private System.Windows.Forms.Label lbl5BingoCard2;
+        private System.Windows.Forms.Label lbl5BingoCard7;
+        private System.Windows.Forms.Label lbl5BingoCard12;
+        private System.Windows.Forms.Label lbl5BingoCard17;
+        private System.Windows.Forms.Label lbl5BingoCard22;
+        private System.Windows.Forms.Label lbl5BingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label lbl4BingoCard5;
+        private System.Windows.Forms.Label lbl4BingoCard10;
+        private System.Windows.Forms.Label lbl4BingoCard15;
+        private System.Windows.Forms.Label lbl4BingoCard20;
+        private System.Windows.Forms.Label lbl4BingoCard25;
+        private System.Windows.Forms.Label lbl4BingoCard4;
+        private System.Windows.Forms.Label lbl4BingoCard9;
+        private System.Windows.Forms.Label lbl4BingoCard14;
+        private System.Windows.Forms.Label lbl4BingoCard19;
+        private System.Windows.Forms.Label lbl4BingoCard24;
+        private System.Windows.Forms.Label lbl4BingoCard3;
+        private System.Windows.Forms.Label lbl4BingoCard8;
+        private System.Windows.Forms.Label lbl4BingoCard13;
+        private System.Windows.Forms.Label lbl4BingoCard18;
+        private System.Windows.Forms.Label lbl4BingoCard23;
+        private System.Windows.Forms.Label lbl4BingoCard6;
+        private System.Windows.Forms.Label lbl4BingoCard11;
+        private System.Windows.Forms.Label lbl4BingoCard16;
+        private System.Windows.Forms.Label lbl4BingoCard21;
+        private System.Windows.Forms.Label lbl4BingoCard2;
+        private System.Windows.Forms.Label lbl4BingoCard7;
+        private System.Windows.Forms.Label lbl4BingoCard12;
+        private System.Windows.Forms.Label lbl4BingoCard17;
+        private System.Windows.Forms.Label lbl4BingoCard22;
+        private System.Windows.Forms.Label lbl4BingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lbl3BingoCard5;
+        private System.Windows.Forms.Label lbl3BingoCard10;
+        private System.Windows.Forms.Label lbl3BingoCard15;
+        private System.Windows.Forms.Label lbl3BingoCard20;
+        private System.Windows.Forms.Label lbl3BingoCard25;
+        private System.Windows.Forms.Label lbl3BingoCard4;
+        private System.Windows.Forms.Label lbl3BingoCard9;
+        private System.Windows.Forms.Label lbl3BingoCard14;
+        private System.Windows.Forms.Label lbl3BingoCard19;
+        private System.Windows.Forms.Label lbl3BingoCard24;
+        private System.Windows.Forms.Label lbl3BingoCard3;
+        private System.Windows.Forms.Label lbl3BingoCard8;
+        private System.Windows.Forms.Label lbl3BingoCard13;
+        private System.Windows.Forms.Label lbl3BingoCard18;
+        private System.Windows.Forms.Label lbl3BingoCard23;
+        private System.Windows.Forms.Label lbl3BingoCard6;
+        private System.Windows.Forms.Label lbl3BingoCard11;
+        private System.Windows.Forms.Label lbl3BingoCard16;
+        private System.Windows.Forms.Label lbl3BingoCard21;
+        private System.Windows.Forms.Label lbl3BingoCard2;
+        private System.Windows.Forms.Label lbl3BingoCard7;
+        private System.Windows.Forms.Label lbl3BingoCard12;
+        private System.Windows.Forms.Label lbl3BingoCard17;
+        private System.Windows.Forms.Label lbl3BingoCard22;
+        private System.Windows.Forms.Label lbl3BingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbl2BingoCard5;
+        private System.Windows.Forms.Label lbl2BingoCard10;
+        private System.Windows.Forms.Label lbl2BingoCard15;
+        private System.Windows.Forms.Label lbl2BingoCard20;
+        private System.Windows.Forms.Label lbl2BingoCard25;
+        private System.Windows.Forms.Label lbl2BingoCard4;
+        private System.Windows.Forms.Label lbl2BingoCard9;
+        private System.Windows.Forms.Label lbl2BingoCard14;
+        private System.Windows.Forms.Label lbl2BingoCard19;
+        private System.Windows.Forms.Label lbl2BingoCard24;
+        private System.Windows.Forms.Label lbl2BingoCard3;
+        private System.Windows.Forms.Label lbl2BingoCard8;
+        private System.Windows.Forms.Label lbl2BingoCard13;
+        private System.Windows.Forms.Label lbl2BingoCard18;
+        private System.Windows.Forms.Label lbl2BingoCard23;
+        private System.Windows.Forms.Label lbl2BingoCard6;
+        private System.Windows.Forms.Label lbl2BingoCard11;
+        private System.Windows.Forms.Label lbl2BingoCard16;
+        private System.Windows.Forms.Label lbl2BingoCard21;
+        private System.Windows.Forms.Label lbl2BingoCard2;
+        private System.Windows.Forms.Label lbl2BingoCard7;
+        private System.Windows.Forms.Label lbl2BingoCard12;
+        private System.Windows.Forms.Label lbl2BingoCard17;
+        private System.Windows.Forms.Label lbl2BingoCard22;
+        private System.Windows.Forms.Label lbl2BingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblBingoCard5;
+        private System.Windows.Forms.Label lblBingoCard10;
+        private System.Windows.Forms.Label lblBingoCard15;
+        private System.Windows.Forms.Label lblBingoCard20;
+        private System.Windows.Forms.Label lblBingoCard25;
+        private System.Windows.Forms.Label lblBingoCard4;
+        private System.Windows.Forms.Label lblBingoCard9;
+        private System.Windows.Forms.Label lblBingoCard14;
+        private System.Windows.Forms.Label lblBingoCard19;
+        private System.Windows.Forms.Label lblBingoCard24;
+        private System.Windows.Forms.Label lblBingoCard3;
+        private System.Windows.Forms.Label lblBingoCard8;
+        private System.Windows.Forms.Label lblBingoCard13;
+        private System.Windows.Forms.Label lblBingoCard18;
+        private System.Windows.Forms.Label lblBingoCard23;
+        private System.Windows.Forms.Label lblBingoCard6;
+        private System.Windows.Forms.Label lblBingoCard11;
+        private System.Windows.Forms.Label lblBingoCard16;
+        private System.Windows.Forms.Label lblBingoCard21;
+        private System.Windows.Forms.Label lblBingoCard2;
+        private System.Windows.Forms.Label lblBingoCard7;
+        private System.Windows.Forms.Label lblBingoCard12;
+        private System.Windows.Forms.Label lblBingoCard17;
+        private System.Windows.Forms.Label lblBingoCard22;
+        private System.Windows.Forms.Label lblBingoCard1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
     }
 }
