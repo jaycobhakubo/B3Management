@@ -743,10 +743,10 @@ namespace GameTech.B3Reports.Forms
                                         GameName = reader.GetString(0);
                                     }
 
-                                if (GameName != "Time Bomb")//Do not addtime bomb untill its functional properly Its working now but, it needs to add the additional 4 cards.
-                                {
+                                //if (GameName != "Time Bomb")//Do not addtime bomb untill its functional properly Its working now but, it needs to add the additional 4 cards.
+                                //{
                                     cmbxGameName.Items.Add(GameName);
-                                }
+                                //}
                             }
                         }
                     }

@@ -118,101 +118,314 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="B3_Exit5_95c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\B3_Exit5_95c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="B3_Exit5_95c_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\B3_Exit5_95c_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BlueButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BlueButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CancelNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CancelNorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CancelPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CancelPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClearAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClearAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClearAllPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClearAllPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClearNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clear_Strip (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClearPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClearPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closePressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closePressed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closePressed2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownEight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownFive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownFour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownNine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownSeven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownSix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownThree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DownTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\DownTwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DownZeroZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\DownZeroZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogIn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SaveNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SaveNorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SavePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SavePressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpEight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\UpFive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DownOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownZeroZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownZeroZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewReportButton_Strip3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\ViewReportButton_Strip3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transactionDetailReport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\transactionDetailReport1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpSix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpSeven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BalCallReport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\BalCallReport1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountsReport_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AccountsReport_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reports_Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\Reports_Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomRightBlueCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomRightBlueCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomLeftGreenBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomLeftGreenBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownSeven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReturnButton_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\ReturnButton_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftRedCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftRedCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closePressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExitPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExitPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audit_log_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\audit_log_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_access_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\user_access_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotInPlayCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotInPlayCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SavePressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SavePressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperRightPurpleCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperRightPurpleCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payout_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\payout_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SessionTransactionButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\SessionTransactionButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BalCallReport2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\BalCallReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clear_Strip (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="session_summary_down2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\session summary down2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownThree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B3_Exit5_95c_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B3_Exit5_95c_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewReportButton_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\ViewReportButton_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancelNorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogIn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_access_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_access_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownFive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_access_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\user_access_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lockedout2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lockedout2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CancelPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deleteClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deleteClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperRightPurpleBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperRightPurpleBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="s_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_history_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\account history report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveChangesHeader" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="s_closepressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s_closepressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownEight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="winning_cards_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\winning cards report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_history_report_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\account history report down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SessionTransaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\SessionTransaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewReportButton_Strip4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\ViewReportButton_Strip4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B3_Exit5_95c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B3_Exit5_95c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SQLConnection" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ViewReportButton_Strip2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\ViewReportButton_Strip2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transactionDetailReport2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\transactionDetailReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BingoCardReports1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\BingoCardReports1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpEight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClearPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClearAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="winning_cards_report_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\winning cards report down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UpFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\UpFour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftRedCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftRedCard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpTwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearAllPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClearAllPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftRedBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftRedBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card_red_serial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card_red_serial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountLockedOut2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AccountLockedOut2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpThree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IncorrectUsernameOrPassword2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IncorrectUsernameOrPassword2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginPressed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginPressed2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payout_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payout_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoutPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoutPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audit_log_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\audit_log_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BingoCardReports2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\BingoCardReports2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveNorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveNorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownNine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JackpotReport_ButtonDown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\JackpotReport_ButtonDown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpZeroZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\UpZeroZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownFour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card_orange_serial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card_orange_serial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BalCallReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BalCallReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payout_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\payout_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audit_log_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audit_log_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UpNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\UpNine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,194 +433,20 @@
   <data name="UpOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\UpOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UpPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpSeven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpSix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpThree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpTwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpZeroZero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\UpZeroZero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="addclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deleteClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deleteClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="editClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\editClick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="deleteClick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deleteClick2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="s_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BottomLeftGreenCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomLeftGreenCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="s_closepressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s_closepressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DownSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\strips\DownSix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ExitPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExitPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginPressed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPressed2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogoutPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoutPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SaveChangesHeader" xml:space="preserve">
-    <value>Save Changes</value>
+  <data name="closePressed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closePressed2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SaveChangesMessage" xml:space="preserve">
     <value>Would you like to save your changes?</value>
-  </data>
-  <data name="AccountLockedOut2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AccountLockedOut2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IncorrectUsernameOrPassword2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IncorrectUsernameOrPassword2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lockedout2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lockedout2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NotInPlayCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NotInPlayCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="card_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\card_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="card_orange_serial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\card_orange_serial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="card_red_serial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\card_red_serial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccountsReport_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AccountsReport_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audit_log_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audit_log_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BalCallReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BalCallReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="payout_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\payout_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_access_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_access_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audit_log_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\audit_log_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audit_log_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\audit_log_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BalCallReport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\BalCallReport1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BalCallReport2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\BalCallReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BingoCardReports1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\BingoCardReports1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BingoCardReports2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\BingoCardReports2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="payout_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\payout_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="payout_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\payout_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reports_Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\Reports_Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReturnButton_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\ReturnButton_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="transactionDetailReport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\transactionDetailReport1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="transactionDetailReport2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\transactionDetailReport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_access_report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\user_access_report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_access_report2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\user_access_report2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewReportButton_Strip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\ViewReportButton_Strip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewReportButton_Strip2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\ViewReportButton_Strip2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewReportButton_Strip3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\ViewReportButton_Strip3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ViewReportButton_Strip4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\ViewReportButton_Strip4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Warning3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SessionTransaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\SessionTransaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SessionTransactionButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\SessionTransactionButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="JackpotReport_ButtonDown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\JackpotReport_ButtonDown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JackpotReport_Normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\JackpotReport_Normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,22 +454,10 @@
   <data name="session_summary1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\strips\session summary1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="session_summary_down2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\session summary down2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="account_history_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\account history report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="account_history_report_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\account history report down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="winning_cards_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\winning cards report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="winning_cards_report_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strips\winning cards report down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SQLConnection" xml:space="preserve">
-    <value />
+  <data name="BottomRightBlueBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomRightBlueBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

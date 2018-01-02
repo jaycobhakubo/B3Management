@@ -243,6 +243,46 @@ namespace GameTech.B3Reports.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BottomLeftGreenBonusCard {
+            get {
+                object obj = ResourceManager.GetObject("BottomLeftGreenBonusCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BottomLeftGreenCard {
+            get {
+                object obj = ResourceManager.GetObject("BottomLeftGreenCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BottomRightBlueBonusCard {
+            get {
+                object obj = ResourceManager.GetObject("BottomRightBlueBonusCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BottomRightBlueCard {
+            get {
+                object obj = ResourceManager.GetObject("BottomRightBlueCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CancelNorm {
             get {
                 object obj = ResourceManager.GetObject("CancelNorm", resourceCulture);
@@ -933,6 +973,56 @@ namespace GameTech.B3Reports.Properties {
         internal static System.Drawing.Bitmap UpOne {
             get {
                 object obj = ResourceManager.GetObject("UpOne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpperLeftRedBonusCard {
+            get {
+                object obj = ResourceManager.GetObject("UpperLeftRedBonusCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpperLeftRedCard {
+            get {
+                object obj = ResourceManager.GetObject("UpperLeftRedCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpperLeftRedCard1 {
+            get {
+                object obj = ResourceManager.GetObject("UpperLeftRedCard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpperRightPurpleBonusCard {
+            get {
+                object obj = ResourceManager.GetObject("UpperRightPurpleBonusCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpperRightPurpleCard {
+            get {
+                object obj = ResourceManager.GetObject("UpperRightPurpleCard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
