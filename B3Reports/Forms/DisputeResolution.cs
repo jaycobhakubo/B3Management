@@ -34,6 +34,7 @@ namespace GameTech.B3Reports.Forms
         bool sClass2;
         int MayaMoneyCardTypeImage = 0; //1 = regular; 2 = all card is active
         SqlConnection sc = GetSQLConnection.get();
+        GetInfo mGetInfo;
 
         #endregion
 
@@ -68,7 +69,7 @@ namespace GameTech.B3Reports.Forms
 
             TurnOffNotInPlayImages();
             DontShowCardPanel();
-            panel3.Visible = false;
+            pnlBonusRound.Visible = false;
             ClearInfo();
             clearAllLblMessage();
             PlayTime = null;
@@ -116,7 +117,7 @@ namespace GameTech.B3Reports.Forms
             
             TurnOffNotInPlayImages();
             DontShowCardPanel();
-            panel3.Visible = false;
+            pnlBonusRound.Visible = false;
             ClearInfo();
             clearAllLblMessage();
             PlayTime = null;
@@ -477,15 +478,21 @@ namespace GameTech.B3Reports.Forms
 
             if (txtbxAccountNumber.Text != string.Empty && cmbxGameName.Items.Count != 0)
             {
-                ShowCardPanel();
-                //if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
+                GetInfoALL();
+                //check what type of games
+                //if (mGetInfo.B4Games == "TimeBomb")
                 //{
-                    GetInfoALL();
+                //    pnlBonusRound.Visible = false;              
+                //    pnlRegularGames.Visible = false;
+                //    pnlDisputeResolutionTimeBomb.Visible = true;
                 //}
                 //else
-                //{ 
-                //    GetInfoALL(); 
+                //{
+                //    pnlDisputeResolutionTimeBomb.Visible = true;
+                //    ShowCardPanel();
                 //}
+
+                ShowCardPanel();
                 DisableControlsInPanel2();
                 EnableControlInPanel1();
                 TurnOnNotInPlayImages();
@@ -520,12 +527,7 @@ namespace GameTech.B3Reports.Forms
         private void imgbtnNext_Click(object sender, EventArgs e)
         {
             Status = 1;
-            //if (SelectedB4Game == "All" || cmbxGameName.Items.Count == 1)
-            //{
-                GetInfoALL();
-            //}
-            //else
-            //{ GetInfoALL(); }
+            GetInfoALL();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -533,8 +535,8 @@ namespace GameTech.B3Reports.Forms
             CheckBox chkbxShowBonusCard = (CheckBox)sender;
             if (chkbxShowBonusCard.Checked == true)
             {
-                panel4.Visible = false;
-                panel3.Visible = true;
+                pnlRegularGames.Visible = false;
+                pnlBonusRound.Visible = true;
 
                 if (SelectedB4Game != "WildBall")
                 {
@@ -545,17 +547,17 @@ namespace GameTech.B3Reports.Forms
                     panel14.Visible = true;
                 }
 
-                GetBallCall.GetBonusBallCall_(PlayTime, GetInfo.B4Games.ToString(), AccountNumber, GetInfo.BonusBallCount);
+                GetBallCall.GetBonusBallCall_(PlayTime, mGetInfo.B4Games.ToString(), AccountNumber, mGetInfo.BonusBallCount);
                 BallCall = GetBallCall.BonusBallCall;
                 BallCall = BallCall.Remove(BallCall.Length - 1);
                 richTextBox1.Clear();
                 richTextBox1.Text = BallCall.Replace(",", ", ");
 
                 //PatternPayTable 
-                GetNWinningPattern.GetNBonusWinningPattern(AccountNumber, PlayTime, GetInfo.B4Games);
+                GetNWinningPattern.GetNBonusWinningPattern(AccountNumber, PlayTime, mGetInfo.B4Games);
                 lstviewPatterListTable.Items.Clear();
-                CurrentDenom = GetInfo.BetDenom;
-                GetPatternBonusPayTable getPatternBonusPayTable = new GetPatternBonusPayTable(CurrentDenom, GetInfo.B4Games);
+                CurrentDenom = mGetInfo.BetDenom;
+                GetPatternBonusPayTable getPatternBonusPayTable = new GetPatternBonusPayTable(CurrentDenom, mGetInfo.B4Games);
 
                 List<PatternPayTable> listPatternTable = new List<PatternPayTable>();
                 listPatternTable = ListPatternPayTable.listpatternpaytable;
@@ -563,7 +565,7 @@ namespace GameTech.B3Reports.Forms
                 foreach (PatternPayTable ppt in listPatternTable)
                 {
                     ListViewItem lvi = new ListViewItem(ppt.PatterName);
-                    lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * GetInfo.BetLevel));
+                    lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * mGetInfo.BetLevel));
                     string NH = (ppt.NH == 0) ? string.Empty : ppt.NH.ToString();
                     lvi.SubItems.Add(NH);
                     lstviewPatterListTable.Items.Add(lvi);
@@ -573,9 +575,9 @@ namespace GameTech.B3Reports.Forms
 
                 OfferAccepted();
 
-                int TempCardNumber = GetInfo.FirstBonusCardNumber;
+                int TempCardNumber = mGetInfo.FirstBonusCardNumber;
                 int Count = 7;
-                while (TempCardNumber != GetInfo.LastBonusCardNumber + 1)
+                while (TempCardNumber != mGetInfo.LastBonusCardNumber + 1)
                 {
                     //  MessageBox.Show(TempCardNumber.ToString());
                     GetCardNumber gcn = new GetCardNumber(TempCardNumber);
@@ -603,19 +605,19 @@ namespace GameTech.B3Reports.Forms
             }
             else
             {
-                panel4.Visible = true;
-                panel3.Visible = false;
+                pnlRegularGames.Visible = true;
+                pnlBonusRound.Visible = false;
                 richTextBox1.Clear();
-                GetBallCall y = new GetBallCall(PlayTime, GetInfo.B4Games.ToString(), AccountNumber, GetInfo.BallCount, GetInfo.GameNumber);
+                GetBallCall y = new GetBallCall(PlayTime, mGetInfo.B4Games.ToString(), AccountNumber, mGetInfo.BallCount, mGetInfo.GameNumber);
                 BallCall = GetBallCall.BallCall;
                 BallCall = BallCall.Remove(BallCall.Length - 1);
                 richTextBox1.Text = BallCall.Replace(",", ", ");
 
 
-                GetNWinningPattern gnwn = new GetNWinningPattern(AccountNumber, PlayTime, GetInfo.B4Games);
+                GetNWinningPattern gnwn = new GetNWinningPattern(AccountNumber, PlayTime, mGetInfo.B4Games, mGetInfo.WinAmount);
                 lstviewPatterListTable.Items.Clear();
-                CurrentDenom = GetInfo.BetDenom;
-                GetPatternPayTable getPatternPayTable = new GetPatternPayTable(CurrentDenom, GetInfo.B4Games);
+                CurrentDenom = mGetInfo.BetDenom;
+                GetPatternPayTable getPatternPayTable = new GetPatternPayTable(CurrentDenom, mGetInfo.B4Games);
 
                 List<PatternPayTable> listPatternTable = new List<PatternPayTable>();
                 listPatternTable = ListPatternPayTable.listpatternpaytable;
@@ -631,7 +633,7 @@ namespace GameTech.B3Reports.Forms
                         continue;
                     }
                     ListViewItem lvi = new ListViewItem(ppt.PatterName);
-                    lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * GetInfo.BetLevel));
+                    lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * mGetInfo.BetLevel));
                     string NH = (ppt.NH == 0) ? string.Empty : ppt.NH.ToString();
                     lvi.SubItems.Add(NH);
                     lstviewPatterListTable.Items.Add(lvi);
@@ -820,7 +822,7 @@ namespace GameTech.B3Reports.Forms
             checkBox1.Checked = false;
             TurnOffNotInPlayImages();
             DontShowCardPanel();
-            panel3.Visible = false;
+            pnlBonusRound.Visible = false;
             ClearInfo();
             clearAllLblMessage();
             PlayTime = null;
@@ -963,20 +965,20 @@ namespace GameTech.B3Reports.Forms
 
         private void OfferAccepted()
         {
-            if (GetInfo.BonusOfferAccepted == 1)
+            if (mGetInfo.BonusOfferAccepted == 1)
             {
                 label12.Text = "First Offer Accepted";
             }
             else
-                if (GetInfo.BonusOfferAccepted == 2)
+                if (mGetInfo.BonusOfferAccepted == 2)
                 {
                     label12.Text = "Second Offer Accepted";
                 }
-                else if (GetInfo.BonusOfferAccepted == 3)
+                else if (mGetInfo.BonusOfferAccepted == 3)
                 {
                     label12.Text = "Third Offer Accepted";
                 }
-                else if (GetInfo.BonusOfferAccepted == 4)
+                else if (mGetInfo.BonusOfferAccepted == 4)
                 {
                     label12.Text = "Final Offer Accepted";
                 }
@@ -1612,11 +1614,11 @@ namespace GameTech.B3Reports.Forms
                 IsGameNumber = "F";
             }
 
-            GetInfo x = new GetInfo(AccountNumber, PlayTime, Status, SelectedB4Game, GameNumStart, GameNumEnd, IsGameNumber);
+            mGetInfo = new GetInfo(AccountNumber, PlayTime, Status, SelectedB4Game, GameNumStart, GameNumEnd, IsGameNumber);
 
-            if (PlayTime != GetInfo.DateTimePlay)
+            if (PlayTime != mGetInfo.DateTimePlay)
             {
-                PlayTime = GetInfo.DateTimePlay;
+                PlayTime = mGetInfo.DateTimePlay;
                 if (lblMessageLastGameReach.Visible != false)
                 {
                     lblMessageLastGameReach.Visible = false;
@@ -1653,33 +1655,33 @@ namespace GameTech.B3Reports.Forms
             }
 
             lblTotalWin2.Text = string.Empty;
-            lblStartingCrdtAmt.Text = ConvertIntToMoneyFormat.convert_(GetInfo.StartingCrdAmnt);
-            lblEndingCreditAmt.Text = ConvertIntToMoneyFormat.convert_(GetInfo.EndingCrdAmnt);
+            lblStartingCrdtAmt.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.StartingCrdAmnt);
+            lblEndingCreditAmt.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.EndingCrdAmnt);
 
-            if (GetInfo.WinAmount == 0)
+            if (mGetInfo.WinAmount == 0)
             {
                 lblWinAmt.Text = string.Empty;
             }
             else
             {
-                lblWinAmt.Text = ConvertIntToMoneyFormat.convert_(GetInfo.WinAmount);
+                lblWinAmt.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.WinAmount);
             }
 
-            if (GetInfo.BonusWinAmount == 0)
+            if (mGetInfo.BonusWinAmount == 0)
             {
                 lblBonusWinAmt.Text = string.Empty;
             }
             else
             {
-                lblBonusWinAmt.Text = ConvertIntToMoneyFormat.convert_(GetInfo.BonusWinAmount);
+                lblBonusWinAmt.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BonusWinAmount);
             }
 
-            lblBetAmount.Text = ConvertIntToMoneyFormat.convert_(GetInfo.BetAmount);
-            label18.Text = "Game #: " + GetInfo.GameNumber.ToString();
+            lblBetAmount.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BetAmount);
+            label18.Text = "Game #: " + mGetInfo.GameNumber.ToString();
 
-            if (GetInfo.FirstBonusCardNumber != 0)
+            if (mGetInfo.FirstBonusCardNumber != 0)
             {
-                if (GetInfo.WinAmount == 0)
+                if (mGetInfo.WinAmount == 0)
                 {
                     checkBox1.Visible = false;
                 }
@@ -1687,7 +1689,7 @@ namespace GameTech.B3Reports.Forms
                 {
                     checkBox1.Visible = true;
                 }
-                if (GetInfo.B4Games == "Spirit76")
+                if (mGetInfo.B4Games == "Spirit76")
                 {
                     SpiritBR = true;
                 }
@@ -1699,14 +1701,14 @@ namespace GameTech.B3Reports.Forms
 
 
 
-            lblBetLevel.Text = GetInfo.BetLevel.ToString();
-            lblBetDenom.Text = ConvertIntToMoneyFormat.convert_(GetInfo.BetDenom);
-            lblB4Games.Text = GetInfo.B4Games.ToString();
-            SelectedB4Game = GetInfo.B4Games.ToString();
+            lblBetLevel.Text = mGetInfo.BetLevel.ToString();
+            lblBetDenom.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BetDenom);
+            lblB4Games.Text = mGetInfo.B4Games.ToString();
+            SelectedB4Game = mGetInfo.B4Games.ToString();
 
 
             //GetBallCall
-            GetBallCall y = new GetBallCall(PlayTime, GetInfo.B4Games.ToString(), AccountNumber, GetInfo.BallCount, GetInfo.GameNumber);
+            GetBallCall y = new GetBallCall(PlayTime, mGetInfo.B4Games.ToString(), AccountNumber, mGetInfo.BallCount, mGetInfo.GameNumber);
             BallCall = GetBallCall.BallCall;
             BallCall = BallCall.Remove(BallCall.Length - 1);
             richTextBox1.Text = BallCall.Replace(",", ", ");
@@ -1714,12 +1716,12 @@ namespace GameTech.B3Reports.Forms
             int countBall = BallCall.Split(',').Length - 1;//If BallCall is more than 30
 
 
-            GetNWinningPattern gnwn = new GetNWinningPattern(AccountNumber, PlayTime, GetInfo.B4Games);
+            GetNWinningPattern gnwn = new GetNWinningPattern(AccountNumber, PlayTime, mGetInfo.B4Games, mGetInfo.WinAmount);
 
             //PatternPayTable 
             lstviewPatterListTable.Items.Clear();
-            CurrentDenom = GetInfo.BetDenom;
-            GetPatternPayTable getPatternPayTable = new GetPatternPayTable(CurrentDenom, GetInfo.B4Games);
+            CurrentDenom = mGetInfo.BetDenom;
+            GetPatternPayTable getPatternPayTable = new GetPatternPayTable(CurrentDenom, mGetInfo.B4Games);
 
             List<PatternPayTable> listPatternTable = new List<PatternPayTable>();
             listPatternTable = ListPatternPayTable.listpatternpaytable;
@@ -1734,18 +1736,18 @@ namespace GameTech.B3Reports.Forms
                     continue;
                 }
                 ListViewItem lvi = new ListViewItem(ppt.PatterName);
-                lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * GetInfo.BetLevel));//ppt.Pay.ToString());
+                lvi.SubItems.Add(ConvertIntToMoneyFormat.convert_(ppt.Pay * mGetInfo.BetLevel));//ppt.Pay.ToString());
                 string NH = (ppt.NH == 0) ? string.Empty : (ppt.NH).ToString();
                 lvi.SubItems.Add(NH);
                 lstviewPatterListTable.Items.Add(lvi);
                 //ForMayaMoney Bonus Round
-                FMayaMoney = FMayaMoney + (ppt.Pay * GetInfo.BetLevel * ppt.NH);
+                FMayaMoney = FMayaMoney + (ppt.Pay * mGetInfo.BetLevel * ppt.NH);
             }
 
             //Get the total win for dual accounting
             if (GetDualAccountSetting == true)
             {
-                int TotalWinDA = GetTotalWinForDualAccount.getTotalWinForDualAccount(AccountNumber, GetInfo.B4Games, /*GetInfo.GameNumber*/PlayTime);
+                int TotalWinDA = GetTotalWinForDualAccount.getTotalWinForDualAccount(AccountNumber, mGetInfo.B4Games, /*mGetInfo.GameNumber*/PlayTime);
                 if (TotalWinDA == 0)
                 {
                     lblTotalWin2.Text = string.Empty;
@@ -1754,25 +1756,28 @@ namespace GameTech.B3Reports.Forms
                 {
                     lblTotalWin2.Text = ConvertIntToMoneyFormat.convert_(TotalWinDA);
                 }
-                lblEndingCreditAmt.Text = ConvertIntToMoneyFormat.convert_(GetInfo.StartingCrdAmnt - GetInfo.BetAmount);
+                lblEndingCreditAmt.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.StartingCrdAmnt - mGetInfo.BetAmount);
             }
 
             //Check if the game played is ClassII or ClassIII
-            sClass2 = IsClass2.GetStatus(GetInfo.B4Games, GetInfo.GameNumber, GetInfo.DateTimePlay);
+            sClass2 = IsClass2.GetStatus(mGetInfo.B4Games, mGetInfo.GameNumber, mGetInfo.DateTimePlay);
             if (sClass2 == true)
-            { label18.Text = "Game #: " + GetInfo.ServerGameNumber.ToString(); }
+            { label18.Text = "Game #: " + mGetInfo.ServerGameNumber.ToString(); }
 
             //Load Card Number.
             int CountUpToSix = 1;
-            int TempCardNumber = GetInfo.FirstCardNumber;
+            int TempCardNumber = mGetInfo.FirstCardNumber;
             ClearAllTextInCardNumber();
             // clearCardSN();
              bool IsCardActive = false;
              int countActiveCard = 0;
+
             if (SelectedB4Game != "TimeBomb")
             {
                  countActiveCard = 0;
-                while (CountUpToSix != (6 + 1))
+                 pnlDisputeResolutionTimeBomb.SendToBack();
+
+                    while (CountUpToSix != (6 + 1))
                 {
                     //Lets see if the first card number is enabled.
 
@@ -1780,10 +1785,10 @@ namespace GameTech.B3Reports.Forms
                     sc.Open();
                     try
                     {
-                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + GetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
+                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + mGetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
                         {
                             cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
-                            cmd.Parameters.AddWithValue("gamenum", GetInfo.GameNumber);
+                            cmd.Parameters.AddWithValue("gamenum", mGetInfo.GameNumber);
                             if (Convert.ToString(cmd.ExecuteScalar()) == "T")
                             {
                                 IsCardActive = true;
@@ -1868,6 +1873,12 @@ namespace GameTech.B3Reports.Forms
             else
             {
 
+                pnlDisputeResolutionTimeBomb.BringToFront();
+                if (pnlDisputeResolutionTimeBomb.Visible != true)
+                {
+                    pnlDisputeResolutionTimeBomb.Visible = true;
+                }
+
                 CountUpToSix = 1; //TimeBomb
                 while (CountUpToSix != (4 + 1))
                 {
@@ -1877,10 +1888,10 @@ namespace GameTech.B3Reports.Forms
                     sc.Open();
                     try
                     {
-                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + GetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
+                        using (SqlCommand cmd = new SqlCommand("select betplaced_card_" + CountUpToSix.ToString() + " from dbo." + mGetInfo.B4Games.ToString() + "_GameJournal  where creditacctnum = @creditacctnum and gamenum = @gamenum", sc))
                         {
                             cmd.Parameters.AddWithValue("creditacctnum", AccountNumber);
-                            cmd.Parameters.AddWithValue("gamenum", GetInfo.GameNumber);
+                            cmd.Parameters.AddWithValue("gamenum", mGetInfo.GameNumber);
                             if (Convert.ToString(cmd.ExecuteScalar()) == "T")
                             {
                                 IsCardActive = true;
@@ -1981,7 +1992,7 @@ namespace GameTech.B3Reports.Forms
             }
 
             //Display if it won consolation prize.
-            if (FMayaMoney == 0 && GetInfo.WinAmount != 0)
+            if (FMayaMoney == 0 && mGetInfo.WinAmount != 0)
             {
                 label11.Visible = true;
 
@@ -2032,7 +2043,7 @@ namespace GameTech.B3Reports.Forms
                     }
                 }
 
-                int TWinAmount = GetInfo.WinAmount + GetInfo.BonusWinAmount;
+                int TWinAmount = mGetInfo.WinAmount + mGetInfo.BonusWinAmount;
                 if (FMayaMoney != TWinAmount && FMayaMoney != 0)
                 {
                     label11.Visible = true;
@@ -2072,7 +2083,7 @@ namespace GameTech.B3Reports.Forms
             //}
 
             //HotBall
-            if (SelectedB4Game == "WildBall" && GetInfo.FirstBonusCardNumber == 0)
+            if (SelectedB4Game == "WildBall" && mGetInfo.FirstBonusCardNumber == 0)
             {
                 GetBallCall.GetHotBall(PlayTime, AccountNumber);
                 int HotBall = GetBallCall.HotBall;
@@ -2083,6 +2094,8 @@ namespace GameTech.B3Reports.Forms
 
 
         }
+
+
 
         private void GetCardStartNumber()
         {
@@ -2235,9 +2248,9 @@ namespace GameTech.B3Reports.Forms
             pictureBox15.Visible = false;
         }
 
-        private void ShowCardPanel()
+        private void ShowCardPanel()//knc
         {
-            panel4.Visible = true;
+            pnlRegularGames.Visible = true;
             panel5.Visible = true;
             panel6.Visible = true;
             panel7.Visible = true;
@@ -2248,7 +2261,7 @@ namespace GameTech.B3Reports.Forms
 
         private void DontShowCardPanel()
         {
-            panel4.Visible = false;
+            pnlRegularGames.Visible = false;//knc
             panel5.Visible = false;
             panel6.Visible = false;
             panel7.Visible = false;

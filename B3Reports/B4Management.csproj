@@ -248,6 +248,10 @@
     <None Include="Resources\strips\JackpotReport_Normal1.png" />
     <None Include="Resources\strips\account history report down.png" />
     <None Include="Resources\strips\account history report.png" />
+    <None Include="Resources\BottomLeftGreenCard.png" />
+    <None Include="Resources\BottomLeftGreenBonusCard.png" />
+    <None Include="Resources\BottomRightBlueCard.png" />
+    <None Include="Resources\BottomRightBlueBonusCard.png" />
     <Content Include="Resources\strips\session summary down.png" />
     <Content Include="Resources\strips\session summary down2.png" />
     <Content Include="Resources\strips\session summary.png" />
@@ -883,6 +887,11 @@
     <None Include="Resources\strips\UpZeroZero.png" />
     <None Include="Resources\SaveNorm.png" />
     <None Include="Resources\SavePressed.png" />
+    <None Include="Resources\UpperLeftRedCard.png" />
+    <None Include="Resources\UpperLeftRedCard1.png" />
+    <None Include="Resources\UpperRightPurpleCard.png" />
+    <None Include="Resources\UpperRightPurpleBonusCard.png" />
+    <None Include="Resources\UpperLeftRedBonusCard.png" />
     <Content Include="Resources\ViewReportButton_Strip.png" />
   </ItemGroup>
   <ItemGroup>

@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisputeResolution));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
             this.lblMessageLastGameReach = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTotalWin2 = new System.Windows.Forms.Label();
@@ -55,7 +54,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.pnlDisputeResolutionTimeBomb = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -64,7 +63,7 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlRegularGames = new System.Windows.Forms.Panel();
             this.lblSerialN1 = new System.Windows.Forms.Label();
             this.lblSerialN5 = new System.Windows.Forms.Label();
             this.lblSerialN6 = new System.Windows.Forms.Label();
@@ -239,7 +238,7 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlBonusRound = new System.Windows.Forms.Panel();
             this.lblBonusSerial4 = new System.Windows.Forms.Label();
             this.lblBonusSerial3 = new System.Windows.Forms.Label();
             this.lblBonusSerial2 = new System.Windows.Forms.Label();
@@ -353,8 +352,6 @@
             this.lbl7BingoCard1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.lstviewPatterListTable = new System.Windows.Forms.ListView();
@@ -369,8 +366,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtbxAccountNumber = new System.Windows.Forms.TextBox();
-            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             this.cmbxGameName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -382,14 +377,19 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
+            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlDisputeResolutionTimeBomb.SuspendLayout();
+            this.pnlRegularGames.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel9.SuspendLayout();
@@ -408,7 +408,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnlBonusRound.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel14.SuspendLayout();
@@ -448,32 +448,15 @@
             this.panel1.Controls.Add(this.imgbtnEnd);
             this.panel1.Controls.Add(this.lblMessageLastGameReach);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.panel15);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.pnlDisputeResolutionTimeBomb);
+            this.panel1.Controls.Add(this.pnlRegularGames);
+            this.panel1.Controls.Add(this.pnlBonusRound);
             this.panel1.Controls.Add(this.imgbtnNext);
             this.panel1.Controls.Add(this.imgbtnBack);
             this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 752);
             this.panel1.TabIndex = 0;
-            // 
-            // imgbtnEnd
-            // 
-            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnEnd.Enabled = false;
-            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnEnd.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
-            this.imgbtnEnd.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
-            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
-            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnEnd.Name = "imgbtnEnd";
-            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
-            this.imgbtnEnd.TabIndex = 28;
-            this.imgbtnEnd.Text = "End Search";
-            this.imgbtnEnd.UseVisualStyleBackColor = false;
-            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
             // 
             // lblMessageLastGameReach
             // 
@@ -715,21 +698,22 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Starting Credit";
             // 
-            // panel15
+            // pnlDisputeResolutionTimeBomb
             // 
-            this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Controls.Add(this.panel22);
-            this.panel15.Controls.Add(this.panel23);
-            this.panel15.Controls.Add(this.panel20);
-            this.panel15.Controls.Add(this.panel21);
-            this.panel15.Controls.Add(this.panel19);
-            this.panel15.Controls.Add(this.panel18);
-            this.panel15.Controls.Add(this.panel16);
-            this.panel15.Controls.Add(this.panel17);
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(672, 502);
-            this.panel15.TabIndex = 29;
+            this.pnlDisputeResolutionTimeBomb.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel22);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel23);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel20);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel21);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel19);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel18);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel16);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.panel17);
+            this.pnlDisputeResolutionTimeBomb.Location = new System.Drawing.Point(0, 0);
+            this.pnlDisputeResolutionTimeBomb.Name = "pnlDisputeResolutionTimeBomb";
+            this.pnlDisputeResolutionTimeBomb.Size = new System.Drawing.Size(672, 502);
+            this.pnlDisputeResolutionTimeBomb.TabIndex = 29;
+            this.pnlDisputeResolutionTimeBomb.Visible = false;
             // 
             // panel22
             // 
@@ -804,31 +788,31 @@
             this.panel17.Size = new System.Drawing.Size(150, 175);
             this.panel17.TabIndex = 1;
             // 
-            // panel4
+            // pnlRegularGames
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.lblSerialN1);
-            this.panel4.Controls.Add(this.lblSerialN5);
-            this.panel4.Controls.Add(this.lblSerialN6);
-            this.panel4.Controls.Add(this.lblSerialN3);
-            this.panel4.Controls.Add(this.lblSerialN2);
-            this.panel4.Controls.Add(this.lblSerialN4);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.pictureBox12);
-            this.panel4.Controls.Add(this.pictureBox11);
-            this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Controls.Add(this.pictureBox13);
-            this.panel4.Controls.Add(this.pictureBox14);
-            this.panel4.Controls.Add(this.pictureBox15);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(672, 502);
-            this.panel4.TabIndex = 1;
+            this.pnlRegularGames.BackColor = System.Drawing.Color.Transparent;
+            this.pnlRegularGames.Controls.Add(this.lblSerialN1);
+            this.pnlRegularGames.Controls.Add(this.lblSerialN5);
+            this.pnlRegularGames.Controls.Add(this.lblSerialN6);
+            this.pnlRegularGames.Controls.Add(this.lblSerialN3);
+            this.pnlRegularGames.Controls.Add(this.lblSerialN2);
+            this.pnlRegularGames.Controls.Add(this.lblSerialN4);
+            this.pnlRegularGames.Controls.Add(this.panel10);
+            this.pnlRegularGames.Controls.Add(this.panel9);
+            this.pnlRegularGames.Controls.Add(this.panel8);
+            this.pnlRegularGames.Controls.Add(this.panel7);
+            this.pnlRegularGames.Controls.Add(this.panel6);
+            this.pnlRegularGames.Controls.Add(this.panel5);
+            this.pnlRegularGames.Controls.Add(this.pictureBox12);
+            this.pnlRegularGames.Controls.Add(this.pictureBox11);
+            this.pnlRegularGames.Controls.Add(this.pictureBox6);
+            this.pnlRegularGames.Controls.Add(this.pictureBox13);
+            this.pnlRegularGames.Controls.Add(this.pictureBox14);
+            this.pnlRegularGames.Controls.Add(this.pictureBox15);
+            this.pnlRegularGames.Location = new System.Drawing.Point(0, 0);
+            this.pnlRegularGames.Name = "pnlRegularGames";
+            this.pnlRegularGames.Size = new System.Drawing.Size(672, 502);
+            this.pnlRegularGames.TabIndex = 1;
             // 
             // lblSerialN1
             // 
@@ -2860,23 +2844,23 @@
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Visible = false;
             // 
-            // panel3
+            // pnlBonusRound
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.lblBonusSerial4);
-            this.panel3.Controls.Add(this.lblBonusSerial3);
-            this.panel3.Controls.Add(this.lblBonusSerial2);
-            this.panel3.Controls.Add(this.lblBonusSerialn1);
-            this.panel3.Controls.Add(this.panel13);
-            this.panel3.Controls.Add(this.panel14);
-            this.panel3.Controls.Add(this.panel12);
-            this.panel3.Controls.Add(this.panel11);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(672, 502);
-            this.panel3.TabIndex = 15;
-            this.panel3.Visible = false;
+            this.pnlBonusRound.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBonusRound.Controls.Add(this.lblBonusSerial4);
+            this.pnlBonusRound.Controls.Add(this.lblBonusSerial3);
+            this.pnlBonusRound.Controls.Add(this.lblBonusSerial2);
+            this.pnlBonusRound.Controls.Add(this.lblBonusSerialn1);
+            this.pnlBonusRound.Controls.Add(this.panel13);
+            this.pnlBonusRound.Controls.Add(this.panel14);
+            this.pnlBonusRound.Controls.Add(this.panel12);
+            this.pnlBonusRound.Controls.Add(this.panel11);
+            this.pnlBonusRound.Controls.Add(this.label12);
+            this.pnlBonusRound.Location = new System.Drawing.Point(0, 0);
+            this.pnlBonusRound.Name = "pnlBonusRound";
+            this.pnlBonusRound.Size = new System.Drawing.Size(672, 502);
+            this.pnlBonusRound.TabIndex = 15;
+            this.pnlBonusRound.Visible = false;
             // 
             // lblBonusSerial4
             // 
@@ -4274,40 +4258,6 @@
             this.label12.Text = "First Try";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgbtnNext
-            // 
-            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnNext.Enabled = false;
-            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnNext.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
-            this.imgbtnNext.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
-            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
-            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnNext.Name = "imgbtnNext";
-            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnNext.TabIndex = 1;
-            this.imgbtnNext.Text = "Next";
-            this.imgbtnNext.UseVisualStyleBackColor = false;
-            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
-            // 
-            // imgbtnBack
-            // 
-            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnBack.Enabled = false;
-            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnBack.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
-            this.imgbtnBack.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
-            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
-            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnBack.Name = "imgbtnBack";
-            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnBack.TabIndex = 2;
-            this.imgbtnBack.Text = "Back";
-            this.imgbtnBack.UseVisualStyleBackColor = false;
-            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
@@ -4479,40 +4429,6 @@
             this.txtbxAccountNumber.Leave += new System.EventHandler(this.txtbxAccountNumber_Leave);
             this.txtbxAccountNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtbxAccountNumber_Validating);
             // 
-            // imageButton4
-            // 
-            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton4.FocusColor = System.Drawing.Color.Black;
-            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imageButton4.ForeColor = System.Drawing.Color.Black;
-            this.imageButton4.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
-            this.imageButton4.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
-            this.imageButton4.Location = new System.Drawing.Point(218, 713);
-            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imageButton4.Name = "imageButton4";
-            this.imageButton4.Size = new System.Drawing.Size(102, 30);
-            this.imageButton4.TabIndex = 7;
-            this.imageButton4.Text = "Return";
-            this.imageButton4.UseVisualStyleBackColor = false;
-            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
-            // 
-            // imgbtnLookUp
-            // 
-            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnLookUp.Enabled = false;
-            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnLookUp.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
-            this.imgbtnLookUp.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
-            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
-            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnLookUp.Name = "imgbtnLookUp";
-            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnLookUp.TabIndex = 6;
-            this.imgbtnLookUp.Text = "Look Up";
-            this.imgbtnLookUp.UseVisualStyleBackColor = false;
-            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
-            // 
             // cmbxGameName
             // 
             this.cmbxGameName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -4640,6 +4556,91 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // imgbtnEnd
+            // 
+            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnEnd.Enabled = false;
+            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnEnd.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
+            this.imgbtnEnd.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
+            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
+            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnEnd.Name = "imgbtnEnd";
+            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
+            this.imgbtnEnd.TabIndex = 28;
+            this.imgbtnEnd.Text = "End Search";
+            this.imgbtnEnd.UseVisualStyleBackColor = false;
+            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
+            // 
+            // imgbtnNext
+            // 
+            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnNext.Enabled = false;
+            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnNext.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
+            this.imgbtnNext.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
+            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
+            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnNext.Name = "imgbtnNext";
+            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnNext.TabIndex = 1;
+            this.imgbtnNext.Text = "Next";
+            this.imgbtnNext.UseVisualStyleBackColor = false;
+            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
+            // 
+            // imgbtnBack
+            // 
+            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnBack.Enabled = false;
+            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnBack.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
+            this.imgbtnBack.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
+            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
+            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnBack.Name = "imgbtnBack";
+            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnBack.TabIndex = 2;
+            this.imgbtnBack.Text = "Back";
+            this.imgbtnBack.UseVisualStyleBackColor = false;
+            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
+            // 
+            // imageButton4
+            // 
+            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton4.FocusColor = System.Drawing.Color.Black;
+            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imageButton4.ForeColor = System.Drawing.Color.Black;
+            this.imageButton4.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
+            this.imageButton4.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
+            this.imageButton4.Location = new System.Drawing.Point(218, 713);
+            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imageButton4.Name = "imageButton4";
+            this.imageButton4.Size = new System.Drawing.Size(102, 30);
+            this.imageButton4.TabIndex = 7;
+            this.imageButton4.Text = "Return";
+            this.imageButton4.UseVisualStyleBackColor = false;
+            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
+            // 
+            // imgbtnLookUp
+            // 
+            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnLookUp.Enabled = false;
+            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnLookUp.ImageNormal = global::GameTech.B3Reports.Properties.Resources.BlueButtonUp;
+            this.imgbtnLookUp.ImagePressed = global::GameTech.B3Reports.Properties.Resources.BlueButtonDown;
+            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
+            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnLookUp.Name = "imgbtnLookUp";
+            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnLookUp.TabIndex = 6;
+            this.imgbtnLookUp.Text = "Look Up";
+            this.imgbtnLookUp.UseVisualStyleBackColor = false;
+            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
+            // 
             // DisputeResolution
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -4664,9 +4665,9 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnlDisputeResolutionTimeBomb.ResumeLayout(false);
+            this.pnlRegularGames.ResumeLayout(false);
+            this.pnlRegularGames.PerformLayout();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel9.ResumeLayout(false);
@@ -4685,8 +4686,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlBonusRound.ResumeLayout(false);
+            this.pnlBonusRound.PerformLayout();
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel14.ResumeLayout(false);
@@ -4744,7 +4745,7 @@
         private System.Windows.Forms.CheckBox chkbxCardNumber;
         private System.Windows.Forms.CheckBox chkbxGameNumber;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlBonusRound;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label lblMessageLastGameReach;
         private ImageButton imgbtnEnd;
@@ -4876,7 +4877,7 @@
         private System.Windows.Forms.Label lblBetDenom;
         private System.Windows.Forms.Label lblB4Games;
         private System.Windows.Forms.Label lblTotalWin2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlRegularGames;
         private System.Windows.Forms.Label lblSerialN1;
         private System.Windows.Forms.Label lblSerialN5;
         private System.Windows.Forms.Label lblSerialN6;
@@ -5051,7 +5052,7 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel pnlDisputeResolutionTimeBomb;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel20;

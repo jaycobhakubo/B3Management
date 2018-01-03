@@ -16,135 +16,135 @@ namespace GameTech.B3Reports
     {
         #region VARIABLES(static)
 
-        public static DateTime? DateTimePlay;
-        public static string B4Games;
-        public static int StartingCrdAmnt;
-        public static int EndingCrdAmnt;
-        public static int WinAmount;
-        public static int BonusWinAmount;
-        public static int BetAmount;
-        public static int BetLevel;
-        public static int BetDenom;
-        public static int BallCount;
-        public static int GameNumber;
-        public static int FirstCardNumber;
-        public static int LastCardNumber;
-        public static int FirstBonusCardNumber;
-        public static int LastBonusCardNumber;
-        public static int BonusBallCount;
-        public static int BonusOfferAccepted;
-        public static int ServerGameNumber;
+        private DateTime? mDateTimePlay;
+        private string mB4Games;
+        private int mStartingCrdAmnt;
+        private int mEndingCrdAmnt;
+        private int mWinAmount;
+        private int mBonusWinAmount;
+        private int mBetAmount;
+        private int mBetLevel;
+        private int mBetDenom;
+        private int mBallCount;
+        private int mGameNumber;
+        private int mFirstCardNumber;
+        private int mLastCardNumber;
+        private int mFirstBonusCardNumber;
+        private int mLastBonusCardNumber;
+        private int mBonusBallCount;
+        private int mBonusOfferAccepted;
+        private int mServerGameNumber;
 
         #endregion
 
         #region PROPERTIES
 
-        public int serverGameNumber
+        public int ServerGameNumber
         {
-            get { return ServerGameNumber; }
-            set { ServerGameNumber = value; }
+            get { return mServerGameNumber; }
+            set { mServerGameNumber = value; }
         }
 
-        public DateTime? datetimeplay
+        public DateTime? DateTimePlay
         {
-            get { return DateTimePlay;}
-            set { DateTimePlay = value; }
+            get { return mDateTimePlay;}
+            set { mDateTimePlay = value; }
         }
 
-        public string b4games
+        public string B4Games
         {
-            get { return B4Games; }
-            set { B4Games = value; }
+            get { return mB4Games; }
+            set { mB4Games = value; }
         }
 
-        public int startingcrdamnt
+        public int StartingCrdAmnt
         {
-            get { return StartingCrdAmnt; }
-            set { StartingCrdAmnt = value; }
+            get { return mStartingCrdAmnt; }
+            set { mStartingCrdAmnt = value; }
         }
 
-        public int endingcrdamnt
+        public int EndingCrdAmnt
         {
-            get { return EndingCrdAmnt; }
-            set { EndingCrdAmnt = value; }
+            get { return mEndingCrdAmnt; }
+            set { mEndingCrdAmnt = value; }
         }
 
-        public int winamount
+        public int WinAmount
         {
-            get { return WinAmount; }
-            set { WinAmount = value; }
+            get { return mWinAmount; }
+            set { mWinAmount = value; }
         }
 
-        public int bonuswinamount
+        public int BonusWinAmount
         {
-            get { return BonusWinAmount; }
-            set { BonusWinAmount = value; }
+            get { return mBonusWinAmount; }
+            set { mBonusWinAmount = value; }
         }
 
-        public int betamount
+        public int BetAmount
         {
-            get { return BetAmount; }
-            set { BetAmount = value; }
+            get { return mBetAmount; }
+            set { mBetAmount = value; }
         }
 
-        public int betlevel
+        public int BetLevel
         {
-            get { return BetLevel; }
-            set { BetLevel = value; }
+            get { return mBetLevel; }
+            set { mBetLevel = value; }
         }
 
-        public int betdenom
+        public int BetDenom
         {
-            get { return BetDenom; }
-            set { BetDenom = value; }
+            get { return mBetDenom; }
+            set { mBetDenom = value; }
         }
 
-        public int ballcount
+        public int BallCount
         {
-            get { return BallCount; }
-            set { BallCount = value; }
+            get { return mBallCount; }
+            set { mBallCount = value; }
         }
 
-        public int gamenumber
+        public int GameNumber
         {
-            get { return GameNumber; }
-            set { GameNumber = value; }
+            get { return mGameNumber; }
+            set { mGameNumber = value; }
         }
 
-        public int firstcardnumber
+        public int FirstCardNumber
         {
-            get { return FirstCardNumber; }
-            set { FirstCardNumber = value; }
+            get { return mFirstCardNumber; }
+            set { mFirstCardNumber = value; }
         }
 
-        public int lastcardnumber
+        public int LastCardNumber
         {
-            get { return LastCardNumber; }
-            set { LastCardNumber = value; }
+            get { return mLastCardNumber; }
+            set { mLastCardNumber = value; }
         }
 
-        public int firstbonuscardnumber
+        public int FirstBonusCardNumber
         {
-            get { return FirstBonusCardNumber; }
-            set { FirstBonusCardNumber = value; }
+            get { return mFirstBonusCardNumber; }
+            set { mFirstBonusCardNumber = value; }
         }
 
-        public int lastbonuscardnumber
+        public int LastBonusCardNumber
         {
-            get { return LastBonusCardNumber; }
-            set { LastBonusCardNumber = value; }
+            get { return mLastBonusCardNumber; }
+            set { mLastBonusCardNumber = value; }
         }
 
-        public int bonusballcount
+        public int BonusBallCount
         {
-            get { return BonusBallCount; }
-            set { BonusBallCount = value; }
+            get { return mBonusBallCount; }
+            set { mBonusBallCount = value; }
         }
 
-        public int bonusofferaccepted
+        public int BonusOfferAccepted
         {
-            get { return BonusOfferAccepted; }
-            set { BonusOfferAccepted = value; }
+            get { return mBonusOfferAccepted; }
+            set { mBonusOfferAccepted = value; }
         }
 
         #endregion
@@ -201,26 +201,26 @@ namespace GameTech.B3Reports
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        DateTimePlay = reader.GetDateTime(0);
-                        B4Games = reader.GetString(1);
-                        StartingCrdAmnt = reader.GetInt32(2);
-                        EndingCrdAmnt = reader.GetInt32(3);
-                        WinAmount = reader.GetInt32(4);
-                        BonusWinAmount = reader.GetInt32(5);
-                        BetAmount = reader.GetInt32(6);
-                        BetLevel = reader.GetInt32(7);
-                        BetDenom = reader.GetInt32(8);
-                        BallCount = reader.GetInt32(9);
-                        GameNumber = reader.GetInt32(10);
-                        FirstCardNumber = reader.GetInt32(11);
-                        LastCardNumber = reader.GetInt32(12);
-                        FirstBonusCardNumber = reader.GetInt32(13);
-                        LastBonusCardNumber = reader.GetInt32(14);
-                        BonusBallCount = reader.GetInt32(15);
-                        BonusOfferAccepted = reader.GetInt32(16);
+                        mDateTimePlay = reader.GetDateTime(0);
+                        mB4Games = reader.GetString(1);
+                        mStartingCrdAmnt = reader.GetInt32(2);
+                        mEndingCrdAmnt = reader.GetInt32(3);
+                        mWinAmount = reader.GetInt32(4);
+                        mBonusWinAmount = reader.GetInt32(5);
+                        mBetAmount = reader.GetInt32(6);
+                        mBetLevel = reader.GetInt32(7);
+                        mBetDenom = reader.GetInt32(8);
+                        mBallCount = reader.GetInt32(9);
+                        mGameNumber = reader.GetInt32(10);
+                        mFirstCardNumber = reader.GetInt32(11);
+                        mLastCardNumber = reader.GetInt32(12);
+                        mFirstBonusCardNumber = reader.GetInt32(13);
+                        mLastBonusCardNumber = reader.GetInt32(14);
+                        mBonusBallCount = reader.GetInt32(15);
+                        mBonusOfferAccepted = reader.GetInt32(16);
                         if (!reader.IsDBNull(17))
                         {
-                            ServerGameNumber = reader.GetInt32(17);
+                            mServerGameNumber = reader.GetInt32(17);
                         }
                     }
                 }

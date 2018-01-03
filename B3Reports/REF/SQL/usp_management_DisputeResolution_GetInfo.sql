@@ -15,6 +15,7 @@ SET QUOTED_IDENTIFIER OFF
 GO
 
 
+
 CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
     @spAcctNumber int
     ,@spPlayTime datetime = NULL
@@ -35,14 +36,18 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
  --   ,@spGameEndNum int
 	--,@spIsGameNumber varchar(10)
 	
-	--set @spAcctNumber = 60758429
-	--set @spPlayTime = NULL
-	--set @spStatus = 0
+	--set @spAcctNumber = 74686718
+	--set @spPlayTime = '2018-01-02 11:56:54.540'
+	--set @spStatus = 1
 	--set @spB4Games = 'TimeBomb'
 	--set @spGameStartNum = 0
 	--set @spGameEndNum = 0
 	--set @spIsGameNumber = 'F'
     --=================
+    
+    
+--    select * from TimeBomb_GameJournal
+--where creditacctnum = 74686718
 
     declare @InfoTable table
     (
@@ -363,11 +368,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.TimeBomb_GameJournal			
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc
-			
-		
-			
-			
+			order by recdatetime asc		
         end
     end
     
@@ -828,7 +829,103 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 				and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
 				order by recdatetime desc
 			end
-		end                
+		end  
+		
+		  --TimeBomb
+        if exists( select 1 from dbo.TimeBomb_GameJournal where creditacctnum = @spAcctNumber)
+        begin
+			if (@spStatus = 1)
+			begin
+						
+				insert into @InfoTable
+				(DateTimePlay 
+				,B4Games 
+				,StartingCrdtAmnt 
+				,EndingCrdAmnt 
+				,WinAmount 
+				,BonusWinAmount 
+				,BetAmount 
+				,BetLevel 
+				,BetDenom 
+				,CallCount 
+				,GameNumber 
+				,StartCardNumber 
+				,EndCardNumber 
+				,FirstBonusCardNumber 
+				,LastBonusCardNumber 
+				,CallCountBonus 
+				,BonusOfferAccepted )
+			select top 1 recdatetime [DateTimePlay]
+			,'TimeBomb' as B4Games
+			,(creditamt + betamt) as StartingCrdtAmnt  
+			,(creditamt  + gamewinamt) /*+ bonuswinamt*/ as EndingCrdtAmnt
+			,(gamewinamt) as [WinAmount]  
+			,0 as [BonusWinAmount]
+			,betamt [BetAmount]  
+			,betlevel as [BetLevel]   
+			,denom as [BetDenom]
+			,callcount as [CallCount]   
+			,gamenum as [GameNumber] 
+			,cardsn_1 as [StartCardNumber]
+			,cardsn_4 as [EndCardNumber]             
+			,0 as [FirstBonusCardNumber]
+			,0 as [LastBonusCardNumber]			
+			,0 as [CallCountBonus]
+			,0 as [BonusOfferAccepted]
+			from dbo.TimeBomb_GameJournal					
+				where creditacctnum = @spAcctNumber 
+				and recdatetime >  @spPlayTime
+				and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
+				order by recdatetime asc	
+				
+				
+
+			end
+			else
+			if(@spStatus = 2)
+			begin
+				insert into @InfoTable
+				(DateTimePlay 
+				,B4Games 
+				,StartingCrdtAmnt 
+				,EndingCrdAmnt 
+				,WinAmount 
+				,BonusWinAmount 
+				,BetAmount 
+				,BetLevel 
+				,BetDenom 
+				,CallCount 
+				,GameNumber 
+				,StartCardNumber 
+				,EndCardNumber 
+				,FirstBonusCardNumber 
+				,LastBonusCardNumber 
+				,CallCountBonus 
+				,BonusOfferAccepted )
+					select top 1 recdatetime [DateTimePlay]
+			,'TimeBomb' as B4Games
+			,(creditamt + betamt) as StartingCrdtAmnt  
+			,(creditamt  + gamewinamt) /*+ bonuswinamt*/ as EndingCrdtAmnt
+			,(gamewinamt) as [WinAmount]  
+			,0 as [BonusWinAmount]
+			,betamt [BetAmount]  
+			,betlevel as [BetLevel]   
+			,denom as [BetDenom]
+			,callcount as [CallCount]   
+			,gamenum as [GameNumber] 
+			,cardsn_1 as [StartCardNumber]
+			,cardsn_4 as [EndCardNumber]             
+			,0 as [FirstBonusCardNumber]
+			,0 as [LastBonusCardNumber]			
+			,0 as [CallCountBonus]
+			,0 as [BonusOfferAccepted]
+			from dbo.TimeBomb_GameJournal				
+				where creditacctnum = @spAcctNumber 
+				and recdatetime <  @spPlayTime
+				and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
+				order by recdatetime desc
+			end
+		end                 
     end
     
 	  declare @FInfoTable table
@@ -939,15 +1036,19 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
          order by datetimeplay desc
     end
 
+
+
 		declare @GameTypeID int
 		select @GameTypeID = 
 		case 
+		when B4Games = 'WildFire' then 40
 		when B4Games = 'CrazyBout' then 36
 		when B4Games = 'JailBreak' then 37
 		when B4Games = 'MayaMoney' then 38
 		when B4Games = 'Spirit76' then 39
 		when B4Games = 'WildFire' then 40
-		when B4Games = 'WildBall' then 41 end
+		when B4Games = 'WildBall' then 41 
+		when B4Games = 'TimeBomb' then 42 end
 		from @FInfoTable
 		
 		--select @GameTypeID
@@ -1015,6 +1116,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 		   from    @FInfoTable      
 		   where  
 		   (case when [FirstBonusCardNumber] != 0 and [BonusOfferAccepted] = 0 then 1 else 0 end) = 0
+
 
 
 

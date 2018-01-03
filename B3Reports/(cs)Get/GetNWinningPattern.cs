@@ -94,9 +94,9 @@ namespace GameTech.B3Reports
                 sc.Close();
             }
         }
-  
 
-        public GetNWinningPattern(int AccountNumber, DateTime? recdatetime, string gameName)
+
+        public GetNWinningPattern(int AccountNumber, DateTime? recdatetime, string gameName, int WinAmount)
         {
           
             SqlConnection sc = GetSQLConnection.get();
@@ -141,7 +141,7 @@ namespace GameTech.B3Reports
                             Pattern_Num_12 = reader.GetInt32(0);
                             if (GetGameSettings.MinNumberOfPlayers > 1)
                             {
-                                Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                                Pattern_Num_13 = WinAmount / GetGameSettings.ConsolationPrize;
                             }
                         }
                     }
@@ -185,7 +185,7 @@ namespace GameTech.B3Reports
                             Pattern_Num_12 = reader.GetInt32(0);
                             if (GetGameSettings.MinNumberOfPlayers > 1)
                             {
-                                Pattern_Num_13 = GetInfo.WinAmount / GetGameSettings.ConsolationPrize;
+                                Pattern_Num_13 = WinAmount / GetGameSettings.ConsolationPrize;
                             }
                         }
                     }
