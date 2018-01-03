@@ -377,106 +377,106 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label115 = new System.Windows.Forms.Label();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
-            this.label118 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr2 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr3 = new System.Windows.Forms.Label();
@@ -961,31 +961,31 @@
             // 
             this.panel23.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueBonusCard;
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel23.Controls.Add(this.label69);
-            this.panel23.Controls.Add(this.label93);
-            this.panel23.Controls.Add(this.label70);
-            this.panel23.Controls.Add(this.label92);
-            this.panel23.Controls.Add(this.label71);
-            this.panel23.Controls.Add(this.label91);
-            this.panel23.Controls.Add(this.label72);
-            this.panel23.Controls.Add(this.label90);
-            this.panel23.Controls.Add(this.label73);
-            this.panel23.Controls.Add(this.label89);
-            this.panel23.Controls.Add(this.label74);
-            this.panel23.Controls.Add(this.label88);
-            this.panel23.Controls.Add(this.label75);
-            this.panel23.Controls.Add(this.label87);
-            this.panel23.Controls.Add(this.label76);
-            this.panel23.Controls.Add(this.label86);
-            this.panel23.Controls.Add(this.label77);
-            this.panel23.Controls.Add(this.label85);
-            this.panel23.Controls.Add(this.label78);
-            this.panel23.Controls.Add(this.label84);
-            this.panel23.Controls.Add(this.label79);
-            this.panel23.Controls.Add(this.label83);
-            this.panel23.Controls.Add(this.label80);
-            this.panel23.Controls.Add(this.label82);
-            this.panel23.Controls.Add(this.label81);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb25);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb1);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb24);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb11);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb23);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb2);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb22);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb12);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb21);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb3);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb20);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb13);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb10);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb4);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb19);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb14);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb9);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb5);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb18);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb15);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb8);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb6);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb17);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb16);
+            this.panel23.Controls.Add(this.lblTimeBombCardbb7);
             this.panel23.Location = new System.Drawing.Point(507, 245);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(150, 175);
@@ -1029,31 +1029,31 @@
             // 
             this.panel21.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenBonusCard;
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel21.Controls.Add(this.label44);
-            this.panel21.Controls.Add(this.label68);
-            this.panel21.Controls.Add(this.label45);
-            this.panel21.Controls.Add(this.label67);
-            this.panel21.Controls.Add(this.label46);
-            this.panel21.Controls.Add(this.label66);
-            this.panel21.Controls.Add(this.label47);
-            this.panel21.Controls.Add(this.label65);
-            this.panel21.Controls.Add(this.label48);
-            this.panel21.Controls.Add(this.label64);
-            this.panel21.Controls.Add(this.label49);
-            this.panel21.Controls.Add(this.label63);
-            this.panel21.Controls.Add(this.label50);
-            this.panel21.Controls.Add(this.label62);
-            this.panel21.Controls.Add(this.label51);
-            this.panel21.Controls.Add(this.label61);
-            this.panel21.Controls.Add(this.label52);
-            this.panel21.Controls.Add(this.label60);
-            this.panel21.Controls.Add(this.label53);
-            this.panel21.Controls.Add(this.label59);
-            this.panel21.Controls.Add(this.label54);
-            this.panel21.Controls.Add(this.label58);
-            this.panel21.Controls.Add(this.label55);
-            this.panel21.Controls.Add(this.label57);
-            this.panel21.Controls.Add(this.label56);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb25);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb1);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb24);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb11);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb23);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb2);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb22);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb12);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb21);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb3);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb20);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb13);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb10);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb4);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb19);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb14);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb9);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb5);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb18);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb15);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb8);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb6);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb17);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb16);
+            this.panel21.Controls.Add(this.lblTimeBombCardgb7);
             this.panel21.Location = new System.Drawing.Point(15, 245);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(150, 175);
@@ -1063,31 +1063,31 @@
             // 
             this.panel19.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
             this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel19.Controls.Add(this.label94);
-            this.panel19.Controls.Add(this.label118);
-            this.panel19.Controls.Add(this.label95);
-            this.panel19.Controls.Add(this.label117);
-            this.panel19.Controls.Add(this.label96);
-            this.panel19.Controls.Add(this.label116);
-            this.panel19.Controls.Add(this.label97);
-            this.panel19.Controls.Add(this.label115);
-            this.panel19.Controls.Add(this.label98);
-            this.panel19.Controls.Add(this.label114);
-            this.panel19.Controls.Add(this.label99);
-            this.panel19.Controls.Add(this.label113);
-            this.panel19.Controls.Add(this.label100);
-            this.panel19.Controls.Add(this.label112);
-            this.panel19.Controls.Add(this.label101);
-            this.panel19.Controls.Add(this.label111);
-            this.panel19.Controls.Add(this.label102);
-            this.panel19.Controls.Add(this.label110);
-            this.panel19.Controls.Add(this.label103);
-            this.panel19.Controls.Add(this.label109);
-            this.panel19.Controls.Add(this.label104);
-            this.panel19.Controls.Add(this.label108);
-            this.panel19.Controls.Add(this.label105);
-            this.panel19.Controls.Add(this.label107);
-            this.panel19.Controls.Add(this.label106);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb25);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb1);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb24);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb11);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb23);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb2);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb22);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb12);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb21);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb3);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb20);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb13);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb10);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb4);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb19);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb14);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb9);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb5);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb18);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb15);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb8);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb6);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb17);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb16);
+            this.panel19.Controls.Add(this.lblTimeBombCardpb7);
             this.panel19.Location = new System.Drawing.Point(507, 53);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(150, 175);
@@ -1098,31 +1098,31 @@
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedBonusCard;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel18.Controls.Add(this.label39);
-            this.panel18.Controls.Add(this.label40);
-            this.panel18.Controls.Add(this.label41);
-            this.panel18.Controls.Add(this.label42);
-            this.panel18.Controls.Add(this.label43);
-            this.panel18.Controls.Add(this.label29);
-            this.panel18.Controls.Add(this.label24);
-            this.panel18.Controls.Add(this.label30);
-            this.panel18.Controls.Add(this.label25);
-            this.panel18.Controls.Add(this.label31);
-            this.panel18.Controls.Add(this.label26);
-            this.panel18.Controls.Add(this.label32);
-            this.panel18.Controls.Add(this.label27);
-            this.panel18.Controls.Add(this.label33);
-            this.panel18.Controls.Add(this.label28);
-            this.panel18.Controls.Add(this.label34);
-            this.panel18.Controls.Add(this.label23);
-            this.panel18.Controls.Add(this.label35);
-            this.panel18.Controls.Add(this.label22);
-            this.panel18.Controls.Add(this.label36);
-            this.panel18.Controls.Add(this.label21);
-            this.panel18.Controls.Add(this.label37);
-            this.panel18.Controls.Add(this.label20);
-            this.panel18.Controls.Add(this.label38);
-            this.panel18.Controls.Add(this.label19);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb25);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb24);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb23);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb22);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb21);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb20);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb10);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb19);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb9);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb18);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb8);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb17);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb7);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb16);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb6);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb15);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb5);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb14);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb4);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb13);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb3);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb12);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb2);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb11);
+            this.panel18.Controls.Add(this.lblTimeBombCardrb1);
             this.panel18.Location = new System.Drawing.Point(15, 53);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(150, 175);
@@ -4964,705 +4964,705 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label19
+            // lblTimeBombCardrb1
             // 
-            this.label19.Location = new System.Drawing.Point(3, 44);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(27, 24);
-            this.label19.TabIndex = 0;
+            this.lblTimeBombCardrb1.Location = new System.Drawing.Point(3, 44);
+            this.lblTimeBombCardrb1.Name = "lblTimeBombCardrb1";
+            this.lblTimeBombCardrb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb1.TabIndex = 0;
             // 
-            // label20
+            // lblTimeBombCardrb2
             // 
-            this.label20.Location = new System.Drawing.Point(3, 69);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(27, 24);
-            this.label20.TabIndex = 6;
+            this.lblTimeBombCardrb2.Location = new System.Drawing.Point(3, 69);
+            this.lblTimeBombCardrb2.Name = "lblTimeBombCardrb2";
+            this.lblTimeBombCardrb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb2.TabIndex = 6;
             // 
-            // label21
+            // lblTimeBombCardrb3
             // 
-            this.label21.Location = new System.Drawing.Point(3, 94);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(27, 24);
-            this.label21.TabIndex = 7;
+            this.lblTimeBombCardrb3.Location = new System.Drawing.Point(3, 94);
+            this.lblTimeBombCardrb3.Name = "lblTimeBombCardrb3";
+            this.lblTimeBombCardrb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb3.TabIndex = 7;
             // 
-            // label22
+            // lblTimeBombCardrb4
             // 
-            this.label22.Location = new System.Drawing.Point(3, 118);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(27, 24);
-            this.label22.TabIndex = 7;
+            this.lblTimeBombCardrb4.Location = new System.Drawing.Point(3, 118);
+            this.lblTimeBombCardrb4.Name = "lblTimeBombCardrb4";
+            this.lblTimeBombCardrb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb4.TabIndex = 7;
             // 
-            // label23
+            // lblTimeBombCardrb5
             // 
-            this.label23.Location = new System.Drawing.Point(3, 143);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(27, 24);
-            this.label23.TabIndex = 7;
+            this.lblTimeBombCardrb5.Location = new System.Drawing.Point(3, 143);
+            this.lblTimeBombCardrb5.Name = "lblTimeBombCardrb5";
+            this.lblTimeBombCardrb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb5.TabIndex = 7;
             // 
-            // label24
+            // lblTimeBombCardrb10
             // 
-            this.label24.Location = new System.Drawing.Point(32, 143);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(27, 24);
-            this.label24.TabIndex = 10;
+            this.lblTimeBombCardrb10.Location = new System.Drawing.Point(32, 143);
+            this.lblTimeBombCardrb10.Name = "lblTimeBombCardrb10";
+            this.lblTimeBombCardrb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb10.TabIndex = 10;
             // 
-            // label25
+            // lblTimeBombCardrb9
             // 
-            this.label25.Location = new System.Drawing.Point(32, 118);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(27, 24);
-            this.label25.TabIndex = 11;
+            this.lblTimeBombCardrb9.Location = new System.Drawing.Point(32, 118);
+            this.lblTimeBombCardrb9.Name = "lblTimeBombCardrb9";
+            this.lblTimeBombCardrb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb9.TabIndex = 11;
             // 
-            // label26
+            // lblTimeBombCardrb8
             // 
-            this.label26.Location = new System.Drawing.Point(32, 94);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(27, 24);
-            this.label26.TabIndex = 12;
+            this.lblTimeBombCardrb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardrb8.Name = "lblTimeBombCardrb8";
+            this.lblTimeBombCardrb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb8.TabIndex = 12;
             // 
-            // label27
+            // lblTimeBombCardrb7
             // 
-            this.label27.Location = new System.Drawing.Point(32, 69);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(27, 24);
-            this.label27.TabIndex = 9;
+            this.lblTimeBombCardrb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardrb7.Name = "lblTimeBombCardrb7";
+            this.lblTimeBombCardrb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb7.TabIndex = 9;
             // 
-            // label28
+            // lblTimeBombCardrb6
             // 
-            this.label28.Location = new System.Drawing.Point(32, 44);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(27, 24);
-            this.label28.TabIndex = 8;
+            this.lblTimeBombCardrb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardrb6.Name = "lblTimeBombCardrb6";
+            this.lblTimeBombCardrb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb6.TabIndex = 8;
             // 
-            // label29
+            // lblTimeBombCardrb20
             // 
-            this.label29.Location = new System.Drawing.Point(91, 143);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 24);
-            this.label29.TabIndex = 20;
+            this.lblTimeBombCardrb20.Location = new System.Drawing.Point(91, 143);
+            this.lblTimeBombCardrb20.Name = "lblTimeBombCardrb20";
+            this.lblTimeBombCardrb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb20.TabIndex = 20;
             // 
-            // label30
+            // lblTimeBombCardrb19
             // 
-            this.label30.Location = new System.Drawing.Point(91, 118);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(27, 24);
-            this.label30.TabIndex = 21;
+            this.lblTimeBombCardrb19.Location = new System.Drawing.Point(91, 118);
+            this.lblTimeBombCardrb19.Name = "lblTimeBombCardrb19";
+            this.lblTimeBombCardrb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb19.TabIndex = 21;
             // 
-            // label31
+            // lblTimeBombCardrb18
             // 
-            this.label31.Location = new System.Drawing.Point(91, 94);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(27, 24);
-            this.label31.TabIndex = 22;
+            this.lblTimeBombCardrb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardrb18.Name = "lblTimeBombCardrb18";
+            this.lblTimeBombCardrb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb18.TabIndex = 22;
             // 
-            // label32
+            // lblTimeBombCardrb17
             // 
-            this.label32.Location = new System.Drawing.Point(91, 69);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(27, 24);
-            this.label32.TabIndex = 19;
+            this.lblTimeBombCardrb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardrb17.Name = "lblTimeBombCardrb17";
+            this.lblTimeBombCardrb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb17.TabIndex = 19;
             // 
-            // label33
+            // lblTimeBombCardrb16
             // 
-            this.label33.Location = new System.Drawing.Point(91, 44);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(27, 24);
-            this.label33.TabIndex = 18;
+            this.lblTimeBombCardrb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardrb16.Name = "lblTimeBombCardrb16";
+            this.lblTimeBombCardrb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb16.TabIndex = 18;
             // 
-            // label34
+            // lblTimeBombCardrb15
             // 
-            this.label34.Location = new System.Drawing.Point(62, 143);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(27, 24);
-            this.label34.TabIndex = 15;
+            this.lblTimeBombCardrb15.Location = new System.Drawing.Point(62, 143);
+            this.lblTimeBombCardrb15.Name = "lblTimeBombCardrb15";
+            this.lblTimeBombCardrb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb15.TabIndex = 15;
             // 
-            // label35
+            // lblTimeBombCardrb14
             // 
-            this.label35.Location = new System.Drawing.Point(62, 118);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(27, 24);
-            this.label35.TabIndex = 16;
+            this.lblTimeBombCardrb14.Location = new System.Drawing.Point(62, 118);
+            this.lblTimeBombCardrb14.Name = "lblTimeBombCardrb14";
+            this.lblTimeBombCardrb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb14.TabIndex = 16;
             // 
-            // label36
+            // lblTimeBombCardrb13
             // 
-            this.label36.Location = new System.Drawing.Point(62, 94);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(27, 24);
-            this.label36.TabIndex = 17;
+            this.lblTimeBombCardrb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardrb13.Name = "lblTimeBombCardrb13";
+            this.lblTimeBombCardrb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb13.TabIndex = 17;
             // 
-            // label37
+            // lblTimeBombCardrb12
             // 
-            this.label37.Location = new System.Drawing.Point(62, 69);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(27, 24);
-            this.label37.TabIndex = 14;
+            this.lblTimeBombCardrb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardrb12.Name = "lblTimeBombCardrb12";
+            this.lblTimeBombCardrb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb12.TabIndex = 14;
             // 
-            // label38
+            // lblTimeBombCardrb11
             // 
-            this.label38.Location = new System.Drawing.Point(62, 44);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 24);
-            this.label38.TabIndex = 13;
+            this.lblTimeBombCardrb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardrb11.Name = "lblTimeBombCardrb11";
+            this.lblTimeBombCardrb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb11.TabIndex = 13;
             // 
-            // label39
+            // lblTimeBombCardrb25
             // 
-            this.label39.Location = new System.Drawing.Point(120, 143);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(27, 24);
-            this.label39.TabIndex = 25;
+            this.lblTimeBombCardrb25.Location = new System.Drawing.Point(120, 143);
+            this.lblTimeBombCardrb25.Name = "lblTimeBombCardrb25";
+            this.lblTimeBombCardrb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb25.TabIndex = 25;
             // 
-            // label40
+            // lblTimeBombCardrb24
             // 
-            this.label40.Location = new System.Drawing.Point(120, 118);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(27, 24);
-            this.label40.TabIndex = 26;
+            this.lblTimeBombCardrb24.Location = new System.Drawing.Point(120, 118);
+            this.lblTimeBombCardrb24.Name = "lblTimeBombCardrb24";
+            this.lblTimeBombCardrb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb24.TabIndex = 26;
             // 
-            // label41
+            // lblTimeBombCardrb23
             // 
-            this.label41.Location = new System.Drawing.Point(120, 94);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(27, 24);
-            this.label41.TabIndex = 27;
+            this.lblTimeBombCardrb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardrb23.Name = "lblTimeBombCardrb23";
+            this.lblTimeBombCardrb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb23.TabIndex = 27;
             // 
-            // label42
+            // lblTimeBombCardrb22
             // 
-            this.label42.Location = new System.Drawing.Point(120, 69);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(27, 24);
-            this.label42.TabIndex = 24;
+            this.lblTimeBombCardrb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardrb22.Name = "lblTimeBombCardrb22";
+            this.lblTimeBombCardrb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb22.TabIndex = 24;
             // 
-            // label43
+            // lblTimeBombCardrb21
             // 
-            this.label43.Location = new System.Drawing.Point(120, 44);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(27, 24);
-            this.label43.TabIndex = 23;
+            this.lblTimeBombCardrb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardrb21.Name = "lblTimeBombCardrb21";
+            this.lblTimeBombCardrb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb21.TabIndex = 23;
             // 
-            // label44
+            // lblTimeBombCardgb25
             // 
-            this.label44.Location = new System.Drawing.Point(120, 143);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(27, 24);
-            this.label44.TabIndex = 50;
+            this.lblTimeBombCardgb25.Location = new System.Drawing.Point(120, 143);
+            this.lblTimeBombCardgb25.Name = "lblTimeBombCardgb25";
+            this.lblTimeBombCardgb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb25.TabIndex = 50;
             // 
-            // label45
+            // lblTimeBombCardgb24
             // 
-            this.label45.Location = new System.Drawing.Point(120, 118);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(27, 24);
-            this.label45.TabIndex = 51;
+            this.lblTimeBombCardgb24.Location = new System.Drawing.Point(120, 118);
+            this.lblTimeBombCardgb24.Name = "lblTimeBombCardgb24";
+            this.lblTimeBombCardgb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb24.TabIndex = 51;
             // 
-            // label46
+            // lblTimeBombCardgb23
             // 
-            this.label46.Location = new System.Drawing.Point(120, 94);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(27, 24);
-            this.label46.TabIndex = 52;
+            this.lblTimeBombCardgb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardgb23.Name = "lblTimeBombCardgb23";
+            this.lblTimeBombCardgb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb23.TabIndex = 52;
             // 
-            // label47
+            // lblTimeBombCardgb22
             // 
-            this.label47.Location = new System.Drawing.Point(120, 69);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(27, 24);
-            this.label47.TabIndex = 49;
+            this.lblTimeBombCardgb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardgb22.Name = "lblTimeBombCardgb22";
+            this.lblTimeBombCardgb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb22.TabIndex = 49;
             // 
-            // label48
+            // lblTimeBombCardgb21
             // 
-            this.label48.Location = new System.Drawing.Point(120, 44);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(27, 24);
-            this.label48.TabIndex = 48;
+            this.lblTimeBombCardgb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardgb21.Name = "lblTimeBombCardgb21";
+            this.lblTimeBombCardgb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb21.TabIndex = 48;
             // 
-            // label49
+            // lblTimeBombCardgb20
             // 
-            this.label49.Location = new System.Drawing.Point(91, 143);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(27, 24);
-            this.label49.TabIndex = 45;
+            this.lblTimeBombCardgb20.Location = new System.Drawing.Point(91, 143);
+            this.lblTimeBombCardgb20.Name = "lblTimeBombCardgb20";
+            this.lblTimeBombCardgb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb20.TabIndex = 45;
             // 
-            // label50
+            // lblTimeBombCardgb10
             // 
-            this.label50.Location = new System.Drawing.Point(32, 143);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(27, 24);
-            this.label50.TabIndex = 35;
+            this.lblTimeBombCardgb10.Location = new System.Drawing.Point(32, 143);
+            this.lblTimeBombCardgb10.Name = "lblTimeBombCardgb10";
+            this.lblTimeBombCardgb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb10.TabIndex = 35;
             // 
-            // label51
+            // lblTimeBombCardgb19
             // 
-            this.label51.Location = new System.Drawing.Point(91, 118);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(27, 24);
-            this.label51.TabIndex = 46;
+            this.lblTimeBombCardgb19.Location = new System.Drawing.Point(91, 118);
+            this.lblTimeBombCardgb19.Name = "lblTimeBombCardgb19";
+            this.lblTimeBombCardgb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb19.TabIndex = 46;
             // 
-            // label52
+            // lblTimeBombCardgb9
             // 
-            this.label52.Location = new System.Drawing.Point(32, 118);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(27, 24);
-            this.label52.TabIndex = 36;
+            this.lblTimeBombCardgb9.Location = new System.Drawing.Point(32, 118);
+            this.lblTimeBombCardgb9.Name = "lblTimeBombCardgb9";
+            this.lblTimeBombCardgb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb9.TabIndex = 36;
             // 
-            // label53
+            // lblTimeBombCardgb18
             // 
-            this.label53.Location = new System.Drawing.Point(91, 94);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(27, 24);
-            this.label53.TabIndex = 47;
+            this.lblTimeBombCardgb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardgb18.Name = "lblTimeBombCardgb18";
+            this.lblTimeBombCardgb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb18.TabIndex = 47;
             // 
-            // label54
+            // lblTimeBombCardgb8
             // 
-            this.label54.Location = new System.Drawing.Point(32, 94);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(27, 24);
-            this.label54.TabIndex = 37;
+            this.lblTimeBombCardgb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardgb8.Name = "lblTimeBombCardgb8";
+            this.lblTimeBombCardgb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb8.TabIndex = 37;
             // 
-            // label55
+            // lblTimeBombCardgb17
             // 
-            this.label55.Location = new System.Drawing.Point(91, 69);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(27, 24);
-            this.label55.TabIndex = 44;
+            this.lblTimeBombCardgb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardgb17.Name = "lblTimeBombCardgb17";
+            this.lblTimeBombCardgb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb17.TabIndex = 44;
             // 
-            // label56
+            // lblTimeBombCardgb7
             // 
-            this.label56.Location = new System.Drawing.Point(32, 69);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(27, 24);
-            this.label56.TabIndex = 34;
+            this.lblTimeBombCardgb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardgb7.Name = "lblTimeBombCardgb7";
+            this.lblTimeBombCardgb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb7.TabIndex = 34;
             // 
-            // label57
+            // lblTimeBombCardgb16
             // 
-            this.label57.Location = new System.Drawing.Point(91, 44);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(27, 24);
-            this.label57.TabIndex = 43;
+            this.lblTimeBombCardgb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardgb16.Name = "lblTimeBombCardgb16";
+            this.lblTimeBombCardgb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb16.TabIndex = 43;
             // 
-            // label58
+            // lblTimeBombCardgb6
             // 
-            this.label58.Location = new System.Drawing.Point(32, 44);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(27, 24);
-            this.label58.TabIndex = 33;
+            this.lblTimeBombCardgb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardgb6.Name = "lblTimeBombCardgb6";
+            this.lblTimeBombCardgb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb6.TabIndex = 33;
             // 
-            // label59
+            // lblTimeBombCardgb15
             // 
-            this.label59.Location = new System.Drawing.Point(62, 143);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(27, 24);
-            this.label59.TabIndex = 40;
+            this.lblTimeBombCardgb15.Location = new System.Drawing.Point(62, 143);
+            this.lblTimeBombCardgb15.Name = "lblTimeBombCardgb15";
+            this.lblTimeBombCardgb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb15.TabIndex = 40;
             // 
-            // label60
+            // lblTimeBombCardgb5
             // 
-            this.label60.Location = new System.Drawing.Point(3, 143);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(27, 24);
-            this.label60.TabIndex = 30;
+            this.lblTimeBombCardgb5.Location = new System.Drawing.Point(3, 143);
+            this.lblTimeBombCardgb5.Name = "lblTimeBombCardgb5";
+            this.lblTimeBombCardgb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb5.TabIndex = 30;
             // 
-            // label61
+            // lblTimeBombCardgb14
             // 
-            this.label61.Location = new System.Drawing.Point(62, 118);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(27, 24);
-            this.label61.TabIndex = 41;
+            this.lblTimeBombCardgb14.Location = new System.Drawing.Point(62, 118);
+            this.lblTimeBombCardgb14.Name = "lblTimeBombCardgb14";
+            this.lblTimeBombCardgb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb14.TabIndex = 41;
             // 
-            // label62
+            // lblTimeBombCardgb4
             // 
-            this.label62.Location = new System.Drawing.Point(3, 118);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(27, 24);
-            this.label62.TabIndex = 31;
+            this.lblTimeBombCardgb4.Location = new System.Drawing.Point(3, 118);
+            this.lblTimeBombCardgb4.Name = "lblTimeBombCardgb4";
+            this.lblTimeBombCardgb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb4.TabIndex = 31;
             // 
-            // label63
+            // lblTimeBombCardgb13
             // 
-            this.label63.Location = new System.Drawing.Point(62, 94);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(27, 24);
-            this.label63.TabIndex = 42;
+            this.lblTimeBombCardgb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardgb13.Name = "lblTimeBombCardgb13";
+            this.lblTimeBombCardgb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb13.TabIndex = 42;
             // 
-            // label64
+            // lblTimeBombCardgb3
             // 
-            this.label64.Location = new System.Drawing.Point(3, 94);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(27, 24);
-            this.label64.TabIndex = 32;
+            this.lblTimeBombCardgb3.Location = new System.Drawing.Point(3, 94);
+            this.lblTimeBombCardgb3.Name = "lblTimeBombCardgb3";
+            this.lblTimeBombCardgb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb3.TabIndex = 32;
             // 
-            // label65
+            // lblTimeBombCardgb12
             // 
-            this.label65.Location = new System.Drawing.Point(62, 69);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(27, 24);
-            this.label65.TabIndex = 39;
+            this.lblTimeBombCardgb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardgb12.Name = "lblTimeBombCardgb12";
+            this.lblTimeBombCardgb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb12.TabIndex = 39;
             // 
-            // label66
+            // lblTimeBombCardgb2
             // 
-            this.label66.Location = new System.Drawing.Point(3, 69);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(27, 24);
-            this.label66.TabIndex = 29;
+            this.lblTimeBombCardgb2.Location = new System.Drawing.Point(3, 69);
+            this.lblTimeBombCardgb2.Name = "lblTimeBombCardgb2";
+            this.lblTimeBombCardgb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb2.TabIndex = 29;
             // 
-            // label67
+            // lblTimeBombCardgb11
             // 
-            this.label67.Location = new System.Drawing.Point(62, 44);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(27, 24);
-            this.label67.TabIndex = 38;
+            this.lblTimeBombCardgb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardgb11.Name = "lblTimeBombCardgb11";
+            this.lblTimeBombCardgb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb11.TabIndex = 38;
             // 
-            // label68
+            // lblTimeBombCardgb1
             // 
-            this.label68.Location = new System.Drawing.Point(3, 44);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(27, 24);
-            this.label68.TabIndex = 28;
+            this.lblTimeBombCardgb1.Location = new System.Drawing.Point(3, 44);
+            this.lblTimeBombCardgb1.Name = "lblTimeBombCardgb1";
+            this.lblTimeBombCardgb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb1.TabIndex = 28;
             // 
-            // label69
+            // lblTimeBombCardbb25
             // 
-            this.label69.Location = new System.Drawing.Point(121, 143);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(27, 24);
-            this.label69.TabIndex = 50;
+            this.lblTimeBombCardbb25.Location = new System.Drawing.Point(121, 143);
+            this.lblTimeBombCardbb25.Name = "lblTimeBombCardbb25";
+            this.lblTimeBombCardbb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb25.TabIndex = 50;
             // 
-            // label70
+            // lblTimeBombCardbb24
             // 
-            this.label70.Location = new System.Drawing.Point(121, 118);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(27, 24);
-            this.label70.TabIndex = 51;
+            this.lblTimeBombCardbb24.Location = new System.Drawing.Point(121, 118);
+            this.lblTimeBombCardbb24.Name = "lblTimeBombCardbb24";
+            this.lblTimeBombCardbb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb24.TabIndex = 51;
             // 
-            // label71
+            // lblTimeBombCardbb23
             // 
-            this.label71.Location = new System.Drawing.Point(121, 94);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(27, 24);
-            this.label71.TabIndex = 52;
+            this.lblTimeBombCardbb23.Location = new System.Drawing.Point(121, 94);
+            this.lblTimeBombCardbb23.Name = "lblTimeBombCardbb23";
+            this.lblTimeBombCardbb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb23.TabIndex = 52;
             // 
-            // label72
+            // lblTimeBombCardbb22
             // 
-            this.label72.Location = new System.Drawing.Point(121, 69);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(27, 24);
-            this.label72.TabIndex = 49;
+            this.lblTimeBombCardbb22.Location = new System.Drawing.Point(121, 69);
+            this.lblTimeBombCardbb22.Name = "lblTimeBombCardbb22";
+            this.lblTimeBombCardbb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb22.TabIndex = 49;
             // 
-            // label73
+            // lblTimeBombCardbb21
             // 
-            this.label73.Location = new System.Drawing.Point(121, 44);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(27, 24);
-            this.label73.TabIndex = 48;
+            this.lblTimeBombCardbb21.Location = new System.Drawing.Point(121, 44);
+            this.lblTimeBombCardbb21.Name = "lblTimeBombCardbb21";
+            this.lblTimeBombCardbb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb21.TabIndex = 48;
             // 
-            // label74
+            // lblTimeBombCardbb20
             // 
-            this.label74.Location = new System.Drawing.Point(92, 143);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(27, 24);
-            this.label74.TabIndex = 45;
+            this.lblTimeBombCardbb20.Location = new System.Drawing.Point(92, 143);
+            this.lblTimeBombCardbb20.Name = "lblTimeBombCardbb20";
+            this.lblTimeBombCardbb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb20.TabIndex = 45;
             // 
-            // label75
+            // lblTimeBombCardbb10
             // 
-            this.label75.Location = new System.Drawing.Point(33, 143);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(27, 24);
-            this.label75.TabIndex = 35;
+            this.lblTimeBombCardbb10.Location = new System.Drawing.Point(33, 143);
+            this.lblTimeBombCardbb10.Name = "lblTimeBombCardbb10";
+            this.lblTimeBombCardbb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb10.TabIndex = 35;
             // 
-            // label76
+            // lblTimeBombCardbb19
             // 
-            this.label76.Location = new System.Drawing.Point(92, 118);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(27, 24);
-            this.label76.TabIndex = 46;
+            this.lblTimeBombCardbb19.Location = new System.Drawing.Point(92, 118);
+            this.lblTimeBombCardbb19.Name = "lblTimeBombCardbb19";
+            this.lblTimeBombCardbb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb19.TabIndex = 46;
             // 
-            // label77
+            // lblTimeBombCardbb9
             // 
-            this.label77.Location = new System.Drawing.Point(33, 118);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(27, 24);
-            this.label77.TabIndex = 36;
+            this.lblTimeBombCardbb9.Location = new System.Drawing.Point(33, 118);
+            this.lblTimeBombCardbb9.Name = "lblTimeBombCardbb9";
+            this.lblTimeBombCardbb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb9.TabIndex = 36;
             // 
-            // label78
+            // lblTimeBombCardbb18
             // 
-            this.label78.Location = new System.Drawing.Point(92, 94);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(27, 24);
-            this.label78.TabIndex = 47;
+            this.lblTimeBombCardbb18.Location = new System.Drawing.Point(92, 94);
+            this.lblTimeBombCardbb18.Name = "lblTimeBombCardbb18";
+            this.lblTimeBombCardbb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb18.TabIndex = 47;
             // 
-            // label79
+            // lblTimeBombCardbb8
             // 
-            this.label79.Location = new System.Drawing.Point(33, 94);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(27, 24);
-            this.label79.TabIndex = 37;
+            this.lblTimeBombCardbb8.Location = new System.Drawing.Point(33, 94);
+            this.lblTimeBombCardbb8.Name = "lblTimeBombCardbb8";
+            this.lblTimeBombCardbb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb8.TabIndex = 37;
             // 
-            // label80
+            // lblTimeBombCardbb17
             // 
-            this.label80.Location = new System.Drawing.Point(92, 69);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(27, 24);
-            this.label80.TabIndex = 44;
+            this.lblTimeBombCardbb17.Location = new System.Drawing.Point(92, 69);
+            this.lblTimeBombCardbb17.Name = "lblTimeBombCardbb17";
+            this.lblTimeBombCardbb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb17.TabIndex = 44;
             // 
-            // label81
+            // lblTimeBombCardbb7
             // 
-            this.label81.Location = new System.Drawing.Point(33, 69);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(27, 24);
-            this.label81.TabIndex = 34;
+            this.lblTimeBombCardbb7.Location = new System.Drawing.Point(33, 69);
+            this.lblTimeBombCardbb7.Name = "lblTimeBombCardbb7";
+            this.lblTimeBombCardbb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb7.TabIndex = 34;
             // 
-            // label82
+            // lblTimeBombCardbb16
             // 
-            this.label82.Location = new System.Drawing.Point(92, 44);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(27, 24);
-            this.label82.TabIndex = 43;
+            this.lblTimeBombCardbb16.Location = new System.Drawing.Point(92, 44);
+            this.lblTimeBombCardbb16.Name = "lblTimeBombCardbb16";
+            this.lblTimeBombCardbb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb16.TabIndex = 43;
             // 
-            // label83
+            // lblTimeBombCardbb6
             // 
-            this.label83.Location = new System.Drawing.Point(33, 44);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(27, 24);
-            this.label83.TabIndex = 33;
+            this.lblTimeBombCardbb6.Location = new System.Drawing.Point(33, 44);
+            this.lblTimeBombCardbb6.Name = "lblTimeBombCardbb6";
+            this.lblTimeBombCardbb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb6.TabIndex = 33;
             // 
-            // label84
+            // lblTimeBombCardbb15
             // 
-            this.label84.Location = new System.Drawing.Point(63, 143);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(27, 24);
-            this.label84.TabIndex = 40;
+            this.lblTimeBombCardbb15.Location = new System.Drawing.Point(63, 143);
+            this.lblTimeBombCardbb15.Name = "lblTimeBombCardbb15";
+            this.lblTimeBombCardbb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb15.TabIndex = 40;
             // 
-            // label85
+            // lblTimeBombCardbb5
             // 
-            this.label85.Location = new System.Drawing.Point(4, 143);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(27, 24);
-            this.label85.TabIndex = 30;
+            this.lblTimeBombCardbb5.Location = new System.Drawing.Point(4, 143);
+            this.lblTimeBombCardbb5.Name = "lblTimeBombCardbb5";
+            this.lblTimeBombCardbb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb5.TabIndex = 30;
             // 
-            // label86
+            // lblTimeBombCardbb14
             // 
-            this.label86.Location = new System.Drawing.Point(63, 118);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(27, 24);
-            this.label86.TabIndex = 41;
+            this.lblTimeBombCardbb14.Location = new System.Drawing.Point(63, 118);
+            this.lblTimeBombCardbb14.Name = "lblTimeBombCardbb14";
+            this.lblTimeBombCardbb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb14.TabIndex = 41;
             // 
-            // label87
+            // lblTimeBombCardbb4
             // 
-            this.label87.Location = new System.Drawing.Point(4, 118);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(27, 24);
-            this.label87.TabIndex = 31;
+            this.lblTimeBombCardbb4.Location = new System.Drawing.Point(4, 118);
+            this.lblTimeBombCardbb4.Name = "lblTimeBombCardbb4";
+            this.lblTimeBombCardbb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb4.TabIndex = 31;
             // 
-            // label88
+            // lblTimeBombCardbb13
             // 
-            this.label88.Location = new System.Drawing.Point(63, 94);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(27, 24);
-            this.label88.TabIndex = 42;
+            this.lblTimeBombCardbb13.Location = new System.Drawing.Point(63, 94);
+            this.lblTimeBombCardbb13.Name = "lblTimeBombCardbb13";
+            this.lblTimeBombCardbb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb13.TabIndex = 42;
             // 
-            // label89
+            // lblTimeBombCardbb3
             // 
-            this.label89.Location = new System.Drawing.Point(4, 94);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(27, 24);
-            this.label89.TabIndex = 32;
+            this.lblTimeBombCardbb3.Location = new System.Drawing.Point(4, 94);
+            this.lblTimeBombCardbb3.Name = "lblTimeBombCardbb3";
+            this.lblTimeBombCardbb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb3.TabIndex = 32;
             // 
-            // label90
+            // lblTimeBombCardbb12
             // 
-            this.label90.Location = new System.Drawing.Point(63, 69);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(27, 24);
-            this.label90.TabIndex = 39;
+            this.lblTimeBombCardbb12.Location = new System.Drawing.Point(63, 69);
+            this.lblTimeBombCardbb12.Name = "lblTimeBombCardbb12";
+            this.lblTimeBombCardbb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb12.TabIndex = 39;
             // 
-            // label91
+            // lblTimeBombCardbb2
             // 
-            this.label91.Location = new System.Drawing.Point(4, 69);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(27, 24);
-            this.label91.TabIndex = 29;
+            this.lblTimeBombCardbb2.Location = new System.Drawing.Point(4, 69);
+            this.lblTimeBombCardbb2.Name = "lblTimeBombCardbb2";
+            this.lblTimeBombCardbb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb2.TabIndex = 29;
             // 
-            // label92
+            // lblTimeBombCardbb11
             // 
-            this.label92.Location = new System.Drawing.Point(63, 44);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(27, 24);
-            this.label92.TabIndex = 38;
+            this.lblTimeBombCardbb11.Location = new System.Drawing.Point(63, 44);
+            this.lblTimeBombCardbb11.Name = "lblTimeBombCardbb11";
+            this.lblTimeBombCardbb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb11.TabIndex = 38;
             // 
-            // label93
+            // lblTimeBombCardbb1
             // 
-            this.label93.Location = new System.Drawing.Point(4, 44);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(27, 24);
-            this.label93.TabIndex = 28;
+            this.lblTimeBombCardbb1.Location = new System.Drawing.Point(4, 44);
+            this.lblTimeBombCardbb1.Name = "lblTimeBombCardbb1";
+            this.lblTimeBombCardbb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb1.TabIndex = 28;
             // 
-            // label94
+            // lblTimeBombCardpb25
             // 
-            this.label94.Location = new System.Drawing.Point(120, 143);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(27, 24);
-            this.label94.TabIndex = 75;
+            this.lblTimeBombCardpb25.Location = new System.Drawing.Point(120, 143);
+            this.lblTimeBombCardpb25.Name = "lblTimeBombCardpb25";
+            this.lblTimeBombCardpb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb25.TabIndex = 75;
             // 
-            // label95
+            // lblTimeBombCardpb24
             // 
-            this.label95.Location = new System.Drawing.Point(120, 118);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(27, 24);
-            this.label95.TabIndex = 76;
+            this.lblTimeBombCardpb24.Location = new System.Drawing.Point(120, 118);
+            this.lblTimeBombCardpb24.Name = "lblTimeBombCardpb24";
+            this.lblTimeBombCardpb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb24.TabIndex = 76;
             // 
-            // label96
+            // lblTimeBombCardpb23
             // 
-            this.label96.Location = new System.Drawing.Point(120, 94);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(27, 24);
-            this.label96.TabIndex = 77;
+            this.lblTimeBombCardpb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardpb23.Name = "lblTimeBombCardpb23";
+            this.lblTimeBombCardpb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb23.TabIndex = 77;
             // 
-            // label97
+            // lblTimeBombCardpb22
             // 
-            this.label97.Location = new System.Drawing.Point(120, 69);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(27, 24);
-            this.label97.TabIndex = 74;
+            this.lblTimeBombCardpb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardpb22.Name = "lblTimeBombCardpb22";
+            this.lblTimeBombCardpb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb22.TabIndex = 74;
             // 
-            // label98
+            // lblTimeBombCardpb21
             // 
-            this.label98.Location = new System.Drawing.Point(120, 44);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(27, 24);
-            this.label98.TabIndex = 73;
+            this.lblTimeBombCardpb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardpb21.Name = "lblTimeBombCardpb21";
+            this.lblTimeBombCardpb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb21.TabIndex = 73;
             // 
-            // label99
+            // lblTimeBombCardpb20
             // 
-            this.label99.Location = new System.Drawing.Point(91, 143);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(27, 24);
-            this.label99.TabIndex = 70;
+            this.lblTimeBombCardpb20.Location = new System.Drawing.Point(91, 143);
+            this.lblTimeBombCardpb20.Name = "lblTimeBombCardpb20";
+            this.lblTimeBombCardpb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb20.TabIndex = 70;
             // 
-            // label100
+            // lblTimeBombCardpb10
             // 
-            this.label100.Location = new System.Drawing.Point(32, 143);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(27, 24);
-            this.label100.TabIndex = 60;
+            this.lblTimeBombCardpb10.Location = new System.Drawing.Point(32, 143);
+            this.lblTimeBombCardpb10.Name = "lblTimeBombCardpb10";
+            this.lblTimeBombCardpb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb10.TabIndex = 60;
             // 
-            // label101
+            // lblTimeBombCardpb19
             // 
-            this.label101.Location = new System.Drawing.Point(91, 118);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(27, 24);
-            this.label101.TabIndex = 71;
+            this.lblTimeBombCardpb19.Location = new System.Drawing.Point(91, 118);
+            this.lblTimeBombCardpb19.Name = "lblTimeBombCardpb19";
+            this.lblTimeBombCardpb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb19.TabIndex = 71;
             // 
-            // label102
+            // lblTimeBombCardpb9
             // 
-            this.label102.Location = new System.Drawing.Point(32, 118);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(27, 24);
-            this.label102.TabIndex = 61;
+            this.lblTimeBombCardpb9.Location = new System.Drawing.Point(32, 118);
+            this.lblTimeBombCardpb9.Name = "lblTimeBombCardpb9";
+            this.lblTimeBombCardpb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb9.TabIndex = 61;
             // 
-            // label103
+            // lblTimeBombCardpb18
             // 
-            this.label103.Location = new System.Drawing.Point(91, 94);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(27, 24);
-            this.label103.TabIndex = 72;
+            this.lblTimeBombCardpb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardpb18.Name = "lblTimeBombCardpb18";
+            this.lblTimeBombCardpb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb18.TabIndex = 72;
             // 
-            // label104
+            // lblTimeBombCardpb8
             // 
-            this.label104.Location = new System.Drawing.Point(32, 94);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(27, 24);
-            this.label104.TabIndex = 62;
+            this.lblTimeBombCardpb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardpb8.Name = "lblTimeBombCardpb8";
+            this.lblTimeBombCardpb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb8.TabIndex = 62;
             // 
-            // label105
+            // lblTimeBombCardpb17
             // 
-            this.label105.Location = new System.Drawing.Point(91, 69);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(27, 24);
-            this.label105.TabIndex = 69;
+            this.lblTimeBombCardpb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardpb17.Name = "lblTimeBombCardpb17";
+            this.lblTimeBombCardpb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb17.TabIndex = 69;
             // 
-            // label106
+            // lblTimeBombCardpb7
             // 
-            this.label106.Location = new System.Drawing.Point(32, 69);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(27, 24);
-            this.label106.TabIndex = 59;
+            this.lblTimeBombCardpb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardpb7.Name = "lblTimeBombCardpb7";
+            this.lblTimeBombCardpb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb7.TabIndex = 59;
             // 
-            // label107
+            // lblTimeBombCardpb16
             // 
-            this.label107.Location = new System.Drawing.Point(91, 44);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(27, 24);
-            this.label107.TabIndex = 68;
+            this.lblTimeBombCardpb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardpb16.Name = "lblTimeBombCardpb16";
+            this.lblTimeBombCardpb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb16.TabIndex = 68;
             // 
-            // label108
+            // lblTimeBombCardpb6
             // 
-            this.label108.Location = new System.Drawing.Point(32, 44);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(27, 24);
-            this.label108.TabIndex = 58;
+            this.lblTimeBombCardpb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardpb6.Name = "lblTimeBombCardpb6";
+            this.lblTimeBombCardpb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb6.TabIndex = 58;
             // 
-            // label109
+            // lblTimeBombCardpb15
             // 
-            this.label109.Location = new System.Drawing.Point(62, 143);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(27, 24);
-            this.label109.TabIndex = 65;
+            this.lblTimeBombCardpb15.Location = new System.Drawing.Point(62, 143);
+            this.lblTimeBombCardpb15.Name = "lblTimeBombCardpb15";
+            this.lblTimeBombCardpb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb15.TabIndex = 65;
             // 
-            // label110
+            // lblTimeBombCardpb5
             // 
-            this.label110.Location = new System.Drawing.Point(3, 143);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(27, 24);
-            this.label110.TabIndex = 55;
+            this.lblTimeBombCardpb5.Location = new System.Drawing.Point(3, 143);
+            this.lblTimeBombCardpb5.Name = "lblTimeBombCardpb5";
+            this.lblTimeBombCardpb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb5.TabIndex = 55;
             // 
-            // label111
+            // lblTimeBombCardpb14
             // 
-            this.label111.Location = new System.Drawing.Point(62, 118);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(27, 24);
-            this.label111.TabIndex = 66;
+            this.lblTimeBombCardpb14.Location = new System.Drawing.Point(62, 118);
+            this.lblTimeBombCardpb14.Name = "lblTimeBombCardpb14";
+            this.lblTimeBombCardpb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb14.TabIndex = 66;
             // 
-            // label112
+            // lblTimeBombCardpb4
             // 
-            this.label112.Location = new System.Drawing.Point(3, 118);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(27, 24);
-            this.label112.TabIndex = 56;
+            this.lblTimeBombCardpb4.Location = new System.Drawing.Point(3, 118);
+            this.lblTimeBombCardpb4.Name = "lblTimeBombCardpb4";
+            this.lblTimeBombCardpb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb4.TabIndex = 56;
             // 
-            // label113
+            // lblTimeBombCardpb13
             // 
-            this.label113.Location = new System.Drawing.Point(62, 94);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(27, 24);
-            this.label113.TabIndex = 67;
+            this.lblTimeBombCardpb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardpb13.Name = "lblTimeBombCardpb13";
+            this.lblTimeBombCardpb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb13.TabIndex = 67;
             // 
-            // label114
+            // lblTimeBombCardpb3
             // 
-            this.label114.Location = new System.Drawing.Point(3, 94);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(27, 24);
-            this.label114.TabIndex = 57;
+            this.lblTimeBombCardpb3.Location = new System.Drawing.Point(3, 94);
+            this.lblTimeBombCardpb3.Name = "lblTimeBombCardpb3";
+            this.lblTimeBombCardpb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb3.TabIndex = 57;
             // 
-            // label115
+            // lblTimeBombCardpb12
             // 
-            this.label115.Location = new System.Drawing.Point(62, 69);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(27, 24);
-            this.label115.TabIndex = 64;
+            this.lblTimeBombCardpb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardpb12.Name = "lblTimeBombCardpb12";
+            this.lblTimeBombCardpb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb12.TabIndex = 64;
             // 
-            // label116
+            // lblTimeBombCardpb2
             // 
-            this.label116.Location = new System.Drawing.Point(3, 69);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(27, 24);
-            this.label116.TabIndex = 54;
+            this.lblTimeBombCardpb2.Location = new System.Drawing.Point(3, 69);
+            this.lblTimeBombCardpb2.Name = "lblTimeBombCardpb2";
+            this.lblTimeBombCardpb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb2.TabIndex = 54;
             // 
-            // label117
+            // lblTimeBombCardpb11
             // 
-            this.label117.Location = new System.Drawing.Point(62, 44);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(27, 24);
-            this.label117.TabIndex = 63;
+            this.lblTimeBombCardpb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardpb11.Name = "lblTimeBombCardpb11";
+            this.lblTimeBombCardpb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb11.TabIndex = 63;
             // 
-            // label118
+            // lblTimeBombCardpb1
             // 
-            this.label118.Location = new System.Drawing.Point(3, 44);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(27, 24);
-            this.label118.TabIndex = 53;
+            this.lblTimeBombCardpb1.Location = new System.Drawing.Point(3, 44);
+            this.lblTimeBombCardpb1.Name = "lblTimeBombCardpb1";
+            this.lblTimeBombCardpb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb1.TabIndex = 53;
             // 
             // lblTimeBombCardr1
             // 
@@ -5892,7 +5892,7 @@
             // 
             // lblTimeBombCardg25
             // 
-            this.lblTimeBombCardg25.Location = new System.Drawing.Point(118, 137);
+            this.lblTimeBombCardg25.Location = new System.Drawing.Point(119, 137);
             this.lblTimeBombCardg25.Name = "lblTimeBombCardg25";
             this.lblTimeBombCardg25.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg25.TabIndex = 55;
@@ -5901,7 +5901,7 @@
             // 
             // lblTimeBombCardg24
             // 
-            this.lblTimeBombCardg24.Location = new System.Drawing.Point(118, 109);
+            this.lblTimeBombCardg24.Location = new System.Drawing.Point(119, 109);
             this.lblTimeBombCardg24.Name = "lblTimeBombCardg24";
             this.lblTimeBombCardg24.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg24.TabIndex = 54;
@@ -5910,7 +5910,7 @@
             // 
             // lblTimeBombCardg23
             // 
-            this.lblTimeBombCardg23.Location = new System.Drawing.Point(118, 81);
+            this.lblTimeBombCardg23.Location = new System.Drawing.Point(119, 81);
             this.lblTimeBombCardg23.Name = "lblTimeBombCardg23";
             this.lblTimeBombCardg23.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg23.TabIndex = 53;
@@ -5919,7 +5919,7 @@
             // 
             // lblTimeBombCardg22
             // 
-            this.lblTimeBombCardg22.Location = new System.Drawing.Point(118, 54);
+            this.lblTimeBombCardg22.Location = new System.Drawing.Point(119, 54);
             this.lblTimeBombCardg22.Name = "lblTimeBombCardg22";
             this.lblTimeBombCardg22.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg22.TabIndex = 52;
@@ -5928,7 +5928,7 @@
             // 
             // lblTimeBombCardg21
             // 
-            this.lblTimeBombCardg21.Location = new System.Drawing.Point(118, 26);
+            this.lblTimeBombCardg21.Location = new System.Drawing.Point(119, 26);
             this.lblTimeBombCardg21.Name = "lblTimeBombCardg21";
             this.lblTimeBombCardg21.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg21.TabIndex = 51;
@@ -6028,7 +6028,7 @@
             // 
             // lblTimeBombCardg10
             // 
-            this.lblTimeBombCardg10.Location = new System.Drawing.Point(34, 137);
+            this.lblTimeBombCardg10.Location = new System.Drawing.Point(35, 137);
             this.lblTimeBombCardg10.Name = "lblTimeBombCardg10";
             this.lblTimeBombCardg10.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg10.TabIndex = 40;
@@ -6037,7 +6037,7 @@
             // 
             // lblTimeBombCardg9
             // 
-            this.lblTimeBombCardg9.Location = new System.Drawing.Point(34, 109);
+            this.lblTimeBombCardg9.Location = new System.Drawing.Point(35, 109);
             this.lblTimeBombCardg9.Name = "lblTimeBombCardg9";
             this.lblTimeBombCardg9.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg9.TabIndex = 39;
@@ -6046,7 +6046,7 @@
             // 
             // lblTimeBombCardg8
             // 
-            this.lblTimeBombCardg8.Location = new System.Drawing.Point(34, 81);
+            this.lblTimeBombCardg8.Location = new System.Drawing.Point(35, 81);
             this.lblTimeBombCardg8.Name = "lblTimeBombCardg8";
             this.lblTimeBombCardg8.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg8.TabIndex = 38;
@@ -6055,7 +6055,7 @@
             // 
             // lblTimeBombCardg7
             // 
-            this.lblTimeBombCardg7.Location = new System.Drawing.Point(34, 54);
+            this.lblTimeBombCardg7.Location = new System.Drawing.Point(35, 54);
             this.lblTimeBombCardg7.Name = "lblTimeBombCardg7";
             this.lblTimeBombCardg7.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg7.TabIndex = 37;
@@ -6064,7 +6064,7 @@
             // 
             // lblTimeBombCardg6
             // 
-            this.lblTimeBombCardg6.Location = new System.Drawing.Point(34, 26);
+            this.lblTimeBombCardg6.Location = new System.Drawing.Point(35, 26);
             this.lblTimeBombCardg6.Name = "lblTimeBombCardg6";
             this.lblTimeBombCardg6.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg6.TabIndex = 36;
@@ -7106,31 +7106,31 @@
         private System.Windows.Forms.Label lblTimeBombCardb14;
         private System.Windows.Forms.Label lblTimeBombCardb12;
         private System.Windows.Forms.Label lblTimeBombCardb13;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label lblTimeBombCardbb25;
+        private System.Windows.Forms.Label lblTimeBombCardbb1;
+        private System.Windows.Forms.Label lblTimeBombCardbb24;
+        private System.Windows.Forms.Label lblTimeBombCardbb11;
+        private System.Windows.Forms.Label lblTimeBombCardbb23;
+        private System.Windows.Forms.Label lblTimeBombCardbb2;
+        private System.Windows.Forms.Label lblTimeBombCardbb22;
+        private System.Windows.Forms.Label lblTimeBombCardbb12;
+        private System.Windows.Forms.Label lblTimeBombCardbb21;
+        private System.Windows.Forms.Label lblTimeBombCardbb3;
+        private System.Windows.Forms.Label lblTimeBombCardbb20;
+        private System.Windows.Forms.Label lblTimeBombCardbb13;
+        private System.Windows.Forms.Label lblTimeBombCardbb10;
+        private System.Windows.Forms.Label lblTimeBombCardbb4;
+        private System.Windows.Forms.Label lblTimeBombCardbb19;
+        private System.Windows.Forms.Label lblTimeBombCardbb14;
+        private System.Windows.Forms.Label lblTimeBombCardbb9;
+        private System.Windows.Forms.Label lblTimeBombCardbb5;
+        private System.Windows.Forms.Label lblTimeBombCardbb18;
+        private System.Windows.Forms.Label lblTimeBombCardbb15;
+        private System.Windows.Forms.Label lblTimeBombCardbb8;
+        private System.Windows.Forms.Label lblTimeBombCardbb6;
+        private System.Windows.Forms.Label lblTimeBombCardbb17;
+        private System.Windows.Forms.Label lblTimeBombCardbb16;
+        private System.Windows.Forms.Label lblTimeBombCardbb7;
         private System.Windows.Forms.Label lblTimeBombCardg25;
         private System.Windows.Forms.Label lblTimeBombCardg1;
         private System.Windows.Forms.Label lblTimeBombCardg24;
@@ -7156,81 +7156,81 @@
         private System.Windows.Forms.Label lblTimeBombCardg14;
         private System.Windows.Forms.Label lblTimeBombCardg12;
         private System.Windows.Forms.Label lblTimeBombCardg13;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label117;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label115;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblTimeBombCardgb25;
+        private System.Windows.Forms.Label lblTimeBombCardgb1;
+        private System.Windows.Forms.Label lblTimeBombCardgb24;
+        private System.Windows.Forms.Label lblTimeBombCardgb11;
+        private System.Windows.Forms.Label lblTimeBombCardgb23;
+        private System.Windows.Forms.Label lblTimeBombCardgb2;
+        private System.Windows.Forms.Label lblTimeBombCardgb22;
+        private System.Windows.Forms.Label lblTimeBombCardgb12;
+        private System.Windows.Forms.Label lblTimeBombCardgb21;
+        private System.Windows.Forms.Label lblTimeBombCardgb3;
+        private System.Windows.Forms.Label lblTimeBombCardgb20;
+        private System.Windows.Forms.Label lblTimeBombCardgb13;
+        private System.Windows.Forms.Label lblTimeBombCardgb10;
+        private System.Windows.Forms.Label lblTimeBombCardgb4;
+        private System.Windows.Forms.Label lblTimeBombCardgb19;
+        private System.Windows.Forms.Label lblTimeBombCardgb14;
+        private System.Windows.Forms.Label lblTimeBombCardgb9;
+        private System.Windows.Forms.Label lblTimeBombCardgb5;
+        private System.Windows.Forms.Label lblTimeBombCardgb18;
+        private System.Windows.Forms.Label lblTimeBombCardgb15;
+        private System.Windows.Forms.Label lblTimeBombCardgb8;
+        private System.Windows.Forms.Label lblTimeBombCardgb6;
+        private System.Windows.Forms.Label lblTimeBombCardgb17;
+        private System.Windows.Forms.Label lblTimeBombCardgb16;
+        private System.Windows.Forms.Label lblTimeBombCardgb7;
+        private System.Windows.Forms.Label lblTimeBombCardpb25;
+        private System.Windows.Forms.Label lblTimeBombCardpb1;
+        private System.Windows.Forms.Label lblTimeBombCardpb24;
+        private System.Windows.Forms.Label lblTimeBombCardpb11;
+        private System.Windows.Forms.Label lblTimeBombCardpb23;
+        private System.Windows.Forms.Label lblTimeBombCardpb2;
+        private System.Windows.Forms.Label lblTimeBombCardpb22;
+        private System.Windows.Forms.Label lblTimeBombCardpb12;
+        private System.Windows.Forms.Label lblTimeBombCardpb21;
+        private System.Windows.Forms.Label lblTimeBombCardpb3;
+        private System.Windows.Forms.Label lblTimeBombCardpb20;
+        private System.Windows.Forms.Label lblTimeBombCardpb13;
+        private System.Windows.Forms.Label lblTimeBombCardpb10;
+        private System.Windows.Forms.Label lblTimeBombCardpb4;
+        private System.Windows.Forms.Label lblTimeBombCardpb19;
+        private System.Windows.Forms.Label lblTimeBombCardpb14;
+        private System.Windows.Forms.Label lblTimeBombCardpb9;
+        private System.Windows.Forms.Label lblTimeBombCardpb5;
+        private System.Windows.Forms.Label lblTimeBombCardpb18;
+        private System.Windows.Forms.Label lblTimeBombCardpb15;
+        private System.Windows.Forms.Label lblTimeBombCardpb8;
+        private System.Windows.Forms.Label lblTimeBombCardpb6;
+        private System.Windows.Forms.Label lblTimeBombCardpb17;
+        private System.Windows.Forms.Label lblTimeBombCardpb16;
+        private System.Windows.Forms.Label lblTimeBombCardpb7;
+        private System.Windows.Forms.Label lblTimeBombCardrb25;
+        private System.Windows.Forms.Label lblTimeBombCardrb24;
+        private System.Windows.Forms.Label lblTimeBombCardrb23;
+        private System.Windows.Forms.Label lblTimeBombCardrb22;
+        private System.Windows.Forms.Label lblTimeBombCardrb21;
+        private System.Windows.Forms.Label lblTimeBombCardrb20;
+        private System.Windows.Forms.Label lblTimeBombCardrb10;
+        private System.Windows.Forms.Label lblTimeBombCardrb19;
+        private System.Windows.Forms.Label lblTimeBombCardrb9;
+        private System.Windows.Forms.Label lblTimeBombCardrb18;
+        private System.Windows.Forms.Label lblTimeBombCardrb8;
+        private System.Windows.Forms.Label lblTimeBombCardrb17;
+        private System.Windows.Forms.Label lblTimeBombCardrb7;
+        private System.Windows.Forms.Label lblTimeBombCardrb16;
+        private System.Windows.Forms.Label lblTimeBombCardrb6;
+        private System.Windows.Forms.Label lblTimeBombCardrb15;
+        private System.Windows.Forms.Label lblTimeBombCardrb5;
+        private System.Windows.Forms.Label lblTimeBombCardrb14;
+        private System.Windows.Forms.Label lblTimeBombCardrb4;
+        private System.Windows.Forms.Label lblTimeBombCardrb13;
+        private System.Windows.Forms.Label lblTimeBombCardrb3;
+        private System.Windows.Forms.Label lblTimeBombCardrb12;
+        private System.Windows.Forms.Label lblTimeBombCardrb2;
+        private System.Windows.Forms.Label lblTimeBombCardrb11;
+        private System.Windows.Forms.Label lblTimeBombCardrb1;
         private System.Windows.Forms.Label lblTimeBombCardr25;
         private System.Windows.Forms.Label lblTimeBombCardr24;
         private System.Windows.Forms.Label lblTimeBombCardr23;

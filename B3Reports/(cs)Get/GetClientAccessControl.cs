@@ -52,6 +52,7 @@ namespace GameTech.B3Reports
                         ClientMapColumns_.IPAddress = reader.GetString(2);
                         ClientMapColumns_.ClientType = reader.GetString(3);
                         string TempClientEnable = reader.GetString(4);
+
                         if (TempClientEnable == "T")
                         {
                             ClientMapColumns_.ClientEnabled = true;
