@@ -14,7 +14,7 @@ namespace GameTech.B3Reports
 {    
     class GetInfo
     {
-        #region VARIABLES(static)
+        #region VARIABLES
 
         private DateTime? mDateTimePlay;
         private string mB4Games;

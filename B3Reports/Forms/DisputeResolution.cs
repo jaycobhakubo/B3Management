@@ -1583,6 +1583,8 @@ namespace GameTech.B3Reports.Forms
                                                 }
         }
 
+        private DateTime? SaveDate;
+
         private void GetInfoALL()
         {
             if (groupBox1.Visible == false)//grpInfo
@@ -1616,7 +1618,12 @@ namespace GameTech.B3Reports.Forms
 
             mGetInfo = new GetInfo(AccountNumber, PlayTime, Status, SelectedB4Game, GameNumStart, GameNumEnd, IsGameNumber);
 
-            if (PlayTime != mGetInfo.DateTimePlay)
+            if (mGetInfo.DateTimePlay != null)
+            {
+                SaveDate = mGetInfo.DateTimePlay;
+            }
+
+            if (PlayTime != SaveDate)
             {
                 PlayTime = mGetInfo.DateTimePlay;
                 if (lblMessageLastGameReach.Visible != false)
