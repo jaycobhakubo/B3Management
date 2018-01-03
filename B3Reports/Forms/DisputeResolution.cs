@@ -652,9 +652,10 @@ namespace GameTech.B3Reports.Forms
             {
                 x.BackColor = Color.LimeGreen;
             }
-            else { x.BackColor = Color.White; }
-
-
+            else 
+            {
+                x.BackColor = Color.Transparent;
+            }
 
 
             if ((SelectedB4Game == "Spirit76" && SpiritBR == true) && checkBox1.Checked == true)
@@ -665,8 +666,6 @@ namespace GameTech.B3Reports.Forms
                     x.BackColor = Color.LimeGreen;
                 }
             }
-
-
         }
 
 
@@ -1065,13 +1064,237 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
+
+        private void LoadCardTimeBomb(int nCard)
+        {
+            string NCardDubbed = ",";
+            if (nCard == 1)
+            {
+
+                lblTimeBombCardr1.Text = GetCardNumber.Card_Num_1.ToString(); if (lblTimeBombCardr1.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "1,"; }
+                lblTimeBombCardr2.Text = GetCardNumber.Card_Num_2.ToString(); if (lblTimeBombCardr2.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "2,"; }
+                lblTimeBombCardr3.Text = GetCardNumber.Card_Num_3.ToString(); if (lblTimeBombCardr3.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "3,"; }
+                lblTimeBombCardr4.Text = GetCardNumber.Card_Num_4.ToString(); if (lblTimeBombCardr4.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "4,"; }
+                lblTimeBombCardr5.Text = GetCardNumber.Card_Num_5.ToString(); if (lblTimeBombCardr5.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "5,"; }
+                lblTimeBombCardr6.Text = GetCardNumber.Card_Num_6.ToString(); if (lblTimeBombCardr6.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "6,"; }
+                lblTimeBombCardr7.Text = GetCardNumber.Card_Num_7.ToString(); if (lblTimeBombCardr7.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "7,"; }
+                lblTimeBombCardr8.Text = GetCardNumber.Card_Num_8.ToString(); if (lblTimeBombCardr8.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "8,"; }
+                lblTimeBombCardr9.Text = GetCardNumber.Card_Num_9.ToString(); if (lblTimeBombCardr9.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "9,"; }
+                lblTimeBombCardr10.Text = GetCardNumber.Card_Num_10.ToString(); if (lblTimeBombCardr10.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "10,"; }
+                lblTimeBombCardr11.Text = GetCardNumber.Card_Num_11.ToString(); if (lblTimeBombCardr11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
+                lblTimeBombCardr12.Text = GetCardNumber.Card_Num_12.ToString(); if (lblTimeBombCardr12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
+                lblTimeBombCardr13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString(); t
+               // lblTimeBombCardr13.BackColor = Color.LimeGreen; 
+                NCardDubbed = NCardDubbed + "13,";
+                lblTimeBombCardr14.Text = GetCardNumber.Card_Num_14.ToString(); if (lblTimeBombCardr14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
+                lblTimeBombCardr15.Text = GetCardNumber.Card_Num_15.ToString(); if (lblTimeBombCardr15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
+                lblTimeBombCardr16.Text = GetCardNumber.Card_Num_16.ToString(); if (lblTimeBombCardr16.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "16,"; }
+                lblTimeBombCardr17.Text = GetCardNumber.Card_Num_17.ToString(); if (lblTimeBombCardr17.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "17,"; }
+                lblTimeBombCardr18.Text = GetCardNumber.Card_Num_18.ToString(); if (lblTimeBombCardr18.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "18,"; }
+                lblTimeBombCardr19.Text = GetCardNumber.Card_Num_19.ToString(); if (lblTimeBombCardr19.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "19,"; }
+                lblTimeBombCardr20.Text = GetCardNumber.Card_Num_20.ToString(); if (lblTimeBombCardr20.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "20,"; }
+                lblTimeBombCardr21.Text = GetCardNumber.Card_Num_21.ToString(); if (lblTimeBombCardr21.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "21,"; }
+                lblTimeBombCardr22.Text = GetCardNumber.Card_Num_22.ToString(); if (lblTimeBombCardr22.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "22,"; }
+                lblTimeBombCardr23.Text = GetCardNumber.Card_Num_23.ToString(); if (lblTimeBombCardr23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
+                lblTimeBombCardr24.Text = GetCardNumber.Card_Num_24.ToString(); if (lblTimeBombCardr24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
+                lblTimeBombCardr25.Text = GetCardNumber.Card_Num_25.ToString(); if (lblTimeBombCardr25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
+
+
+            }
+            else
+            if (nCard == 2)
+            {
+                NCardDubbed = ",";
+                lblTimeBombCardp1.Text = GetCardNumber.Card_Num_1.ToString();
+                lblTimeBombCardp2.Text = GetCardNumber.Card_Num_2.ToString();
+                lblTimeBombCardp3.Text = GetCardNumber.Card_Num_3.ToString();
+                lblTimeBombCardp4.Text = GetCardNumber.Card_Num_4.ToString();
+                lblTimeBombCardp5.Text = GetCardNumber.Card_Num_5.ToString();
+                lblTimeBombCardp6.Text = GetCardNumber.Card_Num_6.ToString();
+                lblTimeBombCardp7.Text = GetCardNumber.Card_Num_7.ToString();
+                lblTimeBombCardp8.Text = GetCardNumber.Card_Num_8.ToString();
+                lblTimeBombCardp9.Text = GetCardNumber.Card_Num_9.ToString();
+                lblTimeBombCardp10.Text = GetCardNumber.Card_Num_10.ToString();
+                lblTimeBombCardp11.Text = GetCardNumber.Card_Num_11.ToString();
+                lblTimeBombCardp12.Text = GetCardNumber.Card_Num_12.ToString();
+                lblTimeBombCardp13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString();
+                //lblTimeBombCardp13.BackColor = Color.LimeGreen;
+                lblTimeBombCardp14.Text = GetCardNumber.Card_Num_14.ToString();
+                lblTimeBombCardp15.Text = GetCardNumber.Card_Num_15.ToString();
+                lblTimeBombCardp16.Text = GetCardNumber.Card_Num_16.ToString();
+                lblTimeBombCardp17.Text = GetCardNumber.Card_Num_17.ToString();
+                lblTimeBombCardp18.Text = GetCardNumber.Card_Num_18.ToString();
+                lblTimeBombCardp19.Text = GetCardNumber.Card_Num_19.ToString();
+                lblTimeBombCardp20.Text = GetCardNumber.Card_Num_20.ToString();
+                lblTimeBombCardp21.Text = GetCardNumber.Card_Num_21.ToString();
+                lblTimeBombCardp22.Text = GetCardNumber.Card_Num_22.ToString();
+                lblTimeBombCardp23.Text = GetCardNumber.Card_Num_23.ToString();
+                lblTimeBombCardp24.Text = GetCardNumber.Card_Num_24.ToString();
+                lblTimeBombCardp25.Text = GetCardNumber.Card_Num_25.ToString();
+
+
+                if (lblTimeBombCardp1.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "1,"; }
+                if (lblTimeBombCardp2.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "2,"; }
+                if (lblTimeBombCardp3.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "3,"; }
+                if (lblTimeBombCardp4.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "4,"; }
+                if (lblTimeBombCardp5.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "5,"; }
+                if (lblTimeBombCardp6.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "6,"; }
+                if (lblTimeBombCardp7.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "7,"; }
+                if (lblTimeBombCardp8.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "8,"; }
+                if (lblTimeBombCardp9.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "9,"; }
+                if (lblTimeBombCardp10.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "10,"; }
+                if (lblTimeBombCardp11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
+                if (lblTimeBombCardp12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
+                lblTimeBombCardp13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString(); t
+                //lblTimeBombCardp13.BackColor = Color.LimeGreen; 
+                NCardDubbed = NCardDubbed + "13,";
+                if (lblTimeBombCardp14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
+                if (lblTimeBombCardp15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
+                if (lblTimeBombCardp16.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "16,"; }
+                if (lblTimeBombCardp17.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "17,"; }
+                if (lblTimeBombCardp18.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "18,"; }
+                if (lblTimeBombCardp19.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "19,"; }
+                if (lblTimeBombCardp20.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "20,"; }
+                if (lblTimeBombCardp21.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "21,"; }
+                if (lblTimeBombCardp22.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "22,"; }
+                if (lblTimeBombCardp23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
+                if (lblTimeBombCardp24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
+                if (lblTimeBombCardp25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
+
+
+
+            }
+            else
+            if (nCard == 3)
+            {
+                NCardDubbed = ",";    
+                lblTimeBombCardg1.Text = GetCardNumber.Card_Num_1.ToString();
+                lblTimeBombCardg2.Text = GetCardNumber.Card_Num_2.ToString();
+                lblTimeBombCardg3.Text = GetCardNumber.Card_Num_3.ToString();
+                lblTimeBombCardg4.Text = GetCardNumber.Card_Num_4.ToString();
+                lblTimeBombCardg5.Text = GetCardNumber.Card_Num_5.ToString();
+                lblTimeBombCardg6.Text = GetCardNumber.Card_Num_6.ToString();
+                lblTimeBombCardg7.Text = GetCardNumber.Card_Num_7.ToString();
+                lblTimeBombCardg8.Text = GetCardNumber.Card_Num_8.ToString();
+                lblTimeBombCardg9.Text = GetCardNumber.Card_Num_9.ToString();
+                lblTimeBombCardg10.Text = GetCardNumber.Card_Num_10.ToString();
+                lblTimeBombCardg11.Text = GetCardNumber.Card_Num_11.ToString();
+                lblTimeBombCardg12.Text = GetCardNumber.Card_Num_12.ToString();
+                lblTimeBombCardg13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString();
+                //lblTimeBombCardg13.BackColor = Color.LimeGreen;
+                lblTimeBombCardg14.Text = GetCardNumber.Card_Num_14.ToString();
+                lblTimeBombCardg15.Text = GetCardNumber.Card_Num_15.ToString();
+                lblTimeBombCardg16.Text = GetCardNumber.Card_Num_16.ToString();
+                lblTimeBombCardg17.Text = GetCardNumber.Card_Num_17.ToString();
+                lblTimeBombCardg18.Text = GetCardNumber.Card_Num_18.ToString();
+                lblTimeBombCardg19.Text = GetCardNumber.Card_Num_19.ToString();
+                lblTimeBombCardg20.Text = GetCardNumber.Card_Num_20.ToString();
+                lblTimeBombCardg21.Text = GetCardNumber.Card_Num_21.ToString();
+                lblTimeBombCardg22.Text = GetCardNumber.Card_Num_22.ToString();
+                lblTimeBombCardg23.Text = GetCardNumber.Card_Num_23.ToString();
+                lblTimeBombCardg24.Text = GetCardNumber.Card_Num_24.ToString();
+                lblTimeBombCardg25.Text = GetCardNumber.Card_Num_25.ToString();
+
+                if (lblTimeBombCardg1.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "1,"; }
+                if (lblTimeBombCardg2.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "2,"; }
+                if (lblTimeBombCardg3.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "3,"; }
+                if (lblTimeBombCardg4.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "4,"; }
+                if (lblTimeBombCardg5.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "5,"; }
+                if (lblTimeBombCardg6.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "6,"; }
+                if (lblTimeBombCardg7.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "7,"; }
+                if (lblTimeBombCardg8.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "8,"; }
+                if (lblTimeBombCardg9.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "9,"; }
+                if (lblTimeBombCardg10.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "10,"; }
+                if (lblTimeBombCardg11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
+                if (lblTimeBombCardg12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
+                lblTimeBombCardg13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString(); t
+                //lblTimeBombCardg13.BackColor = Color.LimeGreen; 
+                NCardDubbed = NCardDubbed + "13,";
+                if (lblTimeBombCardg14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
+                if (lblTimeBombCardg15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
+                if (lblTimeBombCardg16.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "16,"; }
+                if (lblTimeBombCardg17.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "17,"; }
+                if (lblTimeBombCardg18.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "18,"; }
+                if (lblTimeBombCardg19.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "19,"; }
+                if (lblTimeBombCardg20.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "20,"; }
+                if (lblTimeBombCardg21.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "21,"; }
+                if (lblTimeBombCardg22.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "22,"; }
+                if (lblTimeBombCardg23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
+                if (lblTimeBombCardg24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
+                if (lblTimeBombCardg25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
+
+
+
+            }
+            else
+            if (nCard == 4)
+            {
+                NCardDubbed = ",";
+                lblTimeBombCardb1.Text = GetCardNumber.Card_Num_1.ToString();
+                lblTimeBombCardb2.Text = GetCardNumber.Card_Num_2.ToString();
+                lblTimeBombCardb3.Text = GetCardNumber.Card_Num_3.ToString();
+                lblTimeBombCardb4.Text = GetCardNumber.Card_Num_4.ToString();
+                lblTimeBombCardb5.Text = GetCardNumber.Card_Num_5.ToString();
+                lblTimeBombCardb6.Text = GetCardNumber.Card_Num_6.ToString();
+                lblTimeBombCardb7.Text = GetCardNumber.Card_Num_7.ToString();
+                lblTimeBombCardb8.Text = GetCardNumber.Card_Num_8.ToString();
+                lblTimeBombCardb9.Text = GetCardNumber.Card_Num_9.ToString();
+                lblTimeBombCardb10.Text = GetCardNumber.Card_Num_10.ToString();
+                lblTimeBombCardb11.Text = GetCardNumber.Card_Num_11.ToString();
+                lblTimeBombCardb12.Text = GetCardNumber.Card_Num_12.ToString();
+                lblTimeBombCardb13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString();
+                //lblTimeBombCardb13.BackColor = Color.LimeGreen;
+                lblTimeBombCardb14.Text = GetCardNumber.Card_Num_14.ToString();
+                lblTimeBombCardb15.Text = GetCardNumber.Card_Num_15.ToString();
+                lblTimeBombCardb16.Text = GetCardNumber.Card_Num_16.ToString();
+                lblTimeBombCardb17.Text = GetCardNumber.Card_Num_17.ToString();
+                lblTimeBombCardb18.Text = GetCardNumber.Card_Num_18.ToString();
+                lblTimeBombCardb19.Text = GetCardNumber.Card_Num_19.ToString();
+                lblTimeBombCardb20.Text = GetCardNumber.Card_Num_20.ToString();
+                lblTimeBombCardb21.Text = GetCardNumber.Card_Num_21.ToString();
+                lblTimeBombCardb22.Text = GetCardNumber.Card_Num_22.ToString();
+                lblTimeBombCardb23.Text = GetCardNumber.Card_Num_23.ToString();
+                lblTimeBombCardb24.Text = GetCardNumber.Card_Num_24.ToString();
+                lblTimeBombCardb25.Text = GetCardNumber.Card_Num_25.ToString();
+
+                if (lblTimeBombCardb1.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "1,"; }
+                if (lblTimeBombCardb2.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "2,"; }
+                if (lblTimeBombCardb3.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "3,"; }
+                if (lblTimeBombCardb4.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "4,"; }
+                if (lblTimeBombCardb5.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "5,"; }
+                if (lblTimeBombCardb6.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "6,"; }
+                if (lblTimeBombCardb7.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "7,"; }
+                if (lblTimeBombCardb8.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "8,"; }
+                if (lblTimeBombCardb9.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "9,"; }
+                if (lblTimeBombCardb10.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "10,"; }
+                if (lblTimeBombCardb11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
+                if (lblTimeBombCardb12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
+                lblTimeBombCardb13.Text = "Free"; //GetCardNumber.Card_Num_13.ToString(); t
+                //lblTimeBombCardb13.BackColor = Color.LimeGreen; 
+                NCardDubbed = NCardDubbed + "13,";
+                if (lblTimeBombCardb14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
+                if (lblTimeBombCardb15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
+                if (lblTimeBombCardb16.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "16,"; }
+                if (lblTimeBombCardb17.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "17,"; }
+                if (lblTimeBombCardb18.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "18,"; }
+                if (lblTimeBombCardb19.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "19,"; }
+                if (lblTimeBombCardb20.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "20,"; }
+                if (lblTimeBombCardb21.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "21,"; }
+                if (lblTimeBombCardb22.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "22,"; }
+                if (lblTimeBombCardb23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
+                if (lblTimeBombCardb24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
+                if (lblTimeBombCardb25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
+
+            }
+        }
+
+
         private void LoadCard(int nCard)
         {
 
             string NCardDubbed = ",";
             if (nCard == 1)
             {
-
                 panel5.Visible = true;
                 lblBingoCard1.Text = GetCardNumber.Card_Num_1.ToString(); if (lblBingoCard1.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "1,"; }
                 lblBingoCard2.Text = GetCardNumber.Card_Num_2.ToString(); if (lblBingoCard2.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "2,"; }
@@ -1099,17 +1322,6 @@ namespace GameTech.B3Reports.Forms
                 lblBingoCard23.Text = GetCardNumber.Card_Num_23.ToString(); if (lblBingoCard23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
                 lblBingoCard24.Text = GetCardNumber.Card_Num_24.ToString(); if (lblBingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                 lblBingoCard25.Text = GetCardNumber.Card_Num_25.ToString(); if (lblBingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
-
-                ////SAVE
-                //check if this card won
-                //if (SelectedB4Game == "MayaMoney")
-                //{
-                //    bool mmp = IWC.IWC_(NCardDubbed);
-                //    if (mmp == true)
-                //    {
-                //        MayaMoneyPattern = MayaMoneyPattern + "1";
-                //    }
-                //}
             }
             else
                 if (nCard == 2)
@@ -1171,17 +1383,6 @@ namespace GameTech.B3Reports.Forms
                     if (lbl2BingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                     if (lbl2BingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
 
-
-                    //SAVE
-                    //if (SelectedB4Game == "MayaMoney" && MayaMoneyPattern == "1")
-                    //{
-                    //    bool mmp = IWC.IWC_(NCardDubbed);
-                    //    if (mmp == true)
-                    //    {
-                    //        MayaMoneyPattern = MayaMoneyPattern + "2";
-                    //    }
-                    //}
-
                 }
                 else
                     if (nCard == 3)
@@ -1241,16 +1442,7 @@ namespace GameTech.B3Reports.Forms
                         if (lbl3BingoCard23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
                         if (lbl3BingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                         if (lbl3BingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
-
-                        //SAVE
-                        //if (SelectedB4Game == "MayaMoney" && MayaMoneyPattern == "12")
-                        //{
-                        //    bool mmp = IWC.IWC_(NCardDubbed);
-                        //    if (mmp == true)
-                        //    {
-                        //        MayaMoneyPattern = MayaMoneyPattern + "3";
-                        //    }
-                        //}
+                      
                     }
                     else
                         if (nCard == 4)
@@ -1310,16 +1502,7 @@ namespace GameTech.B3Reports.Forms
                             if (lbl4BingoCard23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
                             if (lbl4BingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                             if (lbl4BingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
-
-                            //SAVE
-                            //if (SelectedB4Game == "MayaMoney" && MayaMoneyPattern == "123")
-                            //{
-                            //    bool mmp = IWC.IWC_(NCardDubbed);
-                            //    if (mmp == true)
-                            //    {
-                            //        MayaMoneyPattern = MayaMoneyPattern + "4";
-                            //    }
-                            //}
+                         
                         }
                         else
                             if (nCard == 5)
@@ -1379,17 +1562,7 @@ namespace GameTech.B3Reports.Forms
                                 if (lbl5BingoCard23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
                                 if (lbl5BingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                                 if (lbl5BingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
-
-                                //SAVE
-                                //if (SelectedB4Game == "MayaMoney" && MayaMoneyPattern == "1234")
-                                //{
-                                //    bool mmp = IWC.IWC_(NCardDubbed);
-                                //    if (mmp == true)
-                                //    {
-                                //        MayaMoneyPattern = MayaMoneyPattern + "5";
-                                //    }
-                                //}
-
+                        
                             }
                             else
                                 if (nCard == 6)
@@ -1449,16 +1622,6 @@ namespace GameTech.B3Reports.Forms
                                     if (lbl6BingoCard23.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "23,"; }
                                     if (lbl6BingoCard24.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "24,"; }
                                     if (lbl6BingoCard25.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "25,"; }
-
-                                    //SAVE
-                                    //if (SelectedB4Game == "MayaMoney" && MayaMoneyPattern == "12345")
-                                    //{
-                                    //    bool mmp = IWC.IWC_(NCardDubbed);
-                                    //    if (mmp == true)
-                                    //    {
-                                    //        MayaMoneyPattern = MayaMoneyPattern + "6";
-                                    //    }
-                                    //}
                                 }
                                 else
                                     if (nCard == 7)
@@ -1919,7 +2082,7 @@ namespace GameTech.B3Reports.Forms
                         countActiveCard = countActiveCard + 1;
 
                         GetCardNumber gcn = new GetCardNumber(TempCardNumber);
-                        LoadCard(CountUpToSix);
+                    LoadCardTimeBomb(CountUpToSix);//knc
 
                         if (CountUpToSix == 1)
                         {
@@ -1937,15 +2100,7 @@ namespace GameTech.B3Reports.Forms
                         {
                             lblSerialN4.Text = TempCardNumber.ToString();
                         }
-                        //else if (CountUpToSix == 5)
-                        //{
-                        //    lblSerialN5.Text = TempCardNumber.ToString();
-                        //}
-                        //else if (CountUpToSix == 6)
-                        //{
-                        //    lblSerialN6.Text = TempCardNumber.ToString();
-                        //}
-
+                      
                     }//if its false let us hide the bingo cards
                     else
                     {
@@ -1967,14 +2122,6 @@ namespace GameTech.B3Reports.Forms
                         {
                             lblSerialN4.Text = string.Empty;
                         }
-                        //else if (CountUpToSix == 5)
-                        //{
-                        //    lblSerialN5.Text = string.Empty;
-                        //}
-                        //else if (CountUpToSix == 6)
-                        //{
-                        //    lblSerialN6.Text = string.Empty;
-                        //}
                     }
 
                     TempCardNumber++;
