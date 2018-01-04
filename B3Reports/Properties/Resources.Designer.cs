@@ -243,6 +243,26 @@ namespace GameTech.B3Reports.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BlueCardExploded {
+            get {
+                object obj = ResourceManager.GetObject("BlueCardExploded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BonusCardExploded {
+            get {
+                object obj = ResourceManager.GetObject("BonusCardExploded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BottomLeftGreenBonusCard {
             get {
                 object obj = ResourceManager.GetObject("BottomLeftGreenBonusCard", resourceCulture);
@@ -603,6 +623,16 @@ namespace GameTech.B3Reports.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GreenCardExploded {
+            get {
+                object obj = ResourceManager.GetObject("GreenCardExploded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inactive {
             get {
                 object obj = ResourceManager.GetObject("Inactive", resourceCulture);
@@ -766,6 +796,26 @@ namespace GameTech.B3Reports.Properties {
         internal static System.Drawing.Bitmap payout_report2 {
             get {
                 object obj = ResourceManager.GetObject("payout_report2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PurpleCardExploded {
+            get {
+                object obj = ResourceManager.GetObject("PurpleCardExploded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RedCardExploded {
+            get {
+                object obj = ResourceManager.GetObject("RedCardExploded", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -980,6 +1030,16 @@ namespace GameTech.B3Reports.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap UpperLeftFlashTNTCard {
+            get {
+                object obj = ResourceManager.GetObject("UpperLeftFlashTNTCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UpperLeftRedBonusCard {
             get {
                 object obj = ResourceManager.GetObject("UpperLeftRedBonusCard", resourceCulture);
@@ -993,16 +1053,6 @@ namespace GameTech.B3Reports.Properties {
         internal static System.Drawing.Bitmap UpperLeftRedCard {
             get {
                 object obj = ResourceManager.GetObject("UpperLeftRedCard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap UpperLeftRedCard1 {
-            get {
-                object obj = ResourceManager.GetObject("UpperLeftRedCard1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

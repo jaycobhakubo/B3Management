@@ -252,6 +252,17 @@
     <None Include="Resources\BottomLeftGreenBonusCard.png" />
     <None Include="Resources\BottomRightBlueCard.png" />
     <None Include="Resources\BottomRightBlueBonusCard.png" />
+    <None Include="Resources\RedCardExploded.png" />
+    <None Include="Resources\RedCardExploded1.png" />
+    <None Include="Resources\PurpleCardExploded.png" />
+    <None Include="Resources\GreenCardExploded.png" />
+    <None Include="Resources\BlueCardExploded.png" />
+    <None Include="Resources\BonusCardExploded.png" />
+    <None Include="Resources\BonusCardExploded1.png" />
+    <None Include="Resources\BonusCardExploded2.png" />
+    <None Include="Resources\BonusCardExploded3.png" />
+    <None Include="Resources\BottomLeftGreenCard1.png" />
+    <None Include="Resources\BottomRightBlueCard1.png" />
     <Content Include="Resources\strips\session summary down.png" />
     <Content Include="Resources\strips\session summary down2.png" />
     <Content Include="Resources\strips\session summary.png" />
@@ -483,6 +494,11 @@
     <Compile Include="%28cs%29Other\WindowsDefaultLocation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reports\AccountHistory.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -675,14 +691,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Reports\AccountHistory.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>AccountHistory.cs</LastGenOutput>
@@ -892,6 +903,14 @@
     <None Include="Resources\UpperRightPurpleCard.png" />
     <None Include="Resources\UpperRightPurpleBonusCard.png" />
     <None Include="Resources\UpperLeftRedBonusCard.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard1.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard2.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard3.png" />
+    <None Include="Resources\UpperLeftRedCard2.png" />
+    <None Include="Resources\UpperRightPurpleCard1.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard4.png" />
+    <None Include="Resources\UpperLeftFlashTNTCard5.png" />
     <Content Include="Resources\ViewReportButton_Strip.png" />
   </ItemGroup>
   <ItemGroup>
