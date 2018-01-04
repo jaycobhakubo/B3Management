@@ -1185,7 +1185,7 @@
             // 
             // pnlTimeBombBlue
             // 
-            this.pnlTimeBombBlue.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTimeBombBlue.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombBlue.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
             this.pnlTimeBombBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb25);
@@ -1220,6 +1220,7 @@
             // 
             // lblTimeBombCardbb25
             // 
+            this.lblTimeBombCardbb25.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb25.Location = new System.Drawing.Point(121, 144);
             this.lblTimeBombCardbb25.Name = "lblTimeBombCardbb25";
             this.lblTimeBombCardbb25.Size = new System.Drawing.Size(27, 24);
@@ -1228,6 +1229,7 @@
             // 
             // lblTimeBombCardbb1
             // 
+            this.lblTimeBombCardbb1.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb1.Location = new System.Drawing.Point(4, 44);
             this.lblTimeBombCardbb1.Name = "lblTimeBombCardbb1";
             this.lblTimeBombCardbb1.Size = new System.Drawing.Size(27, 24);
@@ -1236,6 +1238,7 @@
             // 
             // lblTimeBombCardbb24
             // 
+            this.lblTimeBombCardbb24.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb24.Location = new System.Drawing.Point(121, 119);
             this.lblTimeBombCardbb24.Name = "lblTimeBombCardbb24";
             this.lblTimeBombCardbb24.Size = new System.Drawing.Size(27, 24);
@@ -1244,6 +1247,7 @@
             // 
             // lblTimeBombCardbb11
             // 
+            this.lblTimeBombCardbb11.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb11.Location = new System.Drawing.Point(63, 44);
             this.lblTimeBombCardbb11.Name = "lblTimeBombCardbb11";
             this.lblTimeBombCardbb11.Size = new System.Drawing.Size(27, 24);
@@ -1252,6 +1256,7 @@
             // 
             // lblTimeBombCardbb23
             // 
+            this.lblTimeBombCardbb23.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb23.Location = new System.Drawing.Point(121, 94);
             this.lblTimeBombCardbb23.Name = "lblTimeBombCardbb23";
             this.lblTimeBombCardbb23.Size = new System.Drawing.Size(27, 24);
@@ -1260,6 +1265,7 @@
             // 
             // lblTimeBombCardbb2
             // 
+            this.lblTimeBombCardbb2.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb2.Location = new System.Drawing.Point(4, 69);
             this.lblTimeBombCardbb2.Name = "lblTimeBombCardbb2";
             this.lblTimeBombCardbb2.Size = new System.Drawing.Size(27, 24);
@@ -1268,6 +1274,7 @@
             // 
             // lblTimeBombCardbb22
             // 
+            this.lblTimeBombCardbb22.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb22.Location = new System.Drawing.Point(121, 69);
             this.lblTimeBombCardbb22.Name = "lblTimeBombCardbb22";
             this.lblTimeBombCardbb22.Size = new System.Drawing.Size(27, 24);
@@ -1276,6 +1283,7 @@
             // 
             // lblTimeBombCardbb12
             // 
+            this.lblTimeBombCardbb12.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb12.Location = new System.Drawing.Point(63, 69);
             this.lblTimeBombCardbb12.Name = "lblTimeBombCardbb12";
             this.lblTimeBombCardbb12.Size = new System.Drawing.Size(27, 24);
@@ -1284,6 +1292,7 @@
             // 
             // lblTimeBombCardbb21
             // 
+            this.lblTimeBombCardbb21.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb21.Location = new System.Drawing.Point(121, 44);
             this.lblTimeBombCardbb21.Name = "lblTimeBombCardbb21";
             this.lblTimeBombCardbb21.Size = new System.Drawing.Size(27, 24);
@@ -1292,6 +1301,7 @@
             // 
             // lblTimeBombCardbb3
             // 
+            this.lblTimeBombCardbb3.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb3.Location = new System.Drawing.Point(4, 94);
             this.lblTimeBombCardbb3.Name = "lblTimeBombCardbb3";
             this.lblTimeBombCardbb3.Size = new System.Drawing.Size(27, 24);
@@ -1300,6 +1310,7 @@
             // 
             // lblTimeBombCardbb20
             // 
+            this.lblTimeBombCardbb20.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb20.Location = new System.Drawing.Point(92, 144);
             this.lblTimeBombCardbb20.Name = "lblTimeBombCardbb20";
             this.lblTimeBombCardbb20.Size = new System.Drawing.Size(27, 24);
@@ -1308,6 +1319,7 @@
             // 
             // lblTimeBombCardbb13
             // 
+            this.lblTimeBombCardbb13.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb13.Location = new System.Drawing.Point(63, 94);
             this.lblTimeBombCardbb13.Name = "lblTimeBombCardbb13";
             this.lblTimeBombCardbb13.Size = new System.Drawing.Size(27, 24);
@@ -1316,6 +1328,7 @@
             // 
             // lblTimeBombCardbb10
             // 
+            this.lblTimeBombCardbb10.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb10.Location = new System.Drawing.Point(33, 144);
             this.lblTimeBombCardbb10.Name = "lblTimeBombCardbb10";
             this.lblTimeBombCardbb10.Size = new System.Drawing.Size(27, 24);
@@ -1324,6 +1337,7 @@
             // 
             // lblTimeBombCardbb4
             // 
+            this.lblTimeBombCardbb4.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb4.Location = new System.Drawing.Point(4, 119);
             this.lblTimeBombCardbb4.Name = "lblTimeBombCardbb4";
             this.lblTimeBombCardbb4.Size = new System.Drawing.Size(27, 24);
@@ -1332,6 +1346,7 @@
             // 
             // lblTimeBombCardbb19
             // 
+            this.lblTimeBombCardbb19.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb19.Location = new System.Drawing.Point(92, 119);
             this.lblTimeBombCardbb19.Name = "lblTimeBombCardbb19";
             this.lblTimeBombCardbb19.Size = new System.Drawing.Size(27, 24);
@@ -1340,6 +1355,7 @@
             // 
             // lblTimeBombCardbb14
             // 
+            this.lblTimeBombCardbb14.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb14.Location = new System.Drawing.Point(63, 119);
             this.lblTimeBombCardbb14.Name = "lblTimeBombCardbb14";
             this.lblTimeBombCardbb14.Size = new System.Drawing.Size(27, 24);
@@ -1348,6 +1364,7 @@
             // 
             // lblTimeBombCardbb9
             // 
+            this.lblTimeBombCardbb9.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb9.Location = new System.Drawing.Point(33, 119);
             this.lblTimeBombCardbb9.Name = "lblTimeBombCardbb9";
             this.lblTimeBombCardbb9.Size = new System.Drawing.Size(27, 24);
@@ -1356,6 +1373,7 @@
             // 
             // lblTimeBombCardbb5
             // 
+            this.lblTimeBombCardbb5.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb5.Location = new System.Drawing.Point(4, 144);
             this.lblTimeBombCardbb5.Name = "lblTimeBombCardbb5";
             this.lblTimeBombCardbb5.Size = new System.Drawing.Size(27, 24);
@@ -1364,6 +1382,7 @@
             // 
             // lblTimeBombCardbb18
             // 
+            this.lblTimeBombCardbb18.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb18.Location = new System.Drawing.Point(92, 94);
             this.lblTimeBombCardbb18.Name = "lblTimeBombCardbb18";
             this.lblTimeBombCardbb18.Size = new System.Drawing.Size(27, 24);
@@ -1372,6 +1391,7 @@
             // 
             // lblTimeBombCardbb15
             // 
+            this.lblTimeBombCardbb15.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb15.Location = new System.Drawing.Point(63, 144);
             this.lblTimeBombCardbb15.Name = "lblTimeBombCardbb15";
             this.lblTimeBombCardbb15.Size = new System.Drawing.Size(27, 24);
@@ -1380,6 +1400,7 @@
             // 
             // lblTimeBombCardbb8
             // 
+            this.lblTimeBombCardbb8.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb8.Location = new System.Drawing.Point(33, 94);
             this.lblTimeBombCardbb8.Name = "lblTimeBombCardbb8";
             this.lblTimeBombCardbb8.Size = new System.Drawing.Size(27, 24);
@@ -1388,6 +1409,7 @@
             // 
             // lblTimeBombCardbb6
             // 
+            this.lblTimeBombCardbb6.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb6.Location = new System.Drawing.Point(33, 44);
             this.lblTimeBombCardbb6.Name = "lblTimeBombCardbb6";
             this.lblTimeBombCardbb6.Size = new System.Drawing.Size(27, 24);
@@ -1396,6 +1418,7 @@
             // 
             // lblTimeBombCardbb17
             // 
+            this.lblTimeBombCardbb17.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb17.Location = new System.Drawing.Point(92, 69);
             this.lblTimeBombCardbb17.Name = "lblTimeBombCardbb17";
             this.lblTimeBombCardbb17.Size = new System.Drawing.Size(27, 24);
@@ -1404,6 +1427,7 @@
             // 
             // lblTimeBombCardbb16
             // 
+            this.lblTimeBombCardbb16.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb16.Location = new System.Drawing.Point(92, 44);
             this.lblTimeBombCardbb16.Name = "lblTimeBombCardbb16";
             this.lblTimeBombCardbb16.Size = new System.Drawing.Size(27, 24);
@@ -1412,6 +1436,7 @@
             // 
             // lblTimeBombCardbb7
             // 
+            this.lblTimeBombCardbb7.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardbb7.Location = new System.Drawing.Point(33, 69);
             this.lblTimeBombCardbb7.Name = "lblTimeBombCardbb7";
             this.lblTimeBombCardbb7.Size = new System.Drawing.Size(27, 24);
@@ -1681,7 +1706,7 @@
             // 
             // pnlTimeBombGreen
             // 
-            this.pnlTimeBombGreen.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTimeBombGreen.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombGreen.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
             this.pnlTimeBombGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb25);
@@ -1716,6 +1741,7 @@
             // 
             // lblTimeBombCardgb25
             // 
+            this.lblTimeBombCardgb25.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb25.Location = new System.Drawing.Point(119, 144);
             this.lblTimeBombCardgb25.Name = "lblTimeBombCardgb25";
             this.lblTimeBombCardgb25.Size = new System.Drawing.Size(27, 24);
@@ -1724,6 +1750,7 @@
             // 
             // lblTimeBombCardgb1
             // 
+            this.lblTimeBombCardgb1.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb1.Location = new System.Drawing.Point(2, 44);
             this.lblTimeBombCardgb1.Name = "lblTimeBombCardgb1";
             this.lblTimeBombCardgb1.Size = new System.Drawing.Size(27, 24);
@@ -1732,6 +1759,7 @@
             // 
             // lblTimeBombCardgb24
             // 
+            this.lblTimeBombCardgb24.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb24.Location = new System.Drawing.Point(119, 119);
             this.lblTimeBombCardgb24.Name = "lblTimeBombCardgb24";
             this.lblTimeBombCardgb24.Size = new System.Drawing.Size(27, 24);
@@ -1740,6 +1768,7 @@
             // 
             // lblTimeBombCardgb11
             // 
+            this.lblTimeBombCardgb11.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb11.Location = new System.Drawing.Point(62, 44);
             this.lblTimeBombCardgb11.Name = "lblTimeBombCardgb11";
             this.lblTimeBombCardgb11.Size = new System.Drawing.Size(27, 24);
@@ -1748,6 +1777,7 @@
             // 
             // lblTimeBombCardgb23
             // 
+            this.lblTimeBombCardgb23.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb23.Location = new System.Drawing.Point(119, 94);
             this.lblTimeBombCardgb23.Name = "lblTimeBombCardgb23";
             this.lblTimeBombCardgb23.Size = new System.Drawing.Size(27, 24);
@@ -1756,6 +1786,7 @@
             // 
             // lblTimeBombCardgb2
             // 
+            this.lblTimeBombCardgb2.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb2.Location = new System.Drawing.Point(2, 69);
             this.lblTimeBombCardgb2.Name = "lblTimeBombCardgb2";
             this.lblTimeBombCardgb2.Size = new System.Drawing.Size(27, 24);
@@ -1764,6 +1795,7 @@
             // 
             // lblTimeBombCardgb22
             // 
+            this.lblTimeBombCardgb22.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb22.Location = new System.Drawing.Point(119, 69);
             this.lblTimeBombCardgb22.Name = "lblTimeBombCardgb22";
             this.lblTimeBombCardgb22.Size = new System.Drawing.Size(27, 24);
@@ -1772,6 +1804,7 @@
             // 
             // lblTimeBombCardgb12
             // 
+            this.lblTimeBombCardgb12.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb12.Location = new System.Drawing.Point(62, 69);
             this.lblTimeBombCardgb12.Name = "lblTimeBombCardgb12";
             this.lblTimeBombCardgb12.Size = new System.Drawing.Size(27, 24);
@@ -1780,6 +1813,7 @@
             // 
             // lblTimeBombCardgb21
             // 
+            this.lblTimeBombCardgb21.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb21.Location = new System.Drawing.Point(119, 44);
             this.lblTimeBombCardgb21.Name = "lblTimeBombCardgb21";
             this.lblTimeBombCardgb21.Size = new System.Drawing.Size(27, 24);
@@ -1788,6 +1822,7 @@
             // 
             // lblTimeBombCardgb3
             // 
+            this.lblTimeBombCardgb3.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb3.Location = new System.Drawing.Point(2, 94);
             this.lblTimeBombCardgb3.Name = "lblTimeBombCardgb3";
             this.lblTimeBombCardgb3.Size = new System.Drawing.Size(27, 24);
@@ -1796,6 +1831,7 @@
             // 
             // lblTimeBombCardgb20
             // 
+            this.lblTimeBombCardgb20.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb20.Location = new System.Drawing.Point(91, 144);
             this.lblTimeBombCardgb20.Name = "lblTimeBombCardgb20";
             this.lblTimeBombCardgb20.Size = new System.Drawing.Size(27, 24);
@@ -1804,6 +1840,7 @@
             // 
             // lblTimeBombCardgb13
             // 
+            this.lblTimeBombCardgb13.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb13.Location = new System.Drawing.Point(62, 94);
             this.lblTimeBombCardgb13.Name = "lblTimeBombCardgb13";
             this.lblTimeBombCardgb13.Size = new System.Drawing.Size(27, 24);
@@ -1812,6 +1849,7 @@
             // 
             // lblTimeBombCardgb10
             // 
+            this.lblTimeBombCardgb10.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb10.Location = new System.Drawing.Point(32, 144);
             this.lblTimeBombCardgb10.Name = "lblTimeBombCardgb10";
             this.lblTimeBombCardgb10.Size = new System.Drawing.Size(27, 24);
@@ -1820,6 +1858,7 @@
             // 
             // lblTimeBombCardgb4
             // 
+            this.lblTimeBombCardgb4.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb4.Location = new System.Drawing.Point(2, 119);
             this.lblTimeBombCardgb4.Name = "lblTimeBombCardgb4";
             this.lblTimeBombCardgb4.Size = new System.Drawing.Size(27, 24);
@@ -1828,6 +1867,7 @@
             // 
             // lblTimeBombCardgb19
             // 
+            this.lblTimeBombCardgb19.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb19.Location = new System.Drawing.Point(91, 119);
             this.lblTimeBombCardgb19.Name = "lblTimeBombCardgb19";
             this.lblTimeBombCardgb19.Size = new System.Drawing.Size(27, 24);
@@ -1836,6 +1876,7 @@
             // 
             // lblTimeBombCardgb14
             // 
+            this.lblTimeBombCardgb14.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb14.Location = new System.Drawing.Point(62, 119);
             this.lblTimeBombCardgb14.Name = "lblTimeBombCardgb14";
             this.lblTimeBombCardgb14.Size = new System.Drawing.Size(27, 24);
@@ -1844,6 +1885,7 @@
             // 
             // lblTimeBombCardgb9
             // 
+            this.lblTimeBombCardgb9.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb9.Location = new System.Drawing.Point(32, 119);
             this.lblTimeBombCardgb9.Name = "lblTimeBombCardgb9";
             this.lblTimeBombCardgb9.Size = new System.Drawing.Size(27, 24);
@@ -1852,6 +1894,7 @@
             // 
             // lblTimeBombCardgb5
             // 
+            this.lblTimeBombCardgb5.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb5.Location = new System.Drawing.Point(2, 144);
             this.lblTimeBombCardgb5.Name = "lblTimeBombCardgb5";
             this.lblTimeBombCardgb5.Size = new System.Drawing.Size(27, 24);
@@ -1860,6 +1903,7 @@
             // 
             // lblTimeBombCardgb18
             // 
+            this.lblTimeBombCardgb18.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb18.Location = new System.Drawing.Point(91, 94);
             this.lblTimeBombCardgb18.Name = "lblTimeBombCardgb18";
             this.lblTimeBombCardgb18.Size = new System.Drawing.Size(27, 24);
@@ -1868,6 +1912,7 @@
             // 
             // lblTimeBombCardgb15
             // 
+            this.lblTimeBombCardgb15.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb15.Location = new System.Drawing.Point(62, 144);
             this.lblTimeBombCardgb15.Name = "lblTimeBombCardgb15";
             this.lblTimeBombCardgb15.Size = new System.Drawing.Size(27, 24);
@@ -1876,6 +1921,7 @@
             // 
             // lblTimeBombCardgb8
             // 
+            this.lblTimeBombCardgb8.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb8.Location = new System.Drawing.Point(32, 94);
             this.lblTimeBombCardgb8.Name = "lblTimeBombCardgb8";
             this.lblTimeBombCardgb8.Size = new System.Drawing.Size(27, 24);
@@ -1884,6 +1930,7 @@
             // 
             // lblTimeBombCardgb6
             // 
+            this.lblTimeBombCardgb6.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb6.Location = new System.Drawing.Point(32, 44);
             this.lblTimeBombCardgb6.Name = "lblTimeBombCardgb6";
             this.lblTimeBombCardgb6.Size = new System.Drawing.Size(27, 24);
@@ -1892,6 +1939,7 @@
             // 
             // lblTimeBombCardgb17
             // 
+            this.lblTimeBombCardgb17.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb17.Location = new System.Drawing.Point(91, 69);
             this.lblTimeBombCardgb17.Name = "lblTimeBombCardgb17";
             this.lblTimeBombCardgb17.Size = new System.Drawing.Size(27, 24);
@@ -1900,6 +1948,7 @@
             // 
             // lblTimeBombCardgb16
             // 
+            this.lblTimeBombCardgb16.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb16.Location = new System.Drawing.Point(91, 44);
             this.lblTimeBombCardgb16.Name = "lblTimeBombCardgb16";
             this.lblTimeBombCardgb16.Size = new System.Drawing.Size(27, 24);
@@ -1908,6 +1957,7 @@
             // 
             // lblTimeBombCardgb7
             // 
+            this.lblTimeBombCardgb7.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardgb7.Location = new System.Drawing.Point(32, 69);
             this.lblTimeBombCardgb7.Name = "lblTimeBombCardgb7";
             this.lblTimeBombCardgb7.Size = new System.Drawing.Size(27, 24);
@@ -1916,7 +1966,7 @@
             // 
             // pnlTimeBombPurple
             // 
-            this.pnlTimeBombPurple.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTimeBombPurple.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombPurple.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
             this.pnlTimeBombPurple.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb25);
@@ -1951,6 +2001,7 @@
             // 
             // lblTimeBombCardpb25
             // 
+            this.lblTimeBombCardpb25.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb25.Location = new System.Drawing.Point(120, 144);
             this.lblTimeBombCardpb25.Name = "lblTimeBombCardpb25";
             this.lblTimeBombCardpb25.Size = new System.Drawing.Size(27, 24);
@@ -1959,7 +2010,8 @@
             // 
             // lblTimeBombCardpb1
             // 
-            this.lblTimeBombCardpb1.Location = new System.Drawing.Point(3, 44);
+            this.lblTimeBombCardpb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb1.Location = new System.Drawing.Point(4, 44);
             this.lblTimeBombCardpb1.Name = "lblTimeBombCardpb1";
             this.lblTimeBombCardpb1.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb1.TabIndex = 53;
@@ -1967,6 +2019,7 @@
             // 
             // lblTimeBombCardpb24
             // 
+            this.lblTimeBombCardpb24.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb24.Location = new System.Drawing.Point(120, 119);
             this.lblTimeBombCardpb24.Name = "lblTimeBombCardpb24";
             this.lblTimeBombCardpb24.Size = new System.Drawing.Size(27, 24);
@@ -1975,6 +2028,7 @@
             // 
             // lblTimeBombCardpb11
             // 
+            this.lblTimeBombCardpb11.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb11.Location = new System.Drawing.Point(62, 44);
             this.lblTimeBombCardpb11.Name = "lblTimeBombCardpb11";
             this.lblTimeBombCardpb11.Size = new System.Drawing.Size(27, 24);
@@ -1983,6 +2037,7 @@
             // 
             // lblTimeBombCardpb23
             // 
+            this.lblTimeBombCardpb23.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb23.Location = new System.Drawing.Point(120, 94);
             this.lblTimeBombCardpb23.Name = "lblTimeBombCardpb23";
             this.lblTimeBombCardpb23.Size = new System.Drawing.Size(27, 24);
@@ -1991,7 +2046,8 @@
             // 
             // lblTimeBombCardpb2
             // 
-            this.lblTimeBombCardpb2.Location = new System.Drawing.Point(3, 69);
+            this.lblTimeBombCardpb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb2.Location = new System.Drawing.Point(4, 69);
             this.lblTimeBombCardpb2.Name = "lblTimeBombCardpb2";
             this.lblTimeBombCardpb2.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb2.TabIndex = 54;
@@ -1999,6 +2055,7 @@
             // 
             // lblTimeBombCardpb22
             // 
+            this.lblTimeBombCardpb22.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb22.Location = new System.Drawing.Point(120, 69);
             this.lblTimeBombCardpb22.Name = "lblTimeBombCardpb22";
             this.lblTimeBombCardpb22.Size = new System.Drawing.Size(27, 24);
@@ -2007,6 +2064,7 @@
             // 
             // lblTimeBombCardpb12
             // 
+            this.lblTimeBombCardpb12.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb12.Location = new System.Drawing.Point(62, 69);
             this.lblTimeBombCardpb12.Name = "lblTimeBombCardpb12";
             this.lblTimeBombCardpb12.Size = new System.Drawing.Size(27, 24);
@@ -2015,6 +2073,7 @@
             // 
             // lblTimeBombCardpb21
             // 
+            this.lblTimeBombCardpb21.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb21.Location = new System.Drawing.Point(120, 44);
             this.lblTimeBombCardpb21.Name = "lblTimeBombCardpb21";
             this.lblTimeBombCardpb21.Size = new System.Drawing.Size(27, 24);
@@ -2023,7 +2082,8 @@
             // 
             // lblTimeBombCardpb3
             // 
-            this.lblTimeBombCardpb3.Location = new System.Drawing.Point(3, 94);
+            this.lblTimeBombCardpb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb3.Location = new System.Drawing.Point(4, 94);
             this.lblTimeBombCardpb3.Name = "lblTimeBombCardpb3";
             this.lblTimeBombCardpb3.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb3.TabIndex = 57;
@@ -2031,6 +2091,7 @@
             // 
             // lblTimeBombCardpb20
             // 
+            this.lblTimeBombCardpb20.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb20.Location = new System.Drawing.Point(91, 144);
             this.lblTimeBombCardpb20.Name = "lblTimeBombCardpb20";
             this.lblTimeBombCardpb20.Size = new System.Drawing.Size(27, 24);
@@ -2039,6 +2100,7 @@
             // 
             // lblTimeBombCardpb13
             // 
+            this.lblTimeBombCardpb13.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb13.Location = new System.Drawing.Point(62, 94);
             this.lblTimeBombCardpb13.Name = "lblTimeBombCardpb13";
             this.lblTimeBombCardpb13.Size = new System.Drawing.Size(27, 24);
@@ -2047,7 +2109,8 @@
             // 
             // lblTimeBombCardpb10
             // 
-            this.lblTimeBombCardpb10.Location = new System.Drawing.Point(32, 144);
+            this.lblTimeBombCardpb10.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb10.Location = new System.Drawing.Point(33, 144);
             this.lblTimeBombCardpb10.Name = "lblTimeBombCardpb10";
             this.lblTimeBombCardpb10.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb10.TabIndex = 60;
@@ -2055,7 +2118,8 @@
             // 
             // lblTimeBombCardpb4
             // 
-            this.lblTimeBombCardpb4.Location = new System.Drawing.Point(3, 119);
+            this.lblTimeBombCardpb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb4.Location = new System.Drawing.Point(4, 119);
             this.lblTimeBombCardpb4.Name = "lblTimeBombCardpb4";
             this.lblTimeBombCardpb4.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb4.TabIndex = 56;
@@ -2063,6 +2127,7 @@
             // 
             // lblTimeBombCardpb19
             // 
+            this.lblTimeBombCardpb19.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb19.Location = new System.Drawing.Point(91, 119);
             this.lblTimeBombCardpb19.Name = "lblTimeBombCardpb19";
             this.lblTimeBombCardpb19.Size = new System.Drawing.Size(27, 24);
@@ -2071,6 +2136,7 @@
             // 
             // lblTimeBombCardpb14
             // 
+            this.lblTimeBombCardpb14.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb14.Location = new System.Drawing.Point(62, 119);
             this.lblTimeBombCardpb14.Name = "lblTimeBombCardpb14";
             this.lblTimeBombCardpb14.Size = new System.Drawing.Size(27, 24);
@@ -2079,7 +2145,8 @@
             // 
             // lblTimeBombCardpb9
             // 
-            this.lblTimeBombCardpb9.Location = new System.Drawing.Point(32, 119);
+            this.lblTimeBombCardpb9.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb9.Location = new System.Drawing.Point(33, 119);
             this.lblTimeBombCardpb9.Name = "lblTimeBombCardpb9";
             this.lblTimeBombCardpb9.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb9.TabIndex = 61;
@@ -2087,7 +2154,8 @@
             // 
             // lblTimeBombCardpb5
             // 
-            this.lblTimeBombCardpb5.Location = new System.Drawing.Point(3, 144);
+            this.lblTimeBombCardpb5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb5.Location = new System.Drawing.Point(4, 144);
             this.lblTimeBombCardpb5.Name = "lblTimeBombCardpb5";
             this.lblTimeBombCardpb5.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb5.TabIndex = 55;
@@ -2095,6 +2163,7 @@
             // 
             // lblTimeBombCardpb18
             // 
+            this.lblTimeBombCardpb18.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb18.Location = new System.Drawing.Point(91, 94);
             this.lblTimeBombCardpb18.Name = "lblTimeBombCardpb18";
             this.lblTimeBombCardpb18.Size = new System.Drawing.Size(27, 24);
@@ -2103,6 +2172,7 @@
             // 
             // lblTimeBombCardpb15
             // 
+            this.lblTimeBombCardpb15.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb15.Location = new System.Drawing.Point(62, 144);
             this.lblTimeBombCardpb15.Name = "lblTimeBombCardpb15";
             this.lblTimeBombCardpb15.Size = new System.Drawing.Size(27, 24);
@@ -2111,7 +2181,8 @@
             // 
             // lblTimeBombCardpb8
             // 
-            this.lblTimeBombCardpb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardpb8.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb8.Location = new System.Drawing.Point(33, 94);
             this.lblTimeBombCardpb8.Name = "lblTimeBombCardpb8";
             this.lblTimeBombCardpb8.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb8.TabIndex = 62;
@@ -2119,7 +2190,8 @@
             // 
             // lblTimeBombCardpb6
             // 
-            this.lblTimeBombCardpb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardpb6.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb6.Location = new System.Drawing.Point(33, 44);
             this.lblTimeBombCardpb6.Name = "lblTimeBombCardpb6";
             this.lblTimeBombCardpb6.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb6.TabIndex = 58;
@@ -2127,6 +2199,7 @@
             // 
             // lblTimeBombCardpb17
             // 
+            this.lblTimeBombCardpb17.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb17.Location = new System.Drawing.Point(91, 69);
             this.lblTimeBombCardpb17.Name = "lblTimeBombCardpb17";
             this.lblTimeBombCardpb17.Size = new System.Drawing.Size(27, 24);
@@ -2135,6 +2208,7 @@
             // 
             // lblTimeBombCardpb16
             // 
+            this.lblTimeBombCardpb16.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardpb16.Location = new System.Drawing.Point(91, 44);
             this.lblTimeBombCardpb16.Name = "lblTimeBombCardpb16";
             this.lblTimeBombCardpb16.Size = new System.Drawing.Size(27, 24);
@@ -2143,7 +2217,8 @@
             // 
             // lblTimeBombCardpb7
             // 
-            this.lblTimeBombCardpb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardpb7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb7.Location = new System.Drawing.Point(33, 69);
             this.lblTimeBombCardpb7.Name = "lblTimeBombCardpb7";
             this.lblTimeBombCardpb7.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardpb7.TabIndex = 59;
@@ -2151,7 +2226,7 @@
             // 
             // pnlTimeBombRed
             // 
-            this.pnlTimeBombRed.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTimeBombRed.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombRed.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
             this.pnlTimeBombRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb25);
@@ -2186,6 +2261,7 @@
             // 
             // lblTimeBombCardrb25
             // 
+            this.lblTimeBombCardrb25.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb25.Location = new System.Drawing.Point(120, 144);
             this.lblTimeBombCardrb25.Name = "lblTimeBombCardrb25";
             this.lblTimeBombCardrb25.Size = new System.Drawing.Size(27, 24);
@@ -2194,6 +2270,7 @@
             // 
             // lblTimeBombCardrb24
             // 
+            this.lblTimeBombCardrb24.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb24.Location = new System.Drawing.Point(120, 119);
             this.lblTimeBombCardrb24.Name = "lblTimeBombCardrb24";
             this.lblTimeBombCardrb24.Size = new System.Drawing.Size(27, 24);
@@ -2202,6 +2279,7 @@
             // 
             // lblTimeBombCardrb23
             // 
+            this.lblTimeBombCardrb23.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb23.Location = new System.Drawing.Point(120, 94);
             this.lblTimeBombCardrb23.Name = "lblTimeBombCardrb23";
             this.lblTimeBombCardrb23.Size = new System.Drawing.Size(27, 24);
@@ -2210,6 +2288,7 @@
             // 
             // lblTimeBombCardrb22
             // 
+            this.lblTimeBombCardrb22.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb22.Location = new System.Drawing.Point(120, 69);
             this.lblTimeBombCardrb22.Name = "lblTimeBombCardrb22";
             this.lblTimeBombCardrb22.Size = new System.Drawing.Size(27, 24);
@@ -2218,6 +2297,7 @@
             // 
             // lblTimeBombCardrb21
             // 
+            this.lblTimeBombCardrb21.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb21.Location = new System.Drawing.Point(120, 44);
             this.lblTimeBombCardrb21.Name = "lblTimeBombCardrb21";
             this.lblTimeBombCardrb21.Size = new System.Drawing.Size(27, 24);
@@ -2226,6 +2306,7 @@
             // 
             // lblTimeBombCardrb20
             // 
+            this.lblTimeBombCardrb20.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb20.Location = new System.Drawing.Point(91, 144);
             this.lblTimeBombCardrb20.Name = "lblTimeBombCardrb20";
             this.lblTimeBombCardrb20.Size = new System.Drawing.Size(27, 24);
@@ -2234,6 +2315,7 @@
             // 
             // lblTimeBombCardrb10
             // 
+            this.lblTimeBombCardrb10.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb10.Location = new System.Drawing.Point(32, 144);
             this.lblTimeBombCardrb10.Name = "lblTimeBombCardrb10";
             this.lblTimeBombCardrb10.Size = new System.Drawing.Size(27, 24);
@@ -2242,6 +2324,7 @@
             // 
             // lblTimeBombCardrb19
             // 
+            this.lblTimeBombCardrb19.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb19.Location = new System.Drawing.Point(91, 119);
             this.lblTimeBombCardrb19.Name = "lblTimeBombCardrb19";
             this.lblTimeBombCardrb19.Size = new System.Drawing.Size(27, 24);
@@ -2250,6 +2333,7 @@
             // 
             // lblTimeBombCardrb9
             // 
+            this.lblTimeBombCardrb9.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb9.Location = new System.Drawing.Point(32, 119);
             this.lblTimeBombCardrb9.Name = "lblTimeBombCardrb9";
             this.lblTimeBombCardrb9.Size = new System.Drawing.Size(27, 24);
@@ -2258,6 +2342,7 @@
             // 
             // lblTimeBombCardrb18
             // 
+            this.lblTimeBombCardrb18.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb18.Location = new System.Drawing.Point(91, 94);
             this.lblTimeBombCardrb18.Name = "lblTimeBombCardrb18";
             this.lblTimeBombCardrb18.Size = new System.Drawing.Size(27, 24);
@@ -2266,6 +2351,7 @@
             // 
             // lblTimeBombCardrb8
             // 
+            this.lblTimeBombCardrb8.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb8.Location = new System.Drawing.Point(32, 94);
             this.lblTimeBombCardrb8.Name = "lblTimeBombCardrb8";
             this.lblTimeBombCardrb8.Size = new System.Drawing.Size(27, 24);
@@ -2274,6 +2360,7 @@
             // 
             // lblTimeBombCardrb17
             // 
+            this.lblTimeBombCardrb17.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb17.Location = new System.Drawing.Point(91, 69);
             this.lblTimeBombCardrb17.Name = "lblTimeBombCardrb17";
             this.lblTimeBombCardrb17.Size = new System.Drawing.Size(27, 24);
@@ -2282,6 +2369,7 @@
             // 
             // lblTimeBombCardrb7
             // 
+            this.lblTimeBombCardrb7.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb7.Location = new System.Drawing.Point(32, 69);
             this.lblTimeBombCardrb7.Name = "lblTimeBombCardrb7";
             this.lblTimeBombCardrb7.Size = new System.Drawing.Size(27, 24);
@@ -2290,6 +2378,7 @@
             // 
             // lblTimeBombCardrb16
             // 
+            this.lblTimeBombCardrb16.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb16.Location = new System.Drawing.Point(91, 44);
             this.lblTimeBombCardrb16.Name = "lblTimeBombCardrb16";
             this.lblTimeBombCardrb16.Size = new System.Drawing.Size(27, 24);
@@ -2298,6 +2387,7 @@
             // 
             // lblTimeBombCardrb6
             // 
+            this.lblTimeBombCardrb6.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb6.Location = new System.Drawing.Point(32, 44);
             this.lblTimeBombCardrb6.Name = "lblTimeBombCardrb6";
             this.lblTimeBombCardrb6.Size = new System.Drawing.Size(27, 24);
@@ -2306,6 +2396,7 @@
             // 
             // lblTimeBombCardrb15
             // 
+            this.lblTimeBombCardrb15.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb15.Location = new System.Drawing.Point(62, 144);
             this.lblTimeBombCardrb15.Name = "lblTimeBombCardrb15";
             this.lblTimeBombCardrb15.Size = new System.Drawing.Size(27, 24);
@@ -2314,6 +2405,7 @@
             // 
             // lblTimeBombCardrb5
             // 
+            this.lblTimeBombCardrb5.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb5.Location = new System.Drawing.Point(3, 144);
             this.lblTimeBombCardrb5.Name = "lblTimeBombCardrb5";
             this.lblTimeBombCardrb5.Size = new System.Drawing.Size(27, 24);
@@ -2322,6 +2414,7 @@
             // 
             // lblTimeBombCardrb14
             // 
+            this.lblTimeBombCardrb14.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb14.Location = new System.Drawing.Point(62, 119);
             this.lblTimeBombCardrb14.Name = "lblTimeBombCardrb14";
             this.lblTimeBombCardrb14.Size = new System.Drawing.Size(27, 24);
@@ -2330,6 +2423,7 @@
             // 
             // lblTimeBombCardrb4
             // 
+            this.lblTimeBombCardrb4.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb4.Location = new System.Drawing.Point(3, 119);
             this.lblTimeBombCardrb4.Name = "lblTimeBombCardrb4";
             this.lblTimeBombCardrb4.Size = new System.Drawing.Size(27, 24);
@@ -2338,6 +2432,7 @@
             // 
             // lblTimeBombCardrb13
             // 
+            this.lblTimeBombCardrb13.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb13.Location = new System.Drawing.Point(62, 94);
             this.lblTimeBombCardrb13.Name = "lblTimeBombCardrb13";
             this.lblTimeBombCardrb13.Size = new System.Drawing.Size(27, 24);
@@ -2346,6 +2441,7 @@
             // 
             // lblTimeBombCardrb3
             // 
+            this.lblTimeBombCardrb3.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb3.Location = new System.Drawing.Point(3, 94);
             this.lblTimeBombCardrb3.Name = "lblTimeBombCardrb3";
             this.lblTimeBombCardrb3.Size = new System.Drawing.Size(27, 24);
@@ -2354,6 +2450,7 @@
             // 
             // lblTimeBombCardrb12
             // 
+            this.lblTimeBombCardrb12.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb12.Location = new System.Drawing.Point(62, 69);
             this.lblTimeBombCardrb12.Name = "lblTimeBombCardrb12";
             this.lblTimeBombCardrb12.Size = new System.Drawing.Size(27, 24);
@@ -2362,6 +2459,7 @@
             // 
             // lblTimeBombCardrb2
             // 
+            this.lblTimeBombCardrb2.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb2.Location = new System.Drawing.Point(3, 69);
             this.lblTimeBombCardrb2.Name = "lblTimeBombCardrb2";
             this.lblTimeBombCardrb2.Size = new System.Drawing.Size(27, 24);
@@ -2370,6 +2468,7 @@
             // 
             // lblTimeBombCardrb11
             // 
+            this.lblTimeBombCardrb11.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb11.Location = new System.Drawing.Point(62, 44);
             this.lblTimeBombCardrb11.Name = "lblTimeBombCardrb11";
             this.lblTimeBombCardrb11.Size = new System.Drawing.Size(27, 24);
@@ -2378,6 +2477,7 @@
             // 
             // lblTimeBombCardrb1
             // 
+            this.lblTimeBombCardrb1.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeBombCardrb1.Location = new System.Drawing.Point(3, 44);
             this.lblTimeBombCardrb1.Name = "lblTimeBombCardrb1";
             this.lblTimeBombCardrb1.Size = new System.Drawing.Size(27, 24);
