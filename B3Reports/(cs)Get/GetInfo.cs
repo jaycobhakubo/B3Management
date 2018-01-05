@@ -11,7 +11,7 @@ using System.Data.SqlTypes;
 
 
 namespace GameTech.B3Reports
-{    
+{
     class GetInfo
     {
         #region VARIABLES
@@ -47,7 +47,7 @@ namespace GameTech.B3Reports
 
         public DateTime? DateTimePlay
         {
-            get { return mDateTimePlay;}
+            get { return mDateTimePlay; }
             set { mDateTimePlay = value; }
         }
 
@@ -152,13 +152,13 @@ namespace GameTech.B3Reports
         #region METHODS
 
         public GetInfo
-            (int AccountNumber 
-            ,DateTime? PlayTime 
-            ,int Status
-            ,string B4_Games
-            ,int GameStartNum
-            ,int GameEndNum
-            ,string IsGameNumber)
+            (int AccountNumber
+            , DateTime? PlayTime
+            , int Status
+            , string B4_Games
+            , int GameStartNum
+            , int GameEndNum
+            , string IsGameNumber)
         {
             SqlConnection sc = GetSQLConnection.get();
             try

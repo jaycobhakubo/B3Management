@@ -9,6 +9,7 @@ namespace GameTech.B3Reports.Forms
     public partial class GameSettingWildBallForm : SettingsControl
     {
         private readonly _cs_Other.GameSettings m_gameSettings;
+
         public GameSettingWildBallForm()
         {
             InitializeComponent();

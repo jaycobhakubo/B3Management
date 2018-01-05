@@ -81,7 +81,7 @@ namespace GameTech.B3Reports
                         Pattern_Num_10 = reader.GetInt32(2);
                         Pattern_Num_11 = reader.GetInt32(1);
                         Pattern_Num_12 = reader.GetInt32(0);
-                        
+
                     }
                 }
             }
@@ -98,7 +98,7 @@ namespace GameTech.B3Reports
 
         public GetNWinningPattern(int AccountNumber, DateTime? recdatetime, string gameName, int WinAmount)
         {
-          
+
             SqlConnection sc = GetSQLConnection.get();
             if (gameName != "TimeBomb")
             {
@@ -199,7 +199,7 @@ namespace GameTech.B3Reports
                     sc.Close();
                 }
             }
-        
+
         }
     }
 }

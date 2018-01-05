@@ -55,41 +55,6 @@ namespace GameTech.B3Reports.Forms
 
         #region METHODS
 
-        private void InitSqlConnection()
-        {
-            var databaseConnection = new DatabaseConnectionForm(true);
-
-            var results = databaseConnection.ShowDialog();
-
-            if (results == DialogResult.Cancel)
-            {
-                Application.Exit();
-                return;
-            }
-
-            sc = new SqlConnection(B3DatabaseConnection.GetConnectionString);
-
-            txtUsername.Select();
-
-            //Load the Security Settings
-            GetSecuritySettings SecuritySettings = new GetSecuritySettings();
-
-            //Load the game settings
-            GetGameSettings GameSettings = new GetGameSettings();
-
-            //Get  the MacAdress for this PC
-            GetCurrentMacID get = new GetCurrentMacID();
-            //get.Get_CurrentMacID();
-
-            //Update the user being locked due to failed attempt.
-            UpdateUserForAutoUnlocking();
-
-            WindowsDefaultLocation.PointA = this.Location.X;
-            WindowsDefaultLocation.PointB = this.Location.Y;
-
-            label2.Text = "Version 4.2.0     09/15/2015     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
-            label3.Text = "\u00a9" + " Copyright 2015 Fortunet, Inc. All Rights Reserved";
-        }
 
         private void UpdateUserForAutoUnlocking()
         {
@@ -451,7 +416,79 @@ namespace GameTech.B3Reports.Forms
 
         #region EVENTS
 
-     
+        //private void LoginFullWin_Load(object sender, EventArgs e)
+        //{
+            //var databaseConnection = new DatabaseConnectionForm(true);
+
+            //var results = databaseConnection.ShowDialog();
+
+            //if (results == DialogResult.Cancel)
+            //{
+            //    Application.Exit();
+            //    return;
+            //}
+
+            //sc = new SqlConnection(B3DatabaseConnection.GetConnectionString);
+
+            //txtUsername.Select();
+
+            ////Load the Security Settings
+            //GetSecuritySettings SecuritySettings = new GetSecuritySettings();
+
+            ////Load the game settings
+            //GetGameSettings GameSettings = new GetGameSettings();
+
+            ////Get  the MacAdress for this PC
+            //GetCurrentMacID get = new GetCurrentMacID();
+            ////get.Get_CurrentMacID();
+
+            ////Update the user being locked due to failed attempt.
+            //UpdateUserForAutoUnlocking();
+
+            //WindowsDefaultLocation.PointA = this.Location.X;
+            //WindowsDefaultLocation.PointB = this.Location.Y;
+
+            //label2.Text = "Version 4.2.0     09/15/2015     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
+            //label3.Text = "\u00a9" + " Copyright 2015 Fortunet, Inc. All Rights Reserved";
+        //}
+
+        private void InitSqlConnection()
+        {
+            var databaseConnection = new DatabaseConnectionForm(true);
+
+            var results = databaseConnection.ShowDialog();
+
+            if (results == DialogResult.Cancel)
+            {
+                Application.Exit();
+                return;
+            }
+
+            sc = new SqlConnection(B3DatabaseConnection.GetConnectionString);
+
+            txtUsername.Select();
+
+            //Load the Security Settings
+            GetSecuritySettings SecuritySettings = new GetSecuritySettings();
+
+            //Load the game settings
+            GetGameSettings GameSettings = new GetGameSettings();
+
+            //Get  the MacAdress for this PC
+            GetCurrentMacID get = new GetCurrentMacID();
+            //get.Get_CurrentMacID();
+
+            //Update the user being locked due to failed attempt.
+            UpdateUserForAutoUnlocking();
+
+            WindowsDefaultLocation.PointA = this.Location.X;
+            WindowsDefaultLocation.PointB = this.Location.Y;
+
+            label2.Text = "Version 4.2.0     09/15/2015     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
+            label3.Text = "\u00a9" + " Copyright 2015 Fortunet, Inc. All Rights Reserved";
+        }
+
+
         /// <summary>
         ///Login
         /// </summary>
