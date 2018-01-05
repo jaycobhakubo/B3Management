@@ -33,8 +33,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.gameSettingWildBall1 = new GameTech.B3Reports.Forms.GameSettingWildBallForm();
             this.picBxSaved = new System.Windows.Forms.PictureBox();
+            this.gameSettingWildBall1 = new GameTech.B3Reports.Forms.GameSettingWildBallForm();
             this.securitySettings1 = new GameTech.B3Reports.Forms.SecuritySettings();
             this.gameSettings1 = new GameTech.B3Reports.Forms.GameSettings();
             this.ndSettings1 = new GameTech.B3Reports.Forms.NDSettings();
@@ -43,6 +43,8 @@
             this.playerSettings1 = new GameTech.B3Reports.Forms.PlayerSettings();
             this.gameSettingJailBreak1 = new GameTech.B3Reports.Forms.GameSettingJailBreak();
             this.gameSettingCrazyBout1 = new GameTech.B3Reports.Forms.GameSettingCrazyBout();
+            this.gameSettingTimeBomb1 = new GameTech.B3Reports.Forms.GameSettingTimeBomb();
+            this.gameSettingSpirit761 = new GameTech.B3Reports.Forms.GameSettingSpirit76();
             this.imgBtnRefreshSystemSettings = new GameTech.B3Reports.Forms.ImageButton();
             this.pnlWarning = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -102,6 +104,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.Controls.Add(this.picBxSaved);
+            this.splitContainer2.Panel1.Controls.Add(this.gameSettingSpirit761);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingWildBall1);
             this.splitContainer2.Panel1.Controls.Add(this.securitySettings1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettings1);
@@ -111,6 +114,7 @@
             this.splitContainer2.Panel1.Controls.Add(this.playerSettings1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingJailBreak1);
             this.splitContainer2.Panel1.Controls.Add(this.gameSettingCrazyBout1);
+            this.splitContainer2.Panel1.Controls.Add(this.gameSettingTimeBomb1);
             // 
             // splitContainer2.Panel2
             // 
@@ -120,17 +124,17 @@
             this.splitContainer2.Panel2.Controls.Add(this.imgBtnResetSystemSettings);
             this.splitContainer2.Panel2.Controls.Add(this.imgBtnSaveSystemSettings);
             // 
-            // gameSettingWildBall1
-            // 
-            resources.ApplyResources(this.gameSettingWildBall1, "gameSettingWildBall1");
-            this.gameSettingWildBall1.Name = "gameSettingWildBall1";
-            this.gameSettingWildBall1.Tag = "9";
-            // 
             // picBxSaved
             // 
             resources.ApplyResources(this.picBxSaved, "picBxSaved");
             this.picBxSaved.Name = "picBxSaved";
             this.picBxSaved.TabStop = false;
+            // 
+            // gameSettingWildBall1
+            // 
+            resources.ApplyResources(this.gameSettingWildBall1, "gameSettingWildBall1");
+            this.gameSettingWildBall1.Name = "gameSettingWildBall1";
+            this.gameSettingWildBall1.Tag = "9";
             // 
             // securitySettings1
             // 
@@ -189,6 +193,18 @@
             this.gameSettingCrazyBout1.Name = "gameSettingCrazyBout1";
             this.gameSettingCrazyBout1.Tag = "3";
             this.gameSettingCrazyBout1.Enter += new System.EventHandler(this.gameSettings1_Enter);
+            // 
+            // gameSettingTimeBomb1
+            // 
+            resources.ApplyResources(this.gameSettingTimeBomb1, "gameSettingTimeBomb1");
+            this.gameSettingTimeBomb1.Name = "gameSettingTimeBomb1";
+            this.gameSettingTimeBomb1.Tag = "11";
+            // 
+            // gameSettingSpirit761
+            // 
+            resources.ApplyResources(this.gameSettingSpirit761, "gameSettingSpirit761");
+            this.gameSettingSpirit761.Name = "gameSettingSpirit761";
+            this.gameSettingSpirit761.Tag = "10";
             // 
             // imgBtnRefreshSystemSettings
             // 
@@ -313,5 +329,7 @@
         private ImageButton imgBtnRefreshSystemSettings;
         private NDSettings ndSettings1;
         private GameSettingWildBallForm gameSettingWildBall1;
+        private GameSettingTimeBomb gameSettingTimeBomb1;
+        private GameSettingSpirit76 gameSettingSpirit761;
     }
 }

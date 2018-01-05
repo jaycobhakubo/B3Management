@@ -32,6 +32,8 @@ namespace GameTech.B3Reports.Forms
         bool IsNDSettings = false;
         bool IsUserAccessControl = false;
         private bool m_isWildBallGameSettings;
+        private bool m_isSpirit76GameSettings;
+        private bool m_isTimeBombGameSettings;
 
         #endregion
 
@@ -98,6 +100,14 @@ namespace GameTech.B3Reports.Forms
             {
                 clientAccessControl1.LoadSettings();
             }
+            else if (m_isSpirit76GameSettings)
+            {
+                gameSettingSpirit761.LoadSettings();
+            }
+            else if (m_isTimeBombGameSettings)
+            {
+                gameSettingTimeBomb1.LoadSettings();
+            }
             else if (IsNDSettings)
             {
                 ndSettings1.LoadSettings();
@@ -118,6 +128,8 @@ namespace GameTech.B3Reports.Forms
             IsPlayerSettings = false;
             IsNDSettings = false;
             m_isWildBallGameSettings = false;
+            m_isSpirit76GameSettings = false;
+            m_isTimeBombGameSettings = false;
         }
 
         private void CreateNodes()
@@ -167,6 +179,12 @@ namespace GameTech.B3Reports.Forms
 
             nodeChild = nodeParent.Nodes.Add("Wild Ball Settings");
             nodeChild.Tag = gameSettingWildBall1;
+
+            nodeChild = nodeParent.Nodes.Add("Spirit 76 Settings");
+            nodeChild.Tag = gameSettingSpirit761;
+
+            nodeChild = nodeParent.Nodes.Add("Time Bomb Settings");
+            nodeChild.Tag = gameSettingTimeBomb1;
 
             treeView1.Nodes.Add(nodeParent);
 
@@ -418,6 +436,24 @@ namespace GameTech.B3Reports.Forms
                     pnlWarning.Visible = true;
                 }
             }
+            else if (x == 10)
+            {
+                m_isSpirit76GameSettings = true;
+
+                if (!pnlWarning.Visible)
+                {
+                    pnlWarning.Visible = true;
+                }
+            }
+            else if (x == 11)
+            {
+                m_isTimeBombGameSettings = true;
+
+                if (!pnlWarning.Visible)
+                {
+                    pnlWarning.Visible = true;
+                }
+            }
 
             /* This code was used to force the first child node to be selected
              * when a parent node was clicked 
@@ -548,6 +584,28 @@ namespace GameTech.B3Reports.Forms
                     this.Enabled = false;
                     Cursor.Current = Cursors.WaitCursor;
                     result = gameSettingWildBall1.SaveSettings();
+                    RestartAndroidService();
+                }
+            }
+            else if (m_isSpirit76GameSettings)
+            {
+                ConfirmResult = (MessageBoxConfirmation() == "Yes");
+                if (ConfirmResult == true)
+                {
+                    this.Enabled = false;
+                    Cursor.Current = Cursors.WaitCursor;
+                    result = gameSettingSpirit761.SaveSettings();
+                    RestartAndroidService();
+                }
+            }
+            else if (m_isTimeBombGameSettings)
+            {
+                ConfirmResult = (MessageBoxConfirmation() == "Yes");
+                if (ConfirmResult == true)
+                {
+                    this.Enabled = false;
+                    Cursor.Current = Cursors.WaitCursor;
+                    result = gameSettingTimeBomb1.SaveSettings();
                     RestartAndroidService();
                 }
             }

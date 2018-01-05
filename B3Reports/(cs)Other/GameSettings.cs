@@ -16,6 +16,7 @@ namespace GameTech.B3Reports._cs_Other
             MaxPatternsBonus = 12;
             MaxCallsBonus = 30;
             CallSpeed = 500;
+            CallSpeedBonus = 500;
             AutoCall = "F";
             AutoPlay = "F";
             Denom1 = "T";
@@ -37,6 +38,7 @@ namespace GameTech.B3Reports._cs_Other
         public int MaxPatternsBonus { get; set; }
         public int MaxCallsBonus { get; set; }
         public int CallSpeed { get; set; }
+        public int CallSpeedBonus { get; set; }
         public string AutoCall { get; set; }
         public string AutoPlay { get; set; }
         public string Denom1 { get; set; }

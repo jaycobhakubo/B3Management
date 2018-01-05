@@ -433,4 +433,46 @@
   <data name="SQLConnection" xml:space="preserve">
     <value />
   </data>
+  <data name="BlueCardExploded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueCardExploded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BonusCardExploded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BonusCardExploded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomLeftGreenBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomLeftGreenBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomLeftGreenCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomLeftGreenCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomRightBlueBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomRightBlueBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BottomRightBlueCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BottomRightBlueCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GreenCardExploded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenCardExploded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleCardExploded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PurpleCardExploded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedCardExploded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedCardExploded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftFlashTNTCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftFlashTNTCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftRedBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftRedBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperLeftRedCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperLeftRedCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperRightPurpleBonusCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperRightPurpleBonusCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpperRightPurpleCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpperRightPurpleCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

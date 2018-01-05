@@ -1,0 +1,269 @@
+﻿using System;
+using System.Globalization;
+using System.Windows.Forms;
+using GameTech.B3Reports._cs_Get;
+using GameTech.B3Reports._cs_Set;
+
+namespace GameTech.B3Reports.Forms
+{
+    public partial class GameSettingSpirit76 : SettingsControl
+    {
+        private readonly _cs_Other.GameSettings m_gameSettings;
+
+        public GameSettingSpirit76()
+        {
+            InitializeComponent();
+            m_gameSettings = new _cs_Other.GameSettings();
+            LoadSpirit76Settings();
+        }
+
+        public override bool LoadSettings()
+        {
+            SuspendLayout();
+            bool bResult = LoadSpirit76Settings();
+            ResumeLayout();
+            return bResult;
+        }
+
+        //Lets load the value from DB into the UI controls
+        private bool LoadSpirit76Settings()
+        {
+            GetGameSettingsSpirit76.GetSettings(m_gameSettings);
+
+            numMaxCards.Value = m_gameSettings.MaxCards;
+            numMaxBetLevel.Value = m_gameSettings.MaxBetLevel;
+            numMaxPattern.Value = m_gameSettings.MaxPatterns;
+            numMaxCalls.Value = m_gameSettings.MaxCalls;
+            numMaxPatternBonus.Value = m_gameSettings.MaxPatternsBonus;
+            numMaxCallsBonus.Value = m_gameSettings.MaxCallsBonus;
+            numCallSpeed.Value = m_gameSettings.CallSpeed;
+            numCallSpeedBonus.Value = m_gameSettings.CallSpeedBonus;
+
+            const string t = "T";
+
+            chkbxAutoCall.Checked = m_gameSettings.AutoCall == t;
+            chkbxAutoPlay.Checked = m_gameSettings.AutoPlay == t;
+            chkbxHideCardSerialNumber.Checked = m_gameSettings.HideCardSerialNumber == t;
+
+            chkbxDenom1.Checked = m_gameSettings.Denom1 == t;
+            chkbxDenom5.Checked = m_gameSettings.Denom5 == t;
+            chkbxDenom10.Checked = m_gameSettings.Denom10 == t;
+            chkbxDenom25.Checked = m_gameSettings.Denom25 == t;
+            chkbxDenom50.Checked = m_gameSettings.Denom50 == t;
+            chkbxDenom1d.Checked = m_gameSettings.Denom100 == t;
+            chkbxDenom2d.Checked = m_gameSettings.Denom200 == t;
+            chkbxDenom5d.Checked = m_gameSettings.Denom500 == t;
+
+            return true;
+
+        }
+
+        public override bool SaveSettings()
+        {
+            bool bResult = SaveSpirit76GameSettings();
+            return bResult;
+        }
+
+        private bool SaveSpirit76GameSettings()
+        {
+            if (m_gameSettings.MaxCards != (int)numMaxCards.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Cards", m_gameSettings.MaxCards.ToString(), numMaxCards.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxCards = (int)numMaxCards.Value;
+            }
+
+            if (m_gameSettings.MaxBetLevel != (int)numMaxBetLevel.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Bet Level", m_gameSettings.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxBetLevel = (int)numMaxBetLevel.Value;
+            }
+
+            if (m_gameSettings.MaxPatterns != (int)numMaxPattern.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Patterns", m_gameSettings.MaxPatterns.ToString(), numMaxPattern.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxPatterns = (int)numMaxPattern.Value;
+            }
+
+            if (m_gameSettings.MaxCalls != (int)numMaxCalls.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Calls", m_gameSettings.MaxCalls.ToString(), numMaxCalls.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxCalls = (int)numMaxCalls.Value;
+            }
+
+            if (m_gameSettings.MaxPatternsBonus != (int)numMaxPatternBonus.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Pattern Bonus", m_gameSettings.MaxPatternsBonus.ToString(), numMaxPatternBonus.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxPatternsBonus = (int)numMaxPatternBonus.Value;
+            }
+
+            if (m_gameSettings.MaxCallsBonus != (int)numMaxCallsBonus.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Max Calls Bonus", m_gameSettings.MaxPatternsBonus.ToString(), numMaxPatternBonus.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.MaxCallsBonus = (int)numMaxCallsBonus.Value;
+            }
+
+            if (m_gameSettings.CallSpeed != (int)numCallSpeed.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Call Speed", m_gameSettings.MaxCalls.ToString(), numMaxCalls.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.CallSpeed = (int)numCallSpeed.Value;
+            }
+
+            if (m_gameSettings.CallSpeedBonus != (int)numCallSpeedBonus.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Bonus Call Speed", m_gameSettings.MaxPatternsBonus.ToString(), numMaxPatternBonus.Value.ToString(CultureInfo.InvariantCulture));
+                m_gameSettings.CallSpeedBonus = (int)numCallSpeedBonus.Value;
+            }
+
+            var isTrue = chkbxAutoCall.Checked ? "T" : "F";
+            if (m_gameSettings.AutoCall != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Auto Call", m_gameSettings.AutoCall, isTrue);
+                m_gameSettings.AutoCall = isTrue;
+            }
+
+            isTrue = chkbxAutoPlay.Checked ? "T" : "F";
+            if (m_gameSettings.AutoPlay != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Auto Play", m_gameSettings.AutoPlay, isTrue);
+                m_gameSettings.AutoPlay = isTrue;
+            }
+
+            isTrue = chkbxDenom1.Checked ? "T" : "F";
+            if (m_gameSettings.Denom1 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 1 cent", m_gameSettings.Denom1, isTrue);
+                m_gameSettings.Denom1 = isTrue;
+            }
+
+            isTrue = chkbxDenom5.Checked ? "T" : "F";
+            if (m_gameSettings.Denom5 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 5 cent", m_gameSettings.Denom5, isTrue);
+                m_gameSettings.Denom5 = isTrue;
+            }
+
+            isTrue = chkbxDenom10.Checked ? "T" : "F";
+            if (m_gameSettings.Denom10 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 10 cent", m_gameSettings.Denom10, isTrue);
+                m_gameSettings.Denom10 = isTrue;
+            }
+
+            isTrue = chkbxDenom25.Checked ? "T" : "F";
+            if (m_gameSettings.Denom25 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 25 cent", m_gameSettings.Denom25, isTrue);
+                m_gameSettings.Denom25 = isTrue;
+            }
+
+            isTrue = chkbxDenom50.Checked ? "T" : "F";
+            if (m_gameSettings.Denom50 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 50 cent", m_gameSettings.Denom50, isTrue);
+                m_gameSettings.Denom50 = isTrue;
+            }
+
+            isTrue = chkbxDenom1d.Checked ? "T" : "F";
+            if (m_gameSettings.Denom100 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 1 dollar", m_gameSettings.Denom100, isTrue);
+                m_gameSettings.Denom100 = isTrue;
+            }
+
+            isTrue = chkbxDenom2d.Checked ? "T" : "F";
+            if (m_gameSettings.Denom200 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 2 dollars", m_gameSettings.Denom200, isTrue);
+                m_gameSettings.Denom200 = isTrue;
+            }
+
+            isTrue = chkbxDenom5d.Checked ? "T" : "F";
+            if (m_gameSettings.Denom500 != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Denom 5 dollars", m_gameSettings.Denom500, isTrue);
+                m_gameSettings.Denom500 = isTrue;
+            }
+
+            isTrue = chkbxHideCardSerialNumber.Checked ? "T" : "F";
+            if (m_gameSettings.HideCardSerialNumber != isTrue)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Spirit 76 Setting - Hide card serial number", m_gameSettings.HideCardSerialNumber, isTrue);
+                m_gameSettings.HideCardSerialNumber = isTrue;
+            }
+
+            SetGameSettingsSpirit76.SetSettings(m_gameSettings);
+
+            return true;
+        }
+
+        private void numMaxCards_Leave(object sender, EventArgs e)
+        {
+            NumericUpDown nuDown = (NumericUpDown)sender;
+            if (nuDown.Text == "")
+            {
+                if (Convert.ToInt32(nuDown.Tag) == 1)
+                {
+                    if (GetGameSettingsCrazyBout.maxcards == numMaxCards.Maximum)
+                    {
+                        numMaxCards.Value = GetGameSettingsCrazyBout.maxcards - 1;
+                    }
+                    else
+                    { numMaxCards.Value = GetGameSettingsCrazyBout.maxcards + 1; }
+                    numMaxCards.Value = GetGameSettingsCrazyBout.maxcards;
+
+                }else
+                if (Convert.ToInt32(nuDown.Tag) == 2)
+                {
+                    if (GetGameSettingsCrazyBout.maxbetlevel == numMaxBetLevel.Maximum)
+                    {
+                        numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel - 1;
+                    }
+                    else { numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel + 1; }
+                    numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel;
+                }else
+                    if (Convert.ToInt32(nuDown.Tag) == 3)
+                    {
+                        if (GetGameSettingsCrazyBout.maxpatterns == numMaxPattern.Maximum)
+                        {
+                            numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns - 1;
+                        }
+                        else { numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns + 1; }
+                        numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns;
+                    }
+                    else
+                        if (Convert.ToInt32(nuDown.Tag) == 4)
+                    {
+                        if (GetGameSettingsCrazyBout.maxcalls == numMaxCalls.Maximum)
+                        {
+                            numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls - 1;
+                        }
+                        else { numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls + 1; }
+                        numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls;
+                    }else
+                if (Convert.ToInt32(nuDown.Tag) == 5)
+                      {
+                          if (GetGameSettingsCrazyBout.maxpatterns_bonus == numMaxPatternBonus.Maximum)
+                          {
+                              numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus - 1;
+                          }
+                          else { numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus + 1; }
+                          numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus;
+                      }
+                else if (Convert.ToInt32(nuDown.Tag) == 6)
+                {
+                    if (GetGameSettingsCrazyBout.maxcalls_bonus == numMaxCallsBonus.Maximum)
+                    {
+                        numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus - 1;
+                    }
+                    else
+                    {
+                        numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus + 1;
+                    }
+                    numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus;
+
+                }
+            }
+        }
+
+    }
+}
