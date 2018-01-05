@@ -169,6 +169,11 @@ namespace GameTech.B3Reports.Forms
                 lblTotalWin2.Visible = false;
             }
 
+            AddCardLabelEven(pnlTimeBombRed);
+            AddCardLabelEven(pnlTimeBombPurple);
+            AddCardLabelEven(pnlTimeBombGreen);
+            AddCardLabelEven(pnlTimeBombBlue);
+
         }
 
         private void txtbxAccountNumber_MouseLeave(object sender, EventArgs e)
@@ -1947,6 +1952,16 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
+        private void AddCardLabelEven(Panel pnl)
+        {
+            var c = pnl.Controls.OfType<Label>().ToArray();
+            foreach (var control in c)
+            {
+                //control.TextChanged += new EventArgs();
+                control.TextChanged += new EventHandler(lblBingoCard1_TextChanged);
+            }
+        }
+
         private void GetInfoALL()
         {
             if (groupBox1.Visible == false)//grpInfo
@@ -2313,143 +2328,132 @@ namespace GameTech.B3Reports.Forms
                     if (IsCardActive == true)
                     {
                         countActiveCard = countActiveCard + 1;
-
+        
                         if (isExploded == false)
-                        {                     
+                        {
+
                                 if (CountUpToSix + 4 == 5)
                                 {
+                                    pctrbxRedCardExploded.Visible = false;
+                                    pctrbxRedBonusCardExploded.Visible = false;
+
                                     if (isDefused)
-                                    {
-                                        if ( pnlTimeBombRed.BackgroundImage != B3Reports.Properties.Resources.UpperLeftRedBonusCard)
-                                        pnlTimeBombRed.BackgroundImage = B3Reports.Properties.Resources.UpperLeftRedBonusCard;
-                                
+                                    {                                   
+                                        pctrbxRedBonusCardDefused.SendToBack();
+                                        pctrbxRedBonusCardDefused.Visible = true;
+                                        pctrbxRedBonusCard.Visible = false;
+                                        
                                     }
                                     else
                                     {
-                                        if (pnlTimeBombRed.BackgroundImage != B3Reports.Properties.Resources.UpperLeftFlashTNTCard)
-                                       pnlTimeBombRed.BackgroundImage = B3Reports.Properties.Resources.UpperLeftFlashTNTCard;                                    
-                                    }
-
-                                    if (pnlRegRedCard.BackgroundImage != B3Reports.Properties.Resources.UpperLeftRedCard)
-                                    { pnlRegRedCard.BackgroundImage = B3Reports.Properties.Resources.UpperLeftRedCard; }
-                                    
-                                    HideLabelNumber(pnlTimeBombRed, true);
-                                    HideLabelNumber(pnlRegRedCard, true);                                                       
+                                       
+                                        pctrbxRedBonusCardDefused.Visible = false;
+                                        pctrbxRedBonusCard.Visible = true;
+                                        pctrbxRedBonusCard.BringToFront();
+                             
+                                    }                                                                            
                                 }
                                 else if (CountUpToSix + 4 == 6)
                                 {
+                                    pctrbxPurpleCardExploded.Visible = false;
+                                    pctrbxPurpleBonusCardExploded.Visible = false;
+
                                     if (isDefused)
                                     {
-                                        if (pnlTimeBombPurple.BackgroundImage != B3Reports.Properties.Resources.UpperRightPurpleBonusCard)
-                                        pnlTimeBombPurple.BackgroundImage = B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
+                                        pctrbxPurpleBonusCardDefused.Visible = true;
+                                        pctrbxPurpleBonusCardDefused.SendToBack();
+                                        pctrbxPurpleBonusCard.Visible = false;                                  
+                                    
                                     }
                                     else
                                     {
-                                        if (pnlTimeBombPurple.BackgroundImage != B3Reports.Properties.Resources.UpperLeftFlashTNTCard)
-                                        pnlTimeBombPurple.BackgroundImage = B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-                                        
-                                    }
-
-                                    if (pnlRegPurpCard.BackgroundImage != B3Reports.Properties.Resources.UpperRightPurpleCard)
-                                    { pnlRegPurpCard.BackgroundImage = B3Reports.Properties.Resources.UpperRightPurpleCard; }
-                                    HideLabelNumber(pnlTimeBombPurple, true);
-                                    HideLabelNumber(pnlRegPurpCard, true);
+                                        pctrbxPurpleBonusCard.Visible = true;
+                                        pctrbxPurpleBonusCard.BringToFront();
+                                        pctrbxPurpleBonusCardDefused.Visible = false;                                      
+                                    }                                
                                 }
                                 else if (CountUpToSix + 4 == 7)
                                 {
+                                    pctrbxGreenCardExploded.Visible = false;
+                                    pctrbxGreenBonusCardExploded.Visible = false;
+
                                     if (isDefused)
                                     {
-                                        if (pnlTimeBombGreen.BackgroundImage != Properties.Resources.BottomLeftGreenBonusCard)
-                                        pnlTimeBombGreen.BackgroundImage = Properties.Resources.BottomLeftGreenBonusCard;
+                                        pctrbxGreenBonusCardDefused.Visible = true;
+                                        pctrbxGreenBonusCardDefused.SendToBack();
+                                        pctrbxGreenBonusCard.Visible = false;                                      
                                     }
                                     else
                                     {
-                                        if (pnlTimeBombGreen.BackgroundImage != B3Reports.Properties.Resources.UpperLeftFlashTNTCard)
-                                        pnlTimeBombGreen.BackgroundImage = B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-                                       
-                                    }
-                                    if (pnlRegGreenCard.BackgroundImage != B3Reports.Properties.Resources.BottomLeftGreenCard)
-                                    { pnlRegGreenCard.BackgroundImage = B3Reports.Properties.Resources.BottomLeftGreenCard; }
-                                    HideLabelNumber(pnlTimeBombGreen, true);
-                                    HideLabelNumber(pnlRegGreenCard, true);
-
+                                        pctrbxGreenBonusCardDefused.Visible = false;
+                                        pctrbxGreenBonusCard.Visible = true;
+                                        pctrbxGreenBonusCard.BringToFront();                                                                      
+                                    }                                  
                                 }
                                 else if (CountUpToSix + 4 == 8)
                                 {
+                                    pctrbxBlueCardExploded.Visible = false;
+                                    pctrbxBlueBonusCardExploded.Visible = false;
+
                                     if (isDefused)
                                     {
-                                        if (pnlTimeBombBlue.BackgroundImage != Properties.Resources.BottomRightBlueBonusCard)
-                                        pnlTimeBombBlue.BackgroundImage = Properties.Resources.BottomRightBlueBonusCard;
+                                        pctrbxBlueBonusCardDefused.Visible = true;
+                                        pctrbxBlueBonusCardDefused.SendToBack();
+                                        pctrbcBlueBonusCard.Visible = false;                                      
                                     }
                                     else
                                     {
-                                        if (pnlTimeBombBlue.BackgroundImage != B3Reports.Properties.Resources.UpperLeftFlashTNTCard)
-                                        pnlTimeBombBlue.BackgroundImage = B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-                                       
-                                    }
-                                    if (pnlRegBlueCard.BackgroundImage != B3Reports.Properties.Resources.BottomRightBlueCard)
-                                    { pnlRegBlueCard.BackgroundImage = B3Reports.Properties.Resources.BottomRightBlueCard; }
-                                    HideLabelNumber(pnlTimeBombBlue, true);
-                                    HideLabelNumber(pnlRegBlueCard, true);
+                                        pctrbxBlueBonusCardDefused.Visible = false;
+                                        pctrbcBlueBonusCard.Visible = true;
+                                        pctrbcBlueBonusCard.BringToFront();                      
+                                    }                                 
                                 }
 
                                 gcn = new GetCardNumber2(TempCardNumber);
-                                LoadCardTimeBomb(CountUpToSix);//knc
+                                LoadCardTimeBomb(CountUpToSix);
 
-                                int TempCardNumberDefusedCard = TempCardNumber + 4;
-                                GetCardNumber gcn2 = new GetCardNumber(TempCardNumberDefusedCard);
-                                LoadCardTimeBomb(CountUpToSix + 4);
-                            
+                                if (isDefused)
+                                {
+                                    int TempCardNumberDefusedCard = TempCardNumber + 4;
+                                    gcn = new GetCardNumber2(TempCardNumberDefusedCard);
+                                    LoadCardTimeBomb(CountUpToSix + 4);
+                                }
                         }
                       
                         else if (isExploded)
                         {
+                           
                             if (CountUpToSix + 4 == 5)
                             {
-                                if (pnlTimeBombRed.BackgroundImage != B3Reports.Properties.Resources.BonusCardExploded)
-                                {
-                                    pnlTimeBombRed.BackgroundImage = B3Reports.Properties.Resources.BonusCardExploded;
-                                    pnlRegRedCard.BackgroundImage = B3Reports.Properties.Resources.RedCardExploded;
-                                }
-
-                              HideLabelNumber(pnlTimeBombRed, false);
-                              HideLabelNumber(pnlRegRedCard, false);
+                                pctrbxRedBonusCardExploded.Visible = true;
+                                pctrbxRedBonusCardExploded.BringToFront();
+                                pctrbxRedCardExploded.Visible = true;
+                                pctrbxRedCardExploded.BringToFront();                            
                             }
                             else if (CountUpToSix + 4 == 6)
                             {
-                                if (pnlTimeBombPurple.BackgroundImage != B3Reports.Properties.Resources.BonusCardExploded)
-                                {
-                                    pnlTimeBombPurple.BackgroundImage = B3Reports.Properties.Resources.BonusCardExploded;
-                                    pnlRegPurpCard.BackgroundImage = B3Reports.Properties.Resources.PurpleCardExploded;
-                                }
-                                HideLabelNumber(pnlTimeBombPurple, false);
-                                HideLabelNumber(pnlRegPurpCard, false);
+                                pctrbxPurpleBonusCardExploded.Visible = true;
+                                pctrbxPurpleBonusCardExploded.BringToFront();
+                                pctrbxPurpleCardExploded.Visible = true;
+                                pctrbxPurpleCardExploded.BringToFront();                            
                             }
                             else if (CountUpToSix + 4 == 7)
                             {
-                                if (pnlTimeBombGreen.BackgroundImage != B3Reports.Properties.Resources.BonusCardExploded)
-                                {
-                                    pnlTimeBombGreen.BackgroundImage = B3Reports.Properties.Resources.BonusCardExploded;
-                                    pnlRegGreenCard.BackgroundImage = B3Reports.Properties.Resources.GreenCardExploded;
-                                }
-
-                                HideLabelNumber(pnlTimeBombGreen, false);
-                                HideLabelNumber(pnlRegGreenCard, false);
+                                pctrbxGreenBonusCardExploded.Visible = true;
+                                pctrbxGreenBonusCardExploded.BringToFront();
+                                pctrbxGreenCardExploded.Visible = true;
+                                pctrbxGreenCardExploded.BringToFront();                            
                             }
                             else if (CountUpToSix + 4 == 8)
                             {
-                                if (pnlTimeBombBlue.BackgroundImage != B3Reports.Properties.Resources.BonusCardExploded)
-                                {
-                                    pnlTimeBombBlue.BackgroundImage = B3Reports.Properties.Resources.BonusCardExploded;
-                                    pnlRegBlueCard.BackgroundImage = B3Reports.Properties.Resources.BlueCardExploded;
-                                }
-
-                                HideLabelNumber(pnlTimeBombBlue, false);
-                                HideLabelNumber(pnlRegBlueCard, false);
-                            }
+                                pctrbxBlueBonusCardExploded.Visible = true;
+                                pctrbxBlueBonusCardExploded.BringToFront();
+                                pctrbxBlueCardExploded.Visible = true;
+                                pctrbxBlueCardExploded.BringToFront();                             
+                            }                        
                         }
-      
 
+                       
                         if (CountUpToSix == 1)
                         {
                             lblSerialN1.Text = TempCardNumber.ToString();
