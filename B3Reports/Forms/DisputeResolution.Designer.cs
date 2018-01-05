@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisputeResolution));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
             this.lblMessageLastGameReach = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTotalWin2 = new System.Windows.Forms.Label();
@@ -56,6 +57,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnlDisputeResolutionTimeBomb = new System.Windows.Forms.Panel();
             this.pnlRegBlueCard = new System.Windows.Forms.Panel();
+            this.pctrbxBlueCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardb25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardb1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardb24 = new System.Windows.Forms.Label();
@@ -82,6 +84,9 @@
             this.lblTimeBombCardb12 = new System.Windows.Forms.Label();
             this.lblTimeBombCardb13 = new System.Windows.Forms.Label();
             this.pnlTimeBombBlue = new System.Windows.Forms.Panel();
+            this.pctrbxBlueBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pctrbxBlueBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbcBlueBonusCard = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardbb25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardbb1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardbb24 = new System.Windows.Forms.Label();
@@ -108,6 +113,7 @@
             this.lblTimeBombCardbb16 = new System.Windows.Forms.Label();
             this.lblTimeBombCardbb7 = new System.Windows.Forms.Label();
             this.pnlRegGreenCard = new System.Windows.Forms.Panel();
+            this.pctrbxGreenCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardg25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardg1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardg24 = new System.Windows.Forms.Label();
@@ -134,6 +140,9 @@
             this.lblTimeBombCardg12 = new System.Windows.Forms.Label();
             this.lblTimeBombCardg13 = new System.Windows.Forms.Label();
             this.pnlTimeBombGreen = new System.Windows.Forms.Panel();
+            this.pctrbxGreenBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pctrbxGreenBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxGreenBonusCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardgb25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardgb1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardgb24 = new System.Windows.Forms.Label();
@@ -160,6 +169,9 @@
             this.lblTimeBombCardgb16 = new System.Windows.Forms.Label();
             this.lblTimeBombCardgb7 = new System.Windows.Forms.Label();
             this.pnlTimeBombPurple = new System.Windows.Forms.Panel();
+            this.pctrbxPurpleBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pctrbxPurpleBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxPurpleBonusCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardpb25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardpb1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardpb24 = new System.Windows.Forms.Label();
@@ -211,7 +223,11 @@
             this.lblTimeBombCardrb2 = new System.Windows.Forms.Label();
             this.lblTimeBombCardrb11 = new System.Windows.Forms.Label();
             this.lblTimeBombCardrb1 = new System.Windows.Forms.Label();
+            this.pctrbxRedBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxRedBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbxRedBonusCardDefused = new System.Windows.Forms.PictureBox();
             this.pnlRegRedCard = new System.Windows.Forms.Panel();
+            this.pctrbxRedCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardr25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr24 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr23 = new System.Windows.Forms.Label();
@@ -238,6 +254,7 @@
             this.lblTimeBombCardr2 = new System.Windows.Forms.Label();
             this.lblTimeBombCardr1 = new System.Windows.Forms.Label();
             this.pnlRegPurpCard = new System.Windows.Forms.Panel();
+            this.pctrbxPurpleCardExploded = new System.Windows.Forms.PictureBox();
             this.lblTimeBombCardp25 = new System.Windows.Forms.Label();
             this.lblTimeBombCardp1 = new System.Windows.Forms.Label();
             this.lblTimeBombCardp24 = new System.Windows.Forms.Label();
@@ -552,6 +569,8 @@
             this.lbl7BingoCard1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.lstviewPatterListTable = new System.Windows.Forms.ListView();
@@ -566,6 +585,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtbxAccountNumber = new System.Windows.Forms.TextBox();
+            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             this.cmbxGameName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -577,27 +598,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pctrbxRedBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxBlueBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxRedBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxBlueBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxRedCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxBlueCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxRedBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbcBlueBonusCard = new System.Windows.Forms.PictureBox();
-            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
-            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -606,13 +606,29 @@
             this.groupBox1.SuspendLayout();
             this.pnlDisputeResolutionTimeBomb.SuspendLayout();
             this.pnlRegBlueCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).BeginInit();
             this.pnlTimeBombBlue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).BeginInit();
             this.pnlRegGreenCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).BeginInit();
             this.pnlTimeBombGreen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).BeginInit();
             this.pnlTimeBombPurple.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).BeginInit();
             this.pnlTimeBombRed.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).BeginInit();
             this.pnlRegRedCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).BeginInit();
             this.pnlRegPurpCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).BeginInit();
             this.pnlRegularGames.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -645,22 +661,6 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -697,6 +697,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 752);
             this.panel1.TabIndex = 0;
+            // 
+            // imgbtnEnd
+            // 
+            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnEnd.Enabled = false;
+            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
+            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnEnd.Name = "imgbtnEnd";
+            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
+            this.imgbtnEnd.TabIndex = 28;
+            this.imgbtnEnd.Text = "End Search";
+            this.imgbtnEnd.UseVisualStyleBackColor = false;
+            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
             // 
             // lblMessageLastGameReach
             // 
@@ -959,7 +974,6 @@
             // 
             this.pnlRegBlueCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueCard;
             this.pnlRegBlueCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegBlueCard.Controls.Add(this.pctrbxBlueCardExploded);
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb25);
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb1);
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb24);
@@ -985,10 +999,23 @@
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb14);
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb12);
             this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb13);
+            this.pnlRegBlueCard.Controls.Add(this.pctrbxBlueCardExploded);
             this.pnlRegBlueCard.Location = new System.Drawing.Point(343, 245);
             this.pnlRegBlueCard.Name = "pnlRegBlueCard";
             this.pnlRegBlueCard.Size = new System.Drawing.Size(150, 175);
             this.pnlRegBlueCard.TabIndex = 5;
+            // 
+            // pctrbxBlueCardExploded
+            // 
+            this.pctrbxBlueCardExploded.BackColor = System.Drawing.Color.White;
+            this.pctrbxBlueCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BlueCardExploded;
+            this.pctrbxBlueCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueCardExploded.Name = "pctrbxBlueCardExploded";
+            this.pctrbxBlueCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueCardExploded.TabIndex = 81;
+            this.pctrbxBlueCardExploded.TabStop = false;
             // 
             // lblTimeBombCardb25
             // 
@@ -1220,9 +1247,6 @@
             // 
             this.pnlTimeBombBlue.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardDefused);
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardExploded);
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbcBlueBonusCard);
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb25);
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb1);
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb24);
@@ -1248,10 +1272,46 @@
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb17);
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb16);
             this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb7);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardExploded);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbcBlueBonusCard);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardDefused);
             this.pnlTimeBombBlue.Location = new System.Drawing.Point(507, 245);
             this.pnlTimeBombBlue.Name = "pnlTimeBombBlue";
             this.pnlTimeBombBlue.Size = new System.Drawing.Size(150, 175);
             this.pnlTimeBombBlue.TabIndex = 5;
+            // 
+            // pctrbxBlueBonusCardDefused
+            // 
+            this.pctrbxBlueBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueBonusCard;
+            this.pctrbxBlueBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueBonusCardDefused.Name = "pctrbxBlueBonusCardDefused";
+            this.pctrbxBlueBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueBonusCardDefused.TabIndex = 54;
+            this.pctrbxBlueBonusCardDefused.TabStop = false;
+            // 
+            // pctrbxBlueBonusCardExploded
+            // 
+            this.pctrbxBlueBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxBlueBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueBonusCardExploded.Name = "pctrbxBlueBonusCardExploded";
+            this.pctrbxBlueBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueBonusCardExploded.TabIndex = 53;
+            this.pctrbxBlueBonusCardExploded.TabStop = false;
+            // 
+            // pctrbcBlueBonusCard
+            // 
+            this.pctrbcBlueBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbcBlueBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbcBlueBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbcBlueBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbcBlueBonusCard.Name = "pctrbcBlueBonusCard";
+            this.pctrbcBlueBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbcBlueBonusCard.TabIndex = 55;
+            this.pctrbcBlueBonusCard.TabStop = false;
             // 
             // lblTimeBombCardbb25
             // 
@@ -1265,7 +1325,7 @@
             // lblTimeBombCardbb1
             // 
             this.lblTimeBombCardbb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb1.Location = new System.Drawing.Point(4, 44);
+            this.lblTimeBombCardbb1.Location = new System.Drawing.Point(5, 44);
             this.lblTimeBombCardbb1.Name = "lblTimeBombCardbb1";
             this.lblTimeBombCardbb1.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb1.TabIndex = 28;
@@ -1301,7 +1361,7 @@
             // lblTimeBombCardbb2
             // 
             this.lblTimeBombCardbb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb2.Location = new System.Drawing.Point(4, 69);
+            this.lblTimeBombCardbb2.Location = new System.Drawing.Point(5, 69);
             this.lblTimeBombCardbb2.Name = "lblTimeBombCardbb2";
             this.lblTimeBombCardbb2.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb2.TabIndex = 29;
@@ -1337,7 +1397,7 @@
             // lblTimeBombCardbb3
             // 
             this.lblTimeBombCardbb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb3.Location = new System.Drawing.Point(4, 94);
+            this.lblTimeBombCardbb3.Location = new System.Drawing.Point(5, 94);
             this.lblTimeBombCardbb3.Name = "lblTimeBombCardbb3";
             this.lblTimeBombCardbb3.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb3.TabIndex = 32;
@@ -1364,7 +1424,7 @@
             // lblTimeBombCardbb10
             // 
             this.lblTimeBombCardbb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb10.Location = new System.Drawing.Point(33, 144);
+            this.lblTimeBombCardbb10.Location = new System.Drawing.Point(34, 144);
             this.lblTimeBombCardbb10.Name = "lblTimeBombCardbb10";
             this.lblTimeBombCardbb10.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb10.TabIndex = 35;
@@ -1373,7 +1433,7 @@
             // lblTimeBombCardbb4
             // 
             this.lblTimeBombCardbb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb4.Location = new System.Drawing.Point(4, 119);
+            this.lblTimeBombCardbb4.Location = new System.Drawing.Point(5, 119);
             this.lblTimeBombCardbb4.Name = "lblTimeBombCardbb4";
             this.lblTimeBombCardbb4.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb4.TabIndex = 31;
@@ -1400,7 +1460,7 @@
             // lblTimeBombCardbb9
             // 
             this.lblTimeBombCardbb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb9.Location = new System.Drawing.Point(33, 119);
+            this.lblTimeBombCardbb9.Location = new System.Drawing.Point(34, 119);
             this.lblTimeBombCardbb9.Name = "lblTimeBombCardbb9";
             this.lblTimeBombCardbb9.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb9.TabIndex = 36;
@@ -1409,7 +1469,7 @@
             // lblTimeBombCardbb5
             // 
             this.lblTimeBombCardbb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb5.Location = new System.Drawing.Point(4, 144);
+            this.lblTimeBombCardbb5.Location = new System.Drawing.Point(5, 144);
             this.lblTimeBombCardbb5.Name = "lblTimeBombCardbb5";
             this.lblTimeBombCardbb5.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb5.TabIndex = 30;
@@ -1436,7 +1496,7 @@
             // lblTimeBombCardbb8
             // 
             this.lblTimeBombCardbb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb8.Location = new System.Drawing.Point(33, 94);
+            this.lblTimeBombCardbb8.Location = new System.Drawing.Point(34, 94);
             this.lblTimeBombCardbb8.Name = "lblTimeBombCardbb8";
             this.lblTimeBombCardbb8.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb8.TabIndex = 37;
@@ -1445,7 +1505,7 @@
             // lblTimeBombCardbb6
             // 
             this.lblTimeBombCardbb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb6.Location = new System.Drawing.Point(33, 44);
+            this.lblTimeBombCardbb6.Location = new System.Drawing.Point(34, 44);
             this.lblTimeBombCardbb6.Name = "lblTimeBombCardbb6";
             this.lblTimeBombCardbb6.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb6.TabIndex = 33;
@@ -1472,7 +1532,7 @@
             // lblTimeBombCardbb7
             // 
             this.lblTimeBombCardbb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb7.Location = new System.Drawing.Point(33, 69);
+            this.lblTimeBombCardbb7.Location = new System.Drawing.Point(34, 69);
             this.lblTimeBombCardbb7.Name = "lblTimeBombCardbb7";
             this.lblTimeBombCardbb7.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardbb7.TabIndex = 34;
@@ -1483,7 +1543,6 @@
             this.pnlRegGreenCard.BackColor = System.Drawing.Color.White;
             this.pnlRegGreenCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenCard;
             this.pnlRegGreenCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegGreenCard.Controls.Add(this.pctrbxGreenCardExploded);
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg25);
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg1);
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg24);
@@ -1509,14 +1568,26 @@
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg14);
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg12);
             this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg13);
+            this.pnlRegGreenCard.Controls.Add(this.pctrbxGreenCardExploded);
             this.pnlRegGreenCard.Location = new System.Drawing.Point(179, 245);
             this.pnlRegGreenCard.Name = "pnlRegGreenCard";
             this.pnlRegGreenCard.Size = new System.Drawing.Size(150, 175);
             this.pnlRegGreenCard.TabIndex = 5;
             // 
+            // pctrbxGreenCardExploded
+            // 
+            this.pctrbxGreenCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.GreenCardExploded;
+            this.pctrbxGreenCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenCardExploded.Name = "pctrbxGreenCardExploded";
+            this.pctrbxGreenCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenCardExploded.TabIndex = 56;
+            this.pctrbxGreenCardExploded.TabStop = false;
+            // 
             // lblTimeBombCardg25
             // 
-            this.lblTimeBombCardg25.Location = new System.Drawing.Point(119, 137);
+            this.lblTimeBombCardg25.Location = new System.Drawing.Point(118, 138);
             this.lblTimeBombCardg25.Name = "lblTimeBombCardg25";
             this.lblTimeBombCardg25.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg25.TabIndex = 55;
@@ -1525,7 +1596,7 @@
             // 
             // lblTimeBombCardg1
             // 
-            this.lblTimeBombCardg1.Location = new System.Drawing.Point(5, 26);
+            this.lblTimeBombCardg1.Location = new System.Drawing.Point(7, 26);
             this.lblTimeBombCardg1.Name = "lblTimeBombCardg1";
             this.lblTimeBombCardg1.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg1.TabIndex = 31;
@@ -1534,7 +1605,7 @@
             // 
             // lblTimeBombCardg24
             // 
-            this.lblTimeBombCardg24.Location = new System.Drawing.Point(119, 109);
+            this.lblTimeBombCardg24.Location = new System.Drawing.Point(118, 110);
             this.lblTimeBombCardg24.Name = "lblTimeBombCardg24";
             this.lblTimeBombCardg24.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg24.TabIndex = 54;
@@ -1543,7 +1614,7 @@
             // 
             // lblTimeBombCardg2
             // 
-            this.lblTimeBombCardg2.Location = new System.Drawing.Point(5, 54);
+            this.lblTimeBombCardg2.Location = new System.Drawing.Point(7, 54);
             this.lblTimeBombCardg2.Name = "lblTimeBombCardg2";
             this.lblTimeBombCardg2.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg2.TabIndex = 32;
@@ -1552,7 +1623,7 @@
             // 
             // lblTimeBombCardg23
             // 
-            this.lblTimeBombCardg23.Location = new System.Drawing.Point(119, 81);
+            this.lblTimeBombCardg23.Location = new System.Drawing.Point(118, 82);
             this.lblTimeBombCardg23.Name = "lblTimeBombCardg23";
             this.lblTimeBombCardg23.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg23.TabIndex = 53;
@@ -1561,7 +1632,7 @@
             // 
             // lblTimeBombCardg3
             // 
-            this.lblTimeBombCardg3.Location = new System.Drawing.Point(5, 81);
+            this.lblTimeBombCardg3.Location = new System.Drawing.Point(7, 82);
             this.lblTimeBombCardg3.Name = "lblTimeBombCardg3";
             this.lblTimeBombCardg3.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg3.TabIndex = 33;
@@ -1570,7 +1641,7 @@
             // 
             // lblTimeBombCardg22
             // 
-            this.lblTimeBombCardg22.Location = new System.Drawing.Point(119, 54);
+            this.lblTimeBombCardg22.Location = new System.Drawing.Point(118, 54);
             this.lblTimeBombCardg22.Name = "lblTimeBombCardg22";
             this.lblTimeBombCardg22.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg22.TabIndex = 52;
@@ -1579,7 +1650,7 @@
             // 
             // lblTimeBombCardg4
             // 
-            this.lblTimeBombCardg4.Location = new System.Drawing.Point(5, 109);
+            this.lblTimeBombCardg4.Location = new System.Drawing.Point(7, 110);
             this.lblTimeBombCardg4.Name = "lblTimeBombCardg4";
             this.lblTimeBombCardg4.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg4.TabIndex = 34;
@@ -1588,7 +1659,7 @@
             // 
             // lblTimeBombCardg21
             // 
-            this.lblTimeBombCardg21.Location = new System.Drawing.Point(119, 26);
+            this.lblTimeBombCardg21.Location = new System.Drawing.Point(118, 26);
             this.lblTimeBombCardg21.Name = "lblTimeBombCardg21";
             this.lblTimeBombCardg21.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg21.TabIndex = 51;
@@ -1597,7 +1668,7 @@
             // 
             // lblTimeBombCardg5
             // 
-            this.lblTimeBombCardg5.Location = new System.Drawing.Point(5, 137);
+            this.lblTimeBombCardg5.Location = new System.Drawing.Point(7, 138);
             this.lblTimeBombCardg5.Name = "lblTimeBombCardg5";
             this.lblTimeBombCardg5.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg5.TabIndex = 35;
@@ -1606,7 +1677,7 @@
             // 
             // lblTimeBombCardg20
             // 
-            this.lblTimeBombCardg20.Location = new System.Drawing.Point(90, 137);
+            this.lblTimeBombCardg20.Location = new System.Drawing.Point(90, 138);
             this.lblTimeBombCardg20.Name = "lblTimeBombCardg20";
             this.lblTimeBombCardg20.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg20.TabIndex = 50;
@@ -1624,7 +1695,7 @@
             // 
             // lblTimeBombCardg19
             // 
-            this.lblTimeBombCardg19.Location = new System.Drawing.Point(90, 109);
+            this.lblTimeBombCardg19.Location = new System.Drawing.Point(90, 110);
             this.lblTimeBombCardg19.Name = "lblTimeBombCardg19";
             this.lblTimeBombCardg19.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg19.TabIndex = 49;
@@ -1642,7 +1713,7 @@
             // 
             // lblTimeBombCardg18
             // 
-            this.lblTimeBombCardg18.Location = new System.Drawing.Point(90, 81);
+            this.lblTimeBombCardg18.Location = new System.Drawing.Point(90, 82);
             this.lblTimeBombCardg18.Name = "lblTimeBombCardg18";
             this.lblTimeBombCardg18.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg18.TabIndex = 48;
@@ -1651,7 +1722,7 @@
             // 
             // lblTimeBombCardg8
             // 
-            this.lblTimeBombCardg8.Location = new System.Drawing.Point(35, 81);
+            this.lblTimeBombCardg8.Location = new System.Drawing.Point(35, 82);
             this.lblTimeBombCardg8.Name = "lblTimeBombCardg8";
             this.lblTimeBombCardg8.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg8.TabIndex = 38;
@@ -1669,7 +1740,7 @@
             // 
             // lblTimeBombCardg9
             // 
-            this.lblTimeBombCardg9.Location = new System.Drawing.Point(35, 109);
+            this.lblTimeBombCardg9.Location = new System.Drawing.Point(35, 110);
             this.lblTimeBombCardg9.Name = "lblTimeBombCardg9";
             this.lblTimeBombCardg9.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg9.TabIndex = 39;
@@ -1687,7 +1758,7 @@
             // 
             // lblTimeBombCardg10
             // 
-            this.lblTimeBombCardg10.Location = new System.Drawing.Point(35, 137);
+            this.lblTimeBombCardg10.Location = new System.Drawing.Point(35, 138);
             this.lblTimeBombCardg10.Name = "lblTimeBombCardg10";
             this.lblTimeBombCardg10.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg10.TabIndex = 40;
@@ -1696,7 +1767,7 @@
             // 
             // lblTimeBombCardg15
             // 
-            this.lblTimeBombCardg15.Location = new System.Drawing.Point(62, 137);
+            this.lblTimeBombCardg15.Location = new System.Drawing.Point(62, 138);
             this.lblTimeBombCardg15.Name = "lblTimeBombCardg15";
             this.lblTimeBombCardg15.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg15.TabIndex = 45;
@@ -1714,7 +1785,7 @@
             // 
             // lblTimeBombCardg14
             // 
-            this.lblTimeBombCardg14.Location = new System.Drawing.Point(62, 109);
+            this.lblTimeBombCardg14.Location = new System.Drawing.Point(62, 110);
             this.lblTimeBombCardg14.Name = "lblTimeBombCardg14";
             this.lblTimeBombCardg14.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg14.TabIndex = 44;
@@ -1733,7 +1804,7 @@
             // lblTimeBombCardg13
             // 
             this.lblTimeBombCardg13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeBombCardg13.Location = new System.Drawing.Point(62, 81);
+            this.lblTimeBombCardg13.Location = new System.Drawing.Point(62, 82);
             this.lblTimeBombCardg13.Name = "lblTimeBombCardg13";
             this.lblTimeBombCardg13.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardg13.TabIndex = 43;
@@ -1744,9 +1815,6 @@
             // 
             this.pnlTimeBombGreen.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardDefused);
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCard);
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardExploded);
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb25);
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb1);
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb24);
@@ -1772,15 +1840,51 @@
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb17);
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb16);
             this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb7);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardExploded);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardDefused);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCard);
             this.pnlTimeBombGreen.Location = new System.Drawing.Point(15, 245);
             this.pnlTimeBombGreen.Name = "pnlTimeBombGreen";
             this.pnlTimeBombGreen.Size = new System.Drawing.Size(150, 175);
             this.pnlTimeBombGreen.TabIndex = 4;
             // 
+            // pctrbxGreenBonusCardDefused
+            // 
+            this.pctrbxGreenBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenBonusCard;
+            this.pctrbxGreenBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCardDefused.Name = "pctrbxGreenBonusCardDefused";
+            this.pctrbxGreenBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCardDefused.TabIndex = 54;
+            this.pctrbxGreenBonusCardDefused.TabStop = false;
+            // 
+            // pctrbxGreenBonusCard
+            // 
+            this.pctrbxGreenBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxGreenBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCard.Name = "pctrbxGreenBonusCard";
+            this.pctrbxGreenBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCard.TabIndex = 55;
+            this.pctrbxGreenBonusCard.TabStop = false;
+            // 
+            // pctrbxGreenBonusCardExploded
+            // 
+            this.pctrbxGreenBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxGreenBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCardExploded.Name = "pctrbxGreenBonusCardExploded";
+            this.pctrbxGreenBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCardExploded.TabIndex = 53;
+            this.pctrbxGreenBonusCardExploded.TabStop = false;
+            // 
             // lblTimeBombCardgb25
             // 
             this.lblTimeBombCardgb25.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb25.Location = new System.Drawing.Point(119, 144);
+            this.lblTimeBombCardgb25.Location = new System.Drawing.Point(120, 144);
             this.lblTimeBombCardgb25.Name = "lblTimeBombCardgb25";
             this.lblTimeBombCardgb25.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb25.TabIndex = 50;
@@ -1789,7 +1893,7 @@
             // lblTimeBombCardgb1
             // 
             this.lblTimeBombCardgb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb1.Location = new System.Drawing.Point(2, 44);
+            this.lblTimeBombCardgb1.Location = new System.Drawing.Point(4, 44);
             this.lblTimeBombCardgb1.Name = "lblTimeBombCardgb1";
             this.lblTimeBombCardgb1.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb1.TabIndex = 28;
@@ -1798,7 +1902,7 @@
             // lblTimeBombCardgb24
             // 
             this.lblTimeBombCardgb24.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb24.Location = new System.Drawing.Point(119, 119);
+            this.lblTimeBombCardgb24.Location = new System.Drawing.Point(120, 119);
             this.lblTimeBombCardgb24.Name = "lblTimeBombCardgb24";
             this.lblTimeBombCardgb24.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb24.TabIndex = 51;
@@ -1816,7 +1920,7 @@
             // lblTimeBombCardgb23
             // 
             this.lblTimeBombCardgb23.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb23.Location = new System.Drawing.Point(119, 94);
+            this.lblTimeBombCardgb23.Location = new System.Drawing.Point(120, 94);
             this.lblTimeBombCardgb23.Name = "lblTimeBombCardgb23";
             this.lblTimeBombCardgb23.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb23.TabIndex = 52;
@@ -1825,7 +1929,7 @@
             // lblTimeBombCardgb2
             // 
             this.lblTimeBombCardgb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb2.Location = new System.Drawing.Point(2, 69);
+            this.lblTimeBombCardgb2.Location = new System.Drawing.Point(4, 69);
             this.lblTimeBombCardgb2.Name = "lblTimeBombCardgb2";
             this.lblTimeBombCardgb2.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb2.TabIndex = 29;
@@ -1834,7 +1938,7 @@
             // lblTimeBombCardgb22
             // 
             this.lblTimeBombCardgb22.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb22.Location = new System.Drawing.Point(119, 69);
+            this.lblTimeBombCardgb22.Location = new System.Drawing.Point(120, 69);
             this.lblTimeBombCardgb22.Name = "lblTimeBombCardgb22";
             this.lblTimeBombCardgb22.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb22.TabIndex = 49;
@@ -1852,7 +1956,7 @@
             // lblTimeBombCardgb21
             // 
             this.lblTimeBombCardgb21.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb21.Location = new System.Drawing.Point(119, 44);
+            this.lblTimeBombCardgb21.Location = new System.Drawing.Point(120, 44);
             this.lblTimeBombCardgb21.Name = "lblTimeBombCardgb21";
             this.lblTimeBombCardgb21.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb21.TabIndex = 48;
@@ -1861,7 +1965,7 @@
             // lblTimeBombCardgb3
             // 
             this.lblTimeBombCardgb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb3.Location = new System.Drawing.Point(2, 94);
+            this.lblTimeBombCardgb3.Location = new System.Drawing.Point(4, 94);
             this.lblTimeBombCardgb3.Name = "lblTimeBombCardgb3";
             this.lblTimeBombCardgb3.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb3.TabIndex = 32;
@@ -1888,7 +1992,7 @@
             // lblTimeBombCardgb10
             // 
             this.lblTimeBombCardgb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb10.Location = new System.Drawing.Point(32, 144);
+            this.lblTimeBombCardgb10.Location = new System.Drawing.Point(33, 144);
             this.lblTimeBombCardgb10.Name = "lblTimeBombCardgb10";
             this.lblTimeBombCardgb10.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb10.TabIndex = 35;
@@ -1897,7 +2001,7 @@
             // lblTimeBombCardgb4
             // 
             this.lblTimeBombCardgb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb4.Location = new System.Drawing.Point(2, 119);
+            this.lblTimeBombCardgb4.Location = new System.Drawing.Point(4, 119);
             this.lblTimeBombCardgb4.Name = "lblTimeBombCardgb4";
             this.lblTimeBombCardgb4.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb4.TabIndex = 31;
@@ -1924,7 +2028,7 @@
             // lblTimeBombCardgb9
             // 
             this.lblTimeBombCardgb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb9.Location = new System.Drawing.Point(32, 119);
+            this.lblTimeBombCardgb9.Location = new System.Drawing.Point(33, 119);
             this.lblTimeBombCardgb9.Name = "lblTimeBombCardgb9";
             this.lblTimeBombCardgb9.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb9.TabIndex = 36;
@@ -1933,7 +2037,7 @@
             // lblTimeBombCardgb5
             // 
             this.lblTimeBombCardgb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb5.Location = new System.Drawing.Point(2, 144);
+            this.lblTimeBombCardgb5.Location = new System.Drawing.Point(4, 144);
             this.lblTimeBombCardgb5.Name = "lblTimeBombCardgb5";
             this.lblTimeBombCardgb5.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb5.TabIndex = 30;
@@ -1960,7 +2064,7 @@
             // lblTimeBombCardgb8
             // 
             this.lblTimeBombCardgb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardgb8.Location = new System.Drawing.Point(33, 94);
             this.lblTimeBombCardgb8.Name = "lblTimeBombCardgb8";
             this.lblTimeBombCardgb8.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb8.TabIndex = 37;
@@ -1969,7 +2073,7 @@
             // lblTimeBombCardgb6
             // 
             this.lblTimeBombCardgb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardgb6.Location = new System.Drawing.Point(33, 44);
             this.lblTimeBombCardgb6.Name = "lblTimeBombCardgb6";
             this.lblTimeBombCardgb6.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb6.TabIndex = 33;
@@ -1996,7 +2100,7 @@
             // lblTimeBombCardgb7
             // 
             this.lblTimeBombCardgb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardgb7.Location = new System.Drawing.Point(33, 69);
             this.lblTimeBombCardgb7.Name = "lblTimeBombCardgb7";
             this.lblTimeBombCardgb7.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardgb7.TabIndex = 34;
@@ -2006,9 +2110,6 @@
             // 
             this.pnlTimeBombPurple.BackColor = System.Drawing.Color.White;
             this.pnlTimeBombPurple.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardDefused);
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCard);
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardExploded);
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb25);
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb1);
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb24);
@@ -2034,10 +2135,46 @@
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb17);
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb16);
             this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb7);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardExploded);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCard);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardDefused);
             this.pnlTimeBombPurple.Location = new System.Drawing.Point(507, 53);
             this.pnlTimeBombPurple.Name = "pnlTimeBombPurple";
             this.pnlTimeBombPurple.Size = new System.Drawing.Size(150, 175);
             this.pnlTimeBombPurple.TabIndex = 4;
+            // 
+            // pctrbxPurpleBonusCardDefused
+            // 
+            this.pctrbxPurpleBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
+            this.pctrbxPurpleBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCardDefused.Name = "pctrbxPurpleBonusCardDefused";
+            this.pctrbxPurpleBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCardDefused.TabIndex = 79;
+            this.pctrbxPurpleBonusCardDefused.TabStop = false;
+            // 
+            // pctrbxPurpleBonusCard
+            // 
+            this.pctrbxPurpleBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxPurpleBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCard.Name = "pctrbxPurpleBonusCard";
+            this.pctrbxPurpleBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCard.TabIndex = 80;
+            this.pctrbxPurpleBonusCard.TabStop = false;
+            // 
+            // pctrbxPurpleBonusCardExploded
+            // 
+            this.pctrbxPurpleBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxPurpleBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCardExploded.Name = "pctrbxPurpleBonusCardExploded";
+            this.pctrbxPurpleBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCardExploded.TabIndex = 78;
+            this.pctrbxPurpleBonusCardExploded.TabStop = false;
             // 
             // lblTimeBombCardpb25
             // 
@@ -2358,7 +2495,7 @@
             // lblTimeBombCardrb10
             // 
             this.lblTimeBombCardrb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb10.Location = new System.Drawing.Point(32, 144);
+            this.lblTimeBombCardrb10.Location = new System.Drawing.Point(33, 144);
             this.lblTimeBombCardrb10.Name = "lblTimeBombCardrb10";
             this.lblTimeBombCardrb10.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb10.TabIndex = 10;
@@ -2376,7 +2513,7 @@
             // lblTimeBombCardrb9
             // 
             this.lblTimeBombCardrb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb9.Location = new System.Drawing.Point(32, 119);
+            this.lblTimeBombCardrb9.Location = new System.Drawing.Point(33, 119);
             this.lblTimeBombCardrb9.Name = "lblTimeBombCardrb9";
             this.lblTimeBombCardrb9.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb9.TabIndex = 11;
@@ -2394,7 +2531,7 @@
             // lblTimeBombCardrb8
             // 
             this.lblTimeBombCardrb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb8.Location = new System.Drawing.Point(32, 94);
+            this.lblTimeBombCardrb8.Location = new System.Drawing.Point(33, 94);
             this.lblTimeBombCardrb8.Name = "lblTimeBombCardrb8";
             this.lblTimeBombCardrb8.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb8.TabIndex = 12;
@@ -2412,7 +2549,7 @@
             // lblTimeBombCardrb7
             // 
             this.lblTimeBombCardrb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb7.Location = new System.Drawing.Point(32, 69);
+            this.lblTimeBombCardrb7.Location = new System.Drawing.Point(33, 69);
             this.lblTimeBombCardrb7.Name = "lblTimeBombCardrb7";
             this.lblTimeBombCardrb7.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb7.TabIndex = 9;
@@ -2430,7 +2567,7 @@
             // lblTimeBombCardrb6
             // 
             this.lblTimeBombCardrb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb6.Location = new System.Drawing.Point(32, 44);
+            this.lblTimeBombCardrb6.Location = new System.Drawing.Point(33, 44);
             this.lblTimeBombCardrb6.Name = "lblTimeBombCardrb6";
             this.lblTimeBombCardrb6.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb6.TabIndex = 8;
@@ -2448,7 +2585,7 @@
             // lblTimeBombCardrb5
             // 
             this.lblTimeBombCardrb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb5.Location = new System.Drawing.Point(3, 144);
+            this.lblTimeBombCardrb5.Location = new System.Drawing.Point(4, 144);
             this.lblTimeBombCardrb5.Name = "lblTimeBombCardrb5";
             this.lblTimeBombCardrb5.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb5.TabIndex = 7;
@@ -2466,7 +2603,7 @@
             // lblTimeBombCardrb4
             // 
             this.lblTimeBombCardrb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb4.Location = new System.Drawing.Point(3, 119);
+            this.lblTimeBombCardrb4.Location = new System.Drawing.Point(4, 119);
             this.lblTimeBombCardrb4.Name = "lblTimeBombCardrb4";
             this.lblTimeBombCardrb4.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb4.TabIndex = 7;
@@ -2484,7 +2621,7 @@
             // lblTimeBombCardrb3
             // 
             this.lblTimeBombCardrb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb3.Location = new System.Drawing.Point(3, 94);
+            this.lblTimeBombCardrb3.Location = new System.Drawing.Point(4, 94);
             this.lblTimeBombCardrb3.Name = "lblTimeBombCardrb3";
             this.lblTimeBombCardrb3.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb3.TabIndex = 7;
@@ -2502,7 +2639,7 @@
             // lblTimeBombCardrb2
             // 
             this.lblTimeBombCardrb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb2.Location = new System.Drawing.Point(3, 69);
+            this.lblTimeBombCardrb2.Location = new System.Drawing.Point(4, 69);
             this.lblTimeBombCardrb2.Name = "lblTimeBombCardrb2";
             this.lblTimeBombCardrb2.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb2.TabIndex = 6;
@@ -2520,18 +2657,50 @@
             // lblTimeBombCardrb1
             // 
             this.lblTimeBombCardrb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb1.Location = new System.Drawing.Point(3, 44);
+            this.lblTimeBombCardrb1.Location = new System.Drawing.Point(4, 44);
             this.lblTimeBombCardrb1.Name = "lblTimeBombCardrb1";
             this.lblTimeBombCardrb1.Size = new System.Drawing.Size(27, 24);
             this.lblTimeBombCardrb1.TabIndex = 0;
             this.lblTimeBombCardrb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctrbxRedBonusCard
+            // 
+            this.pctrbxRedBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxRedBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCard.Name = "pctrbxRedBonusCard";
+            this.pctrbxRedBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCard.TabIndex = 30;
+            this.pctrbxRedBonusCard.TabStop = false;
+            // 
+            // pctrbxRedBonusCardExploded
+            // 
+            this.pctrbxRedBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxRedBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCardExploded.Name = "pctrbxRedBonusCardExploded";
+            this.pctrbxRedBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCardExploded.TabIndex = 28;
+            this.pctrbxRedBonusCardExploded.TabStop = false;
+            // 
+            // pctrbxRedBonusCardDefused
+            // 
+            this.pctrbxRedBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedBonusCard;
+            this.pctrbxRedBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCardDefused.Name = "pctrbxRedBonusCardDefused";
+            this.pctrbxRedBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCardDefused.TabIndex = 29;
+            this.pctrbxRedBonusCardDefused.TabStop = false;
             // 
             // pnlRegRedCard
             // 
             this.pnlRegRedCard.BackColor = System.Drawing.Color.White;
             this.pnlRegRedCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedCard;
             this.pnlRegRedCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegRedCard.Controls.Add(this.pctrbxRedCardExploded);
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr25);
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr24);
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr23);
@@ -2557,10 +2726,22 @@
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr3);
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr2);
             this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr1);
+            this.pnlRegRedCard.Controls.Add(this.pctrbxRedCardExploded);
             this.pnlRegRedCard.Location = new System.Drawing.Point(179, 53);
             this.pnlRegRedCard.Name = "pnlRegRedCard";
             this.pnlRegRedCard.Size = new System.Drawing.Size(150, 175);
             this.pnlRegRedCard.TabIndex = 2;
+            // 
+            // pctrbxRedCardExploded
+            // 
+            this.pctrbxRedCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.RedCardExploded;
+            this.pctrbxRedCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedCardExploded.Name = "pctrbxRedCardExploded";
+            this.pctrbxRedCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedCardExploded.TabIndex = 31;
+            this.pctrbxRedCardExploded.TabStop = false;
             // 
             // lblTimeBombCardr25
             // 
@@ -2700,7 +2881,7 @@
             // 
             // lblTimeBombCardr10
             // 
-            this.lblTimeBombCardr10.Location = new System.Drawing.Point(34, 137);
+            this.lblTimeBombCardr10.Location = new System.Drawing.Point(35, 137);
             this.lblTimeBombCardr10.Name = "lblTimeBombCardr10";
             this.lblTimeBombCardr10.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr10.TabIndex = 15;
@@ -2709,7 +2890,7 @@
             // 
             // lblTimeBombCardr9
             // 
-            this.lblTimeBombCardr9.Location = new System.Drawing.Point(34, 109);
+            this.lblTimeBombCardr9.Location = new System.Drawing.Point(35, 109);
             this.lblTimeBombCardr9.Name = "lblTimeBombCardr9";
             this.lblTimeBombCardr9.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr9.TabIndex = 14;
@@ -2718,7 +2899,7 @@
             // 
             // lblTimeBombCardr8
             // 
-            this.lblTimeBombCardr8.Location = new System.Drawing.Point(34, 81);
+            this.lblTimeBombCardr8.Location = new System.Drawing.Point(35, 81);
             this.lblTimeBombCardr8.Name = "lblTimeBombCardr8";
             this.lblTimeBombCardr8.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr8.TabIndex = 13;
@@ -2727,7 +2908,7 @@
             // 
             // lblTimeBombCardr7
             // 
-            this.lblTimeBombCardr7.Location = new System.Drawing.Point(34, 54);
+            this.lblTimeBombCardr7.Location = new System.Drawing.Point(35, 54);
             this.lblTimeBombCardr7.Name = "lblTimeBombCardr7";
             this.lblTimeBombCardr7.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr7.TabIndex = 12;
@@ -2736,7 +2917,7 @@
             // 
             // lblTimeBombCardr6
             // 
-            this.lblTimeBombCardr6.Location = new System.Drawing.Point(34, 26);
+            this.lblTimeBombCardr6.Location = new System.Drawing.Point(35, 26);
             this.lblTimeBombCardr6.Name = "lblTimeBombCardr6";
             this.lblTimeBombCardr6.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr6.TabIndex = 11;
@@ -2745,7 +2926,7 @@
             // 
             // lblTimeBombCardr5
             // 
-            this.lblTimeBombCardr5.Location = new System.Drawing.Point(6, 137);
+            this.lblTimeBombCardr5.Location = new System.Drawing.Point(7, 137);
             this.lblTimeBombCardr5.Name = "lblTimeBombCardr5";
             this.lblTimeBombCardr5.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr5.TabIndex = 10;
@@ -2754,7 +2935,7 @@
             // 
             // lblTimeBombCardr4
             // 
-            this.lblTimeBombCardr4.Location = new System.Drawing.Point(6, 109);
+            this.lblTimeBombCardr4.Location = new System.Drawing.Point(7, 109);
             this.lblTimeBombCardr4.Name = "lblTimeBombCardr4";
             this.lblTimeBombCardr4.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr4.TabIndex = 9;
@@ -2763,7 +2944,7 @@
             // 
             // lblTimeBombCardr3
             // 
-            this.lblTimeBombCardr3.Location = new System.Drawing.Point(6, 81);
+            this.lblTimeBombCardr3.Location = new System.Drawing.Point(7, 81);
             this.lblTimeBombCardr3.Name = "lblTimeBombCardr3";
             this.lblTimeBombCardr3.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr3.TabIndex = 8;
@@ -2772,7 +2953,7 @@
             // 
             // lblTimeBombCardr2
             // 
-            this.lblTimeBombCardr2.Location = new System.Drawing.Point(6, 54);
+            this.lblTimeBombCardr2.Location = new System.Drawing.Point(7, 54);
             this.lblTimeBombCardr2.Name = "lblTimeBombCardr2";
             this.lblTimeBombCardr2.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr2.TabIndex = 7;
@@ -2781,7 +2962,7 @@
             // 
             // lblTimeBombCardr1
             // 
-            this.lblTimeBombCardr1.Location = new System.Drawing.Point(6, 26);
+            this.lblTimeBombCardr1.Location = new System.Drawing.Point(7, 26);
             this.lblTimeBombCardr1.Name = "lblTimeBombCardr1";
             this.lblTimeBombCardr1.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardr1.TabIndex = 6;
@@ -2793,7 +2974,6 @@
             this.pnlRegPurpCard.BackColor = System.Drawing.Color.White;
             this.pnlRegPurpCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleCard;
             this.pnlRegPurpCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegPurpCard.Controls.Add(this.pctrbxPurpleCardExploded);
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp25);
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp1);
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp24);
@@ -2819,10 +2999,23 @@
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp14);
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp12);
             this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp13);
+            this.pnlRegPurpCard.Controls.Add(this.pctrbxPurpleCardExploded);
             this.pnlRegPurpCard.Location = new System.Drawing.Point(343, 53);
             this.pnlRegPurpCard.Name = "pnlRegPurpCard";
             this.pnlRegPurpCard.Size = new System.Drawing.Size(150, 175);
             this.pnlRegPurpCard.TabIndex = 1;
+            // 
+            // pctrbxPurpleCardExploded
+            // 
+            this.pctrbxPurpleCardExploded.BackColor = System.Drawing.Color.White;
+            this.pctrbxPurpleCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.PurpleCardExploded;
+            this.pctrbxPurpleCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleCardExploded.Name = "pctrbxPurpleCardExploded";
+            this.pctrbxPurpleCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleCardExploded.TabIndex = 56;
+            this.pctrbxPurpleCardExploded.TabStop = false;
             // 
             // lblTimeBombCardp25
             // 
@@ -2835,7 +3028,7 @@
             // 
             // lblTimeBombCardp1
             // 
-            this.lblTimeBombCardp1.Location = new System.Drawing.Point(5, 27);
+            this.lblTimeBombCardp1.Location = new System.Drawing.Point(6, 27);
             this.lblTimeBombCardp1.Name = "lblTimeBombCardp1";
             this.lblTimeBombCardp1.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardp1.TabIndex = 31;
@@ -2853,7 +3046,7 @@
             // 
             // lblTimeBombCardp2
             // 
-            this.lblTimeBombCardp2.Location = new System.Drawing.Point(5, 55);
+            this.lblTimeBombCardp2.Location = new System.Drawing.Point(6, 55);
             this.lblTimeBombCardp2.Name = "lblTimeBombCardp2";
             this.lblTimeBombCardp2.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardp2.TabIndex = 32;
@@ -2871,7 +3064,7 @@
             // 
             // lblTimeBombCardp3
             // 
-            this.lblTimeBombCardp3.Location = new System.Drawing.Point(5, 82);
+            this.lblTimeBombCardp3.Location = new System.Drawing.Point(6, 82);
             this.lblTimeBombCardp3.Name = "lblTimeBombCardp3";
             this.lblTimeBombCardp3.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardp3.TabIndex = 33;
@@ -2889,7 +3082,7 @@
             // 
             // lblTimeBombCardp4
             // 
-            this.lblTimeBombCardp4.Location = new System.Drawing.Point(5, 110);
+            this.lblTimeBombCardp4.Location = new System.Drawing.Point(6, 110);
             this.lblTimeBombCardp4.Name = "lblTimeBombCardp4";
             this.lblTimeBombCardp4.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardp4.TabIndex = 34;
@@ -2907,7 +3100,7 @@
             // 
             // lblTimeBombCardp5
             // 
-            this.lblTimeBombCardp5.Location = new System.Drawing.Point(5, 138);
+            this.lblTimeBombCardp5.Location = new System.Drawing.Point(6, 138);
             this.lblTimeBombCardp5.Name = "lblTimeBombCardp5";
             this.lblTimeBombCardp5.Size = new System.Drawing.Size(26, 26);
             this.lblTimeBombCardp5.TabIndex = 35;
@@ -6514,6 +6707,36 @@
             this.label12.Text = "First Try";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // imgbtnNext
+            // 
+            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnNext.Enabled = false;
+            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
+            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnNext.Name = "imgbtnNext";
+            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnNext.TabIndex = 1;
+            this.imgbtnNext.Text = "Next";
+            this.imgbtnNext.UseVisualStyleBackColor = false;
+            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
+            // 
+            // imgbtnBack
+            // 
+            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnBack.Enabled = false;
+            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
+            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnBack.Name = "imgbtnBack";
+            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnBack.TabIndex = 2;
+            this.imgbtnBack.Text = "Back";
+            this.imgbtnBack.UseVisualStyleBackColor = false;
+            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
+            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
@@ -6685,6 +6908,36 @@
             this.txtbxAccountNumber.Leave += new System.EventHandler(this.txtbxAccountNumber_Leave);
             this.txtbxAccountNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtbxAccountNumber_Validating);
             // 
+            // imageButton4
+            // 
+            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton4.FocusColor = System.Drawing.Color.Black;
+            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imageButton4.ForeColor = System.Drawing.Color.Black;
+            this.imageButton4.Location = new System.Drawing.Point(218, 713);
+            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imageButton4.Name = "imageButton4";
+            this.imageButton4.Size = new System.Drawing.Size(102, 30);
+            this.imageButton4.TabIndex = 7;
+            this.imageButton4.Text = "Return";
+            this.imageButton4.UseVisualStyleBackColor = false;
+            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
+            // 
+            // imgbtnLookUp
+            // 
+            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnLookUp.Enabled = false;
+            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
+            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnLookUp.Name = "imgbtnLookUp";
+            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnLookUp.TabIndex = 6;
+            this.imgbtnLookUp.Text = "Look Up";
+            this.imgbtnLookUp.UseVisualStyleBackColor = false;
+            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
+            // 
             // cmbxGameName
             // 
             this.cmbxGameName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -6812,259 +7065,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // pctrbxRedBonusCardExploded
-            // 
-            this.pctrbxRedBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxRedBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCardExploded.Name = "pctrbxRedBonusCardExploded";
-            this.pctrbxRedBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCardExploded.TabIndex = 28;
-            this.pctrbxRedBonusCardExploded.TabStop = false;
-            // 
-            // pctrbxGreenBonusCardExploded
-            // 
-            this.pctrbxGreenBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxGreenBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCardExploded.Name = "pctrbxGreenBonusCardExploded";
-            this.pctrbxGreenBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCardExploded.TabIndex = 53;
-            this.pctrbxGreenBonusCardExploded.TabStop = false;
-            // 
-            // pctrbxPurpleBonusCardExploded
-            // 
-            this.pctrbxPurpleBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxPurpleBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCardExploded.Name = "pctrbxPurpleBonusCardExploded";
-            this.pctrbxPurpleBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCardExploded.TabIndex = 78;
-            this.pctrbxPurpleBonusCardExploded.TabStop = false;
-            // 
-            // pctrbxBlueBonusCardExploded
-            // 
-            this.pctrbxBlueBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxBlueBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueBonusCardExploded.Name = "pctrbxBlueBonusCardExploded";
-            this.pctrbxBlueBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueBonusCardExploded.TabIndex = 53;
-            this.pctrbxBlueBonusCardExploded.TabStop = false;
-            // 
-            // pctrbxRedBonusCardDefused
-            // 
-            this.pctrbxRedBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedBonusCard;
-            this.pctrbxRedBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCardDefused.Name = "pctrbxRedBonusCardDefused";
-            this.pctrbxRedBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCardDefused.TabIndex = 29;
-            this.pctrbxRedBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxPurpleBonusCardDefused
-            // 
-            this.pctrbxPurpleBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
-            this.pctrbxPurpleBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCardDefused.Name = "pctrbxPurpleBonusCardDefused";
-            this.pctrbxPurpleBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCardDefused.TabIndex = 79;
-            this.pctrbxPurpleBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxGreenBonusCardDefused
-            // 
-            this.pctrbxGreenBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenBonusCard;
-            this.pctrbxGreenBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCardDefused.Name = "pctrbxGreenBonusCardDefused";
-            this.pctrbxGreenBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCardDefused.TabIndex = 54;
-            this.pctrbxGreenBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxBlueBonusCardDefused
-            // 
-            this.pctrbxBlueBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueBonusCard;
-            this.pctrbxBlueBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueBonusCardDefused.Name = "pctrbxBlueBonusCardDefused";
-            this.pctrbxBlueBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueBonusCardDefused.TabIndex = 54;
-            this.pctrbxBlueBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxRedCardExploded
-            // 
-            this.pctrbxRedCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.RedCardExploded;
-            this.pctrbxRedCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedCardExploded.Name = "pctrbxRedCardExploded";
-            this.pctrbxRedCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedCardExploded.TabIndex = 31;
-            this.pctrbxRedCardExploded.TabStop = false;
-            // 
-            // pctrbxPurpleCardExploded
-            // 
-            this.pctrbxPurpleCardExploded.BackColor = System.Drawing.Color.White;
-            this.pctrbxPurpleCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.PurpleCardExploded;
-            this.pctrbxPurpleCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleCardExploded.Name = "pctrbxPurpleCardExploded";
-            this.pctrbxPurpleCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleCardExploded.TabIndex = 56;
-            this.pctrbxPurpleCardExploded.TabStop = false;
-            // 
-            // pctrbxGreenCardExploded
-            // 
-            this.pctrbxGreenCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.GreenCardExploded;
-            this.pctrbxGreenCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenCardExploded.Name = "pctrbxGreenCardExploded";
-            this.pctrbxGreenCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenCardExploded.TabIndex = 56;
-            this.pctrbxGreenCardExploded.TabStop = false;
-            // 
-            // pctrbxBlueCardExploded
-            // 
-            this.pctrbxBlueCardExploded.BackColor = System.Drawing.Color.White;
-            this.pctrbxBlueCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BlueCardExploded;
-            this.pctrbxBlueCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueCardExploded.Name = "pctrbxBlueCardExploded";
-            this.pctrbxBlueCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueCardExploded.TabIndex = 81;
-            this.pctrbxBlueCardExploded.TabStop = false;
-            // 
-            // pctrbxRedBonusCard
-            // 
-            this.pctrbxRedBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxRedBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCard.Name = "pctrbxRedBonusCard";
-            this.pctrbxRedBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCard.TabIndex = 30;
-            this.pctrbxRedBonusCard.TabStop = false;
-            // 
-            // pctrbxGreenBonusCard
-            // 
-            this.pctrbxGreenBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxGreenBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCard.Name = "pctrbxGreenBonusCard";
-            this.pctrbxGreenBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCard.TabIndex = 55;
-            this.pctrbxGreenBonusCard.TabStop = false;
-            // 
-            // pctrbxPurpleBonusCard
-            // 
-            this.pctrbxPurpleBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxPurpleBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCard.Name = "pctrbxPurpleBonusCard";
-            this.pctrbxPurpleBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCard.TabIndex = 80;
-            this.pctrbxPurpleBonusCard.TabStop = false;
-            // 
-            // pctrbcBlueBonusCard
-            // 
-            this.pctrbcBlueBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbcBlueBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbcBlueBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbcBlueBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbcBlueBonusCard.Name = "pctrbcBlueBonusCard";
-            this.pctrbcBlueBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbcBlueBonusCard.TabIndex = 55;
-            this.pctrbcBlueBonusCard.TabStop = false;
-            // 
-            // imgbtnEnd
-            // 
-            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnEnd.Enabled = false;
-            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
-            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnEnd.Name = "imgbtnEnd";
-            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
-            this.imgbtnEnd.TabIndex = 28;
-            this.imgbtnEnd.Text = "End Search";
-            this.imgbtnEnd.UseVisualStyleBackColor = false;
-            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
-            // 
-            // imgbtnNext
-            // 
-            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnNext.Enabled = false;
-            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
-            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnNext.Name = "imgbtnNext";
-            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnNext.TabIndex = 1;
-            this.imgbtnNext.Text = "Next";
-            this.imgbtnNext.UseVisualStyleBackColor = false;
-            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
-            // 
-            // imgbtnBack
-            // 
-            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnBack.Enabled = false;
-            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
-            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnBack.Name = "imgbtnBack";
-            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnBack.TabIndex = 2;
-            this.imgbtnBack.Text = "Back";
-            this.imgbtnBack.UseVisualStyleBackColor = false;
-            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
-            // 
-            // imageButton4
-            // 
-            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton4.FocusColor = System.Drawing.Color.Black;
-            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imageButton4.ForeColor = System.Drawing.Color.Black;
-            this.imageButton4.Location = new System.Drawing.Point(218, 713);
-            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imageButton4.Name = "imageButton4";
-            this.imageButton4.Size = new System.Drawing.Size(102, 30);
-            this.imageButton4.TabIndex = 7;
-            this.imageButton4.Text = "Return";
-            this.imageButton4.UseVisualStyleBackColor = false;
-            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
-            // 
-            // imgbtnLookUp
-            // 
-            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnLookUp.Enabled = false;
-            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
-            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnLookUp.Name = "imgbtnLookUp";
-            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnLookUp.TabIndex = 6;
-            this.imgbtnLookUp.Text = "Look Up";
-            this.imgbtnLookUp.UseVisualStyleBackColor = false;
-            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
-            // 
             // DisputeResolution
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -7091,13 +7091,29 @@
             this.groupBox1.PerformLayout();
             this.pnlDisputeResolutionTimeBomb.ResumeLayout(false);
             this.pnlRegBlueCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).EndInit();
             this.pnlTimeBombBlue.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).EndInit();
             this.pnlRegGreenCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).EndInit();
             this.pnlTimeBombGreen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).EndInit();
             this.pnlTimeBombPurple.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).EndInit();
             this.pnlTimeBombRed.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).EndInit();
             this.pnlRegRedCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).EndInit();
             this.pnlRegPurpCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).EndInit();
             this.pnlRegularGames.ResumeLayout(false);
             this.pnlRegularGames.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -7135,22 +7151,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -177,12 +177,12 @@ namespace GameTech.B3Reports
                         while (reader.Read())
                         {
 
-                            Pattern_Num_7 = reader.GetInt32(5);
-                            Pattern_Num_8 = reader.GetInt32(4);
-                            Pattern_Num_9 = reader.GetInt32(3);
-                            Pattern_Num_10 = reader.GetInt32(2);
-                            Pattern_Num_11 = reader.GetInt32(1);
-                            Pattern_Num_12 = reader.GetInt32(0);
+                            Pattern_Num_1 = reader.GetInt32(5);
+                            Pattern_Num_2 = reader.GetInt32(4);
+                            Pattern_Num_3 = reader.GetInt32(3);
+                            Pattern_Num_4 = reader.GetInt32(2);
+                            Pattern_Num_5 = reader.GetInt32(1);
+                            Pattern_Num_6 = reader.GetInt32(0);
                             if (GetGameSettings.MinNumberOfPlayers > 1)
                             {
                                 Pattern_Num_13 = WinAmount / GetGameSettings.ConsolationPrize;

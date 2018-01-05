@@ -169,10 +169,11 @@ namespace GameTech.B3Reports.Forms
                 lblTotalWin2.Visible = false;
             }
 
-            AddCardLabelEven(pnlTimeBombRed);
-            AddCardLabelEven(pnlTimeBombPurple);
-            AddCardLabelEven(pnlTimeBombGreen);
-            AddCardLabelEven(pnlTimeBombBlue);
+            //REMOVED CARD
+            RemovedCardLabelEvent(pnlRegRedCard);
+            RemovedCardLabelEvent(pnlRegPurpCard);
+            RemovedCardLabelEvent(pnlRegGreenCard);
+            RemovedCardLabelEvent(pnlRegBlueCard);
 
         }
 
@@ -626,6 +627,35 @@ namespace GameTech.B3Reports.Forms
 
 
             }
+        }
+
+        private void StampBingoN(Panel pnl)
+        {
+
+            var c = pnl.Controls.OfType<Label>().ToArray();
+            foreach (var x in c)
+            {
+                if (IsDubbed.Dubbed(x.Text, BallCall) == true ||  ((x.Text == "Fr") || (x.Text == "Free") ))
+                {
+                    x.BackColor = Color.LimeGreen;
+                }
+                else
+                {
+                    x.BackColor = Color.White;
+                }
+
+
+                if ((SelectedB4Game == "Spirit76" && SpiritBR == true) && checkBox1.Checked == true)
+                {
+                    string ballfreq = "," + GetBallCall.GetBallFreqFor76Games(PlayTime, AccountNumber);
+                    if (ballfreq.IndexOf("," + x.Tag.ToString() + ",") != -1)
+                    {
+                        x.BackColor = Color.LimeGreen;
+                    }
+                }
+            }
+
+            
         }
 
         private void lblBingoCard1_TextChanged(object sender, EventArgs e)
@@ -1280,7 +1310,7 @@ namespace GameTech.B3Reports.Forms
                                 lblTimeBombCardrb11.Text = gcn.Card_Num_11.ToString(); if (lblTimeBombCardrb11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
                                 lblTimeBombCardrb12.Text = gcn.Card_Num_12.ToString(); if (lblTimeBombCardrb12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
                                 lblTimeBombCardrb13.Text = "Fr"; //gcn.Card_Num_13.ToString(); t
-                                //lblTimeBombCardrb13.BackColor = Color.LimeGreen; 
+                                lblTimeBombCardrb13.BackColor = Color.LimeGreen; 
                                 NCardDubbed = NCardDubbed + "13,";
                                 lblTimeBombCardrb14.Text = gcn.Card_Num_14.ToString(); if (lblTimeBombCardrb14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
                                 lblTimeBombCardrb15.Text = gcn.Card_Num_15.ToString(); if (lblTimeBombCardrb15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
@@ -1340,7 +1370,7 @@ namespace GameTech.B3Reports.Forms
                                     if (lblTimeBombCardpb11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
                                     if (lblTimeBombCardpb12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
                                     lblTimeBombCardpb13.Text = "Fr"; //gcn.Card_Num_13.ToString(); t
-                                    //lblTimeBombCardpb13.BackColor = Color.LimeGreen; 
+                                    lblTimeBombCardpb13.BackColor = Color.LimeGreen; 
                                     NCardDubbed = NCardDubbed + "13,";
                                     if (lblTimeBombCardpb14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
                                     if (lblTimeBombCardpb15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
@@ -1399,7 +1429,7 @@ namespace GameTech.B3Reports.Forms
                                         if (lblTimeBombCardgb11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
                                         if (lblTimeBombCardgb12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
                                         lblTimeBombCardgb13.Text = "Fr"; //gcn.Card_Num_13.ToString(); t
-                                        // lblTimeBombCardgb13.BackColor = Color.LimeGreen; 
+                                         lblTimeBombCardgb13.BackColor = Color.LimeGreen; 
                                         NCardDubbed = NCardDubbed + "13,";
                                         if (lblTimeBombCardgb14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
                                         if (lblTimeBombCardgb15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
@@ -1458,7 +1488,7 @@ namespace GameTech.B3Reports.Forms
                                             if (lblTimeBombCardbb11.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "11,"; }
                                             if (lblTimeBombCardbb12.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "12,"; }
                                             lblTimeBombCardbb13.Text = "Fr"; //gcn.Card_Num_13.ToString(); t
-                                            // lblTimeBombCardbb13.BackColor = Color.LimeGreen; 
+                                             lblTimeBombCardbb13.BackColor = Color.LimeGreen; 
                                             //NCardDubbed = NCardDubbed + "13,";
                                             if (lblTimeBombCardbb14.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "14,"; }
                                             if (lblTimeBombCardbb15.BackColor.ToArgb() == -13447886) { NCardDubbed = NCardDubbed + "15,"; }
@@ -1952,7 +1982,7 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
-        private void AddCardLabelEven(Panel pnl)
+        private void AddCardLabelEvent(Panel pnl)
         {
             var c = pnl.Controls.OfType<Label>().ToArray();
             foreach (var control in c)
@@ -1961,6 +1991,17 @@ namespace GameTech.B3Reports.Forms
                 control.TextChanged += new EventHandler(lblBingoCard1_TextChanged);
             }
         }
+
+        private void RemovedCardLabelEvent(Panel pnl)
+        {
+            var c = pnl.Controls.OfType<Label>().ToArray();
+            foreach (var control in c)
+            {
+                //control.TextChanged += new EventArgs();
+                control.TextChanged -= new EventHandler(lblBingoCard1_TextChanged);
+            }
+        }
+
 
         private void GetInfoALL()
         {
@@ -2328,7 +2369,9 @@ namespace GameTech.B3Reports.Forms
                     if (IsCardActive == true)
                     {
                         countActiveCard = countActiveCard + 1;
-        
+                        Panel pnlCurrent = new Panel();
+                        Panel pnlCurrentBonus = new Panel();
+
                         if (isExploded == false)
                         {
 
@@ -2336,12 +2379,14 @@ namespace GameTech.B3Reports.Forms
                                 {
                                     pctrbxRedCardExploded.Visible = false;
                                     pctrbxRedBonusCardExploded.Visible = false;
+                                    pnlCurrent = pnlRegRedCard; 
 
                                     if (isDefused)
                                     {                                   
                                         pctrbxRedBonusCardDefused.SendToBack();
                                         pctrbxRedBonusCardDefused.Visible = true;
                                         pctrbxRedBonusCard.Visible = false;
+                                        pnlCurrentBonus = pnlTimeBombRed;
                                         
                                     }
                                     else
@@ -2357,12 +2402,14 @@ namespace GameTech.B3Reports.Forms
                                 {
                                     pctrbxPurpleCardExploded.Visible = false;
                                     pctrbxPurpleBonusCardExploded.Visible = false;
+                                    pnlCurrent = pnlRegPurpCard;
 
                                     if (isDefused)
                                     {
                                         pctrbxPurpleBonusCardDefused.Visible = true;
                                         pctrbxPurpleBonusCardDefused.SendToBack();
-                                        pctrbxPurpleBonusCard.Visible = false;                                  
+                                        pctrbxPurpleBonusCard.Visible = false;
+                                        pnlCurrentBonus = pnlTimeBombPurple;
                                     
                                     }
                                     else
@@ -2376,12 +2423,14 @@ namespace GameTech.B3Reports.Forms
                                 {
                                     pctrbxGreenCardExploded.Visible = false;
                                     pctrbxGreenBonusCardExploded.Visible = false;
+                                    pnlCurrent = pnlRegGreenCard; 
 
                                     if (isDefused)
                                     {
                                         pctrbxGreenBonusCardDefused.Visible = true;
                                         pctrbxGreenBonusCardDefused.SendToBack();
-                                        pctrbxGreenBonusCard.Visible = false;                                      
+                                        pctrbxGreenBonusCard.Visible = false;
+                                        pnlCurrentBonus = pnlTimeBombGreen;
                                     }
                                     else
                                     {
@@ -2394,12 +2443,14 @@ namespace GameTech.B3Reports.Forms
                                 {
                                     pctrbxBlueCardExploded.Visible = false;
                                     pctrbxBlueBonusCardExploded.Visible = false;
+                                    pnlCurrent = pnlRegBlueCard; 
 
                                     if (isDefused)
                                     {
                                         pctrbxBlueBonusCardDefused.Visible = true;
                                         pctrbxBlueBonusCardDefused.SendToBack();
-                                        pctrbcBlueBonusCard.Visible = false;                                      
+                                        pctrbcBlueBonusCard.Visible = false;
+                                        pnlCurrentBonus = pnlTimeBombBlue;
                                     }
                                     else
                                     {
@@ -2411,12 +2462,14 @@ namespace GameTech.B3Reports.Forms
 
                                 gcn = new GetCardNumber2(TempCardNumber);
                                 LoadCardTimeBomb(CountUpToSix);
+                                StampBingoN(pnlCurrent);
 
                                 if (isDefused)
                                 {
                                     int TempCardNumberDefusedCard = TempCardNumber + 4;
                                     gcn = new GetCardNumber2(TempCardNumberDefusedCard);
                                     LoadCardTimeBomb(CountUpToSix + 4);
+                                    StampBingoN(pnlCurrentBonus);
                                 }
                         }
                       
