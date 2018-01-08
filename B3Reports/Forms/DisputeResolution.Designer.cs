@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisputeResolution));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
             this.lblMessageLastGameReach = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTotalWin2 = new System.Windows.Forms.Label();
@@ -55,231 +54,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlDisputeResolutionTimeBomb = new System.Windows.Forms.Panel();
-            this.pnlRegBlueCard = new System.Windows.Forms.Panel();
-            this.pctrbxBlueCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardb25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb7 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardb13 = new System.Windows.Forms.Label();
-            this.pnlTimeBombBlue = new System.Windows.Forms.Panel();
-            this.pctrbxBlueBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxBlueBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbcBlueBonusCard = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardbb25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb13 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardbb7 = new System.Windows.Forms.Label();
-            this.pnlRegGreenCard = new System.Windows.Forms.Panel();
-            this.pctrbxGreenCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardg25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg7 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardg13 = new System.Windows.Forms.Label();
-            this.pnlTimeBombGreen = new System.Windows.Forms.Panel();
-            this.pctrbxGreenBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbxGreenBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardgb25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb13 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardgb7 = new System.Windows.Forms.Label();
-            this.pnlTimeBombPurple = new System.Windows.Forms.Panel();
-            this.pctrbxPurpleBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbxPurpleBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardpb25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb13 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardpb7 = new System.Windows.Forms.Label();
-            this.pnlTimeBombRed = new System.Windows.Forms.Panel();
-            this.lblTimeBombCardrb25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb7 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb13 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardrb1 = new System.Windows.Forms.Label();
-            this.pctrbxRedBonusCard = new System.Windows.Forms.PictureBox();
-            this.pctrbxRedBonusCardExploded = new System.Windows.Forms.PictureBox();
-            this.pctrbxRedBonusCardDefused = new System.Windows.Forms.PictureBox();
-            this.pnlRegRedCard = new System.Windows.Forms.Panel();
-            this.pctrbxRedCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardr25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr13 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr7 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardr1 = new System.Windows.Forms.Label();
-            this.pnlRegPurpCard = new System.Windows.Forms.Panel();
-            this.pctrbxPurpleCardExploded = new System.Windows.Forms.PictureBox();
-            this.lblTimeBombCardp25 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp1 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp24 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp2 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp23 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp3 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp22 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp4 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp21 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp5 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp20 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp6 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp19 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp7 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp18 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp8 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp17 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp9 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp16 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp10 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp15 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp11 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp14 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp12 = new System.Windows.Forms.Label();
-            this.lblTimeBombCardp13 = new System.Windows.Forms.Label();
             this.pnlRegularGames = new System.Windows.Forms.Panel();
             this.lblSerialN1 = new System.Windows.Forms.Label();
             this.lblSerialN5 = new System.Windows.Forms.Label();
@@ -455,6 +229,231 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pnlDisputeResolutionTimeBomb = new System.Windows.Forms.Panel();
+            this.pnlRegBlueCard = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardb13 = new System.Windows.Forms.Label();
+            this.pctrbxBlueCardExploded = new System.Windows.Forms.PictureBox();
+            this.pnlTimeBombBlue = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardbb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardbb7 = new System.Windows.Forms.Label();
+            this.pctrbxBlueBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbcBlueBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxBlueBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pnlRegGreenCard = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardg25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardg13 = new System.Windows.Forms.Label();
+            this.pctrbxGreenCardExploded = new System.Windows.Forms.PictureBox();
+            this.pnlTimeBombGreen = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardgb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardgb7 = new System.Windows.Forms.Label();
+            this.pctrbxGreenBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbxGreenBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pctrbxGreenBonusCard = new System.Windows.Forms.PictureBox();
+            this.pnlTimeBombPurple = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardpb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardpb7 = new System.Windows.Forms.Label();
+            this.pctrbxPurpleBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbxPurpleBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxPurpleBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pnlTimeBombRed = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardrb25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardrb1 = new System.Windows.Forms.Label();
+            this.pctrbxRedBonusCard = new System.Windows.Forms.PictureBox();
+            this.pctrbxRedBonusCardExploded = new System.Windows.Forms.PictureBox();
+            this.pctrbxRedBonusCardDefused = new System.Windows.Forms.PictureBox();
+            this.pnlRegRedCard = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardr25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr13 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardr1 = new System.Windows.Forms.Label();
+            this.pctrbxRedCardExploded = new System.Windows.Forms.PictureBox();
+            this.pnlRegPurpCard = new System.Windows.Forms.Panel();
+            this.lblTimeBombCardp25 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp1 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp24 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp2 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp23 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp3 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp22 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp4 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp21 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp5 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp20 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp6 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp19 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp7 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp18 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp8 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp17 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp9 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp16 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp10 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp15 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp11 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp14 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp12 = new System.Windows.Forms.Label();
+            this.lblTimeBombCardp13 = new System.Windows.Forms.Label();
+            this.pctrbxPurpleCardExploded = new System.Windows.Forms.PictureBox();
             this.pnlBonusRound = new System.Windows.Forms.Panel();
             this.lblBonusSerial4 = new System.Windows.Forms.Label();
             this.lblBonusSerial3 = new System.Windows.Forms.Label();
@@ -569,8 +568,6 @@
             this.lbl7BingoCard1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.lstviewPatterListTable = new System.Windows.Forms.ListView();
@@ -585,8 +582,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtbxAccountNumber = new System.Windows.Forms.TextBox();
-            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             this.cmbxGameName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -598,37 +593,25 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblTimeBombRedBonusCard = new System.Windows.Forms.Label();
+            this.lblTimeBombRedRegCard = new System.Windows.Forms.Label();
+            this.lblTimeBombPurpleRegCard = new System.Windows.Forms.Label();
+            this.lblTimeBombPurpleBonusCard = new System.Windows.Forms.Label();
+            this.lblTimeBombBlueBonusCard = new System.Windows.Forms.Label();
+            this.lblTimeBombBlueRegCard = new System.Windows.Forms.Label();
+            this.lblTimeBombGreenRegCard = new System.Windows.Forms.Label();
+            this.lblTimeBombGreenBonusCard = new System.Windows.Forms.Label();
+            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
+            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.pnlDisputeResolutionTimeBomb.SuspendLayout();
-            this.pnlRegBlueCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).BeginInit();
-            this.pnlTimeBombBlue.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).BeginInit();
-            this.pnlRegGreenCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).BeginInit();
-            this.pnlTimeBombGreen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).BeginInit();
-            this.pnlTimeBombPurple.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).BeginInit();
-            this.pnlTimeBombRed.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).BeginInit();
-            this.pnlRegRedCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).BeginInit();
-            this.pnlRegPurpCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).BeginInit();
             this.pnlRegularGames.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -648,6 +631,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.pnlDisputeResolutionTimeBomb.SuspendLayout();
+            this.pnlRegBlueCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).BeginInit();
+            this.pnlTimeBombBlue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).BeginInit();
+            this.pnlRegGreenCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).BeginInit();
+            this.pnlTimeBombGreen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).BeginInit();
+            this.pnlTimeBombPurple.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).BeginInit();
+            this.pnlTimeBombRed.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).BeginInit();
+            this.pnlRegRedCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).BeginInit();
+            this.pnlRegPurpCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).BeginInit();
             this.pnlBonusRound.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -697,21 +705,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 752);
             this.panel1.TabIndex = 0;
-            // 
-            // imgbtnEnd
-            // 
-            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnEnd.Enabled = false;
-            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
-            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnEnd.Name = "imgbtnEnd";
-            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
-            this.imgbtnEnd.TabIndex = 28;
-            this.imgbtnEnd.Text = "End Search";
-            this.imgbtnEnd.UseVisualStyleBackColor = false;
-            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
             // 
             // lblMessageLastGameReach
             // 
@@ -952,2296 +945,6 @@
             this.label2.Size = new System.Drawing.Size(115, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Starting Credit";
-            // 
-            // pnlDisputeResolutionTimeBomb
-            // 
-            this.pnlDisputeResolutionTimeBomb.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegBlueCard);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombBlue);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegGreenCard);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombGreen);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombPurple);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombRed);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegRedCard);
-            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegPurpCard);
-            this.pnlDisputeResolutionTimeBomb.Location = new System.Drawing.Point(0, 0);
-            this.pnlDisputeResolutionTimeBomb.Name = "pnlDisputeResolutionTimeBomb";
-            this.pnlDisputeResolutionTimeBomb.Size = new System.Drawing.Size(672, 502);
-            this.pnlDisputeResolutionTimeBomb.TabIndex = 29;
-            this.pnlDisputeResolutionTimeBomb.Visible = false;
-            // 
-            // pnlRegBlueCard
-            // 
-            this.pnlRegBlueCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueCard;
-            this.pnlRegBlueCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb25);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb1);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb24);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb2);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb23);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb3);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb22);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb4);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb21);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb5);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb20);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb6);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb19);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb7);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb18);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb8);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb17);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb9);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb16);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb10);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb15);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb11);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb14);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb12);
-            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb13);
-            this.pnlRegBlueCard.Controls.Add(this.pctrbxBlueCardExploded);
-            this.pnlRegBlueCard.Location = new System.Drawing.Point(343, 245);
-            this.pnlRegBlueCard.Name = "pnlRegBlueCard";
-            this.pnlRegBlueCard.Size = new System.Drawing.Size(150, 175);
-            this.pnlRegBlueCard.TabIndex = 5;
-            // 
-            // pctrbxBlueCardExploded
-            // 
-            this.pctrbxBlueCardExploded.BackColor = System.Drawing.Color.White;
-            this.pctrbxBlueCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BlueCardExploded;
-            this.pctrbxBlueCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueCardExploded.Name = "pctrbxBlueCardExploded";
-            this.pctrbxBlueCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueCardExploded.TabIndex = 81;
-            this.pctrbxBlueCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardb25
-            // 
-            this.lblTimeBombCardb25.Location = new System.Drawing.Point(118, 138);
-            this.lblTimeBombCardb25.Name = "lblTimeBombCardb25";
-            this.lblTimeBombCardb25.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb25.TabIndex = 80;
-            this.lblTimeBombCardb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb1
-            // 
-            this.lblTimeBombCardb1.Location = new System.Drawing.Point(5, 27);
-            this.lblTimeBombCardb1.Name = "lblTimeBombCardb1";
-            this.lblTimeBombCardb1.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb1.TabIndex = 56;
-            this.lblTimeBombCardb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb24
-            // 
-            this.lblTimeBombCardb24.Location = new System.Drawing.Point(118, 110);
-            this.lblTimeBombCardb24.Name = "lblTimeBombCardb24";
-            this.lblTimeBombCardb24.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb24.TabIndex = 79;
-            this.lblTimeBombCardb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb2
-            // 
-            this.lblTimeBombCardb2.Location = new System.Drawing.Point(5, 55);
-            this.lblTimeBombCardb2.Name = "lblTimeBombCardb2";
-            this.lblTimeBombCardb2.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb2.TabIndex = 57;
-            this.lblTimeBombCardb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb23
-            // 
-            this.lblTimeBombCardb23.Location = new System.Drawing.Point(118, 82);
-            this.lblTimeBombCardb23.Name = "lblTimeBombCardb23";
-            this.lblTimeBombCardb23.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb23.TabIndex = 78;
-            this.lblTimeBombCardb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb3
-            // 
-            this.lblTimeBombCardb3.Location = new System.Drawing.Point(5, 82);
-            this.lblTimeBombCardb3.Name = "lblTimeBombCardb3";
-            this.lblTimeBombCardb3.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb3.TabIndex = 58;
-            this.lblTimeBombCardb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb22
-            // 
-            this.lblTimeBombCardb22.Location = new System.Drawing.Point(118, 55);
-            this.lblTimeBombCardb22.Name = "lblTimeBombCardb22";
-            this.lblTimeBombCardb22.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb22.TabIndex = 77;
-            this.lblTimeBombCardb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb4
-            // 
-            this.lblTimeBombCardb4.Location = new System.Drawing.Point(5, 110);
-            this.lblTimeBombCardb4.Name = "lblTimeBombCardb4";
-            this.lblTimeBombCardb4.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb4.TabIndex = 59;
-            this.lblTimeBombCardb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb21
-            // 
-            this.lblTimeBombCardb21.Location = new System.Drawing.Point(118, 27);
-            this.lblTimeBombCardb21.Name = "lblTimeBombCardb21";
-            this.lblTimeBombCardb21.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb21.TabIndex = 76;
-            this.lblTimeBombCardb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb5
-            // 
-            this.lblTimeBombCardb5.Location = new System.Drawing.Point(5, 138);
-            this.lblTimeBombCardb5.Name = "lblTimeBombCardb5";
-            this.lblTimeBombCardb5.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb5.TabIndex = 60;
-            this.lblTimeBombCardb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb20
-            // 
-            this.lblTimeBombCardb20.Location = new System.Drawing.Point(90, 138);
-            this.lblTimeBombCardb20.Name = "lblTimeBombCardb20";
-            this.lblTimeBombCardb20.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb20.TabIndex = 75;
-            this.lblTimeBombCardb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb6
-            // 
-            this.lblTimeBombCardb6.Location = new System.Drawing.Point(34, 27);
-            this.lblTimeBombCardb6.Name = "lblTimeBombCardb6";
-            this.lblTimeBombCardb6.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb6.TabIndex = 61;
-            this.lblTimeBombCardb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb19
-            // 
-            this.lblTimeBombCardb19.Location = new System.Drawing.Point(90, 110);
-            this.lblTimeBombCardb19.Name = "lblTimeBombCardb19";
-            this.lblTimeBombCardb19.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb19.TabIndex = 74;
-            this.lblTimeBombCardb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb7
-            // 
-            this.lblTimeBombCardb7.Location = new System.Drawing.Point(34, 55);
-            this.lblTimeBombCardb7.Name = "lblTimeBombCardb7";
-            this.lblTimeBombCardb7.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb7.TabIndex = 62;
-            this.lblTimeBombCardb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb18
-            // 
-            this.lblTimeBombCardb18.Location = new System.Drawing.Point(90, 82);
-            this.lblTimeBombCardb18.Name = "lblTimeBombCardb18";
-            this.lblTimeBombCardb18.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb18.TabIndex = 73;
-            this.lblTimeBombCardb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb8
-            // 
-            this.lblTimeBombCardb8.Location = new System.Drawing.Point(34, 82);
-            this.lblTimeBombCardb8.Name = "lblTimeBombCardb8";
-            this.lblTimeBombCardb8.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb8.TabIndex = 63;
-            this.lblTimeBombCardb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb17
-            // 
-            this.lblTimeBombCardb17.Location = new System.Drawing.Point(90, 55);
-            this.lblTimeBombCardb17.Name = "lblTimeBombCardb17";
-            this.lblTimeBombCardb17.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb17.TabIndex = 72;
-            this.lblTimeBombCardb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb9
-            // 
-            this.lblTimeBombCardb9.Location = new System.Drawing.Point(34, 110);
-            this.lblTimeBombCardb9.Name = "lblTimeBombCardb9";
-            this.lblTimeBombCardb9.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb9.TabIndex = 64;
-            this.lblTimeBombCardb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb16
-            // 
-            this.lblTimeBombCardb16.Location = new System.Drawing.Point(90, 27);
-            this.lblTimeBombCardb16.Name = "lblTimeBombCardb16";
-            this.lblTimeBombCardb16.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb16.TabIndex = 71;
-            this.lblTimeBombCardb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb10
-            // 
-            this.lblTimeBombCardb10.Location = new System.Drawing.Point(34, 138);
-            this.lblTimeBombCardb10.Name = "lblTimeBombCardb10";
-            this.lblTimeBombCardb10.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb10.TabIndex = 65;
-            this.lblTimeBombCardb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb15
-            // 
-            this.lblTimeBombCardb15.Location = new System.Drawing.Point(62, 138);
-            this.lblTimeBombCardb15.Name = "lblTimeBombCardb15";
-            this.lblTimeBombCardb15.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb15.TabIndex = 70;
-            this.lblTimeBombCardb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb11
-            // 
-            this.lblTimeBombCardb11.Location = new System.Drawing.Point(62, 27);
-            this.lblTimeBombCardb11.Name = "lblTimeBombCardb11";
-            this.lblTimeBombCardb11.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb11.TabIndex = 66;
-            this.lblTimeBombCardb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb14
-            // 
-            this.lblTimeBombCardb14.Location = new System.Drawing.Point(62, 110);
-            this.lblTimeBombCardb14.Name = "lblTimeBombCardb14";
-            this.lblTimeBombCardb14.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb14.TabIndex = 69;
-            this.lblTimeBombCardb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb12
-            // 
-            this.lblTimeBombCardb12.Location = new System.Drawing.Point(62, 55);
-            this.lblTimeBombCardb12.Name = "lblTimeBombCardb12";
-            this.lblTimeBombCardb12.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb12.TabIndex = 67;
-            this.lblTimeBombCardb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardb13
-            // 
-            this.lblTimeBombCardb13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeBombCardb13.Location = new System.Drawing.Point(62, 82);
-            this.lblTimeBombCardb13.Name = "lblTimeBombCardb13";
-            this.lblTimeBombCardb13.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardb13.TabIndex = 68;
-            this.lblTimeBombCardb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardb13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pnlTimeBombBlue
-            // 
-            this.pnlTimeBombBlue.BackColor = System.Drawing.Color.White;
-            this.pnlTimeBombBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb25);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb1);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb24);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb11);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb23);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb2);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb22);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb12);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb21);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb3);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb20);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb13);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb10);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb4);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb19);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb14);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb9);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb5);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb18);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb15);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb8);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb6);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb17);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb16);
-            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb7);
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardExploded);
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbcBlueBonusCard);
-            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardDefused);
-            this.pnlTimeBombBlue.Location = new System.Drawing.Point(507, 245);
-            this.pnlTimeBombBlue.Name = "pnlTimeBombBlue";
-            this.pnlTimeBombBlue.Size = new System.Drawing.Size(150, 175);
-            this.pnlTimeBombBlue.TabIndex = 5;
-            // 
-            // pctrbxBlueBonusCardDefused
-            // 
-            this.pctrbxBlueBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueBonusCard;
-            this.pctrbxBlueBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueBonusCardDefused.Name = "pctrbxBlueBonusCardDefused";
-            this.pctrbxBlueBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueBonusCardDefused.TabIndex = 54;
-            this.pctrbxBlueBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxBlueBonusCardExploded
-            // 
-            this.pctrbxBlueBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxBlueBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxBlueBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxBlueBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxBlueBonusCardExploded.Name = "pctrbxBlueBonusCardExploded";
-            this.pctrbxBlueBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxBlueBonusCardExploded.TabIndex = 53;
-            this.pctrbxBlueBonusCardExploded.TabStop = false;
-            // 
-            // pctrbcBlueBonusCard
-            // 
-            this.pctrbcBlueBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbcBlueBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbcBlueBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbcBlueBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbcBlueBonusCard.Name = "pctrbcBlueBonusCard";
-            this.pctrbcBlueBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbcBlueBonusCard.TabIndex = 55;
-            this.pctrbcBlueBonusCard.TabStop = false;
-            // 
-            // lblTimeBombCardbb25
-            // 
-            this.lblTimeBombCardbb25.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb25.Location = new System.Drawing.Point(121, 144);
-            this.lblTimeBombCardbb25.Name = "lblTimeBombCardbb25";
-            this.lblTimeBombCardbb25.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb25.TabIndex = 50;
-            this.lblTimeBombCardbb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb1
-            // 
-            this.lblTimeBombCardbb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb1.Location = new System.Drawing.Point(5, 44);
-            this.lblTimeBombCardbb1.Name = "lblTimeBombCardbb1";
-            this.lblTimeBombCardbb1.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb1.TabIndex = 28;
-            this.lblTimeBombCardbb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb24
-            // 
-            this.lblTimeBombCardbb24.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb24.Location = new System.Drawing.Point(121, 119);
-            this.lblTimeBombCardbb24.Name = "lblTimeBombCardbb24";
-            this.lblTimeBombCardbb24.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb24.TabIndex = 51;
-            this.lblTimeBombCardbb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb11
-            // 
-            this.lblTimeBombCardbb11.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb11.Location = new System.Drawing.Point(63, 44);
-            this.lblTimeBombCardbb11.Name = "lblTimeBombCardbb11";
-            this.lblTimeBombCardbb11.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb11.TabIndex = 38;
-            this.lblTimeBombCardbb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb23
-            // 
-            this.lblTimeBombCardbb23.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb23.Location = new System.Drawing.Point(121, 94);
-            this.lblTimeBombCardbb23.Name = "lblTimeBombCardbb23";
-            this.lblTimeBombCardbb23.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb23.TabIndex = 52;
-            this.lblTimeBombCardbb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb2
-            // 
-            this.lblTimeBombCardbb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb2.Location = new System.Drawing.Point(5, 69);
-            this.lblTimeBombCardbb2.Name = "lblTimeBombCardbb2";
-            this.lblTimeBombCardbb2.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb2.TabIndex = 29;
-            this.lblTimeBombCardbb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb22
-            // 
-            this.lblTimeBombCardbb22.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb22.Location = new System.Drawing.Point(121, 69);
-            this.lblTimeBombCardbb22.Name = "lblTimeBombCardbb22";
-            this.lblTimeBombCardbb22.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb22.TabIndex = 49;
-            this.lblTimeBombCardbb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb12
-            // 
-            this.lblTimeBombCardbb12.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb12.Location = new System.Drawing.Point(63, 69);
-            this.lblTimeBombCardbb12.Name = "lblTimeBombCardbb12";
-            this.lblTimeBombCardbb12.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb12.TabIndex = 39;
-            this.lblTimeBombCardbb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb21
-            // 
-            this.lblTimeBombCardbb21.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb21.Location = new System.Drawing.Point(121, 44);
-            this.lblTimeBombCardbb21.Name = "lblTimeBombCardbb21";
-            this.lblTimeBombCardbb21.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb21.TabIndex = 48;
-            this.lblTimeBombCardbb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb3
-            // 
-            this.lblTimeBombCardbb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb3.Location = new System.Drawing.Point(5, 94);
-            this.lblTimeBombCardbb3.Name = "lblTimeBombCardbb3";
-            this.lblTimeBombCardbb3.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb3.TabIndex = 32;
-            this.lblTimeBombCardbb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb20
-            // 
-            this.lblTimeBombCardbb20.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb20.Location = new System.Drawing.Point(92, 144);
-            this.lblTimeBombCardbb20.Name = "lblTimeBombCardbb20";
-            this.lblTimeBombCardbb20.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb20.TabIndex = 45;
-            this.lblTimeBombCardbb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb13
-            // 
-            this.lblTimeBombCardbb13.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb13.Location = new System.Drawing.Point(63, 94);
-            this.lblTimeBombCardbb13.Name = "lblTimeBombCardbb13";
-            this.lblTimeBombCardbb13.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb13.TabIndex = 42;
-            this.lblTimeBombCardbb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb10
-            // 
-            this.lblTimeBombCardbb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb10.Location = new System.Drawing.Point(34, 144);
-            this.lblTimeBombCardbb10.Name = "lblTimeBombCardbb10";
-            this.lblTimeBombCardbb10.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb10.TabIndex = 35;
-            this.lblTimeBombCardbb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb4
-            // 
-            this.lblTimeBombCardbb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb4.Location = new System.Drawing.Point(5, 119);
-            this.lblTimeBombCardbb4.Name = "lblTimeBombCardbb4";
-            this.lblTimeBombCardbb4.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb4.TabIndex = 31;
-            this.lblTimeBombCardbb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb19
-            // 
-            this.lblTimeBombCardbb19.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb19.Location = new System.Drawing.Point(92, 119);
-            this.lblTimeBombCardbb19.Name = "lblTimeBombCardbb19";
-            this.lblTimeBombCardbb19.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb19.TabIndex = 46;
-            this.lblTimeBombCardbb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb14
-            // 
-            this.lblTimeBombCardbb14.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb14.Location = new System.Drawing.Point(63, 119);
-            this.lblTimeBombCardbb14.Name = "lblTimeBombCardbb14";
-            this.lblTimeBombCardbb14.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb14.TabIndex = 41;
-            this.lblTimeBombCardbb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb9
-            // 
-            this.lblTimeBombCardbb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb9.Location = new System.Drawing.Point(34, 119);
-            this.lblTimeBombCardbb9.Name = "lblTimeBombCardbb9";
-            this.lblTimeBombCardbb9.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb9.TabIndex = 36;
-            this.lblTimeBombCardbb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb5
-            // 
-            this.lblTimeBombCardbb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb5.Location = new System.Drawing.Point(5, 144);
-            this.lblTimeBombCardbb5.Name = "lblTimeBombCardbb5";
-            this.lblTimeBombCardbb5.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb5.TabIndex = 30;
-            this.lblTimeBombCardbb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb18
-            // 
-            this.lblTimeBombCardbb18.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb18.Location = new System.Drawing.Point(92, 94);
-            this.lblTimeBombCardbb18.Name = "lblTimeBombCardbb18";
-            this.lblTimeBombCardbb18.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb18.TabIndex = 47;
-            this.lblTimeBombCardbb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb15
-            // 
-            this.lblTimeBombCardbb15.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb15.Location = new System.Drawing.Point(63, 144);
-            this.lblTimeBombCardbb15.Name = "lblTimeBombCardbb15";
-            this.lblTimeBombCardbb15.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb15.TabIndex = 40;
-            this.lblTimeBombCardbb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb8
-            // 
-            this.lblTimeBombCardbb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb8.Location = new System.Drawing.Point(34, 94);
-            this.lblTimeBombCardbb8.Name = "lblTimeBombCardbb8";
-            this.lblTimeBombCardbb8.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb8.TabIndex = 37;
-            this.lblTimeBombCardbb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb6
-            // 
-            this.lblTimeBombCardbb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb6.Location = new System.Drawing.Point(34, 44);
-            this.lblTimeBombCardbb6.Name = "lblTimeBombCardbb6";
-            this.lblTimeBombCardbb6.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb6.TabIndex = 33;
-            this.lblTimeBombCardbb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb17
-            // 
-            this.lblTimeBombCardbb17.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb17.Location = new System.Drawing.Point(92, 69);
-            this.lblTimeBombCardbb17.Name = "lblTimeBombCardbb17";
-            this.lblTimeBombCardbb17.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb17.TabIndex = 44;
-            this.lblTimeBombCardbb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb16
-            // 
-            this.lblTimeBombCardbb16.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb16.Location = new System.Drawing.Point(92, 44);
-            this.lblTimeBombCardbb16.Name = "lblTimeBombCardbb16";
-            this.lblTimeBombCardbb16.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb16.TabIndex = 43;
-            this.lblTimeBombCardbb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardbb7
-            // 
-            this.lblTimeBombCardbb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardbb7.Location = new System.Drawing.Point(34, 69);
-            this.lblTimeBombCardbb7.Name = "lblTimeBombCardbb7";
-            this.lblTimeBombCardbb7.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardbb7.TabIndex = 34;
-            this.lblTimeBombCardbb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlRegGreenCard
-            // 
-            this.pnlRegGreenCard.BackColor = System.Drawing.Color.White;
-            this.pnlRegGreenCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenCard;
-            this.pnlRegGreenCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg25);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg1);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg24);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg2);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg23);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg3);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg22);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg4);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg21);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg5);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg20);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg6);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg19);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg7);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg18);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg8);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg17);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg9);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg16);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg10);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg15);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg11);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg14);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg12);
-            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg13);
-            this.pnlRegGreenCard.Controls.Add(this.pctrbxGreenCardExploded);
-            this.pnlRegGreenCard.Location = new System.Drawing.Point(179, 245);
-            this.pnlRegGreenCard.Name = "pnlRegGreenCard";
-            this.pnlRegGreenCard.Size = new System.Drawing.Size(150, 175);
-            this.pnlRegGreenCard.TabIndex = 5;
-            // 
-            // pctrbxGreenCardExploded
-            // 
-            this.pctrbxGreenCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.GreenCardExploded;
-            this.pctrbxGreenCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenCardExploded.Name = "pctrbxGreenCardExploded";
-            this.pctrbxGreenCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenCardExploded.TabIndex = 56;
-            this.pctrbxGreenCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardg25
-            // 
-            this.lblTimeBombCardg25.Location = new System.Drawing.Point(118, 138);
-            this.lblTimeBombCardg25.Name = "lblTimeBombCardg25";
-            this.lblTimeBombCardg25.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg25.TabIndex = 55;
-            this.lblTimeBombCardg25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg1
-            // 
-            this.lblTimeBombCardg1.Location = new System.Drawing.Point(7, 26);
-            this.lblTimeBombCardg1.Name = "lblTimeBombCardg1";
-            this.lblTimeBombCardg1.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg1.TabIndex = 31;
-            this.lblTimeBombCardg1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg24
-            // 
-            this.lblTimeBombCardg24.Location = new System.Drawing.Point(118, 110);
-            this.lblTimeBombCardg24.Name = "lblTimeBombCardg24";
-            this.lblTimeBombCardg24.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg24.TabIndex = 54;
-            this.lblTimeBombCardg24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg2
-            // 
-            this.lblTimeBombCardg2.Location = new System.Drawing.Point(7, 54);
-            this.lblTimeBombCardg2.Name = "lblTimeBombCardg2";
-            this.lblTimeBombCardg2.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg2.TabIndex = 32;
-            this.lblTimeBombCardg2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg23
-            // 
-            this.lblTimeBombCardg23.Location = new System.Drawing.Point(118, 82);
-            this.lblTimeBombCardg23.Name = "lblTimeBombCardg23";
-            this.lblTimeBombCardg23.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg23.TabIndex = 53;
-            this.lblTimeBombCardg23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg3
-            // 
-            this.lblTimeBombCardg3.Location = new System.Drawing.Point(7, 82);
-            this.lblTimeBombCardg3.Name = "lblTimeBombCardg3";
-            this.lblTimeBombCardg3.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg3.TabIndex = 33;
-            this.lblTimeBombCardg3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg22
-            // 
-            this.lblTimeBombCardg22.Location = new System.Drawing.Point(118, 54);
-            this.lblTimeBombCardg22.Name = "lblTimeBombCardg22";
-            this.lblTimeBombCardg22.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg22.TabIndex = 52;
-            this.lblTimeBombCardg22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg4
-            // 
-            this.lblTimeBombCardg4.Location = new System.Drawing.Point(7, 110);
-            this.lblTimeBombCardg4.Name = "lblTimeBombCardg4";
-            this.lblTimeBombCardg4.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg4.TabIndex = 34;
-            this.lblTimeBombCardg4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg21
-            // 
-            this.lblTimeBombCardg21.Location = new System.Drawing.Point(118, 26);
-            this.lblTimeBombCardg21.Name = "lblTimeBombCardg21";
-            this.lblTimeBombCardg21.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg21.TabIndex = 51;
-            this.lblTimeBombCardg21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg5
-            // 
-            this.lblTimeBombCardg5.Location = new System.Drawing.Point(7, 138);
-            this.lblTimeBombCardg5.Name = "lblTimeBombCardg5";
-            this.lblTimeBombCardg5.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg5.TabIndex = 35;
-            this.lblTimeBombCardg5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg20
-            // 
-            this.lblTimeBombCardg20.Location = new System.Drawing.Point(90, 138);
-            this.lblTimeBombCardg20.Name = "lblTimeBombCardg20";
-            this.lblTimeBombCardg20.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg20.TabIndex = 50;
-            this.lblTimeBombCardg20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg6
-            // 
-            this.lblTimeBombCardg6.Location = new System.Drawing.Point(35, 26);
-            this.lblTimeBombCardg6.Name = "lblTimeBombCardg6";
-            this.lblTimeBombCardg6.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg6.TabIndex = 36;
-            this.lblTimeBombCardg6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg19
-            // 
-            this.lblTimeBombCardg19.Location = new System.Drawing.Point(90, 110);
-            this.lblTimeBombCardg19.Name = "lblTimeBombCardg19";
-            this.lblTimeBombCardg19.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg19.TabIndex = 49;
-            this.lblTimeBombCardg19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg7
-            // 
-            this.lblTimeBombCardg7.Location = new System.Drawing.Point(35, 54);
-            this.lblTimeBombCardg7.Name = "lblTimeBombCardg7";
-            this.lblTimeBombCardg7.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg7.TabIndex = 37;
-            this.lblTimeBombCardg7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg18
-            // 
-            this.lblTimeBombCardg18.Location = new System.Drawing.Point(90, 82);
-            this.lblTimeBombCardg18.Name = "lblTimeBombCardg18";
-            this.lblTimeBombCardg18.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg18.TabIndex = 48;
-            this.lblTimeBombCardg18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg8
-            // 
-            this.lblTimeBombCardg8.Location = new System.Drawing.Point(35, 82);
-            this.lblTimeBombCardg8.Name = "lblTimeBombCardg8";
-            this.lblTimeBombCardg8.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg8.TabIndex = 38;
-            this.lblTimeBombCardg8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg17
-            // 
-            this.lblTimeBombCardg17.Location = new System.Drawing.Point(90, 54);
-            this.lblTimeBombCardg17.Name = "lblTimeBombCardg17";
-            this.lblTimeBombCardg17.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg17.TabIndex = 47;
-            this.lblTimeBombCardg17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg9
-            // 
-            this.lblTimeBombCardg9.Location = new System.Drawing.Point(35, 110);
-            this.lblTimeBombCardg9.Name = "lblTimeBombCardg9";
-            this.lblTimeBombCardg9.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg9.TabIndex = 39;
-            this.lblTimeBombCardg9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg16
-            // 
-            this.lblTimeBombCardg16.Location = new System.Drawing.Point(90, 26);
-            this.lblTimeBombCardg16.Name = "lblTimeBombCardg16";
-            this.lblTimeBombCardg16.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg16.TabIndex = 46;
-            this.lblTimeBombCardg16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg10
-            // 
-            this.lblTimeBombCardg10.Location = new System.Drawing.Point(35, 138);
-            this.lblTimeBombCardg10.Name = "lblTimeBombCardg10";
-            this.lblTimeBombCardg10.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg10.TabIndex = 40;
-            this.lblTimeBombCardg10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg15
-            // 
-            this.lblTimeBombCardg15.Location = new System.Drawing.Point(62, 138);
-            this.lblTimeBombCardg15.Name = "lblTimeBombCardg15";
-            this.lblTimeBombCardg15.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg15.TabIndex = 45;
-            this.lblTimeBombCardg15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg11
-            // 
-            this.lblTimeBombCardg11.Location = new System.Drawing.Point(62, 26);
-            this.lblTimeBombCardg11.Name = "lblTimeBombCardg11";
-            this.lblTimeBombCardg11.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg11.TabIndex = 41;
-            this.lblTimeBombCardg11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg14
-            // 
-            this.lblTimeBombCardg14.Location = new System.Drawing.Point(62, 110);
-            this.lblTimeBombCardg14.Name = "lblTimeBombCardg14";
-            this.lblTimeBombCardg14.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg14.TabIndex = 44;
-            this.lblTimeBombCardg14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg12
-            // 
-            this.lblTimeBombCardg12.Location = new System.Drawing.Point(62, 54);
-            this.lblTimeBombCardg12.Name = "lblTimeBombCardg12";
-            this.lblTimeBombCardg12.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg12.TabIndex = 42;
-            this.lblTimeBombCardg12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardg13
-            // 
-            this.lblTimeBombCardg13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeBombCardg13.Location = new System.Drawing.Point(62, 82);
-            this.lblTimeBombCardg13.Name = "lblTimeBombCardg13";
-            this.lblTimeBombCardg13.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardg13.TabIndex = 43;
-            this.lblTimeBombCardg13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardg13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pnlTimeBombGreen
-            // 
-            this.pnlTimeBombGreen.BackColor = System.Drawing.Color.White;
-            this.pnlTimeBombGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb25);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb1);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb24);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb11);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb23);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb2);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb22);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb12);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb21);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb3);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb20);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb13);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb10);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb4);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb19);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb14);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb9);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb5);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb18);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb15);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb8);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb6);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb17);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb16);
-            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb7);
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardExploded);
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardDefused);
-            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCard);
-            this.pnlTimeBombGreen.Location = new System.Drawing.Point(15, 245);
-            this.pnlTimeBombGreen.Name = "pnlTimeBombGreen";
-            this.pnlTimeBombGreen.Size = new System.Drawing.Size(150, 175);
-            this.pnlTimeBombGreen.TabIndex = 4;
-            // 
-            // pctrbxGreenBonusCardDefused
-            // 
-            this.pctrbxGreenBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenBonusCard;
-            this.pctrbxGreenBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCardDefused.Name = "pctrbxGreenBonusCardDefused";
-            this.pctrbxGreenBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCardDefused.TabIndex = 54;
-            this.pctrbxGreenBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxGreenBonusCard
-            // 
-            this.pctrbxGreenBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxGreenBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCard.Name = "pctrbxGreenBonusCard";
-            this.pctrbxGreenBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCard.TabIndex = 55;
-            this.pctrbxGreenBonusCard.TabStop = false;
-            // 
-            // pctrbxGreenBonusCardExploded
-            // 
-            this.pctrbxGreenBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxGreenBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxGreenBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxGreenBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxGreenBonusCardExploded.Name = "pctrbxGreenBonusCardExploded";
-            this.pctrbxGreenBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxGreenBonusCardExploded.TabIndex = 53;
-            this.pctrbxGreenBonusCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardgb25
-            // 
-            this.lblTimeBombCardgb25.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb25.Location = new System.Drawing.Point(120, 144);
-            this.lblTimeBombCardgb25.Name = "lblTimeBombCardgb25";
-            this.lblTimeBombCardgb25.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb25.TabIndex = 50;
-            this.lblTimeBombCardgb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb1
-            // 
-            this.lblTimeBombCardgb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb1.Location = new System.Drawing.Point(4, 44);
-            this.lblTimeBombCardgb1.Name = "lblTimeBombCardgb1";
-            this.lblTimeBombCardgb1.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb1.TabIndex = 28;
-            this.lblTimeBombCardgb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb24
-            // 
-            this.lblTimeBombCardgb24.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb24.Location = new System.Drawing.Point(120, 119);
-            this.lblTimeBombCardgb24.Name = "lblTimeBombCardgb24";
-            this.lblTimeBombCardgb24.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb24.TabIndex = 51;
-            this.lblTimeBombCardgb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb11
-            // 
-            this.lblTimeBombCardgb11.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb11.Location = new System.Drawing.Point(62, 44);
-            this.lblTimeBombCardgb11.Name = "lblTimeBombCardgb11";
-            this.lblTimeBombCardgb11.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb11.TabIndex = 38;
-            this.lblTimeBombCardgb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb23
-            // 
-            this.lblTimeBombCardgb23.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb23.Location = new System.Drawing.Point(120, 94);
-            this.lblTimeBombCardgb23.Name = "lblTimeBombCardgb23";
-            this.lblTimeBombCardgb23.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb23.TabIndex = 52;
-            this.lblTimeBombCardgb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb2
-            // 
-            this.lblTimeBombCardgb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb2.Location = new System.Drawing.Point(4, 69);
-            this.lblTimeBombCardgb2.Name = "lblTimeBombCardgb2";
-            this.lblTimeBombCardgb2.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb2.TabIndex = 29;
-            this.lblTimeBombCardgb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb22
-            // 
-            this.lblTimeBombCardgb22.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb22.Location = new System.Drawing.Point(120, 69);
-            this.lblTimeBombCardgb22.Name = "lblTimeBombCardgb22";
-            this.lblTimeBombCardgb22.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb22.TabIndex = 49;
-            this.lblTimeBombCardgb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb12
-            // 
-            this.lblTimeBombCardgb12.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb12.Location = new System.Drawing.Point(62, 69);
-            this.lblTimeBombCardgb12.Name = "lblTimeBombCardgb12";
-            this.lblTimeBombCardgb12.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb12.TabIndex = 39;
-            this.lblTimeBombCardgb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb21
-            // 
-            this.lblTimeBombCardgb21.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb21.Location = new System.Drawing.Point(120, 44);
-            this.lblTimeBombCardgb21.Name = "lblTimeBombCardgb21";
-            this.lblTimeBombCardgb21.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb21.TabIndex = 48;
-            this.lblTimeBombCardgb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb3
-            // 
-            this.lblTimeBombCardgb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb3.Location = new System.Drawing.Point(4, 94);
-            this.lblTimeBombCardgb3.Name = "lblTimeBombCardgb3";
-            this.lblTimeBombCardgb3.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb3.TabIndex = 32;
-            this.lblTimeBombCardgb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb20
-            // 
-            this.lblTimeBombCardgb20.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb20.Location = new System.Drawing.Point(91, 144);
-            this.lblTimeBombCardgb20.Name = "lblTimeBombCardgb20";
-            this.lblTimeBombCardgb20.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb20.TabIndex = 45;
-            this.lblTimeBombCardgb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb13
-            // 
-            this.lblTimeBombCardgb13.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb13.Location = new System.Drawing.Point(62, 94);
-            this.lblTimeBombCardgb13.Name = "lblTimeBombCardgb13";
-            this.lblTimeBombCardgb13.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb13.TabIndex = 42;
-            this.lblTimeBombCardgb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb10
-            // 
-            this.lblTimeBombCardgb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb10.Location = new System.Drawing.Point(33, 144);
-            this.lblTimeBombCardgb10.Name = "lblTimeBombCardgb10";
-            this.lblTimeBombCardgb10.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb10.TabIndex = 35;
-            this.lblTimeBombCardgb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb4
-            // 
-            this.lblTimeBombCardgb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb4.Location = new System.Drawing.Point(4, 119);
-            this.lblTimeBombCardgb4.Name = "lblTimeBombCardgb4";
-            this.lblTimeBombCardgb4.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb4.TabIndex = 31;
-            this.lblTimeBombCardgb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb19
-            // 
-            this.lblTimeBombCardgb19.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb19.Location = new System.Drawing.Point(91, 119);
-            this.lblTimeBombCardgb19.Name = "lblTimeBombCardgb19";
-            this.lblTimeBombCardgb19.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb19.TabIndex = 46;
-            this.lblTimeBombCardgb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb14
-            // 
-            this.lblTimeBombCardgb14.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb14.Location = new System.Drawing.Point(62, 119);
-            this.lblTimeBombCardgb14.Name = "lblTimeBombCardgb14";
-            this.lblTimeBombCardgb14.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb14.TabIndex = 41;
-            this.lblTimeBombCardgb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb9
-            // 
-            this.lblTimeBombCardgb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb9.Location = new System.Drawing.Point(33, 119);
-            this.lblTimeBombCardgb9.Name = "lblTimeBombCardgb9";
-            this.lblTimeBombCardgb9.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb9.TabIndex = 36;
-            this.lblTimeBombCardgb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb5
-            // 
-            this.lblTimeBombCardgb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb5.Location = new System.Drawing.Point(4, 144);
-            this.lblTimeBombCardgb5.Name = "lblTimeBombCardgb5";
-            this.lblTimeBombCardgb5.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb5.TabIndex = 30;
-            this.lblTimeBombCardgb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb18
-            // 
-            this.lblTimeBombCardgb18.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb18.Location = new System.Drawing.Point(91, 94);
-            this.lblTimeBombCardgb18.Name = "lblTimeBombCardgb18";
-            this.lblTimeBombCardgb18.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb18.TabIndex = 47;
-            this.lblTimeBombCardgb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb15
-            // 
-            this.lblTimeBombCardgb15.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb15.Location = new System.Drawing.Point(62, 144);
-            this.lblTimeBombCardgb15.Name = "lblTimeBombCardgb15";
-            this.lblTimeBombCardgb15.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb15.TabIndex = 40;
-            this.lblTimeBombCardgb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb8
-            // 
-            this.lblTimeBombCardgb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb8.Location = new System.Drawing.Point(33, 94);
-            this.lblTimeBombCardgb8.Name = "lblTimeBombCardgb8";
-            this.lblTimeBombCardgb8.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb8.TabIndex = 37;
-            this.lblTimeBombCardgb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb6
-            // 
-            this.lblTimeBombCardgb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb6.Location = new System.Drawing.Point(33, 44);
-            this.lblTimeBombCardgb6.Name = "lblTimeBombCardgb6";
-            this.lblTimeBombCardgb6.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb6.TabIndex = 33;
-            this.lblTimeBombCardgb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb17
-            // 
-            this.lblTimeBombCardgb17.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb17.Location = new System.Drawing.Point(91, 69);
-            this.lblTimeBombCardgb17.Name = "lblTimeBombCardgb17";
-            this.lblTimeBombCardgb17.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb17.TabIndex = 44;
-            this.lblTimeBombCardgb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb16
-            // 
-            this.lblTimeBombCardgb16.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb16.Location = new System.Drawing.Point(91, 44);
-            this.lblTimeBombCardgb16.Name = "lblTimeBombCardgb16";
-            this.lblTimeBombCardgb16.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb16.TabIndex = 43;
-            this.lblTimeBombCardgb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardgb7
-            // 
-            this.lblTimeBombCardgb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardgb7.Location = new System.Drawing.Point(33, 69);
-            this.lblTimeBombCardgb7.Name = "lblTimeBombCardgb7";
-            this.lblTimeBombCardgb7.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardgb7.TabIndex = 34;
-            this.lblTimeBombCardgb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlTimeBombPurple
-            // 
-            this.pnlTimeBombPurple.BackColor = System.Drawing.Color.White;
-            this.pnlTimeBombPurple.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb25);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb1);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb24);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb11);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb23);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb2);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb22);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb12);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb21);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb3);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb20);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb13);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb10);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb4);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb19);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb14);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb9);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb5);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb18);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb15);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb8);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb6);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb17);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb16);
-            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb7);
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardExploded);
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCard);
-            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardDefused);
-            this.pnlTimeBombPurple.Location = new System.Drawing.Point(507, 53);
-            this.pnlTimeBombPurple.Name = "pnlTimeBombPurple";
-            this.pnlTimeBombPurple.Size = new System.Drawing.Size(150, 175);
-            this.pnlTimeBombPurple.TabIndex = 4;
-            // 
-            // pctrbxPurpleBonusCardDefused
-            // 
-            this.pctrbxPurpleBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
-            this.pctrbxPurpleBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCardDefused.Name = "pctrbxPurpleBonusCardDefused";
-            this.pctrbxPurpleBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCardDefused.TabIndex = 79;
-            this.pctrbxPurpleBonusCardDefused.TabStop = false;
-            // 
-            // pctrbxPurpleBonusCard
-            // 
-            this.pctrbxPurpleBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxPurpleBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCard.Name = "pctrbxPurpleBonusCard";
-            this.pctrbxPurpleBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCard.TabIndex = 80;
-            this.pctrbxPurpleBonusCard.TabStop = false;
-            // 
-            // pctrbxPurpleBonusCardExploded
-            // 
-            this.pctrbxPurpleBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxPurpleBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleBonusCardExploded.Name = "pctrbxPurpleBonusCardExploded";
-            this.pctrbxPurpleBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleBonusCardExploded.TabIndex = 78;
-            this.pctrbxPurpleBonusCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardpb25
-            // 
-            this.lblTimeBombCardpb25.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb25.Location = new System.Drawing.Point(120, 144);
-            this.lblTimeBombCardpb25.Name = "lblTimeBombCardpb25";
-            this.lblTimeBombCardpb25.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb25.TabIndex = 75;
-            this.lblTimeBombCardpb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb1
-            // 
-            this.lblTimeBombCardpb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb1.Location = new System.Drawing.Point(4, 44);
-            this.lblTimeBombCardpb1.Name = "lblTimeBombCardpb1";
-            this.lblTimeBombCardpb1.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb1.TabIndex = 53;
-            this.lblTimeBombCardpb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb24
-            // 
-            this.lblTimeBombCardpb24.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb24.Location = new System.Drawing.Point(120, 119);
-            this.lblTimeBombCardpb24.Name = "lblTimeBombCardpb24";
-            this.lblTimeBombCardpb24.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb24.TabIndex = 76;
-            this.lblTimeBombCardpb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb11
-            // 
-            this.lblTimeBombCardpb11.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb11.Location = new System.Drawing.Point(62, 44);
-            this.lblTimeBombCardpb11.Name = "lblTimeBombCardpb11";
-            this.lblTimeBombCardpb11.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb11.TabIndex = 63;
-            this.lblTimeBombCardpb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb23
-            // 
-            this.lblTimeBombCardpb23.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb23.Location = new System.Drawing.Point(120, 94);
-            this.lblTimeBombCardpb23.Name = "lblTimeBombCardpb23";
-            this.lblTimeBombCardpb23.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb23.TabIndex = 77;
-            this.lblTimeBombCardpb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb2
-            // 
-            this.lblTimeBombCardpb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb2.Location = new System.Drawing.Point(4, 69);
-            this.lblTimeBombCardpb2.Name = "lblTimeBombCardpb2";
-            this.lblTimeBombCardpb2.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb2.TabIndex = 54;
-            this.lblTimeBombCardpb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb22
-            // 
-            this.lblTimeBombCardpb22.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb22.Location = new System.Drawing.Point(120, 69);
-            this.lblTimeBombCardpb22.Name = "lblTimeBombCardpb22";
-            this.lblTimeBombCardpb22.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb22.TabIndex = 74;
-            this.lblTimeBombCardpb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb12
-            // 
-            this.lblTimeBombCardpb12.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb12.Location = new System.Drawing.Point(62, 69);
-            this.lblTimeBombCardpb12.Name = "lblTimeBombCardpb12";
-            this.lblTimeBombCardpb12.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb12.TabIndex = 64;
-            this.lblTimeBombCardpb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb21
-            // 
-            this.lblTimeBombCardpb21.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb21.Location = new System.Drawing.Point(120, 44);
-            this.lblTimeBombCardpb21.Name = "lblTimeBombCardpb21";
-            this.lblTimeBombCardpb21.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb21.TabIndex = 73;
-            this.lblTimeBombCardpb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb3
-            // 
-            this.lblTimeBombCardpb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb3.Location = new System.Drawing.Point(4, 94);
-            this.lblTimeBombCardpb3.Name = "lblTimeBombCardpb3";
-            this.lblTimeBombCardpb3.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb3.TabIndex = 57;
-            this.lblTimeBombCardpb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb20
-            // 
-            this.lblTimeBombCardpb20.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb20.Location = new System.Drawing.Point(91, 144);
-            this.lblTimeBombCardpb20.Name = "lblTimeBombCardpb20";
-            this.lblTimeBombCardpb20.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb20.TabIndex = 70;
-            this.lblTimeBombCardpb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb13
-            // 
-            this.lblTimeBombCardpb13.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb13.Location = new System.Drawing.Point(62, 94);
-            this.lblTimeBombCardpb13.Name = "lblTimeBombCardpb13";
-            this.lblTimeBombCardpb13.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb13.TabIndex = 67;
-            this.lblTimeBombCardpb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb10
-            // 
-            this.lblTimeBombCardpb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb10.Location = new System.Drawing.Point(33, 144);
-            this.lblTimeBombCardpb10.Name = "lblTimeBombCardpb10";
-            this.lblTimeBombCardpb10.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb10.TabIndex = 60;
-            this.lblTimeBombCardpb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb4
-            // 
-            this.lblTimeBombCardpb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb4.Location = new System.Drawing.Point(4, 119);
-            this.lblTimeBombCardpb4.Name = "lblTimeBombCardpb4";
-            this.lblTimeBombCardpb4.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb4.TabIndex = 56;
-            this.lblTimeBombCardpb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb19
-            // 
-            this.lblTimeBombCardpb19.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb19.Location = new System.Drawing.Point(91, 119);
-            this.lblTimeBombCardpb19.Name = "lblTimeBombCardpb19";
-            this.lblTimeBombCardpb19.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb19.TabIndex = 71;
-            this.lblTimeBombCardpb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb14
-            // 
-            this.lblTimeBombCardpb14.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb14.Location = new System.Drawing.Point(62, 119);
-            this.lblTimeBombCardpb14.Name = "lblTimeBombCardpb14";
-            this.lblTimeBombCardpb14.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb14.TabIndex = 66;
-            this.lblTimeBombCardpb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb9
-            // 
-            this.lblTimeBombCardpb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb9.Location = new System.Drawing.Point(33, 119);
-            this.lblTimeBombCardpb9.Name = "lblTimeBombCardpb9";
-            this.lblTimeBombCardpb9.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb9.TabIndex = 61;
-            this.lblTimeBombCardpb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb5
-            // 
-            this.lblTimeBombCardpb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb5.Location = new System.Drawing.Point(4, 144);
-            this.lblTimeBombCardpb5.Name = "lblTimeBombCardpb5";
-            this.lblTimeBombCardpb5.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb5.TabIndex = 55;
-            this.lblTimeBombCardpb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb18
-            // 
-            this.lblTimeBombCardpb18.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb18.Location = new System.Drawing.Point(91, 94);
-            this.lblTimeBombCardpb18.Name = "lblTimeBombCardpb18";
-            this.lblTimeBombCardpb18.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb18.TabIndex = 72;
-            this.lblTimeBombCardpb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb15
-            // 
-            this.lblTimeBombCardpb15.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb15.Location = new System.Drawing.Point(62, 144);
-            this.lblTimeBombCardpb15.Name = "lblTimeBombCardpb15";
-            this.lblTimeBombCardpb15.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb15.TabIndex = 65;
-            this.lblTimeBombCardpb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb8
-            // 
-            this.lblTimeBombCardpb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb8.Location = new System.Drawing.Point(33, 94);
-            this.lblTimeBombCardpb8.Name = "lblTimeBombCardpb8";
-            this.lblTimeBombCardpb8.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb8.TabIndex = 62;
-            this.lblTimeBombCardpb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb6
-            // 
-            this.lblTimeBombCardpb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb6.Location = new System.Drawing.Point(33, 44);
-            this.lblTimeBombCardpb6.Name = "lblTimeBombCardpb6";
-            this.lblTimeBombCardpb6.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb6.TabIndex = 58;
-            this.lblTimeBombCardpb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb17
-            // 
-            this.lblTimeBombCardpb17.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb17.Location = new System.Drawing.Point(91, 69);
-            this.lblTimeBombCardpb17.Name = "lblTimeBombCardpb17";
-            this.lblTimeBombCardpb17.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb17.TabIndex = 69;
-            this.lblTimeBombCardpb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb16
-            // 
-            this.lblTimeBombCardpb16.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb16.Location = new System.Drawing.Point(91, 44);
-            this.lblTimeBombCardpb16.Name = "lblTimeBombCardpb16";
-            this.lblTimeBombCardpb16.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb16.TabIndex = 68;
-            this.lblTimeBombCardpb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardpb7
-            // 
-            this.lblTimeBombCardpb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardpb7.Location = new System.Drawing.Point(33, 69);
-            this.lblTimeBombCardpb7.Name = "lblTimeBombCardpb7";
-            this.lblTimeBombCardpb7.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardpb7.TabIndex = 59;
-            this.lblTimeBombCardpb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlTimeBombRed
-            // 
-            this.pnlTimeBombRed.BackColor = System.Drawing.Color.White;
-            this.pnlTimeBombRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb25);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb24);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb23);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb22);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb21);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb20);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb10);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb19);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb9);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb18);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb8);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb17);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb7);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb16);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb6);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb15);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb5);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb14);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb4);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb13);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb3);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb12);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb2);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb11);
-            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb1);
-            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCard);
-            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCardExploded);
-            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCardDefused);
-            this.pnlTimeBombRed.Location = new System.Drawing.Point(15, 53);
-            this.pnlTimeBombRed.Name = "pnlTimeBombRed";
-            this.pnlTimeBombRed.Size = new System.Drawing.Size(150, 175);
-            this.pnlTimeBombRed.TabIndex = 3;
-            // 
-            // lblTimeBombCardrb25
-            // 
-            this.lblTimeBombCardrb25.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb25.Location = new System.Drawing.Point(120, 144);
-            this.lblTimeBombCardrb25.Name = "lblTimeBombCardrb25";
-            this.lblTimeBombCardrb25.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb25.TabIndex = 25;
-            this.lblTimeBombCardrb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb24
-            // 
-            this.lblTimeBombCardrb24.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb24.Location = new System.Drawing.Point(120, 119);
-            this.lblTimeBombCardrb24.Name = "lblTimeBombCardrb24";
-            this.lblTimeBombCardrb24.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb24.TabIndex = 26;
-            this.lblTimeBombCardrb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb23
-            // 
-            this.lblTimeBombCardrb23.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb23.Location = new System.Drawing.Point(120, 94);
-            this.lblTimeBombCardrb23.Name = "lblTimeBombCardrb23";
-            this.lblTimeBombCardrb23.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb23.TabIndex = 27;
-            this.lblTimeBombCardrb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb22
-            // 
-            this.lblTimeBombCardrb22.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb22.Location = new System.Drawing.Point(120, 69);
-            this.lblTimeBombCardrb22.Name = "lblTimeBombCardrb22";
-            this.lblTimeBombCardrb22.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb22.TabIndex = 24;
-            this.lblTimeBombCardrb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb21
-            // 
-            this.lblTimeBombCardrb21.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb21.Location = new System.Drawing.Point(120, 44);
-            this.lblTimeBombCardrb21.Name = "lblTimeBombCardrb21";
-            this.lblTimeBombCardrb21.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb21.TabIndex = 23;
-            this.lblTimeBombCardrb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb20
-            // 
-            this.lblTimeBombCardrb20.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb20.Location = new System.Drawing.Point(91, 144);
-            this.lblTimeBombCardrb20.Name = "lblTimeBombCardrb20";
-            this.lblTimeBombCardrb20.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb20.TabIndex = 20;
-            this.lblTimeBombCardrb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb10
-            // 
-            this.lblTimeBombCardrb10.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb10.Location = new System.Drawing.Point(33, 144);
-            this.lblTimeBombCardrb10.Name = "lblTimeBombCardrb10";
-            this.lblTimeBombCardrb10.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb10.TabIndex = 10;
-            this.lblTimeBombCardrb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb19
-            // 
-            this.lblTimeBombCardrb19.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb19.Location = new System.Drawing.Point(91, 119);
-            this.lblTimeBombCardrb19.Name = "lblTimeBombCardrb19";
-            this.lblTimeBombCardrb19.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb19.TabIndex = 21;
-            this.lblTimeBombCardrb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb9
-            // 
-            this.lblTimeBombCardrb9.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb9.Location = new System.Drawing.Point(33, 119);
-            this.lblTimeBombCardrb9.Name = "lblTimeBombCardrb9";
-            this.lblTimeBombCardrb9.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb9.TabIndex = 11;
-            this.lblTimeBombCardrb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb18
-            // 
-            this.lblTimeBombCardrb18.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb18.Location = new System.Drawing.Point(91, 94);
-            this.lblTimeBombCardrb18.Name = "lblTimeBombCardrb18";
-            this.lblTimeBombCardrb18.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb18.TabIndex = 22;
-            this.lblTimeBombCardrb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb8
-            // 
-            this.lblTimeBombCardrb8.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb8.Location = new System.Drawing.Point(33, 94);
-            this.lblTimeBombCardrb8.Name = "lblTimeBombCardrb8";
-            this.lblTimeBombCardrb8.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb8.TabIndex = 12;
-            this.lblTimeBombCardrb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb17
-            // 
-            this.lblTimeBombCardrb17.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb17.Location = new System.Drawing.Point(91, 69);
-            this.lblTimeBombCardrb17.Name = "lblTimeBombCardrb17";
-            this.lblTimeBombCardrb17.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb17.TabIndex = 19;
-            this.lblTimeBombCardrb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb7
-            // 
-            this.lblTimeBombCardrb7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb7.Location = new System.Drawing.Point(33, 69);
-            this.lblTimeBombCardrb7.Name = "lblTimeBombCardrb7";
-            this.lblTimeBombCardrb7.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb7.TabIndex = 9;
-            this.lblTimeBombCardrb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb16
-            // 
-            this.lblTimeBombCardrb16.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb16.Location = new System.Drawing.Point(91, 44);
-            this.lblTimeBombCardrb16.Name = "lblTimeBombCardrb16";
-            this.lblTimeBombCardrb16.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb16.TabIndex = 18;
-            this.lblTimeBombCardrb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb6
-            // 
-            this.lblTimeBombCardrb6.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb6.Location = new System.Drawing.Point(33, 44);
-            this.lblTimeBombCardrb6.Name = "lblTimeBombCardrb6";
-            this.lblTimeBombCardrb6.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb6.TabIndex = 8;
-            this.lblTimeBombCardrb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb15
-            // 
-            this.lblTimeBombCardrb15.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb15.Location = new System.Drawing.Point(62, 144);
-            this.lblTimeBombCardrb15.Name = "lblTimeBombCardrb15";
-            this.lblTimeBombCardrb15.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb15.TabIndex = 15;
-            this.lblTimeBombCardrb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb5
-            // 
-            this.lblTimeBombCardrb5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb5.Location = new System.Drawing.Point(4, 144);
-            this.lblTimeBombCardrb5.Name = "lblTimeBombCardrb5";
-            this.lblTimeBombCardrb5.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb5.TabIndex = 7;
-            this.lblTimeBombCardrb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb14
-            // 
-            this.lblTimeBombCardrb14.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb14.Location = new System.Drawing.Point(62, 119);
-            this.lblTimeBombCardrb14.Name = "lblTimeBombCardrb14";
-            this.lblTimeBombCardrb14.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb14.TabIndex = 16;
-            this.lblTimeBombCardrb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb4
-            // 
-            this.lblTimeBombCardrb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb4.Location = new System.Drawing.Point(4, 119);
-            this.lblTimeBombCardrb4.Name = "lblTimeBombCardrb4";
-            this.lblTimeBombCardrb4.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb4.TabIndex = 7;
-            this.lblTimeBombCardrb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb13
-            // 
-            this.lblTimeBombCardrb13.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb13.Location = new System.Drawing.Point(62, 94);
-            this.lblTimeBombCardrb13.Name = "lblTimeBombCardrb13";
-            this.lblTimeBombCardrb13.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb13.TabIndex = 17;
-            this.lblTimeBombCardrb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb3
-            // 
-            this.lblTimeBombCardrb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb3.Location = new System.Drawing.Point(4, 94);
-            this.lblTimeBombCardrb3.Name = "lblTimeBombCardrb3";
-            this.lblTimeBombCardrb3.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb3.TabIndex = 7;
-            this.lblTimeBombCardrb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb12
-            // 
-            this.lblTimeBombCardrb12.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb12.Location = new System.Drawing.Point(62, 69);
-            this.lblTimeBombCardrb12.Name = "lblTimeBombCardrb12";
-            this.lblTimeBombCardrb12.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb12.TabIndex = 14;
-            this.lblTimeBombCardrb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb2
-            // 
-            this.lblTimeBombCardrb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb2.Location = new System.Drawing.Point(4, 69);
-            this.lblTimeBombCardrb2.Name = "lblTimeBombCardrb2";
-            this.lblTimeBombCardrb2.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb2.TabIndex = 6;
-            this.lblTimeBombCardrb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb11
-            // 
-            this.lblTimeBombCardrb11.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb11.Location = new System.Drawing.Point(62, 44);
-            this.lblTimeBombCardrb11.Name = "lblTimeBombCardrb11";
-            this.lblTimeBombCardrb11.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb11.TabIndex = 13;
-            this.lblTimeBombCardrb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTimeBombCardrb1
-            // 
-            this.lblTimeBombCardrb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeBombCardrb1.Location = new System.Drawing.Point(4, 44);
-            this.lblTimeBombCardrb1.Name = "lblTimeBombCardrb1";
-            this.lblTimeBombCardrb1.Size = new System.Drawing.Size(27, 24);
-            this.lblTimeBombCardrb1.TabIndex = 0;
-            this.lblTimeBombCardrb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pctrbxRedBonusCard
-            // 
-            this.pctrbxRedBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
-            this.pctrbxRedBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCard.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCard.Name = "pctrbxRedBonusCard";
-            this.pctrbxRedBonusCard.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCard.TabIndex = 30;
-            this.pctrbxRedBonusCard.TabStop = false;
-            // 
-            // pctrbxRedBonusCardExploded
-            // 
-            this.pctrbxRedBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
-            this.pctrbxRedBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCardExploded.Name = "pctrbxRedBonusCardExploded";
-            this.pctrbxRedBonusCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCardExploded.TabIndex = 28;
-            this.pctrbxRedBonusCardExploded.TabStop = false;
-            // 
-            // pctrbxRedBonusCardDefused
-            // 
-            this.pctrbxRedBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedBonusCard;
-            this.pctrbxRedBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedBonusCardDefused.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedBonusCardDefused.Name = "pctrbxRedBonusCardDefused";
-            this.pctrbxRedBonusCardDefused.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedBonusCardDefused.TabIndex = 29;
-            this.pctrbxRedBonusCardDefused.TabStop = false;
-            // 
-            // pnlRegRedCard
-            // 
-            this.pnlRegRedCard.BackColor = System.Drawing.Color.White;
-            this.pnlRegRedCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedCard;
-            this.pnlRegRedCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr25);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr24);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr23);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr22);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr21);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr20);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr19);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr18);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr17);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr16);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr15);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr14);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr13);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr12);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr11);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr10);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr9);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr8);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr7);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr6);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr5);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr4);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr3);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr2);
-            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr1);
-            this.pnlRegRedCard.Controls.Add(this.pctrbxRedCardExploded);
-            this.pnlRegRedCard.Location = new System.Drawing.Point(179, 53);
-            this.pnlRegRedCard.Name = "pnlRegRedCard";
-            this.pnlRegRedCard.Size = new System.Drawing.Size(150, 175);
-            this.pnlRegRedCard.TabIndex = 2;
-            // 
-            // pctrbxRedCardExploded
-            // 
-            this.pctrbxRedCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.RedCardExploded;
-            this.pctrbxRedCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxRedCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxRedCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxRedCardExploded.Name = "pctrbxRedCardExploded";
-            this.pctrbxRedCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxRedCardExploded.TabIndex = 31;
-            this.pctrbxRedCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardr25
-            // 
-            this.lblTimeBombCardr25.Location = new System.Drawing.Point(119, 137);
-            this.lblTimeBombCardr25.Name = "lblTimeBombCardr25";
-            this.lblTimeBombCardr25.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr25.TabIndex = 30;
-            this.lblTimeBombCardr25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr24
-            // 
-            this.lblTimeBombCardr24.Location = new System.Drawing.Point(119, 109);
-            this.lblTimeBombCardr24.Name = "lblTimeBombCardr24";
-            this.lblTimeBombCardr24.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr24.TabIndex = 29;
-            this.lblTimeBombCardr24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr23
-            // 
-            this.lblTimeBombCardr23.Location = new System.Drawing.Point(119, 81);
-            this.lblTimeBombCardr23.Name = "lblTimeBombCardr23";
-            this.lblTimeBombCardr23.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr23.TabIndex = 28;
-            this.lblTimeBombCardr23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr22
-            // 
-            this.lblTimeBombCardr22.Location = new System.Drawing.Point(119, 54);
-            this.lblTimeBombCardr22.Name = "lblTimeBombCardr22";
-            this.lblTimeBombCardr22.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr22.TabIndex = 27;
-            this.lblTimeBombCardr22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr21
-            // 
-            this.lblTimeBombCardr21.Location = new System.Drawing.Point(119, 26);
-            this.lblTimeBombCardr21.Name = "lblTimeBombCardr21";
-            this.lblTimeBombCardr21.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr21.TabIndex = 26;
-            this.lblTimeBombCardr21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr20
-            // 
-            this.lblTimeBombCardr20.Location = new System.Drawing.Point(91, 137);
-            this.lblTimeBombCardr20.Name = "lblTimeBombCardr20";
-            this.lblTimeBombCardr20.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr20.TabIndex = 25;
-            this.lblTimeBombCardr20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr19
-            // 
-            this.lblTimeBombCardr19.Location = new System.Drawing.Point(91, 109);
-            this.lblTimeBombCardr19.Name = "lblTimeBombCardr19";
-            this.lblTimeBombCardr19.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr19.TabIndex = 24;
-            this.lblTimeBombCardr19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr18
-            // 
-            this.lblTimeBombCardr18.Location = new System.Drawing.Point(91, 81);
-            this.lblTimeBombCardr18.Name = "lblTimeBombCardr18";
-            this.lblTimeBombCardr18.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr18.TabIndex = 23;
-            this.lblTimeBombCardr18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr17
-            // 
-            this.lblTimeBombCardr17.Location = new System.Drawing.Point(91, 54);
-            this.lblTimeBombCardr17.Name = "lblTimeBombCardr17";
-            this.lblTimeBombCardr17.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr17.TabIndex = 22;
-            this.lblTimeBombCardr17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr16
-            // 
-            this.lblTimeBombCardr16.Location = new System.Drawing.Point(91, 26);
-            this.lblTimeBombCardr16.Name = "lblTimeBombCardr16";
-            this.lblTimeBombCardr16.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr16.TabIndex = 21;
-            this.lblTimeBombCardr16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr15
-            // 
-            this.lblTimeBombCardr15.Location = new System.Drawing.Point(63, 137);
-            this.lblTimeBombCardr15.Name = "lblTimeBombCardr15";
-            this.lblTimeBombCardr15.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr15.TabIndex = 20;
-            this.lblTimeBombCardr15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr14
-            // 
-            this.lblTimeBombCardr14.Location = new System.Drawing.Point(63, 109);
-            this.lblTimeBombCardr14.Name = "lblTimeBombCardr14";
-            this.lblTimeBombCardr14.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr14.TabIndex = 19;
-            this.lblTimeBombCardr14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr13
-            // 
-            this.lblTimeBombCardr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeBombCardr13.Location = new System.Drawing.Point(63, 81);
-            this.lblTimeBombCardr13.Name = "lblTimeBombCardr13";
-            this.lblTimeBombCardr13.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr13.TabIndex = 18;
-            this.lblTimeBombCardr13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr12
-            // 
-            this.lblTimeBombCardr12.Location = new System.Drawing.Point(63, 54);
-            this.lblTimeBombCardr12.Name = "lblTimeBombCardr12";
-            this.lblTimeBombCardr12.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr12.TabIndex = 17;
-            this.lblTimeBombCardr12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr11
-            // 
-            this.lblTimeBombCardr11.Location = new System.Drawing.Point(63, 26);
-            this.lblTimeBombCardr11.Name = "lblTimeBombCardr11";
-            this.lblTimeBombCardr11.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr11.TabIndex = 16;
-            this.lblTimeBombCardr11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr10
-            // 
-            this.lblTimeBombCardr10.Location = new System.Drawing.Point(35, 137);
-            this.lblTimeBombCardr10.Name = "lblTimeBombCardr10";
-            this.lblTimeBombCardr10.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr10.TabIndex = 15;
-            this.lblTimeBombCardr10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr9
-            // 
-            this.lblTimeBombCardr9.Location = new System.Drawing.Point(35, 109);
-            this.lblTimeBombCardr9.Name = "lblTimeBombCardr9";
-            this.lblTimeBombCardr9.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr9.TabIndex = 14;
-            this.lblTimeBombCardr9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr8
-            // 
-            this.lblTimeBombCardr8.Location = new System.Drawing.Point(35, 81);
-            this.lblTimeBombCardr8.Name = "lblTimeBombCardr8";
-            this.lblTimeBombCardr8.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr8.TabIndex = 13;
-            this.lblTimeBombCardr8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr7
-            // 
-            this.lblTimeBombCardr7.Location = new System.Drawing.Point(35, 54);
-            this.lblTimeBombCardr7.Name = "lblTimeBombCardr7";
-            this.lblTimeBombCardr7.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr7.TabIndex = 12;
-            this.lblTimeBombCardr7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr6
-            // 
-            this.lblTimeBombCardr6.Location = new System.Drawing.Point(35, 26);
-            this.lblTimeBombCardr6.Name = "lblTimeBombCardr6";
-            this.lblTimeBombCardr6.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr6.TabIndex = 11;
-            this.lblTimeBombCardr6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr5
-            // 
-            this.lblTimeBombCardr5.Location = new System.Drawing.Point(7, 137);
-            this.lblTimeBombCardr5.Name = "lblTimeBombCardr5";
-            this.lblTimeBombCardr5.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr5.TabIndex = 10;
-            this.lblTimeBombCardr5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr4
-            // 
-            this.lblTimeBombCardr4.Location = new System.Drawing.Point(7, 109);
-            this.lblTimeBombCardr4.Name = "lblTimeBombCardr4";
-            this.lblTimeBombCardr4.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr4.TabIndex = 9;
-            this.lblTimeBombCardr4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr3
-            // 
-            this.lblTimeBombCardr3.Location = new System.Drawing.Point(7, 81);
-            this.lblTimeBombCardr3.Name = "lblTimeBombCardr3";
-            this.lblTimeBombCardr3.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr3.TabIndex = 8;
-            this.lblTimeBombCardr3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr2
-            // 
-            this.lblTimeBombCardr2.Location = new System.Drawing.Point(7, 54);
-            this.lblTimeBombCardr2.Name = "lblTimeBombCardr2";
-            this.lblTimeBombCardr2.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr2.TabIndex = 7;
-            this.lblTimeBombCardr2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardr1
-            // 
-            this.lblTimeBombCardr1.Location = new System.Drawing.Point(7, 26);
-            this.lblTimeBombCardr1.Name = "lblTimeBombCardr1";
-            this.lblTimeBombCardr1.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardr1.TabIndex = 6;
-            this.lblTimeBombCardr1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardr1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // pnlRegPurpCard
-            // 
-            this.pnlRegPurpCard.BackColor = System.Drawing.Color.White;
-            this.pnlRegPurpCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleCard;
-            this.pnlRegPurpCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp25);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp1);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp24);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp2);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp23);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp3);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp22);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp4);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp21);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp5);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp20);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp6);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp19);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp7);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp18);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp8);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp17);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp9);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp16);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp10);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp15);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp11);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp14);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp12);
-            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp13);
-            this.pnlRegPurpCard.Controls.Add(this.pctrbxPurpleCardExploded);
-            this.pnlRegPurpCard.Location = new System.Drawing.Point(343, 53);
-            this.pnlRegPurpCard.Name = "pnlRegPurpCard";
-            this.pnlRegPurpCard.Size = new System.Drawing.Size(150, 175);
-            this.pnlRegPurpCard.TabIndex = 1;
-            // 
-            // pctrbxPurpleCardExploded
-            // 
-            this.pctrbxPurpleCardExploded.BackColor = System.Drawing.Color.White;
-            this.pctrbxPurpleCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.PurpleCardExploded;
-            this.pctrbxPurpleCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrbxPurpleCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pctrbxPurpleCardExploded.Location = new System.Drawing.Point(0, 0);
-            this.pctrbxPurpleCardExploded.Name = "pctrbxPurpleCardExploded";
-            this.pctrbxPurpleCardExploded.Size = new System.Drawing.Size(150, 175);
-            this.pctrbxPurpleCardExploded.TabIndex = 56;
-            this.pctrbxPurpleCardExploded.TabStop = false;
-            // 
-            // lblTimeBombCardp25
-            // 
-            this.lblTimeBombCardp25.Location = new System.Drawing.Point(118, 138);
-            this.lblTimeBombCardp25.Name = "lblTimeBombCardp25";
-            this.lblTimeBombCardp25.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp25.TabIndex = 55;
-            this.lblTimeBombCardp25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp1
-            // 
-            this.lblTimeBombCardp1.Location = new System.Drawing.Point(6, 27);
-            this.lblTimeBombCardp1.Name = "lblTimeBombCardp1";
-            this.lblTimeBombCardp1.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp1.TabIndex = 31;
-            this.lblTimeBombCardp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp24
-            // 
-            this.lblTimeBombCardp24.Location = new System.Drawing.Point(118, 110);
-            this.lblTimeBombCardp24.Name = "lblTimeBombCardp24";
-            this.lblTimeBombCardp24.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp24.TabIndex = 54;
-            this.lblTimeBombCardp24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp2
-            // 
-            this.lblTimeBombCardp2.Location = new System.Drawing.Point(6, 55);
-            this.lblTimeBombCardp2.Name = "lblTimeBombCardp2";
-            this.lblTimeBombCardp2.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp2.TabIndex = 32;
-            this.lblTimeBombCardp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp23
-            // 
-            this.lblTimeBombCardp23.Location = new System.Drawing.Point(118, 82);
-            this.lblTimeBombCardp23.Name = "lblTimeBombCardp23";
-            this.lblTimeBombCardp23.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp23.TabIndex = 53;
-            this.lblTimeBombCardp23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp3
-            // 
-            this.lblTimeBombCardp3.Location = new System.Drawing.Point(6, 82);
-            this.lblTimeBombCardp3.Name = "lblTimeBombCardp3";
-            this.lblTimeBombCardp3.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp3.TabIndex = 33;
-            this.lblTimeBombCardp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp22
-            // 
-            this.lblTimeBombCardp22.Location = new System.Drawing.Point(118, 55);
-            this.lblTimeBombCardp22.Name = "lblTimeBombCardp22";
-            this.lblTimeBombCardp22.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp22.TabIndex = 52;
-            this.lblTimeBombCardp22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp4
-            // 
-            this.lblTimeBombCardp4.Location = new System.Drawing.Point(6, 110);
-            this.lblTimeBombCardp4.Name = "lblTimeBombCardp4";
-            this.lblTimeBombCardp4.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp4.TabIndex = 34;
-            this.lblTimeBombCardp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp21
-            // 
-            this.lblTimeBombCardp21.Location = new System.Drawing.Point(118, 27);
-            this.lblTimeBombCardp21.Name = "lblTimeBombCardp21";
-            this.lblTimeBombCardp21.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp21.TabIndex = 51;
-            this.lblTimeBombCardp21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp5
-            // 
-            this.lblTimeBombCardp5.Location = new System.Drawing.Point(6, 138);
-            this.lblTimeBombCardp5.Name = "lblTimeBombCardp5";
-            this.lblTimeBombCardp5.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp5.TabIndex = 35;
-            this.lblTimeBombCardp5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp20
-            // 
-            this.lblTimeBombCardp20.Location = new System.Drawing.Point(90, 138);
-            this.lblTimeBombCardp20.Name = "lblTimeBombCardp20";
-            this.lblTimeBombCardp20.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp20.TabIndex = 50;
-            this.lblTimeBombCardp20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp6
-            // 
-            this.lblTimeBombCardp6.Location = new System.Drawing.Point(34, 27);
-            this.lblTimeBombCardp6.Name = "lblTimeBombCardp6";
-            this.lblTimeBombCardp6.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp6.TabIndex = 36;
-            this.lblTimeBombCardp6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp19
-            // 
-            this.lblTimeBombCardp19.Location = new System.Drawing.Point(90, 110);
-            this.lblTimeBombCardp19.Name = "lblTimeBombCardp19";
-            this.lblTimeBombCardp19.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp19.TabIndex = 49;
-            this.lblTimeBombCardp19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp7
-            // 
-            this.lblTimeBombCardp7.Location = new System.Drawing.Point(34, 55);
-            this.lblTimeBombCardp7.Name = "lblTimeBombCardp7";
-            this.lblTimeBombCardp7.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp7.TabIndex = 37;
-            this.lblTimeBombCardp7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp18
-            // 
-            this.lblTimeBombCardp18.Location = new System.Drawing.Point(90, 82);
-            this.lblTimeBombCardp18.Name = "lblTimeBombCardp18";
-            this.lblTimeBombCardp18.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp18.TabIndex = 48;
-            this.lblTimeBombCardp18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp8
-            // 
-            this.lblTimeBombCardp8.Location = new System.Drawing.Point(34, 82);
-            this.lblTimeBombCardp8.Name = "lblTimeBombCardp8";
-            this.lblTimeBombCardp8.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp8.TabIndex = 38;
-            this.lblTimeBombCardp8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp17
-            // 
-            this.lblTimeBombCardp17.Location = new System.Drawing.Point(90, 55);
-            this.lblTimeBombCardp17.Name = "lblTimeBombCardp17";
-            this.lblTimeBombCardp17.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp17.TabIndex = 47;
-            this.lblTimeBombCardp17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp9
-            // 
-            this.lblTimeBombCardp9.Location = new System.Drawing.Point(34, 110);
-            this.lblTimeBombCardp9.Name = "lblTimeBombCardp9";
-            this.lblTimeBombCardp9.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp9.TabIndex = 39;
-            this.lblTimeBombCardp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp16
-            // 
-            this.lblTimeBombCardp16.Location = new System.Drawing.Point(90, 27);
-            this.lblTimeBombCardp16.Name = "lblTimeBombCardp16";
-            this.lblTimeBombCardp16.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp16.TabIndex = 46;
-            this.lblTimeBombCardp16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp10
-            // 
-            this.lblTimeBombCardp10.Location = new System.Drawing.Point(34, 138);
-            this.lblTimeBombCardp10.Name = "lblTimeBombCardp10";
-            this.lblTimeBombCardp10.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp10.TabIndex = 40;
-            this.lblTimeBombCardp10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp15
-            // 
-            this.lblTimeBombCardp15.Location = new System.Drawing.Point(62, 138);
-            this.lblTimeBombCardp15.Name = "lblTimeBombCardp15";
-            this.lblTimeBombCardp15.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp15.TabIndex = 45;
-            this.lblTimeBombCardp15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp11
-            // 
-            this.lblTimeBombCardp11.Location = new System.Drawing.Point(62, 27);
-            this.lblTimeBombCardp11.Name = "lblTimeBombCardp11";
-            this.lblTimeBombCardp11.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp11.TabIndex = 41;
-            this.lblTimeBombCardp11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp14
-            // 
-            this.lblTimeBombCardp14.Location = new System.Drawing.Point(62, 110);
-            this.lblTimeBombCardp14.Name = "lblTimeBombCardp14";
-            this.lblTimeBombCardp14.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp14.TabIndex = 44;
-            this.lblTimeBombCardp14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp12
-            // 
-            this.lblTimeBombCardp12.Location = new System.Drawing.Point(62, 55);
-            this.lblTimeBombCardp12.Name = "lblTimeBombCardp12";
-            this.lblTimeBombCardp12.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp12.TabIndex = 42;
-            this.lblTimeBombCardp12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
-            // 
-            // lblTimeBombCardp13
-            // 
-            this.lblTimeBombCardp13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeBombCardp13.Location = new System.Drawing.Point(62, 82);
-            this.lblTimeBombCardp13.Name = "lblTimeBombCardp13";
-            this.lblTimeBombCardp13.Size = new System.Drawing.Size(26, 26);
-            this.lblTimeBombCardp13.TabIndex = 43;
-            this.lblTimeBombCardp13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTimeBombCardp13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
             // 
             // pnlRegularGames
             // 
@@ -5293,6 +2996,2304 @@
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Visible = false;
             // 
+            // pnlDisputeResolutionTimeBomb
+            // 
+            this.pnlDisputeResolutionTimeBomb.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombBlueBonusCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombBlueRegCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombGreenRegCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombGreenBonusCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombPurpleBonusCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombPurpleRegCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombRedRegCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.lblTimeBombRedBonusCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegBlueCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombBlue);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegGreenCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombGreen);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombPurple);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlTimeBombRed);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegRedCard);
+            this.pnlDisputeResolutionTimeBomb.Controls.Add(this.pnlRegPurpCard);
+            this.pnlDisputeResolutionTimeBomb.Location = new System.Drawing.Point(0, 0);
+            this.pnlDisputeResolutionTimeBomb.Name = "pnlDisputeResolutionTimeBomb";
+            this.pnlDisputeResolutionTimeBomb.Size = new System.Drawing.Size(672, 502);
+            this.pnlDisputeResolutionTimeBomb.TabIndex = 29;
+            this.pnlDisputeResolutionTimeBomb.Visible = false;
+            // 
+            // pnlRegBlueCard
+            // 
+            this.pnlRegBlueCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueCard;
+            this.pnlRegBlueCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb25);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb1);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb24);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb2);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb23);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb3);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb22);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb4);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb21);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb5);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb20);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb6);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb19);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb7);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb18);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb8);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb17);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb9);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb16);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb10);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb15);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb11);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb14);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb12);
+            this.pnlRegBlueCard.Controls.Add(this.lblTimeBombCardb13);
+            this.pnlRegBlueCard.Controls.Add(this.pctrbxBlueCardExploded);
+            this.pnlRegBlueCard.Location = new System.Drawing.Point(343, 245);
+            this.pnlRegBlueCard.Name = "pnlRegBlueCard";
+            this.pnlRegBlueCard.Size = new System.Drawing.Size(150, 175);
+            this.pnlRegBlueCard.TabIndex = 5;
+            // 
+            // lblTimeBombCardb25
+            // 
+            this.lblTimeBombCardb25.Location = new System.Drawing.Point(118, 138);
+            this.lblTimeBombCardb25.Name = "lblTimeBombCardb25";
+            this.lblTimeBombCardb25.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb25.TabIndex = 80;
+            this.lblTimeBombCardb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb1
+            // 
+            this.lblTimeBombCardb1.Location = new System.Drawing.Point(5, 27);
+            this.lblTimeBombCardb1.Name = "lblTimeBombCardb1";
+            this.lblTimeBombCardb1.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb1.TabIndex = 56;
+            this.lblTimeBombCardb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb24
+            // 
+            this.lblTimeBombCardb24.Location = new System.Drawing.Point(118, 110);
+            this.lblTimeBombCardb24.Name = "lblTimeBombCardb24";
+            this.lblTimeBombCardb24.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb24.TabIndex = 79;
+            this.lblTimeBombCardb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb2
+            // 
+            this.lblTimeBombCardb2.Location = new System.Drawing.Point(5, 55);
+            this.lblTimeBombCardb2.Name = "lblTimeBombCardb2";
+            this.lblTimeBombCardb2.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb2.TabIndex = 57;
+            this.lblTimeBombCardb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb23
+            // 
+            this.lblTimeBombCardb23.Location = new System.Drawing.Point(118, 82);
+            this.lblTimeBombCardb23.Name = "lblTimeBombCardb23";
+            this.lblTimeBombCardb23.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb23.TabIndex = 78;
+            this.lblTimeBombCardb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb3
+            // 
+            this.lblTimeBombCardb3.Location = new System.Drawing.Point(5, 82);
+            this.lblTimeBombCardb3.Name = "lblTimeBombCardb3";
+            this.lblTimeBombCardb3.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb3.TabIndex = 58;
+            this.lblTimeBombCardb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb22
+            // 
+            this.lblTimeBombCardb22.Location = new System.Drawing.Point(118, 55);
+            this.lblTimeBombCardb22.Name = "lblTimeBombCardb22";
+            this.lblTimeBombCardb22.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb22.TabIndex = 77;
+            this.lblTimeBombCardb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb4
+            // 
+            this.lblTimeBombCardb4.Location = new System.Drawing.Point(5, 110);
+            this.lblTimeBombCardb4.Name = "lblTimeBombCardb4";
+            this.lblTimeBombCardb4.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb4.TabIndex = 59;
+            this.lblTimeBombCardb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb21
+            // 
+            this.lblTimeBombCardb21.Location = new System.Drawing.Point(118, 27);
+            this.lblTimeBombCardb21.Name = "lblTimeBombCardb21";
+            this.lblTimeBombCardb21.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb21.TabIndex = 76;
+            this.lblTimeBombCardb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb5
+            // 
+            this.lblTimeBombCardb5.Location = new System.Drawing.Point(5, 138);
+            this.lblTimeBombCardb5.Name = "lblTimeBombCardb5";
+            this.lblTimeBombCardb5.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb5.TabIndex = 60;
+            this.lblTimeBombCardb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb20
+            // 
+            this.lblTimeBombCardb20.Location = new System.Drawing.Point(90, 138);
+            this.lblTimeBombCardb20.Name = "lblTimeBombCardb20";
+            this.lblTimeBombCardb20.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb20.TabIndex = 75;
+            this.lblTimeBombCardb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb6
+            // 
+            this.lblTimeBombCardb6.Location = new System.Drawing.Point(34, 27);
+            this.lblTimeBombCardb6.Name = "lblTimeBombCardb6";
+            this.lblTimeBombCardb6.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb6.TabIndex = 61;
+            this.lblTimeBombCardb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb19
+            // 
+            this.lblTimeBombCardb19.Location = new System.Drawing.Point(90, 110);
+            this.lblTimeBombCardb19.Name = "lblTimeBombCardb19";
+            this.lblTimeBombCardb19.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb19.TabIndex = 74;
+            this.lblTimeBombCardb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb7
+            // 
+            this.lblTimeBombCardb7.Location = new System.Drawing.Point(34, 55);
+            this.lblTimeBombCardb7.Name = "lblTimeBombCardb7";
+            this.lblTimeBombCardb7.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb7.TabIndex = 62;
+            this.lblTimeBombCardb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb18
+            // 
+            this.lblTimeBombCardb18.Location = new System.Drawing.Point(90, 82);
+            this.lblTimeBombCardb18.Name = "lblTimeBombCardb18";
+            this.lblTimeBombCardb18.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb18.TabIndex = 73;
+            this.lblTimeBombCardb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb8
+            // 
+            this.lblTimeBombCardb8.Location = new System.Drawing.Point(34, 82);
+            this.lblTimeBombCardb8.Name = "lblTimeBombCardb8";
+            this.lblTimeBombCardb8.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb8.TabIndex = 63;
+            this.lblTimeBombCardb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb17
+            // 
+            this.lblTimeBombCardb17.Location = new System.Drawing.Point(90, 55);
+            this.lblTimeBombCardb17.Name = "lblTimeBombCardb17";
+            this.lblTimeBombCardb17.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb17.TabIndex = 72;
+            this.lblTimeBombCardb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb9
+            // 
+            this.lblTimeBombCardb9.Location = new System.Drawing.Point(34, 110);
+            this.lblTimeBombCardb9.Name = "lblTimeBombCardb9";
+            this.lblTimeBombCardb9.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb9.TabIndex = 64;
+            this.lblTimeBombCardb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb16
+            // 
+            this.lblTimeBombCardb16.Location = new System.Drawing.Point(90, 27);
+            this.lblTimeBombCardb16.Name = "lblTimeBombCardb16";
+            this.lblTimeBombCardb16.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb16.TabIndex = 71;
+            this.lblTimeBombCardb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb10
+            // 
+            this.lblTimeBombCardb10.Location = new System.Drawing.Point(34, 138);
+            this.lblTimeBombCardb10.Name = "lblTimeBombCardb10";
+            this.lblTimeBombCardb10.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb10.TabIndex = 65;
+            this.lblTimeBombCardb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb15
+            // 
+            this.lblTimeBombCardb15.Location = new System.Drawing.Point(62, 138);
+            this.lblTimeBombCardb15.Name = "lblTimeBombCardb15";
+            this.lblTimeBombCardb15.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb15.TabIndex = 70;
+            this.lblTimeBombCardb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb11
+            // 
+            this.lblTimeBombCardb11.Location = new System.Drawing.Point(62, 27);
+            this.lblTimeBombCardb11.Name = "lblTimeBombCardb11";
+            this.lblTimeBombCardb11.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb11.TabIndex = 66;
+            this.lblTimeBombCardb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb14
+            // 
+            this.lblTimeBombCardb14.Location = new System.Drawing.Point(62, 110);
+            this.lblTimeBombCardb14.Name = "lblTimeBombCardb14";
+            this.lblTimeBombCardb14.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb14.TabIndex = 69;
+            this.lblTimeBombCardb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb12
+            // 
+            this.lblTimeBombCardb12.Location = new System.Drawing.Point(62, 55);
+            this.lblTimeBombCardb12.Name = "lblTimeBombCardb12";
+            this.lblTimeBombCardb12.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb12.TabIndex = 67;
+            this.lblTimeBombCardb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardb13
+            // 
+            this.lblTimeBombCardb13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeBombCardb13.Location = new System.Drawing.Point(62, 82);
+            this.lblTimeBombCardb13.Name = "lblTimeBombCardb13";
+            this.lblTimeBombCardb13.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardb13.TabIndex = 68;
+            this.lblTimeBombCardb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardb13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // pctrbxBlueCardExploded
+            // 
+            this.pctrbxBlueCardExploded.BackColor = System.Drawing.Color.White;
+            this.pctrbxBlueCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BlueCardExploded;
+            this.pctrbxBlueCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueCardExploded.Name = "pctrbxBlueCardExploded";
+            this.pctrbxBlueCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueCardExploded.TabIndex = 81;
+            this.pctrbxBlueCardExploded.TabStop = false;
+            // 
+            // pnlTimeBombBlue
+            // 
+            this.pnlTimeBombBlue.BackColor = System.Drawing.Color.White;
+            this.pnlTimeBombBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb25);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb1);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb24);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb11);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb23);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb2);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb22);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb12);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb21);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb3);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb20);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb13);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb10);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb4);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb19);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb14);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb9);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb5);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb18);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb15);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb8);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb6);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb17);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb16);
+            this.pnlTimeBombBlue.Controls.Add(this.lblTimeBombCardbb7);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardExploded);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbcBlueBonusCard);
+            this.pnlTimeBombBlue.Controls.Add(this.pctrbxBlueBonusCardDefused);
+            this.pnlTimeBombBlue.Location = new System.Drawing.Point(507, 245);
+            this.pnlTimeBombBlue.Name = "pnlTimeBombBlue";
+            this.pnlTimeBombBlue.Size = new System.Drawing.Size(150, 175);
+            this.pnlTimeBombBlue.TabIndex = 5;
+            // 
+            // lblTimeBombCardbb25
+            // 
+            this.lblTimeBombCardbb25.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb25.Location = new System.Drawing.Point(121, 144);
+            this.lblTimeBombCardbb25.Name = "lblTimeBombCardbb25";
+            this.lblTimeBombCardbb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb25.TabIndex = 50;
+            this.lblTimeBombCardbb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb1
+            // 
+            this.lblTimeBombCardbb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb1.Location = new System.Drawing.Point(5, 44);
+            this.lblTimeBombCardbb1.Name = "lblTimeBombCardbb1";
+            this.lblTimeBombCardbb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb1.TabIndex = 28;
+            this.lblTimeBombCardbb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb24
+            // 
+            this.lblTimeBombCardbb24.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb24.Location = new System.Drawing.Point(121, 119);
+            this.lblTimeBombCardbb24.Name = "lblTimeBombCardbb24";
+            this.lblTimeBombCardbb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb24.TabIndex = 51;
+            this.lblTimeBombCardbb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb11
+            // 
+            this.lblTimeBombCardbb11.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb11.Location = new System.Drawing.Point(63, 44);
+            this.lblTimeBombCardbb11.Name = "lblTimeBombCardbb11";
+            this.lblTimeBombCardbb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb11.TabIndex = 38;
+            this.lblTimeBombCardbb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb23
+            // 
+            this.lblTimeBombCardbb23.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb23.Location = new System.Drawing.Point(121, 94);
+            this.lblTimeBombCardbb23.Name = "lblTimeBombCardbb23";
+            this.lblTimeBombCardbb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb23.TabIndex = 52;
+            this.lblTimeBombCardbb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb2
+            // 
+            this.lblTimeBombCardbb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb2.Location = new System.Drawing.Point(5, 69);
+            this.lblTimeBombCardbb2.Name = "lblTimeBombCardbb2";
+            this.lblTimeBombCardbb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb2.TabIndex = 29;
+            this.lblTimeBombCardbb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb22
+            // 
+            this.lblTimeBombCardbb22.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb22.Location = new System.Drawing.Point(121, 69);
+            this.lblTimeBombCardbb22.Name = "lblTimeBombCardbb22";
+            this.lblTimeBombCardbb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb22.TabIndex = 49;
+            this.lblTimeBombCardbb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb12
+            // 
+            this.lblTimeBombCardbb12.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb12.Location = new System.Drawing.Point(63, 69);
+            this.lblTimeBombCardbb12.Name = "lblTimeBombCardbb12";
+            this.lblTimeBombCardbb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb12.TabIndex = 39;
+            this.lblTimeBombCardbb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb21
+            // 
+            this.lblTimeBombCardbb21.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb21.Location = new System.Drawing.Point(121, 44);
+            this.lblTimeBombCardbb21.Name = "lblTimeBombCardbb21";
+            this.lblTimeBombCardbb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb21.TabIndex = 48;
+            this.lblTimeBombCardbb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb3
+            // 
+            this.lblTimeBombCardbb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb3.Location = new System.Drawing.Point(5, 94);
+            this.lblTimeBombCardbb3.Name = "lblTimeBombCardbb3";
+            this.lblTimeBombCardbb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb3.TabIndex = 32;
+            this.lblTimeBombCardbb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb20
+            // 
+            this.lblTimeBombCardbb20.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb20.Location = new System.Drawing.Point(92, 144);
+            this.lblTimeBombCardbb20.Name = "lblTimeBombCardbb20";
+            this.lblTimeBombCardbb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb20.TabIndex = 45;
+            this.lblTimeBombCardbb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb13
+            // 
+            this.lblTimeBombCardbb13.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb13.Location = new System.Drawing.Point(63, 94);
+            this.lblTimeBombCardbb13.Name = "lblTimeBombCardbb13";
+            this.lblTimeBombCardbb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb13.TabIndex = 42;
+            this.lblTimeBombCardbb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb10
+            // 
+            this.lblTimeBombCardbb10.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb10.Location = new System.Drawing.Point(34, 144);
+            this.lblTimeBombCardbb10.Name = "lblTimeBombCardbb10";
+            this.lblTimeBombCardbb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb10.TabIndex = 35;
+            this.lblTimeBombCardbb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb4
+            // 
+            this.lblTimeBombCardbb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb4.Location = new System.Drawing.Point(5, 119);
+            this.lblTimeBombCardbb4.Name = "lblTimeBombCardbb4";
+            this.lblTimeBombCardbb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb4.TabIndex = 31;
+            this.lblTimeBombCardbb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb19
+            // 
+            this.lblTimeBombCardbb19.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb19.Location = new System.Drawing.Point(92, 119);
+            this.lblTimeBombCardbb19.Name = "lblTimeBombCardbb19";
+            this.lblTimeBombCardbb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb19.TabIndex = 46;
+            this.lblTimeBombCardbb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb14
+            // 
+            this.lblTimeBombCardbb14.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb14.Location = new System.Drawing.Point(63, 119);
+            this.lblTimeBombCardbb14.Name = "lblTimeBombCardbb14";
+            this.lblTimeBombCardbb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb14.TabIndex = 41;
+            this.lblTimeBombCardbb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb9
+            // 
+            this.lblTimeBombCardbb9.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb9.Location = new System.Drawing.Point(34, 119);
+            this.lblTimeBombCardbb9.Name = "lblTimeBombCardbb9";
+            this.lblTimeBombCardbb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb9.TabIndex = 36;
+            this.lblTimeBombCardbb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb5
+            // 
+            this.lblTimeBombCardbb5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb5.Location = new System.Drawing.Point(5, 144);
+            this.lblTimeBombCardbb5.Name = "lblTimeBombCardbb5";
+            this.lblTimeBombCardbb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb5.TabIndex = 30;
+            this.lblTimeBombCardbb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb18
+            // 
+            this.lblTimeBombCardbb18.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb18.Location = new System.Drawing.Point(92, 94);
+            this.lblTimeBombCardbb18.Name = "lblTimeBombCardbb18";
+            this.lblTimeBombCardbb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb18.TabIndex = 47;
+            this.lblTimeBombCardbb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb15
+            // 
+            this.lblTimeBombCardbb15.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb15.Location = new System.Drawing.Point(63, 144);
+            this.lblTimeBombCardbb15.Name = "lblTimeBombCardbb15";
+            this.lblTimeBombCardbb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb15.TabIndex = 40;
+            this.lblTimeBombCardbb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb8
+            // 
+            this.lblTimeBombCardbb8.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb8.Location = new System.Drawing.Point(34, 94);
+            this.lblTimeBombCardbb8.Name = "lblTimeBombCardbb8";
+            this.lblTimeBombCardbb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb8.TabIndex = 37;
+            this.lblTimeBombCardbb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb6
+            // 
+            this.lblTimeBombCardbb6.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb6.Location = new System.Drawing.Point(34, 44);
+            this.lblTimeBombCardbb6.Name = "lblTimeBombCardbb6";
+            this.lblTimeBombCardbb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb6.TabIndex = 33;
+            this.lblTimeBombCardbb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb17
+            // 
+            this.lblTimeBombCardbb17.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb17.Location = new System.Drawing.Point(92, 69);
+            this.lblTimeBombCardbb17.Name = "lblTimeBombCardbb17";
+            this.lblTimeBombCardbb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb17.TabIndex = 44;
+            this.lblTimeBombCardbb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb16
+            // 
+            this.lblTimeBombCardbb16.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb16.Location = new System.Drawing.Point(92, 44);
+            this.lblTimeBombCardbb16.Name = "lblTimeBombCardbb16";
+            this.lblTimeBombCardbb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb16.TabIndex = 43;
+            this.lblTimeBombCardbb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardbb7
+            // 
+            this.lblTimeBombCardbb7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardbb7.Location = new System.Drawing.Point(34, 69);
+            this.lblTimeBombCardbb7.Name = "lblTimeBombCardbb7";
+            this.lblTimeBombCardbb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardbb7.TabIndex = 34;
+            this.lblTimeBombCardbb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctrbxBlueBonusCardExploded
+            // 
+            this.pctrbxBlueBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxBlueBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueBonusCardExploded.Name = "pctrbxBlueBonusCardExploded";
+            this.pctrbxBlueBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueBonusCardExploded.TabIndex = 53;
+            this.pctrbxBlueBonusCardExploded.TabStop = false;
+            // 
+            // pctrbcBlueBonusCard
+            // 
+            this.pctrbcBlueBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbcBlueBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbcBlueBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbcBlueBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbcBlueBonusCard.Name = "pctrbcBlueBonusCard";
+            this.pctrbcBlueBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbcBlueBonusCard.TabIndex = 55;
+            this.pctrbcBlueBonusCard.TabStop = false;
+            // 
+            // pctrbxBlueBonusCardDefused
+            // 
+            this.pctrbxBlueBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomRightBlueBonusCard;
+            this.pctrbxBlueBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxBlueBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxBlueBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxBlueBonusCardDefused.Name = "pctrbxBlueBonusCardDefused";
+            this.pctrbxBlueBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxBlueBonusCardDefused.TabIndex = 54;
+            this.pctrbxBlueBonusCardDefused.TabStop = false;
+            // 
+            // pnlRegGreenCard
+            // 
+            this.pnlRegGreenCard.BackColor = System.Drawing.Color.White;
+            this.pnlRegGreenCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenCard;
+            this.pnlRegGreenCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg25);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg1);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg24);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg2);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg23);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg3);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg22);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg4);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg21);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg5);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg20);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg6);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg19);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg7);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg18);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg8);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg17);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg9);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg16);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg10);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg15);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg11);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg14);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg12);
+            this.pnlRegGreenCard.Controls.Add(this.lblTimeBombCardg13);
+            this.pnlRegGreenCard.Controls.Add(this.pctrbxGreenCardExploded);
+            this.pnlRegGreenCard.Location = new System.Drawing.Point(179, 245);
+            this.pnlRegGreenCard.Name = "pnlRegGreenCard";
+            this.pnlRegGreenCard.Size = new System.Drawing.Size(150, 175);
+            this.pnlRegGreenCard.TabIndex = 5;
+            // 
+            // lblTimeBombCardg25
+            // 
+            this.lblTimeBombCardg25.Location = new System.Drawing.Point(118, 138);
+            this.lblTimeBombCardg25.Name = "lblTimeBombCardg25";
+            this.lblTimeBombCardg25.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg25.TabIndex = 55;
+            this.lblTimeBombCardg25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg1
+            // 
+            this.lblTimeBombCardg1.Location = new System.Drawing.Point(7, 26);
+            this.lblTimeBombCardg1.Name = "lblTimeBombCardg1";
+            this.lblTimeBombCardg1.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg1.TabIndex = 31;
+            this.lblTimeBombCardg1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg24
+            // 
+            this.lblTimeBombCardg24.Location = new System.Drawing.Point(118, 110);
+            this.lblTimeBombCardg24.Name = "lblTimeBombCardg24";
+            this.lblTimeBombCardg24.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg24.TabIndex = 54;
+            this.lblTimeBombCardg24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg2
+            // 
+            this.lblTimeBombCardg2.Location = new System.Drawing.Point(7, 54);
+            this.lblTimeBombCardg2.Name = "lblTimeBombCardg2";
+            this.lblTimeBombCardg2.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg2.TabIndex = 32;
+            this.lblTimeBombCardg2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg23
+            // 
+            this.lblTimeBombCardg23.Location = new System.Drawing.Point(118, 82);
+            this.lblTimeBombCardg23.Name = "lblTimeBombCardg23";
+            this.lblTimeBombCardg23.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg23.TabIndex = 53;
+            this.lblTimeBombCardg23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg3
+            // 
+            this.lblTimeBombCardg3.Location = new System.Drawing.Point(7, 82);
+            this.lblTimeBombCardg3.Name = "lblTimeBombCardg3";
+            this.lblTimeBombCardg3.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg3.TabIndex = 33;
+            this.lblTimeBombCardg3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg22
+            // 
+            this.lblTimeBombCardg22.Location = new System.Drawing.Point(118, 54);
+            this.lblTimeBombCardg22.Name = "lblTimeBombCardg22";
+            this.lblTimeBombCardg22.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg22.TabIndex = 52;
+            this.lblTimeBombCardg22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg4
+            // 
+            this.lblTimeBombCardg4.Location = new System.Drawing.Point(7, 110);
+            this.lblTimeBombCardg4.Name = "lblTimeBombCardg4";
+            this.lblTimeBombCardg4.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg4.TabIndex = 34;
+            this.lblTimeBombCardg4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg21
+            // 
+            this.lblTimeBombCardg21.Location = new System.Drawing.Point(118, 26);
+            this.lblTimeBombCardg21.Name = "lblTimeBombCardg21";
+            this.lblTimeBombCardg21.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg21.TabIndex = 51;
+            this.lblTimeBombCardg21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg5
+            // 
+            this.lblTimeBombCardg5.Location = new System.Drawing.Point(7, 138);
+            this.lblTimeBombCardg5.Name = "lblTimeBombCardg5";
+            this.lblTimeBombCardg5.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg5.TabIndex = 35;
+            this.lblTimeBombCardg5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg20
+            // 
+            this.lblTimeBombCardg20.Location = new System.Drawing.Point(90, 138);
+            this.lblTimeBombCardg20.Name = "lblTimeBombCardg20";
+            this.lblTimeBombCardg20.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg20.TabIndex = 50;
+            this.lblTimeBombCardg20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg6
+            // 
+            this.lblTimeBombCardg6.Location = new System.Drawing.Point(35, 26);
+            this.lblTimeBombCardg6.Name = "lblTimeBombCardg6";
+            this.lblTimeBombCardg6.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg6.TabIndex = 36;
+            this.lblTimeBombCardg6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg19
+            // 
+            this.lblTimeBombCardg19.Location = new System.Drawing.Point(90, 110);
+            this.lblTimeBombCardg19.Name = "lblTimeBombCardg19";
+            this.lblTimeBombCardg19.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg19.TabIndex = 49;
+            this.lblTimeBombCardg19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg7
+            // 
+            this.lblTimeBombCardg7.Location = new System.Drawing.Point(35, 54);
+            this.lblTimeBombCardg7.Name = "lblTimeBombCardg7";
+            this.lblTimeBombCardg7.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg7.TabIndex = 37;
+            this.lblTimeBombCardg7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg18
+            // 
+            this.lblTimeBombCardg18.Location = new System.Drawing.Point(90, 82);
+            this.lblTimeBombCardg18.Name = "lblTimeBombCardg18";
+            this.lblTimeBombCardg18.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg18.TabIndex = 48;
+            this.lblTimeBombCardg18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg8
+            // 
+            this.lblTimeBombCardg8.Location = new System.Drawing.Point(35, 82);
+            this.lblTimeBombCardg8.Name = "lblTimeBombCardg8";
+            this.lblTimeBombCardg8.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg8.TabIndex = 38;
+            this.lblTimeBombCardg8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg17
+            // 
+            this.lblTimeBombCardg17.Location = new System.Drawing.Point(90, 54);
+            this.lblTimeBombCardg17.Name = "lblTimeBombCardg17";
+            this.lblTimeBombCardg17.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg17.TabIndex = 47;
+            this.lblTimeBombCardg17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg9
+            // 
+            this.lblTimeBombCardg9.Location = new System.Drawing.Point(35, 110);
+            this.lblTimeBombCardg9.Name = "lblTimeBombCardg9";
+            this.lblTimeBombCardg9.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg9.TabIndex = 39;
+            this.lblTimeBombCardg9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg16
+            // 
+            this.lblTimeBombCardg16.Location = new System.Drawing.Point(90, 26);
+            this.lblTimeBombCardg16.Name = "lblTimeBombCardg16";
+            this.lblTimeBombCardg16.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg16.TabIndex = 46;
+            this.lblTimeBombCardg16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg10
+            // 
+            this.lblTimeBombCardg10.Location = new System.Drawing.Point(35, 138);
+            this.lblTimeBombCardg10.Name = "lblTimeBombCardg10";
+            this.lblTimeBombCardg10.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg10.TabIndex = 40;
+            this.lblTimeBombCardg10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg15
+            // 
+            this.lblTimeBombCardg15.Location = new System.Drawing.Point(62, 138);
+            this.lblTimeBombCardg15.Name = "lblTimeBombCardg15";
+            this.lblTimeBombCardg15.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg15.TabIndex = 45;
+            this.lblTimeBombCardg15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg11
+            // 
+            this.lblTimeBombCardg11.Location = new System.Drawing.Point(62, 26);
+            this.lblTimeBombCardg11.Name = "lblTimeBombCardg11";
+            this.lblTimeBombCardg11.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg11.TabIndex = 41;
+            this.lblTimeBombCardg11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg14
+            // 
+            this.lblTimeBombCardg14.Location = new System.Drawing.Point(62, 110);
+            this.lblTimeBombCardg14.Name = "lblTimeBombCardg14";
+            this.lblTimeBombCardg14.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg14.TabIndex = 44;
+            this.lblTimeBombCardg14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg12
+            // 
+            this.lblTimeBombCardg12.Location = new System.Drawing.Point(62, 54);
+            this.lblTimeBombCardg12.Name = "lblTimeBombCardg12";
+            this.lblTimeBombCardg12.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg12.TabIndex = 42;
+            this.lblTimeBombCardg12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardg13
+            // 
+            this.lblTimeBombCardg13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeBombCardg13.Location = new System.Drawing.Point(62, 82);
+            this.lblTimeBombCardg13.Name = "lblTimeBombCardg13";
+            this.lblTimeBombCardg13.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardg13.TabIndex = 43;
+            this.lblTimeBombCardg13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardg13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // pctrbxGreenCardExploded
+            // 
+            this.pctrbxGreenCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.GreenCardExploded;
+            this.pctrbxGreenCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenCardExploded.Name = "pctrbxGreenCardExploded";
+            this.pctrbxGreenCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenCardExploded.TabIndex = 56;
+            this.pctrbxGreenCardExploded.TabStop = false;
+            // 
+            // pnlTimeBombGreen
+            // 
+            this.pnlTimeBombGreen.BackColor = System.Drawing.Color.White;
+            this.pnlTimeBombGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb25);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb1);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb24);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb11);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb23);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb2);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb22);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb12);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb21);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb3);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb20);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb13);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb10);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb4);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb19);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb14);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb9);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb5);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb18);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb15);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb8);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb6);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb17);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb16);
+            this.pnlTimeBombGreen.Controls.Add(this.lblTimeBombCardgb7);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardExploded);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCardDefused);
+            this.pnlTimeBombGreen.Controls.Add(this.pctrbxGreenBonusCard);
+            this.pnlTimeBombGreen.Location = new System.Drawing.Point(15, 245);
+            this.pnlTimeBombGreen.Name = "pnlTimeBombGreen";
+            this.pnlTimeBombGreen.Size = new System.Drawing.Size(150, 175);
+            this.pnlTimeBombGreen.TabIndex = 4;
+            // 
+            // lblTimeBombCardgb25
+            // 
+            this.lblTimeBombCardgb25.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb25.Location = new System.Drawing.Point(120, 144);
+            this.lblTimeBombCardgb25.Name = "lblTimeBombCardgb25";
+            this.lblTimeBombCardgb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb25.TabIndex = 50;
+            this.lblTimeBombCardgb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb1
+            // 
+            this.lblTimeBombCardgb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb1.Location = new System.Drawing.Point(4, 44);
+            this.lblTimeBombCardgb1.Name = "lblTimeBombCardgb1";
+            this.lblTimeBombCardgb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb1.TabIndex = 28;
+            this.lblTimeBombCardgb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb24
+            // 
+            this.lblTimeBombCardgb24.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb24.Location = new System.Drawing.Point(120, 119);
+            this.lblTimeBombCardgb24.Name = "lblTimeBombCardgb24";
+            this.lblTimeBombCardgb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb24.TabIndex = 51;
+            this.lblTimeBombCardgb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb11
+            // 
+            this.lblTimeBombCardgb11.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardgb11.Name = "lblTimeBombCardgb11";
+            this.lblTimeBombCardgb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb11.TabIndex = 38;
+            this.lblTimeBombCardgb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb23
+            // 
+            this.lblTimeBombCardgb23.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardgb23.Name = "lblTimeBombCardgb23";
+            this.lblTimeBombCardgb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb23.TabIndex = 52;
+            this.lblTimeBombCardgb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb2
+            // 
+            this.lblTimeBombCardgb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb2.Location = new System.Drawing.Point(4, 69);
+            this.lblTimeBombCardgb2.Name = "lblTimeBombCardgb2";
+            this.lblTimeBombCardgb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb2.TabIndex = 29;
+            this.lblTimeBombCardgb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb22
+            // 
+            this.lblTimeBombCardgb22.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardgb22.Name = "lblTimeBombCardgb22";
+            this.lblTimeBombCardgb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb22.TabIndex = 49;
+            this.lblTimeBombCardgb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb12
+            // 
+            this.lblTimeBombCardgb12.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardgb12.Name = "lblTimeBombCardgb12";
+            this.lblTimeBombCardgb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb12.TabIndex = 39;
+            this.lblTimeBombCardgb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb21
+            // 
+            this.lblTimeBombCardgb21.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardgb21.Name = "lblTimeBombCardgb21";
+            this.lblTimeBombCardgb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb21.TabIndex = 48;
+            this.lblTimeBombCardgb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb3
+            // 
+            this.lblTimeBombCardgb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb3.Location = new System.Drawing.Point(4, 94);
+            this.lblTimeBombCardgb3.Name = "lblTimeBombCardgb3";
+            this.lblTimeBombCardgb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb3.TabIndex = 32;
+            this.lblTimeBombCardgb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb20
+            // 
+            this.lblTimeBombCardgb20.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb20.Location = new System.Drawing.Point(91, 144);
+            this.lblTimeBombCardgb20.Name = "lblTimeBombCardgb20";
+            this.lblTimeBombCardgb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb20.TabIndex = 45;
+            this.lblTimeBombCardgb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb13
+            // 
+            this.lblTimeBombCardgb13.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardgb13.Name = "lblTimeBombCardgb13";
+            this.lblTimeBombCardgb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb13.TabIndex = 42;
+            this.lblTimeBombCardgb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb10
+            // 
+            this.lblTimeBombCardgb10.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb10.Location = new System.Drawing.Point(33, 144);
+            this.lblTimeBombCardgb10.Name = "lblTimeBombCardgb10";
+            this.lblTimeBombCardgb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb10.TabIndex = 35;
+            this.lblTimeBombCardgb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb4
+            // 
+            this.lblTimeBombCardgb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb4.Location = new System.Drawing.Point(4, 119);
+            this.lblTimeBombCardgb4.Name = "lblTimeBombCardgb4";
+            this.lblTimeBombCardgb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb4.TabIndex = 31;
+            this.lblTimeBombCardgb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb19
+            // 
+            this.lblTimeBombCardgb19.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb19.Location = new System.Drawing.Point(91, 119);
+            this.lblTimeBombCardgb19.Name = "lblTimeBombCardgb19";
+            this.lblTimeBombCardgb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb19.TabIndex = 46;
+            this.lblTimeBombCardgb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb14
+            // 
+            this.lblTimeBombCardgb14.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb14.Location = new System.Drawing.Point(62, 119);
+            this.lblTimeBombCardgb14.Name = "lblTimeBombCardgb14";
+            this.lblTimeBombCardgb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb14.TabIndex = 41;
+            this.lblTimeBombCardgb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb9
+            // 
+            this.lblTimeBombCardgb9.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb9.Location = new System.Drawing.Point(33, 119);
+            this.lblTimeBombCardgb9.Name = "lblTimeBombCardgb9";
+            this.lblTimeBombCardgb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb9.TabIndex = 36;
+            this.lblTimeBombCardgb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb5
+            // 
+            this.lblTimeBombCardgb5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb5.Location = new System.Drawing.Point(4, 144);
+            this.lblTimeBombCardgb5.Name = "lblTimeBombCardgb5";
+            this.lblTimeBombCardgb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb5.TabIndex = 30;
+            this.lblTimeBombCardgb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb18
+            // 
+            this.lblTimeBombCardgb18.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardgb18.Name = "lblTimeBombCardgb18";
+            this.lblTimeBombCardgb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb18.TabIndex = 47;
+            this.lblTimeBombCardgb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb15
+            // 
+            this.lblTimeBombCardgb15.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb15.Location = new System.Drawing.Point(62, 144);
+            this.lblTimeBombCardgb15.Name = "lblTimeBombCardgb15";
+            this.lblTimeBombCardgb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb15.TabIndex = 40;
+            this.lblTimeBombCardgb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb8
+            // 
+            this.lblTimeBombCardgb8.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb8.Location = new System.Drawing.Point(33, 94);
+            this.lblTimeBombCardgb8.Name = "lblTimeBombCardgb8";
+            this.lblTimeBombCardgb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb8.TabIndex = 37;
+            this.lblTimeBombCardgb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb6
+            // 
+            this.lblTimeBombCardgb6.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb6.Location = new System.Drawing.Point(33, 44);
+            this.lblTimeBombCardgb6.Name = "lblTimeBombCardgb6";
+            this.lblTimeBombCardgb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb6.TabIndex = 33;
+            this.lblTimeBombCardgb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb17
+            // 
+            this.lblTimeBombCardgb17.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardgb17.Name = "lblTimeBombCardgb17";
+            this.lblTimeBombCardgb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb17.TabIndex = 44;
+            this.lblTimeBombCardgb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb16
+            // 
+            this.lblTimeBombCardgb16.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardgb16.Name = "lblTimeBombCardgb16";
+            this.lblTimeBombCardgb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb16.TabIndex = 43;
+            this.lblTimeBombCardgb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardgb7
+            // 
+            this.lblTimeBombCardgb7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardgb7.Location = new System.Drawing.Point(33, 69);
+            this.lblTimeBombCardgb7.Name = "lblTimeBombCardgb7";
+            this.lblTimeBombCardgb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardgb7.TabIndex = 34;
+            this.lblTimeBombCardgb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctrbxGreenBonusCardExploded
+            // 
+            this.pctrbxGreenBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxGreenBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCardExploded.Name = "pctrbxGreenBonusCardExploded";
+            this.pctrbxGreenBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCardExploded.TabIndex = 53;
+            this.pctrbxGreenBonusCardExploded.TabStop = false;
+            // 
+            // pctrbxGreenBonusCardDefused
+            // 
+            this.pctrbxGreenBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BottomLeftGreenBonusCard;
+            this.pctrbxGreenBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCardDefused.Name = "pctrbxGreenBonusCardDefused";
+            this.pctrbxGreenBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCardDefused.TabIndex = 54;
+            this.pctrbxGreenBonusCardDefused.TabStop = false;
+            // 
+            // pctrbxGreenBonusCard
+            // 
+            this.pctrbxGreenBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxGreenBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxGreenBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxGreenBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxGreenBonusCard.Name = "pctrbxGreenBonusCard";
+            this.pctrbxGreenBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxGreenBonusCard.TabIndex = 55;
+            this.pctrbxGreenBonusCard.TabStop = false;
+            // 
+            // pnlTimeBombPurple
+            // 
+            this.pnlTimeBombPurple.BackColor = System.Drawing.Color.White;
+            this.pnlTimeBombPurple.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb25);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb1);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb24);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb11);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb23);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb2);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb22);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb12);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb21);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb3);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb20);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb13);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb10);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb4);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb19);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb14);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb9);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb5);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb18);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb15);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb8);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb6);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb17);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb16);
+            this.pnlTimeBombPurple.Controls.Add(this.lblTimeBombCardpb7);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardExploded);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCard);
+            this.pnlTimeBombPurple.Controls.Add(this.pctrbxPurpleBonusCardDefused);
+            this.pnlTimeBombPurple.Location = new System.Drawing.Point(507, 53);
+            this.pnlTimeBombPurple.Name = "pnlTimeBombPurple";
+            this.pnlTimeBombPurple.Size = new System.Drawing.Size(150, 175);
+            this.pnlTimeBombPurple.TabIndex = 4;
+            // 
+            // lblTimeBombCardpb25
+            // 
+            this.lblTimeBombCardpb25.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb25.Location = new System.Drawing.Point(120, 144);
+            this.lblTimeBombCardpb25.Name = "lblTimeBombCardpb25";
+            this.lblTimeBombCardpb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb25.TabIndex = 75;
+            this.lblTimeBombCardpb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb1
+            // 
+            this.lblTimeBombCardpb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb1.Location = new System.Drawing.Point(4, 44);
+            this.lblTimeBombCardpb1.Name = "lblTimeBombCardpb1";
+            this.lblTimeBombCardpb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb1.TabIndex = 53;
+            this.lblTimeBombCardpb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb24
+            // 
+            this.lblTimeBombCardpb24.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb24.Location = new System.Drawing.Point(120, 119);
+            this.lblTimeBombCardpb24.Name = "lblTimeBombCardpb24";
+            this.lblTimeBombCardpb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb24.TabIndex = 76;
+            this.lblTimeBombCardpb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb11
+            // 
+            this.lblTimeBombCardpb11.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardpb11.Name = "lblTimeBombCardpb11";
+            this.lblTimeBombCardpb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb11.TabIndex = 63;
+            this.lblTimeBombCardpb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb23
+            // 
+            this.lblTimeBombCardpb23.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardpb23.Name = "lblTimeBombCardpb23";
+            this.lblTimeBombCardpb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb23.TabIndex = 77;
+            this.lblTimeBombCardpb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb2
+            // 
+            this.lblTimeBombCardpb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb2.Location = new System.Drawing.Point(4, 69);
+            this.lblTimeBombCardpb2.Name = "lblTimeBombCardpb2";
+            this.lblTimeBombCardpb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb2.TabIndex = 54;
+            this.lblTimeBombCardpb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb22
+            // 
+            this.lblTimeBombCardpb22.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardpb22.Name = "lblTimeBombCardpb22";
+            this.lblTimeBombCardpb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb22.TabIndex = 74;
+            this.lblTimeBombCardpb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb12
+            // 
+            this.lblTimeBombCardpb12.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardpb12.Name = "lblTimeBombCardpb12";
+            this.lblTimeBombCardpb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb12.TabIndex = 64;
+            this.lblTimeBombCardpb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb21
+            // 
+            this.lblTimeBombCardpb21.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardpb21.Name = "lblTimeBombCardpb21";
+            this.lblTimeBombCardpb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb21.TabIndex = 73;
+            this.lblTimeBombCardpb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb3
+            // 
+            this.lblTimeBombCardpb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb3.Location = new System.Drawing.Point(4, 94);
+            this.lblTimeBombCardpb3.Name = "lblTimeBombCardpb3";
+            this.lblTimeBombCardpb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb3.TabIndex = 57;
+            this.lblTimeBombCardpb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb20
+            // 
+            this.lblTimeBombCardpb20.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb20.Location = new System.Drawing.Point(91, 144);
+            this.lblTimeBombCardpb20.Name = "lblTimeBombCardpb20";
+            this.lblTimeBombCardpb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb20.TabIndex = 70;
+            this.lblTimeBombCardpb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb13
+            // 
+            this.lblTimeBombCardpb13.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardpb13.Name = "lblTimeBombCardpb13";
+            this.lblTimeBombCardpb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb13.TabIndex = 67;
+            this.lblTimeBombCardpb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb10
+            // 
+            this.lblTimeBombCardpb10.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb10.Location = new System.Drawing.Point(33, 144);
+            this.lblTimeBombCardpb10.Name = "lblTimeBombCardpb10";
+            this.lblTimeBombCardpb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb10.TabIndex = 60;
+            this.lblTimeBombCardpb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb4
+            // 
+            this.lblTimeBombCardpb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb4.Location = new System.Drawing.Point(4, 119);
+            this.lblTimeBombCardpb4.Name = "lblTimeBombCardpb4";
+            this.lblTimeBombCardpb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb4.TabIndex = 56;
+            this.lblTimeBombCardpb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb19
+            // 
+            this.lblTimeBombCardpb19.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb19.Location = new System.Drawing.Point(91, 119);
+            this.lblTimeBombCardpb19.Name = "lblTimeBombCardpb19";
+            this.lblTimeBombCardpb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb19.TabIndex = 71;
+            this.lblTimeBombCardpb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb14
+            // 
+            this.lblTimeBombCardpb14.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb14.Location = new System.Drawing.Point(62, 119);
+            this.lblTimeBombCardpb14.Name = "lblTimeBombCardpb14";
+            this.lblTimeBombCardpb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb14.TabIndex = 66;
+            this.lblTimeBombCardpb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb9
+            // 
+            this.lblTimeBombCardpb9.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb9.Location = new System.Drawing.Point(33, 119);
+            this.lblTimeBombCardpb9.Name = "lblTimeBombCardpb9";
+            this.lblTimeBombCardpb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb9.TabIndex = 61;
+            this.lblTimeBombCardpb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb5
+            // 
+            this.lblTimeBombCardpb5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb5.Location = new System.Drawing.Point(4, 144);
+            this.lblTimeBombCardpb5.Name = "lblTimeBombCardpb5";
+            this.lblTimeBombCardpb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb5.TabIndex = 55;
+            this.lblTimeBombCardpb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb18
+            // 
+            this.lblTimeBombCardpb18.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardpb18.Name = "lblTimeBombCardpb18";
+            this.lblTimeBombCardpb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb18.TabIndex = 72;
+            this.lblTimeBombCardpb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb15
+            // 
+            this.lblTimeBombCardpb15.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb15.Location = new System.Drawing.Point(62, 144);
+            this.lblTimeBombCardpb15.Name = "lblTimeBombCardpb15";
+            this.lblTimeBombCardpb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb15.TabIndex = 65;
+            this.lblTimeBombCardpb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb8
+            // 
+            this.lblTimeBombCardpb8.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb8.Location = new System.Drawing.Point(33, 94);
+            this.lblTimeBombCardpb8.Name = "lblTimeBombCardpb8";
+            this.lblTimeBombCardpb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb8.TabIndex = 62;
+            this.lblTimeBombCardpb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb6
+            // 
+            this.lblTimeBombCardpb6.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb6.Location = new System.Drawing.Point(33, 44);
+            this.lblTimeBombCardpb6.Name = "lblTimeBombCardpb6";
+            this.lblTimeBombCardpb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb6.TabIndex = 58;
+            this.lblTimeBombCardpb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb17
+            // 
+            this.lblTimeBombCardpb17.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardpb17.Name = "lblTimeBombCardpb17";
+            this.lblTimeBombCardpb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb17.TabIndex = 69;
+            this.lblTimeBombCardpb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb16
+            // 
+            this.lblTimeBombCardpb16.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardpb16.Name = "lblTimeBombCardpb16";
+            this.lblTimeBombCardpb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb16.TabIndex = 68;
+            this.lblTimeBombCardpb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardpb7
+            // 
+            this.lblTimeBombCardpb7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardpb7.Location = new System.Drawing.Point(33, 69);
+            this.lblTimeBombCardpb7.Name = "lblTimeBombCardpb7";
+            this.lblTimeBombCardpb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardpb7.TabIndex = 59;
+            this.lblTimeBombCardpb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctrbxPurpleBonusCardExploded
+            // 
+            this.pctrbxPurpleBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxPurpleBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCardExploded.Name = "pctrbxPurpleBonusCardExploded";
+            this.pctrbxPurpleBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCardExploded.TabIndex = 78;
+            this.pctrbxPurpleBonusCardExploded.TabStop = false;
+            // 
+            // pctrbxPurpleBonusCard
+            // 
+            this.pctrbxPurpleBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxPurpleBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCard.Name = "pctrbxPurpleBonusCard";
+            this.pctrbxPurpleBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCard.TabIndex = 80;
+            this.pctrbxPurpleBonusCard.TabStop = false;
+            // 
+            // pctrbxPurpleBonusCardDefused
+            // 
+            this.pctrbxPurpleBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleBonusCard;
+            this.pctrbxPurpleBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleBonusCardDefused.Name = "pctrbxPurpleBonusCardDefused";
+            this.pctrbxPurpleBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleBonusCardDefused.TabIndex = 79;
+            this.pctrbxPurpleBonusCardDefused.TabStop = false;
+            // 
+            // pnlTimeBombRed
+            // 
+            this.pnlTimeBombRed.BackColor = System.Drawing.Color.White;
+            this.pnlTimeBombRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb25);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb24);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb23);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb22);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb21);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb20);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb10);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb19);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb9);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb18);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb8);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb17);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb7);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb16);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb6);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb15);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb5);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb14);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb4);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb13);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb3);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb12);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb2);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb11);
+            this.pnlTimeBombRed.Controls.Add(this.lblTimeBombCardrb1);
+            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCard);
+            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCardExploded);
+            this.pnlTimeBombRed.Controls.Add(this.pctrbxRedBonusCardDefused);
+            this.pnlTimeBombRed.Location = new System.Drawing.Point(15, 53);
+            this.pnlTimeBombRed.Name = "pnlTimeBombRed";
+            this.pnlTimeBombRed.Size = new System.Drawing.Size(150, 175);
+            this.pnlTimeBombRed.TabIndex = 3;
+            // 
+            // lblTimeBombCardrb25
+            // 
+            this.lblTimeBombCardrb25.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb25.Location = new System.Drawing.Point(120, 144);
+            this.lblTimeBombCardrb25.Name = "lblTimeBombCardrb25";
+            this.lblTimeBombCardrb25.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb25.TabIndex = 25;
+            this.lblTimeBombCardrb25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb24
+            // 
+            this.lblTimeBombCardrb24.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb24.Location = new System.Drawing.Point(120, 119);
+            this.lblTimeBombCardrb24.Name = "lblTimeBombCardrb24";
+            this.lblTimeBombCardrb24.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb24.TabIndex = 26;
+            this.lblTimeBombCardrb24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb23
+            // 
+            this.lblTimeBombCardrb23.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb23.Location = new System.Drawing.Point(120, 94);
+            this.lblTimeBombCardrb23.Name = "lblTimeBombCardrb23";
+            this.lblTimeBombCardrb23.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb23.TabIndex = 27;
+            this.lblTimeBombCardrb23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb22
+            // 
+            this.lblTimeBombCardrb22.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb22.Location = new System.Drawing.Point(120, 69);
+            this.lblTimeBombCardrb22.Name = "lblTimeBombCardrb22";
+            this.lblTimeBombCardrb22.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb22.TabIndex = 24;
+            this.lblTimeBombCardrb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb21
+            // 
+            this.lblTimeBombCardrb21.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb21.Location = new System.Drawing.Point(120, 44);
+            this.lblTimeBombCardrb21.Name = "lblTimeBombCardrb21";
+            this.lblTimeBombCardrb21.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb21.TabIndex = 23;
+            this.lblTimeBombCardrb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb20
+            // 
+            this.lblTimeBombCardrb20.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb20.Location = new System.Drawing.Point(91, 144);
+            this.lblTimeBombCardrb20.Name = "lblTimeBombCardrb20";
+            this.lblTimeBombCardrb20.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb20.TabIndex = 20;
+            this.lblTimeBombCardrb20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb10
+            // 
+            this.lblTimeBombCardrb10.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb10.Location = new System.Drawing.Point(33, 144);
+            this.lblTimeBombCardrb10.Name = "lblTimeBombCardrb10";
+            this.lblTimeBombCardrb10.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb10.TabIndex = 10;
+            this.lblTimeBombCardrb10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb19
+            // 
+            this.lblTimeBombCardrb19.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb19.Location = new System.Drawing.Point(91, 119);
+            this.lblTimeBombCardrb19.Name = "lblTimeBombCardrb19";
+            this.lblTimeBombCardrb19.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb19.TabIndex = 21;
+            this.lblTimeBombCardrb19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb9
+            // 
+            this.lblTimeBombCardrb9.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb9.Location = new System.Drawing.Point(33, 119);
+            this.lblTimeBombCardrb9.Name = "lblTimeBombCardrb9";
+            this.lblTimeBombCardrb9.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb9.TabIndex = 11;
+            this.lblTimeBombCardrb9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb18
+            // 
+            this.lblTimeBombCardrb18.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb18.Location = new System.Drawing.Point(91, 94);
+            this.lblTimeBombCardrb18.Name = "lblTimeBombCardrb18";
+            this.lblTimeBombCardrb18.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb18.TabIndex = 22;
+            this.lblTimeBombCardrb18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb8
+            // 
+            this.lblTimeBombCardrb8.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb8.Location = new System.Drawing.Point(33, 94);
+            this.lblTimeBombCardrb8.Name = "lblTimeBombCardrb8";
+            this.lblTimeBombCardrb8.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb8.TabIndex = 12;
+            this.lblTimeBombCardrb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb17
+            // 
+            this.lblTimeBombCardrb17.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb17.Location = new System.Drawing.Point(91, 69);
+            this.lblTimeBombCardrb17.Name = "lblTimeBombCardrb17";
+            this.lblTimeBombCardrb17.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb17.TabIndex = 19;
+            this.lblTimeBombCardrb17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb7
+            // 
+            this.lblTimeBombCardrb7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb7.Location = new System.Drawing.Point(33, 69);
+            this.lblTimeBombCardrb7.Name = "lblTimeBombCardrb7";
+            this.lblTimeBombCardrb7.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb7.TabIndex = 9;
+            this.lblTimeBombCardrb7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb16
+            // 
+            this.lblTimeBombCardrb16.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb16.Location = new System.Drawing.Point(91, 44);
+            this.lblTimeBombCardrb16.Name = "lblTimeBombCardrb16";
+            this.lblTimeBombCardrb16.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb16.TabIndex = 18;
+            this.lblTimeBombCardrb16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb6
+            // 
+            this.lblTimeBombCardrb6.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb6.Location = new System.Drawing.Point(33, 44);
+            this.lblTimeBombCardrb6.Name = "lblTimeBombCardrb6";
+            this.lblTimeBombCardrb6.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb6.TabIndex = 8;
+            this.lblTimeBombCardrb6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb15
+            // 
+            this.lblTimeBombCardrb15.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb15.Location = new System.Drawing.Point(62, 144);
+            this.lblTimeBombCardrb15.Name = "lblTimeBombCardrb15";
+            this.lblTimeBombCardrb15.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb15.TabIndex = 15;
+            this.lblTimeBombCardrb15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb5
+            // 
+            this.lblTimeBombCardrb5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb5.Location = new System.Drawing.Point(4, 144);
+            this.lblTimeBombCardrb5.Name = "lblTimeBombCardrb5";
+            this.lblTimeBombCardrb5.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb5.TabIndex = 7;
+            this.lblTimeBombCardrb5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb14
+            // 
+            this.lblTimeBombCardrb14.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb14.Location = new System.Drawing.Point(62, 119);
+            this.lblTimeBombCardrb14.Name = "lblTimeBombCardrb14";
+            this.lblTimeBombCardrb14.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb14.TabIndex = 16;
+            this.lblTimeBombCardrb14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb4
+            // 
+            this.lblTimeBombCardrb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb4.Location = new System.Drawing.Point(4, 119);
+            this.lblTimeBombCardrb4.Name = "lblTimeBombCardrb4";
+            this.lblTimeBombCardrb4.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb4.TabIndex = 7;
+            this.lblTimeBombCardrb4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb13
+            // 
+            this.lblTimeBombCardrb13.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb13.Location = new System.Drawing.Point(62, 94);
+            this.lblTimeBombCardrb13.Name = "lblTimeBombCardrb13";
+            this.lblTimeBombCardrb13.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb13.TabIndex = 17;
+            this.lblTimeBombCardrb13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb3
+            // 
+            this.lblTimeBombCardrb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb3.Location = new System.Drawing.Point(4, 94);
+            this.lblTimeBombCardrb3.Name = "lblTimeBombCardrb3";
+            this.lblTimeBombCardrb3.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb3.TabIndex = 7;
+            this.lblTimeBombCardrb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb12
+            // 
+            this.lblTimeBombCardrb12.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb12.Location = new System.Drawing.Point(62, 69);
+            this.lblTimeBombCardrb12.Name = "lblTimeBombCardrb12";
+            this.lblTimeBombCardrb12.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb12.TabIndex = 14;
+            this.lblTimeBombCardrb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb2
+            // 
+            this.lblTimeBombCardrb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb2.Location = new System.Drawing.Point(4, 69);
+            this.lblTimeBombCardrb2.Name = "lblTimeBombCardrb2";
+            this.lblTimeBombCardrb2.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb2.TabIndex = 6;
+            this.lblTimeBombCardrb2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb11
+            // 
+            this.lblTimeBombCardrb11.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb11.Location = new System.Drawing.Point(62, 44);
+            this.lblTimeBombCardrb11.Name = "lblTimeBombCardrb11";
+            this.lblTimeBombCardrb11.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb11.TabIndex = 13;
+            this.lblTimeBombCardrb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombCardrb1
+            // 
+            this.lblTimeBombCardrb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeBombCardrb1.Location = new System.Drawing.Point(4, 44);
+            this.lblTimeBombCardrb1.Name = "lblTimeBombCardrb1";
+            this.lblTimeBombCardrb1.Size = new System.Drawing.Size(27, 24);
+            this.lblTimeBombCardrb1.TabIndex = 0;
+            this.lblTimeBombCardrb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctrbxRedBonusCard
+            // 
+            this.pctrbxRedBonusCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftFlashTNTCard;
+            this.pctrbxRedBonusCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCard.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCard.Name = "pctrbxRedBonusCard";
+            this.pctrbxRedBonusCard.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCard.TabIndex = 30;
+            this.pctrbxRedBonusCard.TabStop = false;
+            // 
+            // pctrbxRedBonusCardExploded
+            // 
+            this.pctrbxRedBonusCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.BonusCardExploded;
+            this.pctrbxRedBonusCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCardExploded.Name = "pctrbxRedBonusCardExploded";
+            this.pctrbxRedBonusCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCardExploded.TabIndex = 28;
+            this.pctrbxRedBonusCardExploded.TabStop = false;
+            // 
+            // pctrbxRedBonusCardDefused
+            // 
+            this.pctrbxRedBonusCardDefused.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedBonusCard;
+            this.pctrbxRedBonusCardDefused.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedBonusCardDefused.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedBonusCardDefused.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedBonusCardDefused.Name = "pctrbxRedBonusCardDefused";
+            this.pctrbxRedBonusCardDefused.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedBonusCardDefused.TabIndex = 29;
+            this.pctrbxRedBonusCardDefused.TabStop = false;
+            // 
+            // pnlRegRedCard
+            // 
+            this.pnlRegRedCard.BackColor = System.Drawing.Color.White;
+            this.pnlRegRedCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperLeftRedCard;
+            this.pnlRegRedCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr25);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr24);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr23);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr22);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr21);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr20);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr19);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr18);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr17);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr16);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr15);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr14);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr13);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr12);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr11);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr10);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr9);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr8);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr7);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr6);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr5);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr4);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr3);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr2);
+            this.pnlRegRedCard.Controls.Add(this.lblTimeBombCardr1);
+            this.pnlRegRedCard.Controls.Add(this.pctrbxRedCardExploded);
+            this.pnlRegRedCard.Location = new System.Drawing.Point(179, 53);
+            this.pnlRegRedCard.Name = "pnlRegRedCard";
+            this.pnlRegRedCard.Size = new System.Drawing.Size(150, 175);
+            this.pnlRegRedCard.TabIndex = 2;
+            // 
+            // lblTimeBombCardr25
+            // 
+            this.lblTimeBombCardr25.Location = new System.Drawing.Point(119, 137);
+            this.lblTimeBombCardr25.Name = "lblTimeBombCardr25";
+            this.lblTimeBombCardr25.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr25.TabIndex = 30;
+            this.lblTimeBombCardr25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr24
+            // 
+            this.lblTimeBombCardr24.Location = new System.Drawing.Point(119, 109);
+            this.lblTimeBombCardr24.Name = "lblTimeBombCardr24";
+            this.lblTimeBombCardr24.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr24.TabIndex = 29;
+            this.lblTimeBombCardr24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr23
+            // 
+            this.lblTimeBombCardr23.Location = new System.Drawing.Point(119, 81);
+            this.lblTimeBombCardr23.Name = "lblTimeBombCardr23";
+            this.lblTimeBombCardr23.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr23.TabIndex = 28;
+            this.lblTimeBombCardr23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr22
+            // 
+            this.lblTimeBombCardr22.Location = new System.Drawing.Point(119, 54);
+            this.lblTimeBombCardr22.Name = "lblTimeBombCardr22";
+            this.lblTimeBombCardr22.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr22.TabIndex = 27;
+            this.lblTimeBombCardr22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr21
+            // 
+            this.lblTimeBombCardr21.Location = new System.Drawing.Point(119, 26);
+            this.lblTimeBombCardr21.Name = "lblTimeBombCardr21";
+            this.lblTimeBombCardr21.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr21.TabIndex = 26;
+            this.lblTimeBombCardr21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr20
+            // 
+            this.lblTimeBombCardr20.Location = new System.Drawing.Point(91, 137);
+            this.lblTimeBombCardr20.Name = "lblTimeBombCardr20";
+            this.lblTimeBombCardr20.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr20.TabIndex = 25;
+            this.lblTimeBombCardr20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr19
+            // 
+            this.lblTimeBombCardr19.Location = new System.Drawing.Point(91, 109);
+            this.lblTimeBombCardr19.Name = "lblTimeBombCardr19";
+            this.lblTimeBombCardr19.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr19.TabIndex = 24;
+            this.lblTimeBombCardr19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr18
+            // 
+            this.lblTimeBombCardr18.Location = new System.Drawing.Point(91, 81);
+            this.lblTimeBombCardr18.Name = "lblTimeBombCardr18";
+            this.lblTimeBombCardr18.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr18.TabIndex = 23;
+            this.lblTimeBombCardr18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr17
+            // 
+            this.lblTimeBombCardr17.Location = new System.Drawing.Point(91, 54);
+            this.lblTimeBombCardr17.Name = "lblTimeBombCardr17";
+            this.lblTimeBombCardr17.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr17.TabIndex = 22;
+            this.lblTimeBombCardr17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr16
+            // 
+            this.lblTimeBombCardr16.Location = new System.Drawing.Point(91, 26);
+            this.lblTimeBombCardr16.Name = "lblTimeBombCardr16";
+            this.lblTimeBombCardr16.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr16.TabIndex = 21;
+            this.lblTimeBombCardr16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr15
+            // 
+            this.lblTimeBombCardr15.Location = new System.Drawing.Point(63, 137);
+            this.lblTimeBombCardr15.Name = "lblTimeBombCardr15";
+            this.lblTimeBombCardr15.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr15.TabIndex = 20;
+            this.lblTimeBombCardr15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr14
+            // 
+            this.lblTimeBombCardr14.Location = new System.Drawing.Point(63, 109);
+            this.lblTimeBombCardr14.Name = "lblTimeBombCardr14";
+            this.lblTimeBombCardr14.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr14.TabIndex = 19;
+            this.lblTimeBombCardr14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr13
+            // 
+            this.lblTimeBombCardr13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeBombCardr13.Location = new System.Drawing.Point(63, 81);
+            this.lblTimeBombCardr13.Name = "lblTimeBombCardr13";
+            this.lblTimeBombCardr13.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr13.TabIndex = 18;
+            this.lblTimeBombCardr13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr12
+            // 
+            this.lblTimeBombCardr12.Location = new System.Drawing.Point(63, 54);
+            this.lblTimeBombCardr12.Name = "lblTimeBombCardr12";
+            this.lblTimeBombCardr12.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr12.TabIndex = 17;
+            this.lblTimeBombCardr12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr11
+            // 
+            this.lblTimeBombCardr11.Location = new System.Drawing.Point(63, 26);
+            this.lblTimeBombCardr11.Name = "lblTimeBombCardr11";
+            this.lblTimeBombCardr11.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr11.TabIndex = 16;
+            this.lblTimeBombCardr11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr10
+            // 
+            this.lblTimeBombCardr10.Location = new System.Drawing.Point(35, 137);
+            this.lblTimeBombCardr10.Name = "lblTimeBombCardr10";
+            this.lblTimeBombCardr10.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr10.TabIndex = 15;
+            this.lblTimeBombCardr10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr9
+            // 
+            this.lblTimeBombCardr9.Location = new System.Drawing.Point(35, 109);
+            this.lblTimeBombCardr9.Name = "lblTimeBombCardr9";
+            this.lblTimeBombCardr9.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr9.TabIndex = 14;
+            this.lblTimeBombCardr9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr8
+            // 
+            this.lblTimeBombCardr8.Location = new System.Drawing.Point(35, 81);
+            this.lblTimeBombCardr8.Name = "lblTimeBombCardr8";
+            this.lblTimeBombCardr8.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr8.TabIndex = 13;
+            this.lblTimeBombCardr8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr7
+            // 
+            this.lblTimeBombCardr7.Location = new System.Drawing.Point(35, 54);
+            this.lblTimeBombCardr7.Name = "lblTimeBombCardr7";
+            this.lblTimeBombCardr7.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr7.TabIndex = 12;
+            this.lblTimeBombCardr7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr6
+            // 
+            this.lblTimeBombCardr6.Location = new System.Drawing.Point(35, 26);
+            this.lblTimeBombCardr6.Name = "lblTimeBombCardr6";
+            this.lblTimeBombCardr6.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr6.TabIndex = 11;
+            this.lblTimeBombCardr6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr5
+            // 
+            this.lblTimeBombCardr5.Location = new System.Drawing.Point(7, 137);
+            this.lblTimeBombCardr5.Name = "lblTimeBombCardr5";
+            this.lblTimeBombCardr5.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr5.TabIndex = 10;
+            this.lblTimeBombCardr5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr4
+            // 
+            this.lblTimeBombCardr4.Location = new System.Drawing.Point(7, 109);
+            this.lblTimeBombCardr4.Name = "lblTimeBombCardr4";
+            this.lblTimeBombCardr4.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr4.TabIndex = 9;
+            this.lblTimeBombCardr4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr3
+            // 
+            this.lblTimeBombCardr3.Location = new System.Drawing.Point(7, 81);
+            this.lblTimeBombCardr3.Name = "lblTimeBombCardr3";
+            this.lblTimeBombCardr3.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr3.TabIndex = 8;
+            this.lblTimeBombCardr3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr2
+            // 
+            this.lblTimeBombCardr2.Location = new System.Drawing.Point(7, 54);
+            this.lblTimeBombCardr2.Name = "lblTimeBombCardr2";
+            this.lblTimeBombCardr2.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr2.TabIndex = 7;
+            this.lblTimeBombCardr2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardr1
+            // 
+            this.lblTimeBombCardr1.Location = new System.Drawing.Point(7, 26);
+            this.lblTimeBombCardr1.Name = "lblTimeBombCardr1";
+            this.lblTimeBombCardr1.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardr1.TabIndex = 6;
+            this.lblTimeBombCardr1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardr1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // pctrbxRedCardExploded
+            // 
+            this.pctrbxRedCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.RedCardExploded;
+            this.pctrbxRedCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxRedCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxRedCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxRedCardExploded.Name = "pctrbxRedCardExploded";
+            this.pctrbxRedCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxRedCardExploded.TabIndex = 31;
+            this.pctrbxRedCardExploded.TabStop = false;
+            // 
+            // pnlRegPurpCard
+            // 
+            this.pnlRegPurpCard.BackColor = System.Drawing.Color.White;
+            this.pnlRegPurpCard.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.UpperRightPurpleCard;
+            this.pnlRegPurpCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp25);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp1);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp24);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp2);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp23);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp3);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp22);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp4);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp21);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp5);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp20);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp6);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp19);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp7);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp18);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp8);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp17);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp9);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp16);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp10);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp15);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp11);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp14);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp12);
+            this.pnlRegPurpCard.Controls.Add(this.lblTimeBombCardp13);
+            this.pnlRegPurpCard.Controls.Add(this.pctrbxPurpleCardExploded);
+            this.pnlRegPurpCard.Location = new System.Drawing.Point(343, 53);
+            this.pnlRegPurpCard.Name = "pnlRegPurpCard";
+            this.pnlRegPurpCard.Size = new System.Drawing.Size(150, 175);
+            this.pnlRegPurpCard.TabIndex = 1;
+            // 
+            // lblTimeBombCardp25
+            // 
+            this.lblTimeBombCardp25.Location = new System.Drawing.Point(118, 138);
+            this.lblTimeBombCardp25.Name = "lblTimeBombCardp25";
+            this.lblTimeBombCardp25.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp25.TabIndex = 55;
+            this.lblTimeBombCardp25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp25.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp1
+            // 
+            this.lblTimeBombCardp1.Location = new System.Drawing.Point(6, 27);
+            this.lblTimeBombCardp1.Name = "lblTimeBombCardp1";
+            this.lblTimeBombCardp1.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp1.TabIndex = 31;
+            this.lblTimeBombCardp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp1.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp24
+            // 
+            this.lblTimeBombCardp24.Location = new System.Drawing.Point(118, 110);
+            this.lblTimeBombCardp24.Name = "lblTimeBombCardp24";
+            this.lblTimeBombCardp24.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp24.TabIndex = 54;
+            this.lblTimeBombCardp24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp24.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp2
+            // 
+            this.lblTimeBombCardp2.Location = new System.Drawing.Point(6, 55);
+            this.lblTimeBombCardp2.Name = "lblTimeBombCardp2";
+            this.lblTimeBombCardp2.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp2.TabIndex = 32;
+            this.lblTimeBombCardp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp2.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp23
+            // 
+            this.lblTimeBombCardp23.Location = new System.Drawing.Point(118, 82);
+            this.lblTimeBombCardp23.Name = "lblTimeBombCardp23";
+            this.lblTimeBombCardp23.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp23.TabIndex = 53;
+            this.lblTimeBombCardp23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp23.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp3
+            // 
+            this.lblTimeBombCardp3.Location = new System.Drawing.Point(6, 82);
+            this.lblTimeBombCardp3.Name = "lblTimeBombCardp3";
+            this.lblTimeBombCardp3.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp3.TabIndex = 33;
+            this.lblTimeBombCardp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp3.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp22
+            // 
+            this.lblTimeBombCardp22.Location = new System.Drawing.Point(118, 55);
+            this.lblTimeBombCardp22.Name = "lblTimeBombCardp22";
+            this.lblTimeBombCardp22.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp22.TabIndex = 52;
+            this.lblTimeBombCardp22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp22.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp4
+            // 
+            this.lblTimeBombCardp4.Location = new System.Drawing.Point(6, 110);
+            this.lblTimeBombCardp4.Name = "lblTimeBombCardp4";
+            this.lblTimeBombCardp4.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp4.TabIndex = 34;
+            this.lblTimeBombCardp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp4.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp21
+            // 
+            this.lblTimeBombCardp21.Location = new System.Drawing.Point(118, 27);
+            this.lblTimeBombCardp21.Name = "lblTimeBombCardp21";
+            this.lblTimeBombCardp21.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp21.TabIndex = 51;
+            this.lblTimeBombCardp21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp21.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp5
+            // 
+            this.lblTimeBombCardp5.Location = new System.Drawing.Point(6, 138);
+            this.lblTimeBombCardp5.Name = "lblTimeBombCardp5";
+            this.lblTimeBombCardp5.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp5.TabIndex = 35;
+            this.lblTimeBombCardp5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp5.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp20
+            // 
+            this.lblTimeBombCardp20.Location = new System.Drawing.Point(90, 138);
+            this.lblTimeBombCardp20.Name = "lblTimeBombCardp20";
+            this.lblTimeBombCardp20.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp20.TabIndex = 50;
+            this.lblTimeBombCardp20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp20.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp6
+            // 
+            this.lblTimeBombCardp6.Location = new System.Drawing.Point(34, 27);
+            this.lblTimeBombCardp6.Name = "lblTimeBombCardp6";
+            this.lblTimeBombCardp6.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp6.TabIndex = 36;
+            this.lblTimeBombCardp6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp6.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp19
+            // 
+            this.lblTimeBombCardp19.Location = new System.Drawing.Point(90, 110);
+            this.lblTimeBombCardp19.Name = "lblTimeBombCardp19";
+            this.lblTimeBombCardp19.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp19.TabIndex = 49;
+            this.lblTimeBombCardp19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp19.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp7
+            // 
+            this.lblTimeBombCardp7.Location = new System.Drawing.Point(34, 55);
+            this.lblTimeBombCardp7.Name = "lblTimeBombCardp7";
+            this.lblTimeBombCardp7.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp7.TabIndex = 37;
+            this.lblTimeBombCardp7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp7.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp18
+            // 
+            this.lblTimeBombCardp18.Location = new System.Drawing.Point(90, 82);
+            this.lblTimeBombCardp18.Name = "lblTimeBombCardp18";
+            this.lblTimeBombCardp18.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp18.TabIndex = 48;
+            this.lblTimeBombCardp18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp18.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp8
+            // 
+            this.lblTimeBombCardp8.Location = new System.Drawing.Point(34, 82);
+            this.lblTimeBombCardp8.Name = "lblTimeBombCardp8";
+            this.lblTimeBombCardp8.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp8.TabIndex = 38;
+            this.lblTimeBombCardp8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp8.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp17
+            // 
+            this.lblTimeBombCardp17.Location = new System.Drawing.Point(90, 55);
+            this.lblTimeBombCardp17.Name = "lblTimeBombCardp17";
+            this.lblTimeBombCardp17.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp17.TabIndex = 47;
+            this.lblTimeBombCardp17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp17.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp9
+            // 
+            this.lblTimeBombCardp9.Location = new System.Drawing.Point(34, 110);
+            this.lblTimeBombCardp9.Name = "lblTimeBombCardp9";
+            this.lblTimeBombCardp9.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp9.TabIndex = 39;
+            this.lblTimeBombCardp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp9.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp16
+            // 
+            this.lblTimeBombCardp16.Location = new System.Drawing.Point(90, 27);
+            this.lblTimeBombCardp16.Name = "lblTimeBombCardp16";
+            this.lblTimeBombCardp16.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp16.TabIndex = 46;
+            this.lblTimeBombCardp16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp16.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp10
+            // 
+            this.lblTimeBombCardp10.Location = new System.Drawing.Point(34, 138);
+            this.lblTimeBombCardp10.Name = "lblTimeBombCardp10";
+            this.lblTimeBombCardp10.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp10.TabIndex = 40;
+            this.lblTimeBombCardp10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp10.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp15
+            // 
+            this.lblTimeBombCardp15.Location = new System.Drawing.Point(62, 138);
+            this.lblTimeBombCardp15.Name = "lblTimeBombCardp15";
+            this.lblTimeBombCardp15.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp15.TabIndex = 45;
+            this.lblTimeBombCardp15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp15.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp11
+            // 
+            this.lblTimeBombCardp11.Location = new System.Drawing.Point(62, 27);
+            this.lblTimeBombCardp11.Name = "lblTimeBombCardp11";
+            this.lblTimeBombCardp11.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp11.TabIndex = 41;
+            this.lblTimeBombCardp11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp11.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp14
+            // 
+            this.lblTimeBombCardp14.Location = new System.Drawing.Point(62, 110);
+            this.lblTimeBombCardp14.Name = "lblTimeBombCardp14";
+            this.lblTimeBombCardp14.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp14.TabIndex = 44;
+            this.lblTimeBombCardp14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp14.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp12
+            // 
+            this.lblTimeBombCardp12.Location = new System.Drawing.Point(62, 55);
+            this.lblTimeBombCardp12.Name = "lblTimeBombCardp12";
+            this.lblTimeBombCardp12.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp12.TabIndex = 42;
+            this.lblTimeBombCardp12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp12.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // lblTimeBombCardp13
+            // 
+            this.lblTimeBombCardp13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeBombCardp13.Location = new System.Drawing.Point(62, 82);
+            this.lblTimeBombCardp13.Name = "lblTimeBombCardp13";
+            this.lblTimeBombCardp13.Size = new System.Drawing.Size(26, 26);
+            this.lblTimeBombCardp13.TabIndex = 43;
+            this.lblTimeBombCardp13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTimeBombCardp13.TextChanged += new System.EventHandler(this.lblBingoCard1_TextChanged);
+            // 
+            // pctrbxPurpleCardExploded
+            // 
+            this.pctrbxPurpleCardExploded.BackColor = System.Drawing.Color.White;
+            this.pctrbxPurpleCardExploded.BackgroundImage = global::GameTech.B3Reports.Properties.Resources.PurpleCardExploded;
+            this.pctrbxPurpleCardExploded.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrbxPurpleCardExploded.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctrbxPurpleCardExploded.Location = new System.Drawing.Point(0, 0);
+            this.pctrbxPurpleCardExploded.Name = "pctrbxPurpleCardExploded";
+            this.pctrbxPurpleCardExploded.Size = new System.Drawing.Size(150, 175);
+            this.pctrbxPurpleCardExploded.TabIndex = 56;
+            this.pctrbxPurpleCardExploded.TabStop = false;
+            // 
             // pnlBonusRound
             // 
             this.pnlBonusRound.BackColor = System.Drawing.Color.Transparent;
@@ -6707,36 +6708,6 @@
             this.label12.Text = "First Try";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgbtnNext
-            // 
-            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnNext.Enabled = false;
-            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
-            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnNext.Name = "imgbtnNext";
-            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnNext.TabIndex = 1;
-            this.imgbtnNext.Text = "Next";
-            this.imgbtnNext.UseVisualStyleBackColor = false;
-            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
-            // 
-            // imgbtnBack
-            // 
-            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnBack.Enabled = false;
-            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
-            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnBack.Name = "imgbtnBack";
-            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnBack.TabIndex = 2;
-            this.imgbtnBack.Text = "Back";
-            this.imgbtnBack.UseVisualStyleBackColor = false;
-            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
@@ -6908,36 +6879,6 @@
             this.txtbxAccountNumber.Leave += new System.EventHandler(this.txtbxAccountNumber_Leave);
             this.txtbxAccountNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtbxAccountNumber_Validating);
             // 
-            // imageButton4
-            // 
-            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton4.FocusColor = System.Drawing.Color.Black;
-            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imageButton4.ForeColor = System.Drawing.Color.Black;
-            this.imageButton4.Location = new System.Drawing.Point(218, 713);
-            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imageButton4.Name = "imageButton4";
-            this.imageButton4.Size = new System.Drawing.Size(102, 30);
-            this.imageButton4.TabIndex = 7;
-            this.imageButton4.Text = "Return";
-            this.imageButton4.UseVisualStyleBackColor = false;
-            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
-            // 
-            // imgbtnLookUp
-            // 
-            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnLookUp.Enabled = false;
-            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
-            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnLookUp.Name = "imgbtnLookUp";
-            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnLookUp.TabIndex = 6;
-            this.imgbtnLookUp.Text = "Look Up";
-            this.imgbtnLookUp.UseVisualStyleBackColor = false;
-            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
-            // 
             // cmbxGameName
             // 
             this.cmbxGameName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -7065,6 +7006,153 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblTimeBombRedBonusCard
+            // 
+            this.lblTimeBombRedBonusCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombRedBonusCard.Location = new System.Drawing.Point(15, 229);
+            this.lblTimeBombRedBonusCard.Name = "lblTimeBombRedBonusCard";
+            this.lblTimeBombRedBonusCard.Size = new System.Drawing.Size(151, 15);
+            this.lblTimeBombRedBonusCard.TabIndex = 6;
+            this.lblTimeBombRedBonusCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombRedRegCard
+            // 
+            this.lblTimeBombRedRegCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombRedRegCard.Location = new System.Drawing.Point(180, 229);
+            this.lblTimeBombRedRegCard.Name = "lblTimeBombRedRegCard";
+            this.lblTimeBombRedRegCard.Size = new System.Drawing.Size(148, 15);
+            this.lblTimeBombRedRegCard.TabIndex = 7;
+            this.lblTimeBombRedRegCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombPurpleRegCard
+            // 
+            this.lblTimeBombPurpleRegCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombPurpleRegCard.Location = new System.Drawing.Point(344, 229);
+            this.lblTimeBombPurpleRegCard.Name = "lblTimeBombPurpleRegCard";
+            this.lblTimeBombPurpleRegCard.Size = new System.Drawing.Size(150, 15);
+            this.lblTimeBombPurpleRegCard.TabIndex = 8;
+            this.lblTimeBombPurpleRegCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombPurpleBonusCard
+            // 
+            this.lblTimeBombPurpleBonusCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombPurpleBonusCard.Location = new System.Drawing.Point(507, 229);
+            this.lblTimeBombPurpleBonusCard.Name = "lblTimeBombPurpleBonusCard";
+            this.lblTimeBombPurpleBonusCard.Size = new System.Drawing.Size(151, 15);
+            this.lblTimeBombPurpleBonusCard.TabIndex = 9;
+            this.lblTimeBombPurpleBonusCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombBlueBonusCard
+            // 
+            this.lblTimeBombBlueBonusCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombBlueBonusCard.Location = new System.Drawing.Point(506, 420);
+            this.lblTimeBombBlueBonusCard.Name = "lblTimeBombBlueBonusCard";
+            this.lblTimeBombBlueBonusCard.Size = new System.Drawing.Size(152, 15);
+            this.lblTimeBombBlueBonusCard.TabIndex = 13;
+            this.lblTimeBombBlueBonusCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombBlueRegCard
+            // 
+            this.lblTimeBombBlueRegCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombBlueRegCard.Location = new System.Drawing.Point(344, 420);
+            this.lblTimeBombBlueRegCard.Name = "lblTimeBombBlueRegCard";
+            this.lblTimeBombBlueRegCard.Size = new System.Drawing.Size(150, 15);
+            this.lblTimeBombBlueRegCard.TabIndex = 12;
+            this.lblTimeBombBlueRegCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombGreenRegCard
+            // 
+            this.lblTimeBombGreenRegCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombGreenRegCard.Location = new System.Drawing.Point(180, 420);
+            this.lblTimeBombGreenRegCard.Name = "lblTimeBombGreenRegCard";
+            this.lblTimeBombGreenRegCard.Size = new System.Drawing.Size(150, 15);
+            this.lblTimeBombGreenRegCard.TabIndex = 11;
+            this.lblTimeBombGreenRegCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTimeBombGreenBonusCard
+            // 
+            this.lblTimeBombGreenBonusCard.ForeColor = System.Drawing.Color.White;
+            this.lblTimeBombGreenBonusCard.Location = new System.Drawing.Point(15, 420);
+            this.lblTimeBombGreenBonusCard.Name = "lblTimeBombGreenBonusCard";
+            this.lblTimeBombGreenBonusCard.Size = new System.Drawing.Size(151, 15);
+            this.lblTimeBombGreenBonusCard.TabIndex = 10;
+            this.lblTimeBombGreenBonusCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // imgbtnEnd
+            // 
+            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnEnd.Enabled = false;
+            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
+            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnEnd.Name = "imgbtnEnd";
+            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
+            this.imgbtnEnd.TabIndex = 28;
+            this.imgbtnEnd.Text = "End Search";
+            this.imgbtnEnd.UseVisualStyleBackColor = false;
+            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
+            // 
+            // imgbtnNext
+            // 
+            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnNext.Enabled = false;
+            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
+            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnNext.Name = "imgbtnNext";
+            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnNext.TabIndex = 1;
+            this.imgbtnNext.Text = "Next";
+            this.imgbtnNext.UseVisualStyleBackColor = false;
+            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
+            // 
+            // imgbtnBack
+            // 
+            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnBack.Enabled = false;
+            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
+            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnBack.Name = "imgbtnBack";
+            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnBack.TabIndex = 2;
+            this.imgbtnBack.Text = "Back";
+            this.imgbtnBack.UseVisualStyleBackColor = false;
+            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
+            // 
+            // imageButton4
+            // 
+            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton4.FocusColor = System.Drawing.Color.Black;
+            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imageButton4.ForeColor = System.Drawing.Color.Black;
+            this.imageButton4.Location = new System.Drawing.Point(218, 713);
+            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imageButton4.Name = "imageButton4";
+            this.imageButton4.Size = new System.Drawing.Size(102, 30);
+            this.imageButton4.TabIndex = 7;
+            this.imageButton4.Text = "Return";
+            this.imageButton4.UseVisualStyleBackColor = false;
+            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
+            // 
+            // imgbtnLookUp
+            // 
+            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnLookUp.Enabled = false;
+            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
+            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnLookUp.Name = "imgbtnLookUp";
+            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnLookUp.TabIndex = 6;
+            this.imgbtnLookUp.Text = "Look Up";
+            this.imgbtnLookUp.UseVisualStyleBackColor = false;
+            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
+            // 
             // DisputeResolution
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -7089,31 +7177,6 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.pnlDisputeResolutionTimeBomb.ResumeLayout(false);
-            this.pnlRegBlueCard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).EndInit();
-            this.pnlTimeBombBlue.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).EndInit();
-            this.pnlRegGreenCard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).EndInit();
-            this.pnlTimeBombGreen.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).EndInit();
-            this.pnlTimeBombPurple.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).EndInit();
-            this.pnlTimeBombRed.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).EndInit();
-            this.pnlRegRedCard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).EndInit();
-            this.pnlRegPurpCard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).EndInit();
             this.pnlRegularGames.ResumeLayout(false);
             this.pnlRegularGames.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -7134,6 +7197,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.pnlDisputeResolutionTimeBomb.ResumeLayout(false);
+            this.pnlRegBlueCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueCardExploded)).EndInit();
+            this.pnlTimeBombBlue.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbcBlueBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxBlueBonusCardDefused)).EndInit();
+            this.pnlRegGreenCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenCardExploded)).EndInit();
+            this.pnlTimeBombGreen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCardDefused)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxGreenBonusCard)).EndInit();
+            this.pnlTimeBombPurple.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleBonusCardDefused)).EndInit();
+            this.pnlTimeBombRed.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardExploded)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedBonusCardDefused)).EndInit();
+            this.pnlRegRedCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxRedCardExploded)).EndInit();
+            this.pnlRegPurpCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxPurpleCardExploded)).EndInit();
             this.pnlBonusRound.ResumeLayout(false);
             this.pnlBonusRound.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -7725,5 +7813,13 @@
         private System.Windows.Forms.PictureBox pctrbxGreenBonusCard;
         private System.Windows.Forms.PictureBox pctrbxPurpleBonusCard;
         private System.Windows.Forms.PictureBox pctrbxRedBonusCard;
+        private System.Windows.Forms.Label lblTimeBombBlueBonusCard;
+        private System.Windows.Forms.Label lblTimeBombBlueRegCard;
+        private System.Windows.Forms.Label lblTimeBombGreenRegCard;
+        private System.Windows.Forms.Label lblTimeBombGreenBonusCard;
+        private System.Windows.Forms.Label lblTimeBombPurpleBonusCard;
+        private System.Windows.Forms.Label lblTimeBombPurpleRegCard;
+        private System.Windows.Forms.Label lblTimeBombRedRegCard;
+        private System.Windows.Forms.Label lblTimeBombRedBonusCard;
     }
 }

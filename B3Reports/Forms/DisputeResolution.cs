@@ -669,7 +669,7 @@ namespace GameTech.B3Reports.Forms
             }
             else 
             {
-                x.BackColor = Color.Transparent;
+                x.BackColor = Color.White;
             }
 
 
@@ -2372,6 +2372,7 @@ namespace GameTech.B3Reports.Forms
                         Panel pnlCurrent = new Panel();
                         Panel pnlCurrentBonus = new Panel();
 
+
                         if (isExploded == false)
                         {
 
@@ -2509,19 +2510,23 @@ namespace GameTech.B3Reports.Forms
                        
                         if (CountUpToSix == 1)
                         {
-                            lblSerialN1.Text = TempCardNumber.ToString();
+                            lblTimeBombRedRegCard.Text = TempCardNumber.ToString();
+                            lblTimeBombRedBonusCard.Text = (TempCardNumber + 4).ToString();
                         }
                         else if (CountUpToSix == 2)
                         {
-                            lblSerialN2.Text = TempCardNumber.ToString();
+                            lblTimeBombPurpleRegCard.Text = TempCardNumber.ToString();
+                            lblTimeBombPurpleBonusCard.Text = (TempCardNumber + 4).ToString();
                         }
                         else if (CountUpToSix == 3)
                         {
-                            lblSerialN3.Text = TempCardNumber.ToString();
+                            lblTimeBombGreenRegCard.Text = TempCardNumber.ToString();
+                            lblTimeBombGreenBonusCard.Text = (TempCardNumber + 4).ToString();
                         }
                         else if (CountUpToSix == 4)
                         {
-                            lblSerialN4.Text = TempCardNumber.ToString();
+                            lblTimeBombBlueRegCard.Text = TempCardNumber.ToString();
+                            lblTimeBombBlueBonusCard.Text = (TempCardNumber + 4).ToString();
                         }
                       
                     }//if its false let us hide the bingo cards
