@@ -283,6 +283,36 @@ namespace GameTech.B3Reports.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BottomLeftGreenCard1 {
+            get {
+                object obj = ResourceManager.GetObject("BottomLeftGreenCard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BottomLeftGreenCard2 {
+            get {
+                object obj = ResourceManager.GetObject("BottomLeftGreenCard2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BottomLeftGreenCard3 {
+            get {
+                object obj = ResourceManager.GetObject("BottomLeftGreenCard3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BottomRightBlueBonusCard {
             get {
                 object obj = ResourceManager.GetObject("BottomRightBlueBonusCard", resourceCulture);
@@ -356,6 +386,26 @@ namespace GameTech.B3Reports.Properties {
         internal static System.Drawing.Bitmap card_red_serial {
             get {
                 object obj = ResourceManager.GetObject("card_red_serial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Card1 {
+            get {
+                object obj = ResourceManager.GetObject("Card1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Card2 {
+            get {
+                object obj = ResourceManager.GetObject("Card2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

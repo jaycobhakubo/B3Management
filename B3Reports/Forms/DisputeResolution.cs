@@ -2296,11 +2296,12 @@ namespace GameTech.B3Reports.Forms
             
                 }
             }
-            else
+            else//TimeBomb
             {
 
                 bool isDefused = false;
                 bool isExploded = false;
+                string lblCardStatus = "";
 
                 pnlDisputeResolutionTimeBomb.BringToFront();
                 if (pnlDisputeResolutionTimeBomb.Visible != true)
@@ -2308,7 +2309,7 @@ namespace GameTech.B3Reports.Forms
                     pnlDisputeResolutionTimeBomb.Visible = true;
                 }
 
-                CountUpToSix = 1; //TimeBomb
+                CountUpToSix = 1; 
                 while (CountUpToSix != (4 + 1))
                 {
                     //Lets see if the first card number is enabled.
@@ -2371,162 +2372,77 @@ namespace GameTech.B3Reports.Forms
                         countActiveCard = countActiveCard + 1;
                         Panel pnlCurrent = new Panel();
                         Panel pnlCurrentBonus = new Panel();
-
-
-                        if (isExploded == false)
-                        {
+                        lblCardStatus = "";
+     
 
                                 if (CountUpToSix + 4 == 5)
-                                {
-                                    pctrbxRedCardExploded.Visible = false;
-                                    pctrbxRedBonusCardExploded.Visible = false;
-                                    pnlCurrent = pnlRegRedCard; 
-
-                                    if (isDefused)
-                                    {                                   
-                                        pctrbxRedBonusCardDefused.SendToBack();
-                                        pctrbxRedBonusCardDefused.Visible = true;
-                                        pctrbxRedBonusCard.Visible = false;
-                                        pnlCurrentBonus = pnlTimeBombRed;
-                                        
-                                    }
-                                    else
-                                    {
-                                       
-                                        pctrbxRedBonusCardDefused.Visible = false;
-                                        pctrbxRedBonusCard.Visible = true;
-                                        pctrbxRedBonusCard.BringToFront();
-                             
-                                    }                                                                            
+                                {                        
+                                    pnlCurrent = pnlRegRedCard;
+                                    pnlCurrentBonus = pnlTimeBombRed;                                                                          
                                 }
                                 else if (CountUpToSix + 4 == 6)
-                                {
-                                    pctrbxPurpleCardExploded.Visible = false;
-                                    pctrbxPurpleBonusCardExploded.Visible = false;
+                                {                                  
                                     pnlCurrent = pnlRegPurpCard;
-
-                                    if (isDefused)
-                                    {
-                                        pctrbxPurpleBonusCardDefused.Visible = true;
-                                        pctrbxPurpleBonusCardDefused.SendToBack();
-                                        pctrbxPurpleBonusCard.Visible = false;
-                                        pnlCurrentBonus = pnlTimeBombPurple;
-                                    
-                                    }
-                                    else
-                                    {
-                                        pctrbxPurpleBonusCard.Visible = true;
-                                        pctrbxPurpleBonusCard.BringToFront();
-                                        pctrbxPurpleBonusCardDefused.Visible = false;                                      
-                                    }                                
+                                    pnlCurrentBonus = pnlTimeBombPurple;
+                                                                                        
                                 }
                                 else if (CountUpToSix + 4 == 7)
-                                {
-                                    pctrbxGreenCardExploded.Visible = false;
-                                    pctrbxGreenBonusCardExploded.Visible = false;
-                                    pnlCurrent = pnlRegGreenCard; 
-
-                                    if (isDefused)
-                                    {
-                                        pctrbxGreenBonusCardDefused.Visible = true;
-                                        pctrbxGreenBonusCardDefused.SendToBack();
-                                        pctrbxGreenBonusCard.Visible = false;
-                                        pnlCurrentBonus = pnlTimeBombGreen;
-                                    }
-                                    else
-                                    {
-                                        pctrbxGreenBonusCardDefused.Visible = false;
-                                        pctrbxGreenBonusCard.Visible = true;
-                                        pctrbxGreenBonusCard.BringToFront();                                                                      
-                                    }                                  
+                                {                                  
+                                    pnlCurrent = pnlRegGreenCard;
+                                    pnlCurrentBonus = pnlTimeBombGreen;
+                                                           
                                 }
                                 else if (CountUpToSix + 4 == 8)
-                                {
-                                    pctrbxBlueCardExploded.Visible = false;
-                                    pctrbxBlueBonusCardExploded.Visible = false;
-                                    pnlCurrent = pnlRegBlueCard; 
-
-                                    if (isDefused)
-                                    {
-                                        pctrbxBlueBonusCardDefused.Visible = true;
-                                        pctrbxBlueBonusCardDefused.SendToBack();
-                                        pctrbcBlueBonusCard.Visible = false;
-                                        pnlCurrentBonus = pnlTimeBombBlue;
-                                    }
-                                    else
-                                    {
-                                        pctrbxBlueBonusCardDefused.Visible = false;
-                                        pctrbcBlueBonusCard.Visible = true;
-                                        pctrbcBlueBonusCard.BringToFront();                      
-                                    }                                 
+                                {                                 
+                                   pnlCurrent = pnlRegBlueCard;
+                                    pnlCurrentBonus = pnlTimeBombBlue;                                                     
                                 }
 
-                                gcn = new GetCardNumber2(TempCardNumber);
-                                LoadCardTimeBomb(CountUpToSix);
-                                StampBingoN(pnlCurrent);
+                              
 
                                 if (isDefused)
                                 {
-                                    int TempCardNumberDefusedCard = TempCardNumber + 4;
-                                    gcn = new GetCardNumber2(TempCardNumberDefusedCard);
-                                    LoadCardTimeBomb(CountUpToSix + 4);
-                                    StampBingoN(pnlCurrentBonus);
+                                    lblCardStatus = "(Defused)";
                                 }
-                        }
-                      
-                        else if (isExploded)
-                        {
-                           
-                            if (CountUpToSix + 4 == 5)
-                            {
-                                pctrbxRedBonusCardExploded.Visible = true;
-                                pctrbxRedBonusCardExploded.BringToFront();
-                                pctrbxRedCardExploded.Visible = true;
-                                pctrbxRedCardExploded.BringToFront();                            
-                            }
-                            else if (CountUpToSix + 4 == 6)
-                            {
-                                pctrbxPurpleBonusCardExploded.Visible = true;
-                                pctrbxPurpleBonusCardExploded.BringToFront();
-                                pctrbxPurpleCardExploded.Visible = true;
-                                pctrbxPurpleCardExploded.BringToFront();                            
-                            }
-                            else if (CountUpToSix + 4 == 7)
-                            {
-                                pctrbxGreenBonusCardExploded.Visible = true;
-                                pctrbxGreenBonusCardExploded.BringToFront();
-                                pctrbxGreenCardExploded.Visible = true;
-                                pctrbxGreenCardExploded.BringToFront();                            
-                            }
-                            else if (CountUpToSix + 4 == 8)
-                            {
-                                pctrbxBlueBonusCardExploded.Visible = true;
-                                pctrbxBlueBonusCardExploded.BringToFront();
-                                pctrbxBlueCardExploded.Visible = true;
-                                pctrbxBlueCardExploded.BringToFront();                             
-                            }                        
-                        }
+                                else
+                                    if (isExploded)
+                                    {
+                                        lblCardStatus = "(Exploded)";
+                                    }
+                                    else
+                                { lblCardStatus = "(Not Activated)"; }
+
+
+                        gcn = new GetCardNumber2(TempCardNumber);
+                        LoadCardTimeBomb(CountUpToSix);
+                        StampBingoN(pnlCurrent);
+
+
+                        int TempCardNumberDefusedCard = TempCardNumber + 4;
+                        gcn = new GetCardNumber2(TempCardNumberDefusedCard);
+                        LoadCardTimeBomb(CountUpToSix + 4);
+                        StampBingoN(pnlCurrentBonus);
 
                        
                         if (CountUpToSix == 1)
                         {
-                            lblTimeBombRedRegCard.Text = TempCardNumber.ToString();
-                            lblTimeBombRedBonusCard.Text = (TempCardNumber + 4).ToString();
+                            lblTimeBombRedRegCard.Text = TempCardNumber.ToString() + (lblCardStatus == "(Exploded)" ? lblCardStatus : ""); 
+                            lblTimeBombRedBonusCard.Text = (TempCardNumber + 4).ToString() + lblCardStatus;
                         }
                         else if (CountUpToSix == 2)
                         {
-                            lblTimeBombPurpleRegCard.Text = TempCardNumber.ToString();
-                            lblTimeBombPurpleBonusCard.Text = (TempCardNumber + 4).ToString();
+                            lblTimeBombPurpleRegCard.Text = TempCardNumber.ToString() + (lblCardStatus == "(Exploded)" ? lblCardStatus : ""); 
+                            lblTimeBombPurpleBonusCard.Text = (TempCardNumber + 4).ToString() + lblCardStatus;
                         }
                         else if (CountUpToSix == 3)
                         {
-                            lblTimeBombGreenRegCard.Text = TempCardNumber.ToString();
-                            lblTimeBombGreenBonusCard.Text = (TempCardNumber + 4).ToString();
+                            lblTimeBombGreenRegCard.Text = TempCardNumber.ToString() + (lblCardStatus == "(Exploded)" ? lblCardStatus : ""); 
+                            lblTimeBombGreenBonusCard.Text = (TempCardNumber + 4).ToString() + lblCardStatus;
                         }
                         else if (CountUpToSix == 4)
                         {
-                            lblTimeBombBlueRegCard.Text = TempCardNumber.ToString();
-                            lblTimeBombBlueBonusCard.Text = (TempCardNumber + 4).ToString();
+                            lblTimeBombBlueRegCard.Text = TempCardNumber.ToString() + (lblCardStatus == "(Exploded)" ? lblCardStatus : ""); 
+                            lblTimeBombBlueBonusCard.Text = (TempCardNumber + 4).ToString() + lblCardStatus;
                         }
                       
                     }//if its false let us hide the bingo cards
