@@ -16,6 +16,8 @@ GO
 
 
 
+
+
 CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
     @spAcctNumber int
     ,@spPlayTime datetime = NULL
@@ -138,7 +140,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.CrazyBout_GameJournal		
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )		
-			order by recdatetime asc
+			order by recdatetime desc
         end
         --JailBreak
         if exists( select 1 from dbo.JailBreak_GameJournal where creditacctnum = @spAcctNumber)
@@ -183,7 +185,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.JailBreak_GameJournal 
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc
+			order by recdatetime desc
         end
             --MoyaMoney
         if exists( select 1 from dbo.MayaMoney_GameJournal where creditacctnum = @spAcctNumber)
@@ -228,7 +230,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.MayaMoney_GameJournal 
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc
+			order by recdatetime desc
         end
         --Spirit76
         if exists( select 1 from dbo.Spirit76_GameJournal where creditacctnum = @spAcctNumber)
@@ -275,7 +277,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.Spirit76_GameJournal
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc
+			order by recdatetime desc
              
          
              
@@ -323,7 +325,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.WildBall_GameJournal
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc
+			order by recdatetime desc
         end
         
         if exists( select 1 from dbo.TimeBomb_GameJournal where creditacctnum = @spAcctNumber)
@@ -368,7 +370,7 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 			from dbo.TimeBomb_GameJournal			
 			where creditacctnum = @spAcctNumber 
 			and (@spGameStartNum  = -1 or gamenum between @spGameStartNum and @spGameEndNum )
-			order by recdatetime asc		
+			order by recdatetime desc
         end
     end
     
@@ -1116,6 +1118,8 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
 		   from    @FInfoTable      
 		   where  
 		   (case when [FirstBonusCardNumber] != 0 and [BonusOfferAccepted] = 0 then 1 else 0 end) = 0
+
+
 
 
 
