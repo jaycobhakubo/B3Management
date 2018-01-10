@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace GameTech.B3Reports.Forms
@@ -19,36 +14,43 @@ namespace GameTech.B3Reports.Forms
             LoadSettings();
         }
 
+        public bool IsSinglePlayerMode { get; set; }
+
         public override bool LoadSettings()
         {
             this.SuspendLayout();
             errorProvider1.Clear();
-            bool bResult = LoadSecuritySettings();
+            bool bResult = LoadGameSettings();
             this.ResumeLayout(true);
+            IsModified = false;
             return bResult;
         }
 
         public override bool SaveSettings()
         {
             Cursor x = Cursors.WaitCursor; 
-            SaveSecuritySettings();    
-            x = Cursors.Default; 
+            SaveSecuritySettings();
+            x = Cursors.Default;
+            IsModified = false;
             return result_;
         }
 
-        private bool LoadSecuritySettings()
+        private bool LoadGameSettings()
         {
             GetGameSettings ggs = new GetGameSettings();
             
-            if (numMinimumPlayer.Value == GetGameSettings.MinNumberOfPlayers)
+            if (GetGameSettings.MinNumberOfPlayers > 1)
             {
-                numMinimumPlayer.Value = 1;
                 numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
+                multiplayerPlayModeRadioButton.Checked = true;
+                IsSinglePlayerMode = false;
             }
             else
             {
-                numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
+                IsSinglePlayerMode = true;
+                singlePlayerPlayModeRadioButton.Checked = true;
             }
+
             numericTextBoxWDecimal1.Text = ConvertIntToMoneyFormat.convertToDecimal(GetGameSettings.ConsolationPrize);
            
             if (numCountdownTimer.Value == GetGameSettings.CountDownTimer)
@@ -80,10 +82,21 @@ namespace GameTech.B3Reports.Forms
             else
             {
                 numericUpDownGameThreads.Value = Convert.ToInt32(ggs.GameThreads);
-            }      
+            }
+
+
+            CrazyBoutCheckBox.Checked = GetGameSettings.IsCrazyBoutEnabled;
+            JailBreakCheckBox.Checked = GetGameSettings.IsJailBreakEnabled;
+            MayaMoneyCheckBox.Checked = GetGameSettings.IsMayaMoneyEnabled;
+            WildBallCheckBox.Checked = GetGameSettings.IsWildBallEnabled;
+            Spirit76CheckBox.Checked = GetGameSettings.IsSpirit76Enabled;
+            TimeBombCheckBox.Checked = GetGameSettings.IsTimeBombEnabled;
+
+            IsModified = false;
             return true;
         }
 
+        public event EventHandler EnableGameCheckedEvent;
 
         public bool ValidateInput()
         {
@@ -150,49 +163,6 @@ namespace GameTech.B3Reports.Forms
             errorProvider1.Clear();
         }
 
-        private void numCountdownTimer_Validating(object sender, CancelEventArgs e)
-        {
-            //if (string.IsNullOrEmpty(((Control)this.numCountdownTimer).Text))
-            //{
-            //    errorProvider1.SetError(numCountdownTimer, "Countdown Timer is empty");             
-            //    e.Cancel = true;                
-            //}
-        }
-
-        private void numMinimumPlayer_Validating(object sender, CancelEventArgs e)
-        {
-            //if (string.IsNullOrEmpty(((Control)this.numMinimumPlayer).Text))
-            //{
-            //    numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers) + 1;
-            //    numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
-            //   // errorProvider1.SetError(numMinimumPlayer, "Minimum player is empty");
-            //   // e.Cancel = true;
-            //}
-            //else 
-            //    if (numMinimumPlayer.Value < 2)
-            //{
-            //    errorProvider1.SetError(numMinimumPlayer, "Minimum player should be higher or equal than 2.");
-            //    numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
-            //    e.Cancel = true;
-            //}
-            //    else
-            //        if (numMinimumPlayer.Value > 255)
-            //        {
-            //            errorProvider1.SetError(numMinimumPlayer, "Maximum player should not be higher than 255.");
-            //            //numMinimumPlayer.Value = Convert.ToInt32(GetGameSettings.MinNumberOfPlayers);
-            //            e.Cancel = true;
-            //        }
-        }
-
-        private void numWaitCountdownTimerOP_Validating(object sender, CancelEventArgs e)
-        {
-            //if (string.IsNullOrEmpty(((Control)this.numWaitCountdownTimerOP).Text))
-            //{
-            //    errorProvider1.SetError(numWaitCountdownTimerOP, "Minimum number of players wait time is empty");
-            //    e.Cancel = true;
-            //}
-        }
-
         private void numMinimumPlayer_Leave(object sender, EventArgs e)
         {
             NumericUpDown NUDown = (NumericUpDown)sender;
@@ -226,50 +196,87 @@ namespace GameTech.B3Reports.Forms
                 // errorProvider1.SetError(numericTextBoxWDecimal1, "Consolation prize is empty");
                 errorProvider1.SetError(txtbxGameRecallPassword, "Invalid entry");
                 e.Cancel = true;
-
             }
         }
 
-        private void numMinimumPlayer_ValueChanged(object sender, EventArgs e)
+        private void radioButtonPlayMode_CheckChanged(object sender, EventArgs e)
         {
-            if (numMinimumPlayer.Value == 1)
+            IsModified = true;
+
+            if (singlePlayerPlayModeRadioButton.Checked)
             {
-                if (lblCountdownTimer.Visible == true)
-                {
-                    lblCountdownTimer.Visible = false;
-                    numCountdownTimer.Visible = false;
-                    lblCountdownTimerSec.Visible = false;
+                lblMinNumberOfPlayers.Enabled = false;
+                numMinimumPlayer.Enabled = false;
 
-                    numWaitCountdownTimerOP.Visible = false;
-                    lblMinimumNumOfPlayersSec.Visible = false;
-                    lblMinNumPlayersTime.Visible = false;
+                lblCountdownTimer.Enabled = false;
+                numCountdownTimer.Enabled = false;
+                lblCountdownTimerSec.Enabled = false;
 
-                    lblExtraBonus.Visible = false;
-                    lblExtraBonusDollarSign.Visible = false;
-                    numericTextBoxWDecimal1.Visible = false;
+                numWaitCountdownTimerOP.Enabled = false;
+                lblMinimumNumOfPlayersSec.Enabled = false;
+                lblMinNumPlayersTime.Enabled = false;
 
-                }
+                lblExtraBonus.Enabled = false;
+                lblExtraBonusDollarSign.Enabled = false;
+                numericTextBoxWDecimal1.Enabled = false;
+
+                WildBallCheckBox.Enabled = true;
+                Spirit76CheckBox.Enabled = true;
+                TimeBombCheckBox.Enabled = true;
+
+                WildBallCheckBox.Checked = GetGameSettings.IsWildBallEnabled;
+                Spirit76CheckBox.Checked = GetGameSettings.IsSpirit76Enabled;
+                TimeBombCheckBox.Checked = GetGameSettings.IsTimeBombEnabled;
             }
             else
             {
-                if (lblCountdownTimer.Visible == false)
-                {
-                    lblCountdownTimer.Visible = true;
-                    numCountdownTimer.Visible = true;
-                    lblCountdownTimerSec.Visible = true;
+                lblMinNumberOfPlayers.Enabled = true;
+                numMinimumPlayer.Enabled = true;
 
-                    numWaitCountdownTimerOP.Visible = true;
-                    lblMinimumNumOfPlayersSec.Visible = true;
-                    lblMinNumPlayersTime.Visible = true;
+                lblCountdownTimer.Enabled = true;
+                numCountdownTimer.Enabled = true;
+                lblCountdownTimerSec.Enabled = true;
 
-                    lblExtraBonus.Visible = true;
-                    lblExtraBonusDollarSign.Visible = true;
-                    numericTextBoxWDecimal1.Visible = true;
+                numWaitCountdownTimerOP.Enabled = true;
+                lblMinimumNumOfPlayersSec.Enabled = true;
+                lblMinNumPlayersTime.Enabled = true;
 
-                }
+                lblExtraBonus.Enabled = true;
+                lblExtraBonusDollarSign.Enabled = true;
+                numericTextBoxWDecimal1.Enabled = true;
+
+                WildBallCheckBox.Enabled = false;
+                Spirit76CheckBox.Enabled = false;
+                TimeBombCheckBox.Enabled = false;
+
+                WildBallCheckBox.Checked = false;
+                Spirit76CheckBox.Checked = false;
+                TimeBombCheckBox.Checked = false;
+            }
+        }
+        
+        private void GameCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsModified = true;
+            var handler = EnableGameCheckedEvent;
+            if (handler != null)
+            {
+                handler(null, EventArgs.Empty);
             }
         }
 
-       
+        public bool IsCrazyBoutEnabled { get { return CrazyBoutCheckBox.Checked; } }
+        public bool IsJailBreakEnabled { get { return JailBreakCheckBox.Checked; } }
+        public bool IsMayaMoneyEnabled { get { return MayaMoneyCheckBox.Checked; } }
+        public bool IsWildBallEnabled { get { return WildBallCheckBox.Checked; } }
+        public bool IsSpirit76Enabled { get { return Spirit76CheckBox.Checked; } }
+        public bool IsTimeBombEnabled { get { return TimeBombCheckBox.Checked; } }
+
+        private void ModifiedSettings(object sender, EventArgs e)
+        {
+            IsModified = true;
+        }
+
+
     }
 }

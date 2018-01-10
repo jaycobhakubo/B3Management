@@ -15,7 +15,6 @@ namespace GameTech.B3Reports.Forms
         {
             InitializeComponent();
             LoadSettings();
-            
         }
 
         public override bool LoadSettings()
@@ -23,6 +22,8 @@ namespace GameTech.B3Reports.Forms
             this.SuspendLayout();
             bool bResult = LoadCrazyBoutSettings();
             this.ResumeLayout();
+
+            IsModified = false;
             return bResult;
         }
 
@@ -31,58 +32,6 @@ namespace GameTech.B3Reports.Forms
         {
             GetGameSettingsCrazyBout ggscb = new GetGameSettingsCrazyBout();
 
-            if (numMaxCards.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxcards == this.numMaxCards.Maximum)
-                {
-                    numMaxCards.Value = GetGameSettingsCrazyBout.maxcards - 1;
-                }
-                else
-                { numMaxCards.Value = GetGameSettingsCrazyBout.maxcards + 1; }
-            }
-            if (numMaxBetLevel.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxbetlevel == this.numMaxBetLevel.Maximum)
-                {
-                    numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel - 1;
-                }
-                else { numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel + 1; }
-            }
-            if (numMaxPattern.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxpatterns == this.numMaxPattern.Maximum)
-                {
-                    numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns - 1;
-                }
-                else { numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns + 1;}
-            }
-            if (numMaxCalls.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxcalls == this.numMaxCalls.Maximum)
-                {
-                numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls - 1;
-                }
-                else {numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls + 1;}
-            }
-            if (numMaxPatternBonus.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxpatterns_bonus == this.numMaxPatternBonus.Maximum)
-                {
-                    numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus - 1;
-                }
-                else { numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus + 1; }
-            }
-            if (numMaxCallsBonus.Text == "")
-            {
-                if (GetGameSettingsCrazyBout.maxcalls_bonus == this.numMaxCallsBonus.Maximum)
-                {
-                    numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus - 1;
-                }
-                else
-                {
-                    numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus + 1;
-                }
-            }
             if (numCallSpeedMin.Text == "")
             {
                 if (GetGameSettingsCrazyBout.callspeed_min == this.numCallSpeedMin.Maximum)
@@ -102,12 +51,8 @@ namespace GameTech.B3Reports.Forms
                 }
             }
             
-            numMaxCards.Value = GetGameSettingsCrazyBout.maxcards;
-            numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel;
-            numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns;
-            numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls;
-            numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus;
-            numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus;
+            comboBoxMaxCard.SelectedItem = GetGameSettingsCrazyBout.maxcards.ToString();
+            comboBoxMaxBetLevel.SelectedItem = GetGameSettingsCrazyBout.maxbetlevel.ToString();
             numCallSpeedMin.Value = GetGameSettingsCrazyBout.callspeed_min;
             numCallSpeedMax.Value = GetGameSettingsCrazyBout.callspeed_max;
 
@@ -179,6 +124,7 @@ namespace GameTech.B3Reports.Forms
             Cursor curs = Cursors.WaitCursor;
             bool bResult = SaveCrazyBoutGameSettings();
             curs = Cursors.Default;
+            IsModified = false;
             return bResult;
             //return base.SaveSettings();
         }
@@ -186,48 +132,19 @@ namespace GameTech.B3Reports.Forms
         private bool SaveCrazyBoutGameSettings()
         {
             GetGameSettingsCrazyBout x = new GetGameSettingsCrazyBout();//Let us use the set instead of the static variable. Does it execute the class again?
-            if (x.MaxCards != (int)numMaxCards.Value)
+            if (x.MaxCards != int.Parse(comboBoxMaxCard.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Cards", x.MaxCards.ToString(), numMaxCards.Value.ToString());
-            x.MaxCards = (int)numMaxCards.Value;
-      
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Cards", x.MaxCards.ToString(), comboBoxMaxCard.SelectedItem.ToString());
+                x.MaxCards = int.Parse(comboBoxMaxCard.SelectedItem.ToString());
+            }
+
+            if (x.MaxBetLevel != int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString()))
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Bet Level", x.MaxBetLevel.ToString(), comboBoxMaxBetLevel.SelectedItem.ToString());
+                x.MaxBetLevel = int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString());
 
             }
 
-            if (x.MaxBetLevel != (int)numMaxBetLevel.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Bet Level", x.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString());
-                x.MaxBetLevel = (int)numMaxBetLevel.Value;
-               
-            }
-
-            if (x.MaxPatterns != (int)numMaxPattern.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Patterns", x.MaxPatterns.ToString(), numMaxPattern.Value.ToString());
-                x.MaxPatterns = (int)numMaxPattern.Value;
-         
-            }
-
-            if (x.MaxCalls != (int)numMaxCalls.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Calls", x.MaxCalls.ToString(), numMaxCalls.Value.ToString());
-                x.MaxCalls = (int)numMaxCalls.Value;
-        
-            }
-
-            if (x.MaxPattern_Bonus != (int)numMaxPatternBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Pattern Bonus", x.MaxPattern_Bonus.ToString(), numMaxPatternBonus.Value.ToString());
-                x.MaxPattern_Bonus = (int)numMaxPatternBonus.Value;
-     
-            }
-
-            if (x.MaxCalls_Bonus != (int)numMaxCallsBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Max Call Bonus", x.MaxCalls_Bonus.ToString(), numMaxCallsBonus.Value.ToString());
-                x.MaxCalls_Bonus = (int)numMaxCallsBonus.Value;
-
-            }
 
             if (x.CallSpeed_Min != (int)numCallSpeedMin.Value)
             {
@@ -348,68 +265,7 @@ namespace GameTech.B3Reports.Forms
             NumericUpDown NUDown = (NumericUpDown)sender;
             if (NUDown.Text == "")
             {
-                if (Convert.ToInt32(NUDown.Tag) == 1)
-                {
-                    if (GetGameSettingsCrazyBout.maxcards == this.numMaxCards.Maximum)
-                    {
-                        numMaxCards.Value = GetGameSettingsCrazyBout.maxcards - 1;
-                    }
-                    else
-                    { numMaxCards.Value = GetGameSettingsCrazyBout.maxcards + 1; }
-                    numMaxCards.Value = GetGameSettingsCrazyBout.maxcards;
-
-                }else
-                if (Convert.ToInt32(NUDown.Tag) == 2)
-                {
-                    if (GetGameSettingsCrazyBout.maxbetlevel == this.numMaxBetLevel.Maximum)
-                    {
-                        numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel - 1;
-                    }
-                    else { numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel + 1; }
-                    numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel;
-                }else
-                    if (Convert.ToInt32(NUDown.Tag) == 3)
-                    {
-                        if (GetGameSettingsCrazyBout.maxpatterns == this.numMaxPattern.Maximum)
-                        {
-                            numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns - 1;
-                        }
-                        else { numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns + 1; }
-                        numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns;
-                    }
-                    else
-                        if (Convert.ToInt32(NUDown.Tag) == 4)
-                    {
-                        if (GetGameSettingsCrazyBout.maxcalls == this.numMaxCalls.Maximum)
-                        {
-                            numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls - 1;
-                        }
-                        else { numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls + 1; }
-                        numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls;
-                    }else
-                if (Convert.ToInt32(NUDown.Tag) == 5)
-                      {
-                          if (GetGameSettingsCrazyBout.maxpatterns_bonus == this.numMaxPatternBonus.Maximum)
-                          {
-                              numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus - 1;
-                          }
-                          else { numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus + 1; }
-                          numMaxPatternBonus.Value = GetGameSettingsCrazyBout.maxpatterns_bonus;
-                      }
-                else if (Convert.ToInt32(NUDown.Tag) == 6)
-                {
-                    if (GetGameSettingsCrazyBout.maxcalls_bonus == this.numMaxCallsBonus.Maximum)
-                    {
-                        numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus - 1;
-                    }
-                    else
-                    {
-                        numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus + 1;
-                    }
-                    numMaxCallsBonus.Value = GetGameSettingsCrazyBout.maxcalls_bonus;
-
-                }
-                else if (Convert.ToInt32(NUDown.Tag) == 7)
+                if (Convert.ToInt32(NUDown.Tag) == 7)
                 {
                     if (GetGameSettingsCrazyBout.callspeed_min == this.numCallSpeedMin.Maximum)
                     {
@@ -435,19 +291,9 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
-        private void chkbxAutoCall_CheckedChanged(object sender, EventArgs e)
+        private void ModifiedSettings(object sender, EventArgs e)
         {
-
-        }
-
-        private void chkbxAutoPlay_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chkbxSingleOfferBonus_CheckedChanged(object sender, EventArgs e)
-        {
-
+            IsModified = true;
         }
 
     }

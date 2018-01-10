@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxMaxBetLevel = new System.Windows.Forms.ComboBox();
+            this.comboBoxMaxCard = new System.Windows.Forms.ComboBox();
             this.chkbxSingleOfferBonus = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chkbxDenom5d = new System.Windows.Forms.CheckBox();
@@ -40,52 +42,28 @@
             this.chkbxDenom1d = new System.Windows.Forms.CheckBox();
             this.chkbxDenom25 = new System.Windows.Forms.CheckBox();
             this.numCallSpeed = new System.Windows.Forms.NumericUpDown();
-            this.numMaxCallsBonus = new System.Windows.Forms.NumericUpDown();
-            this.numMaxPatternBonus = new System.Windows.Forms.NumericUpDown();
-            this.numMaxCalls = new System.Windows.Forms.NumericUpDown();
-            this.numMaxPattern = new System.Windows.Forms.NumericUpDown();
-            this.numMaxBetLevel = new System.Windows.Forms.NumericUpDown();
-            this.numMaxCards = new System.Windows.Forms.NumericUpDown();
             this.chkbxAutoCall = new System.Windows.Forms.CheckBox();
             this.chkbxAutoPlay = new System.Windows.Forms.CheckBox();
             this.chkbxHideCardSerialNumber = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCallSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCallsBonus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPatternBonus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCalls)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPattern)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxBetLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCards)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxMaxBetLevel);
+            this.groupBox1.Controls.Add(this.comboBoxMaxCard);
             this.groupBox1.Controls.Add(this.chkbxSingleOfferBonus);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.numCallSpeed);
-            this.groupBox1.Controls.Add(this.numMaxCallsBonus);
-            this.groupBox1.Controls.Add(this.numMaxPatternBonus);
-            this.groupBox1.Controls.Add(this.numMaxCalls);
-            this.groupBox1.Controls.Add(this.numMaxPattern);
-            this.groupBox1.Controls.Add(this.numMaxBetLevel);
-            this.groupBox1.Controls.Add(this.numMaxCards);
             this.groupBox1.Controls.Add(this.chkbxAutoCall);
             this.groupBox1.Controls.Add(this.chkbxAutoPlay);
             this.groupBox1.Controls.Add(this.chkbxHideCardSerialNumber);
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +73,32 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jailbreak Game Settings";
+            // 
+            // comboBoxMaxBetLevel
+            // 
+            this.comboBoxMaxBetLevel.FormattingEnabled = true;
+            this.comboBoxMaxBetLevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBoxMaxBetLevel.Location = new System.Drawing.Point(274, 94);
+            this.comboBoxMaxBetLevel.Name = "comboBoxMaxBetLevel";
+            this.comboBoxMaxBetLevel.Size = new System.Drawing.Size(120, 30);
+            this.comboBoxMaxBetLevel.TabIndex = 73;
+            this.comboBoxMaxBetLevel.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
+            // 
+            // comboBoxMaxCard
+            // 
+            this.comboBoxMaxCard.FormattingEnabled = true;
+            this.comboBoxMaxCard.Items.AddRange(new object[] {
+            "4",
+            "6"});
+            this.comboBoxMaxCard.Location = new System.Drawing.Point(273, 54);
+            this.comboBoxMaxCard.Name = "comboBoxMaxCard";
+            this.comboBoxMaxCard.Size = new System.Drawing.Size(120, 30);
+            this.comboBoxMaxCard.TabIndex = 72;
+            this.comboBoxMaxCard.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxSingleOfferBonus
             // 
@@ -106,6 +110,7 @@
             this.chkbxSingleOfferBonus.TabIndex = 16;
             this.chkbxSingleOfferBonus.Text = "Single Offer Bonus";
             this.chkbxSingleOfferBonus.UseVisualStyleBackColor = true;
+            this.chkbxSingleOfferBonus.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // groupBox2
             // 
@@ -135,6 +140,7 @@
             this.chkbxDenom5d.TabIndex = 7;
             this.chkbxDenom5d.Text = "5 dollars";
             this.chkbxDenom5d.UseVisualStyleBackColor = true;
+            this.chkbxDenom5d.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom1
             // 
@@ -145,6 +151,7 @@
             this.chkbxDenom1.TabIndex = 0;
             this.chkbxDenom1.Text = "1 cent";
             this.chkbxDenom1.UseVisualStyleBackColor = true;
+            this.chkbxDenom1.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom5
             // 
@@ -157,6 +164,7 @@
             this.chkbxDenom5.TabIndex = 1;
             this.chkbxDenom5.Text = "5 cents";
             this.chkbxDenom5.UseVisualStyleBackColor = true;
+            this.chkbxDenom5.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom10
             // 
@@ -169,6 +177,7 @@
             this.chkbxDenom10.TabIndex = 2;
             this.chkbxDenom10.Text = "10 cents";
             this.chkbxDenom10.UseVisualStyleBackColor = true;
+            this.chkbxDenom10.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom2d
             // 
@@ -181,6 +190,7 @@
             this.chkbxDenom2d.TabIndex = 6;
             this.chkbxDenom2d.Text = "2 dollars";
             this.chkbxDenom2d.UseVisualStyleBackColor = true;
+            this.chkbxDenom2d.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom50
             // 
@@ -193,6 +203,7 @@
             this.chkbxDenom50.TabIndex = 4;
             this.chkbxDenom50.Text = "50 cents";
             this.chkbxDenom50.UseVisualStyleBackColor = true;
+            this.chkbxDenom50.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom1d
             // 
@@ -205,6 +216,7 @@
             this.chkbxDenom1d.TabIndex = 5;
             this.chkbxDenom1d.Text = "1 dollar";
             this.chkbxDenom1d.UseVisualStyleBackColor = true;
+            this.chkbxDenom1d.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxDenom25
             // 
@@ -217,11 +229,12 @@
             this.chkbxDenom25.TabIndex = 3;
             this.chkbxDenom25.Text = "25 cents";
             this.chkbxDenom25.UseVisualStyleBackColor = true;
+            this.chkbxDenom25.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // numCallSpeed
             // 
             this.numCallSpeed.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numCallSpeed.Location = new System.Drawing.Point(274, 295);
+            this.numCallSpeed.Location = new System.Drawing.Point(274, 137);
             this.numCallSpeed.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -241,157 +254,8 @@
             0,
             0,
             0});
+            this.numCallSpeed.ValueChanged += new System.EventHandler(this.ModifiedSettings);
             this.numCallSpeed.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxCallsBonus
-            // 
-            this.numMaxCallsBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCallsBonus.Location = new System.Drawing.Point(274, 255);
-            this.numMaxCallsBonus.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.numMaxCallsBonus.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numMaxCallsBonus.Name = "numMaxCallsBonus";
-            this.numMaxCallsBonus.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCallsBonus.TabIndex = 11;
-            this.numMaxCallsBonus.Tag = "6";
-            this.numMaxCallsBonus.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.numMaxCallsBonus.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxPatternBonus
-            // 
-            this.numMaxPatternBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxPatternBonus.Location = new System.Drawing.Point(274, 215);
-            this.numMaxPatternBonus.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMaxPatternBonus.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numMaxPatternBonus.Name = "numMaxPatternBonus";
-            this.numMaxPatternBonus.Size = new System.Drawing.Size(120, 26);
-            this.numMaxPatternBonus.TabIndex = 9;
-            this.numMaxPatternBonus.Tag = "5";
-            this.numMaxPatternBonus.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMaxPatternBonus.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxCalls
-            // 
-            this.numMaxCalls.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCalls.Location = new System.Drawing.Point(274, 175);
-            this.numMaxCalls.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.numMaxCalls.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numMaxCalls.Name = "numMaxCalls";
-            this.numMaxCalls.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCalls.TabIndex = 7;
-            this.numMaxCalls.Tag = "4";
-            this.numMaxCalls.Value = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.numMaxCalls.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxPattern
-            // 
-            this.numMaxPattern.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxPattern.Location = new System.Drawing.Point(274, 135);
-            this.numMaxPattern.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMaxPattern.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMaxPattern.Name = "numMaxPattern";
-            this.numMaxPattern.Size = new System.Drawing.Size(120, 26);
-            this.numMaxPattern.TabIndex = 5;
-            this.numMaxPattern.Tag = "3";
-            this.numMaxPattern.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numMaxPattern.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxBetLevel
-            // 
-            this.numMaxBetLevel.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxBetLevel.Location = new System.Drawing.Point(274, 95);
-            this.numMaxBetLevel.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numMaxBetLevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMaxBetLevel.Name = "numMaxBetLevel";
-            this.numMaxBetLevel.Size = new System.Drawing.Size(120, 26);
-            this.numMaxBetLevel.TabIndex = 3;
-            this.numMaxBetLevel.Tag = "2";
-            this.numMaxBetLevel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numMaxBetLevel.Leave += new System.EventHandler(this.numMaxCards_Leave);
-            // 
-            // numMaxCards
-            // 
-            this.numMaxCards.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numMaxCards.Location = new System.Drawing.Point(274, 55);
-            this.numMaxCards.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numMaxCards.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numMaxCards.Name = "numMaxCards";
-            this.numMaxCards.Size = new System.Drawing.Size(120, 26);
-            this.numMaxCards.TabIndex = 1;
-            this.numMaxCards.Tag = "1";
-            this.numMaxCards.Value = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numMaxCards.Leave += new System.EventHandler(this.numMaxCards_Leave);
             // 
             // chkbxAutoCall
             // 
@@ -402,6 +266,7 @@
             this.chkbxAutoCall.TabIndex = 14;
             this.chkbxAutoCall.Text = "Auto Call";
             this.chkbxAutoCall.UseVisualStyleBackColor = true;
+            this.chkbxAutoCall.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxAutoPlay
             // 
@@ -412,6 +277,7 @@
             this.chkbxAutoPlay.TabIndex = 15;
             this.chkbxAutoPlay.Text = "Auto Play";
             this.chkbxAutoPlay.UseVisualStyleBackColor = true;
+            this.chkbxAutoPlay.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // chkbxHideCardSerialNumber
             // 
@@ -422,56 +288,17 @@
             this.chkbxHideCardSerialNumber.TabIndex = 17;
             this.chkbxHideCardSerialNumber.Text = "Hide Card Serial Number";
             this.chkbxHideCardSerialNumber.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(58, 257);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 22);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Max  Calls Bonus";
+            this.chkbxHideCardSerialNumber.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(58, 297);
+            this.label6.Location = new System.Drawing.Point(58, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 22);
             this.label6.TabIndex = 12;
             this.label6.Text = "Call Speed";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(58, 217);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Max  Pattern Bonus";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(58, 177);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 22);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Max  Calls";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(58, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 22);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Max  Patterns";
             // 
             // label1
             // 
@@ -506,12 +333,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCallSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCallsBonus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPatternBonus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCalls)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxPattern)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxBetLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxCards)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -529,22 +350,14 @@
         private System.Windows.Forms.CheckBox chkbxDenom1d;
         private System.Windows.Forms.CheckBox chkbxDenom25;
         public System.Windows.Forms.NumericUpDown numCallSpeed;
-        public System.Windows.Forms.NumericUpDown numMaxCallsBonus;
-        public System.Windows.Forms.NumericUpDown numMaxPatternBonus;
-        public System.Windows.Forms.NumericUpDown numMaxCalls;
-        public System.Windows.Forms.NumericUpDown numMaxPattern;
-        public System.Windows.Forms.NumericUpDown numMaxBetLevel;
-        public System.Windows.Forms.NumericUpDown numMaxCards;
         private System.Windows.Forms.CheckBox chkbxAutoCall;
         private System.Windows.Forms.CheckBox chkbxAutoPlay;
         private System.Windows.Forms.CheckBox chkbxHideCardSerialNumber;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkbxSingleOfferBonus;
+        private System.Windows.Forms.ComboBox comboBoxMaxBetLevel;
+        private System.Windows.Forms.ComboBox comboBoxMaxCard;
     }
 }

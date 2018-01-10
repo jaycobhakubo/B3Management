@@ -22,6 +22,8 @@ namespace GameTech.B3Reports.Forms
             this.SuspendLayout();
             bool bResult = LoadMayaMoneySettings();
             this.ResumeLayout();
+
+            IsModified = false;
             return bResult;
         }
 
@@ -29,10 +31,8 @@ namespace GameTech.B3Reports.Forms
         {
             GetGameSettingsMayaMoney ggsmm = new GetGameSettingsMayaMoney();
 
-            numMaxCards.Value = GetGameSettingsMayaMoney.maxcards;
-            numMaxBetLevel.Value = GetGameSettingsMayaMoney.maxbetlevel;
-            numMaxPattern.Value = GetGameSettingsMayaMoney.maxpatterns;
-            numMaxCalls.Value = GetGameSettingsMayaMoney.maxcalls;
+            comboBoxMaxCard.SelectedItem = GetGameSettingsMayaMoney.maxcards.ToString();
+            comboBoxMaxBetLevel.SelectedItem = GetGameSettingsMayaMoney.maxbetlevel.ToString();
             numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min;
             numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max;
 
@@ -98,6 +98,7 @@ namespace GameTech.B3Reports.Forms
             Cursor curs = Cursors.WaitCursor;
             bool bResult = SaveMayaMoneyGameSettings();
             curs = Cursors.Default;
+            IsModified = false;
             return bResult;
             //return base.SaveSettings();
         }
@@ -107,48 +108,20 @@ namespace GameTech.B3Reports.Forms
            //etGameSettingsCrazyBout x = new GetGameSettingsMayaMoney();//Let us use the set instead of the static variable. Does it execute the class again?
             GetGameSettingsMayaMoney x = new GetGameSettingsMayaMoney();
 
-            if (x.MaxCards != (int)numMaxCards.Value)
+            if (x.MaxCards != int.Parse(comboBoxMaxCard.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Cards", x.MaxCards.ToString(), numMaxCards.Value.ToString());
-                x.MaxCards = (int)numMaxCards.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Cards", x.MaxCards.ToString(), comboBoxMaxCard.SelectedItem.ToString());
+                x.MaxCards = int.Parse(comboBoxMaxCard.SelectedItem.ToString());
 
 
             }
 
-            if (x.MaxBetLevel != (int)numMaxBetLevel.Value)
+            if (x.MaxBetLevel != int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Bet Level", x.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString());
-                x.MaxBetLevel = (int)numMaxBetLevel.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Bet Level", x.MaxBetLevel.ToString(), comboBoxMaxBetLevel.SelectedItem.ToString());
+                x.MaxBetLevel = int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString());
 
             }
-
-            if (x.MaxPatterns != (int)numMaxPattern.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Patterns", x.MaxPatterns.ToString(), numMaxPattern.Value.ToString());
-                x.MaxPatterns = (int)numMaxPattern.Value;
-
-            }
-
-            if (x.MaxCalls != (int)numMaxCalls.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Calls", x.MaxCalls.ToString(), numMaxCalls.Value.ToString());
-                x.MaxCalls = (int)numMaxCalls.Value;
-
-            }
-
-            //if (x.MaxPattern_Bonus != (int)numMaxPatternBonus.Value)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Pattern Bonus", x.MaxPattern_Bonus.ToString(), numMaxPatternBonus.Value.ToString());
-            //    x.MaxPattern_Bonus = (int)numMaxPatternBonus.Value;
-
-            //}
-
-            //if (x.MaxCalls_Bonus != (int)numMaxCallsBonus.Value)
-            //{
-            //    WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Maya Money Setting - Max Call Bonus", x.MaxCalls_Bonus.ToString(), numMaxCallsBonus.Value.ToString());
-            //    x.MaxCalls_Bonus = (int)numMaxCallsBonus.Value;
-
-            //}
 
             if (x.CallSpeed_Min != (int)numCallSpeedMin.Value)
             {
@@ -289,94 +262,36 @@ namespace GameTech.B3Reports.Forms
             NumericUpDown NUDown = (NumericUpDown)sender;
             if (NUDown.Text == "")
             {
-                if (Convert.ToInt32(NUDown.Tag) == 1)
-                {
-                    if (GetGameSettingsMayaMoney.maxcards == this.numMaxCards.Maximum)
-                    {
-                        numMaxCards.Value = GetGameSettingsMayaMoney.maxcards - 1;
-                    }
-                    else
-                    { numMaxCards.Value = GetGameSettingsMayaMoney.maxcards + 1; }
-                    numMaxCards.Value = GetGameSettingsMayaMoney.maxcards;
 
-                }
-                else
-                    if (Convert.ToInt32(NUDown.Tag) == 2)
+                    if (Convert.ToInt32(NUDown.Tag) == 5)
                     {
-                        if (GetGameSettingsMayaMoney.maxbetlevel == this.numMaxBetLevel.Maximum)
+                        if (GetGameSettingsMayaMoney.callspeed_min == this.numCallSpeedMin.Maximum)
                         {
-                            numMaxBetLevel.Value = GetGameSettingsMayaMoney.maxbetlevel - 1;
+                            numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min - 1;
                         }
-                        else { numMaxBetLevel.Value = GetGameSettingsMayaMoney.maxbetlevel + 1; }
-                        numMaxBetLevel.Value = GetGameSettingsMayaMoney.maxbetlevel;
+                        else { numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min + 1; }
+                        numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min;
                     }
-                    else
-                        if (Convert.ToInt32(NUDown.Tag) == 3)
+                    else if (Convert.ToInt32(NUDown.Tag) == 6)
+                    {
+                        if (GetGameSettingsMayaMoney.callspeed_max == this.numCallSpeedMax.Maximum)
                         {
-                            if (GetGameSettingsMayaMoney.maxpatterns == this.numMaxPattern.Maximum)
-                            {
-                                numMaxPattern.Value = GetGameSettingsMayaMoney.maxpatterns - 1;
-                            }
-                            else { numMaxPattern.Value = GetGameSettingsMayaMoney.maxpatterns + 1; }
-                            numMaxPattern.Value = GetGameSettingsMayaMoney.maxpatterns;
+                            numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max - 1;
                         }
                         else
-                            if (Convert.ToInt32(NUDown.Tag) == 4)
-                            {
-                                if (GetGameSettingsMayaMoney.maxcalls == this.numMaxCalls.Maximum)
-                                {
-                                    numMaxCalls.Value = GetGameSettingsMayaMoney.maxcalls - 1;
-                                }
-                                else { numMaxCalls.Value = GetGameSettingsMayaMoney.maxcalls + 1; }
-                                numMaxCalls.Value = GetGameSettingsMayaMoney.maxcalls;
-                            }
-                            //else
-                            //    if (Convert.ToInt32(NUDown.Tag) == 5)
-                            //    {
-                            //        if (GetGameSettingsMayaMoney.maxpatterns_bonus == this.numMaxPatternBonus.Maximum)
-                            //        {
-                            //            numMaxPatternBonus.Value = GetGameSettingsMayaMoney.maxpatterns_bonus - 1;
-                            //        }
-                            //        else { numMaxPatternBonus.Value = GetGameSettingsMayaMoney.maxpatterns_bonus + 1; }
-                            //        numMaxPatternBonus.Value = GetGameSettingsMayaMoney.maxpatterns_bonus;
-                            //    }
-                            //    else if (Convert.ToInt32(NUDown.Tag) == 6)
-                            //    {
-                            //        if (GetGameSettingsMayaMoney.maxcalls_bonus == this.numMaxCallsBonus.Maximum)
-                            //        {
-                            //            numMaxCallsBonus.Value = GetGameSettingsMayaMoney.maxcalls_bonus - 1;
-                            //        }
-                            //        else
-                            //        {
-                            //            numMaxCallsBonus.Value = GetGameSettingsMayaMoney.maxcalls_bonus + 1;
-                            //        }
-                            //        numMaxCallsBonus.Value = GetGameSettingsMayaMoney.maxcalls_bonus;
+                        {
+                            numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max + 1;
+                        }
+                        numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max;
 
-                            //    }
-                                else if (Convert.ToInt32(NUDown.Tag) == 5)
-                                {
-                                    if (GetGameSettingsMayaMoney.callspeed_min == this.numCallSpeedMin.Maximum)
-                                    {
-                                        numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min - 1;
-                                    }
-                                    else { numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min + 1; }
-                                    numCallSpeedMin.Value = GetGameSettingsMayaMoney.callspeed_min;
-                                }
-                                else if (Convert.ToInt32(NUDown.Tag) == 6)
-                                {
-                                    if (GetGameSettingsMayaMoney.callspeed_max == this.numCallSpeedMax.Maximum)
-                                    {
-                                        numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max - 1;
-                                    }
-                                    else
-                                    {
-                                        numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max + 1;
-                                    }
-                                    numCallSpeedMax.Value = GetGameSettingsMayaMoney.callspeed_max;
-
-                                }
+                    }
 
             }
+        }
+
+        private void ModifiedSettings(object sender, EventArgs e)
+        {
+            IsModified = true;
         }
     }
 }

@@ -18,6 +18,13 @@ namespace GameTech.B3Reports.Forms
 
         #region VARIABLES
 
+        private const string CrazyBoutGameSettingsString = "Crazy Bout Settings";
+        private const string JailBreakGameSettingsString = "Jailbreak Settings";
+        private const string MayaMoneyGameSettingsString = "Maya Money Settings";
+        private const string WildBallGameSettingsString = "Wild Ball Settings";
+        private const string Spirit76GameSettingsString = "Spirit 76 Settings";
+        private const string TimeBombGameSettingsString = "Time Bomb Settings";
+
         GetSystemConfig SystemConfig;
         SettingsControl m_activeControl = null;
         SettingsControl m_previousControl = null;
@@ -46,6 +53,8 @@ namespace GameTech.B3Reports.Forms
             AdjustWindowSize.adjust(this);
             pictureBox1.BringToFront();
            // clientAccessControl1.dgClientAccess.CellClick += dgClientAccessCellClick;
+
+            gameSettings1.EnableGameCheckedEvent += EnableGameCheckedEvent;
         }
 
         private void SystemSettings_Load(object sender, EventArgs e)
@@ -117,6 +126,47 @@ namespace GameTech.B3Reports.Forms
             clearImage();
         }
 
+        private void EnableGameCheckedEvent(object sender, EventArgs eventArgs)
+        {
+            var crazyBoutNode = treeView1.Nodes.Find(CrazyBoutGameSettingsString, true).FirstOrDefault();
+            var jailBreakNode = treeView1.Nodes.Find(JailBreakGameSettingsString, true).FirstOrDefault();
+            var mayaMoneyNode = treeView1.Nodes.Find(MayaMoneyGameSettingsString, true).FirstOrDefault();
+            var wildBallNode = treeView1.Nodes.Find(WildBallGameSettingsString, true).FirstOrDefault();
+            var spirit76Node = treeView1.Nodes.Find(Spirit76GameSettingsString, true).FirstOrDefault();
+            var timeBombNode = treeView1.Nodes.Find(TimeBombGameSettingsString, true).FirstOrDefault();
+
+            if (crazyBoutNode != null)
+            {
+                crazyBoutNode.ForeColor = gameSettings1.IsCrazyBoutEnabled ? Color.Black : Color.DarkGray;
+                gameSettingCrazyBout1.EnableControls(gameSettings1.IsCrazyBoutEnabled);
+            }
+            if (jailBreakNode != null)
+            {
+                jailBreakNode.ForeColor = gameSettings1.IsJailBreakEnabled ? Color.Black : Color.DarkGray;
+                gameSettingJailBreak1.EnableControls(gameSettings1.IsJailBreakEnabled);
+            }
+            if (mayaMoneyNode != null)
+            {
+                mayaMoneyNode.ForeColor = gameSettings1.IsMayaMoneyEnabled ? Color.Black : Color.DarkGray;
+                gameSettingMayaMoney1.EnableControls(gameSettings1.IsMayaMoneyEnabled);
+            }
+            if (wildBallNode != null)
+            {
+                wildBallNode.ForeColor = gameSettings1.IsWildBallEnabled ? Color.Black : Color.DarkGray;
+                gameSettingWildBall1.EnableControls(gameSettings1.IsWildBallEnabled);
+            }
+            if (spirit76Node != null)
+            {
+                spirit76Node.ForeColor = gameSettings1.IsSpirit76Enabled ? Color.Black : Color.DarkGray;
+                gameSettingSpirit761.EnableControls(gameSettings1.IsSpirit76Enabled);
+            }
+            if (timeBombNode != null)
+            {
+                timeBombNode.ForeColor = gameSettings1.IsTimeBombEnabled ? Color.Black : Color.DarkGray;
+                gameSettingTimeBomb1.EnableControls(gameSettings1.IsTimeBombEnabled);
+            }
+        }
+
         private void setSettingToFalse()
         {
             IsClientAccessControl = false;
@@ -168,23 +218,29 @@ namespace GameTech.B3Reports.Forms
 
             nodeParent = new TreeNode("Game Settings", 0, 1);
             nodeParent.Tag = gameSettings1;
-            nodeChild = nodeParent.Nodes.Add("Crazy Bout Settings");
+            nodeChild = nodeParent.Nodes.Add(CrazyBoutGameSettingsString);
             nodeChild.Tag = gameSettingCrazyBout1;
+            nodeChild.Name = CrazyBoutGameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add("Jailbreak Settings");
+            nodeChild = nodeParent.Nodes.Add(JailBreakGameSettingsString);
             nodeChild.Tag = gameSettingJailBreak1;
+            nodeChild.Name = JailBreakGameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add("Maya Money Settings");
+            nodeChild = nodeParent.Nodes.Add(MayaMoneyGameSettingsString);
             nodeChild.Tag = gameSettingMayaMoney1;
+            nodeChild.Name = MayaMoneyGameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add("Wild Ball Settings");
+            nodeChild = nodeParent.Nodes.Add(WildBallGameSettingsString);
             nodeChild.Tag = gameSettingWildBall1;
+            nodeChild.Name = WildBallGameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add("Spirit 76 Settings");
+            nodeChild = nodeParent.Nodes.Add(Spirit76GameSettingsString);
             nodeChild.Tag = gameSettingSpirit761;
+            nodeChild.Name = Spirit76GameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add("Time Bomb Settings");
+            nodeChild = nodeParent.Nodes.Add(TimeBombGameSettingsString);
             nodeChild.Tag = gameSettingTimeBomb1;
+            nodeChild.Name = TimeBombGameSettingsString;
 
             treeView1.Nodes.Add(nodeParent);
 
@@ -477,7 +533,7 @@ namespace GameTech.B3Reports.Forms
             // Prompt to save if modified
             if (m_activeControl != null)
             {
-                if (m_activeControl.IsModified())
+                if (m_activeControl.IsModified)
                 {
                     DialogResult result = MessageBox.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageBoxButtons.YesNoCancel);
                    // DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);

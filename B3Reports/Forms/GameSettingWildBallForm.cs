@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Windows.Forms;
 using GameTech.B3Reports._cs_Get;
 using GameTech.B3Reports._cs_Set;
 
@@ -22,6 +21,7 @@ namespace GameTech.B3Reports.Forms
             SuspendLayout();
             bool bResult = LoadWildBallSettings();
             ResumeLayout();
+            IsModified = false;
             return bResult;
         }
 
@@ -29,12 +29,8 @@ namespace GameTech.B3Reports.Forms
         {
             GetGameSettingsWildBall.GetSettings(m_gameSettings);
 
-            numMaxCards.Value = m_gameSettings.MaxCards;
-            numMaxBetLevel.Value = m_gameSettings.MaxBetLevel;
-            numMaxPattern.Value = m_gameSettings.MaxPatterns;
-            numMaxCalls.Value = m_gameSettings.MaxCalls;
-            numMaxPatternBonus.Value = m_gameSettings.MaxPatternsBonus;
-            numMaxCallsBonus.Value = m_gameSettings.MaxCallsBonus;
+            comboBoxMaxCard.SelectedItem = m_gameSettings.MaxCards.ToString();
+            comboBoxMaxBetLevel.SelectedItem = m_gameSettings.MaxBetLevel.ToString();
             numCallSpeed.Value = m_gameSettings.CallSpeed;
 
             const string t = "T";
@@ -57,45 +53,22 @@ namespace GameTech.B3Reports.Forms
         public override bool SaveSettings()
         {
             bool bResult = SaveWildBallSettings();
+            IsModified = false;
             return bResult;
         }
 
         private bool SaveWildBallSettings()
         {
-            if (m_gameSettings.MaxCards != (int)numMaxCards.Value)
+            if (m_gameSettings.MaxCards != int.Parse(comboBoxMaxCard.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Cards", m_gameSettings.MaxCards.ToString(), numMaxCards.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxCards = (int)numMaxCards.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Cards", m_gameSettings.MaxCards.ToString(), comboBoxMaxCard.SelectedItem.ToString());
+                m_gameSettings.MaxCards = int.Parse(comboBoxMaxCard.SelectedItem.ToString());
             }
 
-            if (m_gameSettings.MaxBetLevel != (int)numMaxBetLevel.Value)
+            if (m_gameSettings.MaxBetLevel != int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Bet Level", m_gameSettings.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxBetLevel = (int)numMaxBetLevel.Value;
-            }
-
-            if (m_gameSettings.MaxPatterns != (int)numMaxPattern.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Patterns", m_gameSettings.MaxPatterns.ToString(), numMaxPattern.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxPatterns = (int)numMaxPattern.Value;
-            }
-
-            if (m_gameSettings.MaxCalls != (int)numMaxCalls.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Calls", m_gameSettings.MaxCalls.ToString(), numMaxCalls.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxCalls = (int)numMaxCalls.Value;
-            }
-
-            if (m_gameSettings.MaxPatternsBonus != (int)numMaxPatternBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Pattern Bonus", m_gameSettings.MaxPatternsBonus.ToString(), numMaxPatternBonus.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxPatternsBonus = (int)numMaxPatternBonus.Value;
-            }
-
-            if (m_gameSettings.MaxCallsBonus != (int)numMaxCallsBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Call Bonus", m_gameSettings.MaxCallsBonus.ToString(), numMaxCallsBonus.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxCallsBonus = (int)numMaxCallsBonus.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Max Bet Level", m_gameSettings.MaxBetLevel.ToString(), comboBoxMaxBetLevel.SelectedItem.ToString());
+                m_gameSettings.MaxBetLevel = int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString());
             }
 
             if (m_gameSettings.CallSpeed != (int)numCallSpeed.Value)
@@ -191,6 +164,11 @@ namespace GameTech.B3Reports.Forms
             SetGameSettingsWildBall.SetSettings(m_gameSettings);
 
             return true;
+        }
+
+        private void ModifiedSettings(object sender, EventArgs e)
+        {
+            IsModified = true;
         }
     }
 }

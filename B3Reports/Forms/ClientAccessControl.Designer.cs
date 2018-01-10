@@ -57,6 +57,7 @@
             this.dgClientAccess.RowHeadersVisible = false;
             this.dgClientAccess.Size = new System.Drawing.Size(748, 585);
             this.dgClientAccess.TabIndex = 0;
+            this.dgClientAccess.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClientAccess_CellContentClick);
             // 
             // ClientAccessControl
             // 

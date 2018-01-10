@@ -22,6 +22,7 @@ namespace GameTech.B3Reports.Forms
             this.SuspendLayout();
             bool bResult = LoadJailBreakSettings();
             this.ResumeLayout();
+            IsModified = false;
             return bResult;
         }
 
@@ -29,12 +30,8 @@ namespace GameTech.B3Reports.Forms
         {
             GetGameSettingJailbreak ggsjb = new GetGameSettingJailbreak();
 
-            numMaxCards.Value = GetGameSettingJailbreak.maxcards;
-            numMaxBetLevel.Value = GetGameSettingJailbreak.maxbetlevel;
-            numMaxPattern.Value = GetGameSettingJailbreak.maxpatterns;
-            numMaxCalls.Value = GetGameSettingJailbreak.maxcalls;
-            numMaxPatternBonus.Value = GetGameSettingJailbreak.maxpatterns_bonus;
-            numMaxCallsBonus.Value = GetGameSettingJailbreak.maxcalls_bonus;
+            comboBoxMaxCard.SelectedItem = GetGameSettingJailbreak.maxcards.ToString();
+            comboBoxMaxBetLevel.SelectedItem = GetGameSettingJailbreak.maxbetlevel.ToString();
             numCallSpeed.Value = GetGameSettingJailbreak.callspeed;
 
             if (GetGameSettingJailbreak.autocall == "T")
@@ -105,6 +102,7 @@ namespace GameTech.B3Reports.Forms
             Cursor curs = Cursors.WaitCursor;
             bool bResult = SaveJailBreakGameSettings();
             curs = Cursors.Default;
+            IsModified = false;
             return bResult;
             //return base.SaveSettings();
         }
@@ -114,48 +112,19 @@ namespace GameTech.B3Reports.Forms
         {
             GetGameSettingJailbreak x = new GetGameSettingJailbreak();//Let us use the set instead of the static variable. Does it execute the class again?
 
-            if (x.MaxCards != (int)numMaxCards.Value)
+            if (x.MaxCards != int.Parse(comboBoxMaxCard.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Cards", x.MaxCards.ToString(), numMaxCards.Value.ToString());
-                x.MaxCards = (int)numMaxCards.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Cards", x.MaxCards.ToString(), comboBoxMaxCard.SelectedItem.ToString());
+                x.MaxCards = int.Parse(comboBoxMaxCard.SelectedItem.ToString());
+            }
 
+            if (x.MaxBetLevel != int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString()))
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Bet Level", x.MaxBetLevel.ToString(), comboBoxMaxBetLevel.SelectedItem.ToString());
+                x.MaxBetLevel = int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString());
 
             }
 
-            if (x.MaxBetLevel != (int)numMaxBetLevel.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Bet Level", x.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString());
-                x.MaxBetLevel = (int)numMaxBetLevel.Value;
-
-            }
-
-            if (x.MaxPatterns != (int)numMaxPattern.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Patterns", x.MaxPatterns.ToString(), numMaxPattern.Value.ToString());
-                x.MaxPatterns = (int)numMaxPattern.Value;
-
-            }
-
-            if (x.MaxCalls != (int)numMaxCalls.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Calls", x.MaxCalls.ToString(), numMaxCalls.Value.ToString());
-                x.MaxCalls = (int)numMaxCalls.Value;
-
-            }
-
-            if (x.MaxPattern_Bonus != (int)numMaxPatternBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Pattern Bonus", x.MaxPattern_Bonus.ToString(), numMaxPatternBonus.Value.ToString());
-                x.MaxPattern_Bonus = (int)numMaxPatternBonus.Value;
-
-            }
-
-            if (x.MaxCalls_Bonus != (int)numMaxCallsBonus.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Max Call Bonus", x.MaxCalls_Bonus.ToString(), numMaxCallsBonus.Value.ToString());
-                x.MaxCalls_Bonus = (int)numMaxCallsBonus.Value;
-
-            }
 
             if (x.CallSpeed != (int)numCallSpeed.Value)
             {
@@ -303,106 +272,24 @@ namespace GameTech.B3Reports.Forms
             NumericUpDown NUDown = (NumericUpDown)sender;
             if (NUDown.Text == "")
             {
-                if (Convert.ToInt32(NUDown.Tag) == 1)
+                if (Convert.ToInt32(NUDown.Tag) == 7)
                 {
-                    if (GetGameSettingJailbreak.maxcards == this.numMaxCards.Maximum)
+                    if (GetGameSettingJailbreak.callspeed == this.numCallSpeed.Maximum)
                     {
-                        numMaxCards.Value = GetGameSettingJailbreak.maxcards - 1;
+                        numCallSpeed.Value = GetGameSettingJailbreak.callspeed - 1;
                     }
                     else
-                    { numMaxCards.Value = GetGameSettingJailbreak.maxcards + 1; }
-                    numMaxCards.Value = GetGameSettingJailbreak.maxcards;
-
+                    {
+                        numCallSpeed.Value = GetGameSettingJailbreak.callspeed + 1;
+                    }
+                    numCallSpeed.Value = GetGameSettingJailbreak.callspeed;
                 }
-                else
-                    if (Convert.ToInt32(NUDown.Tag) == 2)
-                    {
-                        if (GetGameSettingJailbreak.maxbetlevel == this.numMaxBetLevel.Maximum)
-                        {
-                            numMaxBetLevel.Value = GetGameSettingJailbreak.maxbetlevel - 1;
-                        }
-                        else { numMaxBetLevel.Value = GetGameSettingJailbreak.maxbetlevel + 1; }
-                        numMaxBetLevel.Value = GetGameSettingJailbreak.maxbetlevel;
-                    }
-                    else
-                        if (Convert.ToInt32(NUDown.Tag) == 3)
-                        {
-                            if (GetGameSettingJailbreak.maxpatterns == this.numMaxPattern.Maximum)
-                            {
-                                numMaxPattern.Value = GetGameSettingJailbreak.maxpatterns - 1;
-                            }
-                            else { numMaxPattern.Value = GetGameSettingJailbreak.maxpatterns + 1; }
-                            numMaxPattern.Value = GetGameSettingJailbreak.maxpatterns;
-                        }
-                        else
-                            if (Convert.ToInt32(NUDown.Tag) == 4)
-                            {
-                                if (GetGameSettingJailbreak.maxcalls == this.numMaxCalls.Maximum)
-                                {
-                                    numMaxCalls.Value = GetGameSettingJailbreak.maxcalls - 1;
-                                }
-                                else { numMaxCalls.Value = GetGameSettingJailbreak.maxcalls + 1; }
-                                numMaxCalls.Value = GetGameSettingJailbreak.maxcalls;
-                            }
-                            else
-                                if (Convert.ToInt32(NUDown.Tag) == 5)
-                                {
-                                    if (GetGameSettingJailbreak.maxpatterns_bonus == this.numMaxPatternBonus.Maximum)
-                                    {
-                                        numMaxPatternBonus.Value = GetGameSettingJailbreak.maxpatterns_bonus - 1;
-                                    }
-                                    else { numMaxPatternBonus.Value = GetGameSettingJailbreak.maxpatterns_bonus + 1; }
-                                    numMaxPatternBonus.Value = GetGameSettingJailbreak.maxpatterns_bonus;
-                                }
-                                else if (Convert.ToInt32(NUDown.Tag) == 6)
-                                {
-                                    if (GetGameSettingJailbreak.maxcalls_bonus == this.numMaxCallsBonus.Maximum)
-                                    {
-                                        numMaxCallsBonus.Value = GetGameSettingJailbreak.maxcalls_bonus - 1;
-                                    }
-                                    else
-                                    {
-                                        numMaxCallsBonus.Value = GetGameSettingJailbreak.maxcalls_bonus + 1;
-                                    }
-                                    numMaxCallsBonus.Value = GetGameSettingJailbreak.maxcalls_bonus;
-
-                                }
-                                else if (Convert.ToInt32(NUDown.Tag) == 7)
-                                {
-                                    if (GetGameSettingJailbreak.callspeed == this.numCallSpeed.Maximum)
-                                    {
-                                        numCallSpeed.Value = GetGameSettingJailbreak.callspeed - 1;
-                                    }
-                                    else
-                                    {
-                                        numCallSpeed.Value = GetGameSettingJailbreak.callspeed + 1;
-                                    }
-                                    numCallSpeed.Value = GetGameSettingJailbreak.callspeed;
-                                }
-                                //else if (Convert.ToInt32(NUDown.Tag) == 7)
-                                //{
-                                //    if (GetGameSettingJailbreak.callspeed_min == this.numCallSpeedMin.Maximum)
-                                //    {
-                                //        numCallSpeedMin.Value = GetGameSettingJailbreak.callspeed_min - 1;
-                                //    }
-                                //    else { numCallSpeedMin.Value = GetGameSettingJailbreak.callspeed_min + 1; }
-                                //    numCallSpeedMin.Value = GetGameSettingJailbreak.callspeed_min;
-                                //}
-                                //else if (Convert.ToInt32(NUDown.Tag) == 8)
-                                //{
-                                //    if (GetGameSettingJailbreak.callspeed_max == this.numCallSpeedMax.Maximum)
-                                //    {
-                                //        numCallSpeedMax.Value = GetGameSettingJailbreak.callspeed_max - 1;
-                                //    }
-                                //    else
-                                //    {
-                                //        numCallSpeedMax.Value = GetGameSettingJailbreak.callspeed_max + 1;
-                                //    }
-                                //    numCallSpeedMax.Value = GetGameSettingJailbreak.callspeed_max;
-
-                                //}
-
             }
+        }
+
+        private void ModifiedSettings(object sender, EventArgs e)
+        {
+            IsModified = true;
         }
     }
 }

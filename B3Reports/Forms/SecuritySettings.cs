@@ -30,6 +30,7 @@ namespace GameTech.B3Reports.Forms
             this.SuspendLayout();
             bool bResult = LoadSecuritySettings();
             this.ResumeLayout(true);
+            IsModified = false;
             return bResult;
         }
 
@@ -38,6 +39,7 @@ namespace GameTech.B3Reports.Forms
             Cursor x = Cursors.WaitCursor;  //  Common.BeginWait();        
             bool bResult = SaveSecuritySettings();
             x = Cursors.Default; // Common.EndWait();
+            IsModified = false;
             return bResult;
         }
 
@@ -215,6 +217,7 @@ namespace GameTech.B3Reports.Forms
 
         private void chkUsePasswordComplexity_CheckedChanged(object sender, EventArgs e)
         {
+            IsModified = true;
             clearError();
             CheckBox x = (CheckBox)sender;
 
@@ -229,6 +232,7 @@ namespace GameTech.B3Reports.Forms
 
         private void numMinimumPasswordLength_ValueChanged(object sender, EventArgs e)
         {
+            IsModified = true;
             //NumericUpDown NumericUD = (NumericUpDown)sender;
             //if (NumericUD.Value.ToString() == string.Empty)
             //{
@@ -294,8 +298,6 @@ namespace GameTech.B3Reports.Forms
             if (!ValidateChildren(ValidationConstraints.Enabled | ValidationConstraints.Visible))
                 return;
         }
-
-      
     } 
 } 
 

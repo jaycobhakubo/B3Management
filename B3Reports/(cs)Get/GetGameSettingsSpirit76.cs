@@ -37,6 +37,7 @@ namespace GameTech.B3Reports._cs_Get
                         gameSettings.Denom200 = reader.GetString(16);
                         gameSettings.Denom500 = reader.GetString(17);
                         gameSettings.HideCardSerialNumber = reader.GetString(18);
+                        gameSettings.SingleOfferBonus = reader.GetString(19);
                     }
                 }
             }

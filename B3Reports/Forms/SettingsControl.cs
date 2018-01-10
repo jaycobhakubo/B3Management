@@ -11,14 +11,16 @@ namespace GameTech.B3Reports.Forms
 {
     public partial class SettingsControl : UserControl
     {
+        protected bool IsEnabled;
+
         public virtual bool LoadSettings() { return true; }
         public virtual bool SaveSettings() { return true; }
-        public virtual bool IsModified() { return false; }
         public virtual void OnActivate(object o) { }
+
+        public virtual bool IsModified { get; protected set; }
 
         private void InitializeComponent()
         {
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
             this.SuspendLayout();
             // 
@@ -30,6 +32,11 @@ namespace GameTech.B3Reports.Forms
             this.Name = "SettingsControl";
             this.ResumeLayout(false);
 
+        }
+
+        public SettingsControl()
+        {
+            IsEnabled = true;
         }
 
         // The following routines were added to avoid Parse() from throwing exceptions for null values
@@ -93,7 +100,19 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
+        public void EnableControls(bool enable)
+        {
+            if (enable == IsEnabled)
+            {
+                return;
+            }
 
+            IsEnabled = enable;
+            foreach (Control control in Controls)
+            {
+                control.Enabled = enable;
+            }
+        }
 
     }
 }

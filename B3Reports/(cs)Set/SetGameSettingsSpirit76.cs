@@ -35,7 +35,8 @@ namespace GameTech.B3Reports._cs_Set
                                                         ,@spdenom_100 
                                                         ,@spdenom_200 
                                                         ,@spdenom_500
-                                                        ,@sphidecardserialnum"
+                                                        ,@sphidecardserialnum
+                                                        ,@spsingleoffer_bonus"
                                                         , sc))
                 {
                     cmd.Parameters.AddWithValue("spmaxcards", gameSettings.MaxCards);
@@ -57,6 +58,7 @@ namespace GameTech.B3Reports._cs_Set
                     cmd.Parameters.AddWithValue("spdenom_200", gameSettings.Denom200);
                     cmd.Parameters.AddWithValue("spdenom_500", gameSettings.Denom500);
                     cmd.Parameters.AddWithValue("sphidecardserialnum", gameSettings.HideCardSerialNumber);
+                    cmd.Parameters.AddWithValue("spsingleoffer_bonus", gameSettings.SingleOfferBonus);
                     cmd.ExecuteNonQuery();
                     //cmd.ExecuteNonQuery(); //or you could try this if did not work                 
                 }

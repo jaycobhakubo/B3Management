@@ -22,6 +22,7 @@ namespace GameTech.B3Reports.Forms
             SuspendLayout();
             bool bResult = LoadTimeBombSettings();
             ResumeLayout();
+            IsModified = false;
             return bResult;
         }
 
@@ -29,10 +30,8 @@ namespace GameTech.B3Reports.Forms
         private bool LoadTimeBombSettings()
         {
             GetGameSettingsTimeBomb.GetSettings(m_gameSettings);
-            numMaxCards.Value = m_gameSettings.MaxCards;
-            numMaxBetLevel.Value = m_gameSettings.MaxBetLevel;
-            numMaxPattern.Value = m_gameSettings.MaxPatterns;
-            numMaxCalls.Value = m_gameSettings.MaxCalls;
+            comboBoxMaxCard.SelectedItem = m_gameSettings.MaxCards.ToString();
+            comboBoxMaxBetLevel.SelectedItem = m_gameSettings.MaxBetLevel.ToString();
             numCallSpeed.Value = m_gameSettings.CallSpeed;
 
             const string t = "T";
@@ -49,40 +48,29 @@ namespace GameTech.B3Reports.Forms
             chkbxDenom1d.Checked = m_gameSettings.Denom100 == t;
             chkbxDenom2d.Checked = m_gameSettings.Denom200 == t;
             chkbxDenom5d.Checked = m_gameSettings.Denom500 == t;
-            return true; 
+            return true;
 
         }
 
         public override bool SaveSettings()
         {
             bool bResult = SaveTimeBombGameSettings();
+            IsModified = false;
             return bResult;
         }
 
         private bool SaveTimeBombGameSettings()
         {
-            if (m_gameSettings.MaxCards != (int)numMaxCards.Value)
+            if (m_gameSettings.MaxCards != int.Parse(comboBoxMaxCard.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Cards", m_gameSettings.MaxCards.ToString(), numMaxCards.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxCards = (int)numMaxCards.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Cards", m_gameSettings.MaxCards.ToString(), comboBoxMaxCard.SelectedItem.ToString());
+                m_gameSettings.MaxCards = int.Parse(comboBoxMaxCard.SelectedItem.ToString());
             }
 
-            if (m_gameSettings.MaxBetLevel != (int)numMaxBetLevel.Value)
+            if (m_gameSettings.MaxBetLevel != int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString()))
             {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Bet Level", m_gameSettings.MaxBetLevel.ToString(), numMaxBetLevel.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxBetLevel = (int)numMaxBetLevel.Value;
-            }
-
-            if (m_gameSettings.MaxPatterns != (int)numMaxPattern.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Patterns", m_gameSettings.MaxPatterns.ToString(), numMaxPattern.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxPatterns = (int)numMaxPattern.Value;
-            }
-
-            if (m_gameSettings.MaxCalls != (int)numMaxCalls.Value)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Calls", m_gameSettings.MaxCalls.ToString(), numMaxCalls.Value.ToString(CultureInfo.InvariantCulture));
-                m_gameSettings.MaxCalls = (int)numMaxCalls.Value;
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Max Bet Level", m_gameSettings.MaxBetLevel.ToString(), comboBoxMaxBetLevel.SelectedItem.ToString());
+                m_gameSettings.MaxBetLevel = int.Parse(comboBoxMaxBetLevel.SelectedItem.ToString());
             }
 
             if (m_gameSettings.CallSpeed != (int)numCallSpeed.Value)
@@ -178,55 +166,21 @@ namespace GameTech.B3Reports.Forms
             NumericUpDown nuDown = (NumericUpDown)sender;
             if (nuDown.Text == "")
             {
-                if (Convert.ToInt32(nuDown.Tag) == 1)
+               if (Convert.ToInt32(nuDown.Tag) == 5)
                 {
-                    if (GetGameSettingsCrazyBout.maxcards == numMaxCards.Maximum)
+                    if (GetGameSettingsCrazyBout.callspeed_max == numCallSpeed.Maximum)
                     {
-                        numMaxCards.Value = GetGameSettingsCrazyBout.maxcards - 1;
+                        numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max - 1;
                     }
-                    else
-                    { numMaxCards.Value = GetGameSettingsCrazyBout.maxcards + 1; }
-                    numMaxCards.Value = GetGameSettingsCrazyBout.maxcards;
-
-                }else
-                if (Convert.ToInt32(nuDown.Tag) == 2)
-                {
-                    if (GetGameSettingsCrazyBout.maxbetlevel == numMaxBetLevel.Maximum)
-                    {
-                        numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel - 1;
-                    }
-                    else { numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel + 1; }
-                    numMaxBetLevel.Value = GetGameSettingsCrazyBout.maxbetlevel;
-                }else
-                    if (Convert.ToInt32(nuDown.Tag) == 3)
-                    {
-                        if (GetGameSettingsCrazyBout.maxpatterns == numMaxPattern.Maximum)
-                        {
-                            numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns - 1;
-                        }
-                        else { numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns + 1; }
-                        numMaxPattern.Value = GetGameSettingsCrazyBout.maxpatterns;
-                    }
-                    else
-                        if (Convert.ToInt32(nuDown.Tag) == 4)
-                    {
-                        if (GetGameSettingsCrazyBout.maxcalls == numMaxCalls.Maximum)
-                        {
-                            numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls - 1;
-                        }
-                        else { numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls + 1; }
-                        numMaxCalls.Value = GetGameSettingsCrazyBout.maxcalls;
-                    }else
-                if (Convert.ToInt32(nuDown.Tag) == 5)
-                      {
-                          if (GetGameSettingsCrazyBout.callspeed_max == numCallSpeed.Maximum)
-                          {
-                              numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max - 1;
-                          }
-                          else { numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max + 1; }
-                          numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max;
-                      }
+                    else { numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max + 1; }
+                    numCallSpeed.Value = GetGameSettingsCrazyBout.callspeed_max;
+                }
             }
+        }
+
+        private void ModifiedSettings(object sender, EventArgs e)
+        {
+            IsModified = true;
         }
 
     }

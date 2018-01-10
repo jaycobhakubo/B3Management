@@ -103,6 +103,7 @@ namespace GameTech.B3Reports.Forms
             //errorProvider1.Clear();
             bool bResult = LoadClientAccessControl();
             this.ResumeLayout(true);
+            IsModified = false;
             return bResult;
         }
 
@@ -160,6 +161,8 @@ namespace GameTech.B3Reports.Forms
 
         public bool SaveClientAccessControl(DataGridView dgAccess_control)
         {
+            IsModified = false;
+
             //dataGridView1.CurrentCell = null;
             dgClientAccess = dgAccess_control;
 
@@ -200,12 +203,10 @@ namespace GameTech.B3Reports.Forms
             return true;
 
         }
-
-        //private void dgClientAccess_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    MessageBox.Show("Test");
-        //}
-
+        private void dgClientAccess_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            IsModified = true;
+        }
       
     }
 }
