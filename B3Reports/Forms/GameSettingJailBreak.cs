@@ -38,12 +38,7 @@ namespace GameTech.B3Reports.Forms
             { chkbxAutoCall.Checked = true; }
             else
             { chkbxAutoCall.Checked = false; }
-
-            if (GetGameSettingJailbreak.autoplay == "T")
-            { chkbxAutoPlay.Checked = true; }
-            else
-            { chkbxAutoPlay.Checked = false; }
-
+            
             if (GetGameSettingJailbreak.hidecardserialnum == "T")
             { chkbxHideCardSerialNumber.Checked = true; }
             else
@@ -148,15 +143,7 @@ namespace GameTech.B3Reports.Forms
                 x.AutoCall = UIValue;//(chkbxAutoCall.Checked == true) ? "T" : "F";
 
             }
-
-            UIValue = (chkbxAutoPlay.Checked == true) ? "T" : "F";
-            if (x.AutoPlay != UIValue)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Jailbreak Setting - Auto Play", x.AutoPlay.ToString(), UIValue);
-                x.AutoPlay = UIValue;
-
-            }
-
+            
             UIValue = (chkbxDenom1.Checked == true) ? "T" : "F";
             if (x.Denom_1 != UIValue)
             {

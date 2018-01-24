@@ -25,13 +25,6 @@ namespace GameTech.B3Reports
         public static string GameRecalPasswords = "";
         public static int WaitCountDownForOtherPLayers = 11;
 
-        public static bool IsCrazyBoutEnabled { get; set; }
-        public static bool IsJailBreakEnabled { get; set; }
-        public static bool IsMayaMoneyEnabled { get; set; }
-        public static bool IsWildBallEnabled { get; set; }
-        public static bool IsSpirit76Enabled { get; set; }
-        public static bool IsTimeBombEnabled { get; set; }
-
         private int m_GameThreads;
 
         public int GameThreads { get { return m_GameThreads; } }
@@ -65,14 +58,6 @@ namespace GameTech.B3Reports
             {
                 sc.Close();
             }
-
-            IsCrazyBoutEnabled = true;
-            IsJailBreakEnabled = true;
-            IsMayaMoneyEnabled = true;
-            IsWildBallEnabled = true;
-            IsSpirit76Enabled = true;
-            IsTimeBombEnabled = true;
-
         }
     }
 }

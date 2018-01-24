@@ -44,7 +44,6 @@
             this.chkbxDenom1d = new System.Windows.Forms.CheckBox();
             this.chkbxDenom25 = new System.Windows.Forms.CheckBox();
             this.chkbxAutoCall = new System.Windows.Forms.CheckBox();
-            this.chkbxAutoPlay = new System.Windows.Forms.CheckBox();
             this.chkbxHideCardSerialNumber = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,7 +61,6 @@
             this.groupBox1.Controls.Add(this.chkbxSingleOfferBonus);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.chkbxAutoCall);
-            this.groupBox1.Controls.Add(this.chkbxAutoPlay);
             this.groupBox1.Controls.Add(this.chkbxHideCardSerialNumber);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -82,7 +80,7 @@
             "2",
             "3",
             "4"});
-            this.comboBoxMaxBetLevel.Location = new System.Drawing.Point(275, 94);
+            this.comboBoxMaxBetLevel.Location = new System.Drawing.Point(274, 92);
             this.comboBoxMaxBetLevel.Name = "comboBoxMaxBetLevel";
             this.comboBoxMaxBetLevel.Size = new System.Drawing.Size(120, 30);
             this.comboBoxMaxBetLevel.TabIndex = 79;
@@ -94,7 +92,7 @@
             this.comboBoxMaxCard.Items.AddRange(new object[] {
             "4",
             "6"});
-            this.comboBoxMaxCard.Location = new System.Drawing.Point(275, 53);
+            this.comboBoxMaxCard.Location = new System.Drawing.Point(274, 52);
             this.comboBoxMaxCard.Name = "comboBoxMaxCard";
             this.comboBoxMaxCard.Size = new System.Drawing.Size(120, 30);
             this.comboBoxMaxCard.TabIndex = 78;
@@ -103,7 +101,7 @@
             // numCallSpeed
             // 
             this.numCallSpeed.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numCallSpeed.Location = new System.Drawing.Point(275, 137);
+            this.numCallSpeed.Location = new System.Drawing.Point(274, 132);
             this.numCallSpeed.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -129,7 +127,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(59, 139);
+            this.label6.Location = new System.Drawing.Point(59, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 22);
             this.label6.TabIndex = 12;
@@ -139,7 +137,7 @@
             // 
             this.chkbxSingleOfferBonus.AutoSize = true;
             this.chkbxSingleOfferBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbxSingleOfferBonus.Location = new System.Drawing.Point(496, 135);
+            this.chkbxSingleOfferBonus.Location = new System.Drawing.Point(62, 215);
             this.chkbxSingleOfferBonus.Name = "chkbxSingleOfferBonus";
             this.chkbxSingleOfferBonus.Size = new System.Drawing.Size(159, 26);
             this.chkbxSingleOfferBonus.TabIndex = 16;
@@ -157,7 +155,7 @@
             this.groupBox2.Controls.Add(this.chkbxDenom50);
             this.groupBox2.Controls.Add(this.chkbxDenom1d);
             this.groupBox2.Controls.Add(this.chkbxDenom25);
-            this.groupBox2.Location = new System.Drawing.Point(506, 217);
+            this.groupBox2.Location = new System.Drawing.Point(525, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(192, 352);
             this.groupBox2.TabIndex = 71;
@@ -169,7 +167,7 @@
             this.chkbxDenom5d.AutoSize = true;
             this.chkbxDenom5d.Checked = true;
             this.chkbxDenom5d.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom5d.Location = new System.Drawing.Point(48, 312);
+            this.chkbxDenom5d.Location = new System.Drawing.Point(17, 312);
             this.chkbxDenom5d.Name = "chkbxDenom5d";
             this.chkbxDenom5d.Size = new System.Drawing.Size(88, 26);
             this.chkbxDenom5d.TabIndex = 7;
@@ -180,7 +178,7 @@
             // chkbxDenom1
             // 
             this.chkbxDenom1.AutoSize = true;
-            this.chkbxDenom1.Location = new System.Drawing.Point(48, 32);
+            this.chkbxDenom1.Location = new System.Drawing.Point(17, 32);
             this.chkbxDenom1.Name = "chkbxDenom1";
             this.chkbxDenom1.Size = new System.Drawing.Size(73, 26);
             this.chkbxDenom1.TabIndex = 0;
@@ -194,7 +192,7 @@
             this.chkbxDenom5.AutoSize = true;
             this.chkbxDenom5.Checked = true;
             this.chkbxDenom5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom5.Location = new System.Drawing.Point(48, 72);
+            this.chkbxDenom5.Location = new System.Drawing.Point(17, 72);
             this.chkbxDenom5.Name = "chkbxDenom5";
             this.chkbxDenom5.Size = new System.Drawing.Size(79, 26);
             this.chkbxDenom5.TabIndex = 1;
@@ -207,7 +205,7 @@
             this.chkbxDenom10.AutoSize = true;
             this.chkbxDenom10.Checked = true;
             this.chkbxDenom10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom10.Location = new System.Drawing.Point(48, 112);
+            this.chkbxDenom10.Location = new System.Drawing.Point(17, 112);
             this.chkbxDenom10.Name = "chkbxDenom10";
             this.chkbxDenom10.Size = new System.Drawing.Size(87, 26);
             this.chkbxDenom10.TabIndex = 2;
@@ -220,7 +218,7 @@
             this.chkbxDenom2d.AutoSize = true;
             this.chkbxDenom2d.Checked = true;
             this.chkbxDenom2d.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom2d.Location = new System.Drawing.Point(48, 272);
+            this.chkbxDenom2d.Location = new System.Drawing.Point(17, 272);
             this.chkbxDenom2d.Name = "chkbxDenom2d";
             this.chkbxDenom2d.Size = new System.Drawing.Size(88, 26);
             this.chkbxDenom2d.TabIndex = 6;
@@ -233,7 +231,7 @@
             this.chkbxDenom50.AutoSize = true;
             this.chkbxDenom50.Checked = true;
             this.chkbxDenom50.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom50.Location = new System.Drawing.Point(48, 192);
+            this.chkbxDenom50.Location = new System.Drawing.Point(17, 192);
             this.chkbxDenom50.Name = "chkbxDenom50";
             this.chkbxDenom50.Size = new System.Drawing.Size(87, 26);
             this.chkbxDenom50.TabIndex = 4;
@@ -246,7 +244,7 @@
             this.chkbxDenom1d.AutoSize = true;
             this.chkbxDenom1d.Checked = true;
             this.chkbxDenom1d.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom1d.Location = new System.Drawing.Point(48, 232);
+            this.chkbxDenom1d.Location = new System.Drawing.Point(17, 232);
             this.chkbxDenom1d.Name = "chkbxDenom1d";
             this.chkbxDenom1d.Size = new System.Drawing.Size(82, 26);
             this.chkbxDenom1d.TabIndex = 5;
@@ -259,7 +257,7 @@
             this.chkbxDenom25.AutoSize = true;
             this.chkbxDenom25.Checked = true;
             this.chkbxDenom25.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDenom25.Location = new System.Drawing.Point(48, 152);
+            this.chkbxDenom25.Location = new System.Drawing.Point(17, 152);
             this.chkbxDenom25.Name = "chkbxDenom25";
             this.chkbxDenom25.Size = new System.Drawing.Size(87, 26);
             this.chkbxDenom25.TabIndex = 3;
@@ -270,7 +268,7 @@
             // chkbxAutoCall
             // 
             this.chkbxAutoCall.AutoSize = true;
-            this.chkbxAutoCall.Location = new System.Drawing.Point(496, 55);
+            this.chkbxAutoCall.Location = new System.Drawing.Point(62, 175);
             this.chkbxAutoCall.Name = "chkbxAutoCall";
             this.chkbxAutoCall.Size = new System.Drawing.Size(92, 26);
             this.chkbxAutoCall.TabIndex = 14;
@@ -278,21 +276,10 @@
             this.chkbxAutoCall.UseVisualStyleBackColor = true;
             this.chkbxAutoCall.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 
-            // chkbxAutoPlay
-            // 
-            this.chkbxAutoPlay.AutoSize = true;
-            this.chkbxAutoPlay.Location = new System.Drawing.Point(496, 95);
-            this.chkbxAutoPlay.Name = "chkbxAutoPlay";
-            this.chkbxAutoPlay.Size = new System.Drawing.Size(95, 26);
-            this.chkbxAutoPlay.TabIndex = 15;
-            this.chkbxAutoPlay.Text = "Auto Play";
-            this.chkbxAutoPlay.UseVisualStyleBackColor = true;
-            this.chkbxAutoPlay.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
-            // 
             // chkbxHideCardSerialNumber
             // 
             this.chkbxHideCardSerialNumber.AutoSize = true;
-            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(496, 175);
+            this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(62, 255);
             this.chkbxHideCardSerialNumber.Name = "chkbxHideCardSerialNumber";
             this.chkbxHideCardSerialNumber.Size = new System.Drawing.Size(205, 26);
             this.chkbxHideCardSerialNumber.TabIndex = 17;
@@ -304,7 +291,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(58, 97);
+            this.label1.Location = new System.Drawing.Point(58, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 22);
             this.label1.TabIndex = 2;
@@ -314,7 +301,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(58, 57);
+            this.label2.Location = new System.Drawing.Point(58, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 22);
             this.label2.TabIndex = 0;
@@ -350,7 +337,6 @@
         private System.Windows.Forms.CheckBox chkbxDenom1d;
         private System.Windows.Forms.CheckBox chkbxDenom25;
         private System.Windows.Forms.CheckBox chkbxAutoCall;
-        private System.Windows.Forms.CheckBox chkbxAutoPlay;
         private System.Windows.Forms.CheckBox chkbxHideCardSerialNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

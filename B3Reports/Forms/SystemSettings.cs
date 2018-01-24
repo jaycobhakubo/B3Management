@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using GameTech.B3Reports.Properties;
 using System.ServiceProcess;
 using System.Management;
+using GameTech.B3Reports._cs_Other;
 
 namespace GameTech.B3Reports.Forms
 {
@@ -18,12 +19,7 @@ namespace GameTech.B3Reports.Forms
 
         #region VARIABLES
 
-        private const string CrazyBoutGameSettingsString = "Crazy Bout Settings";
-        private const string JailBreakGameSettingsString = "Jailbreak Settings";
-        private const string MayaMoneyGameSettingsString = "Maya Money Settings";
-        private const string WildBallGameSettingsString = "Wild Ball Settings";
-        private const string Spirit76GameSettingsString = "Spirit 76 Settings";
-        private const string TimeBombGameSettingsString = "Time Bomb Settings";
+        private const string GameSettingsString = "{0} Settings";
 
         GetSystemConfig SystemConfig;
         SettingsControl m_activeControl = null;
@@ -42,6 +38,8 @@ namespace GameTech.B3Reports.Forms
         private bool m_isSpirit76GameSettings;
         private bool m_isTimeBombGameSettings;
 
+        private List<string> m_activeGameList; 
+
         #endregion
 
 
@@ -53,14 +51,13 @@ namespace GameTech.B3Reports.Forms
             AdjustWindowSize.adjust(this);
             pictureBox1.BringToFront();
            // clientAccessControl1.dgClientAccess.CellClick += dgClientAccessCellClick;
-
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             gameSettings1.EnableGameCheckedEvent += EnableGameCheckedEvent;
         }
 
         private void SystemSettings_Load(object sender, EventArgs e)
         {
             this.Location = new Point(WindowsDefaultLocation.PointA, WindowsDefaultLocation.PointB);
-        
         }
 
 
@@ -128,42 +125,61 @@ namespace GameTech.B3Reports.Forms
 
         private void EnableGameCheckedEvent(object sender, EventArgs eventArgs)
         {
-            var crazyBoutNode = treeView1.Nodes.Find(CrazyBoutGameSettingsString, true).FirstOrDefault();
-            var jailBreakNode = treeView1.Nodes.Find(JailBreakGameSettingsString, true).FirstOrDefault();
-            var mayaMoneyNode = treeView1.Nodes.Find(MayaMoneyGameSettingsString, true).FirstOrDefault();
-            var wildBallNode = treeView1.Nodes.Find(WildBallGameSettingsString, true).FirstOrDefault();
-            var spirit76Node = treeView1.Nodes.Find(Spirit76GameSettingsString, true).FirstOrDefault();
-            var timeBombNode = treeView1.Nodes.Find(TimeBombGameSettingsString, true).FirstOrDefault();
+            var checkBox = sender as CheckBox;
+            if (checkBox == null)
+            {
+                return;
+            }
 
-            if (crazyBoutNode != null)
+            var gameInfo = checkBox.Tag as B3GamesInfo;
+            if (gameInfo == null)
             {
-                crazyBoutNode.ForeColor = gameSettings1.IsCrazyBoutEnabled ? Color.Black : Color.DarkGray;
-                gameSettingCrazyBout1.EnableControls(gameSettings1.IsCrazyBoutEnabled);
+                return;
             }
-            if (jailBreakNode != null)
+            var node = treeView1.Nodes.Find(string.Format(GameSettingsString, gameInfo.DisplayName), true).FirstOrDefault();
+            if (node == null)
             {
-                jailBreakNode.ForeColor = gameSettings1.IsJailBreakEnabled ? Color.Black : Color.DarkGray;
-                gameSettingJailBreak1.EnableControls(gameSettings1.IsJailBreakEnabled);
+                return;
             }
-            if (mayaMoneyNode != null)
+
+            switch (gameInfo.GameIconName)
             {
-                mayaMoneyNode.ForeColor = gameSettings1.IsMayaMoneyEnabled ? Color.Black : Color.DarkGray;
-                gameSettingMayaMoney1.EnableControls(gameSettings1.IsMayaMoneyEnabled);
-            }
-            if (wildBallNode != null)
-            {
-                wildBallNode.ForeColor = gameSettings1.IsWildBallEnabled ? Color.Black : Color.DarkGray;
-                gameSettingWildBall1.EnableControls(gameSettings1.IsWildBallEnabled);
-            }
-            if (spirit76Node != null)
-            {
-                spirit76Node.ForeColor = gameSettings1.IsSpirit76Enabled ? Color.Black : Color.DarkGray;
-                gameSettingSpirit761.EnableControls(gameSettings1.IsSpirit76Enabled);
-            }
-            if (timeBombNode != null)
-            {
-                timeBombNode.ForeColor = gameSettings1.IsTimeBombEnabled ? Color.Black : Color.DarkGray;
-                gameSettingTimeBomb1.EnableControls(gameSettings1.IsTimeBombEnabled);
+                case GameIconNameEnum.CRAZYBOUT:
+                    {
+                        node.ForeColor = gameSettings1.IsCrazyBoutEnabled ? Color.Black : Color.DarkGray;
+                        gameSettingCrazyBout1.EnableControls(gameSettings1.IsCrazyBoutEnabled);
+                    }
+                    break;
+                case GameIconNameEnum.JAILBREAK:
+                    {
+                        node.ForeColor = gameSettings1.IsJailBreakEnabled ? Color.Black : Color.DarkGray;
+                        gameSettingJailBreak1.EnableControls(gameSettings1.IsJailBreakEnabled);
+                    }
+                    break;
+                case GameIconNameEnum.MAYAMONEY:
+                    {
+                        node.ForeColor = gameSettings1.IsMayaMoneyEnabled ? Color.Black : Color.DarkGray;
+                        gameSettingMayaMoney1.EnableControls(gameSettings1.IsMayaMoneyEnabled);
+                    }
+                    break;
+                case GameIconNameEnum.SPIRIT76:
+                    {
+                        node.ForeColor = gameSettings1.IsSpirit76Enabled ? Color.Black : Color.DarkGray;
+                        gameSettingSpirit761.EnableControls(gameSettings1.IsSpirit76Enabled);
+                    }
+                    break;
+                case GameIconNameEnum.WILDBALL:
+                    {
+                        node.ForeColor = gameSettings1.IsWildBallEnabled ? Color.Black : Color.DarkGray;
+                        gameSettingWildBall1.EnableControls(gameSettings1.IsWildBallEnabled);
+                    }
+                    break;
+                case GameIconNameEnum.TIMEBOMB:
+                    {
+                        node.ForeColor = gameSettings1.IsTimeBombEnabled ? Color.Black : Color.DarkGray;
+                        gameSettingTimeBomb1.EnableControls(gameSettings1.IsTimeBombEnabled);
+                    }
+                    break;
             }
         }
 
@@ -188,7 +204,6 @@ namespace GameTech.B3Reports.Forms
             TreeNode nodeChild;
             treeView1.Nodes.Clear();
 
-            
             CurrentLoginID clid = new CurrentLoginID();
             clid.Get();
             IsUserAccessControl = GetStaffMgmtPermissions.UserAccessPermission(CurrentLoginID.LoginID);
@@ -215,39 +230,39 @@ namespace GameTech.B3Reports.Forms
             {
                 //ndSettings1.grpBxNDSettings.Enabled = false;
             }
-
+            
             nodeParent = new TreeNode("Game Settings", 0, 1);
             nodeParent.Tag = gameSettings1;
-            nodeChild = nodeParent.Nodes.Add(CrazyBoutGameSettingsString);
-            nodeChild.Tag = gameSettingCrazyBout1;
-            nodeChild.Name = CrazyBoutGameSettingsString;
 
-            nodeChild = nodeParent.Nodes.Add(JailBreakGameSettingsString);
-            nodeChild.Tag = gameSettingJailBreak1;
-            nodeChild.Name = JailBreakGameSettingsString;
-
-            nodeChild = nodeParent.Nodes.Add(MayaMoneyGameSettingsString);
-            nodeChild.Tag = gameSettingMayaMoney1;
-            nodeChild.Name = MayaMoneyGameSettingsString;
-
-            nodeChild = nodeParent.Nodes.Add(WildBallGameSettingsString);
-            nodeChild.Tag = gameSettingWildBall1;
-            nodeChild.Name = WildBallGameSettingsString;
-
-            nodeChild = nodeParent.Nodes.Add(Spirit76GameSettingsString);
-            nodeChild.Tag = gameSettingSpirit761;
-            nodeChild.Name = Spirit76GameSettingsString;
-
-            nodeChild = nodeParent.Nodes.Add(TimeBombGameSettingsString);
-            nodeChild.Tag = gameSettingTimeBomb1;
-            nodeChild.Name = TimeBombGameSettingsString;
-
+            var b3Games = GetAvailableGames.GamesList;
+            foreach (var b3GamesInfo in b3Games)
+            {
+                nodeChild = nodeParent.Nodes.Add(string.Format(GameSettingsString, b3GamesInfo.DisplayName));
+                nodeChild.Name = string.Format(GameSettingsString, b3GamesInfo.DisplayName);
+                switch (b3GamesInfo.GameIconName)
+                {
+                    case GameIconNameEnum.CRAZYBOUT:
+                        nodeChild.Tag = gameSettingCrazyBout1;
+                        break;
+                    case GameIconNameEnum.JAILBREAK:
+                        nodeChild.Tag = gameSettingJailBreak1;
+                        break;
+                    case GameIconNameEnum.MAYAMONEY:
+                        nodeChild.Tag = gameSettingMayaMoney1;
+                        break;
+                    case GameIconNameEnum.WILDBALL:
+                        nodeChild.Tag = gameSettingWildBall1;
+                        break;
+                    case GameIconNameEnum.SPIRIT76:
+                        nodeChild.Tag = gameSettingSpirit761;
+                        break;
+                    case GameIconNameEnum.TIMEBOMB:
+                        nodeChild.Tag = gameSettingTimeBomb1;
+                        break;
+                }
+            }
+        
             treeView1.Nodes.Add(nodeParent);
-
-            //Hide it for now
-            //nodeParent = new TreeNode("Player Settings", 0, 1);
-            //nodeParent.Tag = playerSettings1;
-            //treeView1.Nodes.Add(nodeParent);
 
             nodeParent = new TreeNode("Security Settings", 0, 1);
             nodeParent.Tag = securitySettings1;
@@ -373,6 +388,7 @@ namespace GameTech.B3Reports.Forms
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            
             setSettingToFalse();
             if (imgBtnRefreshSystemSettings.Visible != false)
             {
@@ -389,7 +405,7 @@ namespace GameTech.B3Reports.Forms
             if (m_activeControl != null)
             {
                 m_activeControl.Enabled = false;
-                m_activeControl.Hide();
+                //m_activeControl.Hide();
                 m_activeControl.Visible = false;
             }
             // Get the selected node and display its panel
@@ -397,10 +413,10 @@ namespace GameTech.B3Reports.Forms
             m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
             m_activeControl.OnActivate(treeView1.SelectedNode);
             m_activeControl.Enabled = true;
-            m_activeControl.Show();
+            //m_activeControl.Show();
             m_activeControl.Visible = true;
             m_activeControl.BringToFront();
-            m_activeControl.Update();
+            //m_activeControl.Update();
             m_activeControl.LoadSettings();
             treeView1.SelectedNode = e.Node;
 
@@ -538,22 +554,22 @@ namespace GameTech.B3Reports.Forms
                     DialogResult result = MessageBox.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageBoxButtons.YesNoCancel);
                    // DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
                     this.Refresh();
-                    if (result == DialogResult.Yes)
+                    switch (result)
                     {
-                        // If save fails remain on current tab
-                        if (!m_activeControl.SaveSettings())
-                        {
+                        case DialogResult.Yes:
+                            // If save fails remain on current tab
+                            if (!m_activeControl.SaveSettings())
+                            {
+                                e.Cancel = true;
+                            }
+                            break;
+                        case DialogResult.Cancel:
                             e.Cancel = true;
-                        }
-                    }
-                    else if (result == DialogResult.Cancel)
-                    {
-                        e.Cancel = true;
-                    }
-                    else
-                    {
-                        // Flag it for reset if they do not save
-                        m_bResetPreviousControl = true;
+                            break;
+                        default:
+                            m_activeControl.IsModified = false;;
+                            m_bResetPreviousControl = true;
+                            break;
                     }
                 }
             }
@@ -570,26 +586,26 @@ namespace GameTech.B3Reports.Forms
             bool result = false;
             bool ConfirmResult = true;
 
-            if (IsClientAccessControl == true)
+            if (IsClientAccessControl && clientAccessControl1.IsModified)
             {
                 result = clientAccessControl1.SaveClientAccessControl(clientAccessControl1.dgClientAccess);
             }
-            else if (IsSecuritySettings == true)
+            else if (IsSecuritySettings && securitySettings1.IsModified)
             {                //Lets save the changes
                 result = securitySettings1.SaveSettings();
             }
-            else if (IsNDSettings == true)
+            else if (IsNDSettings && ndSettings1.IsModified)
             {
                 result = ndSettings1.SaveSettings();
             }
-            else if (IsGameSettings == true)
+            else if (IsGameSettings && gameSettings1.IsModified)
             {
                 bool vresult = gameSettings1.ValidateInput();
-                if (vresult == true)
+                if (vresult)
                 {
                     ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
                     //MessageBox.Show("Restarting Please Wait");
-                    if (ConfirmResult == true)
+                    if (ConfirmResult)
                     {
                         this.Enabled = false;
                         Cursor.Current = Cursors.WaitCursor;
@@ -598,7 +614,7 @@ namespace GameTech.B3Reports.Forms
                     }
                 }
             }
-            else if (IsCrazyBoutGameSettings == true)
+            else if (IsCrazyBoutGameSettings && gameSettingCrazyBout1.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
                 if (ConfirmResult == true)
@@ -610,7 +626,7 @@ namespace GameTech.B3Reports.Forms
                 }
 
             }
-            else if (IsJailBreakGameSettings == true)
+            else if (IsJailBreakGameSettings && gameSettingJailBreak1.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
                 if (ConfirmResult == true)
@@ -621,7 +637,7 @@ namespace GameTech.B3Reports.Forms
                     RestartAndroidService();
                 }
             }
-            else if (IsMayaMoneyGameSettings == true)
+            else if (IsMayaMoneyGameSettings && gameSettingMayaMoney1.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
                 if (ConfirmResult == true)
@@ -632,7 +648,7 @@ namespace GameTech.B3Reports.Forms
                     RestartAndroidService();
                 }
             }
-            else if (m_isWildBallGameSettings)
+            else if (m_isWildBallGameSettings && gameSettingWildBall1.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes");
                 if (ConfirmResult == true)
@@ -643,7 +659,7 @@ namespace GameTech.B3Reports.Forms
                     RestartAndroidService();
                 }
             }
-            else if (m_isSpirit76GameSettings)
+            else if (m_isSpirit76GameSettings && gameSettingSpirit761.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes");
                 if (ConfirmResult == true)
@@ -654,7 +670,7 @@ namespace GameTech.B3Reports.Forms
                     RestartAndroidService();
                 }
             }
-            else if (m_isTimeBombGameSettings)
+            else if (m_isTimeBombGameSettings && gameSettingTimeBomb1.IsModified)
             {
                 ConfirmResult = (MessageBoxConfirmation() == "Yes");
                 if (ConfirmResult == true)

@@ -61,11 +61,6 @@ namespace GameTech.B3Reports.Forms
             else 
             { chkbxAutoCall.Checked = false; }
 
-            if (GetGameSettingsCrazyBout.autoplay == "T")
-            { chkbxAutoPlay.Checked = true; }
-            else
-            { chkbxAutoPlay.Checked = false; }
-
             if (GetGameSettingsCrazyBout.singleofferbonus == "T")
             { chkbxSingleOfferBonus.Checked = true; }
             else
@@ -116,7 +111,6 @@ namespace GameTech.B3Reports.Forms
             else
             { chkbxDenom5d.Checked = false; }
             return true;
-
         }
 
         public override bool SaveSettings()
@@ -166,14 +160,6 @@ namespace GameTech.B3Reports.Forms
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Auto Call", x.AutoCall.ToString(), UIValue);
                 x.AutoCall = UIValue;//(chkbxAutoCall.Checked == true) ? "T" : "F";
-
-            }
-
-            UIValue = (chkbxAutoPlay.Checked == true) ? "T" : "F";
-            if (x.AutoPlay != UIValue)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Auto Play", x.AutoPlay.ToString(), UIValue);
-                x.AutoPlay = UIValue;
 
             }
 

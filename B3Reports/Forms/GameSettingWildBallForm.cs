@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Windows.Forms;
 using GameTech.B3Reports._cs_Get;
 using GameTech.B3Reports._cs_Set;
 
@@ -13,7 +14,6 @@ namespace GameTech.B3Reports.Forms
         {
             InitializeComponent();
             m_gameSettings = new _cs_Other.GameSettings();
-            LoadSettings();
         }
 
         public override sealed bool LoadSettings()
@@ -36,7 +36,6 @@ namespace GameTech.B3Reports.Forms
             const string t = "T";
 
             chkbxAutoCall.Checked = m_gameSettings.AutoCall == t;
-            chkbxAutoPlay.Checked = m_gameSettings.AutoPlay == t;
             chkbxHideCardSerialNumber.Checked = m_gameSettings.HideCardSerialNumber == t;
             chkbxSingleOfferBonus.Checked = m_gameSettings.SingleOfferBonus == t;
             chkbxDenom1.Checked = m_gameSettings.Denom1 == t;
@@ -82,13 +81,6 @@ namespace GameTech.B3Reports.Forms
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Auto Call", m_gameSettings.AutoCall, isTrue);
                 m_gameSettings.AutoCall = isTrue;
-            }
-
-            isTrue = chkbxAutoPlay.Checked ? "T" : "F";
-            if (m_gameSettings.AutoPlay != isTrue)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "WildBall Setting - Auto Play", m_gameSettings.AutoPlay, isTrue);
-                m_gameSettings.AutoPlay = isTrue;
             }
 
             isTrue = chkbxDenom1.Checked ? "T" : "F";

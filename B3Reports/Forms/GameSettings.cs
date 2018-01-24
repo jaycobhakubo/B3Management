@@ -1,38 +1,73 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Windows.Forms;
+using GameTech.B3Reports._cs_Other;
 
 namespace GameTech.B3Reports.Forms
 {
     public partial class GameSettings : SettingsControl
     {
         bool result_;
-
+        private List<string> m_activeGameList; 
+        private bool m_gamesEnabledModified;
+        private readonly Dictionary<string, CheckBox> m_gameCheckboxDictionary;
         public GameSettings()
         {
+            m_gameCheckboxDictionary = new Dictionary<string, CheckBox>();
             InitializeComponent();
+            m_activeGameList = GetActiveGames.B3ActiveGamesList;
+            SetAvailableGames();
             LoadSettings();
+
         }
 
         public bool IsSinglePlayerMode { get; set; }
-
+        
         public override bool LoadSettings()
         {
+            DoubleBuffered = true;
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SuspendLayout();
             errorProvider1.Clear();
             bool bResult = LoadGameSettings();
             this.ResumeLayout(true);
             IsModified = false;
+            m_gamesEnabledModified = false;
             return bResult;
         }
 
         public override bool SaveSettings()
         {
             Cursor x = Cursors.WaitCursor; 
-            SaveSecuritySettings();
+            SaveGameSettings();
             x = Cursors.Default;
             IsModified = false;
+            m_gamesEnabledModified = false;
             return result_;
+        }
+
+        private void SetAvailableGames()
+        {
+            var b3Games = GetAvailableGames.GamesList;
+            m_gameCheckboxDictionary.Clear();
+            GamesFlowPanel.Controls.Clear();
+            foreach (var b3GamesInfo in b3Games)
+            {
+                var checkBox = new CheckBox
+                {
+                    Width = 150,
+                    Margin = new Padding(7),
+                    Text = b3GamesInfo.DisplayName,
+                    Tag = b3GamesInfo
+                };
+
+                checkBox.CheckedChanged += GameCheckBox_CheckedChanged;
+
+                GamesFlowPanel.Controls.Add(checkBox);
+                m_gameCheckboxDictionary.Add(b3GamesInfo.GameIconName.ToString(), checkBox);
+            }
         }
 
         private bool LoadGameSettings()
@@ -51,7 +86,14 @@ namespace GameTech.B3Reports.Forms
                 singlePlayerPlayModeRadioButton.Checked = true;
             }
 
-            numericTextBoxWDecimal1.Text = ConvertIntToMoneyFormat.convertToDecimal(GetGameSettings.ConsolationPrize);
+            if (GetGameSettings.ConsolationPrize == 0)
+            {
+                numericUpDownExtraBonus.Value = 0.01m;
+            }
+            else
+            {
+                numericUpDownExtraBonus.Value = Convert.ToDecimal(ConvertIntToMoneyFormat.convertToDecimal(GetGameSettings.ConsolationPrize));                
+            }
            
             if (numCountdownTimer.Value == GetGameSettings.CountDownTimer)
             {
@@ -84,15 +126,30 @@ namespace GameTech.B3Reports.Forms
                 numericUpDownGameThreads.Value = Convert.ToInt32(ggs.GameThreads);
             }
 
+            m_activeGameList = GetActiveGames.B3ActiveGamesList;
 
-            CrazyBoutCheckBox.Checked = GetGameSettings.IsCrazyBoutEnabled;
-            JailBreakCheckBox.Checked = GetGameSettings.IsJailBreakEnabled;
-            MayaMoneyCheckBox.Checked = GetGameSettings.IsMayaMoneyEnabled;
-            WildBallCheckBox.Checked = GetGameSettings.IsWildBallEnabled;
-            Spirit76CheckBox.Checked = GetGameSettings.IsSpirit76Enabled;
-            TimeBombCheckBox.Checked = GetGameSettings.IsTimeBombEnabled;
+            foreach (var gameCheckBox in m_gameCheckboxDictionary.Values)
+            {
+                var gameInfo = gameCheckBox.Tag as B3GamesInfo;
+
+                switch (gameInfo.GameIconName)
+                {
+                    case GameIconNameEnum.CRAZYBOUT:
+                    case GameIconNameEnum.JAILBREAK:
+                    case GameIconNameEnum.MAYAMONEY:
+                        gameCheckBox.Checked = m_activeGameList.Contains(gameInfo.GameIconName.ToString());
+                        break;
+
+                    case GameIconNameEnum.WILDBALL:
+                    case GameIconNameEnum.SPIRIT76:
+                    case GameIconNameEnum.TIMEBOMB:
+                        gameCheckBox.Checked = IsSinglePlayerMode && m_activeGameList.Contains(gameInfo.GameIconName.ToString());
+                        break;
+                }
+            }
 
             IsModified = false;
+
             return true;
         }
 
@@ -109,16 +166,29 @@ namespace GameTech.B3Reports.Forms
             return result_;
         }
 
-        private void SaveSecuritySettings()
+        private void SaveGameSettings()
         {
-            decimal y = Convert.ToDecimal(numericTextBoxWDecimal1.Text) * 100;
-            if (y == 1) { }
+            decimal y = Convert.ToDecimal(numericUpDownExtraBonus.Value) * 100;
+
+            if (y == 1)
+            {
+                if (IsSinglePlayerMode && GetGameSettings.ConsolationPrize == 0)
+                {
+                    y = 0;
+                }
+            }
             int x = Convert.ToInt32(y);
 
             //Logged the changes
-            if (GetGameSettings.MinNumberOfPlayers != (int)numMinimumPlayer.Value)
+            if (IsSinglePlayerMode && GetGameSettings.MinNumberOfPlayers != 1)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum Number of Players", GetGameSettings.MinNumberOfPlayers.ToString(), 1.ToString());
+                GetGameSettings.MinNumberOfPlayers = 1;
+            }
+            else if(!IsSinglePlayerMode && GetGameSettings.MinNumberOfPlayers != (int)numMinimumPlayer.Value)
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum Number of Players", GetGameSettings.MinNumberOfPlayers.ToString(), numMinimumPlayer.Value.ToString());
+                GetGameSettings.MinNumberOfPlayers = (int)numMinimumPlayer.Value;
             }
             if (GetGameSettings.ConsolationPrize != x)
             {
@@ -137,25 +207,17 @@ namespace GameTech.B3Reports.Forms
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum number of Players Wait Time", GetGameSettings.WaitCountDownForOtherPLayers.ToString(), numWaitCountdownTimerOP.Value.ToString());
             }
 
-            GetGameSettings.MinNumberOfPlayers = (int)numMinimumPlayer.Value;
             GetGameSettings.ConsolationPrize = x; 
             GetGameSettings.CountDownTimer = (int)numCountdownTimer.Value;
-            GetGameSettings.GameRecalPasswords = txtbxGameRecallPassword.Text.ToString();
+            GetGameSettings.GameRecalPasswords = txtbxGameRecallPassword.Text;
             GetGameSettings.WaitCountDownForOtherPLayers = (int)numWaitCountdownTimerOP.Value;
             SetGameSettings set = new SetGameSettings();
 
-            //return true;
-        }
-
-        private void numericTextBoxWDecimal1_Validating(object sender, CancelEventArgs e)
-        {
-            if (numericTextBoxWDecimal1.Text == string.Empty)
+            if (m_gamesEnabledModified)
             {
-               // errorProvider1.SetError(numericTextBoxWDecimal1, "Consolation prize is empty");
-                errorProvider1.SetError(numericTextBoxWDecimal1, "Invalid entry");
-                e.Cancel = true;
-
+                SetActiveGames.Set(GetEnabledGames());
             }
+            //return true;
         }
 
         private void numMinimumPlayer_Click(object sender, EventArgs e)
@@ -199,12 +261,13 @@ namespace GameTech.B3Reports.Forms
             }
         }
 
-        private void radioButtonPlayMode_CheckChanged(object sender, EventArgs e)
+        private void RadioButtonPlayMode_CheckChanged(object sender, EventArgs e)
         {
             IsModified = true;
 
             if (singlePlayerPlayModeRadioButton.Checked)
             {
+                IsSinglePlayerMode = true;
                 lblMinNumberOfPlayers.Enabled = false;
                 numMinimumPlayer.Enabled = false;
 
@@ -218,18 +281,20 @@ namespace GameTech.B3Reports.Forms
 
                 lblExtraBonus.Enabled = false;
                 lblExtraBonusDollarSign.Enabled = false;
-                numericTextBoxWDecimal1.Enabled = false;
+                numericUpDownExtraBonus.Enabled = false;
 
-                WildBallCheckBox.Enabled = true;
-                Spirit76CheckBox.Enabled = true;
-                TimeBombCheckBox.Enabled = true;
+                //WildBallCheckBox.Enabled = true;
+                //Spirit76CheckBox.Enabled = true;
+                //TimeBombCheckBox.Enabled = true;
 
-                WildBallCheckBox.Checked = GetGameSettings.IsWildBallEnabled;
-                Spirit76CheckBox.Checked = GetGameSettings.IsSpirit76Enabled;
-                TimeBombCheckBox.Checked = GetGameSettings.IsTimeBombEnabled;
+                //WildBallCheckBox.Checked = GetGameSettings.IsWildBallEnabled;
+                //Spirit76CheckBox.Checked = GetGameSettings.IsSpirit76Enabled;
+                //TimeBombCheckBox.Checked = GetGameSettings.IsTimeBombEnabled;
             }
             else
             {
+                IsSinglePlayerMode = false;
+
                 lblMinNumberOfPlayers.Enabled = true;
                 numMinimumPlayer.Enabled = true;
 
@@ -243,34 +308,99 @@ namespace GameTech.B3Reports.Forms
 
                 lblExtraBonus.Enabled = true;
                 lblExtraBonusDollarSign.Enabled = true;
-                numericTextBoxWDecimal1.Enabled = true;
+                numericUpDownExtraBonus.Enabled = true;
 
-                WildBallCheckBox.Enabled = false;
-                Spirit76CheckBox.Enabled = false;
-                TimeBombCheckBox.Enabled = false;
+                //WildBallCheckBox.Enabled = false;
+                //Spirit76CheckBox.Enabled = false;
+                //TimeBombCheckBox.Enabled = false;
 
-                WildBallCheckBox.Checked = false;
-                Spirit76CheckBox.Checked = false;
-                TimeBombCheckBox.Checked = false;
+                //WildBallCheckBox.Checked = false;
+                //Spirit76CheckBox.Checked = false;
+                //TimeBombCheckBox.Checked = false;
+            }
+
+            foreach (var gameCheckBox in m_gameCheckboxDictionary.Values)
+            {
+                var gameInfo = gameCheckBox.Tag as B3GamesInfo;
+
+                switch (gameInfo.GameIconName)
+                {
+                    case GameIconNameEnum.CRAZYBOUT:
+                    case GameIconNameEnum.JAILBREAK:
+                    case GameIconNameEnum.MAYAMONEY:
+                        gameCheckBox.Checked = m_activeGameList.Contains(gameInfo.GameIconName.ToString());
+                        break;
+
+                    case GameIconNameEnum.SPIRIT76:
+                    case GameIconNameEnum.WILDBALL:
+                    case GameIconNameEnum.TIMEBOMB:
+                        gameCheckBox.Checked = IsSinglePlayerMode && m_activeGameList.Contains(gameInfo.GameIconName.ToString());
+                        gameCheckBox.Enabled = IsSinglePlayerMode;
+                        break;
+
+                }
             }
         }
         
         private void GameCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             IsModified = true;
+            m_gamesEnabledModified = true;
             var handler = EnableGameCheckedEvent;
             if (handler != null)
             {
-                handler(null, EventArgs.Empty);
+                handler(sender, EventArgs.Empty);
             }
         }
 
-        public bool IsCrazyBoutEnabled { get { return CrazyBoutCheckBox.Checked; } }
-        public bool IsJailBreakEnabled { get { return JailBreakCheckBox.Checked; } }
-        public bool IsMayaMoneyEnabled { get { return MayaMoneyCheckBox.Checked; } }
-        public bool IsWildBallEnabled { get { return WildBallCheckBox.Checked; } }
-        public bool IsSpirit76Enabled { get { return Spirit76CheckBox.Checked; } }
-        public bool IsTimeBombEnabled { get { return TimeBombCheckBox.Checked; } }
+        private List<string> GetEnabledGames()
+        {
+            var activeGameList = new List<string>();
+
+            foreach (var gameCheckBox in m_gameCheckboxDictionary.Values)
+            {
+                var gameInfo = gameCheckBox.Tag as B3GamesInfo;
+
+                if (gameInfo == null)
+                {
+                    continue;
+                }
+
+                if (gameCheckBox.Checked)
+                {
+                    activeGameList.Add(gameInfo.GameIconName.ToString());
+                }
+            }
+
+            return activeGameList;
+        }
+
+        private bool IsGameChecked(GameIconNameEnum gameIconName)
+        {
+            foreach (var gameCheckBox in m_gameCheckboxDictionary.Values)
+            {
+                var gameInfo = gameCheckBox.Tag as B3GamesInfo;
+
+                if (gameInfo == null)
+                {
+                    continue;
+                }
+
+                if (gameInfo.GameIconName == gameIconName)
+                {
+                    return gameCheckBox.Checked;
+                }
+            }
+
+            return false;
+        }
+
+        public bool IsCrazyBoutEnabled { get { return IsGameChecked(GameIconNameEnum.CRAZYBOUT); } }
+        public bool IsJailBreakEnabled { get { return IsGameChecked(GameIconNameEnum.JAILBREAK); } }
+        public bool IsMayaMoneyEnabled { get { return IsGameChecked(GameIconNameEnum.MAYAMONEY); } }
+        public bool IsWildBallEnabled { get { return IsGameChecked(GameIconNameEnum.WILDBALL); } }
+        public bool IsSpirit76Enabled { get { return IsGameChecked(GameIconNameEnum.SPIRIT76); } }
+        public bool IsTimeBombEnabled { get { return IsGameChecked(GameIconNameEnum.TIMEBOMB); } }
 
         private void ModifiedSettings(object sender, EventArgs e)
         {

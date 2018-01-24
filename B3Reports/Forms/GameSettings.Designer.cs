@@ -30,7 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CheckBoxHandPayPerPattern = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownExtraBonus = new System.Windows.Forms.NumericUpDown();
             this.singlePlayerPlayModeRadioButton = new System.Windows.Forms.RadioButton();
             this.numWaitCountdownTimerOP = new System.Windows.Forms.NumericUpDown();
             this.lblMinNumberOfPlayers = new System.Windows.Forms.Label();
@@ -38,19 +40,13 @@
             this.numMinimumPlayer = new System.Windows.Forms.NumericUpDown();
             this.lblMinimumNumOfPlayersSec = new System.Windows.Forms.Label();
             this.lblCountdownTimerSec = new System.Windows.Forms.Label();
-            this.numericTextBoxWDecimal1 = new GameTech.B3Reports.CustomControls.NumericTextBoxWDecimal();
             this.lblExtraBonusDollarSign = new System.Windows.Forms.Label();
             this.lblExtraBonus = new System.Windows.Forms.Label();
             this.numCountdownTimer = new System.Windows.Forms.NumericUpDown();
             this.multiplayerPlayModeRadioButton = new System.Windows.Forms.RadioButton();
             this.lblCountdownTimer = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.JailBreakCheckBox = new System.Windows.Forms.CheckBox();
-            this.MayaMoneyCheckBox = new System.Windows.Forms.CheckBox();
-            this.WildBallCheckBox = new System.Windows.Forms.CheckBox();
-            this.TimeBombCheckBox = new System.Windows.Forms.CheckBox();
-            this.Spirit76CheckBox = new System.Windows.Forms.CheckBox();
-            this.CrazyBoutCheckBox = new System.Windows.Forms.CheckBox();
+            this.GamesFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.numericUpDownGameThreads = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -59,6 +55,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExtraBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWaitCountdownTimerOP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinimumPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCountdownTimer)).BeginInit();
@@ -70,6 +67,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.CheckBoxHandPayPerPattern);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.numericUpDownGameThreads);
@@ -85,8 +83,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Server Game Settings";
             // 
+            // CheckBoxHandPayPerPattern
+            // 
+            this.CheckBoxHandPayPerPattern.AutoSize = true;
+            this.CheckBoxHandPayPerPattern.Location = new System.Drawing.Point(67, 425);
+            this.CheckBoxHandPayPerPattern.Name = "CheckBoxHandPayPerPattern";
+            this.CheckBoxHandPayPerPattern.Size = new System.Drawing.Size(249, 26);
+            this.CheckBoxHandPayPerPattern.TabIndex = 47;
+            this.CheckBoxHandPayPerPattern.Text = "Calculate hand pay per pattern";
+            this.CheckBoxHandPayPerPattern.UseVisualStyleBackColor = true;
+            this.CheckBoxHandPayPerPattern.Visible = false;
+            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.numericUpDownExtraBonus);
             this.groupBox3.Controls.Add(this.singlePlayerPlayModeRadioButton);
             this.groupBox3.Controls.Add(this.numWaitCountdownTimerOP);
             this.groupBox3.Controls.Add(this.lblMinNumberOfPlayers);
@@ -94,18 +104,48 @@
             this.groupBox3.Controls.Add(this.numMinimumPlayer);
             this.groupBox3.Controls.Add(this.lblMinimumNumOfPlayersSec);
             this.groupBox3.Controls.Add(this.lblCountdownTimerSec);
-            this.groupBox3.Controls.Add(this.numericTextBoxWDecimal1);
             this.groupBox3.Controls.Add(this.lblExtraBonusDollarSign);
             this.groupBox3.Controls.Add(this.lblExtraBonus);
             this.groupBox3.Controls.Add(this.numCountdownTimer);
             this.groupBox3.Controls.Add(this.multiplayerPlayModeRadioButton);
             this.groupBox3.Controls.Add(this.lblCountdownTimer);
-            this.groupBox3.Location = new System.Drawing.Point(53, 140);
+            this.groupBox3.Location = new System.Drawing.Point(58, 55);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(445, 270);
             this.groupBox3.TabIndex = 46;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Play Mode";
+            // 
+            // numericUpDownExtraBonus
+            // 
+            this.numericUpDownExtraBonus.DecimalPlaces = 2;
+            this.numericUpDownExtraBonus.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.numericUpDownExtraBonus.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.numericUpDownExtraBonus.Location = new System.Drawing.Point(273, 216);
+            this.numericUpDownExtraBonus.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            131072});
+            this.numericUpDownExtraBonus.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.numericUpDownExtraBonus.Name = "numericUpDownExtraBonus";
+            this.numericUpDownExtraBonus.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDownExtraBonus.TabIndex = 44;
+            this.numericUpDownExtraBonus.Tag = "1";
+            this.numericUpDownExtraBonus.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.numericUpDownExtraBonus.ValueChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // singlePlayerPlayModeRadioButton
             // 
@@ -117,7 +157,7 @@
             this.singlePlayerPlayModeRadioButton.TabStop = true;
             this.singlePlayerPlayModeRadioButton.Text = "Single Player";
             this.singlePlayerPlayModeRadioButton.UseVisualStyleBackColor = true;
-            this.singlePlayerPlayModeRadioButton.CheckedChanged += new System.EventHandler(this.radioButtonPlayMode_CheckChanged);
+            this.singlePlayerPlayModeRadioButton.CheckedChanged += new System.EventHandler(this.RadioButtonPlayMode_CheckChanged);
             // 
             // numWaitCountdownTimerOP
             // 
@@ -203,24 +243,10 @@
             this.lblCountdownTimerSec.TabIndex = 33;
             this.lblCountdownTimerSec.Text = "sec";
             // 
-            // numericTextBoxWDecimal1
-            // 
-            this.numericTextBoxWDecimal1.AllowSpace = false;
-            this.numericTextBoxWDecimal1.BackColor = System.Drawing.SystemColors.Window;
-            this.numericTextBoxWDecimal1.Location = new System.Drawing.Point(273, 217);
-            this.numericTextBoxWDecimal1.MaxLength = 7;
-            this.numericTextBoxWDecimal1.Name = "numericTextBoxWDecimal1";
-            this.numericTextBoxWDecimal1.ReadOnly = true;
-            this.numericTextBoxWDecimal1.Size = new System.Drawing.Size(120, 26);
-            this.numericTextBoxWDecimal1.TabIndex = 31;
-            this.numericTextBoxWDecimal1.Click += new System.EventHandler(this.numMinimumPlayer_Click);
-            this.numericTextBoxWDecimal1.TextChanged += new System.EventHandler(this.ModifiedSettings);
-            this.numericTextBoxWDecimal1.Validating += new System.ComponentModel.CancelEventHandler(this.numericTextBoxWDecimal1_Validating);
-            // 
             // lblExtraBonusDollarSign
             // 
             this.lblExtraBonusDollarSign.BackColor = System.Drawing.Color.Transparent;
-            this.lblExtraBonusDollarSign.Location = new System.Drawing.Point(259, 220);
+            this.lblExtraBonusDollarSign.Location = new System.Drawing.Point(258, 217);
             this.lblExtraBonusDollarSign.Name = "lblExtraBonusDollarSign";
             this.lblExtraBonusDollarSign.Size = new System.Drawing.Size(20, 26);
             this.lblExtraBonusDollarSign.TabIndex = 32;
@@ -263,7 +289,7 @@
             this.multiplayerPlayModeRadioButton.TabStop = true;
             this.multiplayerPlayModeRadioButton.Text = "Multiplayer";
             this.multiplayerPlayModeRadioButton.UseVisualStyleBackColor = true;
-            this.multiplayerPlayModeRadioButton.CheckedChanged += new System.EventHandler(this.radioButtonPlayMode_CheckChanged);
+            this.multiplayerPlayModeRadioButton.CheckedChanged += new System.EventHandler(this.RadioButtonPlayMode_CheckChanged);
             // 
             // lblCountdownTimer
             // 
@@ -277,89 +303,26 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.JailBreakCheckBox);
-            this.groupBox2.Controls.Add(this.MayaMoneyCheckBox);
-            this.groupBox2.Controls.Add(this.WildBallCheckBox);
-            this.groupBox2.Controls.Add(this.TimeBombCheckBox);
-            this.groupBox2.Controls.Add(this.Spirit76CheckBox);
-            this.groupBox2.Controls.Add(this.CrazyBoutCheckBox);
-            this.groupBox2.Location = new System.Drawing.Point(519, 138);
+            this.groupBox2.Controls.Add(this.GamesFlowPanel);
+            this.groupBox2.Location = new System.Drawing.Point(525, 55);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(194, 270);
+            this.groupBox2.Size = new System.Drawing.Size(194, 272);
             this.groupBox2.TabIndex = 45;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Games";
             // 
-            // JailBreakCheckBox
+            // GamesFlowPanel
             // 
-            this.JailBreakCheckBox.AutoSize = true;
-            this.JailBreakCheckBox.Location = new System.Drawing.Point(40, 66);
-            this.JailBreakCheckBox.Name = "JailBreakCheckBox";
-            this.JailBreakCheckBox.Size = new System.Drawing.Size(99, 26);
-            this.JailBreakCheckBox.TabIndex = 5;
-            this.JailBreakCheckBox.Text = "Jail Break";
-            this.JailBreakCheckBox.UseVisualStyleBackColor = true;
-            this.JailBreakCheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
-            // 
-            // MayaMoneyCheckBox
-            // 
-            this.MayaMoneyCheckBox.AutoSize = true;
-            this.MayaMoneyCheckBox.Location = new System.Drawing.Point(40, 104);
-            this.MayaMoneyCheckBox.Name = "MayaMoneyCheckBox";
-            this.MayaMoneyCheckBox.Size = new System.Drawing.Size(114, 26);
-            this.MayaMoneyCheckBox.TabIndex = 4;
-            this.MayaMoneyCheckBox.Text = "Maya Money";
-            this.MayaMoneyCheckBox.UseVisualStyleBackColor = true;
-            this.MayaMoneyCheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
-            // 
-            // WildBallCheckBox
-            // 
-            this.WildBallCheckBox.AutoSize = true;
-            this.WildBallCheckBox.Location = new System.Drawing.Point(40, 142);
-            this.WildBallCheckBox.Name = "WildBallCheckBox";
-            this.WildBallCheckBox.Size = new System.Drawing.Size(92, 26);
-            this.WildBallCheckBox.TabIndex = 3;
-            this.WildBallCheckBox.Text = "Wild Ball";
-            this.WildBallCheckBox.UseVisualStyleBackColor = true;
-            this.WildBallCheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
-            // 
-            // TimeBombCheckBox
-            // 
-            this.TimeBombCheckBox.AutoSize = true;
-            this.TimeBombCheckBox.Location = new System.Drawing.Point(40, 218);
-            this.TimeBombCheckBox.Name = "TimeBombCheckBox";
-            this.TimeBombCheckBox.Size = new System.Drawing.Size(110, 26);
-            this.TimeBombCheckBox.TabIndex = 2;
-            this.TimeBombCheckBox.Text = "Time Bomb";
-            this.TimeBombCheckBox.UseVisualStyleBackColor = true;
-            this.TimeBombCheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
-            // 
-            // Spirit76CheckBox
-            // 
-            this.Spirit76CheckBox.AutoSize = true;
-            this.Spirit76CheckBox.Location = new System.Drawing.Point(40, 180);
-            this.Spirit76CheckBox.Name = "Spirit76CheckBox";
-            this.Spirit76CheckBox.Size = new System.Drawing.Size(89, 26);
-            this.Spirit76CheckBox.TabIndex = 1;
-            this.Spirit76CheckBox.Text = "Spirit 76";
-            this.Spirit76CheckBox.UseVisualStyleBackColor = true;
-            this.Spirit76CheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
-            // 
-            // CrazyBoutCheckBox
-            // 
-            this.CrazyBoutCheckBox.AutoSize = true;
-            this.CrazyBoutCheckBox.Location = new System.Drawing.Point(40, 28);
-            this.CrazyBoutCheckBox.Name = "CrazyBoutCheckBox";
-            this.CrazyBoutCheckBox.Size = new System.Drawing.Size(106, 26);
-            this.CrazyBoutCheckBox.TabIndex = 0;
-            this.CrazyBoutCheckBox.Text = "Crazy Bout";
-            this.CrazyBoutCheckBox.UseVisualStyleBackColor = true;
-            this.CrazyBoutCheckBox.CheckedChanged += new System.EventHandler(this.GameCheckBox_CheckedChanged);
+            this.GamesFlowPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.GamesFlowPanel.Location = new System.Drawing.Point(10, 25);
+            this.GamesFlowPanel.Name = "GamesFlowPanel";
+            this.GamesFlowPanel.Size = new System.Drawing.Size(178, 241);
+            this.GamesFlowPanel.TabIndex = 0;
             // 
             // numericUpDownGameThreads
             // 
             this.numericUpDownGameThreads.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.numericUpDownGameThreads.Location = new System.Drawing.Point(326, 96);
+            this.numericUpDownGameThreads.Location = new System.Drawing.Point(331, 384);
             this.numericUpDownGameThreads.Maximum = new decimal(new int[] {
             16,
             0,
@@ -385,7 +348,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(58, 98);
+            this.label9.Location = new System.Drawing.Point(63, 385);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(112, 22);
             this.label9.TabIndex = 40;
@@ -405,7 +368,7 @@
             // 
             // txtbxGameRecallPassword
             // 
-            this.txtbxGameRecallPassword.Location = new System.Drawing.Point(326, 64);
+            this.txtbxGameRecallPassword.Location = new System.Drawing.Point(331, 342);
             this.txtbxGameRecallPassword.MaxLength = 15;
             this.txtbxGameRecallPassword.Name = "txtbxGameRecallPassword";
             this.txtbxGameRecallPassword.Size = new System.Drawing.Size(120, 26);
@@ -418,7 +381,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(58, 57);
+            this.label6.Location = new System.Drawing.Point(63, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 22);
             this.label6.TabIndex = 34;
@@ -439,11 +402,11 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExtraBonus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWaitCountdownTimerOP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinimumPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCountdownTimer)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGameThreads)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -456,7 +419,6 @@
         private System.Windows.Forms.NumericUpDown numCountdownTimer;
         private System.Windows.Forms.Label lblCountdownTimer;
         private System.Windows.Forms.Label lblExtraBonus;
-        private CustomControls.NumericTextBoxWDecimal numericTextBoxWDecimal1;
         private System.Windows.Forms.Label lblCountdownTimerSec;
         private System.Windows.Forms.Label lblExtraBonusDollarSign;
         private System.Windows.Forms.Label lblMinimumNumOfPlayersSec;
@@ -473,13 +435,10 @@
         private System.Windows.Forms.RadioButton multiplayerPlayModeRadioButton;
         private System.Windows.Forms.RadioButton singlePlayerPlayModeRadioButton;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox JailBreakCheckBox;
-        private System.Windows.Forms.CheckBox MayaMoneyCheckBox;
-        private System.Windows.Forms.CheckBox WildBallCheckBox;
-        private System.Windows.Forms.CheckBox TimeBombCheckBox;
-        private System.Windows.Forms.CheckBox Spirit76CheckBox;
-        private System.Windows.Forms.CheckBox CrazyBoutCheckBox;
         private System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.NumericUpDown numericUpDownExtraBonus;
+        private System.Windows.Forms.FlowLayoutPanel GamesFlowPanel;
+        private System.Windows.Forms.CheckBox CheckBoxHandPayPerPattern;
 
     }
 }

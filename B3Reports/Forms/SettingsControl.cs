@@ -17,7 +17,7 @@ namespace GameTech.B3Reports.Forms
         public virtual bool SaveSettings() { return true; }
         public virtual void OnActivate(object o) { }
 
-        public virtual bool IsModified { get; protected set; }
+        public bool IsModified { get; set; }
 
         private void InitializeComponent()
         {
@@ -27,7 +27,7 @@ namespace GameTech.B3Reports.Forms
             // SettingsControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.DoubleBuffered = true;
+
             resources.ApplyResources(this, "$this");
             this.Name = "SettingsControl";
             this.ResumeLayout(false);
@@ -36,6 +36,7 @@ namespace GameTech.B3Reports.Forms
 
         public SettingsControl()
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             IsEnabled = true;
         }
 

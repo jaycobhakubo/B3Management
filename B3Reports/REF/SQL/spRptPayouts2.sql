@@ -17,6 +17,8 @@ GO
 
 
 
+
+
 CREATE proc [dbo].[spRptPayouts2]
 (
 
@@ -62,6 +64,17 @@ DECLARE @ListOfAvailableGames TABLE
 	GameTableName varchar(50)
 )
 
+declare @IsServerGame2 bit
+
+
+select 
+	@IsServerGame2 =
+	case 
+	when  MinPlayer = 1 then  0 
+	else  1 end
+from Server_GameSettings
+
+
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (36, 'Crazy Bout', 'CrazyBout')
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (37, 'Jailbreak', 'JailBreak')
 INSERT INTO @ListOfAvailableGames (GameTypeId, GameNameAlias, GameTableName) VALUES  (38, 'Maya Money', 'MayaMoney')
@@ -84,9 +97,15 @@ WHILE @@FETCH_STATUS = 0
 BEGIN
 
 --=========================================
--- INSTANT game BINGO EXTRA BONUS GAME WINNERS
+-- INSTANT game BINGO EXTRA BONUS GAME WINNERS 
+--This only applies for more than 1 player
+
+
+
 --=========================================
-    if (@GameTypeId != 42)--TIMEBOMB!
+IF( @IsServerGame2 = 1)
+BEGIN
+    if (@GameTypeId not in (42, 41, 39) )-- 3 game only support this (Crazybout, MayaMoney and  JailBreak)
     BEGIN
 		set @sqlCommand = 
 		'
@@ -109,6 +128,7 @@ BEGIN
 		 '          
 		exec (@sqlCommand)
 	END
+END
 
 --==================================
 --INSERT BINGO INSTANT WINNERS PATTERN 1 to 12
@@ -440,8 +460,12 @@ select
 		WinAmount ,
 		PatternName ,
 		WinningCardNumber
-		from @Result2 order by GameDate asc
+		from @Result2 
+		where WinningCardNumber != ''-- (Time Bomb)Removed if no winning card number it means it is not in played or it is exploded.
+		order by GameDate asc
 END
+
+
 
 
 

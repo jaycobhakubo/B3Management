@@ -14,7 +14,6 @@ namespace GameTech.B3Reports.Forms
         {
             InitializeComponent();
             m_gameSettings = new _cs_Other.GameSettings();
-            LoadTimeBombSettings();
         }
 
         public override bool LoadSettings()
@@ -32,12 +31,15 @@ namespace GameTech.B3Reports.Forms
             GetGameSettingsTimeBomb.GetSettings(m_gameSettings);
             comboBoxMaxCard.SelectedItem = m_gameSettings.MaxCards.ToString();
             comboBoxMaxBetLevel.SelectedItem = m_gameSettings.MaxBetLevel.ToString();
+            if (m_gameSettings.CallSpeed < numCallSpeed.Minimum)
+            {
+                m_gameSettings.CallSpeed = int.Parse(numCallSpeed.Minimum.ToString(CultureInfo.InvariantCulture));
+            }
             numCallSpeed.Value = m_gameSettings.CallSpeed;
 
             const string t = "T";
 
             chkbxAutoCall.Checked = m_gameSettings.AutoCall == t;
-            chkbxAutoPlay.Checked = m_gameSettings.AutoPlay == t;
             chkbxHideCardSerialNumber.Checked = m_gameSettings.HideCardSerialNumber == t;
 
             chkbxDenom1.Checked = m_gameSettings.Denom1 == t;
@@ -49,7 +51,6 @@ namespace GameTech.B3Reports.Forms
             chkbxDenom2d.Checked = m_gameSettings.Denom200 == t;
             chkbxDenom5d.Checked = m_gameSettings.Denom500 == t;
             return true;
-
         }
 
         public override bool SaveSettings()
@@ -84,13 +85,6 @@ namespace GameTech.B3Reports.Forms
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Auto Call", m_gameSettings.AutoCall, isTrue);
                 m_gameSettings.AutoCall = isTrue;
-            }
-
-            isTrue = chkbxAutoPlay.Checked ? "T" : "F";
-            if (m_gameSettings.AutoPlay != isTrue)
-            {
-                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Time Bomb Setting - Auto Play", m_gameSettings.AutoPlay, isTrue);
-                m_gameSettings.AutoPlay = isTrue;
             }
 
             isTrue = chkbxDenom1.Checked ? "T" : "F";
