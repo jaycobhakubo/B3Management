@@ -126,6 +126,17 @@ namespace GameTech.B3Reports.Forms
                 numericUpDownGameThreads.Value = Convert.ToInt32(ggs.GameThreads);
             }
 
+            if (GetGameSettings.HandpayByPattern)
+            {
+                HandPayByPatternRadioButton.Checked = true;
+            }
+            else
+            {
+                HandPayByGameRadioButton.Checked = true;
+            }
+
+            RfRequiredNumericUpDown.Value = GetGameSettings.RfRequiredForPlay;
+
             m_activeGameList = GetActiveGames.B3ActiveGamesList;
 
             foreach (var gameCheckBox in m_gameCheckboxDictionary.Values)
@@ -206,11 +217,21 @@ namespace GameTech.B3Reports.Forms
             {
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Minimum number of Players Wait Time", GetGameSettings.WaitCountDownForOtherPLayers.ToString(), numWaitCountdownTimerOP.Value.ToString());
             }
+            if (GetGameSettings.HandpayByPattern != HandPayByPatternRadioButton.Checked)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Hand pay by pattern", GetGameSettings.HandpayByPattern.ToString(), txtbxGameRecallPassword.Text);
+            }
+            if (GetGameSettings.RfRequiredForPlay != (int)RfRequiredNumericUpDown.Value)
+            {
+                WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "RF Required For Play", GetGameSettings.RfRequiredForPlay.ToString(), RfRequiredNumericUpDown.Value.ToString());
+            }
 
             GetGameSettings.ConsolationPrize = x; 
             GetGameSettings.CountDownTimer = (int)numCountdownTimer.Value;
             GetGameSettings.GameRecalPasswords = txtbxGameRecallPassword.Text;
             GetGameSettings.WaitCountDownForOtherPLayers = (int)numWaitCountdownTimerOP.Value;
+            GetGameSettings.HandpayByPattern = HandPayByPatternRadioButton.Checked;
+            GetGameSettings.RfRequiredForPlay = (int)RfRequiredNumericUpDown.Value;
             SetGameSettings set = new SetGameSettings();
 
             if (m_gamesEnabledModified)
@@ -406,7 +427,5 @@ namespace GameTech.B3Reports.Forms
         {
             IsModified = true;
         }
-
-
     }
 }

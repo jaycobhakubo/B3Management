@@ -38,7 +38,7 @@ namespace GameTech.B3Reports.Forms
         private bool m_isSpirit76GameSettings;
         private bool m_isTimeBombGameSettings;
 
-        private List<string> m_activeGameList; 
+        private List<string> m_activeGameList;
 
         #endregion
 
@@ -50,8 +50,8 @@ namespace GameTech.B3Reports.Forms
             CreateNodes();
             AdjustWindowSize.adjust(this);
             pictureBox1.BringToFront();
-           // clientAccessControl1.dgClientAccess.CellClick += dgClientAccessCellClick;
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            // clientAccessControl1.dgClientAccess.CellClick += dgClientAccessCellClick;
+            //SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             gameSettings1.EnableGameCheckedEvent += EnableGameCheckedEvent;
         }
 
@@ -215,8 +215,8 @@ namespace GameTech.B3Reports.Forms
             }
 
             //North Dakota Settings 
-           
-  
+
+
             if (SystemConfig.IsND)
             {
                 SystemConfig = new GetSystemConfig();
@@ -230,7 +230,7 @@ namespace GameTech.B3Reports.Forms
             {
                 //ndSettings1.grpBxNDSettings.Enabled = false;
             }
-            
+
             nodeParent = new TreeNode("Game Settings", 0, 1);
             nodeParent.Tag = gameSettings1;
 
@@ -261,134 +261,20 @@ namespace GameTech.B3Reports.Forms
                         break;
                 }
             }
-        
+
             treeView1.Nodes.Add(nodeParent);
 
             nodeParent = new TreeNode("Security Settings", 0, 1);
             nodeParent.Tag = securitySettings1;
             treeView1.Nodes.Add(nodeParent);
         }
-
-        private string MessageBoxConfirmation()//to restart android service
-        {
-            return "Yes";
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to restart the android service?", "Restart android service", MessageBoxButtons.YesNo);
-            string result = dialogResult.ToString();
-            return result;
-        }
-
-        private void RestartAndroidService()
-        {
-            //we do not want to restart the android service
-
-            //MessageBox.Show(Environment.MachineName);
-
-            //if (Environment.MachineName.ToString() != "B3-SERVER")// || Environment.MachineName != "B3-Server")
-            //{
-            //    // Environment.
-            //    //MessageBox.Show(Environment.MachineName + " is not equal to B3-SERVER");
-            //    try
-            //    {
-            //        string serviceName = "Android Service";
-            //        ConnectionOptions connectoptions = new ConnectionOptions();
-            //        connectoptions.Username = @"B3-Server\Administrator";
-            //        connectoptions.Password = "Gu@rdi@n";
-            //        string Server = "B3-Server";
-            //        ManagementScope scope = new ManagementScope(@"\\" + /*ipAddress*/ Server + @"\root\cimv2");
-            //        scope.Options = connectoptions;
-            //        SelectQuery query = new SelectQuery("select * from Win32_Service where name = '" + serviceName + "'");
-
-            //        using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query))
-            //        {
-            //            ManagementObjectCollection collection = searcher.Get();
-            //            foreach (ManagementObject service in collection)
-            //            {
-            //                //stopped the service if its running
-            //                if (service["Started"].Equals(true))
-            //                {
-            //                    service.InvokeMethod("StopService", null);
-            //                    //wait till the service is fully stopped
-            //                    ManagementObject service2 = service;
-            //                    while (Convert.ToString(service2["State"]).ToLower() == "running")
-            //                    {
-            //                        collection = searcher.Get();
-            //                        foreach (ManagementObject service3 in collection)
-            //                        {
-            //                            service2 = service3;
-            //                        }
-            //                    }
-            //                }
-            //                //run always
-            //                service.InvokeMethod("StartService", null);
-            //            }
-            //        }
-            //    }
-
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //    }
-            //}
-            //else
-            //{
-            //    //MessageBox.Show("I am local");
-            //    try
-            //    {
-            //        RestartServiceOnLocal();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //    }
-
-            //}
-        }
-
-        //private void RestartServiceOnLocal()
-        //{
-        //    return;
-
-        //    ServiceController[] scServices;
-        //    scServices = ServiceController.GetServices();
-        //    foreach (ServiceController scTempt in scServices)
-        //    {
-        //        if (scTempt.ServiceName == "Android Service")
-        //        {
-        //            ServiceController sc = new ServiceController("Android Service", Environment.MachineName.ToString());
-
-        //            if (sc.Status == ServiceControllerStatus.Running)
-        //            {
-        //                //MessageBox.Show("I will stop the Android service now");
-        //                sc.Stop();
-        //                while (sc.Status != ServiceControllerStatus.Stopped)
-        //                {
-        //                    System.Threading.Thread.Sleep(1000);
-        //                    sc.Refresh();
-        //                }
-        //            }
-
-
-        //            // MessageBox.Show("I will start the Android service now");
-        //            sc.Start();
-        //            while (sc.Status != ServiceControllerStatus.Running)
-        //            {
-
-        //                System.Threading.Thread.Sleep(1000);
-        //                sc.Refresh();
-
-        //            }
-        //        }
-        //    }
-        //}
-
-
+        
         #endregion
 
         #region EVENTS
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            
             setSettingToFalse();
             if (imgBtnRefreshSystemSettings.Visible != false)
             {
@@ -402,27 +288,18 @@ namespace GameTech.B3Reports.Forms
             }
             //END FIX RALLY DE2661
 
-            if (m_activeControl != null)
-            {
-                m_activeControl.Enabled = false;
-                //m_activeControl.Hide();
-                m_activeControl.Visible = false;
-            }
             // Get the selected node and display its panel
             m_previousControl = m_activeControl;
             m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
             m_activeControl.OnActivate(treeView1.SelectedNode);
-            m_activeControl.Enabled = true;
-            //m_activeControl.Show();
-            m_activeControl.Visible = true;
+
             m_activeControl.BringToFront();
-            //m_activeControl.Update();
             m_activeControl.LoadSettings();
             treeView1.SelectedNode = e.Node;
 
-            int x =  Convert.ToInt32(m_activeControl.Tag);
+            int x = Convert.ToInt32(m_activeControl.Tag);
             if (x == 1)//SecuritySettings
-            { 
+            {
                 IsSecuritySettings = true;
                 IsGameSettings = false;
                 if (pnlWarning.Visible != false)
@@ -431,7 +308,7 @@ namespace GameTech.B3Reports.Forms
                 }
             }
             else if (x == 2)//Gamesettings
-            { 
+            {
                 IsGameSettings = true;
                 if (pnlWarning.Visible != true)
                 {
@@ -439,17 +316,15 @@ namespace GameTech.B3Reports.Forms
                 }
             }
             else if (x == 3)
-            {   
+            {
                 IsCrazyBoutGameSettings = true;
                 if (pnlWarning.Visible != true)
                 {
                     pnlWarning.Visible = true;
                 }
-                    // GameSettingCrazyBout loadcurrent = new GameSettingCrazyBout();//not working
-            //loadcurrent.LoadSettings();
             }
             else if (x == 4)
-            {   
+            {
                 IsJailBreakGameSettings = true;
                 if (pnlWarning.Visible != true)
                 {
@@ -457,7 +332,7 @@ namespace GameTech.B3Reports.Forms
                 }
             }
             else if (x == 5)
-            { 
+            {
                 IsMayaMoneyGameSettings = true;
                 if (pnlWarning.Visible != true)
                 {
@@ -527,19 +402,7 @@ namespace GameTech.B3Reports.Forms
                 }
             }
 
-            /* This code was used to force the first child node to be selected
-             * when a parent node was clicked 
-            if (e.Node.Nodes.Count < 1)
-            {
-                treeView1.SelectedNode = e.Node;
-            }
-            else
-            {
-                treeView1.SelectedNode = e.Node.Nodes[0];
-            }
-            */
-
-            treeView1.Update();
+            //treeView1.Update();
 
             Application.DoEvents();
         }
@@ -552,7 +415,7 @@ namespace GameTech.B3Reports.Forms
                 if (m_activeControl.IsModified)
                 {
                     DialogResult result = MessageBox.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageBoxButtons.YesNoCancel);
-                   // DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
+                    // DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
                     this.Refresh();
                     switch (result)
                     {
@@ -567,7 +430,7 @@ namespace GameTech.B3Reports.Forms
                             e.Cancel = true;
                             break;
                         default:
-                            m_activeControl.IsModified = false;;
+                            m_activeControl.IsModified = false; ;
                             m_bResetPreviousControl = true;
                             break;
                     }
@@ -583,9 +446,8 @@ namespace GameTech.B3Reports.Forms
             //setSettingToFalse();
 
             clearErrorP();
-            bool result = false;
-            bool ConfirmResult = true;
-
+            var result = false;
+            Cursor.Current = Cursors.WaitCursor;
             if (IsClientAccessControl && clientAccessControl1.IsModified)
             {
                 result = clientAccessControl1.SaveClientAccessControl(clientAccessControl1.dgClientAccess);
@@ -603,119 +465,51 @@ namespace GameTech.B3Reports.Forms
                 bool vresult = gameSettings1.ValidateInput();
                 if (vresult)
                 {
-                    ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
-                    //MessageBox.Show("Restarting Please Wait");
-                    if (ConfirmResult)
-                    {
-                        this.Enabled = false;
-                        Cursor.Current = Cursors.WaitCursor;
-                        result = gameSettings1.SaveSettings();
-                        RestartAndroidService();
-                    }
+                    result = gameSettings1.SaveSettings();
                 }
             }
             else if (IsCrazyBoutGameSettings && gameSettingCrazyBout1.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingCrazyBout1.SaveSettings();
-                    RestartAndroidService();
-                }
-
+                result = gameSettingCrazyBout1.SaveSettings();
             }
             else if (IsJailBreakGameSettings && gameSettingJailBreak1.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingJailBreak1.SaveSettings();
-                    RestartAndroidService();
-                }
+                result = gameSettingJailBreak1.SaveSettings();
             }
             else if (IsMayaMoneyGameSettings && gameSettingMayaMoney1.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes") ? true : false;
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingMayaMoney1.SaveSettings();
-                    RestartAndroidService();
-                }
+                result = gameSettingMayaMoney1.SaveSettings();
             }
             else if (m_isWildBallGameSettings && gameSettingWildBall1.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes");
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingWildBall1.SaveSettings();
-                    RestartAndroidService();
-                }
+                result = gameSettingWildBall1.SaveSettings();
             }
             else if (m_isSpirit76GameSettings && gameSettingSpirit761.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes");
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingSpirit761.SaveSettings();
-                    RestartAndroidService();
-                }
+                result = gameSettingSpirit761.SaveSettings();
             }
             else if (m_isTimeBombGameSettings && gameSettingTimeBomb1.IsModified)
             {
-                ConfirmResult = (MessageBoxConfirmation() == "Yes");
-                if (ConfirmResult == true)
-                {
-                    this.Enabled = false;
-                    Cursor.Current = Cursors.WaitCursor;
-                    result = gameSettingTimeBomb1.SaveSettings();
-                    RestartAndroidService();
-                }
+                result = gameSettingTimeBomb1.SaveSettings();
             }
 
             if (GetSecuritySettings.LogoutInactivity != 0)
             {
                 IdleTimeStart start = new IdleTimeStart();
                 start.StartTimer(this);
-                //NewMenu x = new NewMenu(); x.idleTimeStart();
             }
-            else
-            {
-                //NewMenu x = new NewMenu(); x.IdleTimeStop();
-            }
+            
+            Cursor.Current = Cursors.Default;
 
-            if (ConfirmResult == false)
+            if (result)
             {
-                reset();
-                return;
-            }
-            else
-            {
-                this.Enabled = true;
-                Cursor.Current = Cursors.Default;
-            }
-
-            if (result == true)
-            {
-
                 picBxSaved.Visible = true;
                 picBxSaved.BringToFront();
             }
         }
 
-
-
         private void imgBtnReturn_Click(object sender, EventArgs e)
-        {          
+        {
             try
             {
                 if (!ActivateForm.NOW("NewMenu"))//check the form if its already loaded 
@@ -751,36 +545,36 @@ namespace GameTech.B3Reports.Forms
                 clearErrorP();
                 gameSettings1.LoadSettings();
             }
-        }    
+        }
 
         private void imgBtnResetSystemSettings_Click(object sender, EventArgs e)
         {
             reset();
-         //   if (IsSecuritySettings == true)
-         //   {                //Lets save the changes
-         //       securitySettings1.LoadSettings();
-         //   }
-         //   else if (IsGameSettings == true)
-         //   {
-         //       gameSettings1.LoadSettings();
-         //   }
-         //   else if (IsCrazyBoutGameSettings == true)
-         //   {
-         //       gameSettingCrazyBout1.LoadSettings();
-         //   }
-         //   else if (IsJailBreakGameSettings == true)
-         //   {
-         //       gameSettingJailBreak1.LoadSettings();
-         //   }
-         //   else if (IsMayaMoneyGameSettings == true)
-         //   {
-         //       gameSettingMayaMoney1.LoadSettings();
-         //   }
+            //   if (IsSecuritySettings == true)
+            //   {                //Lets save the changes
+            //       securitySettings1.LoadSettings();
+            //   }
+            //   else if (IsGameSettings == true)
+            //   {
+            //       gameSettings1.LoadSettings();
+            //   }
+            //   else if (IsCrazyBoutGameSettings == true)
+            //   {
+            //       gameSettingCrazyBout1.LoadSettings();
+            //   }
+            //   else if (IsJailBreakGameSettings == true)
+            //   {
+            //       gameSettingJailBreak1.LoadSettings();
+            //   }
+            //   else if (IsMayaMoneyGameSettings == true)
+            //   {
+            //       gameSettingMayaMoney1.LoadSettings();
+            //   }
 
 
-         ////   securitySettings1.LoadSettings();
-         // //  gameSettings1.LoadSettings();
-         //   clearErrorP();
+            ////   securitySettings1.LoadSettings();
+            // //  gameSettings1.LoadSettings();
+            //   clearErrorP();
             clearImage();
         }
 
@@ -793,13 +587,6 @@ namespace GameTech.B3Reports.Forms
         {
 
         }
-
-        private void securitySettings1_Click(object sender, EventArgs e)
-        {
-            // MessageBox.Show("TEST");
-        }
-
-      
 
         private void LoginFullWin_LocationChanged(object sender, EventArgs e)
         {
@@ -828,12 +615,7 @@ namespace GameTech.B3Reports.Forms
 
             clearImage();
         }
-
-        private void SystemSettings_Activated(object sender, EventArgs e)
-        {
-            MessageBox.Show("I am activated");
-        }
-
+        
         private void imgBtnRefreshSystemSettings_Click(object sender, EventArgs e)
         {
             clientAccessControl1.LoadClientAccessControl_(clientAccessControl1.dgClientAccess);

@@ -321,6 +321,12 @@ namespace GameTech.B3Reports.Forms
         }
         #endregion
 
+        private void AccountRecoveryButton_Click(object sender, EventArgs e)
+        {
+            var recoveryForm = new AccountRecoveryForm();
+            recoveryForm.ShowDialog();
+        }
+
         #region ref1
 
         //private void CheckIdleTimer_Tick(object sender, EventArgs e)

@@ -169,7 +169,7 @@ namespace GameTech.B3Reports.Forms
                 WriteLog.WriteLogUpdate("", CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "Crazy Bout Setting - Denom 1 cent", x.Denom_1.ToString(), UIValue);
                x.Denom_1 = (chkbxDenom1.Checked == true) ? "T" : "F";
 
-           }
+            }
 
             UIValue = (chkbxDenom5.Checked == true) ? "T" : "F";
             if (x.Denom_5 != UIValue)

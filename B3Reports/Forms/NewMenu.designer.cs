@@ -37,6 +37,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AccountRecoveryButton = new GameTech.B3Reports.Forms.ImageButton();
             this.imgBtn_Reports = new GameTech.B3Reports.Forms.ImageButton();
             this.imgBtnSecurity = new GameTech.B3Reports.Forms.ImageButton();
             this.imageButton1 = new GameTech.B3Reports.Forms.ImageButton();
@@ -94,6 +96,26 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // AccountRecoveryButton
+            // 
+            this.AccountRecoveryButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccountRecoveryButton.FocusColor = System.Drawing.Color.Black;
+            this.AccountRecoveryButton.ImageIcon = global::GameTech.B3Reports.Properties.Resources.Unlock80x80;
+            this.AccountRecoveryButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("AccountRecoveryButton.ImageNormal")));
+            this.AccountRecoveryButton.ImagePressed = ((System.Drawing.Image)(resources.GetObject("AccountRecoveryButton.ImagePressed")));
+            resources.ApplyResources(this.AccountRecoveryButton, "AccountRecoveryButton");
+            this.AccountRecoveryButton.Name = "AccountRecoveryButton";
+            this.AccountRecoveryButton.Tag = "Account Recovery";
+            this.AccountRecoveryButton.UseVisualStyleBackColor = false;
+            this.AccountRecoveryButton.Click += new System.EventHandler(this.AccountRecoveryButton_Click);
             // 
             // imgBtn_Reports
             // 
@@ -163,6 +185,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AccountRecoveryButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.imgBtn_Reports);
             this.Controls.Add(this.label4);
@@ -203,6 +227,8 @@
         private ImageButton imageButton1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private ImageButton AccountRecoveryButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -29,7 +29,9 @@ namespace GameTech.B3Reports
                                                         @spConsolationPrize ,
                                                         @spCountdownTimer
                                                         ,@spGamePasswordRecall
-                                                        ,@spWaitCountdownTimerForOtherPlayers"
+                                                        ,@spWaitCountdownTimerForOtherPlayers
+                                                        ,@handpayByPattern
+                                                        ,@rfRequiredForPlay"
                                                         , sc))
                 {
                     cmd.Parameters.AddWithValue("spMinPlayer", GetGameSettings.MinNumberOfPlayers); 
@@ -37,6 +39,8 @@ namespace GameTech.B3Reports
                     cmd.Parameters.AddWithValue("spCountdownTimer", GetGameSettings.CountDownTimer); //GetSecuritySettings.PrevPasswordLockoutAttempts);
                     cmd.Parameters.AddWithValue("spGamePasswordRecall", GetGameSettings.GameRecalPasswords);
                     cmd.Parameters.AddWithValue("spWaitCountdownTimerForOtherPlayers", GetGameSettings.WaitCountDownForOtherPLayers);
+                    cmd.Parameters.AddWithValue("handpayByPattern", GetGameSettings.HandpayByPattern);
+                    cmd.Parameters.AddWithValue("rfRequiredForPlay", GetGameSettings.RfRequiredForPlay);
                     cmd.ExecuteNonQuery(); //or you could try this if did not work                 
                 }
 

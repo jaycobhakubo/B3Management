@@ -205,6 +205,7 @@
     <Compile Include="%28cs%29Other\B3DatabaseConnection.cs" />
     <Compile Include="%28cs%29Other\B3GamesInfo.cs" />
     <Compile Include="%28cs%29Other\GameSettings.cs" />
+    <Compile Include="%28cs%29Set\RecoverOrphanedAccount.cs" />
     <Compile Include="%28cs%29Set\SetActiveGames.cs" />
     <Compile Include="%28cs%29Set\SetGameSettingsTimeBomb.cs" />
     <Compile Include="%28cs%29Set\SetGameSettingsSpirit76.cs" />
@@ -291,6 +292,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserAccess.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountRecoveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountRecoveryForm.Designer.cs">
+      <DependentUpon>AccountRecoveryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ClientAccessControl.cs">
       <SubType>UserControl</SubType>
@@ -557,11 +564,6 @@
       <DependentUpon>SessionTransaction.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Testing.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Testing.rpt</DependentUpon>
-    </Compile>
     <Compile Include="Reports\UserAccess.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -647,6 +649,9 @@
       <DependentUpon>VirtualKeyboard.cs</DependentUpon>
     </Compile>
     <Compile Include="%28cs%29Other\WriteLog.cs" />
+    <EmbeddedResource Include="Forms\AccountRecoveryForm.resx">
+      <DependentUpon>AccountRecoveryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientAccessControl.resx">
       <DependentUpon>ClientAccessControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -880,10 +885,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SessionTransaction.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Testing.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Testing.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserAccess.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>UserAccess.cs</LastGenOutput>
@@ -933,6 +934,9 @@
     <None Include="Resources\UpperLeftRedCard.png" />
     <None Include="Resources\UpperRightPurpleBonusCard.png" />
     <None Include="Resources\UpperRightPurpleCard.png" />
+    <None Include="Resources\UnlockIcon.png" />
+    <None Include="Resources\Unlock96x96.png" />
+    <None Include="Resources\Unlock80x80.png" />
     <Content Include="Resources\ViewReportButton_Strip.png" />
   </ItemGroup>
   <ItemGroup>

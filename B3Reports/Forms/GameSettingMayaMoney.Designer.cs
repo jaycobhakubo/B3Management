@@ -89,7 +89,7 @@
             this.comboBoxMaxBetLevel.Location = new System.Drawing.Point(274, 92);
             this.comboBoxMaxBetLevel.Name = "comboBoxMaxBetLevel";
             this.comboBoxMaxBetLevel.Size = new System.Drawing.Size(120, 30);
-            this.comboBoxMaxBetLevel.TabIndex = 78;
+            this.comboBoxMaxBetLevel.TabIndex = 1;
             this.comboBoxMaxBetLevel.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // comboBoxMaxCard
@@ -101,7 +101,7 @@
             this.comboBoxMaxCard.Location = new System.Drawing.Point(274, 52);
             this.comboBoxMaxCard.Name = "comboBoxMaxCard";
             this.comboBoxMaxCard.Size = new System.Drawing.Size(120, 30);
-            this.comboBoxMaxCard.TabIndex = 77;
+            this.comboBoxMaxCard.TabIndex = 0;
             this.comboBoxMaxCard.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // textBox1
@@ -130,7 +130,7 @@
             0});
             this.numCallSpeedMax.Name = "numCallSpeedMax";
             this.numCallSpeedMax.Size = new System.Drawing.Size(120, 26);
-            this.numCallSpeedMax.TabIndex = 11;
+            this.numCallSpeedMax.TabIndex = 3;
             this.numCallSpeedMax.Tag = "6";
             this.numCallSpeedMax.Value = new decimal(new int[] {
             1,
@@ -156,7 +156,7 @@
             0});
             this.numCallSpeedMin.Name = "numCallSpeedMin";
             this.numCallSpeedMin.Size = new System.Drawing.Size(120, 26);
-            this.numCallSpeedMin.TabIndex = 9;
+            this.numCallSpeedMin.TabIndex = 2;
             this.numCallSpeedMin.Tag = "5";
             this.numCallSpeedMin.Value = new decimal(new int[] {
             1,
@@ -199,7 +199,7 @@
             this.groupBox2.Location = new System.Drawing.Point(525, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(192, 352);
-            this.groupBox2.TabIndex = 71;
+            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Denom";
             // 
@@ -312,7 +312,7 @@
             this.chkbxAutoCall.Location = new System.Drawing.Point(62, 215);
             this.chkbxAutoCall.Name = "chkbxAutoCall";
             this.chkbxAutoCall.Size = new System.Drawing.Size(92, 26);
-            this.chkbxAutoCall.TabIndex = 12;
+            this.chkbxAutoCall.TabIndex = 4;
             this.chkbxAutoCall.Text = "Auto Call";
             this.chkbxAutoCall.UseVisualStyleBackColor = true;
             this.chkbxAutoCall.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
@@ -323,7 +323,7 @@
             this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(62, 255);
             this.chkbxHideCardSerialNumber.Name = "chkbxHideCardSerialNumber";
             this.chkbxHideCardSerialNumber.Size = new System.Drawing.Size(205, 26);
-            this.chkbxHideCardSerialNumber.TabIndex = 14;
+            this.chkbxHideCardSerialNumber.TabIndex = 5;
             this.chkbxHideCardSerialNumber.Text = "Hide Card Serial Number";
             this.chkbxHideCardSerialNumber.UseVisualStyleBackColor = true;
             this.chkbxHideCardSerialNumber.CheckedChanged += new System.EventHandler(this.ModifiedSettings);

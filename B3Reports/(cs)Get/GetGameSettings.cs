@@ -24,6 +24,8 @@ namespace GameTech.B3Reports
         public static int CountDownTimer = 10; //In Sec
         public static string GameRecalPasswords = "";
         public static int WaitCountDownForOtherPLayers = 11;
+        public static bool HandpayByPattern;
+        public static int RfRequiredForPlay;
 
         private int m_GameThreads;
 
@@ -46,9 +48,10 @@ namespace GameTech.B3Reports
                         GameRecalPasswords = reader.GetString(3);
                         WaitCountDownForOtherPLayers = reader.GetInt32(4);
                         m_GameThreads = reader.GetInt32(5);
+                        HandpayByPattern = reader.GetBoolean(6);
+                        RfRequiredForPlay = reader.GetInt32(7);
                     }
                 }
-
             }
             catch (Exception ex)
             {

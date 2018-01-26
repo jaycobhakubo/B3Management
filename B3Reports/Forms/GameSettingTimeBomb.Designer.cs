@@ -81,7 +81,7 @@
             this.comboBoxMaxBetLevel.Location = new System.Drawing.Point(274, 92);
             this.comboBoxMaxBetLevel.Name = "comboBoxMaxBetLevel";
             this.comboBoxMaxBetLevel.Size = new System.Drawing.Size(120, 30);
-            this.comboBoxMaxBetLevel.TabIndex = 77;
+            this.comboBoxMaxBetLevel.TabIndex = 1;
             this.comboBoxMaxBetLevel.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // comboBoxMaxCard
@@ -93,7 +93,7 @@
             this.comboBoxMaxCard.Location = new System.Drawing.Point(274, 52);
             this.comboBoxMaxCard.Name = "comboBoxMaxCard";
             this.comboBoxMaxCard.Size = new System.Drawing.Size(120, 30);
-            this.comboBoxMaxCard.TabIndex = 76;
+            this.comboBoxMaxCard.TabIndex = 0;
             this.comboBoxMaxCard.SelectedIndexChanged += new System.EventHandler(this.ModifiedSettings);
             // 
             // groupBox2
@@ -110,7 +110,7 @@
             this.groupBox2.Location = new System.Drawing.Point(525, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(192, 352);
-            this.groupBox2.TabIndex = 50;
+            this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Denom";
             // 
@@ -226,7 +226,7 @@
             0});
             this.numCallSpeed.Name = "numCallSpeed";
             this.numCallSpeed.Size = new System.Drawing.Size(120, 26);
-            this.numCallSpeed.TabIndex = 9;
+            this.numCallSpeed.TabIndex = 2;
             this.numCallSpeed.Tag = "5";
             this.numCallSpeed.Value = new decimal(new int[] {
             500,
@@ -243,7 +243,7 @@
             this.chkbxAutoCall.Location = new System.Drawing.Point(62, 175);
             this.chkbxAutoCall.Name = "chkbxAutoCall";
             this.chkbxAutoCall.Size = new System.Drawing.Size(92, 26);
-            this.chkbxAutoCall.TabIndex = 16;
+            this.chkbxAutoCall.TabIndex = 3;
             this.chkbxAutoCall.Text = "Auto Call";
             this.chkbxAutoCall.UseVisualStyleBackColor = true;
             this.chkbxAutoCall.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
@@ -255,7 +255,7 @@
             this.chkbxHideCardSerialNumber.Location = new System.Drawing.Point(62, 215);
             this.chkbxHideCardSerialNumber.Name = "chkbxHideCardSerialNumber";
             this.chkbxHideCardSerialNumber.Size = new System.Drawing.Size(205, 26);
-            this.chkbxHideCardSerialNumber.TabIndex = 19;
+            this.chkbxHideCardSerialNumber.TabIndex = 4;
             this.chkbxHideCardSerialNumber.Text = "Hide Card Serial Number";
             this.chkbxHideCardSerialNumber.UseVisualStyleBackColor = true;
             this.chkbxHideCardSerialNumber.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
