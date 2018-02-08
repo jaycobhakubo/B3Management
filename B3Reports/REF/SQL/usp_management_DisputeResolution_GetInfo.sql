@@ -18,6 +18,8 @@ GO
 
 
 
+
+
 CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
     @spAcctNumber int
     ,@spPlayTime datetime = NULL
@@ -1114,10 +1116,12 @@ CREATE proc [dbo].[usp_management_DisputeResolution_GetInfo]
         ,[CallCountBonus]
         ,[BonusOfferAccepted]
 		,ServerGameNumber
-		--,case when [FirstBonusCardNumber] != 0 and WinAmount = 0 then 1 else 0 end as IsGameInProgress -- 1 then yes
+		,(case when [FirstBonusCardNumber] != 0 and [BonusOfferAccepted] = 0 then 1 else 0 end) IsGameInProgress -- 1 then yes
 		   from    @FInfoTable      
-		   where  
-		   (case when [FirstBonusCardNumber] != 0 and [BonusOfferAccepted] = 0 then 1 else 0 end) = 0
+		   --where  
+		   --(case when [FirstBonusCardNumber] != 0 and [BonusOfferAccepted] = 0 then 1 else 0 end) = 0
+
+
 
 
 
