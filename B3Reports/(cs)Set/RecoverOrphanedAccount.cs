@@ -20,14 +20,12 @@ namespace GameTech.B3Reports
                                                         , sc))
                 {
                     cmd.Parameters.AddWithValue("creditAccount", accountNumber);
-                    cmd.ExecuteNonQuery();
 
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
                         var value = reader.GetInt32(0);
-                        
-                        if (value >= 0 && value <= 3)
+                        if (Enum.IsDefined(typeof(RecoverAccountStatus), value))
                         {
                             status = (RecoverAccountStatus) value;
                         }

@@ -35,6 +35,7 @@ namespace GameTech.B3Reports.Forms
         int MayaMoneyCardTypeImage = 0; //1 = regular; 2 = all card is active
         SqlConnection sc = GetSQLConnection.get();
         GetInfo mGetInfo;
+        bool mIsBonusGameInProgress;
 
 
         #endregion
@@ -2104,7 +2105,7 @@ namespace GameTech.B3Reports.Forms
             lblBetAmount.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BetAmount);
             label18.Text = "Game #: " + mGetInfo.GameNumber.ToString();
 
-            if (mGetInfo.FirstBonusCardNumber != 0)
+            if (mGetInfo.FirstBonusCardNumber != 0 && mGetInfo.IsBonusGameInProgress != 1)
             {
                 if (mGetInfo.WinAmount == 0)
                 {
@@ -2125,12 +2126,10 @@ namespace GameTech.B3Reports.Forms
             }
 
 
-
             lblBetLevel.Text = mGetInfo.BetLevel.ToString();
             lblBetDenom.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BetDenom);
             lblB4Games.Text = mGetInfo.B4Games.ToString();
             SelectedB4Game = mGetInfo.B4Games.ToString();
-
 
             //GetBallCall
             GetBallCall y = new GetBallCall(PlayTime, mGetInfo.B4Games.ToString(), AccountNumber, mGetInfo.BallCount, mGetInfo.GameNumber);

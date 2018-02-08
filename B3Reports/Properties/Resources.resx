@@ -505,7 +505,7 @@
   <data name="Receipt_has_already_been_redeemed_String" xml:space="preserve">
     <value>Receipt has already been redeemed</value>
   </data>
-  <data name="Account_recovery_is_not_necessary_String" xml:space="preserve">
-    <value>Account recovery is not necessary</value>
+  <data name="Account_does_not_need_to_be_recovered" xml:space="preserve">
+    <value>Account does not need to be recovered</value>
   </data>
 </root>

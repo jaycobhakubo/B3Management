@@ -61,6 +61,15 @@ namespace GameTech.B3Reports.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Account does not need to be recovered.
+        /// </summary>
+        internal static string Account_does_not_need_to_be_recovered {
+            get {
+                return ResourceManager.GetString("Account_does_not_need_to_be_recovered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap account_history_report {
@@ -86,15 +95,6 @@ namespace GameTech.B3Reports.Properties {
         internal static string Account_Recovered_String {
             get {
                 return ResourceManager.GetString("Account_Recovered_String", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Account recovery is not necessary.
-        /// </summary>
-        internal static string Account_recovery_is_not_necessary_String {
-            get {
-                return ResourceManager.GetString("Account_recovery_is_not_necessary_String", resourceCulture);
             }
         }
         

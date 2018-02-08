@@ -52,7 +52,7 @@ namespace GameTech.B3Reports.Forms
                     break;
                 case RecoverAccountStatus.AccountNotOrphaned:
                     StatusLabel.ForeColor = Color.Black;
-                    StatusLabel.Text = Resources.Account_recovery_is_not_necessary_String;
+                    StatusLabel.Text = Resources.Account_does_not_need_to_be_recovered;
                     break;
                 default:
                     StatusLabel.ForeColor = Color.Red;

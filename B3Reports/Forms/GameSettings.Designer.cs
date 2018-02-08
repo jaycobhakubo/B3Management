@@ -127,9 +127,9 @@
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(58, 538);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 22);
+            this.label1.Size = new System.Drawing.Size(167, 22);
             this.label1.TabIndex = 47;
-            this.label1.Text = "RF Required Time Intervals";
+            this.label1.Text = "RF Required Time Out";
             // 
             // groupBox4
             // 

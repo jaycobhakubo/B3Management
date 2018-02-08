@@ -34,6 +34,7 @@ namespace GameTech.B3Reports
         private int mBonusBallCount;
         private int mBonusOfferAccepted;
         private int mServerGameNumber;
+        private int mIsBonusGameInProgress;
 
         #endregion
 
@@ -147,6 +148,11 @@ namespace GameTech.B3Reports
             set { mBonusOfferAccepted = value; }
         }
 
+        public int IsBonusGameInProgress
+        {
+            get { return mIsBonusGameInProgress; }
+        }
+
         #endregion
 
         #region METHODS
@@ -222,6 +228,7 @@ namespace GameTech.B3Reports
                         {
                             mServerGameNumber = reader.GetInt32(17);
                         }
+                        mIsBonusGameInProgress = reader.GetInt32(18);
                     }
                 }
 
