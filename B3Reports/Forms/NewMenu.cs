@@ -283,6 +283,18 @@ namespace GameTech.B3Reports.Forms
             {
                 imageButton1.Visible = false;
 
+            } 
+            
+            if (smgmtp.AccountRecovery == true)
+            {
+                AccountRecoveryButton.Visible = true;
+                AccountRecoveryLabel.Visible = true;
+                MgmtBtnModule.Add(AccountRecoveryButton);
+            }
+            else
+            {
+                AccountRecoveryButton.Visible = false;
+                AccountRecoveryLabel.Visible = false;
             }
 
             int count = 0;

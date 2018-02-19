@@ -1254,6 +1254,11 @@ namespace GameTech.B3Reports.Forms
                             SqlCommand cmd = new SqlCommand(@"Update  [dbo].[B3_Login] set [ND Settings] = '" + sqlBoolVal + "' where LoginID = " + lginID, sc);
                             cmd.ExecuteNonQuery();
                         }
+                        else if (StaffPermissionsList2.PermissionList2[count].Permissions == "Account Recovery")
+                        {
+                            SqlCommand cmd = new SqlCommand(@"Update  [dbo].[B3_Login] set PermitAccountRecovery = '" + sqlBoolVal + "' where LoginID = " + lginID, sc);
+                            cmd.ExecuteNonQuery();
+                        }
                     }
 
 
@@ -1452,6 +1457,14 @@ namespace GameTech.B3Reports.Forms
                                 string OldValue = "";
                                 if (sqlBoolVal == "T") { OldValue = "F"; } else { OldValue = "T"; }
                                 WriteLog.WriteLogWithUserName(userName, CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "ND Settings", OldValue, sqlBoolVal);
+                            }
+                            else if (StaffPermissionsList.PermissionList[count].Permissions == "Account Recovery")
+                            {
+                                SqlCommand cmd = new SqlCommand(@"Update  [dbo].[B3_Login] set PermitAccountRecovery = '" + sqlBoolVal + "' where LoginID = " + lginID, sc);
+                                cmd.ExecuteNonQuery();
+                                string OldValue = "";
+                                if (sqlBoolVal == "T") { OldValue = "F"; } else { OldValue = "T"; }
+                                WriteLog.WriteLogWithUserName(userName, CurrentUserLoggedIn.username, "UPDATE", GetCurrentMacID.MacAddress, "PermitAccountRecovery", OldValue, sqlBoolVal);
                             }
                         }
                     }

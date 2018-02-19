@@ -37,7 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.AccountRecoveryLabel = new System.Windows.Forms.Label();
             this.AccountRecoveryButton = new GameTech.B3Reports.Forms.ImageButton();
             this.imgBtn_Reports = new GameTech.B3Reports.Forms.ImageButton();
             this.imgBtnSecurity = new GameTech.B3Reports.Forms.ImageButton();
@@ -97,12 +97,12 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
             // 
-            // label1
+            // AccountRecoveryLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
+            this.AccountRecoveryLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.AccountRecoveryLabel, "AccountRecoveryLabel");
+            this.AccountRecoveryLabel.ForeColor = System.Drawing.Color.White;
+            this.AccountRecoveryLabel.Name = "AccountRecoveryLabel";
             // 
             // AccountRecoveryButton
             // 
@@ -185,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AccountRecoveryLabel);
             this.Controls.Add(this.AccountRecoveryButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.imgBtn_Reports);
@@ -228,7 +228,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private ImageButton AccountRecoveryButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label AccountRecoveryLabel;
     }
 }
 

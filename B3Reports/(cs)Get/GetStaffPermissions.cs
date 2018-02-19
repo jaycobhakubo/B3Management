@@ -33,6 +33,7 @@ namespace GameTech.B3Reports
         public bool MgmtSystemSettings;
         public bool MgmtDisputeResolution;
         public bool MgmtReports;
+        public bool AccountRecovery;
 
     }
 
@@ -168,6 +169,15 @@ namespace GameTech.B3Reports
                             Smp.MgmtReports = false;
                         }
 
+                        tempPermission = reader.GetString(4);
+                        if (tempPermission == "T")
+                        {
+                            Smp.AccountRecovery = true;
+                        }
+                        else
+                        {
+                            Smp.AccountRecovery = false;
+                        }
 
                     }
                 }
