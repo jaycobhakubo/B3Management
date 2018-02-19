@@ -489,7 +489,12 @@ namespace GameTech.B3Reports.Forms
                 GetInfoALL();            
                 ShowCardPanel();
                 DisableControlsInPanel2();//knc
-                EnableControlInPanel1();
+                //EnableControlInPanel1();
+
+                imgbtnNext.Enabled = false;
+                imgbtnBack.Enabled = true;
+                imgbtnEnd.Enabled = true;
+
                 TurnOnNotInPlayImages();
             }
             else
@@ -777,9 +782,13 @@ namespace GameTech.B3Reports.Forms
                     {
                         cmbxGameName.Items.Add("All");
                     }
+
+                    if (cmbxGameName.Items.Count > 0)
+                    {
+                        cmbxGameName.SelectedIndex = 0;
+                    }
+
                     ClearErrorProvider();
-
-
                 }
                 else
                 {
@@ -2103,7 +2112,7 @@ namespace GameTech.B3Reports.Forms
             }
 
             lblBetAmount.Text = ConvertIntToMoneyFormat.convert_(mGetInfo.BetAmount);
-            label18.Text = "Game #: " + mGetInfo.GameNumber.ToString();
+//            label18.Text = "Game #: " + mGetInfo.GameNumber.ToString();
 
             if (mGetInfo.FirstBonusCardNumber != 0 && mGetInfo.IsBonusGameInProgress != 1)
             {
@@ -2118,6 +2127,10 @@ namespace GameTech.B3Reports.Forms
                 if (mGetInfo.B4Games == "Spirit76")
                 {
                     SpiritBR = true;
+                    
+                    // Spirit does not require a base win amount to make it into 
+                    //  the bonus round
+                    checkBox1.Visible = true; 
                 }
             }
             else
@@ -2184,9 +2197,12 @@ namespace GameTech.B3Reports.Forms
             }
 
             //Check if the game played is ClassII or ClassIII
-            sClass2 = IsClass2.GetStatus(mGetInfo.B4Games, mGetInfo.GameNumber, mGetInfo.DateTimePlay);
-            if (sClass2 == true)
-            { label18.Text = "Game #: " + mGetInfo.ServerGameNumber.ToString(); }
+//            sClass2 = IsClass2.GetStatus(mGetInfo.B4Games, mGetInfo.GameNumber, mGetInfo.DateTimePlay);
+//            if (sClass2 == true)
+//            {
+                // Always show the server game number not the game number
+                label18.Text = "Game #: " + mGetInfo.ServerGameNumber.ToString(); 
+//            }
 
             //Load Card Number.
             int CountUpToSix = 1;
