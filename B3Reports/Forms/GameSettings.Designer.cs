@@ -147,10 +147,10 @@
             this.HandPayByPatternRadioButton.AutoSize = true;
             this.HandPayByPatternRadioButton.Location = new System.Drawing.Point(19, 68);
             this.HandPayByPatternRadioButton.Name = "HandPayByPatternRadioButton";
-            this.HandPayByPatternRadioButton.Size = new System.Drawing.Size(168, 26);
+            this.HandPayByPatternRadioButton.Size = new System.Drawing.Size(172, 26);
             this.HandPayByPatternRadioButton.TabIndex = 1;
             this.HandPayByPatternRadioButton.TabStop = true;
-            this.HandPayByPatternRadioButton.Text = "Caculate By Pattern";
+            this.HandPayByPatternRadioButton.Text = "Calculate By Pattern";
             this.HandPayByPatternRadioButton.UseVisualStyleBackColor = true;
             // 
             // HandPayByGameRadioButton
@@ -158,10 +158,10 @@
             this.HandPayByGameRadioButton.AutoSize = true;
             this.HandPayByGameRadioButton.Location = new System.Drawing.Point(19, 25);
             this.HandPayByGameRadioButton.Name = "HandPayByGameRadioButton";
-            this.HandPayByGameRadioButton.Size = new System.Drawing.Size(157, 26);
+            this.HandPayByGameRadioButton.Size = new System.Drawing.Size(161, 26);
             this.HandPayByGameRadioButton.TabIndex = 0;
             this.HandPayByGameRadioButton.TabStop = true;
-            this.HandPayByGameRadioButton.Text = "Caculate By Game";
+            this.HandPayByGameRadioButton.Text = "Calculate By Game";
             this.HandPayByGameRadioButton.UseVisualStyleBackColor = true;
             this.HandPayByGameRadioButton.CheckedChanged += new System.EventHandler(this.ModifiedSettings);
             // 

@@ -484,8 +484,8 @@ namespace GameTech.B3Reports.Forms
             WindowsDefaultLocation.PointA = this.Location.X;
             WindowsDefaultLocation.PointB = this.Location.Y;
 
-            label2.Text = "Version 4.2.0     09/15/2015     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
-            label3.Text = "\u00a9" + " Copyright 2015 Fortunet, Inc. All Rights Reserved";
+            label2.Text = "Version 5.2.0     02/24/2018     MAC " + GetCurrentMacID.MacAddress + "     IP " + GetCurrentMacID.IpAddress;
+            label3.Text = "\u00a9" + " Copyright 2018 Fortunet, Inc. All Rights Reserved";
         }
 
 

@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisputeResolution));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
             this.lblMessageLastGameReach = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTotalWin2 = new System.Windows.Forms.Label();
@@ -561,8 +560,6 @@
             this.lbl7BingoCard1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.lstviewPatterListTable = new System.Windows.Forms.ListView();
@@ -577,8 +574,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtbxAccountNumber = new System.Windows.Forms.TextBox();
-            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
-            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             this.cmbxGameName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -590,6 +585,11 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.imgbtnEnd = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnNext = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnBack = new GameTech.B3Reports.Forms.ImageButton();
+            this.imageButton4 = new GameTech.B3Reports.Forms.ImageButton();
+            this.imgbtnLookUp = new GameTech.B3Reports.Forms.ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -673,21 +673,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 752);
             this.panel1.TabIndex = 0;
-            // 
-            // imgbtnEnd
-            // 
-            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnEnd.Enabled = false;
-            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
-            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnEnd.Name = "imgbtnEnd";
-            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
-            this.imgbtnEnd.TabIndex = 28;
-            this.imgbtnEnd.Text = "End Search";
-            this.imgbtnEnd.UseVisualStyleBackColor = false;
-            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
             // 
             // lblMessageLastGameReach
             // 
@@ -6574,36 +6559,6 @@
             this.label12.Text = "First Try";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgbtnNext
-            // 
-            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnNext.Enabled = false;
-            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
-            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnNext.Name = "imgbtnNext";
-            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnNext.TabIndex = 1;
-            this.imgbtnNext.Text = "Next";
-            this.imgbtnNext.UseVisualStyleBackColor = false;
-            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
-            // 
-            // imgbtnBack
-            // 
-            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnBack.Enabled = false;
-            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
-            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnBack.Name = "imgbtnBack";
-            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnBack.TabIndex = 2;
-            this.imgbtnBack.Text = "Back";
-            this.imgbtnBack.UseVisualStyleBackColor = false;
-            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
@@ -6775,36 +6730,6 @@
             this.txtbxAccountNumber.Leave += new System.EventHandler(this.txtbxAccountNumber_Leave);
             this.txtbxAccountNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtbxAccountNumber_Validating);
             // 
-            // imageButton4
-            // 
-            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton4.FocusColor = System.Drawing.Color.Black;
-            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imageButton4.ForeColor = System.Drawing.Color.Black;
-            this.imageButton4.Location = new System.Drawing.Point(218, 713);
-            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imageButton4.Name = "imageButton4";
-            this.imageButton4.Size = new System.Drawing.Size(102, 30);
-            this.imageButton4.TabIndex = 7;
-            this.imageButton4.Text = "Return";
-            this.imageButton4.UseVisualStyleBackColor = false;
-            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
-            // 
-            // imgbtnLookUp
-            // 
-            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
-            this.imgbtnLookUp.Enabled = false;
-            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
-            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
-            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
-            this.imgbtnLookUp.Name = "imgbtnLookUp";
-            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
-            this.imgbtnLookUp.TabIndex = 6;
-            this.imgbtnLookUp.Text = "Look Up";
-            this.imgbtnLookUp.UseVisualStyleBackColor = false;
-            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
-            // 
             // cmbxGameName
             // 
             this.cmbxGameName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -6931,6 +6856,81 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // imgbtnEnd
+            // 
+            this.imgbtnEnd.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnEnd.Enabled = false;
+            this.imgbtnEnd.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnEnd.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnEnd.Location = new System.Drawing.Point(537, 713);
+            this.imgbtnEnd.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnEnd.Name = "imgbtnEnd";
+            this.imgbtnEnd.Size = new System.Drawing.Size(117, 30);
+            this.imgbtnEnd.TabIndex = 28;
+            this.imgbtnEnd.Text = "End Search";
+            this.imgbtnEnd.UseVisualStyleBackColor = false;
+            this.imgbtnEnd.Click += new System.EventHandler(this.imgbtnEnd_Click);
+            // 
+            // imgbtnNext
+            // 
+            this.imgbtnNext.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnNext.Enabled = false;
+            this.imgbtnNext.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnNext.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnNext.Location = new System.Drawing.Point(146, 713);
+            this.imgbtnNext.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnNext.Name = "imgbtnNext";
+            this.imgbtnNext.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnNext.TabIndex = 1;
+            this.imgbtnNext.Text = "Next";
+            this.imgbtnNext.UseVisualStyleBackColor = false;
+            this.imgbtnNext.Click += new System.EventHandler(this.imgbtnNext_Click);
+            // 
+            // imgbtnBack
+            // 
+            this.imgbtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnBack.Enabled = false;
+            this.imgbtnBack.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnBack.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnBack.Location = new System.Drawing.Point(24, 713);
+            this.imgbtnBack.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnBack.Name = "imgbtnBack";
+            this.imgbtnBack.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnBack.TabIndex = 2;
+            this.imgbtnBack.Text = "Back";
+            this.imgbtnBack.UseVisualStyleBackColor = false;
+            this.imgbtnBack.Click += new System.EventHandler(this.imgbtnBack_Click);
+            // 
+            // imageButton4
+            // 
+            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton4.FocusColor = System.Drawing.Color.Black;
+            this.imageButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imageButton4.ForeColor = System.Drawing.Color.Black;
+            this.imageButton4.Location = new System.Drawing.Point(218, 713);
+            this.imageButton4.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imageButton4.Name = "imageButton4";
+            this.imageButton4.Size = new System.Drawing.Size(102, 30);
+            this.imageButton4.TabIndex = 7;
+            this.imageButton4.Text = "Return";
+            this.imageButton4.UseVisualStyleBackColor = false;
+            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
+            // 
+            // imgbtnLookUp
+            // 
+            this.imgbtnLookUp.BackColor = System.Drawing.Color.Transparent;
+            this.imgbtnLookUp.Enabled = false;
+            this.imgbtnLookUp.FocusColor = System.Drawing.Color.Black;
+            this.imgbtnLookUp.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.imgbtnLookUp.Location = new System.Drawing.Point(8, 713);
+            this.imgbtnLookUp.MinimumSize = new System.Drawing.Size(30, 30);
+            this.imgbtnLookUp.Name = "imgbtnLookUp";
+            this.imgbtnLookUp.Size = new System.Drawing.Size(102, 30);
+            this.imgbtnLookUp.TabIndex = 6;
+            this.imgbtnLookUp.Text = "Look Up";
+            this.imgbtnLookUp.UseVisualStyleBackColor = false;
+            this.imgbtnLookUp.Click += new System.EventHandler(this.imgbtnLookUp_Click);
             // 
             // DisputeResolution
             // 

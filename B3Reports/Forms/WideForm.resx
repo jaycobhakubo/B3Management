@@ -123,14 +123,23 @@
   <metadata name="ballCallSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>436, 56</value>
   </metadata>
+  <metadata name="ballCallSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>436, 56</value>
+  </metadata>
   <metadata name="rptDetailTransBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>950, 17</value>
   </metadata>
   <metadata name="detailTrans.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>839, 17</value>
   </metadata>
+  <metadata name="detailTrans.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>839, 17</value>
+  </metadata>
   <metadata name="rptCardImagesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>423, 17</value>
+  </metadata>
+  <metadata name="cards.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>184, 17</value>
   </metadata>
   <metadata name="cards.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>184, 17</value>
@@ -678,7 +687,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnDetailTrans.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 16</value>
+    <value>467, 366</value>
   </data>
   <data name="btnDetailTrans.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 156</value>
@@ -714,13 +723,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnRptAccountHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 367</value>
+    <value>266, 16</value>
   </data>
   <data name="btnRptAccountHistory.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 161</value>
   </data>
   <data name="btnRptAccountHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;btnRptAccountHistory.Name" xml:space="preserve">
     <value>btnRptAccountHistory</value>
@@ -744,13 +753,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnWinnersCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 367</value>
+    <value>266, 366</value>
   </data>
   <data name="btnWinnersCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 159</value>
   </data>
   <data name="btnWinnersCard.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;btnWinnersCard.Name" xml:space="preserve">
     <value>btnWinnersCard</value>
@@ -2588,13 +2597,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnDrawer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 367</value>
+    <value>701, 373</value>
   </data>
   <data name="btnDrawer.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 156</value>
   </data>
   <data name="btnDrawer.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;btnDrawer.Name" xml:space="preserve">
     <value>btnDrawer</value>
@@ -6869,13 +6878,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnSessionSummary.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 193</value>
+    <value>661, 189</value>
   </data>
   <data name="btnSessionSummary.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 150</value>
   </data>
   <data name="btnSessionSummary.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btnSessionSummary.Name" xml:space="preserve">
     <value>btnSessionSummary</value>
@@ -7816,13 +7825,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnSessTranDtl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 195</value>
+    <value>467, 189</value>
   </data>
   <data name="btnSessTranDtl.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 158</value>
   </data>
   <data name="btnSessTranDtl.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btnSessTranDtl.Name" xml:space="preserve">
     <value>btnSessTranDtl</value>
@@ -7855,7 +7864,7 @@
     <value>157, 153</value>
   </data>
   <data name="btnUserAccess.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;btnUserAccess.Name" xml:space="preserve">
     <value>btnUserAccess</value>
@@ -7882,13 +7891,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnPayout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 195</value>
+    <value>266, 189</value>
   </data>
   <data name="btnPayout.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
   <data name="btnPayout.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btnPayout.Name" xml:space="preserve">
     <value>btnPayout</value>
@@ -7915,13 +7924,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnBallCallClass2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 193</value>
+    <value>69, 189</value>
   </data>
   <data name="btnBallCallClass2.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 160</value>
   </data>
   <data name="btnBallCallClass2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btnBallCallClass2.Name" xml:space="preserve">
     <value>btnBallCallClass2</value>
@@ -7948,13 +7957,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnAuditLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 17</value>
+    <value>661, 16</value>
   </data>
   <data name="btnAuditLog.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 157</value>
   </data>
   <data name="btnAuditLog.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btnAuditLog.Name" xml:space="preserve">
     <value>btnAuditLog</value>
@@ -10097,13 +10106,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnJackpot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 367</value>
+    <value>69, 366</value>
   </data>
   <data name="btnJackpot.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 156</value>
   </data>
   <data name="btnJackpot.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;btnJackpot.Name" xml:space="preserve">
     <value>btnJackpot</value>
@@ -12420,7 +12429,7 @@
     <value>160, 156</value>
   </data>
   <data name="btnCardImages.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;btnCardImages.Name" xml:space="preserve">
     <value>btnCardImages</value>
@@ -12454,6 +12463,162 @@
   </data>
   <data name="&gt;&gt;pnlButtons.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblAccountNumber.Name" xml:space="preserve">
+    <value>lblAccountNumber</value>
+  </data>
+  <data name="&gt;&gt;lblAccountNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccountNumber.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;lblAccountNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_sessionComboBox.Name" xml:space="preserve">
+    <value>m_sessionComboBox</value>
+  </data>
+  <data name="&gt;&gt;m_sessionComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_sessionComboBox.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;m_sessionComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnView.Name" xml:space="preserve">
+    <value>btnView</value>
+  </data>
+  <data name="&gt;&gt;btnView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnView.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;btnView.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Name" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtEnd.Name" xml:space="preserve">
+    <value>dtEnd</value>
+  </data>
+  <data name="&gt;&gt;dtEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtEnd.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;dtEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dtStart.Name" xml:space="preserve">
+    <value>dtStart</value>
+  </data>
+  <data name="&gt;&gt;dtStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtStart.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;dtStart.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt2.Name" xml:space="preserve">
+    <value>txt2</value>
+  </data>
+  <data name="&gt;&gt;txt2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt2.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;txt2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txt1.Name" xml:space="preserve">
+    <value>txt1</value>
+  </data>
+  <data name="&gt;&gt;txt1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt1.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;txt1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lbl2.Name" xml:space="preserve">
+    <value>lbl2</value>
+  </data>
+  <data name="&gt;&gt;lbl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl2.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;lbl2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbl1.Name" xml:space="preserve">
+    <value>lbl1</value>
+  </data>
+  <data name="&gt;&gt;lbl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl1.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;lbl1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cmbxAccountN.Name" xml:space="preserve">
+    <value>cmbxAccountN</value>
+  </data>
+  <data name="&gt;&gt;cmbxAccountN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbxAccountN.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;cmbxAccountN.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pnlParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="pnlParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 55</value>
+  </data>
+  <data name="pnlParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 560</value>
+  </data>
+  <data name="pnlParams.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pnlParams.Name" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;pnlParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlParams.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlParams.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblAccountNumber.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12538,6 +12703,183 @@
   </data>
   <data name="&gt;&gt;btnView.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnPlay.Name" xml:space="preserve">
+    <value>btnPlay</value>
+  </data>
+  <data name="&gt;&gt;btnPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPlay.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnPlay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnZero.Name" xml:space="preserve">
+    <value>btnZero</value>
+  </data>
+  <data name="&gt;&gt;btnZero.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZero.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnZero.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnZeroZero.Name" xml:space="preserve">
+    <value>btnZeroZero</value>
+  </data>
+  <data name="&gt;&gt;btnZeroZero.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnZeroZero.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnZeroZero.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnNine.Name" xml:space="preserve">
+    <value>btnNine</value>
+  </data>
+  <data name="&gt;&gt;btnNine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNine.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnNine.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnEight.Name" xml:space="preserve">
+    <value>btnEight</value>
+  </data>
+  <data name="&gt;&gt;btnEight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEight.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnEight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnSeven.Name" xml:space="preserve">
+    <value>btnSeven</value>
+  </data>
+  <data name="&gt;&gt;btnSeven.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSeven.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnSeven.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnSix.Name" xml:space="preserve">
+    <value>btnSix</value>
+  </data>
+  <data name="&gt;&gt;btnSix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSix.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnSix.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnFive.Name" xml:space="preserve">
+    <value>btnFive</value>
+  </data>
+  <data name="&gt;&gt;btnFive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFive.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnFive.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnFour.Name" xml:space="preserve">
+    <value>btnFour</value>
+  </data>
+  <data name="&gt;&gt;btnFour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFour.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnFour.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnThree.Name" xml:space="preserve">
+    <value>btnThree</value>
+  </data>
+  <data name="&gt;&gt;btnThree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThree.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnThree.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnTwo.Name" xml:space="preserve">
+    <value>btnTwo</value>
+  </data>
+  <data name="&gt;&gt;btnTwo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTwo.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnTwo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btnOne.Name" xml:space="preserve">
+    <value>btnOne</value>
+  </data>
+  <data name="&gt;&gt;btnOne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOne.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;btnOne.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;picDown.Name" xml:space="preserve">
+    <value>picDown</value>
+  </data>
+  <data name="&gt;&gt;picDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picDown.Parent" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;picDown.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pnlKeypad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 38</value>
+  </data>
+  <data name="pnlKeypad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 400</value>
+  </data>
+  <data name="pnlKeypad.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Name" xml:space="preserve">
+    <value>pnlKeypad</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.Parent" xml:space="preserve">
+    <value>pnlParams</value>
+  </data>
+  <data name="&gt;&gt;pnlKeypad.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btnPlay.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -15564,27 +15906,6 @@
   <data name="&gt;&gt;picDown.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="pnlKeypad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 38</value>
-  </data>
-  <data name="pnlKeypad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 400</value>
-  </data>
-  <data name="pnlKeypad.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;pnlKeypad.Name" xml:space="preserve">
-    <value>pnlKeypad</value>
-  </data>
-  <data name="&gt;&gt;pnlKeypad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlKeypad.Parent" xml:space="preserve">
-    <value>pnlParams</value>
-  </data>
-  <data name="&gt;&gt;pnlKeypad.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="dtEnd.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -15783,45 +16104,6 @@
   <data name="&gt;&gt;cmbxAccountN.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="pnlParams.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="pnlParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 55</value>
-  </data>
-  <data name="pnlParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 560</value>
-  </data>
-  <data name="pnlParams.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pnlParams.Name" xml:space="preserve">
-    <value>pnlParams</value>
-  </data>
-  <data name="&gt;&gt;pnlParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlParams.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlParams.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rptViewer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rptViewer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="rptViewer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="rptViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 560</value>
-  </data>
-  <data name="rptViewer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;rptViewer.Name" xml:space="preserve">
     <value>rptViewer</value>
   </data>
@@ -15855,6 +16137,33 @@
   <data name="&gt;&gt;pnlViewer.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="rptViewer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rptViewer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rptViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rptViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 560</value>
+  </data>
+  <data name="rptViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rptViewer.Name" xml:space="preserve">
+    <value>rptViewer</value>
+  </data>
+  <data name="&gt;&gt;rptViewer.Type" xml:space="preserve">
+    <value>Microsoft.Reporting.WinForms.ReportViewer, Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;rptViewer.Parent" xml:space="preserve">
+    <value>pnlViewer</value>
+  </data>
+  <data name="&gt;&gt;rptViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="cardsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>264, 17</value>
   </metadata>
@@ -15877,7 +16186,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>55</value>
+    <value>119</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -18723,6 +19032,403 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1024, 768</value>
   </data>
+  <data name="&gt;&gt;cmbxBallCallByCategory.Name" xml:space="preserve">
+    <value>cmbxBallCallByCategory</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallByCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallByCategory.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallByCategory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallSessionID.Name" xml:space="preserve">
+    <value>cmbxBallCallSessionID</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallSessionID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallSessionID.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;cmbxBallCallSessionID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallEndDate.Name" xml:space="preserve">
+    <value>dtBallCallEndDate</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallEndDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallEndDate.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallEndDate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallStartDate.Name" xml:space="preserve">
+    <value>dtBallCallStartDate</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallStartDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallStartDate.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;dtBallCallStartDate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallEndDate.Name" xml:space="preserve">
+    <value>lblBallCallEndDate</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallEndDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallEndDate.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallEndDate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallStartDate.Name" xml:space="preserve">
+    <value>lblBallCallStartDate</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallStartDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallStartDate.Parent" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;lblBallCallStartDate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pnlParamsBallCall.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="pnlParamsBallCall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 55</value>
+  </data>
+  <data name="pnlParamsBallCall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 560</value>
+  </data>
+  <data name="pnlParamsBallCall.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="pnlParamsBallCall.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlParamsBallCall.Name" xml:space="preserve">
+    <value>pnlParamsBallCall</value>
+  </data>
+  <data name="&gt;&gt;pnlParamsBallCall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlParamsBallCall.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlParamsBallCall.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
+    <value>crystalReportViewer1</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
+    <value>pnlCrystalViewer</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlCrystalViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 55</value>
+  </data>
+  <data name="pnlCrystalViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 560</value>
+  </data>
+  <data name="pnlCrystalViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlCrystalViewer.Name" xml:space="preserve">
+    <value>pnlCrystalViewer</value>
+  </data>
+  <data name="&gt;&gt;pnlCrystalViewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlCrystalViewer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlCrystalViewer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="&gt;&gt;spRptBallCallSetBindingSource.Name" xml:space="preserve">
+    <value>spRptBallCallSetBindingSource</value>
+  </data>
+  <data name="&gt;&gt;spRptBallCallSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ballCallSet.Name" xml:space="preserve">
+    <value>ballCallSet</value>
+  </data>
+  <data name="&gt;&gt;ballCallSet.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.BallCallSet, Data.BallCallSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rptDetailTransBindingSource.Name" xml:space="preserve">
+    <value>rptDetailTransBindingSource</value>
+  </data>
+  <data name="&gt;&gt;rptDetailTransBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;detailTrans.Name" xml:space="preserve">
+    <value>detailTrans</value>
+  </data>
+  <data name="&gt;&gt;detailTrans.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.DetailTrans, Data.DetailTrans.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rptCardImagesBindingSource.Name" xml:space="preserve">
+    <value>rptCardImagesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;rptCardImagesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cards.Name" xml:space="preserve">
+    <value>cards</value>
+  </data>
+  <data name="&gt;&gt;cards.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.Cards, Data.Cards.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cardsBindingSource.Name" xml:space="preserve">
+    <value>cardsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;cardsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rptCardImagesTableAdapter.Name" xml:space="preserve">
+    <value>rptCardImagesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;rptCardImagesTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.CardsTableAdapters.rptCardImagesTableAdapter, Data.Cards.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rptDetailTransTableAdapter.Name" xml:space="preserve">
+    <value>rptDetailTransTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;rptDetailTransTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.DetailTransTableAdapters.rptDetailTransTableAdapter, Data.DetailTrans.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;spRptBallCallSetTableAdapter.Name" xml:space="preserve">
+    <value>spRptBallCallSetTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;spRptBallCallSetTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.BallCallSetTableAdapters.spRptBallCallSetTableAdapter, Data.BallCallSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_errorProvider.Name" xml:space="preserve">
+    <value>m_errorProvider</value>
+  </data>
+  <data name="&gt;&gt;m_errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AuditLogBindingSource.Name" xml:space="preserve">
+    <value>AuditLogBindingSource</value>
+  </data>
+  <data name="&gt;&gt;AuditLogBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;auditLog.Name" xml:space="preserve">
+    <value>auditLog</value>
+  </data>
+  <data name="&gt;&gt;auditLog.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.AuditLog, Data.AuditLog.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;spRptAuditLogTableAdapter.Name" xml:space="preserve">
+    <value>spRptAuditLogTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;spRptAuditLogTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.AuditLogTableAdapters.spRptAuditLogTableAdapter, Data.AuditLog.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ballCallClass2.Name" xml:space="preserve">
+    <value>ballCallClass2</value>
+  </data>
+  <data name="&gt;&gt;ballCallClass2.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.BallCallClass2, Data.BallCallClass2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BallCallClass2BindingSource.Name" xml:space="preserve">
+    <value>BallCallClass2BindingSource</value>
+  </data>
+  <data name="&gt;&gt;BallCallClass2BindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usp_server_rptBallCallTableAdapter.Name" xml:space="preserve">
+    <value>usp_server_rptBallCallTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;usp_server_rptBallCallTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.BallCallClass2TableAdapters.usp_server_rptBallCallTableAdapter, Data.BallCallClass2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;payoutsBindingSource.Name" xml:space="preserve">
+    <value>payoutsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;payoutsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;payouts.Name" xml:space="preserve">
+    <value>payouts</value>
+  </data>
+  <data name="&gt;&gt;payouts.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.Payouts, Data.Payouts.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;spRptPayoutsTableAdapter.Name" xml:space="preserve">
+    <value>spRptPayoutsTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;spRptPayoutsTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.PayoutsTableAdapters.spRptPayoutsTableAdapter, Data.Payouts.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userAccessBindingSource.Name" xml:space="preserve">
+    <value>userAccessBindingSource</value>
+  </data>
+  <data name="&gt;&gt;userAccessBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userAccess.Name" xml:space="preserve">
+    <value>userAccess</value>
+  </data>
+  <data name="&gt;&gt;userAccess.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.UserAccess, Data.UserAccess.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;spRptUserAccessTableAdapter.Name" xml:space="preserve">
+    <value>spRptUserAccessTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;spRptUserAccessTableAdapter.Type" xml:space="preserve">
+    <value>GameTech.B3Reports.Data.UserAccessTableAdapters.spRptUserAccessTableAdapter, Data.UserAccess.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;queriesTableAdapterBindingSource.Name" xml:space="preserve">
+    <value>queriesTableAdapterBindingSource</value>
+  </data>
+  <data name="&gt;&gt;queriesTableAdapterBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WideForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 560</value>
+  </data>
+  <data name="crystalReportViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="CrystalDecisions.Windows.Forms" name="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+  <data name="crystalReportViewer1.ToolPanelView" type="CrystalDecisions.Windows.Forms.ToolPanelViewType, CrystalDecisions.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
+    <value>crystalReportViewer1</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
+    <value>pnlCrystalViewer</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="AuditLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="auditLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>197, 95</value>
+  </metadata>
+  <metadata name="auditLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>197, 95</value>
+  </metadata>
+  <metadata name="spRptAuditLogTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>297, 95</value>
+  </metadata>
+  <metadata name="ballCallClass2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>503, 95</value>
+  </metadata>
+  <metadata name="BallCallClass2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>628, 95</value>
+  </metadata>
+  <metadata name="usp_server_rptBallCallTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>832, 95</value>
+  </metadata>
+  <metadata name="payoutsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1074, 95</value>
+  </metadata>
+  <metadata name="payouts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="payouts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="spRptPayoutsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>112, 134</value>
+  </metadata>
+  <metadata name="userAccessBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>311, 134</value>
+  </metadata>
+  <metadata name="userAccess.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>501, 134</value>
+  </metadata>
+  <metadata name="userAccess.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>501, 134</value>
+  </metadata>
+  <metadata name="spRptUserAccessTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>612, 134</value>
+  </metadata>
+  <metadata name="queriesTableAdapterBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>757, 56</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>829, 134</value>
+  </metadata>
   <data name="cmbxBallCallByCategory.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
   </data>
@@ -18951,284 +19657,4 @@
   <data name="&gt;&gt;lblBallCallStartDate.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="pnlParamsBallCall.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="pnlParamsBallCall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 55</value>
-  </data>
-  <data name="pnlParamsBallCall.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 560</value>
-  </data>
-  <data name="pnlParamsBallCall.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="pnlParamsBallCall.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pnlParamsBallCall.Name" xml:space="preserve">
-    <value>pnlParamsBallCall</value>
-  </data>
-  <data name="&gt;&gt;pnlParamsBallCall.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlParamsBallCall.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlParamsBallCall.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 560</value>
-  </data>
-  <data name="crystalReportViewer1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <assembly alias="CrystalDecisions.Windows.Forms" name="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-  <data name="crystalReportViewer1.ToolPanelView" type="CrystalDecisions.Windows.Forms.ToolPanelViewType, CrystalDecisions.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
-    <value>crystalReportViewer1</value>
-  </data>
-  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
-    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
-  </data>
-  <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
-    <value>pnlCrystalViewer</value>
-  </data>
-  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlCrystalViewer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 55</value>
-  </data>
-  <data name="pnlCrystalViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 560</value>
-  </data>
-  <data name="pnlCrystalViewer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pnlCrystalViewer.Name" xml:space="preserve">
-    <value>pnlCrystalViewer</value>
-  </data>
-  <data name="&gt;&gt;pnlCrystalViewer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlCrystalViewer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlCrystalViewer.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>Manual</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Reports</value>
-  </data>
-  <data name="&gt;&gt;spRptBallCallSetBindingSource.Name" xml:space="preserve">
-    <value>spRptBallCallSetBindingSource</value>
-  </data>
-  <data name="&gt;&gt;spRptBallCallSetBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ballCallSet.Name" xml:space="preserve">
-    <value>ballCallSet</value>
-  </data>
-  <data name="&gt;&gt;ballCallSet.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.BallCallSet, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;rptDetailTransBindingSource.Name" xml:space="preserve">
-    <value>rptDetailTransBindingSource</value>
-  </data>
-  <data name="&gt;&gt;rptDetailTransBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;detailTrans.Name" xml:space="preserve">
-    <value>detailTrans</value>
-  </data>
-  <data name="&gt;&gt;detailTrans.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.DetailTrans, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;rptCardImagesBindingSource.Name" xml:space="preserve">
-    <value>rptCardImagesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;rptCardImagesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cards.Name" xml:space="preserve">
-    <value>cards</value>
-  </data>
-  <data name="&gt;&gt;cards.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.Cards, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cardsBindingSource.Name" xml:space="preserve">
-    <value>cardsBindingSource</value>
-  </data>
-  <data name="&gt;&gt;cardsBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rptCardImagesTableAdapter.Name" xml:space="preserve">
-    <value>rptCardImagesTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;rptCardImagesTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.CardsTableAdapters.rptCardImagesTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;rptDetailTransTableAdapter.Name" xml:space="preserve">
-    <value>rptDetailTransTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;rptDetailTransTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.DetailTransTableAdapters.rptDetailTransTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;spRptBallCallSetTableAdapter.Name" xml:space="preserve">
-    <value>spRptBallCallSetTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;spRptBallCallSetTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.BallCallSetTableAdapters.spRptBallCallSetTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;m_errorProvider.Name" xml:space="preserve">
-    <value>m_errorProvider</value>
-  </data>
-  <data name="&gt;&gt;m_errorProvider.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AuditLogBindingSource.Name" xml:space="preserve">
-    <value>AuditLogBindingSource</value>
-  </data>
-  <data name="&gt;&gt;AuditLogBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;auditLog.Name" xml:space="preserve">
-    <value>auditLog</value>
-  </data>
-  <data name="&gt;&gt;auditLog.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.AuditLog, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;spRptAuditLogTableAdapter.Name" xml:space="preserve">
-    <value>spRptAuditLogTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;spRptAuditLogTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.AuditLogTableAdapters.spRptAuditLogTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ballCallClass2.Name" xml:space="preserve">
-    <value>ballCallClass2</value>
-  </data>
-  <data name="&gt;&gt;ballCallClass2.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.BallCallClass2, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BallCallClass2BindingSource.Name" xml:space="preserve">
-    <value>BallCallClass2BindingSource</value>
-  </data>
-  <data name="&gt;&gt;BallCallClass2BindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;usp_server_rptBallCallTableAdapter.Name" xml:space="preserve">
-    <value>usp_server_rptBallCallTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;usp_server_rptBallCallTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.BallCallClass2TableAdapters.usp_server_rptBallCallTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;payoutsBindingSource.Name" xml:space="preserve">
-    <value>payoutsBindingSource</value>
-  </data>
-  <data name="&gt;&gt;payoutsBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;payouts.Name" xml:space="preserve">
-    <value>payouts</value>
-  </data>
-  <data name="&gt;&gt;payouts.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.Payouts, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;spRptPayoutsTableAdapter.Name" xml:space="preserve">
-    <value>spRptPayoutsTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;spRptPayoutsTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.PayoutsTableAdapters.spRptPayoutsTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;userAccessBindingSource.Name" xml:space="preserve">
-    <value>userAccessBindingSource</value>
-  </data>
-  <data name="&gt;&gt;userAccessBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userAccess.Name" xml:space="preserve">
-    <value>userAccess</value>
-  </data>
-  <data name="&gt;&gt;userAccess.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.UserAccess, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;spRptUserAccessTableAdapter.Name" xml:space="preserve">
-    <value>spRptUserAccessTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;spRptUserAccessTableAdapter.Type" xml:space="preserve">
-    <value>GameTech.B3Reports.Data.UserAccessTableAdapters.spRptUserAccessTableAdapter, B3Management, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;queriesTableAdapterBindingSource.Name" xml:space="preserve">
-    <value>queriesTableAdapterBindingSource</value>
-  </data>
-  <data name="&gt;&gt;queriesTableAdapterBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>WideForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="AuditLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="auditLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>197, 95</value>
-  </metadata>
-  <metadata name="spRptAuditLogTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>297, 95</value>
-  </metadata>
-  <metadata name="ballCallClass2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>503, 95</value>
-  </metadata>
-  <metadata name="BallCallClass2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>628, 95</value>
-  </metadata>
-  <metadata name="usp_server_rptBallCallTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>832, 95</value>
-  </metadata>
-  <metadata name="payoutsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1074, 95</value>
-  </metadata>
-  <metadata name="payouts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 134</value>
-  </metadata>
-  <metadata name="spRptPayoutsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>112, 134</value>
-  </metadata>
-  <metadata name="userAccessBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>311, 134</value>
-  </metadata>
-  <metadata name="userAccess.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>501, 134</value>
-  </metadata>
-  <metadata name="spRptUserAccessTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>612, 134</value>
-  </metadata>
-  <metadata name="queriesTableAdapterBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>757, 56</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>829, 134</value>
-  </metadata>
 </root>

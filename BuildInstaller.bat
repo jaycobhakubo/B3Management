@@ -1,0 +1,1 @@
+devenv ".\B3Management\B3Management.vdproj" /Build "Release"
