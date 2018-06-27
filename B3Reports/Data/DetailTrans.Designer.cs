@@ -281,21 +281,11 @@ namespace GameTech.B3Reports.Data {
             
             private global::System.Data.DataColumn columnTransType;
             
-            private global::System.Data.DataColumn columnMAC;
-            
-            private global::System.Data.DataColumn columnTransNo;
-            
             private global::System.Data.DataColumn columnReceiptNo;
-            
-            private global::System.Data.DataColumn columnTransDate;
             
             private global::System.Data.DataColumn columnTransDesc;
             
             private global::System.Data.DataColumn columnCreditAcctNum;
-            
-            private global::System.Data.DataColumn columnCreditAmt;
-            
-            private global::System.Data.DataColumn columnWinsAmt;
             
             private global::System.Data.DataColumn columnUserName;
             
@@ -305,19 +295,15 @@ namespace GameTech.B3Reports.Data {
             
             private global::System.Data.DataColumn columnSessEnd;
             
-            private global::System.Data.DataColumn columnoperatorname;
-            
-            private global::System.Data.DataColumn columnsessactive;
-            
             private global::System.Data.DataColumn columnTransactionNumber;
             
-            private global::System.Data.DataColumn columnTransDate1;
+            private global::System.Data.DataColumn columnTransDate;
             
             private global::System.Data.DataColumn columnTransTime;
             
             private global::System.Data.DataColumn columnVoidAmount;
             
-            private global::System.Data.DataColumn columnCreditAmt1;
+            private global::System.Data.DataColumn columnCreditAmt;
             
             private global::System.Data.DataColumn columnWagerAmount;
             
@@ -372,33 +358,9 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn MACColumn {
-                get {
-                    return this.columnMAC;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransNoColumn {
-                get {
-                    return this.columnTransNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ReceiptNoColumn {
                 get {
                     return this.columnReceiptNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransDateColumn {
-                get {
-                    return this.columnTransDate;
                 }
             }
             
@@ -415,22 +377,6 @@ namespace GameTech.B3Reports.Data {
             public global::System.Data.DataColumn CreditAcctNumColumn {
                 get {
                     return this.columnCreditAcctNum;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CreditAmtColumn {
-                get {
-                    return this.columnCreditAmt;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn WinsAmtColumn {
-                get {
-                    return this.columnWinsAmt;
                 }
             }
             
@@ -468,22 +414,6 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn operatornameColumn {
-                get {
-                    return this.columnoperatorname;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn sessactiveColumn {
-                get {
-                    return this.columnsessactive;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TransactionNumberColumn {
                 get {
                     return this.columnTransactionNumber;
@@ -492,9 +422,9 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransDate1Column {
+            public global::System.Data.DataColumn TransDateColumn {
                 get {
-                    return this.columnTransDate1;
+                    return this.columnTransDate;
                 }
             }
             
@@ -516,9 +446,9 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CreditAmt1Column {
+            public global::System.Data.DataColumn CreditAmtColumn {
                 get {
-                    return this.columnCreditAmt1;
+                    return this.columnCreditAmt;
                 }
             }
             
@@ -601,57 +531,43 @@ namespace GameTech.B3Reports.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public rptDetailTransRow AddrptDetailTransRow(
                         int TransType, 
-                        string MAC, 
-                        int TransNo, 
                         int ReceiptNo, 
-                        System.DateTime TransDate, 
                         string TransDesc, 
                         string CreditAcctNum, 
-                        int CreditAmt, 
-                        int WinsAmt, 
                         string UserName, 
                         int SessNum, 
                         System.DateTime SessStart, 
                         System.DateTime SessEnd, 
-                        string operatorname, 
-                        string sessactive, 
                         long TransactionNumber, 
-                        string TransDate1, 
+                        string TransDate, 
                         string TransTime, 
                         decimal VoidAmount, 
-                        decimal CreditAmt1, 
+                        decimal CreditAmt, 
                         decimal WagerAmount, 
                         decimal WinAmt, 
                         decimal RedemptionAmount, 
-                        string OperatorName1, 
-                        string SessActive1) {
+                        string OperatorName, 
+                        string SessActive) {
                 rptDetailTransRow rowrptDetailTransRow = ((rptDetailTransRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TransType,
-                        MAC,
-                        TransNo,
                         ReceiptNo,
-                        TransDate,
                         TransDesc,
                         CreditAcctNum,
-                        CreditAmt,
-                        WinsAmt,
                         UserName,
                         SessNum,
                         SessStart,
                         SessEnd,
-                        operatorname,
-                        sessactive,
                         TransactionNumber,
-                        TransDate1,
+                        TransDate,
                         TransTime,
                         VoidAmount,
-                        CreditAmt1,
+                        CreditAmt,
                         WagerAmount,
                         WinAmt,
                         RedemptionAmount,
-                        OperatorName1,
-                        SessActive1};
+                        OperatorName,
+                        SessActive};
                 rowrptDetailTransRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowrptDetailTransRow);
                 return rowrptDetailTransRow;
@@ -675,25 +591,18 @@ namespace GameTech.B3Reports.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnTransType = base.Columns["TransType"];
-                this.columnMAC = base.Columns["MAC"];
-                this.columnTransNo = base.Columns["TransNo"];
                 this.columnReceiptNo = base.Columns["ReceiptNo"];
-                this.columnTransDate = base.Columns["TransDate"];
                 this.columnTransDesc = base.Columns["TransDesc"];
                 this.columnCreditAcctNum = base.Columns["CreditAcctNum"];
-                this.columnCreditAmt = base.Columns["CreditAmt"];
-                this.columnWinsAmt = base.Columns["WinsAmt"];
                 this.columnUserName = base.Columns["UserName"];
                 this.columnSessNum = base.Columns["SessNum"];
                 this.columnSessStart = base.Columns["SessStart"];
                 this.columnSessEnd = base.Columns["SessEnd"];
-                this.columnoperatorname = base.Columns["operatorname"];
-                this.columnsessactive = base.Columns["sessactive"];
                 this.columnTransactionNumber = base.Columns["TransactionNumber"];
-                this.columnTransDate1 = base.Columns["TransDate1"];
+                this.columnTransDate = base.Columns["TransDate"];
                 this.columnTransTime = base.Columns["TransTime"];
                 this.columnVoidAmount = base.Columns["VoidAmount"];
-                this.columnCreditAmt1 = base.Columns["CreditAmt1"];
+                this.columnCreditAmt = base.Columns["CreditAmt"];
                 this.columnWagerAmount = base.Columns["WagerAmount"];
                 this.columnWinAmt = base.Columns["WinAmt"];
                 this.columnRedemptionAmount = base.Columns["RedemptionAmount"];
@@ -706,22 +615,12 @@ namespace GameTech.B3Reports.Data {
             private void InitClass() {
                 this.columnTransType = new global::System.Data.DataColumn("TransType", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransType);
-                this.columnMAC = new global::System.Data.DataColumn("MAC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMAC);
-                this.columnTransNo = new global::System.Data.DataColumn("TransNo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransNo);
                 this.columnReceiptNo = new global::System.Data.DataColumn("ReceiptNo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnReceiptNo);
-                this.columnTransDate = new global::System.Data.DataColumn("TransDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransDate);
                 this.columnTransDesc = new global::System.Data.DataColumn("TransDesc", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransDesc);
                 this.columnCreditAcctNum = new global::System.Data.DataColumn("CreditAcctNum", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCreditAcctNum);
-                this.columnCreditAmt = new global::System.Data.DataColumn("CreditAmt", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCreditAmt);
-                this.columnWinsAmt = new global::System.Data.DataColumn("WinsAmt", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnWinsAmt);
                 this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUserName);
                 this.columnSessNum = new global::System.Data.DataColumn("SessNum", typeof(int), null, global::System.Data.MappingType.Element);
@@ -730,20 +629,16 @@ namespace GameTech.B3Reports.Data {
                 base.Columns.Add(this.columnSessStart);
                 this.columnSessEnd = new global::System.Data.DataColumn("SessEnd", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSessEnd);
-                this.columnoperatorname = new global::System.Data.DataColumn("operatorname", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnoperatorname);
-                this.columnsessactive = new global::System.Data.DataColumn("sessactive", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsessactive);
                 this.columnTransactionNumber = new global::System.Data.DataColumn("TransactionNumber", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransactionNumber);
-                this.columnTransDate1 = new global::System.Data.DataColumn("TransDate1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransDate1);
+                this.columnTransDate = new global::System.Data.DataColumn("TransDate", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransDate);
                 this.columnTransTime = new global::System.Data.DataColumn("TransTime", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransTime);
                 this.columnVoidAmount = new global::System.Data.DataColumn("VoidAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVoidAmount);
-                this.columnCreditAmt1 = new global::System.Data.DataColumn("CreditAmt1", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCreditAmt1);
+                this.columnCreditAmt = new global::System.Data.DataColumn("CreditAmt", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreditAmt);
                 this.columnWagerAmount = new global::System.Data.DataColumn("WagerAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWagerAmount);
                 this.columnWinAmt = new global::System.Data.DataColumn("WinAmt", typeof(decimal), null, global::System.Data.MappingType.Element);
@@ -754,18 +649,10 @@ namespace GameTech.B3Reports.Data {
                 base.Columns.Add(this.columnOperatorName);
                 this.columnSessActive = new global::System.Data.DataColumn("SessActive", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSessActive);
-                this.columnMAC.AllowDBNull = false;
-                this.columnMAC.MaxLength = 12;
-                this.columnTransNo.AllowDBNull = false;
-                this.columnTransDate.AllowDBNull = false;
                 this.columnTransDesc.MaxLength = 32;
                 this.columnUserName.MaxLength = 10;
-                this.columnoperatorname.MaxLength = 18;
-                this.columnsessactive.MaxLength = 1;
-                this.columnTransDate1.Caption = "TransDate";
-                this.columnTransDate1.MaxLength = 24;
+                this.columnTransDate.MaxLength = 24;
                 this.columnTransTime.MaxLength = 24;
-                this.columnCreditAmt1.Caption = "CreditAmt";
                 this.columnOperatorName.MaxLength = 100;
                 this.columnSessActive.MaxLength = 2;
             }
@@ -926,28 +813,6 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string MAC {
-                get {
-                    return ((string)(this[this.tablerptDetailTrans.MACColumn]));
-                }
-                set {
-                    this[this.tablerptDetailTrans.MACColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int TransNo {
-                get {
-                    return ((int)(this[this.tablerptDetailTrans.TransNoColumn]));
-                }
-                set {
-                    this[this.tablerptDetailTrans.TransNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ReceiptNo {
                 get {
                     try {
@@ -959,17 +824,6 @@ namespace GameTech.B3Reports.Data {
                 }
                 set {
                     this[this.tablerptDetailTrans.ReceiptNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime TransDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tablerptDetailTrans.TransDateColumn]));
-                }
-                set {
-                    this[this.tablerptDetailTrans.TransDateColumn] = value;
                 }
             }
             
@@ -1002,38 +856,6 @@ namespace GameTech.B3Reports.Data {
                 }
                 set {
                     this[this.tablerptDetailTrans.CreditAcctNumColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int CreditAmt {
-                get {
-                    try {
-                        return ((int)(this[this.tablerptDetailTrans.CreditAmtColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CreditAmt\' in table \'rptDetailTrans\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablerptDetailTrans.CreditAmtColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int WinsAmt {
-                get {
-                    try {
-                        return ((int)(this[this.tablerptDetailTrans.WinsAmtColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'WinsAmt\' in table \'rptDetailTrans\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablerptDetailTrans.WinsAmtColumn] = value;
                 }
             }
             
@@ -1103,38 +925,6 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string operatorname {
-                get {
-                    try {
-                        return ((string)(this[this.tablerptDetailTrans.operatornameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'operatorname\' in table \'rptDetailTrans\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablerptDetailTrans.operatornameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string sessactive {
-                get {
-                    try {
-                        return ((string)(this[this.tablerptDetailTrans.sessactiveColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sessactive\' in table \'rptDetailTrans\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablerptDetailTrans.sessactiveColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public long TransactionNumber {
                 get {
                     try {
@@ -1151,17 +941,17 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TransDate1 {
+            public string TransDate {
                 get {
                     try {
-                        return ((string)(this[this.tablerptDetailTrans.TransDate1Column]));
+                        return ((string)(this[this.tablerptDetailTrans.TransDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TransDate1\' in table \'rptDetailTrans\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TransDate\' in table \'rptDetailTrans\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablerptDetailTrans.TransDate1Column] = value;
+                    this[this.tablerptDetailTrans.TransDateColumn] = value;
                 }
             }
             
@@ -1199,17 +989,17 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CreditAmt1 {
+            public decimal CreditAmt {
                 get {
                     try {
-                        return ((decimal)(this[this.tablerptDetailTrans.CreditAmt1Column]));
+                        return ((decimal)(this[this.tablerptDetailTrans.CreditAmtColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CreditAmt1\' in table \'rptDetailTrans\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'CreditAmt\' in table \'rptDetailTrans\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablerptDetailTrans.CreditAmt1Column] = value;
+                    this[this.tablerptDetailTrans.CreditAmtColumn] = value;
                 }
             }
             
@@ -1343,30 +1133,6 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCreditAmtNull() {
-                return this.IsNull(this.tablerptDetailTrans.CreditAmtColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCreditAmtNull() {
-                this[this.tablerptDetailTrans.CreditAmtColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsWinsAmtNull() {
-                return this.IsNull(this.tablerptDetailTrans.WinsAmtColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetWinsAmtNull() {
-                this[this.tablerptDetailTrans.WinsAmtColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsUserNameNull() {
                 return this.IsNull(this.tablerptDetailTrans.UserNameColumn);
             }
@@ -1415,30 +1181,6 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsoperatornameNull() {
-                return this.IsNull(this.tablerptDetailTrans.operatornameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetoperatornameNull() {
-                this[this.tablerptDetailTrans.operatornameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IssessactiveNull() {
-                return this.IsNull(this.tablerptDetailTrans.sessactiveColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetsessactiveNull() {
-                this[this.tablerptDetailTrans.sessactiveColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTransactionNumberNull() {
                 return this.IsNull(this.tablerptDetailTrans.TransactionNumberColumn);
             }
@@ -1451,14 +1193,14 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTransDate1Null() {
-                return this.IsNull(this.tablerptDetailTrans.TransDate1Column);
+            public bool IsTransDateNull() {
+                return this.IsNull(this.tablerptDetailTrans.TransDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTransDate1Null() {
-                this[this.tablerptDetailTrans.TransDate1Column] = global::System.Convert.DBNull;
+            public void SetTransDateNull() {
+                this[this.tablerptDetailTrans.TransDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1487,14 +1229,14 @@ namespace GameTech.B3Reports.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCreditAmt1Null() {
-                return this.IsNull(this.tablerptDetailTrans.CreditAmt1Column);
+            public bool IsCreditAmtNull() {
+                return this.IsNull(this.tablerptDetailTrans.CreditAmtColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCreditAmt1Null() {
-                this[this.tablerptDetailTrans.CreditAmt1Column] = global::System.Convert.DBNull;
+            public void SetCreditAmtNull() {
+                this[this.tablerptDetailTrans.CreditAmtColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1718,23 +1460,18 @@ namespace GameTech.B3Reports.Data.DetailTransTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "rptDetailTrans";
             tableMapping.ColumnMappings.Add("TransType", "TransType");
-            tableMapping.ColumnMappings.Add("MAC", "MAC");
-            tableMapping.ColumnMappings.Add("TransNo", "TransNo");
             tableMapping.ColumnMappings.Add("ReceiptNo", "ReceiptNo");
             tableMapping.ColumnMappings.Add("TransDesc", "TransDesc");
             tableMapping.ColumnMappings.Add("CreditAcctNum", "CreditAcctNum");
-            tableMapping.ColumnMappings.Add("WinsAmt", "WinsAmt");
             tableMapping.ColumnMappings.Add("UserName", "UserName");
             tableMapping.ColumnMappings.Add("SessNum", "SessNum");
             tableMapping.ColumnMappings.Add("SessStart", "SessStart");
             tableMapping.ColumnMappings.Add("SessEnd", "SessEnd");
-            tableMapping.ColumnMappings.Add("operatorname", "operatorname");
-            tableMapping.ColumnMappings.Add("sessactive", "sessactive");
             tableMapping.ColumnMappings.Add("TransactionNumber", "TransactionNumber");
-            tableMapping.ColumnMappings.Add("TransDate", "TransDate1");
+            tableMapping.ColumnMappings.Add("TransDate", "TransDate");
             tableMapping.ColumnMappings.Add("TransTime", "TransTime");
             tableMapping.ColumnMappings.Add("VoidAmount", "VoidAmount");
-            tableMapping.ColumnMappings.Add("CreditAmt", "CreditAmt1");
+            tableMapping.ColumnMappings.Add("CreditAmt", "CreditAmt");
             tableMapping.ColumnMappings.Add("WagerAmount", "WagerAmount");
             tableMapping.ColumnMappings.Add("WinAmt", "WinAmt");
             tableMapping.ColumnMappings.Add("RedemptionAmount", "RedemptionAmount");
