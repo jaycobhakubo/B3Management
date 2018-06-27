@@ -28,10 +28,8 @@
               <Mapping SourceColumn="MAC" DataSetColumn="MAC" />
               <Mapping SourceColumn="TransNo" DataSetColumn="TransNo" />
               <Mapping SourceColumn="ReceiptNo" DataSetColumn="ReceiptNo" />
-              <Mapping SourceColumn="TransDate" DataSetColumn="TransDate" />
               <Mapping SourceColumn="TransDesc" DataSetColumn="TransDesc" />
               <Mapping SourceColumn="CreditAcctNum" DataSetColumn="CreditAcctNum" />
-              <Mapping SourceColumn="CreditAmt" DataSetColumn="CreditAmt" />
               <Mapping SourceColumn="WinsAmt" DataSetColumn="WinsAmt" />
               <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
               <Mapping SourceColumn="SessNum" DataSetColumn="SessNum" />
@@ -39,6 +37,16 @@
               <Mapping SourceColumn="SessEnd" DataSetColumn="SessEnd" />
               <Mapping SourceColumn="operatorname" DataSetColumn="operatorname" />
               <Mapping SourceColumn="sessactive" DataSetColumn="sessactive" />
+              <Mapping SourceColumn="TransactionNumber" DataSetColumn="TransactionNumber" />
+              <Mapping SourceColumn="TransDate" DataSetColumn="TransDate1" />
+              <Mapping SourceColumn="TransTime" DataSetColumn="TransTime" />
+              <Mapping SourceColumn="VoidAmount" DataSetColumn="VoidAmount" />
+              <Mapping SourceColumn="CreditAmt" DataSetColumn="CreditAmt1" />
+              <Mapping SourceColumn="WagerAmount" DataSetColumn="WagerAmount" />
+              <Mapping SourceColumn="WinAmt" DataSetColumn="WinAmt" />
+              <Mapping SourceColumn="RedemptionAmount" DataSetColumn="RedemptionAmount" />
+              <Mapping SourceColumn="OperatorName" DataSetColumn="OperatorName" />
+              <Mapping SourceColumn="SessActive" DataSetColumn="SessActive" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -50,10 +58,10 @@
   <xs:element name="DetailTrans" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DetailTrans" msprop:Generator_UserDSName="DetailTrans">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="rptDetailTrans" msprop:Generator_TableClassName="rptDetailTransDataTable" msprop:Generator_TableVarName="tablerptDetailTrans" msprop:Generator_TablePropName="rptDetailTrans" msprop:Generator_RowDeletingName="rptDetailTransRowDeleting" msprop:Generator_RowChangingName="rptDetailTransRowChanging" msprop:Generator_RowEvHandlerName="rptDetailTransRowChangeEventHandler" msprop:Generator_RowDeletedName="rptDetailTransRowDeleted" msprop:Generator_UserTableName="rptDetailTrans" msprop:Generator_RowChangedName="rptDetailTransRowChanged" msprop:Generator_RowEvArgName="rptDetailTransRowChangeEvent" msprop:Generator_RowClassName="rptDetailTransRow">
+        <xs:element name="rptDetailTrans" msprop:Generator_TableClassName="rptDetailTransDataTable" msprop:Generator_TableVarName="tablerptDetailTrans" msprop:Generator_RowChangedName="rptDetailTransRowChanged" msprop:Generator_TablePropName="rptDetailTrans" msprop:Generator_RowDeletingName="rptDetailTransRowDeleting" msprop:Generator_RowChangingName="rptDetailTransRowChanging" msprop:Generator_RowEvHandlerName="rptDetailTransRowChangeEventHandler" msprop:Generator_RowDeletedName="rptDetailTransRowDeleted" msprop:Generator_RowClassName="rptDetailTransRow" msprop:Generator_UserTableName="rptDetailTrans" msprop:Generator_RowEvArgName="rptDetailTransRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="TransType" msprop:Generator_ColumnVarNameInTable="columnTransType" msprop:Generator_ColumnPropNameInRow="TransType" msprop:Generator_ColumnPropNameInTable="TransTypeColumn" msprop:Generator_UserColumnName="TransType" type="xs:int" />
+              <xs:element name="TransType" msprop:Generator_ColumnVarNameInTable="columnTransType" msprop:Generator_ColumnPropNameInRow="TransType" msprop:Generator_ColumnPropNameInTable="TransTypeColumn" msprop:Generator_UserColumnName="TransType" type="xs:int" minOccurs="0" />
               <xs:element name="MAC" msprop:Generator_ColumnVarNameInTable="columnMAC" msprop:Generator_ColumnPropNameInRow="MAC" msprop:Generator_ColumnPropNameInTable="MACColumn" msprop:Generator_UserColumnName="MAC">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -95,6 +103,40 @@
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransactionNumber" msprop:Generator_ColumnVarNameInTable="columnTransactionNumber" msprop:Generator_ColumnPropNameInRow="TransactionNumber" msprop:Generator_ColumnPropNameInTable="TransactionNumberColumn" msprop:Generator_UserColumnName="TransactionNumber" type="xs:long" minOccurs="0" />
+              <xs:element name="TransDate1" msdata:Caption="TransDate" msprop:Generator_ColumnVarNameInTable="columnTransDate1" msprop:Generator_ColumnPropNameInRow="TransDate1" msprop:Generator_ColumnPropNameInTable="TransDate1Column" msprop:Generator_UserColumnName="TransDate1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransTime" msprop:Generator_ColumnVarNameInTable="columnTransTime" msprop:Generator_ColumnPropNameInRow="TransTime" msprop:Generator_ColumnPropNameInTable="TransTimeColumn" msprop:Generator_UserColumnName="TransTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VoidAmount" msprop:Generator_ColumnVarNameInTable="columnVoidAmount" msprop:Generator_ColumnPropNameInRow="VoidAmount" msprop:Generator_ColumnPropNameInTable="VoidAmountColumn" msprop:Generator_UserColumnName="VoidAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CreditAmt1" msdata:Caption="CreditAmt" msprop:Generator_ColumnVarNameInTable="columnCreditAmt1" msprop:Generator_ColumnPropNameInRow="CreditAmt1" msprop:Generator_ColumnPropNameInTable="CreditAmt1Column" msprop:Generator_UserColumnName="CreditAmt1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WagerAmount" msprop:Generator_ColumnVarNameInTable="columnWagerAmount" msprop:Generator_ColumnPropNameInRow="WagerAmount" msprop:Generator_ColumnPropNameInTable="WagerAmountColumn" msprop:Generator_UserColumnName="WagerAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WinAmt" msprop:Generator_ColumnVarNameInTable="columnWinAmt" msprop:Generator_ColumnPropNameInRow="WinAmt" msprop:Generator_ColumnPropNameInTable="WinAmtColumn" msprop:Generator_UserColumnName="WinAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RedemptionAmount" msprop:Generator_ColumnVarNameInTable="columnRedemptionAmount" msprop:Generator_ColumnPropNameInRow="RedemptionAmount" msprop:Generator_ColumnPropNameInTable="RedemptionAmountColumn" msprop:Generator_UserColumnName="RedemptionAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OperatorName" msprop:Generator_ColumnVarNameInTable="columnOperatorName" msprop:Generator_ColumnPropNameInRow="OperatorName" msprop:Generator_ColumnPropNameInTable="OperatorNameColumn" msprop:Generator_UserColumnName="OperatorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SessActive" msprop:Generator_ColumnVarNameInTable="columnSessActive" msprop:Generator_ColumnPropNameInRow="SessActive" msprop:Generator_ColumnPropNameInTable="SessActiveColumn" msprop:Generator_UserColumnName="SessActive" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

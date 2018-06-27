@@ -5,17 +5,17 @@
     <Setting Name="B3ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=10.10.10.1;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=B3 beats the hell out of GRS!&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.11.37;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=Guardian1&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=10.10.10.1;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=B3 beats the hell out of GRS!</Value>
+      <Value Profile="(Default)">Data Source=10.0.11.37;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=Guardian1</Value>
     </Setting>
     <Setting Name="Local" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=169.254.99.123;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=B3 beats the hell out of GRS!&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=10.0.11.37;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=Guardian1&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=169.254.99.123;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=B3 beats the hell out of GRS!</Value>
+      <Value Profile="(Default)">Data Source=10.0.11.37;Initial Catalog=B3;Persist Security Info=True;User ID=sa;Password=Guardian1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
