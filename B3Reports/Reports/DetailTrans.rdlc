@@ -981,17 +981,6 @@
       <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="OperatorName">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>dsTrans</DataSetName>
-          <ValueField>operatorname</ValueField>
-          <LabelField>operatorname</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
     <ReportParameter Name="SessStart">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
@@ -1272,7 +1261,7 @@ end function</Code>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=First(Fields!operatorname.Value, "dsTrans")</Value>
+                  <Value>=First(Fields!OperatorName.Value, "dsTrans")</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
