@@ -555,6 +555,11 @@
       <DependentUpon>B3_JackpotReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\DetailTrans_cr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetailTrans_cr.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Reports\SessionSummary.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -753,6 +758,10 @@
     <EmbeddedResource Include="Reports\B3_JackpotReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>B3_JackpotReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DetailTrans_cr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetailTrans_cr.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\SessionSummary.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
