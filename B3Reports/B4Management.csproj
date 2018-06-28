@@ -578,6 +578,11 @@
       <DependentUpon>SessionTransaction.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\SubReportTemplateLand.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubReportTemplateLand.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserAccess.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -902,6 +907,10 @@
     <EmbeddedResource Include="Reports\SessionTransaction.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SessionTransaction.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SubReportTemplateLand.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SubReportTemplateLand.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserAccess.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
