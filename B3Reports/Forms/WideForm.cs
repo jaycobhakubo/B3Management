@@ -381,7 +381,7 @@ namespace GameTech.B3Reports.Forms
                             SqlDataAdapter da = new SqlDataAdapter();
                             da.SelectCommand = sqlcom;
                             da.Fill(ds);
-                            B3ClassIIBallCall crysRpt = new B3ClassIIBallCall();
+                            BallCall_byGame crysRpt = new BallCall_byGame();
                             crysRpt.SetDataSource(ds);
                             crysRpt.SetParameterValue("@session", SessID);
                            // crysRpt.SetParameterValue("@DateParameter", start_date);
