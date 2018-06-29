@@ -555,11 +555,11 @@
       <DependentUpon>B3_JackpotReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Copy of B3ClassIIBallCall.cs">
-      <DependentUpon>Copy of B3ClassIIBallCall.rpt</DependentUpon>
+    <Compile Include="Reports\BallCall_bySession.cs">
       <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
+      <DependentUpon>BallCall_bySession.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\DetailTrans_cr.cs">
       <AutoGen>True</AutoGen>
@@ -772,9 +772,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>B3_JackpotReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Copy of B3ClassIIBallCall.rpt">
+    <EmbeddedResource Include="Reports\BallCall_bySession.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Copy of B3ClassIIBallCall.cs</LastGenOutput>
+      <LastGenOutput>BallCall_bySession.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\DetailTrans_cr.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

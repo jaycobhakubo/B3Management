@@ -273,21 +273,16 @@ namespace GameTech.B3Reports.Forms
 
             this.Cursor = Cursors.WaitCursor;
             ReportDataSource rptDataSource = new ReportDataSource();
-            rptViewer.LocalReport.DataSources.Clear();  // 03.22
-      
-            
-
+            rptViewer.LocalReport.DataSources.Clear();  // 03.22          
             pnlViewer.Visible = true;
             pnlButtons.Visible = false;
-            pnlParams.Visible = false;
-
-            //ReportParameter[] parameters = new ReportParameter[4];
-
+            pnlParams.Visible = false;   //ReportParameter[] parameters = new ReportParameter[4];         
             string StartDate = dtStart.Value.ToString();
             string EndDate = dtEnd.Value.ToString();
             string x = txt1.Text.ToString();
             string y = txt2.Text.ToString();
-
+            DateTime start_date = new DateTime();
+            DateTime end_date = new DateTime();
             DataSet ds = new DataSet("spRptAuditLog");
             int SessID;
 
@@ -334,8 +329,8 @@ namespace GameTech.B3Reports.Forms
                 case 4:
                     pnlViewer.Visible = false;
                     pnlCrystalViewer.Visible = true;
-                    DateTime start_date = dtStart.Value;
-                    DateTime end_date = dtEnd.Value;
+                    start_date = dtStart.Value;
+                    end_date = dtEnd.Value;
                     ds = new DataSet("spRptAuditLog");
                     using (SqlConnection con = GetSQLConnection.get())
                     {
@@ -375,7 +370,6 @@ namespace GameTech.B3Reports.Forms
                         {
                             SqlCommand sqlcom = new SqlCommand("usp_server_rptBallCall", con);
                             sqlcom.Parameters.AddWithValue("@session", SessID);
-                        //    sqlcom.Parameters.AddWithValue("@DateParameter", start_date);
                             sqlcom.CommandType = CommandType.StoredProcedure;
                             sqlcom.CommandTimeout = 0;
                             SqlDataAdapter da = new SqlDataAdapter();
@@ -384,7 +378,6 @@ namespace GameTech.B3Reports.Forms
                             BallCall_byGame crysRpt = new BallCall_byGame();
                             crysRpt.SetDataSource(ds);
                             crysRpt.SetParameterValue("@session", SessID);
-                           // crysRpt.SetParameterValue("@DateParameter", start_date);
                             PassThroughConnection(crysRpt);
                             crystalReportViewer1.ReportSource = crysRpt;
                             crystalReportViewer1.Refresh();
@@ -392,7 +385,34 @@ namespace GameTech.B3Reports.Forms
                     }
                     else if (cmbxBallCallByCategory.SelectedIndex == 0)
                     {
-                        
+
+                        pnlViewer.Visible = false;
+                        pnlCrystalViewer.Visible = true;
+                        start_date = dtBallCallStartDate.Value;
+                        end_date = dtBallCallEndDate.Value;
+                        ds = new DataSet("spRptBallCallSet");
+                        using (SqlConnection con = GetSQLConnection.get())
+                        {
+                            SqlCommand sqlcom = new SqlCommand("spRptBallCallSet", con);
+                            sqlcom.Parameters.AddWithValue("@StartDate", start_date);
+                            sqlcom.Parameters.AddWithValue("@EndDate", end_date);
+                            sqlcom.CommandType = CommandType.StoredProcedure;
+                            sqlcom.CommandTimeout = 0;
+                            SqlDataAdapter da = new SqlDataAdapter();
+                            da.SelectCommand = sqlcom;
+                            da.Fill(ds);
+                            BallCall_bySession crysRpt = new BallCall_bySession();
+                            crysRpt.SetDataSource(ds);
+                            crysRpt.SetParameterValue("@StartDate", start_date);
+                            crysRpt.SetParameterValue("@EndDate", end_date);
+                            PassThroughConnection(crysRpt);
+                            crystalReportViewer1.ReportSource = crysRpt;
+                            crystalReportViewer1.Refresh();
+                        }
+
+                        /*____________
+                        //SSRS (saved)
+                         ================
                         rptDataSource.Name = "BallCallSet";
                         rptDataSource.Value = this.spRptBallCallSetBindingSource;
                         spRptBallCallSetTableAdapter.Fill(this.ballCallSet.spRptBallCallSet, dtBallCallStartDate.Value, dtBallCallEndDate.Value);
@@ -400,7 +420,8 @@ namespace GameTech.B3Reports.Forms
                         P4 = new ReportParameter("EndDate", end_date.ToString());
                         this.rptViewer.ShowParameterPrompts = true;
                         this.rptViewer.LocalReport.SetParameters(new ReportParameter[] { P3, P4 });
-                        rptViewer.LocalReport.ReportEmbeddedResource = "GameTech.B3Reports.Reports.BallCallSet.rdlc";
+                        rptViewer.LocalReport.ReportEmbeddedResource = "GameTech.B3Reports.Reports.BallCallSet.rdlc";  
+                         _____________*/
                     }
 
 
@@ -408,7 +429,7 @@ namespace GameTech.B3Reports.Forms
 
                 case 6:
                     SessID = int.Parse(m_sessionComboBox.SelectedItem.ToString());
-                      start_date = dtStart.Value;
+                    start_date = dtStart.Value;
                     pnlViewer.Visible = false;
                     pnlCrystalViewer.Visible = true;
 
