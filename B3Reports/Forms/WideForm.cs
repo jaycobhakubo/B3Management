@@ -464,8 +464,9 @@ namespace GameTech.B3Reports.Forms
                     ds = new DataSet("spRptPayouts");
                     using (SqlConnection con = GetSQLConnection.get())
                     {
-                        SqlCommand sqlcom = new SqlCommand("spRptPayouts", con);
+                        SqlCommand sqlcom = new SqlCommand("spRptPayouts2", con);
                         sqlcom.Parameters.AddWithValue("@SessionNum", SessID);
+                        sqlcom.Parameters.AddWithValue("@DateRun", start_date);
                         sqlcom.CommandType = CommandType.StoredProcedure;
                         sqlcom.CommandTimeout = 0;
                         SqlDataAdapter da = new SqlDataAdapter();
